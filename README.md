@@ -100,6 +100,8 @@ Before release we searched the literature in depth and honestly: arXiv and journ
 
 The work began as a search for an open problem within reach, inside another project of the author. It was carried out by separate instances of Claude, Anthropic's AI, in separate roles under the author's direction: constructors who found and wrote proofs, each from a written mission («flights» 1 to 9); auditors who re-derived every step in their own words and ran their own engines; and cold readers who read the chains and then the text with no access to the audits. Several decisive ideas started as everyday images given by the author and translated into mathematics. The story, with the dead ends and the failed predictions, is in **[THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md)**.
 
+The author asked four AIs, Claude among them, whether this problem could be solved this way. The question, their answers word for word, and the view of the last auditor are in **[A_PERSONAL_NOTE.md](A_PERSONAL_NOTE.md)**.
+
 ---
 
 ## Repository map
@@ -121,6 +123,6 @@ WHERE_TO_ATTACK.md        the load-bearing joints of the proof
 
 ---
 
-[CITATION.md](CITATION.md) · [LICENSE-TEXT.md](LICENSE-TEXT.md) · [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md) · [THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md)
+[CITATION.md](CITATION.md) · [LICENSE-TEXT.md](LICENSE-TEXT.md) · [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md) · [THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md) · [A_PERSONAL_NOTE.md](A_PERSONAL_NOTE.md)
 
 *Cite as:* Amichis Luengo, R. (2026). *The Dancing Sand Theorem — the 2-part of the sandpile group of the hypercube, for every n* (preprint, version 8). Zenodo. https://doi.org/10.5281/zenodo.23188298
