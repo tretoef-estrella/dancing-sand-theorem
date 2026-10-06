@@ -1,0 +1,17 @@
+7.4 p14  tions, and their reductions are isomorphic (Lemma 3.5), so they are isomorphic (Corollary 3.4).
+6.7 p19  using ξ = K + o − 2o and h(D) = G(D) + |D|. On the other side φ(λ + 1) = K + o + t and
+6.5 p39  with v ((𝔡 ) ) = −W[0, o − 1] + c , c independent of D (as v (π(d)) = w(d) + 1). Each term of
+6.4 p35  For Σ only the composition 1 + ⋯ + 1 occurs. Any other composition, divided by that term, is
+6.4 p12  (2s − 2j + 1)⁠ (2w + 2s + 2j + 1), an odd number, modulo 2. Hence modulo 2, F and E act as 1 ⊗ F ,
+6.3 p34  where γ ⁠ ∈ Q depends only on w (and γ ⁠ = 0 if L < 0). The floors visited form the window
+6.3 p26  P J (I ∖ D), which is the integer fit of the clocks of the cell by Lemma 7.2(b): the penalty shift
+6.2 p35  v ((𝒜 ⁠ ) ⁠ ) ≥ δ(D ∖ D'), and it vanishes unless D' ⊆ D. Put B := 𝒜 . Then (B ∘ (1 + E)) ⁠ =
+6.2 p38  glue(S , S ⁠ ) is ≡ 0 (mod 2) if and only if S ≡ S ⁠ ≡ 0 (mod 2) and S ≡ S ⁠ (mod 4), that is
+6.2 p11  tient is free of rank m, spanned by the images of F ⁠ v ⊗ b (0 ≤ s < m): indeed F ⁠ v ⊗ b =
+6.2 p39  to the clean dances of Ψ and Ψ(Ψ ± 2)/2 (same out, in): M (Ψ(Ψ + 2)/2) ⁠ = M (Ψ) ⁠ − N =
+6.1 p11  dual X := Hom (X, A) with (g·ξ)⁠ ( x) := ξ(ι(g)x) is a lattice; ι is compatible with the coproduct, 
+6.1 p3  proved both and determined every odd Sylow subgroup [Bai03]: for an odd prime p, Syl K(Q ) ≅
+6.0 p40  GL(Z ). The two final matrices are associates and have the same Smith form; Proposition 10.7 and
+6.0 p29  1. Nothing else rises above G. Small clocks are ≤ k − 1 ≤ log (n + 1) − 1 < G. Shifts i ≥ 2:
+lines 723 >5: 51 >6: 13 >7: 1 >8: 0
+VIGIA-FIN-OK exit=0 pico_kb=1824 t=0s

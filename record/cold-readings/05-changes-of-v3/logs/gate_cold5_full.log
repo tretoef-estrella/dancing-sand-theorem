@@ -1,0 +1,19 @@
+TOOL-CONTROLS ok
+HOUSES k<=7: 65532 houses; non-integral fits: 0
+BOUNDARIES: 32385 houses with a boundary; cuts missing: 0; cuts not strict: 0
+PENALTIES k<=6, (P_r,P_c) in [0,4]^2 minus (0,0): 192024 cells; non-integral: 0; fit != fit(x_H)+shift: 0
+DELETIONS: 741; bad: 0
+C1 (x_H + 1 at first dancer, k<=6): non-integral in 1942 of 16380
+C3 (strictness one dancer after the boundary): fails in 7967 of 30078
+S11 witnesses (alpha=1, I nonempty, fit = 0): 949; first: [((0,), 1, 0), ((0,), 2, 0), ((0,), 2, 1)]
+S12 witness: ((0, 1), 3, 0, 4)
+C2 (random antisymmetric length 8): non-integral fit in 3299 of 10000
+REAL CELLS lam<=255, i<=40: 10455 cells
+S4 raw clocks of §1.2 with a non-integral level set: 0
+C5 (raw clocks + 1 at first dancer, i>=1): non-integral in 2316 of 9880
+S5 u != k+K+kappa(m,K)+x_D (§5 rulers), or u_0 != k+K+x_H#: 0; §5 clocks != penalty cell of Lemma 7.5: 0
+S6 non-dyadic heads: 0 of 10200
+cells with a boundary: 2572; S10 hits (head == pos(b), not a power of 2): 0; S14 hits (pos(b) not a power of 2): 1734
+S13 counterfactual (jump one dancer late) non-dyadic heads: 0 of 2084
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=10416 t=7s

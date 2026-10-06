@@ -1,0 +1,3 @@
+cells 2572; head reaches a jump in 1034; histogram (head<jump, head==jump, head>jump): {(False, True, False): 1034, (True, False, False): 1538}; examples (lam,i,N,b,head,Pr,Pc): [(2, 2, 2, 1, 1, 0, 1), (2, 4, 2, 1, 1, 1, 0), (2, 6, 2, 1, 1, 0, 2), (2, 8, 2, 1, 1, 2, 0), (2, 10, 2, 1, 1, 0, 1)]
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=9696 t=0s

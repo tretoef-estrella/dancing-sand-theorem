@@ -1,0 +1,17 @@
+7.4 7.4 p14  tions, and their reductions are isomorphic (Lemma 3.5), so they are isomorphic (Corollary 3.4).
+6.7 11.5 p11  tient is free of rank m, spanned by the images of F ⁠ v ⊗ b (0 ≤ s < m): indeed F ⁠ v ⊗ b =
+6.6 12.1 p35  v ((𝒜 ⁠ ) ⁠ ) ≥ δ(D ∖ D'), and it vanishes unless D' ⊆ D. Put B := 𝒜 . Then (B ∘ (1 + E)) ⁠ =
+6.5 16.8 p37  and β = Θ(Γ ⁠ ) by Lemma 10.14(c). By (a) and Lemma 10.13(c) the constant a of Γ is even, so
+6.4 6.4 p35  For Σ only the composition 1 + ⋯ + 1 occurs. Any other composition, divided by that term, is
+6.4 9.7 p31  Proof. On V, x = 1 − s acts by g: b ↦ b − b , b ↦ −b (Lemma 2.1), and g = (−1) ⁠ exp(F)
+6.4 11.6 p39  to the clean dances of Ψ and Ψ(Ψ ± 2)/2 (same out, in): M (Ψ(Ψ + 2)/2) ⁠ = M (Ψ) ⁠ − N =
+6.3 11.5 p38  glue(S , S ⁠ ) is ≡ 0 (mod 2) if and only if S ≡ S ⁠ ≡ 0 (mod 2) and S ≡ S ⁠ (mod 4), that is
+6.2 19.1 p39  (N ) ⁠ = (M (Σ) ⁠ ) ⁠ · R , where R ⁠ = y (f)/y (f) on the window [o , o + K − 1]. Expand y as in
+6.2 10.0 p3  proved both and determined every odd Sylow subgroup [Bai03]: for an odd prime p, Syl K(Q ) ≅
+6.2 9.0 p26  P J (I ∖ D), which is the integer fit of the clocks of the cell by Lemma 7.2(b): the penalty shift
+6.2 15.9 p12  F ⁠ ( b n) = 2 b F n, F ⁠ ( b n) = 2 b F n, F ⁠ ( b n) = 2 b F n, F ⁠ ( b n) = 2 ⁠ b F ⁠ n; dividing by
+6.2 11.1 p19  using ξ = K + o − 2o and h(D) = G(D) + |D|. On the other side φ(λ + 1) = K + o + t and
+6.1 8.1 p11  dual X := Hom (X, A) with (g·ξ)⁠ ( x) := ξ(ι(g)x) is a lattice; ι is compatible with the coproduct, so
+6.1 21.0 p12  1 ⊗ E ; F ⁠ ( b n) = b F ⁠ n , F ⁠ ( b n) = 0, E ⁠ ( b n) = b E ⁠ n, E ⁠ ( b n) = 0. These are the formu‐
+lines 727 mean>5: 69 mean>6: 17
+VIGIA-FIN-OK exit=0 pico_kb=9200 t=0s

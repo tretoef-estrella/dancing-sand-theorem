@@ -1,0 +1,461 @@
+HUNK  1 @@ -3,7 +3,7 @@: DIFFERS
+   replace: OLD «.com·5October2026·version2»
+            NEW «.com·5October2026·version3»
+HUNK  2 @@ -29,7 +29,7 @@: DIFFERS
+   replace: OLD «p,intheproofofLemma7.2(b);thisversionrepairsit(§7.1,§7.4»
+            NEW «p,intheproofofLemma7.2(b).Version2repairedit(§7.1,§7»
+   insert: OLD «ofLemma7.2(b);thisversionrepairsit(§7.1,§7.4),and*»
+           NEW «roofofLemma7.2(b).Version2repairedit(§7.1,§7.4,§9.2»
+   replace: OLD «a7.2(b);thisversionrepairsit(§7.1,§7.4),and**therep»
+            NEW «emma7.2(b).Version2repairedit(§7.1,§7.4,§9.2),andthe»
+   insert: OLD «ersionrepairsit(§7.1,§7.4),and**therepairhasnotyet»
+           NEW «sion2repairedit(§7.1,§7.4,§9.2),andthechangesofversion2»
+   insert: OLD «nrepairsit(§7.1,§7.4),and**therepairhasnotyetbeenr»
+           NEW «redit(§7.1,§7.4,§9.2),andthechangesofversion2werereadcoldthesamedaybyafourthreader:**therepairholds**.Thatre»
+   insert: OLD «7.1,§7.4),and**therepairhasnotyetbeenreadcold**(§1»
+           NEW «fourthreader:**therepairholds**.Thatreaderfoundonefalsesent»
+   insert: OLD «.1,§7.4),and**therepairhasnotyetbeenreadcold**(§13»
+           NEW «er:**therepairholds**.Thatreaderfoundonefalsesentence,inaremarkusedn»
+   insert: OLD «1,§7.4),and**therepairhasnotyetbeenreadcold**(§13,»
+           NEW «**.Thatreaderfoundonefalsesentence,inaremarkusednowhere,andpointsofpresentation,allcorrectedinthisversion3;italsofoundthateveryfitusedintheproofsisintegral(Lemma7.9).**Thechangesofversion3havenotyetbeenreadcold**(§13,»
+HUNK  3 @@ -47,7 +47,9 @@: SAME after normalization
+HUNK  4 @@ -57,7 +59,7 @@: DIFFERS
+   insert: OLD «Smodp)`copiesof`⌊S/p⌋`.Ineverysequencetowhichweapp»
+           NEW «Smodp)`copiesof`⌊S/p⌋`.Inthecubetheroundingneveracts:everyblockmeanoftherawclo»
+   replace: OLD «)`copiesof`⌊S/p⌋`.Ineverysequencetowhichweapplyit,theres»
+            NEW «heroundingneveracts:everyblockmeanoftherawclocksisani»
+   replace: OLD «sof`⌊S/p⌋`.Ineverysequencetowhichweapplyit,theresultisanon-»
+            NEW «undingneveracts:everyblockmeanoftherawclocksisaninte»
+   replace: OLD «Ineverysequencetowhichweapplyit,theresultisanon-increasin»
+            NEW «ngneveracts:everyblockmeanoftherawclocksisaninteger(L»
+   insert: OLD «encetowhichweapplyit,theresultisanon-increasingseq»
+           NEW «acts:everyblockmeanoftherawclocksisaninteger(Lemma7.9),so`ŷ_i`belowistheantitonicleast-squaresfititself,anon-increasi»
+   replace: OLD «cetowhichweapplyit,theresultisanon-increasingsequenc»
+            NEW «theantitonicleast-squaresfititself,anon-increasingse»
+   insert: OLD «whichweapplyit,theresultisanon-increasingsequenceo»
+           NEW «ntitonicleast-squaresfititself,anon-increasingseque»
+   insert: OLD «hichweapplyit,theresultisanon-increasingsequenceof»
+           NEW «itonicleast-squaresfititself,anon-increasingsequenceof»
+   replace: OLD «reasingsequenceofintegers(Lemma7.9).Atshift`0`theent»
+            NEW «reasingsequenceofintegers.Theroundingiskeptinthedefin»
+   replace: OLD «singsequenceofintegers(Lemma7.9).Atshift`0`theentry`»
+            NEW «ingsequenceofintegers.Theroundingiskeptinthedefinitiononlysothattheruleisdefinedforever»
+   replace: OLD «gsequenceofintegers(Lemma7.9).Atshift`0`theentry`∞`sta»
+            NEW «tinthedefinitiononlysothattheruleisdefinedforeverysequenceofintegers.Atshift`0`theentry`∞`sta»
+HUNK  5 @@ -116,9 +118,13 @@: DIFFERS
+   delete: OLD «*[GMMY24,Conjecture4.14];and**`c_{n+1}=g(n−1)`for`n≥4»
+           NEW «*[GMMY24,Conjecture4.14];**`c_{n+1}=g(n−1)`for`n≥4»
+HUNK  6 @@ -159,7 +165,7 @@: DIFFERS
+   replace: OLD «|ourword|standardmeaning|definedin|»
+            NEW «|ourword|standardmeaning|where|»
+   replace: OLD «urword|standardmeaning|definedin|»
+            NEW «rword|standardmeaning|where|»
+   delete: OLD «rd|standardmeaning|definedin|»
+           NEW «ord|standardmeaning|where|»
+HUNK  7 @@ -170,7 +176,7 @@: DIFFERS
+   delete: OLD «icitintegers`u_i(D)`;theirintegerantitonicleast-squaresfi»
+           NEW «icitintegers`u_i(D)`;theirantitonicleast-squaresfi»
+   insert: OLD «ypool-adjacent-violators)|§1.2,§7.1|»
+           NEW «ypool-adjacent-violators),whichinthecubeisalwaysanintegersequence(Lemma7.9)|§1.2,§7.1|»
+HUNK  8 @@ -182,12 +188,12 @@: DIFFERS
+   insert: OLD «osecoefficientsdependonlyonthepositionofthetarget|»
+           NEW «osecoefficientsdependonlyon`Δ=D∖D'`,on`m`andonthepositionofthetarget|»
+   replace: OLD «Ateverystepeachfloorpaysapowerof`2`,andattheendthef»
+            NEW «Ateverystepeachfloorpaysanevenamount,`2^α(i+d)`atthefloor»
+   replace: OLD «everystepeachfloorpaysapowerof`2`,andattheendthefinalma»
+            NEW «tepeachfloorpaysanevenamount,`2^α(i+d)`atthefloor`d`,a»
+   insert: OLD «epeachfloorpaysapowerof`2`,andattheendthefinalmatr»
+           NEW «hfloorpaysanevenamount,`2^α(i+d)`atthefloor`d`,andattheendthefinalmatr»
+   replace: OLD «2`—dry—themodule`T(2l+1)`istheFrobeniustwist`V⊗T(l)»
+            NEW «2`—dry—themodule`T(2l+1)`becomes`V⊗T(l)^{[1]}`,thetensor»
+   insert: OLD «—dry—themodule`T(2l+1)`istheFrobeniustwist`V⊗T(l)^»
+           NEW «themodule`T(2l+1)`becomes`V⊗T(l)^{[1]}`,thetensorproductof`V`with»
+   insert: OLD «y—themodule`T(2l+1)`istheFrobeniustwist`V⊗T(l)^{[1»
+           NEW «becomes`V⊗T(l)^{[1]}`,thetensorproductof`V`withaFrobeniustwist(Propositio»
+   delete: OLD «2l+1)`istheFrobeniustwist`V⊗T(l)^{[1]}`(Proposition3.1(c)),andth»
+           NEW «tof`V`withaFrobeniustwist(Proposition3.1(c)),andth»
+HUNK  9 @@ -200,7 +206,7 @@: DIFFERS
+   insert: OLD «volution»[Aky26,§4].Theirownfoldsofgridshavefixedv»
+           NEW «volution»[Aky26,§4].Theirreflectionsofoddgridshavefixedver»
+   delete: OLD «olution»[Aky26,§4].Theirownfoldsofgridshavefixedver»
+           NEW «[Aky26,§4].Theirreflectionsofoddgridshavefixedvert»
+   delete: OLD «ution»[Aky26,§4].Theirownfoldsofgridshavefixedvertices»
+           NEW «Aky26,§4].Theirreflectionsofoddgridshavefixedverti»
+   insert: OLD «Aky26,§4].Theirownfoldsofgridshavefixedvertices,an»
+           NEW «26,§4].Theirreflectionsofoddgridshavefixedvertices,so»
+   insert: OLD «ofgridshavefixedvertices,andtheyaskfor«ananalogous»
+           NEW «ddgridshavefixedvertices,sotheirfoldisnotaregulardoublecover,andtheyask:«Canananalogou»
+   replace: OLD «efixedvertices,andtheyaskfor«ananalogousintegraldescr»
+            NEW «lardoublecover,andtheyask:«Canananalogousintegralde»
+   insert: OLD «edvertices,andtheyaskfor«ananalogousintegraldescri»
+           NEW «rdoublecover,andtheyask:«Canananalogousintegraldescri»
+   insert: OLD «criptionwithfixedvertices».Theantipodalfoldofthecu»
+           NEW «criptionwithfixedverticesexplainboththefoldedall-onesclassandtheremaining2-primaryfactors?»Theantipodalfoldofthecub»
+   delete: OLD «riptionwithfixedvertices».Theantipodalfoldofthecube»
+           NEW «maining2-primaryfactors?»Theantipodalfoldofthecube»
+HUNK 10 @@ -261,7 +267,9 @@: DIFFERS
+   insert: OLD «(b)On`Φ(N)`,for`s≥0`:`F^{(2s)}(b_en)=b_eF^{(»
+           NEW «(b)On`Φ(N)`,for`s≥0`and`e=0,1`:`F^{(2s)}(b_en)=b_eF^{(»
+   delete: OLD «en)=b_eF^{(s)}n/(2s−1)!!`(`e=0,1`),`F^{(2s+1)}(b_0n)=b_1F^{»
+           NEW «en)=b_eF^{(s)}n/(2s−1)!!`,`F^{(2s+1)}(b_0n)=b_1F^{»
+HUNK 11 @@ -277,11 +285,18 @@: DIFFERS
+   delete: OLD «nishwhen`r+t>λ`),andby(K),`E^{(s)}F^{(r)}x=C(λ−r+s,»
+           NEW «nishwhen`r+t>λ`),andby(K)`E^{(s)}F^{(r)}x=C(λ−r+s,»
+   insert: OLD «multiplicationby`2`)gives`Hom(M,N)→Hom(M,N⊗F_2)→Ex»
+           NEW «multiplicationby`2`)givestheexactsequence`Hom(M,N)→Hom(M,N⊗F_2)→Ex»
+HUNK 12 @@ -293,12 +308,14 @@: DIFFERS
+   delete: OLD «ariantformtakesthevalues`C(3,r)=1,3,3,1`,allunits,so`V^{⊗»
+           NEW «ariantformtakesthevalues`1,3,3,1`(thatis,`C(3,r)`)»
+   insert: OLD «thevalues`C(3,r)=1,3,3,1`,allunits,so`V^{⊗3}=Δ(3)⊕»
+           NEW «rmtakesthevalues`1,3,3,1`(thatis,`C(3,r)`),allunits,so`V^{⊗3}=Δ(3)⊕»
+HUNK 13 @@ -323,7 +340,8 @@: SAME after normalization
+HUNK 14 @@ -438,7 +456,11 @@: SAME after normalization
+HUNK 15 @@ -448,8 +470,11 @@: DIFFERS
+   insert: OLD «(D)=ξ+s_2(μ)+|D|−|E|+h(D)=K+o_I−2o_D+k−|I|+2|D|+G(»
+           NEW «(D)=ξ+s_2(μ)+|D|−|E|+h(D)``=K+o_I−2o_D+k−|I|+2|D|+G(»
+HUNK 16 @@ -493,7 +518,9 @@: SAME after normalization
+HUNK 17 @@ -517,16 +544,18 @@: DIFFERS
+   replace: OLD «er`fit(x)_{b−1}>fit(x)_b`,thatis,ifnolevelsetof`fit»
+            NEW «er`fit(x)_{b−1}>fit(x)_b`.Aposition`b`with`fit(x)_{b−1}>fit(x)_b`»
+   insert: OLD «fit(x)_{b−1}>fit(x)_b`,thatis,ifnolevelsetof`fit(x»
+           NEW «it(x)_b`.Aposition`b`with`fit(x)_{b−1}>fit(x)_b`isalwaysacut,sinceLemma7.1isaconditiononeachlevelsetseparatelyandsoholdsforthetwop»
+   insert: OLD «t(x)_{b−1}>fit(x)_b`,thatis,ifnolevelsetof`fit(x)`»
+           NEW «tiononeachlevelsetseparatelyandsoholdsforthetwopieces;thus`b`isastrictcutifandonlyifno»
+   replace: OLD «x)_{b−1}>fit(x)_b`,thatis,ifnolevelsetof`fit(x)`con»
+            NEW «forthetwopieces;thus`b`isastrictcutifandonlyifnolevelsetof`fit(x)`con»
+   insert: OLD «,andastrictcutstaysstrict.Onalevelsetof`p`position»
+           NEW «,andastrictcutstaysstrict(astrictdropofthefitisacut).Onalevelsetof`p`position»
+HUNK 18 @@ -601,14 +630,15 @@: DIFFERS
+   insert: OLD «(c)`T=0`,`sat=1`:theboundaryis`b'∪{c}`,w»
+           NEW «(c)`T=0`,`sat=1`,`J'≢0`:theboundaryis`b'∪{c}`,w»
+   insert: OLD «yat`b'∪{c}`.(d)Otherwise`J_H≡0`andthereisnothingto»
+           NEW «yat`b'∪{c}`.(d)Otherwise`sat=0`,or`T=0`and`J'≡0`;then`J_H≡0`(Lemma7.7),andthere»
+   insert: OLD «∪{c}`.(d)Otherwise`J_H≡0`andthereisnothingtoprove.»
+           NEW «T=0`and`J'≡0`;then`J_H≡0`(Lemma7.7),andthereisnothingtoprove.»
+   insert: OLD «{c})−v'(I')=−X_1(I')`,and`−X_1(I')=−ŷ'(I')+τ+[T=1]»
+           NEW «{c})−v'(I')=−X_1(I')`,and,by(Λ)for`H'`,`−X_1(I')=−ŷ'(I')+τ+[T=1]»
+   delete: OLD «'(∅)≤α(2^c−1)+h−α2^c=h−α`,by(Λ)for`H'`.»
+           NEW «'(∅)≤α(2^c−1)+h−α2^c=h−α`.»
+HUNK 19 @@ -625,10 +655,12 @@: DIFFERS
+   delete: OLD «**Lemma7.9(integerseparation).**Ineveryhouse,an»
+           NEW «**Lemma7.9(integrality).**Ineveryhousethe»
+   insert: OLD «**Lemma7.9(integerseparation).**Ineveryhouse,anyt»
+           NEW «**Lemma7.9(integrality).**Ineveryhousethereal»
+   replace: OLD «**Lemma7.9(integerseparation).**Ineveryhouse,anytwoad»
+            NEW «**Lemma7.9(integrality).**Ineveryhousetherealfi»
+   delete: OLD «eparation).**Ineveryhouse,anytwoadjacentlevelsetsoftherealfitof`x_H`,withval»
+           NEW «tegrality).**Ineveryhousetherealfitof`x_H`takesint»
+   replace: OLD «elsetsoftherealfitof`x_H`,withvalues`μ_A>μ_B`,satisf»
+            NEW «eryhousetherealfitof`x_H`takesintegervalues.Sodoesthere»
+   insert: OLD «etsoftherealfitof`x_H`,withvalues`μ_A>μ_B`,satisfy»
+           NEW «setherealfitof`x_H`takesintegervalues.Sodoesthereal»
+   replace: OLD «tsoftherealfitof`x_H`,withvalues`μ_A>μ_B`,satisfy`⌊»
+            NEW «therealfitof`x_H`takesintegervalues.Sodoestherealfitof»
+   delete: OLD «realfitof`x_H`,withvalues`μ_A>μ_B`,satisfy`⌊μ_A⌋≥⌈μ_B⌉`.Thesameholdsafterthepena»
+           NEW «of`x_H`takesintegervalues.Sodoestherealfitoftheclo»
+   replace: OLD «_B`,satisfy`⌊μ_A⌋≥⌈μ_B⌉`.Thesameholdsafterthepenalty»
+            NEW «f`x_H`takesintegervalues.Sodoestherealfitoftheclocksof»
+   delete: OLD «satisfy`⌊μ_A⌋≥⌈μ_B⌉`.Thesameholdsafterthepenaltyshiftsofarealce»
+           NEW «takesintegervalues.Sodoestherealfitoftheclocksofev»
+   insert: OLD «_B⌉`.Thesameholdsafterthepenaltyshiftsofarealcell,»
+           NEW «esintegervalues.Sodoestherealfitoftheclocksofeverypenaltycell`Cell(H;P_r,P_»
+   delete: OLD «esameholdsafterthepenaltyshiftsofarealcell,andafterdeletingthef»
+           NEW «oftheclocksofeverypenaltycell`Cell(H;P_r,P_c)`,and»
+   insert: OLD «epenaltyshiftsofarealcell,andafterdeletingthefirst»
+           NEW «eclocksofeverypenaltycell`Cell(H;P_r,P_c)`,andthatof`x_H`withitsfir»
+   delete: OLD «altyshiftsofarealcell,andafterdeletingthefirstdancerofthehouse`»
+           NEW «cell`Cell(H;P_r,P_c)`,andthatof`x_H`withitsfirstda»
+   replace: OLD «alcell,andafterdeletingthefirstdancerofthehouse`ℓ=2»
+            NEW «ll`Cell(H;P_r,P_c)`,andthatof`x_H`withitsfirstdancerdeleted,intheh»
+   replace: OLD «terdeletingthefirstdancerofthehouse`ℓ=2^k−1`.Consequ»
+            NEW «of`x_H`withitsfirstdancerdeleted,inthehouse`ℓ=2^k−1`.Consequ»
+   insert: OLD «use`ℓ=2^k−1`.Consequentlyeveryintegerfitusedinthis»
+           NEW «use`ℓ=2^k−1`.Consequently,ineachofthesetheintegerfiti»
+   replace: OLD «se`ℓ=2^k−1`.Consequentlyeveryintegerfitusedinthispa»
+            NEW «ℓ=2^k−1`.Consequently,ineachofthesetheintegerfitisthereal»
+   replace: OLD «`ℓ=2^k−1`.Consequentlyeveryintegerfitusedinthispaper»
+            NEW «.Consequently,ineachofthesetheintegerfitistherealfit,an»
+   replace: OLD «nsequentlyeveryintegerfitusedinthispaperisnon-incre»
+            NEW «neachofthesetheintegerfitistherealfit,anditisnon-in»
+   insert: OLD «equentlyeveryintegerfitusedinthispaperisnon-increa»
+           NEW «achofthesetheintegerfitistherealfit,anditisnon-incre»
+   insert: OLD «quentlyeveryintegerfitusedinthispaperisnon-increas»
+           NEW «ofthesetheintegerfitistherealfit,anditisnon-increasing.*Proo»
+   delete: OLD «entlyeveryintegerfitusedinthispaperisnon-increasing»
+           NEW «tegerfitistherealfit,anditisnon-increasing.*Proof.»
+   delete: OLD «tlyeveryintegerfitusedinthispaperisnon-increasing.*Proof.*»
+           NEW «egerfitistherealfit,anditisnon-increasing.*Proof.*»
+   delete: OLD «reasing.*Proof.*InductionalongtheproofofTheorem7.8.T»
+           NEW «reasing.*Proof.*Inductionon`|I|`.For`I=∅`thesequen»
+   replace: OLD «ing.*Proof.*InductionalongtheproofofTheorem7.8.Thel»
+            NEW «asing.*Proof.*Inductionon`|I|`.For`I=∅`thesequenceis`(0)`.Let`I≠»
+   replace: OLD «*Proof.*InductionalongtheproofofTheorem7.8.Thelevelsetsoft»
+            NEW «uctionon`|I|`.For`I=∅`thesequenceis`(0)`.Let`I≠∅`,with`H'`and`d_1`asinLemma7.7»
+   replace: OLD «nductionalongtheproofofTheorem7.8.Thelevelsetsofthefi»
+            NEW «enceis`(0)`.Let`I≠∅`,with`H'`and`d_1`asinLemma7.7.Theshift`d_1`isin»
+   insert: OLD «ionalongtheproofofTheorem7.8.Thelevelsetsofthefirs»
+           NEW «`,with`H'`and`d_1`asinLemma7.7.Theshift`d_1`isintege»
+   replace: OLD «nalongtheproofofTheorem7.8.Thelevelsetsofthefirstha»
+            NEW «th`H'`and`d_1`asinLemma7.7.Theshift`d_1`isinteger,n»
+   delete: OLD «gtheproofofTheorem7.8.Thelevelsetsofthefirsthalfarethoseof`fit(x_{H'})`,shiftedbytheintegernon-in»
+           NEW «`and`d_1`asinLemma7.7.Theshift`d_1`isinteger,non-i»
+   replace: OLD «hoseof`fit(x_{H'})`,shiftedbytheintegernon-increasi»
+            NEW «d_1`asinLemma7.7.Theshift`d_1`isinteger,non-increas»
+   replace: OLD «seof`fit(x_{H'})`,shiftedbytheintegernon-increasing`d_1»
+            NEW «1`asinLemma7.7.Theshift`d_1`isinteger,non-increasing,an»
+   insert: OLD «H'})`,shiftedbytheintegernon-increasing`d_1`,which»
+           NEW «.7.Theshift`d_1`isinteger,non-increasing,andchanges»
+   replace: OLD «ytheintegernon-increasing`d_1`,whichchangesonlyatst»
+            NEW «`isinteger,non-increasing,andchangesonlyatcutsof`x_{H»
+   delete: OLD «heintegernon-increasing`d_1`,whichchangesonlyatstrictcuts(s»
+           NEW «nteger,non-increasing,andchangesonlyatcutsof`x_{H'»
+   delete: OLD «g`d_1`,whichchangesonlyatstrictcuts(step1oftheproofofThe»
+           NEW «creasing,andchangesonlyatcutsof`x_{H'}`(step1ofthe»
+   insert: OLD «chchangesonlyatstrictcuts(step1oftheproofofTheorem»
+           NEW «sing,andchangesonlyatcutsof`x_{H'}`(step1oftheproofofTheorem»
+   insert: OLD «1oftheproofofTheorem7.8);anon-increasingintegershi»
+           NEW «1oftheproofofTheorem7.8);so,byLemma7.2(b),therealfit`Z_1`of»
+   replace: OLD «oftheproofofTheorem7.8);anon-increasingintegershiftthatis»
+            NEW «fofTheorem7.8);so,byLemma7.2(b),therealfit`Z_1`ofthefirsthal»
+   insert: OLD «ofTheorem7.8);anon-increasingintegershiftthatiscon»
+           NEW «);so,byLemma7.2(b),therealfit`Z_1`ofthefirsthalfis`fit(x_{H'})+d_1`»
+   insert: OLD «fTheorem7.8);anon-increasingintegershiftthatiscons»
+           NEW «,therealfit`Z_1`ofthefirsthalfis`fit(x_{H'})+d_1`,integ»
+   replace: OLD «Theorem7.8);anon-increasingintegershiftthatisconstan»
+            NEW «alfit`Z_1`ofthefirsthalfis`fit(x_{H'})+d_1`,integralbyinduction,andby»
+   delete: OLD «7.8);anon-increasingintegershiftthatisconstantoneverylevelsetpreservestheproperty.Thecentrallevelsethastheintegerv»
+           NEW «is`fit(x_{H'})+d_1`,integralbyinduction,andbyLemma»
+   replace: OLD «vestheproperty.Thecentrallevelsethastheintegervalue»
+            NEW «fit(x_{H'})+d_1`,integralbyinduction,andbyLemma7.3`fit(x_H)=[max(Z_1»
+   replace: OLD «stheproperty.Thecentrallevelsethastheintegervalue`0`,»
+            NEW «tegralbyinduction,andbyLemma7.3`fit(x_H)=[max(Z_1,0),min(Z_2,0)]`isintegral.Thepenaltyshift»
+   delete: OLD «property.Thecentrallevelsethastheintegervalue`0`,alevelset»
+           NEW «max(Z_1,0),min(Z_2,0)]`isintegral.Thepenaltyshifto»
+   delete: OLD «entrallevelsethastheintegervalue`0`,alevelsetofpositivevaluehas`⌊μ⌋≥0`,andoneofnegativevaluehas`⌈μ⌉≤0`;whenthereisnocentrallevelset,thetwolevelse»
+           NEW «_1,0),min(Z_2,0)]`isintegral.Thepenaltyshiftofacel»
+   delete: OLD «⌉≤0`;whenthereisnocentrallevelset,thetwolevelsetsatthejunctionhavevalues`μ≥0`and`−μ`.Thepenaltyshiftsareinteg»
+           NEW «0),min(Z_2,0)]`isintegral.Thepenaltyshiftofacellis»
+   insert: OLD «0`and`−μ`.Thepenaltyshiftsareinteger,non-increasin»
+           NEW «sintegral.Thepenaltyshiftofacellisinteger,non-increasing,a»
+   delete: OLD «`and`−μ`.Thepenaltyshiftsareinteger,non-increasingand»
+           NEW «.Thepenaltyshiftofacellisinteger,non-increasing,an»
+   insert: OLD «areinteger,non-increasingandchangeonlyatstrictcuts»
+           NEW «lisinteger,non-increasing,andchangesonlyatcutsof`x_»
+   insert: OLD «r,non-increasingandchangeonlyatstrictcuts(Theorem7»
+           NEW «,non-increasing,andchangesonlyatcutsof`x_H`(Theorem»
+   delete: OLD «increasingandchangeonlyatstrictcuts(Theorem7.8,(Cut)),so»
+           NEW «creasing,andchangesonlyatcutsof`x_H`(Theorem7.8,(C»
+   insert: OLD «andchangeonlyatstrictcuts(Theorem7.8,(Cut)),sobyLe»
+           NEW «sing,andchangesonlyatcutsof`x_H`(Theorem7.8,(Cut)),soLemm»
+   delete: OLD «cuts(Theorem7.8,(Cut)),sobyLemma7.2(b)theykeepthelev»
+           NEW «x_H`(Theorem7.8,(Cut)),soLemma7.2(b)againgivesanin»
+   replace: OLD «.8,(Cut)),sobyLemma7.2(b)theykeepthelevelsetsandshiftthembyinte»
+            NEW «m7.8,(Cut)),soLemma7.2(b)againgivesanintegralfit.Inthehou»
+   delete: OLD «emma7.2(b)theykeepthelevelsetsandshiftthembyintegers.I»
+           NEW «)),soLemma7.2(b)againgivesanintegralfit.Inthehouse»
+   delete: OLD «(b)theykeepthelevelsetsandshiftthembyintegers.Inthehouse`ℓ=2^k»
+           NEW «soLemma7.2(b)againgivesanintegralfit.Inthehouse`ℓ=»
+   delete: OLD «elsetsandshiftthembyintegers.Inthehouse`ℓ=2^k−1`wit»
+           NEW «ma7.2(b)againgivesanintegralfit.Inthehouse`ℓ=2^k−1»
+   replace: OLD «setsandshiftthembyintegers.Inthehouse`ℓ=2^k−1`with`»
+            NEW «a7.2(b)againgivesanintegralfit.Inthehouse`ℓ=2^k−1`with`»
+   insert: OLD «ehouse`ℓ=2^k−1`with`I≠∅`,thefirstdancer`∅`isalevel»
+           NEW «ehouse`ℓ=2^k−1`with`I≠∅`,`x_H`iscutatitsseconddancer`{t_1}`(Theorem7.8,(Cut)),sothefitofthesequencewithou»
+   insert: OLD «use`ℓ=2^k−1`with`I≠∅`,thefirstdancer`∅`isalevelset»
+           NEW «`(Theorem7.8,(Cut)),sothefitofthesequencewithoutitsfirstdanceristherestricti»
+   delete: OLD «`with`I≠∅`,thefirstdancer`∅`isalevelsetbyitself(thecu»
+           NEW «encewithoutitsfirstdanceristherestrictionof`fit(x_»
+   insert: OLD «`I≠∅`,thefirstdancer`∅`isalevelsetbyitself(thecuta»
+           NEW «cewithoutitsfirstdanceristherestrictionof`fit(x_H)`.Finally,onalevelsetofintegralvalue`»
+   replace: OLD «firstdancer`∅`isalevelsetbyitself(thecutat`{t_1}`iss»
+            NEW «x_H)`.Finally,onalevelsetofintegralvalue`z`with`p`positionsthesumis`S»
+   insert: OLD «tdancer`∅`isalevelsetbyitself(thecutat`{t_1}`isstr»
+           NEW «lsetofintegralvalue`z`with`p`positionsthesumis`S=pz`,so`»
+   replace: OLD «dancer`∅`isalevelsetbyitself(thecutat`{t_1}`isstrict),»
+            NEW «ntegralvalue`z`with`p`positionsthesumis`S=pz`,so`Smodp=0»
+   replace: OLD «∅`isalevelsetbyitself(thecutat`{t_1}`isstrict),soit»
+            NEW «lue`z`with`p`positionsthesumis`S=pz`,so`Smodp=0`and»
+   replace: OLD «isalevelsetbyitself(thecutat`{t_1}`isstrict),soitsdeletionke»
+            NEW «e`z`with`p`positionsthesumis`S=pz`,so`Smodp=0`andth»
+   insert: OLD «yitself(thecutat`{t_1}`isstrict),soitsdeletionkeep»
+           NEW «`with`p`positionsthesumis`S=pz`,so`Smodp=0`andtheintegerf»
+   insert: OLD «itself(thecutat`{t_1}`isstrict),soitsdeletionkeeps»
+           NEW «positionsthesumis`S=pz`,so`Smodp=0`andtheintegerfitis`z`there.∎Strictnessisnotusedinthisp»
+   replace: OLD «f(thecutat`{t_1}`isstrict),soitsdeletionkeepstheothe»
+            NEW «egerfitis`z`there.∎Strictnessisnotusedinthisproof:ac»
+   insert: OLD «hecutat`{t_1}`isstrict),soitsdeletionkeepstheother»
+           NEW «rfitis`z`there.∎Strictnessisnotusedinthisproof:acutise»
+   insert: OLD «ecutat`{t_1}`isstrict),soitsdeletionkeepstheotherl»
+           NEW «s`z`there.∎Strictnessisnotusedinthisproof:acutisenough.»
+   insert: OLD «cutat`{t_1}`isstrict),soitsdeletionkeepstheotherle»
+           NEW «ere.∎Strictnessisnotusedinthisproof:acutisenough.It»
+   insert: OLD «utat`{t_1}`isstrict),soitsdeletionkeepstheotherlev»
+           NEW «e.∎Strictnessisnotusedinthisproof:acutisenough.Itisu»
+   replace: OLD «tat`{t_1}`isstrict),soitsdeletionkeepstheotherlevelset»
+            NEW «Strictnessisnotusedinthisproof:acutisenough.Itisusedwhereth»
+   insert: OLD «_1}`isstrict),soitsdeletionkeepstheotherlevelsets.»
+           NEW «snotusedinthisproof:acutisenough.Itisusedwheretheleve»
+   replace: OLD «1}`isstrict),soitsdeletionkeepstheotherlevelsets.∎»
+            NEW «usedinthisproof:acutisenough.Itisusedwherethelevelsetsthemse»
+   insert: OLD «isstrict),soitsdeletionkeepstheotherlevelsets.∎»
+           NEW «roof:acutisenough.Itisusedwherethelevelsetsthemselves»
+   replace: OLD «sstrict),soitsdeletionkeepstheotherlevelsets.∎»
+            NEW «:acutisenough.Itisusedwherethelevelsetsthemselvesmat»
+   delete: OLD «ct),soitsdeletionkeepstheotherlevelsets.∎»
+           NEW «isenough.Itisusedwherethelevelsetsthemselvesmatter»
+   insert: OLD «ionkeepstheotherlevelsets.∎»
+           NEW «Itisusedwherethelevelsetsthemselvesmatter,inProposition9.6(H).Lemma7.9alsoshowsth»
+   replace: OLD «onkeepstheotherlevelsets.∎»
+            NEW «vesmatter,inProposition9.6(H).Lemma7.9alsoshowsthattheintegerpartofLemma7.2(b)wasneverneededbeyondintegralfits;wekeepthestrict(Cut)ofTheorem7.8becauseProposition9.6needsit.»
+HUNK 20 @@ -636,12 +668,14 @@: DIFFERS
+   insert: OLD «kM)`,`M=M^{(1)}(λ,i)`.Theintegerfitsarenon-increas»
+           NEW «kM)`,`M=M^{(1)}(λ,i)`.Thefitsareintegral,sotheintegerfitsarethefitsthem»
+   insert: OLD «(1)}(λ,i)`.Theintegerfitsarenon-increasing(Lemma7.»
+           NEW «integral,sotheintegerfitsarethefitsthemselves,andtheyarenon-increasing(Lemma7.»
+HUNK 21 @@ -651,7 +685,9 @@: SAME after normalization
+HUNK 22 @@ -670,8 +706,12 @@: DIFFERS
+   delete: OLD «tryof`ŷ_{j−1}`,step1reads:`ŷ_j(D_0)=max(ŷ_{j−1}(D_0»
+           NEW «tryof`ŷ_{j−1}`,step1reads`ŷ_j(D_0)=max(ŷ_{j−1}(D_0»
+HUNK 23 @@ -684,16 +724,18 @@: DIFFERS
+   delete: OLD «valueispositive;otherwiseeveryvalueof`X_1`is`≤0`,thefitvanishe»
+           NEW «valueispositive;otherwise`Z_1≤0`onthewholefirsthal»
+   replace: OLD «ve;otherwiseeveryvalueof`X_1`is`≤0`,thefitvanisheso»
+            NEW «alueispositive;otherwise`Z_1≤0`onthewholefirsthalf,»
+   delete: OLD «otherwiseeveryvalueof`X_1`is`≤0`,thefitvanishesonthewh»
+           NEW «eispositive;otherwise`Z_1≤0`onthewholefirsthalf,th»
+   insert: OLD «seeveryvalueof`X_1`is`≤0`,thefitvanishesonthewhole»
+           NEW «positive;otherwise`Z_1≤0`onthewholefirsthalf,thefitvanishesonthewhole»
+   insert: OLD «7.8,(Cut),andLemma7.2(b)).Sothelargestbigclockis`⌈»
+           NEW «7.8,(Cut),andLemma7.2(b));thisiswherestrictnessisneeded,sinceajumpoftheshiftatacutthatisnotstrict,insidethehead,wouldsplitit.Sothelargestbigclockisth»
+   delete: OLD «)).Sothelargestbigclockis`⌈μ⌉`,where`μ`isthemeanoftherawclocks`u_i»
+           NEW «it.Sothelargestbigclockisthemean`μ`oftherawclocks`»
+   insert: OLD «is`⌈μ⌉`,where`μ`isthemeanoftherawclocks`u_i(D)`,`D»
+           NEW «elargestbigclockisthemean`μ`oftherawclocks`u_i(D)`,`D»
+   insert: OLD «rawclocks`u_i(D)`,`D⊆P_l`.*(K)Thebound.*ApplyLemma»
+           NEW «rawclocks`u_i(D)`,`D⊆P_l`,whichisaninteger(Lemma7.9).*(K)Thebound.*ApplyLemma»
+   delete: OLD «eanis`≤g(n−i+1)`,andsois`⌈μ⌉`.∎»
+           NEW «eanis`≤g(n−i+1)`,andsois`μ`.∎»
+   delete: OLD «nis`≤g(n−i+1)`,andsois`⌈μ⌉`.∎»
+           NEW «anis`≤g(n−i+1)`,andsois`μ`.∎»
+HUNK 24 @@ -702,7 +744,7 @@: DIFFERS
+   replace: OLD «)=max_{y≤n−3}φ(y)=g(n−2)`.And`g(n−2)=G`,because`φ(n−2)»
+            NEW «)=max_{y≤n−3}φ(y)=g(n−2)`,whichis`G`because`φ(n−2)=n−2≤φ(n»
+   delete: OLD «_{y≤n−3}φ(y)=g(n−2)`.And`g(n−2)=G`,because`φ(n−2)=n−2≤φ(n»
+           NEW «n−3}φ(y)=g(n−2)`,whichis`G`because`φ(n−2)=n−2≤φ(n−»
+   delete: OLD «(y)=g(n−2)`.And`g(n−2)=G`,because`φ(n−2)=n−2≤φ(n−3)»
+           NEW «3}φ(y)=g(n−2)`,whichis`G`because`φ(n−2)=n−2≤φ(n−3)»
+HUNK 25 @@ -730,14 +772,17 @@: DIFFERS
+   replace: OLD «`T(λ)`.**Corollary10.2.**`Z_2⊕Syl_2K̄(n)≅⊕_λX̄(λ,(n−λ)/2)^{m_λ(n)}`forevery`n≥2`,withthemulti»
+            NEW «`T(λ)`.**Corollary10.2.**Forevery`n≥2`,withthemulti»
+   insert: OLD «ultiplicitiesofTheorem3.6.»
+           NEW «ultiplicitiesofTheorem3.6,`Z_2⊕Syl_2K̄(n)≅⊕_λX̄(λ,(n−λ)/2)^{m_λ(n)}`.»
+HUNK 26 @@ -758,10 +803,13 @@: DIFFERS
+   insert: OLD «+2f)(j+2f+1)=−4(c+f)u_f`,`u_f`odd(`u_f=j+2f+1`fore»
+           NEW «+2f)(j+2f+1)=−4(c+f)u_f`,where`u_f`isodd(`u_f=j+2f+1`fo»
+   insert: OLD «j+2f+1)=−4(c+f)u_f`,`u_f`odd(`u_f=j+2f+1`foreven`j»
+           NEW «1)=−4(c+f)u_f`,where`u_f`isodd(`u_f=j+2f+1`foreven`j»
+HUNK 27 @@ -771,7 +819,9 @@: SAME after normalization
+HUNK 28 @@ -797,9 +847,9 @@: DIFFERS
+   insert: OLD «**Lemma10.6.**(a)Forapaymentsystemthetwistmove»
+           NEW «**Lemma10.6.**(a)Foranevenpaymentsystemthetwistmove»
+   insert: OLD «=u·M_w(G)`.*Proof.*(a)For`G=F+π(D)+K(D)`(couplings»
+           NEW «=u·M_w(G)`.*Proof.*(a)Foranevenpaymentsystem`G=F+π(D)+K(D)`(couplings»
+HUNK 29 @@ -821,13 +871,16 @@: DIFFERS
+   insert: OLD «∎**Lemma10.10(pathsum).**`y^Ξ_L(f)=y^Σ_L(f)·(1+e_L»
+           NEW «∎**Lemma10.10(pathsum).**Forevery`L≥0`andeveryfloor`f`,`y^Ξ_L(f)=y^Σ_L(f)·(1+e_L»
+HUNK 30 @@ -893,7 +946,7 @@: DIFFERS
+   insert: OLD «comesfromthefactthatitisapaymentsystem.(2)Theclass»
+           NEW «comesfromthefactthatitisanevenpaymentsystem.(2)Theclass»
+   insert: OLD «icient,notnecessary:everypaymentsystemdancesclean,»
+           NEW «icient,notnecessary:everyevenpaymentsystemdancesclean,»
+   insert: OLD «tspayments(Proposition4.1).Withhigherdividedpowers»
+           NEW «tspayments(Proposition4.1,Lemma10.6(a)).Withhigherdividedpowers»
+HUNK 31 @@ -905,7 +958,8 @@: SAME after normalization
+HUNK 32 @@ -940,7 +994,8 @@: SAME after normalization
+HUNK 33 @@ -949,7 +1004,9 @@: SAME after normalization
+HUNK 34 @@ -981,9 +1038,10 @@: DIFFERS
+   replace: OLD «e|`λ<64`,`i≤12`,`α=1,2`|1550cells,0failures|none||The»
+            NEW «e|`λ<64`,`i≤12`,`α=1,2`|1638cells,0failures|therawclo»
+   insert: OLD «1,2`|1550cells,0failures|none||Theorem7.8:theconst»
+           NEW «1,2`|1638cells,0failures|therawclocks,withoutpooling,arerejectedinall322cel»
+   insert: OLD «,2`|1550cells,0failures|none||Theorem7.8:theconstr»
+           NEW «herawclocks,withoutpooling,arerejectedinall322cellswherepoolingchangesthem||Theore»
+   insert: OLD «2`|1550cells,0failures|none||Theorem7.8:theconstru»
+           NEW «ectedinall322cellswherepoolingchangesthem||Theorem7.8»
+   insert: OLD «`|1550cells,0failures|none||Theorem7.8:theconstruc»
+           NEW «dinall322cellswherepoolingchangesthem||Theorem7.8:thecon»
+   insert: OLD «|1550cells,0failures|none||Theorem7.8:theconstruct»
+           NEW «22cellswherepoolingchangesthem||Theorem7.8:theconstruct»
+   insert: OLD «`c_F`|thesame|houseswith`λ≤127`,`α≤3`,every`ℓ`|160»
+           NEW «`c_F`|thesame|houseswith`I≠∅`and`k≤6`(`λ≤127`),`α≤3`,every`ℓ`|16»
+   insert: OLD «thesame|houseswith`λ≤127`,`α≤3`,every`ℓ`|16002hous»
+           NEW «with`I≠∅`and`k≤6`(`λ≤127`),`α≤3`,every`ℓ`|16002hous»
+   replace: OLD «380houses,8001boundaries,393120shifts,360deletions,»
+            NEW «380houses,8001boundaries,192024non-zeroshifts(24one»
+   delete: OLD «0houses,8001boundaries,393120shifts,360deletions,0fa»
+           NEW «0houses,8001boundaries,192024non-zeroshifts(24onea»
+   insert: OLD «ses,8001boundaries,393120shifts,360deletions,0fail»
+           NEW «ouses,8001boundaries,192024non-zeroshifts(24oneachhousewitha»
+   insert: OLD «01boundaries,393120shifts,360deletions,0failures|`»
+           NEW «ries,192024non-zeroshifts(24oneachhousewithaboundary),360deletions,0failures|s»
+   delete: OLD «s,360deletions,0failures|`x=(3,4,3,4)`,cutat`2`butnotstrictly,with`δ=(1,1,0,0)»
+           NEW «),360deletions,0failures|strictnesstestedonedancer»
+   replace: OLD «,4)`,cutat`2`butnotstrictly,with`δ=(1,1,0,0)`,breaksthe»
+            NEW «eletions,0failures|strictnesstestedonedanceraftertheboundaryfailsin1911of7»
+   replace: OLD «tat`2`butnotstrictly,with`δ=(1,1,0,0)`,breakstheintege»
+            NEW «esstestedonedanceraftertheboundaryfailsin1911of7038houses;theshift»
+   replace: OLD «`butnotstrictly,with`δ=(1,1,0,0)`,breakstheintegers»
+            NEW «raftertheboundaryfailsin1911of7038houses;theshiftmo»
+   replace: OLD «utnotstrictly,with`δ=(1,1,0,0)`,breakstheintegershi»
+            NEW «ftertheboundaryfailsin1911of7038houses;theshiftmovedon»
+   replace: OLD «notstrictly,with`δ=(1,1,0,0)`,breakstheintegershift|»
+            NEW «heboundaryfailsin1911of7038houses;theshiftmovedonedancerlatebreakstheintegershiftin18»
+   insert: OLD «0)`,breakstheintegershift|»
+           NEW «latebreakstheintegershiftin18606of192024||Lemma7.9:thefitof`x_H`,»
+   insert: OLD «)`,breakstheintegershift|»
+           NEW «egershiftin18606of192024||Lemma7.9:thefitof`x_H`,ofitsshiftsandofitsdeletionsisintegral|thesame|thesame|0non-integralvalues|`x_H`with`1`addedatitsfirstdancer(notahouse)hasanon-integralfitin1942houses|»
+HUNK 35 @@ -998,7 +1056,7 @@: DIFFERS
+   replace: OLD «Threereadersoftheproject(Ap»
+            NEW «Fourreadersoftheproject(Appe»
+   delete: OLD «Threereadersoftheproject(Appen»
+           NEW «Fourreadersoftheproject(Appen»
+HUNK 36 @@ -1008,11 +1066,15 @@: DIFFERS
+   insert: OLD «imofitsproof,strict(Cut),Lemma7.9,theintegershifts»
+           NEW «imofitsproof,strict(Cut),theintegerseparationofadjacentlevelsets(Lemma7.9ofversion2),thein»
+   insert: OLD «roof,strict(Cut),Lemma7.9,theintegershifts|3|allho»
+           NEW «djacentlevelsets(Lemma7.9ofversion2),theintegershifts|3|allho»
+   insert: OLD «2550and2808of3979houses||Corollaries1.5,1.6(fromth»
+           NEW «2550and2808of3979houses||Theorem7.8,strict(Cut),theintegerseparationofadjacentlevelsets(Lemma7.9ofversion2),thepenaltyshifts`P_r,P_c≤4`andthedeletionat`i=0`|4|everyhousewith`k≤7`,`α≤3`|65532houses,777240non-zeroshifts,741deletions,0failures|apriceofthecentralflatoneaboveoronebelowtheintervalfailsin10374houseseach;theshiftonedancerlatefailsin78070of721872;strictnessonedanceraftertheboundaryfailsin7967of30078||Theorem7.10onthematrices`M`|4|`λ≤127`,`i≤30`,`α=1,2`|7874cells,0failures|therawclocksarerejectedinall1834cellswith`i≥1`wherepoolingacts;thepenaltyonedancerlateinall1904||Lemma7.2(b),restated,onrandomsequences|4|50000sequencesoflength`≤10`|0failures|ajumpatacutthatisnotstrictbreakstheintegerpartin736of9939trials||Lemma7.9(integrality)|4|everyhousewith`k≤7`,`α≤3`,and7634cells|nonon-integrallevelset|—||Corollaries1.5,1.6(fromth»
+   replace: OLD «aries1.5,1.6(fromtherule)·1.7|3|`n≤300`·`e≤8`|0fail»
+            NEW «aries1.5,1.6(fromtherule)and1.7|3|`n≤300`·`e≤8`|0fail»
+HUNK 37 @@ -1023,10 +1085,10 @@: DIFFERS
+   insert: OLD «ollaries1.5,1.6and1.7.Thetextofversion1wasreadcold»
+           NEW «ollaries1.5,1.6and1.7.Theirproofswerereadcoldastextinversion1,whichhadon»
+   insert: OLD «ries1.5,1.6and1.7.Thetextofversion1wasreadcoldonce»
+           NEW «rproofswerereadcoldastextinversion1,whichhadonegap(Lemma7.2(b));therepairofversion2(therestatedLem»
+   replace: OLD «.6and1.7.Thetextofversion1wasreadcoldonceasawhole(AppendixA).**Repairedint»
+            NEW «.2(b));therepairofversion2(therestatedLemma7.2(b),t»
+   delete: OLD «1wasreadcoldonceasawhole(AppendixA).**Repairedinthisversion,audited,notyetreadcold:**therestatedLemma7.2(b),th»
+           NEW «(b));therepairofversion2(therestatedLemma7.2(b),th»
+   delete: OLD «hestrict(Cut)ofTheorem7.8withitsproof,andtheirusesinLemma7.9,T»
+           NEW «hestrict(Cut)ofTheorem7.8,andtheirusesinTheorem7.1»
+   delete: OLD «thitsproof,andtheirusesinLemma7.9,Theorem7.10andProposition»
+           NEW «Theorem7.8,andtheirusesinTheorem7.10andProposition»
+   insert: OLD «orem7.10andProposition9.6.Nostatementofatheoremcha»
+           NEW «orem7.10andProposition9.6)wasreadcoldinitsturn(AppendixA).**Addedinversion3,audited,notyetreadcold:**Lemma7.9initsnewform(integralityofthefit),foundandprovedbythefourthreaderandre-provedbytheauditor;andthecorrectionslistedinAppendixA.Nostatementofatheoremcha»
+   insert: OLD «tatementofatheoremchanged.**Notdone:**acoldreading»
+           NEW «tatementofatheoremchangedinversion2orinversion3;Lemma7.2(b)wasrestatedinversion2,andLemma7.9wasstrengthenedinversion3.**Notdone:**acoldreading»
+   delete: OLD «coldreadingofthechangesofthisversion;ahumanreferee;afo»
+           NEW «coldreadingofthechangesofversion3;ahumanreferee;af»
+   insert: OLD «ofthechangesofthisversion;ahumanreferee;aformalver»
+           NEW «dingofthechangesofversion3;ahumanreferee;aformalver»
+HUNK 38 @@ -1049,8 +1111,9 @@: DIFFERS
+   insert: OLD «ordsaidmorethanthecodedid,andaboutthirtypointsofpr»
+           NEW «ordsaidmorethanthecodedid(therangeofTheorem6.2,thehousesofTheorem7.8countedashouse-checks,acontrolannouncedandnotimplementedin`gate_dance.py`,androwsrestingoncodenotprinted),andaboutthirtypointsofpr»
+   insert: OLD «edinversion2.**Version2**(thistext).**Itschangesha»
+           NEW «edinversion2.**Version2**repairedthegap.Itschangeswerereadcoldon5October2026(coldreader4)byareaderwithnoaccesstotheflights,theauditsortheearlierreadings,whore-derivedeverychangedstep,checkedtherepaironeveryhousewith`k≤7`andagainsttheSmithformof`M`in7874cells,andwroteitsowncode:therepair**holds**.Itfoundonefalsesentence(Remark(2)of§10.5said«everypaymentsystem»whereProposition4.1needsanevenone;thesamewordwasmissinginLemma10.6(a)),tworowsof§12.1thatsaidmorethantheircode(zeroshiftscountedasshifts,andarangewiderthantheonerun),acontrolthatdidnotcontrolthehousecheck,andpointsofpresentation,themainonebeingthatthecasesoftheproofofTheorem7.8rantogetherinthepdf.Italsofoundthatthefitofeveryhouseisintegral,sotheroundingoftheintegerfitneveractsinthispaper:thegapofversion1wasagapofproof,neverofconclusion.**Version3**(thistext)statesthatinteg»
+   insert: OLD «n2.**Version2**(thistext).**Itschangeshavenotyetbe»
+           NEW «on.**Version3**(thistext)statesthatintegralityasLemma7.9,makesallthecorrectionsabove,givesthegatesof§7house-levelcontrolsthatcanfailandrunsTheorem7.10onthewholeprintedrange(§12.1),andkeepstherepairofversion2asitwasread.**Itschangeshavenotyetbe»
+TOTAL 38 hunks; 9 identical after normalization
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=5680 t=0s

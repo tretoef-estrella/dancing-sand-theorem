@@ -1,0 +1,33 @@
+math-gap 32.7  text-mean 3.1  p2  [2 | ∏]  {0,1} , edges between words that differ in one letter — the number of spanning trees is 2 
+math-gap 30.5  text-mean 3.7  p37  [(Γ | =]  (a), (b). It has couplings with an odd constant term (Γ = Γ ); they are harmless, because 
+math-gap 29.9  text-mean 2.5  p40  [(−1) | exp(F),]  (−1) exp(F), an operator built from the weight and the divided powers of F, so it is carri
+math-gap 28.7  text-mean 3.1  p19  [Σ | v]  Σ v (d) = (y − x) − s (y − 1) + s (x − 1) (x ≥ 1), is the case «m = −1»: since m + K + o =
+math-gap 28.3  text-mean 2.8  p28  [2 | for]  (2 − 2m (n) − 4m (n))/4, which by Lemma 3.7 is 2 − 2 for odd n and 2 − 2 for even n ≥ 2;
+math-gap 28.2  text-mean 2.5  p18  [Σ | v]  formula v (x!) = x − s (x), Σ v (m + 1 + d) = (y − x) − s (m + y) + s (m + x). With x = o 
+math-gap 27.8  text-mean 2.6  p28  [2 | =]  Z/2 can only be a small clock with a = 1, and a family with k ≥ 2 has 2 = dim T(λ)/4 of th
+math-gap 27.2  text-mean 4.2  p5  [max | φ(x)]  g(N) := max φ(x) = max ( x + v x). (Gao et al. write c (Q ) for the i‑th largest invariant
+math-gap 26.4  text-mean 2.9  p28  [max | φ(y)]  Lemma 9.2. (a) φ(λ + 1) + ψ(P ) = φ(Y ) for 0 ≤ l ≤ s. (b) For N ≥ 1, max φ(y) is attained
+math-gap 25.5  text-mean 2.9  p34  [G | =]  inverse of a block matrix). So G = 2S is 2 times a block of G ; compose over the levels. T
+math-gap 24.6  text-mean 2.9  p31  [Σ | F]  (exp(F) b = b + b , exp(F) b = b ). Since Δ(F ) = Σ F ⊗ F , exp(F) is group-like, and so i
+math-gap 24.4  text-mean 3.1  p11  [Σ | F]  holds in U . Put A := Z and Dist := A ⊗ Dist , a Hopf algebra with Δ(F ) = Σ F ⊗ F , the s
+math-gap 24.2  text-mean 2.9  p34  [) | ⊕]  into diag(1, S); so coker(2 G ) ≅ (Z/2 ) ⊕ coker(2 S) = (Z/2 ) ⊕ coker(2 G ) . Count the r
+math-gap 24.2  text-mean 5.2  p17  [o | =]  the slot D gives the slots D (from A) and D ∪ {h} (from C), with o = o + 2 . The formulas 
+math-gap 22.9  text-mean 3.8  p37  [o | +]  o + c, so the diagonal blocks keep their functions Γ , and the new coupling from D' to D ∪
+math-gap 22.2  text-mean 5.7  p33  [F | (]  (The floor of b ⊗ n' is 2f + e; for instance F ( b n') = ((2q+2)/(2q+1)!!)·b F n ' lands a
+math-gap 21.7  text-mean 3.8  p33  [a)F | and]  It is an associative Q -algebra (the rule is that of F ⁠F = C(a+b, a)F and F p (D) = p(D −
+math-gap 21.4  text-mean 3.1  p3  [(Z/j) | [Bai03,]  Syl ⊕ (Z/j) [Bai03, Theorem 1.2]. About the 2-part he wrote: «The full structure of the Sy
+math-gap 21.3  text-mean 5.6  p17  [c | =]  where c = Σ c x ∈ Q[x : t ∈ I ]/(x ) satisfies c = 1 and c = −(c ) /2 − [h ∈ I]·x c . For 
+math-gap 21.0  text-mean 5.8  p12  [F | (]  1 ⊗ E ; F ( b n) = b F n , F ( b n) = 0, E ( b n) = b E n, E ( b n) = 0. These are the for
+math-gap 20.8  text-mean 3.0  p12  [F | (]  F ( v ⊗ b ) ∈ X . The image v' of v ⊗ b is killed by E (E(v ⊗ b ) = v ⊗ b ∈ X ) and by eve
+math-gap 20.2  text-mean 2.9  p36  [o | (o]  because the position of (D , f − a) is y − a·2 − o (o is additive on disjoint sets). The s
+math-gap 20.0  text-mean 5.9  p18  [Σ | b]  Proof. By Theorem D, v (M ) = 1 − K + o(Δ) + δ(Δ) + α(K + o − o ) + Σ b v (i + d). By Lege
+math-gap 20.0  text-mean 5.0  p33  [Σ | x]  Formal operators. Let 𝔅 be the set of formal sums x = Σ x (D) F , where each x is a functi
+math-gap 19.6  text-mean 5.1  p38  [Σ | ζ]  Lemma 10.20 (the bend). Let c ≥ 1, Ψ := 4(D + c) + ηF + Σ ζ F (η a unit, ζ ∈ Z constants),
+math-gap 19.1  text-mean 3.1  p16  [T(0) | =]  tains an even payment system on T(0) = A , that is, a lower triangular matrix M = M ( λ, i
+math-gap 19.1  text-mean 5.9  p39  [y | (f)/y]  (N ) = (M (Σ) ) · R , where R = y (f)/y (f) on the window [o , o + K − 1]. Expand y as in
+math-gap 19.0  text-mean 4.6  p17  [−c | are]  windows of the new pairs. Their coefficients −c and −c are the coefficients of x and x x i
+math-gap 19.0  text-mean 3.2  p13  [c | =]  2(μ − s) for R = 2s + 1. The diagonal map w' ↦ c ·(R-th vector) with c = (2μ + 1 − 2s)c , 
+math-gap 18.8  text-mean 4.5  p37  [Σ | ζ]  u(D)F + Σ ζ F with constant random integers ζ ∈ [−5, 5], four for each l (248 dances in ea
+lines 690 math-gap>8: 223 >10: 158 >12: 137
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=40976 t=0s

@@ -1,0 +1,7 @@
+self-tests OK
+A cells total 7874; i=0 254; i=0 and I!=empty 240; i>=1 7620; total minus 240 = 7634
+B pooling acts: all 1876; i>=1 1834; i=0 42
+C cells 10455 (i>=1: 10200); Prop 5.3/5.4 mismatches 0; non-integral block mean 0
+C control (+1 at first dancer, I!=empty, i>=1): non-integral in 2316 of 9880
+D houses 16380; non-integral fit of x_H 0; control +1 at first dancer non-integral in 1942
+VIGIA-FIN-OK exit=0 pico_kb=10944 t=3s

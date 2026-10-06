@@ -1,0 +1,10 @@
+== headings in the lowest 12% of the page (y > 740 pt) ==
+== numbered statements running across a page break ==
+  SPLIT Proposition 4.2: starts p15, ends p16
+  SPLIT Proposition 5.4.: starts p19, ends p20
+  SPLIT Lemma 7.3: starts p22, ends p23
+  SPLIT Lemma 7.6: starts p23, ends p24
+  SPLIT Lemma 10.20: starts p38, ends p39
+statements examined: 68
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=5632 t=0s

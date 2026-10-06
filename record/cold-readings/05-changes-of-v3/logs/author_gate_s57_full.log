@@ -1,0 +1,9 @@
+Theorem F on houses lam<=127, alpha<=3, every ell, three prices: 48006 house-checks
+{'walk': 139266, 'walkbad': 0, 'E': 48006, 'M': 48006, 'G': 48006, 'Gbad': 0, 'Ebad': 0, 'Mbad': 0, 'cut': 48006, 'cutbad': 0, 'lam': 48006, 'lambad': 0, 'sep': 48006, 'sepbad': 0, 'interval_empty': 0}
+CONTROL no gold: (G) fails in 164 houses (lam<64, alpha=1); CONTROL c_F = v'(I'): fails in 24 houses
+cost form (Prop 5.2): 109200 entries, 0 bad; Prop 5.3: 14560, 0 bad; Prop 5.4: 301, 0 bad
+Theorem 7.10 (Smith of M = pooled clocks), lam<64, i<=12, alpha=1,2: 1638 cells, 0 bad
+CONTROL Theorem 7.10 without pooling (raw clocks): rejected in 322 of the 322 cells where pooling changes the clocks
+Theorem O (exactly one golden bijection): 61 (I,r) cases, 0 bad
+VIGIA-INNER-DONE
+VIGIA-FIN-OK exit=0 pico_kb=12576 t=57s

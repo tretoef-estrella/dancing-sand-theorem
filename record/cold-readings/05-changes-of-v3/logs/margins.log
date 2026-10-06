@@ -1,0 +1,8 @@
+most common right edges of lines (pt): [(542.0, 879), (539.5, 25), (528.0, 23), (531.5, 20), (521.5, 15), (525.0, 14)]
+largest xMax: 541.95 on p17 word 'the' (xMin 527.58)
+words with xMax > 542.5: 0
+leftmost xMin per page (mode): [(54.5, 44), (72.5, 1), (61.5, 1)]
+smallest xMin: 54.34 on p1 word 'Abstract'
+page sizes: {('594.959960', '841.919980')}
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=4672 t=0s
