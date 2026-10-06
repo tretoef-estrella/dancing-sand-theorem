@@ -13,40 +13,40 @@ The proofs were not found by one mind. They were found by separate instances of 
 
 Every computation ran inside a watchdog that limits memory and time. A result counted only if its log ended with the watchdog's final line.
 
-## The days
+## How it went
 
-**2 October 2026 — choosing the problem.**
+**Choosing the problem.**
 - The author asked for an open problem «within reach, not impossible, not only for specialists».
 - The auditor proposed the 2-part of the sandpile group of the cube. It was open since Bai (2003), and it is the degree-2 member of the family of group rings the author had worked on for three months.
 - His estimate of the odds of proving the whole theorem was one in four.
-- The same day the fold law was found, as a measurement (below), and its first two layers were proved by pencil.
+- Early on, the fold law was found, as a measurement (below), and its first two layers were proved by pencil.
 
-**3 October — the rule.** Four flights closed the Main Theorem:
+**The rule.** Four flights closed the Main Theorem:
 - **Flight 1** split the cube over tilting modules and wrote down a closed rule as a conjecture. The auditor checked it 15 of 15 with his own engines.
 - **Flight 2** found the integral doubling functor `Φ` and the dance (Theorem D). The group was now the Smith form of small explicit matrices, but one step was open: the pooling.
 - **Flight 3** proved the ceiling (Theorem O, the unique cheapest matching).
 - **Flight 4** proved the floor (Theorem F).
 
-That night the auditor read the proof of Theorem F by hand, step by step, and ran his own engine on every family `λ ≤ 254` with no failure. The rule held for every `n`, on two readings.
+Then the auditor read the proof of Theorem F by hand, step by step, and ran his own engine on every family `λ ≤ 254` with no failure. The rule held for every `n`, on two readings.
 
-**4 October — the trophies and the fold.**
+**The trophies and the fold.**
 - **Flight 5** proved Gao et al.'s Conjecture 4.14 and the `(n+1)`-th factor of the 2019 poster.
 - **Flight 6** proved Conjecture 5.4, and the fold law up to `n = 21`.
 - **Flights 7 and 8** carried the fold law to every `n ≤ 100`, then to every `n ≤ 144`, and proved its mod-2 layer for every `n`. They did not close it.
 - **The first cold reader** read the chain of the Main Theorem and wrote: «holds».
 
-**5 October — the fold closes, and the paper.**
+**The fold closes, and the paper.**
 - **Flight 9** proved the last lemma of the fold law (Lemma Ω), so the fold law holds for every `n`.
 - **The second cold reader** read the chain of the fold law and wrote: «holds».
 - A literature search followed: every source read in the original, the citation trees followed.
-- The paper was written that morning.
+- Then the paper was written.
 - **The third cold reader** read it whole and wrote «holds with gaps». It found one gap: the integer part of Lemma 7.2(b) was false as stated. No theorem was affected; its own repair, re-derived, went into version 2.
 - **The fourth reader** confirmed the repair, and proved that the rounding in the rule never acts.
 
-**5–6 October — eight versions.**
+**Eight versions.**
 - Version 3 strengthened Lemma 7.9 and added two missing hypotheses (Lemmas 10.6(a) and 10.10). Versions 4 to 8 changed no numbered statement.
 - What they changed was sentences of the record of the work, the verification tables, and above all the typesetting of the PDF. Each version's changes were read cold by a new reader.
-- Version 8 was published on Zenodo on 6 October 2026.
+- Version 8 was published on Zenodo.
 
 ## The images
 
@@ -61,7 +61,7 @@ The author does not write mathematics. What he gave were pictures, in Spanish, o
 - **The cave.** «The deeper you go, do everything by half; the hole narrows; it is the only way down, as in *The Shawshank Redemption*.» It told flight 9 what to measure. The coefficients of every level are functions of twice the position: the ring `𝒦` of Theorem 10.15, the heart of the fold law. The pilot wrote afterwards: «Without the measurement "h + 2" I would not have looked for functions of 2y.»
 - **«The hinges come in pairs; the bugs are findings.»** The auditor's weights had been random. That was the bug, and it hid the real structure: the cube's weights come in pairs (the series of `tanh` and `coth`). Following this, flight 9 proved that the general statement it had been chasing was false, and proved the true one.
 
-By the pilot of flight 9's own count — not checked line by line — there were about 27 distinct images over the nine flights. About 20 served, and at least 9 have the exact shape of a theorem. Others were decorative, and one served only to kill a candidate. One image of 4 October, the turned lid, gave a symmetry that is measured and not proved: open question 2 of the paper.
+By the pilot of flight 9's own count — not checked line by line — there were about 27 distinct images over the nine flights. About 20 served, and at least 9 have the exact shape of a theorem. Others were decorative, and one served only to kill a candidate. One image, the turned lid, gave a symmetry that is measured and not proved: open question 2 of the paper.
 
 ## What failed
 
@@ -77,11 +77,10 @@ The record keeps every failure at the same size as the successes. A few of them:
 
 ## The numbers
 
-Counted on 6 October 2026 in the working folder of the project, each file counted once by content.
+Counted in the working folder of the project when version 8 was published, each file counted once by content.
 
 | | |
 |---|---|
-| Duration | 2 to 6 October 2026, from the choice of the problem to publication |
 | Flights (constructors), each audited | **9** |
 | Cold readings | **10**: 2 of the chains of proof, 8 of the text |
 | Versions of the paper | **8**; one gap found and repaired (version 2); no numbered statement changed after version 3 |

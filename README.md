@@ -98,7 +98,7 @@ Before release we searched the literature in depth and honestly: arXiv and journ
 
 ## How it was made
 
-The work began on 2 October 2026 as a search for an open problem within reach, inside another project of the author. It was carried out by separate instances of Claude, Anthropic's AI, in separate roles under the author's direction: constructors who found and wrote proofs, each from a written mission («flights» 1 to 9); auditors who re-derived every step in their own words and ran their own engines; and cold readers who read the chains and then the text with no access to the audits. Several decisive ideas started as everyday images given by the author and translated into mathematics. The story, with the dead ends and the failed predictions, is in **[THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md)**.
+The work began as a search for an open problem within reach, inside another project of the author. It was carried out by separate instances of Claude, Anthropic's AI, in separate roles under the author's direction: constructors who found and wrote proofs, each from a written mission («flights» 1 to 9); auditors who re-derived every step in their own words and ran their own engines; and cold readers who read the chains and then the text with no access to the audits. Several decisive ideas started as everyday images given by the author and translated into mathematics. The story, with the dead ends and the failed predictions, is in **[THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md)**.
 
 ---
 
