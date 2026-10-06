@@ -1,0 +1,303 @@
+words: v7 34374, v8 33297
+differing runs: 100
+--- replace v7 p.1 words 29-30 (1) | v8 p.1 words 29-30 (1)
+   v7: · 6 October 2026 · version [[ 7 ]] Abstract Let 𝐾(𝑄𝑛) be the sandpile
+   v8: · 6 October 2026 · version [[ 8 ]] Abstract Let 𝐾(𝑄𝑛) be the sandpile
+--- replace v7 p.2 words 629-631 (2) | v8 p.2 words 629-632 (3)
+   v7: with no access to the audits. [[ Version 1 ]] of this text was read cold
+   v8: with no access to the audits. [[ The first version ]] of this text was read cold
+--- replace v7 p.2 words 686-688 (2) | v8 p.2 words 687-691 (4)
+   v7: used it; no theorem was affected. [[ Version 2 ]] repaired it (§7.1, §7.4, §7.5, §9.2),
+   v8: used it; no theorem was affected. [[ The second ver‐ sion ]] repaired it (§7.1, §7.4, §7.5, §9.2),
+--- replace v7 p.2 words 695-696 (1) | v8 p.2 words 698-699 (1)
+   v7: it (§7.1, §7.4, §7.5, §9.2), and [[ the ]] changes of version 2 were read
+   v8: it (§7.1, §7.4, §7.5, §9.2), and [[ its ]] changes were read cold the same
+--- delete v7 p.2 words 697-700 (3) | v8 p.2 words 700-700 (0)
+   v7: §7.4, §7.5, §9.2), and the changes [[ of version 2 ]] were read cold the same day
+   v8: §7.4, §7.5, §9.2), and its changes [[  ]] were read cold the same day
+--- replace v7 p.2 words 707-709 (2) | v8 p.2 words 707-708 (1)
+   v7: read cold the same day by [[ a fourth ]] reader: the repair holds. That reader
+   v8: read cold the same day by [[ another ]] reader: the repair holds. That reader
+--- insert v7 p.2 words 715-715 (0) | v8 p.2 words 714-715 (1)
+   v7: reader: the repair holds. That reader [[  ]] found one false sentence, in a
+   v8: reader: the repair holds. That reader [[ also ]] found one false sentence, in a
+--- delete v7 p.2 words 745-755 (10) | v8 p.2 words 745-745 (0)
+   v7: use is for an even system), [[ two rows of §12.1 that said more than their code, ]] and points of presentation; it also
+   v8: use is for an even system), [[  ]] and found, with a two-line proof,
+--- delete v7 p.2 words 756-761 (5) | v8 p.2 words 746-746 (0)
+   v7: said more than their code, and [[ points of presentation; it also ]] found, with a two-line proof, that
+   v8: is for an even system), and [[  ]] found, with a two-line proof, that
+--- insert v7 p.2 words 779-779 (0) | v8 p.2 words 764-766 (2)
+   v7: integral (Lemma 7.9). The changes of [[  ]] version 3 were read cold by
+   v8: integral (Lemma 7.9). The changes of [[ each later ]] version were read cold in turn,
+--- delete v7 p.2 words 780-781 (1) | v8 p.2 words 767-767 (0)
+   v7: (Lemma 7.9). The changes of version [[ 3 ]] were read cold by a fifth
+   v8: The changes of each later version [[  ]] were read cold in turn, each
+--- insert v7 p.2 words 784-784 (0) | v8 p.2 words 770-774 (4)
+   v7: of version 3 were read cold [[  ]] by a fifth reader: they hold,
+   v8: each later version were read cold [[ in turn, each time ]] by a new reader; none of
+--- replace v7 p.2 words 786-792 (6) | v8 p.2 words 776-784 (8)
+   v7: 3 were read cold by a [[ fifth reader: they hold, with no ]] gap and no error; that reader
+   v8: in turn, each time by a [[ new reader; none of these readings found a ]] gap or an error in the
+--- replace v7 p.2 words 793-849 (56) | v8 p.2 words 785-788 (3)
+   v7: reader: they hold, with no gap [[ and no error; that reader found points of presentation and defects of typesetting, corrected in version 4 except two (Appendix A). The changes of version 4 were read cold by a sixth reader: the mathe‐ matics of every change holds, with no gap and no error; that reader found one false number and one false sentence ]] in the record of the readings,
+   v8: of these readings found a gap [[ or an error ]] in the mathematics. Between them, they
+--- replace v7 p.2 words 851-855 (4) | v8 p.2 words 790-797 (7)
+   v7: and one false sentence in the [[ record of the readings, ]] inexact sentences, and defects of typesetting,
+   v8: gap or an error in the [[ mathematics. Between them, they found false or ]] inexact sentences in the record of
+--- delete v7 p.2 words 856-949 (93) | v8 p.2 words 798-798 (0)
+   v7: the record of the readings, inexact [[ sentences, and defects of typesetting, corrected in version 5. The changes of version 5 were read cold by a seventh reader: the mathematics of every change holds, with no gap and no error; that reader found one false sentence in the record of the readings, inexact sentences, and defects of typesetting, corrected in version 6. The changes of version 6, and its whole pdf page by page, were read cold by an eighth reader: the mathematics of every change holds, and nothing on the page is bro‐ ken; that reader found two false ]] sentences in the record of the
+   v8: them, they found false or inexact [[  ]] sentences in the record of the
+--- replace v7 p.2 words 955-958 (3) | v8 p.2 words 804-809 (5)
+   v7: sentences in the record of the [[ work, one row ]] of §12.2 that printed only one
+   v8: sentences in the record of the [[ work and in §12, points ]] of presentation, and defects of typesetting;
+--- replace v7 p.2 words 959-964 (5) | v8 p.2 words 810-813 (3)
+   v7: of the work, one row of [[ §12.2 that printed only one ]] of the two ranges its reader
+   v8: work and in §12, points of [[ presentation, and defects ]] of typesetting; what was corrected, and
+--- insert v7 p.2 words 965-965 (0) | v8 p.2 words 814-831 (17)
+   v7: §12.2 that printed only one of [[  ]] the two ranges its reader ran,
+   v8: points of presentation, and defects of [[ typesetting; what was corrected, and what was left as it was, is listed with its source in ]] the record kept with the project
+--- replace v7 p.2 words 966-998 (32) | v8 p.2 words 832-838 (6)
+   v7: that printed only one of the [[ two ranges its reader ran, and one sentence of §1.7 that could be misread, corrected in this version 7. The changes of version 7 have not yet been read cold (§13, Appendix ]] A). No human expert has refereed
+   v8: listed with its source in the [[ record kept with the project (Appendix ]] A). No human expert has refereed
+--- delete v7 p.4 words 1824-1825 (1) | v8 p.4 words 1664-1664 (0)
+   v7: integers 𝑥0, …, 𝑥𝑁−1, its integer [[ antitonic ]] fit is obtained as follows. Partition
+   v8: integers 𝑥0, …, 𝑥𝑁−1, its integer [[  ]] fit is obtained as follows. Partition
+--- delete v7 p.9 words 4633-4638 (5) | v8 p.8 words 4472-4472 (0)
+   v7: this «floor» is not the grading [[ our word standard meaning where ]] house; penalties the binary data (𝐼,
+   v8: this «floor» is not the grading [[  ]] house; penalties the binary data (𝐼,
+--- insert v7 p.9 words 4715-4715 (0) | v8 p.9 words 4549-4554 (5)
+   v7: gives the folded cube §1.3, §10 [[  ]] dry; wet reduction modulo 2; the
+   v8: gives the folded cube §1.3, §10 [[ our word standard meaning where ]] dry; wet reduction modulo 2; the
+--- replace v7 p.13 words 7237-7238 (1) | v8 p.12 words 7076-7079 (3)
+   v7: − (𝑤 + 2𝑗)2) · 𝑏0𝐸𝑠𝑛, [[ 𝐸2𝑠+1(𝑏0𝑛) ]] = 2𝑠+1 ∏ (Ω − (𝑤
+   v8: − (𝑤 + 2𝑗)2) · 𝑏0𝐸𝑠𝑛, [[ 2𝑠+1 𝐸 (𝑏0𝑛) ]] = 2 𝑠+1 ∏ (Ω −
+--- replace v7 p.13 words 7239-7240 (1) | v8 p.12 words 7080-7082 (2)
+   v7: + 2𝑗)2) · 𝑏0𝐸𝑠𝑛, 𝐸2𝑠+1(𝑏0𝑛) = [[ 2𝑠+1 ]] ∏ (Ω − (𝑤 + 2𝑗)2)
+   v8: · 𝑏0𝐸𝑠𝑛, 2𝑠+1 𝐸 (𝑏0𝑛) = [[ 2 𝑠+1 ]] ∏ (Ω − (𝑤 + 2𝑗)2)
+--- delete v7 p.17 words 10353-10355 (2) | v8 p.17 words 10195-10195 (0)
+   v7: 𝜋(ℎ) (ℎ) ℎ ℎ ℎ 𝑑∈𝑊 [[ 𝐾(ℎ) (ℎ) ]] 𝐷𝐷′(𝑓) = 𝑐𝐷∖𝐷′ · ∏ 𝜋0(𝑑),
+   v8: 𝜋(ℎ) (ℎ) ℎ ℎ ℎ 𝑑∈𝑊 [[  ]] 𝐷𝐷′(𝑓) = 𝑐𝐷∖𝐷′ · ∏ 𝜋0(𝑑),
+--- replace v7 p.17 words 10363-10364 (1) | v8 p.17 words 10203-10205 (2)
+   v7: 𝑐𝐷∖𝐷′ · ∏ 𝜋0(𝑑), 𝑊 = [[ [2ℎ𝑓 ]] + 𝑜𝐷, 2ℎ𝑓 + 𝑜𝐷′ +
+   v8: 𝑐𝐷∖𝐷′ · ∏ 𝜋0(𝑑), 𝑊 = [[ [2 𝑓 ]] + 𝑜𝐷, 2 𝑓 + 𝑜𝐷′
+--- replace v7 p.17 words 10366-10367 (1) | v8 p.17 words 10207-10209 (2)
+   v7: 𝜋0(𝑑), 𝑊 = [2ℎ𝑓 + 𝑜𝐷, [[ 2ℎ𝑓 ]] + 𝑜𝐷′ + 2ℎ − 1],
+   v8: 𝑊 = [2 𝑓 + 𝑜𝐷, [[ 2 𝑓 ]] + 𝑜𝐷′ + 2 − 1],
+--- replace v7 p.17 words 10370-10371 (1) | v8 p.17 words 10212-10213 (1)
+   v7: + 𝑜𝐷, 2ℎ𝑓 + 𝑜𝐷′ + [[ 2ℎ ]] − 1], 𝑑∈𝑊 where 𝑐(ℎ) =
+   v8: 𝑜𝐷, 2 𝑓 + 𝑜𝐷′ + [[ 2 ]] − 1], 𝐾(ℎ) (ℎ) ℎ ℎ
+--- insert v7 p.17 words 10373-10373 (0) | v8 p.17 words 10215-10220 (5)
+   v7: + 𝑜𝐷′ + 2ℎ − 1], [[  ]] 𝑑∈𝑊 where 𝑐(ℎ) = ∑Δ 𝑐(ℎ)
+   v8: + 𝑜𝐷′ + 2 − 1], [[ 𝐾(ℎ) (ℎ) ℎ ℎ ℎ ]] 𝑑∈𝑊 (ℎ) Δ 2 where 𝑐(ℎ)
+--- insert v7 p.17 words 10374-10374 (0) | v8 p.17 words 10221-10224 (3)
+   v7: 𝑜𝐷′ + 2ℎ − 1], 𝑑∈𝑊 [[  ]] where 𝑐(ℎ) = ∑Δ 𝑐(ℎ) 2
+   v8: 𝐾(ℎ) (ℎ) ℎ ℎ ℎ 𝑑∈𝑊 [[ (ℎ) Δ 2 ]] where 𝑐(ℎ) = ∑ satisfies 𝑐(0)
+--- replace v7 p.17 words 10377-10380 (3) | v8 p.17 words 10227-10243 (16)
+   v7: − 1], 𝑑∈𝑊 where 𝑐(ℎ) = [[ ∑Δ 𝑐(ℎ) 2 ]] Δ 𝑥 ∈ ℚ[𝑥𝑡 : 𝑡
+   v8: (ℎ) Δ 2 where 𝑐(ℎ) = [[ ∑ satisfies 𝑐(0) = 1 and 𝑐(ℎ+1) = −(𝑐(ℎ))2/2 − [ℎ ∈ 𝐼] · 𝑥ℎ𝑐(ℎ). For ]] Δ 𝑐Δ 𝑥 ∈ ℚ[𝑥𝑡 :
+--- insert v7 p.17 words 10381-10381 (0) | v8 p.17 words 10244-10245 (1)
+   v7: 𝑐(ℎ) = ∑Δ 𝑐(ℎ) 2 Δ [[  ]] 𝑥 ∈ ℚ[𝑥𝑡 : 𝑡 ∈
+   v8: ∈ 𝐼] · 𝑥ℎ𝑐(ℎ). For Δ [[ 𝑐Δ ]] 𝑥 ∈ ℚ[𝑥𝑡 : 𝑡 ∈
+--- delete v7 p.17 words 10389-10409 (20) | v8 p.17 words 10253-10253 (0)
+   v7: ℚ[𝑥𝑡 : 𝑡 ∈ 𝐼<ℎ]/(𝑥𝑡 ) [[ satisfies 𝑐 = 1 and 𝑐 Δ (0) (ℎ+1) = −(𝑐(ℎ))2/2 − [ℎ ∈ 𝐼] · 𝑥 𝑐(ℎ). For ℎ ]] ℎ = 0 there is one
+   v8: ℚ[𝑥𝑡 : 𝑡 ∈ 𝐼<ℎ]/(𝑥𝑡 ) [[  ]] ℎ = 0 there is one
+--- insert v7 p.30 words 19426-19426 (0) | v8 p.29 words 19270-19271 (1)
+   v7: 0) with 𝑦0 = 0 gives [[  ]] 𝑦ˆ𝑠(∅) = max 𝑙 ( −
+   v8: 0) with 𝑦0 = 0 gives [[ ( ]] 𝑦ˆ𝑠(∅) = max − ∑ 𝜓𝑡𝑗
+--- delete v7 p.30 words 19429-19431 (2) | v8 p.29 words 19274-19274 (0)
+   v7: = 0 gives 𝑦ˆ𝑠(∅) = max [[ 𝑙 ( ]] − ∑ 𝜓 𝑡𝑗 . 𝑗>𝑙
+   v8: 0 gives ( 𝑦ˆ𝑠(∅) = max [[  ]] − ∑ 𝜓𝑡𝑗 . 𝑙 𝑗>𝑙
+--- replace v7 p.30 words 19433-19435 (2) | v8 p.29 words 19276-19277 (1)
+   v7: = max 𝑙 ( − ∑ [[ 𝜓 𝑡𝑗 ]] . 𝑗>𝑙 ) So 𝑒(∅) =
+   v8: ( 𝑦ˆ𝑠(∅) = max − ∑ [[ 𝜓𝑡𝑗 ]] . 𝑙 𝑗>𝑙 ) So 𝑒(∅)
+--- insert v7 p.30 words 19436-19436 (0) | v8 p.29 words 19278-19279 (1)
+   v7: ( − ∑ 𝜓 𝑡𝑗 . [[  ]] 𝑗>𝑙 ) So 𝑒(∅) = max𝑙[𝜑(𝜆
+   v8: = max − ∑ 𝜓𝑡𝑗 . [[ 𝑙 ]] 𝑗>𝑙 ) So 𝑒(∅) = max𝑙[𝜑(𝜆
+--- delete v7 p.35 words 23556-23560 (4) | v8 p.34 words 23399-23399 (0)
+   v7: 𝑏1 ⊗ 𝑀 is 𝑥 0 [[ + ′ 𝑥′ 𝑥+ ]] , 𝑥𝑚(𝑔) := 𝑥𝑚(𝑔 + 1),
+   v8: 𝑏1 ⊗ 𝑀 is 𝑥 0 [[  ]] , 𝑥+𝑚(𝑔) := 𝑥𝑚(𝑔 + 1),
+--- replace v7 p.35 words 23561-23562 (1) | v8 p.34 words 23400-23401 (1)
+   v7: 0 + ′ 𝑥′ 𝑥+ , [[ 𝑥𝑚(𝑔) ]] := 𝑥𝑚(𝑔 + 1), 𝑥𝑚−1(𝑔) :=
+   v8: ⊗ 𝑀 is 𝑥 0 , [[ 𝑥+𝑚(𝑔) ]] := 𝑥𝑚(𝑔 + 1), 𝑥′𝑚−1(𝑔) :=
+--- replace v7 p.35 words 23566-23567 (1) | v8 p.34 words 23405-23406 (1)
+   v7: , 𝑥𝑚(𝑔) := 𝑥𝑚(𝑔 + 1), [[ 𝑥𝑚−1(𝑔) ]] := 𝑥𝑚(𝑔 + 1) (𝑚 ≥
+   v8: , 𝑥+𝑚(𝑔) := 𝑥𝑚(𝑔 + 1), [[ 𝑥′𝑚−1(𝑔) ]] := 𝑥𝑚(𝑔 + 1) (𝑚 ≥
+--- insert v7 p.35 words 23574-23574 (0) | v8 p.34 words 23413-23415 (2)
+   v7: 𝑥𝑚(𝑔 + 1) (𝑚 ≥ 1), [[  ]] operators on 𝑀: a system of
+   v8: 𝑥𝑚(𝑔 + 1) (𝑚 ≥ 1), [[ 𝑥′ 𝑥+ ]] operators on 𝑀: a system of
+--- insert v7 p.35 words 23866-23866 (0) | v8 p.35 words 23707-23708 (1)
+   v7: Hence the dance of 𝜎(𝛼) (𝛼) [[  ]] 𝑐 on 𝑇(𝑙) is clean and
+   v8: Hence the dance of 𝜎(𝛼) (𝛼) [[ (𝛼) ]] 𝑐 on 𝑇(𝑙) is clean and
+--- delete v7 p.35 words 23890-23891 (1) | v8 p.35 words 23732-23732 (0)
+   v7: for a unit 𝑢 ∈ 𝐴, [[ (𝛼) ]] 𝑀𝑤(𝑢𝐺) = 𝑢 · 𝑀𝑤(𝐺). Proof.
+   v8: for a unit 𝑢 ∈ 𝐴, [[  ]] 𝑀𝑤(𝑢𝐺) = 𝑢 · 𝑀𝑤(𝐺). Proof.
+--- delete v7 p.36 words 24489-24490 (1) | v8 p.36 words 24330-24330 (0)
+   v7: a block matrix). So 𝐺−1 −1 [[ −1 ]] ℎ+1 = 2𝑆 is 2 times
+   v8: a block matrix). So 𝐺−1 −1 [[  ]] ℎ+1 = 2𝑆 is 2 times
+--- insert v7 p.36 words 24508-24508 (0) | v8 p.36 words 24348-24349 (1)
+   v7: over the levels. The remaining coordinates [[  ]] of a twist move are the
+   v8: over the levels. The remaining coordinates [[ −1 ]] of a twist move are the
+--- replace v7 p.41 words 27733-27734 (1) | v8 p.40 words 27574-27576 (2)
+   v7: inner structure, so the move of [[ 𝐿−1𝑍𝐿 ]] is 𝐿−1 times the move of
+   v8: inner structure, so the move of [[ 𝐿 𝑍𝐿 ]] is 𝐿−1 times the move of
+--- insert v7 p.41 words 27744-27744 (0) | v8 p.40 words 27586-27587 (1)
+   v7: move of 𝑍 times 𝐿: the [[  ]] pivot, the other blocks and the
+   v8: move of 𝑍 times 𝐿: the [[ −1 ]] pivot, the other blocks and the
+--- insert v7 p.41 words 27986-27986 (0) | v8 p.40 words 27829-27830 (1)
+   v7: 𝑦Σ, is ∏ 𝜁𝑚 · 𝜂−𝐿 [[  ]] ( ± 𝑖 ∏ 𝑚𝑖 !
+   v8: 𝑦Σ, is ∏ 𝜁𝑚 · 𝜂−𝐿 [[ ± ]] ( 𝑖 ∏ 𝑚𝑖 ! 𝑖
+--- delete v7 p.41 words 27987-27988 (1) | v8 p.40 words 27831-27831 (0)
+   v7: is ∏ 𝜁𝑚 · 𝜂−𝐿 ( [[ ± ]] 𝑖 ∏ 𝑚𝑖 ! 𝑖 𝑖
+   v8: ∏ 𝜁𝑚 · 𝜂−𝐿 ± ( [[  ]] 𝑖 ∏ 𝑚𝑖 ! 𝑖 𝑖
+--- replace v7 p.44 words 30070-30071 (1) | v8 p.43 words 29913-29914 (1)
+   v7: in 18 606 of 360 deletions, [[ 192 ]] 024 0 failures Lemma 7.9: the
+   v8: in 18 606 of 360 deletions, [[ 193 ]] 024 0 failures Lemma 7.9: the
+--- insert v7 p.44 words 30116-30116 (0) | v8 p.44 words 29959-29969 (10)
+   v7: integral fit in 1 942 houses [[  ]] Lemma 7.2(b) on random sequences; 20
+   v8: integral fit in 1 942 houses [[ statement, and the code that range result control checks it ]] Lemma 7.2(b) on random sequences; 20
+--- delete v7 p.45 words 30190-30200 (10) | v8 p.44 words 30043-30043 (0)
+   v7: in 42 and in 26 cases [[ statement, and the code that range result control checks it ]] Corollary 1.5 · Lemma 9.7 ·
+   v8: in 42 and in 26 cases [[  ]] Corollary 1.5 · Lemma 9.7 ·
+--- insert v7 p.45 words 30579-30579 (0) | v8 p.45 words 30422-30427 (5)
+   v7: 11 agrees entry by entry none [[  ]] the recursion of §1.2 against 1,
+   v8: 11 agrees entry by entry none [[ statement reader range result control ]] the recursion of §1.2 against 1,
+--- delete v7 p.46 words 30611-30616 (5) | v8 p.45 words 30459-30459 (0)
+   v7: 𝜆 ≤ 255, 𝛼 ≤ 4 [[ statement reader range result control ]] Theorem 7.8, every claim of 3
+   v8: 𝜆 ≤ 255, 𝛼 ≤ 4 [[  ]] Theorem 7.8, every claim of 3
+--- insert v7 p.48 words 31580-31580 (0) | v8 p.47 words 31423-31425 (2)
+   v7: were read cold as text in [[  ]] version 1, which had one gap
+   v8: were read cold as text in [[ the first ]] version of this text, which had
+--- replace v7 p.48 words 31581-31582 (1) | v8 p.47 words 31426-31429 (3)
+   v7: read cold as text in version [[ 1, ]] which had one gap (Lemma 7.2(b));
+   v8: as text in the first version [[ of this text, ]] which had one gap (Lemma 7.2(b));
+--- delete v7 p.48 words 31590-31612 (22) | v8 p.47 words 31437-31437 (0)
+   v7: one gap (Lemma 7.2(b)); the repair [[ of version 2 (the restated Lemma 7.2(b), the strict (Cut) of Theorem 7.8, and their uses in Theorem 7.10 and Proposition 9.6) ]] was read cold in its turn;
+   v8: one gap (Lemma 7.2(b)); the repair [[  ]] was read cold in its turn,
+--- replace v7 p.48 words 31617-31618 (1) | v8 p.47 words 31442-31443 (1)
+   v7: 9.6) was read cold in its [[ turn; ]] and the changes of version 3,
+   v8: repair was read cold in its [[ turn, ]] and so were the changes of
+--- insert v7 p.48 words 31619-31619 (0) | v8 p.47 words 31444-31446 (2)
+   v7: read cold in its turn; and [[  ]] the changes of version 3, among
+   v8: read cold in its turn, and [[ so were ]] the changes of every later version
+--- insert v7 p.48 words 31622-31622 (0) | v8 p.47 words 31449-31451 (2)
+   v7: its turn; and the changes of [[  ]] version 3, among them Lemma 7.9,
+   v8: and so were the changes of [[ every later ]] version (Appendix A). Added in version
+--- delete v7 p.48 words 31623-31678 (55) | v8 p.47 words 31452-31452 (0)
+   v7: turn; and the changes of version [[ 3, among them Lemma 7.9, on which the printed proof of the Main Theorem now rests (§8, Theorem 7.10), were read cold by a fifth reader, the changes of version 4 by a sixth, the changes of version 5 by a seventh, and the changes of version 6, with its whole pdf, by an eighth ]] (Appendix A). Added in version 3,
+   v8: the changes of every later version [[  ]] (Appendix A). Added in version 3,
+--- replace v7 p.48 words 31714-31715 (1) | v8 p.47 words 31488-31496 (8)
+   v7: and re-derived by the fifth reader. [[ Version ]] 2 added the strictness of the
+   v8: and re-derived by the fifth reader. [[ Numbered statements changed after the first version: version ]] 2 restated Lemma 7.2(b) and added
+--- insert v7 p.48 words 31716-31716 (0) | v8 p.47 words 31497-31501 (4)
+   v7: by the fifth reader. Version 2 [[  ]] added the strictness of the cuts
+   v8: after the first version: version 2 [[ restated Lemma 7.2(b) and ]] added the strictness of the cuts
+--- replace v7 p.48 words 31727-31732 (5) | v8 p.47 words 31512-31513 (1)
+   v7: cuts to the (Cut) of Theorem [[ 7.8 and restated Lemma 7.2(b); ]] version 3 strengthened Lemma 7.9, added
+   v8: cuts to the (Cut) of Theorem [[ 7.8; ]] version 3 strengthened Lemma 7.9, added
+--- replace v7 p.48 words 31760-31762 (2) | v8 p.47 words 31541-31543 (2)
+   v7: and every floor 𝑓» to Lemma [[ 10.10; no ]] other numbered statement changed in versions
+   v8: and every floor 𝑓» to Lemma [[ 10.10. No ]] other numbered statement changed in what
+--- replace v7 p.48 words 31767-31784 (17) | v8 p.47 words 31548-31553 (5)
+   v7: no other numbered statement changed in [[ versions 2 to 7. Changed in version 4, audited, read cold: the corrections of the fifth reading ]] and the typesetting (Appendix A). No
+   v8: No other numbered statement changed in [[ what it states; numbers, notation ]] and typesetting changed. Measured, not proved:
+--- delete v7 p.48 words 31785-31786 (1) | v8 p.47 words 31554-31554 (0)
+   v7: corrections of the fifth reading and [[ the ]] typesetting (Appendix A). No mathematical statement
+   v8: what it states; numbers, notation and [[  ]] typesetting changed. Measured, not proved: the
+--- delete v7 p.48 words 31787-31856 (69) | v8 p.47 words 31555-31555 (0)
+   v7: the fifth reading and the typesetting [[ (Appendix A). No mathematical statement changed. Changed in version 5, read cold: the corrections of the sixth reading and the typesetting (Appendix A). No mathematical statement changed. Changed in version 6, read cold: the corrections of the seventh reading (Appendix A). No mathe‐ matical statement changed. Changed in version 7, made by the auditor, not yet read cold: the corrections of the eighth reading (Appendix A). No mathematical statement ]] changed. Measured, not proved: the turned
+   v8: it states; numbers, notation and typesetting [[  ]] changed. Measured, not proved: the turned
+--- delete v7 p.48 words 31876-31885 (9) | v8 p.47 words 31575-31575 (0)
+   v7: Remark (2) of §10.5. Not done: [[ a cold reading of the changes of version 7; ]] a human referee; a formal verification.
+   v8: Remark (2) of §10.5. Not done: [[  ]] a human referee; a formal verification.
+--- delete v7 p.49 words 32016-32026 (10) | v8 p.47 words 31706-31706 (0)
+   v7: responsibility for the content. The work [[ took five days, from 2 to 6 October 2026. It ]] began on 2 October 2026 as
+   v8: responsibility for the content. The work [[  ]] began on 2 October 2026 as
+--- replace v7 p.50 words 32792-32802 (10) | v8 p.49 words 32472-32482 (10)
+   v7: gap of proof, never of conclusion. [[ Version 3 states that integrality as Lemma 7.9, makes all ]] the corrections above, gives the gates
+   v8: gap of proof, never of conclusion. [[ Later versions. Each later version made corrections asked for by ]] the reading before it; version 4
+--- replace v7 p.50 words 32803-32827 (24) | v8 p.49 words 32483-32490 (7)
+   v7: as Lemma 7.9, makes all the [[ corrections above, gives the gates of §7 house-level controls that can fail and runs Theorem 7.10 on the whole printed range (§12.1), and keeps ]] the mathematics of the repair of
+   v8: made corrections asked for by the [[ reading before it; version 4 also set ]] the mathematics anew, and version 5
+--- insert v7 p.50 words 32829-32829 (0) | v8 p.49 words 32492-32512 (20)
+   v7: range (§12.1), and keeps the mathematics [[  ]] of the repair of version 2
+   v8: version 4 also set the mathematics [[ anew, and version 5 the page. No numbered statement changed in what it states after version 3 (§13). The changes ]] of each version were read cold
+--- replace v7 p.50 words 32830-32833 (3) | v8 p.49 words 32513-32514 (1)
+   v7: (§12.1), and keeps the mathematics of [[ the repair of ]] version 2 as it was read,
+   v8: version 3 (§13). The changes of [[ each ]] version were read cold by a
+--- delete v7 p.50 words 32834-32869 (35) | v8 p.49 words 32515-32515 (0)
+   v7: mathematics of the repair of version [[ 2 as it was read, with the clarifications listed above. Every number printed in it was checked against an engine (§12), but three ranges were printed wider or vaguer than the code ran. Its changes ]] were read cold on 5 October
+   v8: (§13). The changes of each version [[  ]] were read cold by a new
+--- replace v7 p.50 words 32872-32873 (1) | v8 p.49 words 32518-32530 (12)
+   v7: ran. Its changes were read cold [[ on ]] 5 October 2026 (cold reader 5)
+   v8: of each version were read cold [[ by a new reader (cold reader 5 and each later one, from ]] 5 October 2026), with no access
+--- replace v7 p.50 words 32875-32882 (7) | v8 p.49 words 32532-32533 (1)
+   v7: were read cold on 5 October [[ 2026 (cold reader 5) by a reader ]] with no access to the flights,
+   v8: each later one, from 5 October [[ 2026), ]] with no access to the flights
+--- replace v7 p.50 words 32887-32890 (3) | v8 p.49 words 32538-32539 (1)
+   v7: reader with no access to the [[ flights, the audits ]] or the earlier readings, who re-derived
+   v8: 2026), with no access to the [[ flights ]] or the audits, who checked every
+--- replace v7 p.50 words 32892-32894 (2) | v8 p.49 words 32541-32542 (1)
+   v7: the flights, the audits or the [[ earlier readings, ]] who re-derived Lemma 7.9 and every
+   v8: access to the flights or the [[ audits, ]] who checked every changed passage against
+--- replace v7 p.50 words 32895-32899 (4) | v8 p.49 words 32543-32544 (1)
+   v7: audits or the earlier readings, who [[ re-derived Lemma 7.9 and ]] every place where it is used,
+   v8: the flights or the audits, who [[ checked ]] every changed passage against the version
+--- replace v7 p.50 words 32900-32908 (8) | v8 p.49 words 32545-32557 (12)
+   v7: who re-derived Lemma 7.9 and every [[ place where it is used, wrote a gate ]] of its own (§12.2), reproduced the
+   v8: or the audits, who checked every [[ changed passage against the version before it, re-counted or re-ran with code ]] of its own the numbers and
+--- delete v7 p.50 words 32911-32913 (2) | v8 p.49 words 32560-32560 (0)
+   v7: wrote a gate of its own [[ (§12.2), reproduced ]] the gates of §7 and looked
+   v8: re-ran with code of its own [[  ]] the numbers and checks it concerned,
+--- replace v7 p.50 words 32914-32917 (3) | v8 p.49 words 32561-32566 (5)
+   v7: of its own (§12.2), reproduced the [[ gates of §7 ]] and looked at every page of
+   v8: with code of its own the [[ numbers and checks it concerned, ]] and looked at the pdf: at
+--- delete v7 p.50 words 32920-32923 (3) | v8 p.49 words 32569-32569 (0)
+   v7: gates of §7 and looked at [[ every page of ]] the pdf: the changes hold, with
+   v8: checks it concerned, and looked at [[  ]] the pdf: at every page, or
+--- delete v7 p.50 words 32925-33168 (243) | v8 p.49 words 32571-32571 (0)
+   v7: at every page of the pdf: [[ the changes hold, with no gap and no error. It found points of presentation (where strictness is used after Lemma 7.9, three citations, four sentences of the reading record, one sentence of «Why dance», three ranges of §12) and defects of typesetting: every formula was set in one italic font, scripts were not stacked, and some statements, displays and tables were broken badly across lines and pages. Version 4 made those corrections, except two defects of typesetting (a short page in §1, and a break inside a formula of §10.5), and set the mathematics anew: letters italic, digits, brackets, operators and operator names upright, scripts stacked, displays in display style, and no statement, display, table row or short proof broken across a page (the long tables of §12 run over several pages, row by row, with their header repeated). No mathematical statement changed. The three ranges of §12 were corrected; §12.2 gained the two rows of the fifth reader; and the row of the fourth reader’s check of Lemma 7.9 gained a parenthesis, composed by the author and not checked by the fifth reader, which was wrong. Its changes were read cold on 5 October 2026 (cold reader 6) by a reader with no access to the flights, the audits or the earlier readings, who compared every changed passage with version 3 by a script with a control, re-derived every new sentence, re-counted the cells of §12 with its own code, and looked ]] at every page of the pdf:
+   v8: concerned, and looked at the pdf: [[  ]] at every page, or at the
+--- replace v7 p.50 words 33170-33171 (1) | v8 p.49 words 32573-32587 (14)
+   v7: own code, and looked at every [[ page ]] of the pdf: the mathematics of
+   v8: looked at the pdf: at every [[ page, or at the changed pages after comparing all the pages by image. None ]] of these readings found a gap
+--- insert v7 p.50 words 33172-33172 (0) | v8 p.49 words 32588-32597 (9)
+   v7: and looked at every page of [[  ]] the pdf: the mathematics of every
+   v8: the pages by image. None of [[ these readings found a gap or an error in ]] the mathematics. Between them, they found
+--- replace v7 p.50 words 33173-33187 (14) | v8 p.49 words 32598-32602 (4)
+   v7: looked at every page of the [[ pdf: the mathematics of every change holds, with no gap and no error. It ]] found one false number (the 7
+   v8: gap or an error in the [[ mathematics. Between them, they ]] found false or inexact sentences in
+--- delete v7 p.50 words 33188-33189 (1) | v8 p.49 words 32603-32603 (0)
+   v7: gap and no error. It found [[ one ]] false number (the 7 634 cells
+   v8: the mathematics. Between them, they found [[  ]] false or inexact sentences in this
+--- replace v7 p.50 words 33190-33238 (48) | v8 p.49 words 32604-32605 (1)
+   v7: no error. It found one false [[ number (the 7 634 cells of the fourth reader’s row are not the cells with 𝑖 ≥ 1: they are the 7 620 with 𝑖 ≥ 1 and the 14 with 𝑖 = 0 and 𝐼 = ∅), one false sentence (version 3 was still called «this text»), ]] inexact sentences in this record and
+   v8: mathematics. Between them, they found false [[ or ]] inexact sentences in this record and
+--- replace v7 p.50 words 33252-33278 (26) | v8 p.49 words 32619-32628 (9)
+   v7: points of presentation, and defects of [[ typeset‐ ting in 32 kinds: bars and hats placed off their letters, no page numbers, stray bold words, matrices written as lists, breaks inside short formulas, ]] the number sets in italic, the
+   v8: points of presentation, and defects of [[ typesetting. This summary replaces a version-by-version account; that account, ]] the list of corrections of each
+--- replace v7 p.50 words 33279-33296 (17) | v8 p.49 words 32629-32631 (2)
+   v7: lists, breaks inside short formulas, the [[ number sets in italic, the end-of-proof mark from another font, and loose lines. Version 5 makes those ]] corrections and sets the page anew:
+   v8: a version-by-version account; that account, the [[ list of ]] corrections of each version with its
+--- delete v7 p.50 words 33297-33353 (56) | v8 p.49 words 32632-32632 (0)
+   v7: lines. Version 5 makes those corrections [[ and sets the page anew: accents centred over their letters, the number sets in double-struck letters, matrices as matrices, limits under max and min in displays, enlarged brackets around sums with limits, page numbers, the end-of-proof mark at the right margin, and tables with horizontal rules only. No mathematical statement changed, and no number; the descriptions ]] of four counts of §12 were
+   v8: that account, the list of corrections [[  ]] of each version with its sources,
+--- replace v7 p.50 words 33354-33416 (62) | v8 p.49 words 32633-32634 (1)
+   v7: and no number; the descriptions of [[ four counts of §12 were made exact (the 7 634 cells, the 301 clocks, the 192 024 cells, the 9 880 cells). Its changes were read cold on 6 October 2026 (cold reader 7) by a reader with no access to the flights or the audits, who opened the sixth reading only after writing its verdicts. It compared every changed passage with ]] version 4 by a script with
+   v8: account, the list of corrections of [[ each ]] version with its sources, every report
+--- delete v7 p.50 words 33417-33429 (12) | v8 p.49 words 32635-32635 (0)
+   v7: compared every changed passage with version [[ 4 by a script with a control, re-counted the numbers of §12 ]] with its own code, and looked
+   v8: list of corrections of each version [[  ]] with its sources, every report and
+--- replace v7 p.50 words 33431-33436 (5) | v8 p.49 words 32637-32638 (1)
+   v7: the numbers of §12 with its [[ own code, and looked at ]] every page of the pdf: the
+   v8: corrections of each version with its [[ sources, ]] every report and every grading are
+--- replace v7 p.50 words 33437-33597 (160) | v8 p.49 words 32639-32640 (1)
+   v7: own code, and looked at every [[ page of the pdf: the mathematics of every change holds, with no gap and no error. It found one false sentence in this record (§13 said that no statement of a theorem had changed in versions 2 to 5, while version 2 added the strict (Cut) to Theorem 7.8), inexact sentences, points of presentation, and defects of typesetting, the main one being that two steps of the proof of Theorem 7.8 had lost their numbers in the pdf. Version 6 makes those corrections. No mathematical statement changed. Its changes, and its whole pdf page by page, were read cold on 6 October 2026 (cold reader 8) by a reader with no access to the flights or the audits, who opened the seventh reading only after writing its verdicts. It compared every change with version 5, re-counted the numbers of §12 with its own code, compared the md and the pdf word by word and number by number, checked every cross-reference ]] and every quotation against its source,
+   v8: each version with its sources, every [[ report ]] and every grading are kept with
+--- replace v7 p.51 words 33599-33608 (9) | v8 p.49 words 32642-32646 (4)
+   v7: number, checked every cross-reference and every [[ quotation against its source, and looked at every page: ]] the mathematics of every change holds,
+   v8: its sources, every report and every [[ grading are kept with ]] the project. References [ABERS55] M. Ayer,
+--- replace v7 p.51 words 33609-33725 (116) | v8 p.49 words 32647-32648 (1)
+   v7: and looked at every page: the [[ mathematics of every change holds, and nothing on the page is broken. It found two false sentences in this record (the sentence of §13 on what changed in versions 2 to 6, which said «no other statement» and then named three lemmas changed in version 3; and the dates of the work in the Acknowledgements), one row of §12.2 that printed only one of the two ranges its reader ran, and one sentence of §1.7 that could be read as a subtraction. Version 7 (this text) makes those corrections, and says in §12 which ranges of houses include 𝑘 = 0. No mathematical statement changed, and no number. Its changes have not yet been read cold. ]] References [ABERS55] M. Ayer, H. D.
+   v8: every grading are kept with the [[ project. ]] References [ABERS55] M. Ayer, H. D.
+VIGIA-FIN-OK exit=0 pico_kb=33008 t=2s

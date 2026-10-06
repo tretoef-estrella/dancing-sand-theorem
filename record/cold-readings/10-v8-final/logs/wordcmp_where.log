@@ -1,0 +1,100 @@
+[('header', 0), ('§1.0', 353), ('§1.1+', 871), ('§13', 31386), ('after §13 bullets', 31582), ('Acknowledgements', 31621), ('Appendix A', 31765), ('References', 32649)]
+header               v8 p. 1 word     29  replace -1
+§1.0                 v8 p. 2 word    629  replace -2
+§1.0                 v8 p. 2 word    687  replace -2
+§1.0                 v8 p. 2 word    698  replace -1
+§1.0                 v8 p. 2 word    700  delete -3
+§1.0                 v8 p. 2 word    707  replace -2
+§1.0                 v8 p. 2 word    714  insert -0
+§1.0                 v8 p. 2 word    745  delete -10
+§1.0                 v8 p. 2 word    746  delete -5
+§1.0                 v8 p. 2 word    764  insert -0
+§1.0                 v8 p. 2 word    767  delete -1
+§1.0                 v8 p. 2 word    770  insert -0
+§1.0                 v8 p. 2 word    776  replace -6
+§1.0                 v8 p. 2 word    785  replace -56
+§1.0                 v8 p. 2 word    790  replace -4
+§1.0                 v8 p. 2 word    798  delete -93
+§1.0                 v8 p. 2 word    804  replace -3
+§1.0                 v8 p. 2 word    810  replace -5
+§1.0                 v8 p. 2 word    814  insert -0
+§1.0                 v8 p. 2 word    832  replace -32
+§1.1+                v8 p. 8 word   4473  delete -5
+§1.1+                v8 p. 9 word   4550  insert -0
+§1.1+                v8 p.12 word   7077  replace -1
+§1.1+                v8 p.12 word   7081  replace -1
+§1.1+                v8 p.17 word  10196  delete -2
+§1.1+                v8 p.17 word  10204  replace -1
+§1.1+                v8 p.17 word  10208  replace -1
+§1.1+                v8 p.17 word  10213  replace -1
+§1.1+                v8 p.17 word  10216  insert -0
+§1.1+                v8 p.17 word  10222  insert -0
+§1.1+                v8 p.17 word  10228  replace -3
+§1.1+                v8 p.17 word  10245  insert -0
+§1.1+                v8 p.17 word  10254  delete -20
+§1.1+                v8 p.29 word  19271  insert -0
+§1.1+                v8 p.29 word  19275  delete -2
+§1.1+                v8 p.29 word  19277  replace -2
+§1.1+                v8 p.29 word  19279  insert -0
+§1.1+                v8 p.34 word  23400  delete -4
+§1.1+                v8 p.34 word  23401  replace -1
+§1.1+                v8 p.34 word  23406  replace -1
+§1.1+                v8 p.34 word  23414  insert -0
+§1.1+                v8 p.35 word  23708  insert -0
+§1.1+                v8 p.35 word  23733  delete -1
+§1.1+                v8 p.36 word  24331  delete -1
+§1.1+                v8 p.36 word  24349  insert -0
+§1.1+                v8 p.40 word  27575  replace -1
+§1.1+                v8 p.40 word  27587  insert -0
+§1.1+                v8 p.40 word  27830  insert -0
+§1.1+                v8 p.40 word  27832  delete -1
+§1.1+                v8 p.44 word  29960  insert -0
+§1.1+                v8 p.44 word  30044  delete -10
+§1.1+                v8 p.45 word  30423  insert -0
+§1.1+                v8 p.45 word  30460  delete -5
+§13                  v8 p.47 word  31424  insert -0
+§13                  v8 p.47 word  31427  replace -1
+§13                  v8 p.47 word  31438  delete -22
+§13                  v8 p.47 word  31443  replace -1
+§13                  v8 p.47 word  31445  insert -0
+§13                  v8 p.47 word  31450  insert -0
+§13                  v8 p.47 word  31453  delete -55
+§13                  v8 p.47 word  31489  replace -1
+§13                  v8 p.47 word  31498  insert -0
+§13                  v8 p.47 word  31513  replace -5
+§13                  v8 p.47 word  31542  replace -2
+§13                  v8 p.47 word  31549  replace -17
+§13                  v8 p.47 word  31555  delete -1
+§13                  v8 p.47 word  31556  delete -69
+§13                  v8 p.47 word  31576  delete -9
+Acknowledgements     v8 p.47 word  31707  delete -10
+Appendix A           v8 p.49 word  32473  replace -10
+Appendix A           v8 p.49 word  32484  replace -24
+Appendix A           v8 p.49 word  32493  insert -0
+Appendix A           v8 p.49 word  32514  replace -3
+Appendix A           v8 p.49 word  32516  delete -35
+Appendix A           v8 p.49 word  32519  replace -1
+Appendix A           v8 p.49 word  32533  replace -7
+Appendix A           v8 p.49 word  32539  replace -3
+Appendix A           v8 p.49 word  32542  replace -2
+Appendix A           v8 p.49 word  32544  replace -4
+Appendix A           v8 p.49 word  32546  replace -8
+Appendix A           v8 p.49 word  32561  delete -2
+Appendix A           v8 p.49 word  32562  replace -3
+Appendix A           v8 p.49 word  32570  delete -3
+Appendix A           v8 p.49 word  32572  delete -243
+Appendix A           v8 p.49 word  32574  replace -1
+Appendix A           v8 p.49 word  32589  insert -0
+Appendix A           v8 p.49 word  32599  replace -14
+Appendix A           v8 p.49 word  32604  delete -1
+Appendix A           v8 p.49 word  32605  replace -48
+Appendix A           v8 p.49 word  32620  replace -26
+Appendix A           v8 p.49 word  32630  replace -17
+Appendix A           v8 p.49 word  32633  delete -56
+Appendix A           v8 p.49 word  32634  replace -62
+Appendix A           v8 p.49 word  32636  delete -12
+Appendix A           v8 p.49 word  32638  replace -5
+Appendix A           v8 p.49 word  32640  replace -160
+Appendix A           v8 p.49 word  32643  replace -9
+Appendix A           v8 p.49 word  32648  replace -116
+VIGIA-FIN-OK exit=0 pico_kb=25888 t=0s

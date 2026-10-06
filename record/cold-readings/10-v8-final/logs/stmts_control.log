@@ -1,0 +1,7 @@
+===== v7 -> v7ctl: 75 statements in v7, 75 in v7ctl
+  DIFF Theorem 7.8:
+     replace: «a; and moreover: - (Cut) x_H is»  ->  «a; and moreover: - (Cot) x_H is»
+  DIFF Lemma 10.6.:
+     replace: «Lemma 10.6. (a) For an even payment system»  ->  «Lemma 10.6. (a) For a payment system»
+  statements whose normalized text differs: 2
+VIGIA-FIN-OK exit=0 pico_kb=6080 t=0s

@@ -1,0 +1,37 @@
+### v7 fill
+text block: top 55.3 pt (median), bottom 785.1 pt (max over pages); height 729.8 pt
+p1  folio -   last text bottom 512.9  fill  62.7 %  <-- under 90 %
+p12 folio 12  last text bottom 709.5  fill  89.6 %  <-- under 90 %
+p18 folio 18  last text bottom 687.6  fill  86.6 %  <-- under 90 %
+p19 folio 19  last text bottom 684.0  fill  86.1 %  <-- under 90 %
+p25 folio 25  last text bottom 624.0  fill  77.9 %  <-- under 90 %
+p43 folio 43  last text bottom 647.2  fill  81.1 %  <-- under 90 %
+p46 folio 46  last text bottom 699.0  fill  88.2 %  <-- under 90 %
+p52 folio 52  last text bottom 489.2  fill  59.5 %  <-- under 90 %
+### v7 loose >= 3x
+justified lines: 1040   median stretched space: 3.49 pt
+  lines with s >= 1.4 x median (4.89 pt): 116
+  lines with s >= 1.6 x median (5.59 pt): 63
+  lines with s >= 1.8 x median (6.29 pt): 34
+  lines with s >= 2.0 x median (6.99 pt): 18
+  lines with s >= 2.5 x median (8.73 pt): 4
+14.37 pt (4.11x) p11 y=228  formula (𝑠) (𝑟) min(𝑟,𝑠) (𝑟−𝑗) (𝑠−𝑗) (K)
+12.77 pt (3.66x) p9  y=276  text    formal dance; positions; covariant the dance of operators with divided powers 𝐹 (𝑚) ; the numbers §10.3, §10.5
+11.11 pt (3.18x) p35 y=482  formula 𝑃 𝐶 10 11 00 01
+### v8 fill
+text block: top 55.3 pt (median), bottom 785.1 pt (max over pages); height 729.8 pt
+p1  folio -   last text bottom 512.9  fill  62.7 %  <-- under 90 %
+p7  folio 7   last text bottom 707.3  fill  89.3 %  <-- under 90 %
+p23 folio 23  last text bottom 707.3  fill  89.3 %  <-- under 90 %
+p50 folio 50  last text bottom 384.3  fill  45.1 %  <-- under 90 %
+### v8 loose >= 3x
+justified lines: 984   median stretched space: 3.48 pt
+  lines with s >= 1.4 x median (4.88 pt): 113
+  lines with s >= 1.6 x median (5.57 pt): 61
+  lines with s >= 1.8 x median (6.27 pt): 31
+  lines with s >= 2.0 x median (6.96 pt): 16
+  lines with s >= 2.5 x median (8.71 pt): 4
+14.37 pt (4.13x) p11 y=154  formula (𝑠) (𝑟) min(𝑟,𝑠) (𝑟−𝑗) (𝑠−𝑗) (K)
+12.77 pt (3.67x) p9  y=168  text    formal dance; positions; covariant the dance of operators with divided powers 𝐹 (𝑚) ; the numbers §10.3, §10.5
+11.11 pt (3.19x) p34 y=702  formula 𝑃 𝐶 10 11 00 01
+VIGIA-FIN-OK exit=0 pico_kb=17344 t=1s

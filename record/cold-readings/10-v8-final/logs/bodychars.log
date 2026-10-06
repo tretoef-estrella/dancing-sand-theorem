@@ -1,0 +1,3 @@
+BODY §1.1–§12 words 30511 30515 chars 107045 107045 char multisets equal: True diff v7-v8: {} v8-v7: {}
+REFERENCES words 649 649 chars 3695 3695 char multisets equal: True diff v7-v8: {} v8-v7: {}
+VIGIA-FIN-OK exit=0 pico_kb=36224 t=2s

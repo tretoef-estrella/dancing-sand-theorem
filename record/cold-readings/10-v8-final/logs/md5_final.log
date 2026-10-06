@@ -1,0 +1,49 @@
+c50849abac49d8fdf56d9a7eb378e4e7 checks/PAGES.md
+f1df3a68fd87e477f286caa27651708a checks/SEALED.md
+df21d1f287a34182c4f4928828fe7c6d scratch/py/bodychars.py
+7fdf6f33099fa5e3a150f00c864a9d69 scratch/py/mdpdf_added.py
+efbad493afb87988a74da2d7d28f2a50 scratch/py/stmts.py
+44e84228e5befff1c2c734b06de08c0a scratch/py/wordcmp.py
+a25edd9e4a7492ca76367d45ee91ac87 scratch/py/wordcmp_where.py
+ce4b33c944079debcf42166830d4faec scratch/text_edits_copy.py
+8c656f70ae9a67fdb9b271b1a69de90a scratch/te_v8.md
+4b574cf15a248d27ec62f0d567ebc90c scratch/owndiff.txt
+6291611bdc41c08487984e2043789056 scratch/body_runs.txt
+f573ab029e52c241d8e4274981e3d94f scratch/v7.txt
+2e700f75ad530838b82303d2a4cb3a71 scratch/v8.txt
+763064fe2a6e5e7acef4cd7cd6b24ac1 scratch/md5_r7.txt
+c5c246eeba03665cf92d0a4c8b3fdfa8 scratch/md5_r8.txt
+df64f6ddd82de3f4d7996f4df3d099c0 scratch/bbox_v7.html
+dbf6dbc0e43f6a6c3cfcf6bfd10fcb48 scratch/bbox_v8.html
+c998dea44b1a53f9dfc32557aaca58b6 scratch/sec2.md
+ecda51c3f8e30a1413a05ad9686435cc scratch/sec3.md
+8f765be259a6f846288fd117a90739fb scratch/sec3b.md
+bc511656756d39b7a192f78b0df63688 scratch/sec4.md
+db65d04f48ee22f6c862da1f28666cd0 scratch/sec5.md
+8488d934061d49e331c4302b88c79639 scratch/sec69.md
+2d31c6124d5a3a4aede275abc0b2be9a logs/acc_v8.log
+a57bb4dc9bf8c5ef34e9ac98c06ff0d0 logs/acc_v8_control.log
+b69b464cbb032089c9d5a5fb1bb2cc9b logs/accdiff.log
+2d4ae1bdd3ad399391a9c2e89b337bd4 logs/bodychars.log
+abbeaa7d2be87517bea24828fd5acc69 logs/loose_fill_v7v8.log
+6a1d31702c8e59d487e53c04b98fd24c logs/md5_material.log
+04b1d4ed5251d986502ac4e66ad7b7f5 logs/md5check.log
+8da4b90d8f9cc66596809b4c904ac966 logs/mdpdf_added_v7control.log
+c2da47098c59f5364fd31269338da9a7 logs/mdpdf_added_v8.log
+b65c86d59d791766e3cbb5ce705adfc4 logs/owndiff.log
+aad37c35e29bb48d8a1f7decd102aa96 logs/pageturn.log
+2f67b7c340a6576b8b46007e2c05bd2a logs/render.log
+c3f8cab7774f39d9be0c50b4fdd6d533 logs/stmts.log
+221fcf6b4804aa5c3ff604f17f3782ba logs/stmts_control.log
+f5dcbddb25eac50b92af20f236bdf583 logs/text_edits_replay.log
+974e4beff7abd3baf5ea823e3e68f98c logs/wordcmp.log
+70ed0f141d7a00af0799b3aeff3bd2db logs/wordcmp_control.log
+ee6d3b14c8097a853b2e324d9c3c5576 logs/wordcmp_where.log
+1920af61574361b7f4febdb266044c70 logs/zoom3.log
+0fdcd6d182c86075f289bcabbd465eb4 scratch/p90/ (50 files, md5 of the sorted md5 -r list)
+ca4b57f2ef33c6df9ea2f40da465850c scratch/r7/ (52 files, md5 of the sorted md5 -r list)
+d17141293152b67772c5c8043afac93c scratch/r8/ (50 files, md5 of the sorted md5 -r list)
+35b8f8c88e0c05eb1c5a5c3717e736aa scratch/zoom/ (3 files, md5 of the sorted md5 -r list)
+       0
+       2
+VIGIA-FIN-OK exit=0 pico_kb=2176 t=0s

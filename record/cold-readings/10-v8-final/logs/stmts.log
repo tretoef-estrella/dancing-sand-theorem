@@ -1,0 +1,261 @@
+===== v1 -> v2: 74 statements in v1, 75 in v2
+  ONLY IN v1: Proposition 9.5
+  ONLY IN v1: Lemma 9.6
+  ONLY IN v1: Lemma 9.7.
+  ONLY IN v1: Theorem 9.9
+  ONLY IN v2: Lemma 9.5
+  ONLY IN v2: Proposition 9.6
+  ONLY IN v2: Lemma 9.7
+  ONLY IN v2: Lemma 9.9.
+  ONLY IN v2: Theorem 9.10
+  DIFF Lemma 3.3.:
+     insert: «of Dist_A-modules; an extension of two»  ->  «of Dist_A-modules; an extension X of two»
+     replace: «two lattices is a lattice). Consequently, if»  ->  «two lattices is a lattice: X ⊗ Q is semisimple by Weyl's theorem, so H is diagonalizable on it with integer eigenvalues, and the projection onto the weight space of weight w is P(H), where P is the polynomial of degree at most w_1 − w_0 that takes the value 1 at w and 0 at the other integers of [w_0, w_1], w_0 and w_1 the least and the largest weight; by Newton's forward differences P(H) = Σ_r (Δ^r P)(w_0)·C(H − w_0, r) with integer coefficients (Δ^r P)(w_0), and the C(H − w_0, r) lie in Dist_Z; so X is the direct sum of its weight spaces). Consequently, if»
+  DIFF Proposition 4.1:
+     replace: «Proposition 4.1 (doblar). Let N»  ->  «Proposition 4.1 (the twist move). Let N»
+  DIFF Proposition 4.2:
+     replace: «Proposition 4.2 (paso). Let N»  ->  «Proposition 4.2 (the split move). Let N»
+  DIFF Proposition 4.3.:
+     replace: «in this order: a doblar if t»  ->  «in this order: a twist move if t»
+     replace: «t ∉ I, a paso if t»  ->  «t ∉ I, a split move if t»
+  DIFF Theorem 6.2:
+     replace: «is exactly one bijection σ_r: L_r →»  ->  «is exactly one bijection β_r: L_r →»
+     replace: «whose arrows D → σ_r(D) are golden.»  ->  «whose arrows D → β_r(D) are golden.»
+  DIFF Lemma 7.2:
+     insert: «= fit(x) + δ, x +»  ->  «= fit(x) + δ, and x +»
+     replace: «cut at the same positions, and if δ is»  ->  «cut at the same positions. If moreover δ is»
+     insert: «if δ is integer the integer»  ->  «moreover δ is integer and constant on every level set of fit(x) — in particular, if every position at which δ changes is a strict cut of x — then fit(x + δ) has the level sets of fit(x), the strict cuts of x are strict cuts of x + δ, and the integer»
+  DIFF Lemma 7.7:
+     replace: «and let T, κ, σ, τ be»  ->  «and let T, κ, sat, τ be»
+     replace: «J_H(D_0) = [T = 1] σ J_{H'}(D_0), J_H(D_0 ∪»  ->  «J_H(D_0) = [T = 1]·sat·J_{H'}(D_0), J_H(D_0 ∪»
+     replace: «J_H(D_0 ∪ {c}) = σ([T = 1]»  ->  «J_H(D_0 ∪ {c}) = sat·([T = 1]»
+  DIFF Theorem 7.8:
+     insert: «hence at its mirror; - (Λ)»  ->  «hence at its mirror; and these cuts are strict: fit(x_H) is larger at the dancer before b than at b, and likewise at the mirror. (b ≠ ∅, since J_H(∅) = [ℓ ≥ 2^k] = 0.) - (Λ)»
+  DIFF Lemma 9.2.:
+     replace: «φ(λ + 1) + τ(P_l) = φ(Y_l)»  ->  «φ(λ + 1) + ψ(P_l) = φ(Y_l)»
+  DIFF Lemma 9.8.:
+     replace: «Lemma 9.8. Let J := i + o_D»  ->  «Lemma 9.8. For odd N', the families of N' + 1»
+     replace: «J := i + o_D ≥ 1. In the cube»  ->  «families of N' + 1 are the λ»
+     replace: «≥ 1. In the cube N, u(D) = 2^e − 2J + v_2(J)»  ->  «+ 1 are the λ + 1,»
+     replace: «2^e − 2J + v_2(J) + s_2(J) + h(D). In the cube n, for a family»  ->  «are the λ + 1, λ a family»
+     insert: «n, for a family with dancer»  ->  «1, λ a family of N', with m_{λ+1}(N'»
+     replace: «for a family with dancer D' and J'»  ->  «family of N', with m_{λ+1}(N' + 1) = m_λ(N') and the»
+     replace: «with dancer D' and J' := i + o_{D'} ≥ 1, u(D') = 2^e + 1»  ->  «1) = m_λ(N') and the same shift. If λ + 1»
+     replace: «= 2^e + 1 − 2J' + s_2(J'»  ->  «If λ + 1 = 2^k + Σ_{t∈I}»
+     replace: «1 − 2J' + s_2(J' − 1) + h'(D').»  ->  «1 = 2^k + Σ_{t∈I} 2^t, the family λ + 1»
+     replace: «s_2(J' − 1) + h'(D').»  ->  «the family λ + 1 has the same k and the set I ∪ {0}, with h'_0 = t_1 := min(I ∪ {k}) and the other gaps unchanged; its small clocks are those of λ taken twice, and its dancers are D and D ∪ {0}, D ⊆ I, adjacent in o-order.»
+  DIFF Lemma 10.6.:
+     replace: «a payment system the doblar move is»  ->  «a payment system the twist move is»
+     replace: «Proposition 4.1, and the paso move (V-split»  ->  «Proposition 4.1, and the split move (V-split»
+     replace: «move (V-split followed by doblar) has the»  ->  «move (V-split followed by the twist move) has the»
+  DIFF Lemma 10.8:
+     replace: «level h, G_h^{−1} = 2^h·ρ_h ∘ Ξ^{−1}»  ->  «level h, G_h^{−1} = 2^h·out_h ∘ Ξ^{−1}»
+     replace: «2^h·ρ_h ∘ Ξ^{−1} ∘ κ_h, where κ_h»  ->  «2^h·out_h ∘ Ξ^{−1} ∘ in_h, where in_h»
+     replace: «Ξ^{−1} ∘ κ_h, where κ_h sends the»  ->  «Ξ^{−1} ∘ in_h, where in_h sends the»
+     replace: «2^h g + o_D, ρ_h reads the»  ->  «2^h g + o_D, out_h reads the»
+  DIFF Lemma 10.10:
+     replace: «y^Ξ_L(f) = y^Σ_L(f)·(1 + ε_L(f)) with v_2(ε_L(f))»  ->  «y^Ξ_L(f) = y^Σ_L(f)·(1 + e_L(f)) with v_2(e_L(f))»
+     replace: «y^Σ_L(f)·(1 + ε_L(f)) with v_2(ε_L(f)) ≥ α»  ->  «y^Σ_L(f)·(1 + e_L(f)) with v_2(e_L(f)) ≥ α»
+  DIFF Lemma 10.13.:
+     replace: «representation (a, χ) of φ ∈ 𝒦»  ->  «representation (a, χ) of ϑ ∈ 𝒦»
+     replace: «(e ∈ Z_2), and 1/φ ∈ 𝒦»  ->  «(e ∈ Z_2), and 1/ϑ ∈ 𝒦»
+     replace: «of characteristic 2, and Θ(φ) := ā»  ->  «of characteristic 2, and Θ(ϑ) := ā»
+     replace: «is a ring homomorphism, Θ(φ(· − e))»  ->  «is a ring homomorphism, Θ(ϑ(· − e))»
+     replace: «Θ(φ(· − e)) = Θ(φ) for every»  ->  «Θ(ϑ(· − e)) = Θ(ϑ) for every»
+     replace: «Θ = 2𝒦. (c) φ(y) ≡ a»  ->  «Θ = 2𝒦. (c) ϑ(y) ≡ a»
+  DIFF Lemma 10.20:
+     replace: «ηF, and N_± := 2^k ρ (Ψ ±»  ->  «ηF, and N_± := 2^k·out (Ψ ±»
+     replace: «ρ (Ψ ± 2)^{−1} κ, with the»  ->  «2^k·out (Ψ ± 2)^{−1} in, with the»
+     replace: «κ, with the maps ρ = ρ_k,»  ->  «in, with the maps out = out_k,»
+     replace: «the maps ρ = ρ_k, κ = κ_k»  ->  «the maps out = out_k, in = in_k»
+     replace: «= ρ_k, κ = κ_k of Lemma»  ->  «= out_k, in = in_k of Lemma»
+  statements whose normalized text differs: 15
+===== v2 -> v3: 75 statements in v2, 75 in v3
+  DIFF Corollary 1.6:
+     insert: «= G. In particular: c_1 =»  ->  «= G. In particular: - c_1 =»
+     insert: «[GMMY24, Theorems 4.1, 4.2]; c_n =»  ->  «[GMMY24, Theorems 4.1, 4.2]; - c_n =»
+     replace: «3 [GMMY24, Conjecture 4.14]; and c_{n+1} =»  ->  «3 [GMMY24, Conjecture 4.14]; - c_{n+1} =»
+  DIFF Proposition 3.1.:
+     replace: «Φ(N), for s ≥ 0: F^{(2s)}(b_e n)»  ->  «Φ(N), for s ≥ 0 and e = 0, 1: F^{(2s)}(b_e n)»
+     replace: «F^{(s)} n /(2s − 1)!! (e = 0, 1), F^{(2s+1)}(b_0 n)»  ->  «F^{(s)} n /(2s − 1)!!, F^{(2s+1)}(b_0 n)»
+  DIFF Lemma 7.9:
+     replace: «Lemma 7.9 (integer separation). In every»  ->  «Lemma 7.9 (integrality). In every»
+     replace: «(integer separation). In every house, any two adjacent level sets of the real»  ->  «7.9 (integrality). In every house the real»
+     replace: «the real fit of x_H, with values»  ->  «the real fit of x_H takes integer values. So does the real fit of the clocks of every penalty cell Cell(H; P_r, P_c), and that of x_H with its»
+     replace: «fit of x_H, with values μ_A > μ_B, satisfy ⌊μ_A⌋ ≥ ⌈μ_B⌉. The same holds after the penalty shifts of a real cell, and after deleting the first dancer»  ->  «that of x_H with its first dancer»
+     replace: «deleting the first dancer of the house»  ->  «with its first dancer deleted, in the house»
+     replace: «= 2^k − 1. Consequently every integer fit»  ->  «= 2^k − 1. Consequently, in each of these the integer fit»
+     replace: «Consequently every integer fit used in this paper is non-increasing.»  ->  «these the integer fit is the real fit, and it is non-increasing.»
+  DIFF Corollary 10.2.:
+     insert: «Corollary 10.2. Z_2 ⊕»  ->  «Corollary 10.2. For every n ≥ 2, with the multiplicities of Theorem 3.6, Z_2 ⊕»
+     replace: «⊕_λ X̄(λ, (n − λ)/2)^{m_λ(n)} for every n ≥ 2, with the multiplicities of Theorem 3.6.»  ->  «⊕_λ X̄(λ, (n − λ)/2)^{m_λ(n)}.»
+  DIFF Lemma 10.6.:
+     replace: «Lemma 10.6. (a) For a payment system»  ->  «Lemma 10.6. (a) For an even payment system»
+  DIFF Lemma 10.10:
+     insert: «Lemma 10.10 (path sum). y^Ξ_L(f) =»  ->  «Lemma 10.10 (path sum). For every L ≥ 0 and every floor f, y^Ξ_L(f) =»
+  statements whose normalized text differs: 6
+===== v3 -> v4: 75 statements in v3, 75 in v4
+  DIFF Corollary 1.6:
+     replace: «for n ≥ 4 [GMM19].»  ->  «for n ≥ 4 [MGM19].»
+  DIFF Lemma 2.1.:
+     insert: «Lemma 2.1. s_j s_S»  ->  «Lemma 2.1. In R, s_j s_S»
+     delete: «if j ∉ S, and s_j s_S»  ->  «if j ∉ S, s_j s_S»
+  statements whose normalized text differs: 2
+===== v4 -> v5: 75 statements in v4, 75 in v5
+  DIFF Lemma 2.4.:
+     insert: «1), ∇_A(m + 1). Δ_A(0) ⊗»  ->  «1), ∇_A(m + 1). Moreover, Δ_A(0) ⊗»
+  DIFF Lemma 3.3.:
+     replace: «Lemma 3.3. Ext^1(Δ_A(λ), ∇_A(μ)) = 0 for all λ,»  ->  «Lemma 3.3. For all λ,»
+     insert: «all λ, μ ≥ 0 (extensions»  ->  «all λ, μ ≥ 0, Ext^1(Δ_A(λ), ∇_A(μ)) = 0 (extensions»
+  DIFF Theorem 4.4:
+     delete: «if D' ⊆ D, and M_{DD'} =»  ->  «if D' ⊆ D, M_{DD'} =»
+  DIFF Corollary 10.9.:
+     replace: «Q_2 depends only on w (and γ_{YX} =»  ->  «Q_2 depends only on the word w, and γ_{YX} =»
+     replace: «0 if L < 0). The floors»  ->  «0 if L < 0. The floors»
+     insert: «+ K − 1], the window»  ->  «+ K − 1], which is the window»
+  DIFF Lemma 10.13.:
+     insert: «∈ 𝒦 is unique. 𝒦 is»  ->  «∈ 𝒦 is unique. The set 𝒦 is»
+  statements whose normalized text differs: 5
+===== v5 -> v6: 75 statements in v5, 75 in v6
+  statements whose normalized text differs: 0
+===== v6 -> v7: 75 statements in v6, 75 in v7
+  statements whose normalized text differs: 0
+===== v7 -> v8: 75 statements in v7, 75 in v8
+  statements whose normalized text differs: 0
+===== v1 -> v7: 74 statements in v1, 75 in v7
+  ONLY IN v1: Proposition 9.5
+  ONLY IN v1: Lemma 9.6
+  ONLY IN v1: Lemma 9.7.
+  ONLY IN v1: Theorem 9.9
+  ONLY IN v7: Lemma 9.5
+  ONLY IN v7: Proposition 9.6
+  ONLY IN v7: Lemma 9.7
+  ONLY IN v7: Lemma 9.9.
+  ONLY IN v7: Theorem 9.10
+  DIFF Corollary 1.6:
+     insert: «= G. In particular: c_1 =»  ->  «= G. In particular: - c_1 =»
+     insert: «[GMMY24, Theorems 4.1, 4.2]; c_n =»  ->  «[GMMY24, Theorems 4.1, 4.2]; - c_n =»
+     replace: «3 [GMMY24, Conjecture 4.14]; and c_{n+1} =»  ->  «3 [GMMY24, Conjecture 4.14]; - c_{n+1} =»
+     replace: «for n ≥ 4 [GMM19].»  ->  «for n ≥ 4 [MGM19].»
+  DIFF Lemma 2.1.:
+     insert: «Lemma 2.1. s_j s_S»  ->  «Lemma 2.1. In R, s_j s_S»
+     delete: «if j ∉ S, and s_j s_S»  ->  «if j ∉ S, s_j s_S»
+  DIFF Lemma 2.4.:
+     insert: «1), ∇_A(m + 1). Δ_A(0) ⊗»  ->  «1), ∇_A(m + 1). Moreover, Δ_A(0) ⊗»
+  DIFF Proposition 3.1.:
+     replace: «Φ(N), for s ≥ 0: F^{(2s)}(b_e n)»  ->  «Φ(N), for s ≥ 0 and e = 0, 1: F^{(2s)}(b_e n)»
+     replace: «F^{(s)} n /(2s − 1)!! (e = 0, 1), F^{(2s+1)}(b_0 n)»  ->  «F^{(s)} n /(2s − 1)!!, F^{(2s+1)}(b_0 n)»
+  DIFF Lemma 3.3.:
+     replace: «Lemma 3.3. Ext^1(Δ_A(λ), ∇_A(μ)) = 0 for all λ,»  ->  «Lemma 3.3. For all λ,»
+     insert: «all λ, μ ≥ 0 (extensions»  ->  «all λ, μ ≥ 0, Ext^1(Δ_A(λ), ∇_A(μ)) = 0 (extensions»
+     insert: «of Dist_A-modules; an extension of two»  ->  «of Dist_A-modules; an extension X of two»
+     replace: «two lattices is a lattice). Consequently, if»  ->  «two lattices is a lattice: X ⊗ Q is semisimple by Weyl's theorem, so H is diagonalizable on it with integer eigenvalues, and the projection onto the weight space of weight w is P(H), where P is the polynomial of degree at most w_1 − w_0 that takes the value 1 at w and 0 at the other integers of [w_0, w_1], w_0 and w_1 the least and the largest weight; by Newton's forward differences P(H) = Σ_r (Δ^r P)(w_0)·C(H − w_0, r) with integer coefficients (Δ^r P)(w_0), and the C(H − w_0, r) lie in Dist_Z; so X is the direct sum of its weight spaces). Consequently, if»
+  DIFF Proposition 4.1:
+     replace: «Proposition 4.1 (doblar). Let N»  ->  «Proposition 4.1 (the twist move). Let N»
+  DIFF Proposition 4.2:
+     replace: «Proposition 4.2 (paso). Let N»  ->  «Proposition 4.2 (the split move). Let N»
+  DIFF Proposition 4.3.:
+     replace: «in this order: a doblar if t»  ->  «in this order: a twist move if t»
+     replace: «t ∉ I, a paso if t»  ->  «t ∉ I, a split move if t»
+  DIFF Theorem 4.4:
+     delete: «if D' ⊆ D, and M_{DD'} =»  ->  «if D' ⊆ D, M_{DD'} =»
+  DIFF Theorem 6.2:
+     replace: «is exactly one bijection σ_r: L_r →»  ->  «is exactly one bijection β_r: L_r →»
+     replace: «whose arrows D → σ_r(D) are golden.»  ->  «whose arrows D → β_r(D) are golden.»
+  DIFF Lemma 7.2:
+     insert: «= fit(x) + δ, x +»  ->  «= fit(x) + δ, and x +»
+     replace: «cut at the same positions, and if δ is»  ->  «cut at the same positions. If moreover δ is»
+     insert: «if δ is integer the integer»  ->  «moreover δ is integer and constant on every level set of fit(x) — in particular, if every position at which δ changes is a strict cut of x — then fit(x + δ) has the level sets of fit(x), the strict cuts of x are strict cuts of x + δ, and the integer»
+  DIFF Lemma 7.7:
+     replace: «and let T, κ, σ, τ be»  ->  «and let T, κ, sat, τ be»
+     replace: «J_H(D_0) = [T = 1] σ J_{H'}(D_0), J_H(D_0 ∪»  ->  «J_H(D_0) = [T = 1]·sat·J_{H'}(D_0), J_H(D_0 ∪»
+     replace: «J_H(D_0 ∪ {c}) = σ([T = 1]»  ->  «J_H(D_0 ∪ {c}) = sat·([T = 1]»
+  DIFF Theorem 7.8:
+     insert: «hence at its mirror; - (Λ)»  ->  «hence at its mirror; and these cuts are strict: fit(x_H) is larger at the dancer before b than at b, and likewise at the mirror. (b ≠ ∅, since J_H(∅) = [ℓ ≥ 2^k] = 0.) - (Λ)»
+  DIFF Lemma 7.9:
+     replace: «Lemma 7.9 (integer separation). In every»  ->  «Lemma 7.9 (integrality). In every»
+     replace: «(integer separation). In every house, any two adjacent level sets of the real»  ->  «7.9 (integrality). In every house the real»
+     replace: «the real fit of x_H, with values»  ->  «the real fit of x_H takes integer values. So does the real fit of the clocks of every penalty cell Cell(H; P_r, P_c), and that of x_H with its»
+     replace: «fit of x_H, with values μ_A > μ_B, satisfy ⌊μ_A⌋ ≥ ⌈μ_B⌉. The same holds after the penalty shifts of a real cell, and after deleting the first dancer»  ->  «that of x_H with its first dancer»
+     replace: «deleting the first dancer of the house»  ->  «with its first dancer deleted, in the house»
+     replace: «= 2^k − 1. Consequently every integer fit»  ->  «= 2^k − 1. Consequently, in each of these the integer fit»
+     replace: «Consequently every integer fit used in this paper is non-increasing.»  ->  «these the integer fit is the real fit, and it is non-increasing.»
+  DIFF Lemma 9.2.:
+     replace: «φ(λ + 1) + τ(P_l) = φ(Y_l)»  ->  «φ(λ + 1) + ψ(P_l) = φ(Y_l)»
+  DIFF Lemma 9.8.:
+     replace: «Lemma 9.8. Let J := i + o_D»  ->  «Lemma 9.8. For odd N', the families of N' + 1»
+     replace: «J := i + o_D ≥ 1. In the cube»  ->  «families of N' + 1 are the λ»
+     replace: «≥ 1. In the cube N, u(D) = 2^e − 2J + v_2(J)»  ->  «+ 1 are the λ + 1,»
+     replace: «2^e − 2J + v_2(J) + s_2(J) + h(D). In the cube n, for a family»  ->  «are the λ + 1, λ a family»
+     insert: «n, for a family with dancer»  ->  «1, λ a family of N', with m_{λ+1}(N'»
+     replace: «for a family with dancer D' and J'»  ->  «family of N', with m_{λ+1}(N' + 1) = m_λ(N') and the»
+     replace: «with dancer D' and J' := i + o_{D'} ≥ 1, u(D') = 2^e + 1»  ->  «1) = m_λ(N') and the same shift. If λ + 1»
+     replace: «= 2^e + 1 − 2J' + s_2(J'»  ->  «If λ + 1 = 2^k + Σ_{t∈I}»
+     replace: «1 − 2J' + s_2(J' − 1) + h'(D').»  ->  «1 = 2^k + Σ_{t∈I} 2^t, the family λ + 1»
+     replace: «s_2(J' − 1) + h'(D').»  ->  «the family λ + 1 has the same k and the set I ∪ {0}, with h'_0 = t_1 := min(I ∪ {k}) and the other gaps unchanged; its small clocks are those of λ taken twice, and its dancers are D and D ∪ {0}, D ⊆ I, adjacent in o-order.»
+  DIFF Corollary 10.2.:
+     insert: «Corollary 10.2. Z_2 ⊕»  ->  «Corollary 10.2. For every n ≥ 2, with the multiplicities of Theorem 3.6, Z_2 ⊕»
+     replace: «⊕_λ X̄(λ, (n − λ)/2)^{m_λ(n)} for every n ≥ 2, with the multiplicities of Theorem 3.6.»  ->  «⊕_λ X̄(λ, (n − λ)/2)^{m_λ(n)}.»
+  DIFF Lemma 10.6.:
+     replace: «Lemma 10.6. (a) For a payment system»  ->  «Lemma 10.6. (a) For an even payment system»
+     replace: «a payment system the doblar move is»  ->  «even payment system the twist move is»
+     replace: «Proposition 4.1, and the paso move (V-split»  ->  «Proposition 4.1, and the split move (V-split»
+     replace: «move (V-split followed by doblar) has the»  ->  «move (V-split followed by the twist move) has the»
+  DIFF Lemma 10.8:
+     replace: «level h, G_h^{−1} = 2^h·ρ_h ∘ Ξ^{−1}»  ->  «level h, G_h^{−1} = 2^h·out_h ∘ Ξ^{−1}»
+     replace: «2^h·ρ_h ∘ Ξ^{−1} ∘ κ_h, where κ_h»  ->  «2^h·out_h ∘ Ξ^{−1} ∘ in_h, where in_h»
+     replace: «Ξ^{−1} ∘ κ_h, where κ_h sends the»  ->  «Ξ^{−1} ∘ in_h, where in_h sends the»
+     replace: «2^h g + o_D, ρ_h reads the»  ->  «2^h g + o_D, out_h reads the»
+  DIFF Corollary 10.9.:
+     replace: «Q_2 depends only on w (and γ_{YX} =»  ->  «Q_2 depends only on the word w, and γ_{YX} =»
+     replace: «0 if L < 0). The floors»  ->  «0 if L < 0. The floors»
+     insert: «+ K − 1], the window»  ->  «+ K − 1], which is the window»
+  DIFF Lemma 10.10:
+     insert: «Lemma 10.10 (path sum). y^Ξ_L(f) =»  ->  «Lemma 10.10 (path sum). For every L ≥ 0 and every floor f, y^Ξ_L(f) =»
+     replace: «y^Ξ_L(f) = y^Σ_L(f)·(1 + ε_L(f)) with v_2(ε_L(f))»  ->  «y^Ξ_L(f) = y^Σ_L(f)·(1 + e_L(f)) with v_2(e_L(f))»
+     replace: «y^Σ_L(f)·(1 + ε_L(f)) with v_2(ε_L(f)) ≥ α»  ->  «y^Σ_L(f)·(1 + e_L(f)) with v_2(e_L(f)) ≥ α»
+  DIFF Lemma 10.13.:
+     replace: «representation (a, χ) of φ ∈ 𝒦»  ->  «representation (a, χ) of ϑ ∈ 𝒦»
+     insert: «∈ 𝒦 is unique. 𝒦 is»  ->  «∈ 𝒦 is unique. The set 𝒦 is»
+     replace: «(e ∈ Z_2), and 1/φ ∈ 𝒦»  ->  «(e ∈ Z_2), and 1/ϑ ∈ 𝒦»
+     replace: «of characteristic 2, and Θ(φ) := ā»  ->  «of characteristic 2, and Θ(ϑ) := ā»
+     replace: «is a ring homomorphism, Θ(φ(· − e))»  ->  «is a ring homomorphism, Θ(ϑ(· − e))»
+     replace: «Θ(φ(· − e)) = Θ(φ) for every»  ->  «Θ(ϑ(· − e)) = Θ(ϑ) for every»
+     replace: «Θ = 2𝒦. (c) φ(y) ≡ a»  ->  «Θ = 2𝒦. (c) ϑ(y) ≡ a»
+  DIFF Lemma 10.20:
+     replace: «ηF, and N_± := 2^k ρ (Ψ ±»  ->  «ηF, and N_± := 2^k·out (Ψ ±»
+     replace: «ρ (Ψ ± 2)^{−1} κ, with the»  ->  «2^k·out (Ψ ± 2)^{−1} in, with the»
+     replace: «κ, with the maps ρ = ρ_k,»  ->  «in, with the maps out = out_k,»
+     replace: «the maps ρ = ρ_k, κ = κ_k»  ->  «the maps out = out_k, in = in_k»
+     replace: «= ρ_k, κ = κ_k of Lemma»  ->  «= out_k, in = in_k of Lemma»
+  statements whose normalized text differs: 23
+===== v3 -> v7: 75 statements in v3, 75 in v7
+  DIFF Corollary 1.6:
+     replace: «for n ≥ 4 [GMM19].»  ->  «for n ≥ 4 [MGM19].»
+  DIFF Lemma 2.1.:
+     insert: «Lemma 2.1. s_j s_S»  ->  «Lemma 2.1. In R, s_j s_S»
+     delete: «if j ∉ S, and s_j s_S»  ->  «if j ∉ S, s_j s_S»
+  DIFF Lemma 2.4.:
+     insert: «1), ∇_A(m + 1). Δ_A(0) ⊗»  ->  «1), ∇_A(m + 1). Moreover, Δ_A(0) ⊗»
+  DIFF Lemma 3.3.:
+     replace: «Lemma 3.3. Ext^1(Δ_A(λ), ∇_A(μ)) = 0 for all λ,»  ->  «Lemma 3.3. For all λ,»
+     insert: «all λ, μ ≥ 0 (extensions»  ->  «all λ, μ ≥ 0, Ext^1(Δ_A(λ), ∇_A(μ)) = 0 (extensions»
+  DIFF Theorem 4.4:
+     delete: «if D' ⊆ D, and M_{DD'} =»  ->  «if D' ⊆ D, M_{DD'} =»
+  DIFF Corollary 10.9.:
+     replace: «Q_2 depends only on w (and γ_{YX} =»  ->  «Q_2 depends only on the word w, and γ_{YX} =»
+     replace: «0 if L < 0). The floors»  ->  «0 if L < 0. The floors»
+     insert: «+ K − 1], the window»  ->  «+ K − 1], which is the window»
+  DIFF Lemma 10.13.:
+     insert: «∈ 𝒦 is unique. 𝒦 is»  ->  «∈ 𝒦 is unique. The set 𝒦 is»
+  statements whose normalized text differs: 7
+
+===== v7 Theorem 7.8 block as extracted:
+**Theorem 7.8 (Theorem F, the floor).** For every house `H = (I, k, ℓ, α)`, let `ŷ_H` be the integer fit of `x_H`. There is a function `V: 2^I → ℤ` with
+- (E) `V(D) − V(I ∖ D) = ŷ_H(D)` for every `D`;
+- (M) `V` non-increasing in o-order;
+- (G) `V(a) − V(b) ≤ ĉ_H(a, b)` for every `b ⊊ a`;
+and moreover:
+- (Cut) `x_H` is cut at the first dancer `b` with `J_H(b) = 1` (if any), and hence at its mirror; and these cuts are **strict**: `fit(x_H)` is larger at the dancer before `b` than at `b`, and likewise at the mirror. (`b ≠ ∅`, since `J_H(∅) = [ℓ ≥ 2^k] = 0`.)
+- (Λ) `|ŷ_H| ≤ α(2^k − 1)`.
+VIGIA-FIN-OK exit=0 pico_kb=6320 t=0s

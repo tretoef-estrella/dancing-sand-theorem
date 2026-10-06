@@ -1,0 +1,10 @@
+BODIES-IDENTICAL
+--- THE_DANCING_SAND_THEOREM_v7.md	2026-10-06 12:35:46
++++ THE_DANCING_SAND_THEOREM_v8.md	2026-10-06 12:35:46
+      61 ../../scratch/owndiff.txt
+      61 DIFF_v7_to_v8.txt
+     122 total
+    1187 THE_DANCING_SAND_THEOREM_v7.md
+    1180 THE_DANCING_SAND_THEOREM_v8.md
+    2367 total
+VIGIA-FIN-OK exit=0 pico_kb=128 t=0s

@@ -1,0 +1,12 @@
+32c32,33
+<     PGS[10] = re.sub(r'<word xMin="[\d.]+" yMin="(4[5-9]\d|[5-7]\d\d)(\.\d+)?"[^>]*>[^<]*</word>', '', PGS[10])
+---
+>     # v8 (Grepy Escribano): in v8 page 11 begins §2.2, so a short page 10 is allowed and the control died; the damage moves to page 12 (page 13 begins inside §2.3)
+>     PGS[12] = re.sub(r'<word xMin="[\d.]+" yMin="(4[5-9]\d|[5-7]\d\d)(\.\d+)?"[^>]*>[^<]*</word>', '', PGS[12])
+129c130,132
+< NOT_TEXT = {('11', '228'), ('9', '276'), ('35', '482')}
+---
+> # v8 (Grepy Escribano, 6 Oct 2026): the build of v8 moved them (the shorter §1.0 paragraph reflows every page); looked at again on pages 9, 11, 34 of v8 at 85 dpi,
+> # same three lines with the same gaps as in v7 (12.77, 14.37, 11.11 pt). Positions in v7 were ('11','228'), ('9','276'), ('35','482').
+> NOT_TEXT = {('11', '154'), ('9', '168'), ('34', '702')}
+VIGIA-FIN-OK exit=1 pico_kb=0 t=0s
