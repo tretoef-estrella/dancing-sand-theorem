@@ -61,7 +61,7 @@ The author does not write mathematics. What he gave were pictures, in Spanish, o
 - **The cave.** «The deeper you go, do everything by half; the hole narrows; it is the only way down, as in *The Shawshank Redemption*.» It told flight 9 what to measure. The coefficients of every level are functions of twice the position: the ring `𝒦` of Theorem 10.15, the heart of the fold law. The pilot wrote afterwards: «Without the measurement "h + 2" I would not have looked for functions of 2y.»
 - **«The hinges come in pairs; the bugs are findings.»** The auditor's weights had been random. That was the bug, and it hid the real structure: the cube's weights come in pairs (the series of `tanh` and `coth`). Following this, flight 9 proved that the general statement it had been chasing was false, and proved the true one.
 
-By the pilot of flight 9's own count — not checked line by line — there were about 27 distinct images over the nine flights. About 20 served, and at least 9 have the exact shape of a theorem. Others were decorative, and one served only to kill a candidate. One image, the turned lid, gave a symmetry that is measured and not proved: open question 2 of the paper.
+There were 27 distinct images over the nine flights. Checked one by one against the flight reports, 19 served in full, 6 served in part, one only killed a candidate and one was decorative. One more, the turned lid, gave a symmetry that is measured and not proved: open question 2 of the paper. **The whole list, with what each image became, or why it did not serve: [record/THE_IMAGES.md](record/THE_IMAGES.md).**
 
 ## What failed
 
