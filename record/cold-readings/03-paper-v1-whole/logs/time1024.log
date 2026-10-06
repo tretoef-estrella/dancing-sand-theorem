@@ -1,0 +1,3 @@
+n=1024: distinct exponents 1024 max finite exponent 1033 number of cyclic factors == 2^1023 - 1: True time 0.2s
+top of the podium: [1033, 1023, 1022, 1021, 1020]
+VIGIA-FIN-OK exit=0 pico_kb=6448 t=0s

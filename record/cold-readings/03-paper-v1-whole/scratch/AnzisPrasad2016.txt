@@ -1,0 +1,737 @@
+                    ON THE CRITICAL GROUPS OF CUBES
+
+                                 BEN ANZIS, ROHIL PRASAD
+
+
+
+
+                                     1. Introduction
+
+  Let G be a graph on n vertices with no self-loops. We can construct its Laplacian L(G)
+to be the n × n matrix satisfying
+                                          
+                                          deg(u) if u = v
+                              L(G)u,v =
+                                          −m(u, v) if u 6= v
+
+   where m(u, v) is the number of edges between u and v.
+   By definition, the Laplacian is an integer matrix, so it can be considered as a map of
+Z-modules Zn → Zn .
+   Furthermore, L(G) has kernel equal to the span of the all-ones vector (1, 1, . . . , 1). It
+follows that the cokernel can be written as
+
+                                 Zn / im(L(G)) ≃ Z ⊕ K(G)
+
+where K(G) is a finite abelian group.
+   The group K(G) is called the critical group of G and is an important algebraic invariant in
+the study of abelian sandpiles. It is also a well-known consequence of Kirchhoff’s Matrix-Tree
+theorem that the order |K(G)| counts the number of spanning trees of G.
+   In this paper, we investigate the critical group of the hypercube graph Qn , which is equal
+to the n-fold product of the complete graph on two vertices.
+   In 2003, H. Bai determined in [1] the p-Sylow subgroups of K(Qn ) for any prime p > 2.
+Last year, Chandler et al [3] calculated the cokernel of the adjacency matrix of Qn and found
+that it was determined by its eigenvalues.
+   However, the determination of the 2-Sylow subgroup of the critical group of Qn remains
+an open problem.
+   In Section 1, we make partial progress on this problem by determining an upper bound for
+the size of the largest cyclic factor of the 2-Sylow subgroup of K(Qn ). We also use the same
+method to determine similar bounds for related graphs. In Section 2, we outline a possible
+approach to determination of the critical group via Gröbner basis calculations. In Section 3,
+we define a cell complex structure on the hypercube and determine the p-Sylow subgroups
+of its higher critical groups.
+                                               1
+                         2. A Bound On The Top Cyclic Factor
+
+  In the previous section, we introduced the hypercube graph Qn as the n-fold product of
+the two-cycle C2 . In this section, we prove general results about n-fold products of directed
+cycles. Toward this end, let Ck denote the directed k-cycle. It will be useful for the rest of
+the paper to consider Ckn in the context of Cayley graphs.
+
+Definition 2.1. Let G be a group and E ⊂ G be some subset of elements. The Cayley
+graph Γ(G, E) is the (directed) graph with vertex set G and edge set consisting of all pairs
+of elements (g, h) such that gh−1 ∈ E.
+
+   If E is a subset such that for every e ∈ E we have e−1 ∈ E, then every pair of adjacent
+vertices g, h in Γ(G, E) will have an edge from g to h and from h to g. In this case, we
+identify the two edges and consider Γ(G, E) as an undirected graph.
+   Now we can realize Ckn as Γ((Z/kZ)n , E) where E is the set of tuples {ei | 1 ≤ i ≤ n}
+which are equal to 1 in the ith index and 0 elsewhere.
+   Following the approach of [2], we can induce a ring structure on the cokernel of L(Ckn )
+from the more general result [2, Proposition 5.20]. We include a proof in our case for the
+sake of completeness.
+
+Proposition 2.2. coker(Ckn ) is isomorphic to Z[x1 , . . . , xn ]/(xk1 − 1, xk2 − 1, . . . , xkn − 1, n −
+(x1 + x2 + · · · + xn )) as an abelian group.
+
+Proof. First, note that there is an isomorphism of abelian groups
+                           n   ∼
+                        Zk −
+                           → Z[x1 , . . . , xn ]/(xk1 − 1, xk2 − 1, . . . , xkn − 1),
+
+due to the fact that the latter group has a Z-basis consisting of monomials absent k-th
+powers.
+                                                                                               n
+   Furthermore, this isomorphism can be realized as the map sending the generator ei ∈ Zk
+                                                                                             b
+equal to the tuple with a 1 in the ith place and a 0 elsewhere to the monomial nj=1 xjj ,
+                                                                                       Q
+
+where b1 b2 . . . bn is the base k expansion of i.
+                                       n
+   To determine coker(L(Ckn )) = Z2 / im(L(Ckn )), it suffices to examine the image of im(L(Ckn ))
+under this isomorphism. By definition of Ckn , the Laplacian maps ei to nei minus the sum
+of ej across all j such that the base k expansions of i and j differ in exactly one digit.
+                                                                                     b
+   Under our isomorphism, this indicates that L(Ckn ) maps the monomial nj=1 xjj to
+                                                                              Q
+
+                              n        n     n        n            n
+                                                                        !
+                                 b               b       b
+                             Y         X    Y         Y           X
+                           n    xj j −   xk    xj j =   xj j n −     xk
+                           j=1        k=1     j=1         j=1             k=1
+
+Therefore, the image of L(Ckn ) in Z[x1 , . . . , xn ]/(xki − 1) is the ideal generated by n −
+                                                                                                   P
+                                                                                                       xi
+and the assertion follows.                                                                             
+                                                     2
+  We now use this ring structure to determine an element of maximal order in this abelian
+group.
+
+
+Lemma 2.3. The image of the element xj −1 has maximal additive order in Z[x1 , . . . , xn ]/(xk1 −
+1, xk2 − 1, . . . , xkn − 1, n − xi ) for any j.
+                                P
+
+
+
+Proof. That xj − 1 has finite order in the group follows immediately from [2, Proposition
+5.20]
+   From our Cayley graph interpretation of Ckn , it is clear that L(Ckn ) is the McKay-Cartan
+matrix corresponding to the faithful representation γ of (Z/kZ)n equal to the sum of irre-
+                             P
+ducible characters e∈E χe .
+   As a result of the proposition, we have that Z[x1 , . . . , xn ]/(xki − 1, n − xi ) is isomorphic
+                                                                                          P
+
+to the representation ring of (Z/kZ)n modulo the ideal generated by n − χγ = n − e∈E χe .
+                                                                                                    P
+
+   By the second part of the proposition, an element has finite additive order in this ring
+iff it lies in the kernel of the map sending all of the χei to 1. The element corresponding
+to xj − 1 in the representation ring is χe − 1 for some irreducible character χe under our
+isomorphism, and it follows that it has finite additive order.
+   Furthermore, a consequence of this proposition is that any polynomial with finite additive
+order is a linear combination of xI − 1, where xI denotes a monomial free of k-th powers.
+   First, we will show for any j 6= k that xj − 1 and xk − 1 have the same additive order. Let
+C be the additive order of xj − 1. Then there exist polynomials fi , g such that C(xj − 1) =
+Pn                             k
+                                                                P
+    i=1 fi (x1 , . . . , xn )(xi − 1) + g(x1 , . . . , xn )(n −   xi ). Observe that the generating set of the
+ideal is invariant under permutation of the variables. Therefore, we can obtain an algebraic
+combination of the generators that is equal to C(xk − 1) by interchanging the roles of the
+variables xj and xk . Doing the same in the other direction tells us that xj − 1 and xk − 1
+have the same additive order.
+   Now to show maximality of the additive order of xj −1, it suffices to show that if C(xj −1) ∈
+(xi − 1, n − xi ) for some constant C, then C(xI − 1) ∈ (xki − 1, n − xi ) for any monomial
+   k
+                 P                                                                   P
+
+xI . Indeed, we may assume without loss of generality that x1 |xI . Then writing
+                                                                                 
+                                                                 xI        xI
+                                  C(xI − 1) = C(x1 − 1) ·            +C       −1 ,
+                                                                 x1        x1
+we reduce inductively to the case deg xI = 1, which was done above.
+                                                                                                           
+  Recall by our proposition that the ring Z[x1 , . . . , xn ]/(xki − 1, n − xi ) has an underlying
+                                                                           P
+
+abelian group structure, where the torsion part of the group is the critical group K(Ckn ).
+Therefore, Lemma 2.3 give the following result.
+                                                      3
+Corollary 2.4. The size of the largest cyclic factor in K(Ckn ) is equal to the additive order
+of x1 − 1 in Z[x1 , . . . , xn ]/(xki − 1, n − xi ).
+                                              P
+
+   Though this result will suffice in the case k = 2, we will need a different term of high order
+for k = 3, 4, and 6.
+
+Lemma 2.5. For k > 2, the image of the element xk−1  j + xk−2
+                                                          j   + · · · + xj − (k − 1) has order
+ord(xj −1)                          k
+                                              P
+    k
+           in Z[x1 , . . . , xn ]/(xi − 1, n − xi ).
+
+Proof. Let C be the least constant such that xj − 1 can be written in the form
+                                                                    k−1
+                                                                   X
+(1)                C(xj − 1) =   xk−1
+                                  j   + xk−2
+                                         j   + · · · + xj − (k − 1)         α` x`j
+                                                                      `=0
+
+for some α` ∈ Z. We will show that C = k all at once.
+   Write (1) as the following matrix equation:
+                                                                          
+           −(k − 1)        1          1     ···      1                  −C
+                                                              α0          
+         
+               1       −(k   − 1)    1     · ·  ·   1     
+                                                             α1  
+                                                                        C 
+                                                                             
+               1          1       −(k − 1) · · ·    1     
+                                                            .      =
+                                                                         0 
+                                                                             .
+                                                             .. 
+                                                                       
+         
+               .
+                ..          .
+                            ..        .
+                                      ..      .
+                                              ..     .
+                                                     ..                . 
+                                                                         .. 
+                                                               αk−1
+                                                                          
+                1          1          1     · · · −(k − 1)                 0
+
+It suffices to understand the solutions [α0 α1 · · · αk−1 ]T when C = 1. Let A denote the k × k
+matrix on the left. By observation, it has [−1 1 0 · · · 0]T as eigenvector with eigenvalue −k,
+and kernel [1 1 · · · 1]T . Thus all solutions [α0 α1 · · · αk−1 ]T when C = 1 are given by
+                                                     
+                                               − k1          
+                                     α0         1             1
+                                                 k 
+                                                      
+                                  α1                        1 
+                                                             
+                                  . = 0              +  c  . 
+                                  .                        . 
+                                  .   .        .          . 
+                                                . 
+                                    αk−1                        1
+                                                   0
+for c ∈ Q. Thus, when k ≥ 3, any solution of the above form will have a denominator ≥ k.
+So, it is necessary to have k|C. Taking C = k, we have an explicit solution
+                                                    
+                                               −1
+                                       α0           
+                                                1  
+                                    α1  
+                                                    
+                                    . =        0  .
+                                                     
+                                    .  
+                                    .   .. 
+                                                . 
+                                                     
+                                      αk−1
+                                                  0
+Hence C = k, as desired.                                                                       
+                                                4
+Remark 2.6. Note that when k = 2, we can choose c = 21 above and obtain a solution
+α0 = 1, α1 = 0 with C = 1. Indeed, in this case, xjk−1 + · · · + xj − (k − 1) = xj − 1, so this
+agrees with Lemma 2.3.
+
+  From this, we derive the immediate corollary:
+
+Corollary 2.7. For k ≥ 3, the size of the largest cyclic factor in K(Ckn ) is equal to k times
+the additive order of xjk−1 + xk−2 + · · · + xj − (k − 1) in Z[x1 , . . . , xn ]/(xki − 1, n − xi ).
+                                                                                              P
+                               j
+
+   We now turn our attention to finding the additive order of the elements x1 − 1 and
+xk−1
+ 1    + xk−2
+          1  + · · · + x1 − (k − 1).
+   By the isomorphism in Proposition 2.2, the polynomial xk−1         j  + xk−2
+                                                                            j   + · · · + xj − (k − 1)
+                                                                        kn
+corresponds to the vector w = (−(k − 1), 1, . . . , 1, 0, . . . , 0) ∈ Z .
+   In this context, the additive order of w is the smallest constant C such that there exists
+an integer vector v satisfying
+                                        L(Ckn )v = Cw.
+  Before we get to the statement and proof of our bound, we will first consider the Laplacian
+                               n      n
+as a map of vector spaces Qk → Qk .
+                        n                                                  n
+  The vector space Qk has a standard basis consisting of vectors {ei }ki=1 , where ei is the
+vector with a 1 in the ith place and a 0 elsewhere. However, observe that we can associate
+a k-nary string of length n to any integer i between 0 and k n − 1, inclusive. Therefore, we
+can rewrite these standard basis vectors as the vectors fu across all k-nary strings of length
+n, setting ei to fu where u is the binary representation of i − 1.
+  We will use these to construct another set of vectors {χu }u∈(Z/kZ)n .
+                                          n
+Definition 2.8. The vector χu in Qk is defined to be the sum
+                                      X
+                                            ζku·v fv ,
+                                          v∈(Z/kZ)n
+
+where u · v is the standard dot product and ζk is a primitive k-th root of unity.
+
+Remark 2.9. Note that the χu are precisely the irreducible complex characters of (Z/kZ)n .
+                                                                 n
+Proposition 2.10. The χu form an orthogonal basis of Qk . Furthermore, each vector χu is
+an eigenvector of L(Ckn ) with eigenvalue equal to 2ω(u), where ω(u) is the Hamming weight
+of u, equal to the number of non-zero entries of u.
+
+  To see a proof of the above proposition and a more detailed exposition of this material,
+see [5, Chapter 2].
+  Now we are ready to state our upper bound theorems. We first consider the cube case,
+k = 2.
+                                                  5
+Theorem 2.11. The size of the largest cyclic factor in K(Qn ) is less than or equal to
+2n · lcm(1, 2, . . . , n).
+
+
+
+Proof. As before, let w be the vector (−1, 1, 0, . . . , 0). We wish to find an integer solution
+to L(Qn )v = Cw. To do so, we will find a solution to this equation over Q, where we better
+understand the Laplacian.
+  We will first show that
+                                         1     X
+                                 w = n−1                   χu .
+                                       2                 n
+                                                     u∈(Z/2Z)
+                                                       un 6=0
+
+Let Xn be the character table of (Z/2Zn ), or equivalently the change-of-basis matrix for the
+χu basis. From observation, Xn has the following inductive block matrix form:
+                                        "                #
+                                          Xn−1 Xn−1
+                                  Xn =
+                                          Xn−1 −Xn−1
+  Note that our assertion for the χu coordinates of w for n = 1 is trivial. Therefore, it
+suffices to assume that the statement holds for n − 1 and prove it inductively.
+                                1        1
+  Let wχ be the vector (0, 2n−1   , 0, 2n−1  , 0, . . .). Our statement is equivalent to showing
+Xn wχ = w. By the block matrix definition, we have that the left hand side is the con-
+                                       1          1
+catenation of the vector 2Xn−1 · (0, 2n−1  , 0, 2n−1   , . . .) and the zero vector of size 2n−1 . By our
+inductive hypothesis, the upper vector is equal to (−1, 1, 0, . . .), so the two vectors concate-
+nate together to yield w as desired.
+  Now consider the equation L(Qn )v = w. Applying a change of basis, we have that this is
+equivalent to (Xn−1 L(Qn )Xn )(Xn−1 v) = Xn−1 w.
+  The right-hand side is equal to wχ as defined above, while the left-hand side is equal to
+D(Xv) where D is the diagonalization of L(Qn ).
+  Therefore, we have that v is equal to Xn D−1 wχ . The vector D−1 wχ expands in the χu
+basis as
+                                         1 X 1
+                                                                χu ,
+                                       2n−1 u 6=0 2ω(u)
+                                                n
+
+which simplifies to
+                                             1 X χu
+(2)                                                        .
+                                             2n u 6=0 ω(u)
+                                                 n
+
+
+   The set of ω(u) is just the integers between 1 and n, so we can cancel out all the denom-
+inators by multiplying through by 2n lcm(1, 2, . . . , n). Because k = 2, the matrix Xn is an
+integer matrix, and it follows that 2n lcm(1, 2, . . . , n)v = Xn · (2n lcm(1, 2, . . . , n)D−1 wχ ) is
+an integer vector.
+                                                     6
+   Therefore, the equation L(Qn )v = 2n lcm(1, 2, . . . , n)w has an integer solution, so and the
+size of the largest cyclic factor must be less than this.                                      
+  We deduce a bound on the largest factor in Syl2 (K(Qn )) immediately.
+
+Corollary 2.12. The size of the largest factor in Syl2 (K(Qn )) is ≤ 2n+blog2 (n)c .
+
+Remark 2.13. It is worth noting the difficulties in computing the lowest such C (and thus
+the size of the highest cyclic factor). First, one must understand additional cancellations
+that occur due to the parity of the χu in (2). Furthermore, as in Lemma 2.5, we can add any
+rational multiple of the all 1s vector to obtain another solution. So we must also understand
+divisibility properties of the numerator and denominator of each entry of the vector of (2),
+namely the greatest common factor of the denominators of every entry modulo which all the
+numerators agree. This appears to be especially difficult to understand.
+
+  We now apply similar methods in the cases k = 3, 4, and 6.
+
+Theorem 2.14. The size of the largest cyclic factor in K(C3n ) is less than or equal to
+2 · 3n+1 · lcm(1, 2, . . . , n).
+
+Proof. This proof will have a very similar flavor to that of Theorem 2.11. Thus, we refer
+to some of its steps instead of repeating them in several places.
+  Let w = (−2, 1, 1, 0, . . . , 0), corresponding to the polynomial x21 + x1 − 2. As before, we
+wish to find an integer solution v to L(C3n )v = Cw for C = 2 · 3n · lcm(1, 2, . . . , n). Then by
+Corollary 2.7 the result will follow.
+  Using the same methods as before, we prove that w in the χu basis is given by
+                                               1    X
+                                        w = n−1            χu .
+                                             3           n
+                                                u∈(Z/3Z)
+                                                  un 6=0
+
+(We use the polynomial xk−11   + · · · + x1 − (k − 1) precisely to have this nice form in the χu
+                                                             1     1          1      1
+basis). In the process of proving this, we set wχ = (0, 3n−1   , 3n−1  , 0, 3n−1 , 3n−1 , . . . , 0).
+   Again, we change our matrix equation to the χu basis to obtain the equation (Xn−1 L(C3n )Xn )(Xn−1 v) =
+Xn−1 w = wχ . Manipulating this, we have v = Xn D−1 wχ . The vector D−1 wχ in the χu basis
+is
+                               1 X 1                  1 X χu
+(3)                                             χu =                 .
+                              3n−1 u 6=0 3ω(u)        3n u 6=0 ω(u)
+                                     n                     n
+
+                                         n
+As before, we need only multiply by 3 lcm(1, . . . , n) to clear appearing in (3). However, in
+this case, the χu vectors themselves involve ζ3 , which as a denominator of 2. Hence we must
+include an extra factor of 2.
+                                                                                            
+                                                7
+  As before, we deduce a bound on the largest factor of Syl3 (K(C3n )).
+
+Corollary 2.15. The size of the largest factor in Syl3 (K(Qn )) is ≤ 3n+1+blog3 (n)c .
+
+  Similarly, we can study the k = 4 and k = 6 cases. Note that, as we saw above, our ability
+to do so relies on having a nice enough expression for ζk . By a completely analogous means,
+we arrive at the following theorems and corollaries.
+
+Theorem 2.16. The size of the largest cyclic factor in K(C4n ) is less than or equal to
+4n+1 · lcm(1, 2, . . . , n).
+
+Corollary 2.17. The size of the largest factor in Syl2 (K(C4k )) is ≤ 4n+1+blog4 (n)c .
+
+Theorem 2.18. The size of the largest cyclic factor in K(C6n ) is less than or equal to
+2 · 6n+1 · lcm(1, 2, . . . , n).
+
+Corollary 2.19. The size of the largest factor in Syl2 (K(C6n )) is ≤ 2n+2+blog2 (n)c , and the
+size of the largest factor in Syl3 (K(C6n )) is ≤ 3n+1+blog3 (n)c .
+
+                                 3. Gröbner Basis Calculations
+
+   In what follows, R will be a ring and S = R[x1 , . . . , xn ] will be a polynomial ring over R
+in n variables.
+
+Definition 3.1. For I = (i1 , . . . , in ) ∈ (Z≥0 )n , we write
+
+                                               xI = xi11 · · · xinn .
+
+For I = (a1 , . . . , ak ) ⊂ {1, . . . , n}, we write
+                                                         Y
+                                                 xI =          xi .
+                                                         i∈I
+
+Definition 3.2. A monomial order or term order on S is a total order of the set of
+monomial {xI | I ∈ (Z≥0 )n }.
+
+Example 3.3. Throughout this section, we will use the grevlex (or degrevlex) term order
+on S. It is defined as follows: Let I = (i1 , . . . , in ) and J = (j1 , . . . , jn ). Then xI < xJ if
+       P        P
+     •     jk >    ik ; OR
+       P        P
+     •     jk =    ik and the first non-zero entry of J − I starting from the end is positive.
+
+  Throughout the rest of this section, let < be a monomial order.
+
+Definition 3.4. Let f ∈ S. Then the leading term of f (with respect to <), denoted
+`t(f ), is the term whose monomial is greatest under <.
+                                                         8
+Definition 3.5. Let f ∈ S. Then the leading coefficient of f (with respect to <), denoted
+lc(f ), is the coefficient of `t(f ).
+
+Definition 3.6. Let R a ring and I / R an ideal. Then the leading term ideal of I is
+
+                                      LT(I) = h`t(f ) | f ∈ Ii.
+
+Definition 3.7. Let I /S an ideal. A Gröbner basis of I is a generating set S = {g1 , . . . , gk }
+of I satisfying either of the following two properties:
+     • For every f ∈ I, we can write `t(f ) = c1 `t(g1 ) + · · · + ck `t(gk ) for some ci ∈ R.
+     • LT(I) = (`t(g1 ), . . . , `t(gk )).
+
+  Gröbner bases are of interest, because of the following theorem.
+
+Theorem 3.8. Let I / S an ideal. Then
+
+                                           S/I ∼
+                                               = S/ LT(I)
+
+as R-modules.
+
+Theorem 3.9. When R is a PID, every ideal I / S has a Gröbner basis.
+
+  From now onward, we let < be the degrevlex term order and take R = Z.
+  Recall that
+
+              coker L(Qn ) ∼
+                                                                                X
+                           = Z[x1 , . . . , xn ]/hx21 − 1, . . . , x2n − 1, n −   xi i
+
+from [2, Proposition 5.20]. By Theorem 3.8, we can understand K(Qn ) by understading a
+Gröbner basis of the ideal In = (x21 − 1, . . . , x2n − 1, n − xi ). In general, however, a Gröbner
+                                                               P
+
+basis for In is difficult to get a grasp on. We therefore restrict our attention factors of Z/2i Z
+for low i.
+   First, we show that passing to a Gröbner over Z/2j Z preserves the factors of Z/2Z, . . . , Z/2j−1 Z.
+
+Proposition 3.10. Fix j > 1. Let S 0 = Z/2j Z[x1 , . . . , xn ] and In0 = hx21 − 1, . . . , x2n − 1, n −
+  xi i / S 0 . Then S 0 /In0 and S/In are the same in their factors of Z/2Z, . . . , Z/2j−1 Z.
+P
+
+                                                       n              n
+Proof. Consider L(Qn ) ⊗ Z/2j Z : (Z/2j Z)2                → (Z/2j Z)2 . Since tensoring preserves
+cokernels, we have
+
+         S 0 /In0 ∼
+                  = coker(L(Qn ) ⊗ Z/2j Z) ∼
+                                           = coker(L(Qn )) ⊗ Z/2j Z ∼
+                                                                    = S/In ⊗ Z/2j Z.
+
+The result follows immediately.                                                                      
+  With this in hand, we turn our attention to finding the Gröbner basis for i = 2, which
+will tell us the number of Z/2Z-factors in K(Qn ). From explicit computations, we arrive at
+the following conjecture:
+                                                   9
+Conjecture 3.11. We claim that LT (In ) has the following form. Define Wm = {(2 + 2 , 4 +
+4 , . . . , m − 3 + m−3 , m − 1, m) | i = 0, 1} for m odd. Then LT (In ) is generated by the set
+                                                             [
+(4)                           {x1 } ∪ {x22 , . . . , x2n } ∪   {2xI | I ∈ Wm }.
+                                                      m≤n
+                                                      m odd
+
+
+  This conjecture implies [1, Theorem 1.3] by the following lemma and proposition:
+
+Lemma 3.12. The sequence
+                                         
+                                         2b                  if n even
+                                               n−1
+(5)                               bn =
+                                         2bn−1 + 2 n−3
+                                                     2        if n odd
+with initial conditions b1 = b0 = 0 is given explicitly by
+
+                                            2n−2 − 2b 2 c
+                                                     n−2
+
+
+
+
+for n ≥ 2.
+
+Proof. Let cn := 2n−2 − 2b 2 c for n ≥ 2. For n = 2, 3, we have
+                          n−2
+
+
+
+
+                                  b2 = 2b1 = 0 = 20 − 20 = c2
+                                  b3 = 2b2 + 20 = 1 = 21 − 20 = c3 .
+
+It now remains to show that cn satisfies the recurrence relation for bn , by induction on n.
+For n = 2k even, we have
+
+             cn = 22k−2 − 2b 2 c = 22k−2 − 2k−1 = 2 22k−3 − 2k−2 = 2cn−1 .
+                            2k−2                                   
+
+For n = 2k + 1 odd, we have
+
+             cn = 22k−1 − 2b 2 c = 22k−1 − 2k−1 = 2 22k−2 − 2k−1 + 2k − 2k−1
+                            2k−1                                            
+
+               = 2an−1 + 2k−1
+                            n−3
+               = 2an−1 + 2 2 .
+
+                                                                                                 
+
+Proposition 3.13. Suppose Conjecture 3.11 holds, and let an be the number of Z/2Z factors
+in K(Qn ). Then
+                                an = 2n−2 − 2b 2 c .
+                                                n−2
+
+
+
+
+Proof. The proof is still being worked upon.
+                                                                                                 
+                                                     10
+Remark 3.14. For higher i, the Gröbner basis over Z/2i Z is considerably messier and more
+difficult to understand. They seem to follow a similar sort of pattern, but we are not sure
+what it is.
+
+                               4. Higher Critical Groups
+
+  We give a brief exposition of the higher critical groups of Qn before presenting our result,
+the calculation of the p-Sylow subgroups of these groups for p 6= 2. The material here is
+presented in more generality in [4].
+  By definition, the hypercube graph Qn represents the edges and vertices of the geometric
+n-dimensional hypercube. From a topological viewpoint, it is thus the 1-skeleton of an
+n-dimensional cell complex that we will also denote by Qn and refer to as the ”n-cube”.
+  Since Qn is a cell complex, it comes with an associated chain complex of abelian groups
+{Ck (Qn )}k∈Z≥0 and boundary maps ∂k : Ck (Qn ) → Ck−1 (Qn ). The groups Ck (Qn ) are
+generated by the k-cells of Qn . Since Qn is a finite cell complex, each is a free abelian
+group of finite rank and therefore it makes sense to define an adjoint coboundary map ∂k∗ :
+Ck−1 (Qn ) → Ck (Qn ).
+  We can then construct the generalized Laplacians given by
+
+                         ∗                    ∗
+        Lud
+         k (Qn ) = ∂k+1 ∂k+1      Ldu
+                                   k (Qn ) = ∂k ∂k       Ltot        ud         du
+                                                          k (Qn ) = Lk (Qn ) + Lk (Qn )
+
+   These are called the up-down, down-up, and total Laplacians. Note that by construction
+these can be defined for any finite cell complex X and are analogously denoted by Lud    k (X),
+Ldu             tot
+  k (X), and Lk (X).
+                                                tot
+   It can be seen by definition that Lud
+                                      0 (Qn ), L0 (Qn ) are both equal to the regular laplacian
+L(Qn ).
+   This motivates the definition of the higher critical groups of any finite cell complex X:
+
+Definition 4.1.
+                                                  ker∂i
+                                    Ki (X) =
+                                               cokerLud
+                                                     i (X)
+
+  The regular critical group K(Qn ) is equal to K0 (Qn ).
+  We now present the main result of this section, a calculation of the p-Sylow subgroups of
+Ki (Qn ) for p 6= 2 that generalizes the result in [1].
+
+Theorem 4.2.
+                                                                  n   j−1
+                         Sylp (Ki (Qn )) ≃ Sylp (⊕nj=i+1 (Z/jZ)( j )( i )
+
+Proof. We first apply a result from section 2 of [4]. Given cell complexes X and Y , this
+states that Ltot                                          tot              tot      tot
+              i (X × Y ) is block-diagonal with blocks L0 (X) ⊗ id + id ⊗ Li (Y ), L1 (X) ⊗
+id + id ⊗ Ltot                 tot                tot
+            i−1 (Y ), . . . , Li (X) ⊗ id + id ⊗ L0 (Y ).
+                                                11
+  Applying this to Qn = Q1 × Qn−1 and using the shorthand Ln,k = Ltot      i (Qn ), we calculate
+Ln,i as the following block matrix:
+                         "                                                   #
+                           L0,0 ⊗ id + id ⊗ Ln−1,i             0
+                  Ln,i =                                                       .
+                                      0            L0,1 ⊗ id + id ⊗ Ln−1,i−1
+Then, substituting in                     "   #
+                                         1 −1                      h i
+                                  L0,0 =                     L0,1 = 2
+                                         −1 1
+we arrive at the following identity:
+                                                                               
+                                1 + Ln−1,i    −1
+                        Ln,i =  −1        1 + Ln−1,i
+                                                                               
+                                                                                
+                                                                 2 + Ln−1,i−1
+   Now we will shift to considering Ln,i as an operator on the free module of rank N = 2n−i ni
+                                                                                                   
+
+over the ring Z2 obtained by localization of Z at the multiplicative subset generated by the
+element 2. Note the space (Z2 )N has a canonical inner product and norm inherited from RN .
+   We now make the following two-part assertion. First, we claim that Ln,i is orthogonally
+diagonalizable over RN , namely it has a set of 2n−i ni eigenvectors that are pairwise or-
+                                                             
+
+thogonal and linearly independent over R. Second, we claim that these eigenvectors can be
+chosen such that they lie in (Z2 )N and form a basis of this module as well.
+   For k = 0, we have Ln,0 is just the usual Laplacian of Qn , and the required eigenvectors
+are simply the characters χu that we constructed earlier.
+   Thus, it follows that we can make the inductive assumption that Lp,q satisfies our assertion
+for any 0 ≤ p < n, 0 ≤ q < i.
+   Note that the three blocks 1 + Ln−1,i , 1 + Ln−1,i and 2 + Ln−1,i−1 on the diagonal of Li,k
+have size 2n−i−1 n−1
+                       n−i−1 n−1          n−i n−1
+                                                    
+                    i
+                       , 2        i
+                                    , and 2     i−1
+                                                      respectively.
+   We can therefore write any vector v that Ln,i acts on as a tuple (v1 , v2 , v3 ), where v1 is the
+first 2n−i−1 n−1
+                 
+               i
+                   entries of v and the other two are similarly defined according to the block
+sizes above.
+   Then, we can write the action of Ln,i on (v1 , v2 , v3 ) as
+
+         Ln,i : (v1 , v2 , v3 ) 7→ (v1 − v2 + Ln−1,i v1 , v2 − v1 + Ln−1,i v2 , 2v3 + Ln−1,i−1 v3 )
+
+   Finally, we construct our set of eigenvectors in three different classes. The first class of
+eigenvectors are vectors of the form (w, w, 0) where w is an eigenvector of Ln−1,i . We see
+that, if w has corresponding eigenvalue λ, we can calculate Ln,i (w, w, 0) = (λw, λw, 0) =
+λ · (w, w, 0).
+
+
+                                                    12
+   The second class of eigenvectors are vectors of the form (w, −w, 0), which are mapped to
+((2 + λ)w, −(2 + λ)w, 0) = (2 + λ) · (w, −w, 0).
+   The third class of eigenvectors are vectors of the form (0, 0, u) where u is an eigenvector
+of Ln−1,i−1 . If u has eigenvalue λ, then Ln,i (0, 0, u) = (0, 0, (2 + λ)u) = (2 + λ) · (0, 0, u).
+   By our inductive assumption, there are 2n−i−1 n−1
+                                                           
+                                                         i
+                                                             eigenvectors of each of the first two
+                   n−1
+                       
+classes and 2n−i i−1 of the third class. Adding these up and applying Pascal’s identity on
+binomial coefficients gives us a total of 2n−i ni . In addition, orthogonality of these vectors
+                                                   
+
+follows immediately from the construction above.
+   Denote the span of the vectors by S ⊆ (Z2 )N . To show that this inclusion is an equality,
+observe that for any eigenvector w of Ln−1,i the vectors (w, 0, 0) = 21 ((w, w, 0) + (w, −w, 0))
+and (0, w, 0) = 12 ((w, w, 0) − (w, −w, 0)) both lie in S. The vectors of the form (w, 0, 0)
+                               n−i−1 n−1
+and (0, w, 0) both span (Z2 )2      ( i ) by our inductive assumption, while the third class of
+                                                n−i n−1
+eigenvectors of the form (0, 0, u) spans (Z )2 ( i−1 ) . As a result, we find that S = (Z )N as
+                                                2                                                  2
+desired.
+                                                                 du
+  To conclude the proof, observe that Lud       i (Qn ) and Li (Qn ) are by definition self-adjoint
+operators that annihilate each other. By simple linear algebra, it follows that these two
+operators and their sum Ln,i have the same eigenvectors.
+                                                                         ud
+  Denote the multiset of nonzero eigenvalues of Lud        i (Qn ) by si (Qn ). By the above work,
+                                         ud                                         N
+we find that ker∂i /imLud   i (Qn ) for Li (Qn ) considered as an operator on (Z2 ) is isomorphic
+to ⊕λ∈sud
+        i (Qn )
+                Z2 /(λ · Z2 ).
+  Considering this as an abelian group, we find that the p-Sylow subgroups of ker∂i /imLud   i (Qn )
+                                                              ud
+are isomorphic to those of Ki (Qn ) for p 6= 2. Since si (Qn ) was calculated explicitly in [4],
+we can conclude
+                                                                     n   j−1
+                             Sylp (Ki (Qn )) ≃ Sylp (⊕nj=i+1 (Z/jZ)( j )( i ) )
+                                                                                                        
+
+                                        Acknowledgments
+
+  This research was carried out as part of the 2016 REU program at the School of Math-
+ematics at University of Minnesota, Twin Cities, and was supported by NSF RTG grant
+DMS-1148634. The authors would like to thank Vic Reiner for both suggesting the problem
+and his mentorship throughout it. The authors would also like to thank Will Grodzicki for
+his suggestions on this report.
+
+                                             References
+[1] Hua Bai. On the critical group of the n-cube. Linear Algebra and its Applications, 2003.
+[2] Georgia Benkart, Caroline Klivens, and Victor Reiner. Chip firing on dynkin diagrams and mckay quivers.
+    arXiv preprint arXiv:1601.06849, 2016.
+                                                    13
+[3] David B. Chandler, Peter Sin, and Qing Xiang. The smith group of the hypercube graph. arXiv preprint
+    arXiv:1511.00272, 2015.
+[4] Art M. Duval, Caroline J. Klivans, and Jeremy Martin. Cellular spanning trees and laplacians of cubical
+    complexes. Advances in Applied Mathematics, 2011.
+[5] Richard Stanley. Algebraic Combinatorics: Walks, Trees, Tableaux and More. Springer, 2013.
+
+
+
+
+                                                    14
+

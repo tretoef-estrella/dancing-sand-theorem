@@ -1,0 +1,28 @@
+k <= 1 done, houses so far 12
+k <= 2 done, houses so far 60
+k <= 3 done, houses so far 252
+k <= 4 done, houses so far 1020
+k <= 5 done, houses so far 4092
+k <= 6 done, houses so far 16380
+houses 16380
+  boundaries = 8001
+  case_a = 2547
+  case_b = 2907
+  case_c = 2547
+  case_d = 8001
+  control_cut_strict_at_b+1_fires = 1911
+  control_cut_strict_at_b+1_tried = 7038
+  control_price_hi+1_fires = 2358
+  control_price_lo-1_fires = 2358
+  control_price_vI_fires = 140
+  control_shift_fires = 17354
+  control_shift_tried = 168912
+  crossval_done = 3000
+  deletions = 360
+  fitfast_crossvalidated = 16380
+  houses_J_zero = 8379
+  houses_with_a_nonstrict_cut = 3180
+  nonstrict_cuts_all_positions = 17238
+  shifts = 192024
+RESULT: 0 failures
+VIGIA-FIN-OK exit=0 pico_kb=142336 t=36s

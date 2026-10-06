@@ -1,0 +1,68 @@
+== [τ(D)] lines: 0
+== [τ(E)] lines: 0
+== [τ(P] lines: 0
+== [τ(I)] lines: 0
+== [τ_{t_j}] lines: 0
+== [σ_t] lines: 0
+== [σ_r] lines: 0
+== [σ(a)] lines: 0
+== [κ_h] lines: 0
+== [ρ_h] lines: 0
+== [ρ_k] lines: 0
+== [κ_k] lines: 0
+== [ε] lines: 4
+520:*Proof.* If a prefix of a level set had a positive sum, raising the values on that prefix by a small `ε` and lowering the rest of the level set would keep `z` non-increasing and decrease the distance; the same with 
+867:(b) Let `𝒮 := F_2 ⊕ ε·X F_2[[X]]` with `ε^2 = 0`, a commutative ring of characteristic `2`, and `Θ(ϑ) := ā + ε χ̄` (reductions modulo `2`). Then **`Θ: 𝒦 → 𝒮` is a ring homomorphism, `Θ(ϑ(· �
+870:*Proof.* (a) If `a + 2χ(2y) = a' + 2χ'(2y)` for all `y ∈ Z_2`, the power series `(a − a') + 2(χ − χ')(2Y)` in `Y` has coefficients tending to `0` and infinitely many zeros, so it vanishes by Strassmann's th
+892:and `β^2 = Θ(Γ_{∅,0})^2` by Lemma 10.14(c). By (a) and Lemma 10.13(c) the constant `a` of `Γ_{∅,0}` is even, so `Θ(Γ_{∅,0}) = εχ̄` and `β^2 = ε^2 χ̄^2 = 0`. So every coefficient function of `S` lie
+== [doblar] lines: 0
+== [paso] lines: 0
+== [Lemma K] lines: 1
+685:**Lemma 9.5 (Lemma K).** For `a ≥ 0`, `B ≥ 1` and `q ≥ 0`: `φ(2^q B) + κ(a, B) ≤ max_{1≤y≤2^q(a+B)} φ(y)`.
+== [Proposition 9.5] lines: 0
+== [Lemma 9.6] lines: 0
+== [Theorem 9.9] lines: 0
+== [IKKY22] lines: 0
+== [Yue23] lines: 0
+== [DHS17] lines: 0
+== [§12.2] lines: 2
+201:**What is not ours.** Bai determined the odd part and proved Reiner's two counts [Bai03]. Gao, Marx-Kuo, McDonald and Yuen determined the `n − 1` largest factors and posed the conjectures we prove; their Propositio
+311:**Remarks.** (1) `T(λ) ⊗ F_2` is the indecomposable tilting module of `SL_2` of highest weight `λ` in characteristic `2` (Donkin's tensor product theorem [Don93]), so `m_λ(n)` is its multiplicity in `V^{⊗n}`; 
+== [§12.3] lines: 0
+== [§1.7] lines: 2
+32:Every proof behind the table was re-derived by a reader other than its author. The chains of the Main Theorem and of Theorem DW were read cold before this text was written, by readers with no access to the audits. Ver
+96:The names «dry and wet» and «dance» are explained in §1.7.
+== [§1.8] lines: 1
+32:Every proof behind the table was re-derived by a reader other than its author. The chains of the Main Theorem and of Theorem DW were read cold before this text was written, by readers with no access to the audits. Ver
+== [φ(y)] lines: 9
+660:and `ψ(E) = Σ_{t∈E}(h_t − 2^t)` as in §5, `ψ_t := ψ({t}) = h_t − 2^t`. Recall `g(N) = max_{1≤y<N} φ(y)`.
+662:**Lemma 9.2.** (a) `φ(λ + 1) + ψ(P_l) = φ(Y_l)` for `0 ≤ l ≤ s`. (b) For `N ≥ 1`, `max_{1≤y≤N} φ(y)` is attained at a **clearing** of `N`: a number obtained from `N` by clearing some of its lowest set 
+664:*Proof.* (a) `ψ(P_l) = Σ_{j≤l}(t_{j+1} − t_j) − o_{P_l} = t_{l+1} − t_1 − o_{P_l}`, and `φ(λ + 1) = λ + 1 + t_1`. (b) Given `y ≤ N` with `v_2(y) = q`, let `N_q` be `N` with its bits below `q` cleared
+685:**Lemma 9.5 (Lemma K).** For `a ≥ 0`, `B ≥ 1` and `q ≥ 0`: `φ(2^q B) + κ(a, B) ≤ max_{1≤y≤2^q(a+B)} φ(y)`.
+687:*Proof.* If `κ(a, B) = 0`, take `y = 2^q B`. Otherwise let the highest carry of `a + B` leave the bit `p − 1`. Carries leave only bits `v_2(B), …, p − 1`, so `κ ≤ p − v_2(B)`. A carry leaves bit `p − 1`
+689:**Proposition 9.6 (a ceiling for the big clocks).** In the cube `Q_n`, every big clock of every family at a shift `i ≥ 1` is at most `g(n − i + 1) = max_{1≤y≤n−i} φ(y)`.
+702:*Proof of Corollary 1.6.* Let `n ≥ 4` and `G = g(n − 1) = max_{1≤y≤n−2} φ(y)`; `G ≥ φ(n − 2) ≥ n − 2`.
+703:1. *Nothing else rises above `G`.* Small clocks are `≤ k − 1 ≤ log_2(n + 1) − 1 < G`. Shifts `i ≥ 2`: `≤ g(n − i + 1) ≤ G` (Proposition 9.6). Shift `1` (the family `n − 2`, where `λ + 1 = n − 1`)
+== [φ(D)] lines: 0
+== [φ(· ] lines: 0
+== [Lemma 9.7] lines: 2
+698:**Lemma 9.7 (multiplicities).** `m_n(n) = 1`; `m_{n−2}(n) = n − 1 − [n even]` for `n ≥ 2`; and for odd `n ≥ 5`, `m_{n−4}(n) = (n − 1)(n − 2)/2 − 1 − [n ≡ 1 (mod 4)] ≥ 4`.
+989:| Corollary 1.5 · Lemma 9.7 · Corollary 1.6 | `gate_section9.py` | `n ≤ 200` | 199 · 199 · 197 values, 0 failures | none (a counter shows that `c_n = G` fails for 37 values of `n`) |
+== [Lemma 9.8] lines: 2
+713:**Lemma 9.8.** For odd `N'`, the families of `N' + 1` are the `λ + 1`, `λ` a family of `N'`, with `m_{λ+1}(N' + 1) = m_λ(N')` and the same shift. If `λ + 1 = 2^k + Σ_{t∈I} 2^t`, the family `λ + 1` has the sa
+725:*Proof of Corollary 1.7.* By Lemma 9.8 and Theorem 9.10, the raw sequence of `(λ + 1, i)` in o-order is that of `(λ, i)` with every entry written twice. The real fit of a doubled sequence is the doubled fit (Lemma 
+== [Lemma 9.9] lines: 2
+717:**Lemma 9.9.** Let `J := i + o_D ≥ 1`. In the cube `N`, `u(D) = 2^e − 2J + v_2(J) + s_2(J) + h(D)`. In the cube `n`, for a family with dancer `D'` and `J' := i + o_{D'} ≥ 1`, `u(D') = 2^e + 1 − 2J' + s_2(J' �
+723:*Proof.* For `D' = D`: `J' = J`, `h'(D) = h(D)`, and `s_2(J − 1) = s_2(J) − 1 + v_2(J)`, so Lemma 9.9 gives `u_n(D) = u_N(D)`. For `D' = D ∪ {0}`: `J' = J + 1` and `h'(D ∪ {0}) = h(D) + t_1`, so `u_n(D ∪ {0
+== [Theorem 9.10] lines: 2
+721:**Theorem 9.10 (the mirror that doubles).** For every family `λ < N` of the cube `N` (shift `i ≥ 1`) and every `D ⊆ I`, the dancers `D` and `D ∪ {0}` of the family `λ + 1` of the cube `n` have the raw clock `
+725:*Proof of Corollary 1.7.* By Lemma 9.8 and Theorem 9.10, the raw sequence of `(λ + 1, i)` in o-order is that of `(λ, i)` with every entry written twice. The real fit of a doubled sequence is the doubled fit (Lemma 
+== [Proposition 9.6] lines: 4
+689:**Proposition 9.6 (a ceiling for the big clocks).** In the cube `Q_n`, every big clock of every family at a shift `i ≥ 1` is at most `g(n − i + 1) = max_{1≤y≤n−i} φ(y)`.
+703:1. *Nothing else rises above `G`.* Small clocks are `≤ k − 1 ≤ log_2(n + 1) − 1 < G`. Shifts `i ≥ 2`: `≤ g(n − i + 1) ≤ G` (Proposition 9.6). Shift `1` (the family `n − 2`, where `λ + 1 = n − 1`)
+1027:- **Repaired in this version, audited, not yet read cold:** the restated Lemma 7.2(b), the strict (Cut) of Theorem 7.8 with its proof, and their uses in Lemma 7.9, Theorem 7.10 and Proposition 9.6. No statement of a
+1052:- **Version 1 of this text** was written by the auditor from the flights, the audits and the readings. Two parts were new in the writing: the proof of Theorem 6.2 by top bits, and the organization of §10 around The
+== [Lemma 9.5] lines: 2
+685:**Lemma 9.5 (Lemma K).** For `a ≥ 0`, `B ≥ 1` and `q ≥ 0`: `φ(2^q B) + κ(a, B) ≤ max_{1≤y≤2^q(a+B)} φ(y)`.
+696:*(K) The bound.* Apply Lemma 9.5 with `B = Y_l/2^q` and `a = m_h + c_D`. If `c_D = 1`, then `2^q ≤ m_ℓ + o_D ≤ m_ℓ + o_{P_l}`. In both cases `Y_l + 2^q(m_h + c_D) ≤ Y_l + m + o_{P_l} = λ + 1 + m = n − i`
+VIGIA-FIN-OK exit=0 pico_kb=2240 t=0s

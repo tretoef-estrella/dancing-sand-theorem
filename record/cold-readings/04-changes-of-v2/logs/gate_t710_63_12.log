@@ -1,0 +1,14 @@
+lambda <= 15 done
+lambda <= 31 done
+lambda <= 47 done
+lambda <= 63 done
+  cells = 1638
+  cells_i0 = 114
+  cells_nonzero_penalty = 380
+  cells_nonzero_penalty_and_pooling = 125
+  cells_where_pooling_acts = 306
+  control_raw_rejected = 306
+  i0_I_empty = 12
+  rule_route_cells = 756
+RESULT: 0 failures
+VIGIA-FIN-OK exit=0 pico_kb=10416 t=2s

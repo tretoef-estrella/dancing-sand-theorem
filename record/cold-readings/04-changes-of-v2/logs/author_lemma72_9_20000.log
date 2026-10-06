@@ -1,0 +1,4 @@
+(A) real part: 15746 trials, 0 failures; (B) integer part, jumps at strict cuts only: 0 failures
+control: jumps at non-strict cuts, 2841 trials, integer part broken in 189; example (3,4,3,4)/(1,1,0,0) breaks it: True
+VIGIA-INNER-DONE
+VIGIA-FIN-OK exit=0 pico_kb=10720 t=6s

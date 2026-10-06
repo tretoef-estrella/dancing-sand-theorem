@@ -1,0 +1,3 @@
+vs sympy: PASS
+Bai odd part n<=9: PASS | negative control rejected: PASS
+VIGIA-FIN-OK exit=0 pico_kb=70096 t=1s

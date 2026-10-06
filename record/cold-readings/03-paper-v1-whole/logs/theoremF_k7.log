@@ -1,0 +1,15 @@
+houses checked: 43690 (k <= 7, alpha in (1, 2)), penalties P = 1..6
+  cell straddles NON-INTEGER: 0
+  central flat: 3979
+  control NOT detected though V changed (CONTROL c_F-1): 1429
+  control detected (CONTROL c_F-1): 2550
+  control detected (CONTROL v' (no flat fix)): 2808
+  cut-b straddles (any value): 0
+  cut-b straddles NON-INTEGER: 0
+  deletion straddles NON-INTEGER: 0
+  no central flat: 39201
+  step1 jumps examined: 20052
+  step1 straddles (any value): 0
+  step1 straddles NON-INTEGER: 0
+TOTAL FAIL COUNT: 0
+VIGIA-FIN-OK exit=0 pico_kb=178208 t=27s

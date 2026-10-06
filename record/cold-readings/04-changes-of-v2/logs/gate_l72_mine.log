@@ -1,0 +1,28 @@
+PART A: exhaustive search, entries in [0, R], delta = 0/1 step (and 0/2 step) at a non-strict cut
+  n=2 R=6: non-strict cuts 7, counterexamples (with g=1,2) 0, first None
+  n=3 R=6: non-strict cuts 74, counterexamples (with g=1,2) 0, first None
+  n=4 R=5: non-strict cuts 409, counterexamples (with g=1,2) 38, first ([0, 1, 0, 1], 2, 1, [1, 1, 0, 0], [2, 1, 1, 0], [2, 2, 0, 0])
+  n=5 R=3: non-strict cuts 542, counterexamples (with g=1,2) 48, first ([0, 1, 0, 1, 0], 2, 1, [1, 1, 0, 0, 0], [2, 1, 1, 0, 0], [2, 2, 0, 0, 0])
+PART B: seed 20261005
+  trials = 50000
+  with_strict = 38322
+  tests = 50000
+  fail_real = 0
+  fail_levels = 0
+  fail_strict_kept = 0
+  fail_int = 0
+  fail_cuts_kept = 0
+  c1_trials = 9939
+  c1_int_fail = 736
+  c1_real_fail = 0
+  c2_trials = 45043
+  c2_real_fail = 45043
+  c2_int_fail = 40916
+  first control-B1 failures:
+    ([-1, 2, 1, 0, 1, 1], [2, 2, 2, 0, 0, 0], [3, 3, 2, 1, 1, 0], [3, 3, 3, 1, 0, 0])
+    ([-1, 2, 2, 0, 1, -1, -2, 1, 4, -1], [3, 3, 3, 3, 3, 2, 2, 2, 2, 0], [4, 4, 4, 4, 3, 3, 3, 2, 2, -1], [4, 4, 4, 4, 4, 3, 2, 2, 2, -1])
+    ([-3, 3, -2, 0, 0, -2, -2, 2, -3], [6, 6, 5, 5, 5, 2, 2, 2, 0], [6, 6, 5, 4, 4, 2, 1, 1, -3], [6, 6, 5, 5, 4, 1, 1, 1, -3])
+    ([-1, 0, -1, 0, -2], [1, 1, 0, 0, 0], [1, 0, 0, -1, -2], [1, 1, -1, -1, -2])
+    ([-3, -2, 3, -2, -3, 3, -3], [4, 4, 4, 3, 3, 3, 0], [4, 3, 3, 3, 2, 2, -3], [4, 4, 3, 2, 2, 2, -3])
+RESULT restated (b): 0 failures | controls fire: True
+VIGIA-FIN-OK exit=0 pico_kb=11600 t=140s
