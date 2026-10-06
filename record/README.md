@@ -58,6 +58,8 @@ The constructors' engines and logs are not included. The audits name them, and t
 | [8](flights/flight-8/REPORT.md) | the mod-2 layer of the fold law for every `n`; the fold law for every `n ≤ 144`; an auditor's conjecture refuted |
 | [9](flights/flight-9/REPORT.md) | Lemma Ω: the fold law for every `n` |
 
+[THE_IMAGES.md](THE_IMAGES.md) lists the 27 images the author gave during the flights, with what each became, or why it did not serve, checked against the «which served» section of each report.
+
 [THE_FOLD_LAW_PENCIL_NOTE.md](flights/THE_FOLD_LAW_PENCIL_NOTE.md) is the note in which the fold law was first stated, with the pencil proofs of its first two layers; [COLD_AUDIT_FOLD_LAW.md](flights/COLD_AUDIT_FOLD_LAW.md) is its second reading, by the auditor.
 
 ## Corrections — [corrections/](corrections/)
