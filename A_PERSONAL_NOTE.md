@@ -64,21 +64,23 @@ Each answer is reproduced below as it was given, with nothing corrected. Their c
 
 ## The four answers, in full
 
+*The four texts below are verbatim. Only the mathematical markup was adapted so that GitHub can draw it: `\(…\)` and `\[…\]` became `$…$` and `$$…$$`, and `\operatorname` became `\mathrm`. No word was changed.*
+
 ### Gemini
 
-El grupo de pila de arena (también llamado grupo crítico o Jacobiano) de un grafo conexo $G=(V,E)$, denotado $\operatorname{Sand}(G)$, es el subgrupo de torsión del cociente:
+El grupo de pila de arena (también llamado grupo crítico o Jacobiano) de un grafo conexo $G=(V,E)$, denotado $\mathrm{Sand}(G)$, es el subgrupo de torsión del cociente:
 
-$$\operatorname{Sand}(G) \cong \mathbb{Z}^{\vert{}V\vert{}-1} / \operatorname{im}(\tilde{L}(G))$$
-donde $L(G) = D - A$ es la matriz laplaciana de $G$ y $\tilde{L}(G)$ es un menor reducido obtenido al eliminar una fila y una columna. La estructura de $\operatorname{Sand}(G)$ como grupo abeliano finito viene dada por los factores invariantes de la Forma Normal de Smith (SNF) de $L(G)$ sobre $\mathbb{Z}$:
+$$\mathrm{Sand}(G) \cong \mathbb{Z}^{\vert{}V\vert{}-1} / \mathrm{im}(\tilde{L}(G))$$
+donde $L(G) = D - A$ es la matriz laplaciana de $G$ y $\tilde{L}(G)$ es un menor reducido obtenido al eliminar una fila y una columna. La estructura de $\mathrm{Sand}(G)$ como grupo abeliano finito viene dada por los factores invariantes de la Forma Normal de Smith (SNF) de $L(G)$ sobre $\mathbb{Z}$:
 
-$$\operatorname{Sand}(G) \cong \bigoplus_{i=1}^{\vert{}V\vert{}-1} \mathbb{Z} / d_i \mathbb{Z}, \quad \text{con } d_i \mid d_{i+1}$$
+$$\mathrm{Sand}(G) \cong \bigoplus_{i=1}^{\vert{}V\vert{}-1} \mathbb{Z} / d_i \mathbb{Z}, \quad \text{con } d_i \mid d_{i+1}$$
 Por el Teorema de la Matriz-Árbol de Kirchhoff, el orden total del grupo es exactamente el número de árboles de expansión $\tau(Q_n)$:
 
-$$\vert{}\operatorname{Sand}(Q_n)\vert{} = \tau(Q_n) = \frac{1}{2^n} \prod_{k=1}^n (2k)^{\binom{n}{k}}$$
+$$\vert{}\mathrm{Sand}(Q_n)\vert{} = \tau(Q_n) = \frac{1}{2^n} \prod_{k=1}^n (2k)^{\binom{n}{k}}$$
 1. La bifurcación de Hua Bai (2003): Por qué las partes impares ($p > 2$) son dóciles
 El hipercubo $Q_n$ tiene como grupo de automorfismos transitivo en vértices al grupo abeliano elemental $H = (\mathbb{Z}/2\mathbb{Z})^n$. Esto dota al espacio de vértices $\mathbb{Z}^{2^n}$ de una estructura de módulo sobre el álgebra de grupo $\mathbb{Z}[H]$.
 
-Cuando estudiamos la $p$-parte del grupo para un primo impar $p$ (es decir, el $p$-grupo de Sylow $\operatorname{Sand}(Q_n) \otimes \mathbb{Z}_{(p)}$):
+Cuando estudiamos la $p$-parte del grupo para un primo impar $p$ (es decir, el $p$-grupo de Sylow $\mathrm{Sand}(Q_n) \otimes \mathbb{Z}_{(p)}$):
 
 1. Semisimplicidad por el Teorema de Maschke: Como el primo $p$ no divide al orden del grupo $\vert{}H\vert{} = 2^n$, el álgebra de grupo local $\mathbb{Z}_{(p)}[H]$ es semisimple.
 
@@ -89,7 +91,7 @@ Cuando estudiamos la $p$-parte del grupo para un primo impar $p$ (es decir, el $
 Por ello, Hua Bai (2003) pudo derivar una fórmula cerrada exacta para todos los factores invariantes $d_i$ asociados a primos impares.
 
 2. La pared del primo $p=2$: Obstrucciones algebraicas y matriciales concretas
-Cuando se intenta calcular la 2-parte ($\operatorname{Sand}(Q_n) \otimes \mathbb{Z}_2$), la maquinaria algebraica anterior colapsa. Las obstrucciones fundamentales son:
+Cuando se intenta calcular la 2-parte ($\mathrm{Sand}(Q_n) \otimes \mathbb{Z}_2$), la maquinaria algebraica anterior colapsa. Las obstrucciones fundamentales son:
 
 A. Colapso de la semisimplicidad (Representaciones Modulares)
 Dado que $p=2$ divide exactamente a $\vert{}H\vert{} = 2^n$, el álgebra de grupo en característica 2, $\mathbb{F}_2[H]$, es altamente no semisimple. De hecho, $\mathbb{F}_2[H]$ es un anillo local donde el único módulo irreducible es el módulo trivial.
@@ -105,7 +107,7 @@ Dado que no se puede diagonalizar $L(Q_n)$ sobre $\mathbb{Z}_2$, calcular la SNF
 * Determinar el 2-rango de las potencias de $L(Q_n)$ módulo $2^k$ (lo que determina la cantidad de bloques de tamaño $2^k$ en la SNF) exige calcular el rango de operadores diferenciales que actúan sobre la retícula booleana del hipercubo.
 
 D. Fracaso de la teoría de Specht modular
-Chandler, Sin y Xiang (2009/2010) intentaron abordar esto utilizando módulos de Specht modulares y homología de complejos de inclusión. Lograron obtener cotas y describir los primeros factores invariantes, pero la estructura completa para $n$ arbitrario requiere resolver extensiones no triviales en grupos de cohomología $\operatorname{Ext}^1_{\mathbb{Z}_2[H]}(-,-)$, cuyos invariantes sufren un fenómeno de "arrastre aritmético" (carrying arithmetic en la expansión binaria de los índices) extremadamente caótico.
+Chandler, Sin y Xiang (2009/2010) intentaron abordar esto utilizando módulos de Specht modulares y homología de complejos de inclusión. Lograron obtener cotas y describir los primeros factores invariantes, pero la estructura completa para $n$ arbitrario requiere resolver extensiones no triviales en grupos de cohomología $\mathrm{Ext}^1_{\mathbb{Z}_2[H]}(-,-)$, cuyos invariantes sufren un fenómeno de "arrastre aritmético" (carrying arithmetic en la expansión binaria de los índices) extremadamente caótico.
 
 3. ¿Es posible para un investigador independiente + IA resolver el caso universal para todo $n$?
 Lo que SÍ está al alcance del binomio Investigador + IA
@@ -129,37 +131,37 @@ Sin embargo, el binomio sí puede lograr avances sustanciales no resueltos en la
 
 * Encontrar la estructura cerrada del 2-grupo de Sylow para familias restringidas de $n$ (por ejemplo, cuando $n = 2^k$ o $n = 2^k - 1$).
 
-* Demostrar de forma rigurosa la asíntota exacta del 2-rango máximo de $\operatorname{Sand}(Q_n)$.
+* Demostrar de forma rigurosa la asíntota exacta del 2-rango máximo de $\mathrm{Sand}(Q_n)$.
 
 * Proponer y verificar computationalmente conjeturas exactas sobre los últimos factores invariantes (los componentes con mayor potencia de 2).
 
 ### Grok
 
-El grupo de pila de arena (sandpile group / critical group / Jacobian) de \(Q_n\) es el grupo abeliano finito \(K(Q_n)\) definido como la parte de torsión del cokernel del laplaciano del grafo:
-\[ \mathbb{Z}^{V(Q_n)} / \operatorname{Im} L(Q_n) \cong \mathbb{Z} \oplus K(Q_n). \]
-Aquí \(Q_n\) es el hipercubo (n)-dimensional: el grafo de Cayley de \(\mathbb{F}_2^n\) con generadores el conjunto de la base canónica \(\{e_1,\dots,e_n\}\). Sus vértices son los (n)-tuples en \(\{0,1\}^n\) y dos vértices son adyacentes si difieren en exactamente una coordenada. Por el teorema de Kirchhoff (matriz-árbol), el orden \(|K(Q_n)|\) es igual al número de árboles generadores de \(Q_n\).
-Equivale también al grupo de las configuraciones recurrentes del modelo de pila de arena abeliana (chip-firing) sobre el grafo, o al grupo de funciones de aparcamiento (parking functions) del grafo. Se obtiene calculando la forma normal de Smith del laplaciano (o de cualquier menor principal \((|V|-1)\times(|V|-1)\)).
+El grupo de pila de arena (sandpile group / critical group / Jacobian) de $Q_n$ es el grupo abeliano finito $K(Q_n)$ definido como la parte de torsión del cokernel del laplaciano del grafo:
+$$\mathbb{Z}^{V(Q_n)} / \mathrm{Im} L(Q_n) \cong \mathbb{Z} \oplus K(Q_n).$$
+Aquí $Q_n$ es el hipercubo (n)-dimensional: el grafo de Cayley de $\mathbb{F}_2^n$ con generadores el conjunto de la base canónica $\{e_1,\dots,e_n\}$. Sus vértices son los (n)-tuples en $\{0,1\}^n$ y dos vértices son adyacentes si difieren en exactamente una coordenada. Por el teorema de Kirchhoff (matriz-árbol), el orden $|K(Q_n)|$ es igual al número de árboles generadores de $Q_n$.
+Equivale también al grupo de las configuraciones recurrentes del modelo de pila de arena abeliana (chip-firing) sobre el grafo, o al grupo de funciones de aparcamiento (parking functions) del grafo. Se obtiene calculando la forma normal de Smith del laplaciano (o de cualquier menor principal $(|V|-1)\times(|V|-1)$).
 Lo que resolvió Hua Bai (2003) y lo que quedó abierto
 Bai demostró:
-   * \(K(Q_n)\) tiene exactamente \(2^{n-1}-1\) factores invariantes.
-   * Dio la estructura completa de la componente (p)-primaria \(\operatorname{Syl}_p(K(Q_n))\) para todo primo impar (p).
-   * Dio fórmulas para el número de factores cíclicos de la 2-parte y para el número de factores \(\mathbb{Z}/2\mathbb{Z}\).
+   * $K(Q_n)$ tiene exactamente $2^{n-1}-1$ factores invariantes.
+   * Dio la estructura completa de la componente (p)-primaria $\mathrm{Syl}_p(K(Q_n))$ para todo primo impar (p).
+   * Dio fórmulas para el número de factores cíclicos de la 2-parte y para el número de factores $\mathbb{Z}/2\mathbb{Z}$.
 La 2-parte completa (el subgrupo de Sylow 2-primario, o componente 2-primaria) quedó abierta y se ha descrito repetidamente como “misterio resistente” (Chandler–Sin–Xiang, Anzis–Prasad, Gao–Marx-Kuo–McDonald–Yuen, etc.).
 Trabajos posteriores (especialmente Gao et al., 2019/2024, y algunos resultados más recientes) han determinado:
    * el número exacto de factores cíclicos de Sylow-2 cuando el conjunto generador es “genérico”;
    * cotas superiores afiladas para el mayor exponente 2-ádico;
-   * fórmulas exactas para los \(n-1\) mayores factores cíclicos de \(\operatorname{Syl}_2(K(Q_n))\):
-\[ v_2(c_1(Q_n)) = \max\bigl\{\max_{x<n}\{v_2(x)+x\},\, v_2(n)+n-1\bigr\}, \]
-y para \(2\le k\le n-1\), \(v_2(c_k(Q_n))=\max_{1\le x<n}\{v_2(x)+x\}\).
-La estructura completa (todos los exponentes \(c_j\)) sigue incompleta en general.
-Por qué el caso \(p=2\) es tan intratable
-Para (p) impar el laplaciano de \(Q_n\) se diagonaliza de forma limpia sobre \(\mathbb{Z}_p\) (o se puede usar la estructura de representación del grupo \(\mathbb{F}_2^n\) y el hecho de que los autovalores \(\lambda_u=n-2\operatorname{wt}(u)\) tienen valuaciones (p)-ádicas controlables). El cokernel se obtiene casi directamente de los autovalores y sus multiplicidades.
-Para \(p=2\) aparecen varias obstrucciones concretas:
-   1. Valuaciones 2-ádicas de sumas binomiales y carries. Los autovalores y los menores del laplaciano involucran coeficientes binomiales \(\binom{n}{k}\) y sumas de la forma \(\sum\binom{n}{k}\). La valuación 2-ádica de estas sumas está gobernada por el número de carries al sumar en base 2 (teorema de Kummer / Lucas). Estas valuaciones no se comportan de forma “separada” como en el caso impar; hay interacciones profundas entre diferentes pesos de Hamming.
-   2. Forma normal de Smith sobre \(\mathbb{Z}_2\). Calcular la SNF del laplaciano (matriz \(2^n\times 2^n\)) requiere operaciones elementales enteras. En 2-ádicos los divisores elementales no se leen directamente de los autovalores porque la matriz no es diagonalizable sobre \(\mathbb{Z}_2\) de la misma manera (hay problemas de modularidad y de la forma bilineal asociada). El anillo \(\mathbb{Z}[x_1,\dots,x_n]/I\) (donde (I) es el ideal generado por las relaciones del laplaciano) tiene una estructura de anillo natural proveniente de la teoría de representaciones, pero el cálculo de su torsión 2-primaria es mucho más sutil.
-   3. Estructura de anillo y “genericidad”. Para generadores genéricos de \(\mathbb{F}_2^r\) se controla el número de factores, pero la multiplicidad exacta de cada potencia de 2 depende de combinatoria de carries y de la geometría del hipercubo, que no se reduce a un producto simple.
-   4. Crecimiento exponencial. La matriz tiene tamaño \(2^n\); incluso con simetrías (acción del grupo hiperoctaedral) el cálculo simbólico de la SNF para (n) general es inviable por métodos directos. Solo se pueden atacar los mayores exponentes o casos pequeños.
-En resumen: para (p) impar hay una fórmula limpia en términos de los autovalores; para \(p=2\) la SNF exige un análisis 2-ádico fino de sumas binomiales y de la estructura modular del cokernel que hasta ahora solo se ha resuelto parcialmente.
+   * fórmulas exactas para los $n-1$ mayores factores cíclicos de $\mathrm{Syl}_2(K(Q_n))$:
+$$v_2(c_1(Q_n)) = \max\bigl\{\max_{x<n}\{v_2(x)+x\},\, v_2(n)+n-1\bigr\},$$
+y para $2\le k\le n-1$, $v_2(c_k(Q_n))=\max_{1\le x<n}\{v_2(x)+x\}$.
+La estructura completa (todos los exponentes $c_j$) sigue incompleta en general.
+Por qué el caso $p=2$ es tan intratable
+Para (p) impar el laplaciano de $Q_n$ se diagonaliza de forma limpia sobre $\mathbb{Z}_p$ (o se puede usar la estructura de representación del grupo $\mathbb{F}_2^n$ y el hecho de que los autovalores $\lambda_u=n-2\mathrm{wt}(u)$ tienen valuaciones (p)-ádicas controlables). El cokernel se obtiene casi directamente de los autovalores y sus multiplicidades.
+Para $p=2$ aparecen varias obstrucciones concretas:
+   1. Valuaciones 2-ádicas de sumas binomiales y carries. Los autovalores y los menores del laplaciano involucran coeficientes binomiales $\binom{n}{k}$ y sumas de la forma $\sum\binom{n}{k}$. La valuación 2-ádica de estas sumas está gobernada por el número de carries al sumar en base 2 (teorema de Kummer / Lucas). Estas valuaciones no se comportan de forma “separada” como en el caso impar; hay interacciones profundas entre diferentes pesos de Hamming.
+   2. Forma normal de Smith sobre $\mathbb{Z}_2$. Calcular la SNF del laplaciano (matriz $2^n\times 2^n$) requiere operaciones elementales enteras. En 2-ádicos los divisores elementales no se leen directamente de los autovalores porque la matriz no es diagonalizable sobre $\mathbb{Z}_2$ de la misma manera (hay problemas de modularidad y de la forma bilineal asociada). El anillo $\mathbb{Z}[x_1,\dots,x_n]/I$ (donde (I) es el ideal generado por las relaciones del laplaciano) tiene una estructura de anillo natural proveniente de la teoría de representaciones, pero el cálculo de su torsión 2-primaria es mucho más sutil.
+   3. Estructura de anillo y “genericidad”. Para generadores genéricos de $\mathbb{F}_2^r$ se controla el número de factores, pero la multiplicidad exacta de cada potencia de 2 depende de combinatoria de carries y de la geometría del hipercubo, que no se reduce a un producto simple.
+   4. Crecimiento exponencial. La matriz tiene tamaño $2^n$; incluso con simetrías (acción del grupo hiperoctaedral) el cálculo simbólico de la SNF para (n) general es inviable por métodos directos. Solo se pueden atacar los mayores exponentes o casos pequeños.
+En resumen: para (p) impar hay una fórmula limpia en términos de los autovalores; para $p=2$ la SNF exige un análisis 2-ádico fino de sumas binomiales y de la estructura modular del cokernel que hasta ahora solo se ha resuelto parcialmente.
 ¿Puede un investigador independiente + IA encontrar la solución exacta universal para todo (n)?
 No es un muro teórico absoluto (no hay indicios de indecidibilidad), pero es un problema de investigación abierta de combinatoria algebraica / teoría de grafos algebraica que ha resistido más de 20 años a matemáticos profesionales.
 Una colaboración humano+IA puede:
@@ -167,160 +169,160 @@ Una colaboración humano+IA puede:
    * conjeturar patrones a partir de datos,
    * probar cotas o fórmulas parciales (como ya se ha hecho),
    * explorar enfoques de anillos, valuaciones o álgebra de incidencia booleana.
-Sin embargo, producir y demostrar una fórmula exacta, cerrada y universal para la descomposición completa de \(\operatorname{Syl}_2(K(Q_n))\) (todos los exponentes) requiere ideas nuevas profundas, no solo cálculo intensivo o búsqueda de patrones. Las IA actuales son excelentes estrategas y verificadoras, pero la creatividad matemática de alto nivel (encontrar la estructura oculta correcta y demostrar que es completa) sigue siendo, en la práctica, un territorio donde los humanos aportan las ideas clave. No es imposible, pero es un problema de investigación genuino, no un ejercicio de “resolver con suficiente cómputo”.
+Sin embargo, producir y demostrar una fórmula exacta, cerrada y universal para la descomposición completa de $\mathrm{Syl}_2(K(Q_n))$ (todos los exponentes) requiere ideas nuevas profundas, no solo cálculo intensivo o búsqueda de patrones. Las IA actuales son excelentes estrategas y verificadoras, pero la creatividad matemática de alto nivel (encontrar la estructura oculta correcta y demostrar que es completa) sigue siendo, en la práctica, un territorio donde los humanos aportan las ideas clave. No es imposible, pero es un problema de investigación genuino, no un ejercicio de “resolver con suficiente cómputo”.
 Si quieres, puedo ayudarte a explorar los casos pequeños, las fórmulas parciales conocidas, o a plantear un plan de ataque computacional/simbólico concreto.
 
 ### ChatGPT
 
-Sí, Rafa. Y aquí conviene hacer una distinción importante desde el principio: el problema no es que no sepamos nada de la parte \(2\). Sabemos bastante. Lo que sigue siendo difícil es obtener una fórmula cerrada y universal para todos los factores cíclicos \(2\)-primarios.
-He comprobado la literatura reciente, y esa distinción cambia bastante la fotografía. Bai ya determinó incluso cierta información de la parte \(2\), y Gao–Marx-Kuo–McDonald–Yuen avanzaron mucho más después; pero la estructura completa sigue sin estar resuelta. [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0024379502007279?utm_source=chatgpt.com)
-1. ¿Qué es exactamente el grupo de pila de arena de \(Q_n\)?
-El hipercubo \(Q_n\) tiene
-\[ V(Q_n)=\{0,1\}^n, \]
-por tanto \(2^n\) vértices, y cada vértice tiene grado \(n\).
+Sí, Rafa. Y aquí conviene hacer una distinción importante desde el principio: el problema no es que no sepamos nada de la parte $2$. Sabemos bastante. Lo que sigue siendo difícil es obtener una fórmula cerrada y universal para todos los factores cíclicos $2$-primarios.
+He comprobado la literatura reciente, y esa distinción cambia bastante la fotografía. Bai ya determinó incluso cierta información de la parte $2$, y Gao–Marx-Kuo–McDonald–Yuen avanzaron mucho más después; pero la estructura completa sigue sin estar resuelta. [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0024379502007279?utm_source=chatgpt.com)
+1. ¿Qué es exactamente el grupo de pila de arena de $Q_n$?
+El hipercubo $Q_n$ tiene
+$$V(Q_n)=\{0,1\}^n,$$
+por tanto $2^n$ vértices, y cada vértice tiene grado $n$.
 Su laplaciano es
-\[ L=nI-A, \]
-donde \(A\) es la matriz de adyacencia.
+$$L=nI-A,$$
+donde $A$ es la matriz de adyacencia.
 El critical group o sandpile group es
-\[ K(Q_n)=\operatorname{tors}\bigl(\operatorname{coker}L\bigr). \]
-Equivalentemente, si \(\widetilde L\) es el laplaciano reducido —quitamos una fila y una columna—,
-\[ K(Q_n)\cong \mathbb Z^{2^n-1}/\operatorname{im}\widetilde L. \]
+$$K(Q_n)=\mathrm{tors}\bigl(\mathrm{coker}L\bigr).$$
+Equivalentemente, si $\widetilde L$ es el laplaciano reducido —quitamos una fila y una columna—,
+$$K(Q_n)\cong \mathbb Z^{2^n-1}/\mathrm{im}\widetilde L.$$
 Por el teorema de forma normal de Smith,
-\[ U\widetilde L V = \operatorname{diag}(d_1,\ldots,d_{2^n-1}), \qquad d_1\mid d_2\mid\cdots, \]
+$$U\widetilde L V = \mathrm{diag}(d_1,\ldots,d_{2^n-1}), \qquad d_1\mid d_2\mid\cdots,$$
 y entonces
-\[ K(Q_n)\cong \bigoplus_i\mathbb Z/d_i\mathbb Z. \]
+$$K(Q_n)\cong \bigoplus_i\mathbb Z/d_i\mathbb Z.$$
 Así que resolver el grupo de pila equivale esencialmente a calcular la SNF integral del laplaciano.
 Y aquí aparece el monstruo.
-2. ¿Por qué la parte \(2\) es especial?
-El espectro racional de \(Q_n\) es extraordinariamente bonito:
-\[ \lambda_k=2k, \qquad \operatorname{mult}(\lambda_k)=\binom nk, \qquad 0\le k\le n. \]
+2. ¿Por qué la parte $2$ es especial?
+El espectro racional de $Q_n$ es extraordinariamente bonito:
+$$\lambda_k=2k, \qquad \mathrm{mult}(\lambda_k)=\binom nk, \qquad 0\le k\le n.$$
 Es decir,
-\[ 0,n,2n,4,\ldots,2n. \]
+$$0,n,2n,4,\ldots,2n.$$
 Por Kirchhoff,
-\[ |K(Q_n)| = \frac1{2^n} \prod_{k=1}^{n}(2k)^{\binom nk}. \]
+$$|K(Q_n)| = \frac1{2^n} \prod_{k=1}^{n}(2k)^{\binom nk}.$$
 Esto proporciona perfectamente el orden del grupo.
 Pero conocer el orden es muy distinto de conocer la estructura.
 Por ejemplo,
-\[ |\text{Syl}_2(K)|=2^N \]
+$$|\text{Syl}_2(K)|=2^N$$
 no nos dice si tenemos
-\[ (\mathbb Z/2)^N, \]
+$$(\mathbb Z/2)^N,$$
 o
-\[ \mathbb Z/4\oplus(\mathbb Z/2)^{N-2}, \]
+$$\mathbb Z/4\oplus(\mathbb Z/2)^{N-2},$$
 o
-\[ \mathbb Z/2^{50}\oplus\cdots, \]
+$$\mathbb Z/2^{50}\oplus\cdots,$$
 etc.
-La información que falta es precisamente la distribución de los exponentes \(2\)-ádicos.
+La información que falta es precisamente la distribución de los exponentes $2$-ádicos.
 3. La primera trampa: el espectro no determina la SNF
 Esta es probablemente la idea más importante para entender por qué el problema se resiste.
-Sobre \(\mathbb Q\), podemos diagonalizar:
-\[ L \sim \operatorname{diag} \left( 0, 2^{\binom n1}, 4^{\binom n2}, \ldots, (2n)^{\binom nn} \right). \]
-Pero esa diagonalización utiliza cambios de base racionales, no necesariamente cambios de base unimodulares sobre \(\mathbb Z\).
+Sobre $\mathbb Q$, podemos diagonalizar:
+$$L \sim \mathrm{diag} \left( 0, 2^{\binom n1}, 4^{\binom n2}, \ldots, (2n)^{\binom nn} \right).$$
+Pero esa diagonalización utiliza cambios de base racionales, no necesariamente cambios de base unimodulares sobre $\mathbb Z$.
 Y la SNF vive precisamente en la aritmética integral.
 Dicho brutalmente:
 el espectro sabe cuánto mide cada dirección; la SNF sabe cómo están pegadas esas direcciones dentro de la red entera.
 Ese "pegamento integral" es exactamente donde aparece la dificultad.
-4. ¿Por qué \(2\) rompe las técnicas que funcionan para \(p\) impar?
+4. ¿Por qué $2$ rompe las técnicas que funcionan para $p$ impar?
 Aquí está la verdadera razón.
 El laplaciano es
-\[ L=nI-A. \]
-Y el grafo \(Q_n\) es el Cayley graph de
-\[ (\mathbb F_2)^n. \]
+$$L=nI-A.$$
+Y el grafo $Q_n$ es el Cayley graph de
+$$(\mathbb F_2)^n.$$
 La representación natural se puede escribir mediante operadores de traslación
-\[ x_1,\ldots,x_n, \qquad x_i^2=1. \]
+$$x_1,\ldots,x_n, \qquad x_i^2=1.$$
 El operador de adyacencia es esencialmente
-\[ A=x_1+\cdots+x_n. \]
+$$A=x_1+\cdots+x_n.$$
 Por tanto, sobre los enteros aparece el anillo
-\[ \mathbb Z[(C_2)^n]. \]
-Ahora mira qué ocurre módulo \(2\).
+$$\mathbb Z[(C_2)^n].$$
+Ahora mira qué ocurre módulo $2$.
 Pon
-\[ y_i=x_i-1. \]
+$$y_i=x_i-1.$$
 Entonces
-\[ x_i=1+y_i \]
-y, porque \(x_i^2=1\),
-\[ (1+y_i)^2=1, \]
+$$x_i=1+y_i$$
+y, porque $x_i^2=1$,
+$$(1+y_i)^2=1,$$
 por lo que
-\[ 2y_i+y_i^2=0. \]
-Módulo \(2\) esto se convierte en
-\[ y_i^2=0. \]
+$$2y_i+y_i^2=0.$$
+Módulo $2$ esto se convierte en
+$$y_i^2=0.$$
 Es decir:
-\[ \boxed{\text{el álgebra de grupo cambia radicalmente al pasar al primo }2.} \]
+$$\boxed{\text{el álgebra de grupo cambia radicalmente al pasar al primo }2.}$$
 Aparece una enorme estructura de elementos nilpotentes.
-Para un primo impar, \(2\) es una unidad en \(\mathbb Z_{(p)}\), y la situación es muchísimo más limpia. En \(p=2\), precisamente el elemento que permitiría separar las dos partes del fenómeno se vuelve no invertible.
+Para un primo impar, $2$ es una unidad en $\mathbb Z_{(p)}$, y la situación es muchísimo más limpia. En $p=2$, precisamente el elemento que permitiría separar las dos partes del fenómeno se vuelve no invertible.
 Ésta es una de las razones algebraicas profundas.
 5. Y hay otra bomba: los coeficientes binomiales
 La representación del hipercubo conduce inevitablemente a cantidades como
-\[ \binom nk. \]
-Para estudiar la parte \(2\)-primaria necesitas conocer
-\[ v_2\left(\binom nk\right). \]
-Y esto no es simplemente una función suave de \(n,k\).
+$$\binom nk.$$
+Para estudiar la parte $2$-primaria necesitas conocer
+$$v_2\left(\binom nk\right).$$
+Y esto no es simplemente una función suave de $n,k$.
 Por la fórmula de Kummer,
-\[ v_2\binom nk \]
-es el número de acarreos al sumar \(k\) y \(n-k\) en binario.
-Por tanto la estructura depende finamente de los bits de \(n\).
+$$v_2\binom nk$$
+es el número de acarreos al sumar $k$ y $n-k$ en binario.
+Por tanto la estructura depende finamente de los bits de $n$.
 Esto explica una característica bastante inquietante de los resultados recientes: aparecen fenómenos que no parecen seguir una fórmula polinómica sencilla, sino que dependen de la aritmética binaria.
-Gao et al. señalan explícitamente que uno de los ingredientes centrales de sus resultados son precisamente las valuaciones \(2\)-ádicas de sumas binomiales y la combinatoria de los carries. [arXiv](https://arxiv.org/abs/1912.06919?utm_source=chatgpt.com)
+Gao et al. señalan explícitamente que uno de los ingredientes centrales de sus resultados son precisamente las valuaciones $2$-ádicas de sumas binomiales y la combinatoria de los carries. [arXiv](https://arxiv.org/abs/1912.06919?utm_source=chatgpt.com)
 6. ¿Qué hizo realmente Bai?
 Aquí corrijo ligeramente la premisa de tu pregunta.
 El artículo de Hua Bai:
-H. Bai, “On the critical group of the \(n\)-cube”, Linear Algebra and its Applications 369 (2003), 251–261.
-demostró la estructura \(p\)-primaria para todos los primos impares \(p\). [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0024379502007279?utm_source=chatgpt.com)
-Pero además obtuvo información no trivial sobre \(p=2\).
-En particular, determinó el número de factores \(\mathbb Z/2\mathbb Z\) que aparecen en la parte \(2\)-primaria:
-\[ a_n= 2^{n-2}-2^{\lfloor(n-2)/2\rfloor}. \]
-Por tanto, no sería exacto decir que Bai "dejó toda la parte \(2\) intacta".
+H. Bai, “On the critical group of the $n$-cube”, Linear Algebra and its Applications 369 (2003), 251–261.
+demostró la estructura $p$-primaria para todos los primos impares $p$. [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0024379502007279?utm_source=chatgpt.com)
+Pero además obtuvo información no trivial sobre $p=2$.
+En particular, determinó el número de factores $\mathbb Z/2\mathbb Z$ que aparecen en la parte $2$-primaria:
+$$a_n= 2^{n-2}-2^{\lfloor(n-2)/2\rfloor}.$$
+Por tanto, no sería exacto decir que Bai "dejó toda la parte $2$ intacta".
 Lo que quedó abierto fue, esencialmente, qué ocurre con los factores
-\[ \mathbb Z/4,\quad \mathbb Z/8,\quad \mathbb Z/16,\ldots \]
+$$\mathbb Z/4,\quad \mathbb Z/8,\quad \mathbb Z/16,\ldots$$
 y cómo se distribuyen todos los exponentes superiores.
-Una fuente posterior resume justamente esa situación: Bai resolvió el número de factores de orden \(2\), pero los poderes superiores de \(2\) permanecían abiertos. [Educación JMU](https://educ.jmu.edu/~duceyje/undergrad/2022/sherwocj_project.pdf?utm_source=chatgpt.com)
+Una fuente posterior resume justamente esa situación: Bai resolvió el número de factores de orden $2$, pero los poderes superiores de $2$ permanecían abiertos. [Educación JMU](https://educ.jmu.edu/~duceyje/undergrad/2022/sherwocj_project.pdf?utm_source=chatgpt.com)
 7. Y aquí entra Chandler–Sin–Xiang
 Hay una posible fuente de confusión muy interesante.
 Chandler, Sin y Xiang publicaron en 2017:
 D. Chandler, P. Sin, Q. Xiang, “The Smith group of the hypercube graph”, Designs, Codes and Cryptography 84 (2017), 283–294.
-Ellos calcularon la Smith group de la matriz de adyacencia del hipercubo, es decir, la SNF de \(A\), no directamente la SNF del laplaciano \(nI-A\). [arXiv](https://arxiv.org/abs/1511.00272?utm_source=chatgpt.com)
+Ellos calcularon la Smith group de la matriz de adyacencia del hipercubo, es decir, la SNF de $A$, no directamente la SNF del laplaciano $nI-A$. [arXiv](https://arxiv.org/abs/1511.00272?utm_source=chatgpt.com)
 Y esto es muy importante:
-\[ \operatorname{SNF}(A) \neq \operatorname{SNF}(nI-A). \]
+$$\mathrm{SNF}(A) \neq \mathrm{SNF}(nI-A).$$
 Saber completamente una de ellas no resuelve automáticamente la otra.
 De hecho, el trabajo de Chandler–Sin–Xiang es un buen ejemplo de por qué el problema es traicionero: incluso con toda la maquinaria de asociación/Hamming scheme y matrices de inclusión, la aritmética integral relevante para el laplaciano no queda automáticamente controlada. [Facultad de Ciencias y Ingeniería](https://www-users.cse.umn.edu/~reiner/REU/REU2016notes/ChandlerSinXiang.pdf?utm_source=chatgpt.com)
 8. ¿Qué han conseguido los trabajos más recientes?
 Aquí la historia se vuelve mucho más interesante.
 Gao, Marx-Kuo, McDonald y Yuen estudiaron los grupos de pila de los grafos de Cayley de
-\[ \mathbb F_2^r, \]
+$$\mathbb F_2^r,$$
 incluido el hipercubo.
 Su artículo:
-J. Gao, J. Marx-Kuo, V. McDonald, C. H. Yuen, “Sandpile Groups of Cayley Graphs of \(\mathbb F_2^r\)”, Communications in Algebra (versión actualizada 2024).
-se centra explícitamente en la parte \(2\)-Sylow, que describen como pobremente entendida. [arXiv](https://arxiv.org/abs/1912.06919?utm_source=chatgpt.com)
+J. Gao, J. Marx-Kuo, V. McDonald, C. H. Yuen, “Sandpile Groups of Cayley Graphs of $\mathbb F_2^r$”, Communications in Algebra (versión actualizada 2024).
+se centra explícitamente en la parte $2$-Sylow, que describen como pobremente entendida. [arXiv](https://arxiv.org/abs/1912.06919?utm_source=chatgpt.com)
 Obtuvieron, entre otras cosas:
-   * número de factores cíclicos \(2\)-primarios en situaciones genéricas;
+   * número de factores cíclicos $2$-primarios en situaciones genéricas;
    * cotas para los casos no genéricos;
-   * una cota óptima para el mayor factor \(2\)-primario;
-   * para \(Q_n\), fórmulas exactas para los \(n-1\) factores \(2\)-primarios más grandes. [arXiv](https://arxiv.org/abs/1912.06919?utm_source=chatgpt.com)
+   * una cota óptima para el mayor factor $2$-primario;
+   * para $Q_n$, fórmulas exactas para los $n-1$ factores $2$-primarios más grandes. [arXiv](https://arxiv.org/abs/1912.06919?utm_source=chatgpt.com)
 Eso es un avance considerable.
 Pero fíjate en la frase clave:
-los \(n-1\) mayores, no todos.
+los $n-1$ mayores, no todos.
 Y ahí está el muro.
 9. ¿Dónde está exactamente el muro matricial?
-Supongamos que quieres obtener la parte \(2\)-primaria de la SNF.
-Una manera de verlo es que necesitas saber, para cada \(k\),
-\[ \#\{i:\;v_2(d_i)\ge k\}. \]
+Supongamos que quieres obtener la parte $2$-primaria de la SNF.
+Una manera de verlo es que necesitas saber, para cada $k$,
+$$\#\{i:\;v_2(d_i)\ge k\}.$$
 Equivalentemente, tienes que entender las dimensiones/rangos de determinadas reducciones módulo
-\[ 2,\;4,\;8,\;16,\ldots \]
+$$2,\;4,\;8,\;16,\ldots$$
 No basta con calcular
-\[ \operatorname{rank}(L\bmod2). \]
+$$\mathrm{rank}(L\bmod2).$$
 Eso sólo te dice esencialmente cuántos factores tienen exactamente una cierta profundidad inicial.
 Para distinguir
-\[ 2,\;4,\;8,\;16,\ldots \]
+$$2,\;4,\;8,\;16,\ldots$$
 necesitas levantar la información repetidamente por las capas
-\[ \mathbb Z/2 \leftarrow \mathbb Z/4 \leftarrow \mathbb Z/8 \leftarrow \cdots. \]
+$$\mathbb Z/2 \leftarrow \mathbb Z/4 \leftarrow \mathbb Z/8 \leftarrow \cdots.$$
 Y aquí ocurre algo perverso:
-módulo \(2\)
+módulo $2$
 el hipercubo se vuelve extremadamente degenerado.
-Como \(L=nI-A\), dependiendo de la paridad de \(n\),
-\[ L\bmod2 \]
-puede comportarse esencialmente como \(A\) o \(I+A\), y la estructura del grupo de álgebra de \((C_2)^n\) adquiere una gran cantidad de nilpotencia.
+Como $L=nI-A$, dependiendo de la paridad de $n$,
+$$L\bmod2$$
+puede comportarse esencialmente como $A$ o $I+A$, y la estructura del grupo de álgebra de $(C_2)^n$ adquiere una gran cantidad de nilpotencia.
 Pero al pasar a
-\[ \bmod 4,\quad\bmod8,\quad\bmod16, \]
+$$\bmod 4,\quad\bmod8,\quad\bmod16,$$
 parte de esa degeneración se levanta de formas que dependen de:
-   * \(n\bmod 2^r\);
+   * $n\bmod 2^r$;
    * valuaciones de coeficientes binomiales;
    * cancelaciones entre distintos niveles;
    * extensiones entre submódulos;
@@ -328,18 +330,18 @@ parte de esa degeneración se levanta de formas que dependen de:
 No hay una diagonalización simultánea sencilla que preserve toda esa información.
 10. Una metáfora bastante buena
 Imagina que racionalmente el hipercubo te da un edificio con plantas perfectamente separadas:
-\[ 0,\quad2,\quad4,\quad6,\quad\ldots,2n. \]
+$$0,\quad2,\quad4,\quad6,\quad\ldots,2n.$$
 Espectro:
 "Aquí están las plantas."
 La SNF pregunta:
-"¿Cómo están conectadas las escaleras cuando sólo puedes mover muebles usando operaciones enteras de determinante \(\pm1\)?"
-Para \(p\) impar, puedes utilizar \(2^{-1}\) y buena parte de la arquitectura se separa.
-Para \(p=2\),
-\[ 2^{-1} \]
+"¿Cómo están conectadas las escaleras cuando sólo puedes mover muebles usando operaciones enteras de determinante $\pm1$?"
+Para $p$ impar, puedes utilizar $2^{-1}$ y buena parte de la arquitectura se separa.
+Para $p=2$,
+$$2^{-1}$$
 no existe.
 Las plantas empiezan a fusionarse algebraicamente.
 Y los ascensores tienen botones etiquetados por
-\[ v_2\binom nk, \]
+$$v_2\binom nk,$$
 que dependen de los acarreos binarios.
 Eso es mucho más difícil que conocer las alturas de las plantas.
 11. Entonces, ¿es "un muro insuperable para una IA"?
@@ -351,32 +353,32 @@ Eso sería humo.
 Hay tres niveles completamente distintos.
 Nivel 1 — calcular casos
 Esto sí está al alcance de un investigador independiente + IA.
-Podemos construir algoritmos que calculen exactamente la SNF para \(n\) moderados, estudiar los exponentes \(2\)-ádicos y buscar patrones.
+Podemos construir algoritmos que calculen exactamente la SNF para $n$ moderados, estudiar los exponentes $2$-ádicos y buscar patrones.
 Eso ya es terreno muy viable.
 Nivel 2 — formular la conjetura correcta
 También es muy viable.
 De hecho, aquí puede estar una de las contribuciones más interesantes de una colaboración humano–IA:
-\[ n=3,4,5,\ldots,100,\ldots \]
+$$n=3,4,5,\ldots,100,\ldots$$
 → calcular
-\[ (e_1(n),e_2(n),\ldots) \]
+$$(e_1(n),e_2(n),\ldots)$$
 donde
-\[ \operatorname{Syl}_2 K(Q_n) \cong \bigoplus_j\mathbb Z/2^{e_j(n)}. \]
-Después buscar estructura en los \(e_j(n)\).
+$$\mathrm{Syl}_2 K(Q_n) \cong \bigoplus_j\mathbb Z/2^{e_j(n)}.$$
+Después buscar estructura en los $e_j(n)$.
 Especialmente mirar:
-\[ e_j(n)-e_{j+1}(n), \]
+$$e_j(n)-e_{j+1}(n),$$
 sus dependencias en
-\[ v_2(n),\quad v_2(n-1),\quad s_2(n), \]
+$$v_2(n),\quad v_2(n-1),\quad s_2(n),$$
 y en los acarreos binarios.
 Eso es precisamente el tipo de terreno donde una IA puede ser muy buena como detector de patrones y generador de conjeturas.
 Nivel 3 — demostrar la fórmula universal
 Aquí está el verdadero Everest.
 Porque encontrar una secuencia bonita no demuestra nada.
-Hay que explicar por qué las extensiones \(2\)-ádicas de todas las capas tienen exactamente esa estructura.
+Hay que explicar por qué las extensiones $2$-ádicas de todas las capas tienen exactamente esa estructura.
 Y eso probablemente requiere una idea nueva, no simplemente más potencia computacional.
 12. Pero hay algo que me parece especialmente prometedor
 La situación actual es mucho mejor que "Bai dejó un problema completamente virgen".
 Tenemos ya varias piezas:
-\[ \boxed{ \text{espectro} + \text{estructura de Cayley} + \text{álgebra de grupo} + \text{representación} + \text{valuaciones binarias} + \text{muchos factores superiores conocidos} } \]
+$$\boxed{ \text{espectro} + \text{estructura de Cayley} + \text{álgebra de grupo} + \text{representación} + \text{valuaciones binarias} + \text{muchos factores superiores conocidos} }$$
 El trabajo de Gao et al. demuestra que se puede atacar el problema desde una perspectiva algebraica mucho más fina que "calculemos una matriz gigante". [arXiv](https://arxiv.org/abs/1912.06919?utm_source=chatgpt.com)
 Y eso cambia mi valoración.
 13. Mi evaluación honesta para un independiente + IA
@@ -385,7 +387,7 @@ Si me preguntas:
 Sí.
 Si me preguntas:
 ¿Puede hacerlo mediante fuerza bruta?
-No. El crecimiento de \(Q_n\) hace que la matriz tenga \(2^n\) filas/columnas y la fuerza bruta muera muy pronto.
+No. El crecimiento de $Q_n$ hace que la matriz tenga $2^n$ filas/columnas y la fuerza bruta muera muy pronto.
 Si me preguntas:
 ¿Puede descubrir una conjetura nueva que los matemáticos no tengan?
 Sí, me parece perfectamente plausible.
@@ -395,19 +397,19 @@ También sí es posible, pero aquí pondría una probabilidad mucho menor. No po
 Y ésa es justamente la diferencia entre un problema computacional y uno estructural.
 Y hay una oportunidad especialmente interesante
 Yo no empezaría intentando calcular directamente
-\[ \operatorname{SNF}(\widetilde L_{Q_n}). \]
+$$\mathrm{SNF}(\widetilde L_{Q_n}).$$
 Intentaría algo más agresivo:
-\[ \boxed{ \text{reformular el }2\text{-primary component como un problema de módulos sobre } \mathbb Z_2[(C_2)^n] } \]
+$$\boxed{ \text{reformular el }2\text{-primary component como un problema de módulos sobre } \mathbb Z_2[(C_2)^n] }$$
 y después estudiar la filtración
-\[ J\supset J^2\supset J^3\supset\cdots \]
-del ideal de aumento, porque módulo \(2\)
-\[ J = (x_1-1,\ldots,x_n-1) \]
+$$J\supset J^2\supset J^3\supset\cdots$$
+del ideal de aumento, porque módulo $2$
+$$J = (x_1-1,\ldots,x_n-1)$$
 se vuelve esencialmente una álgebra truncada por
-\[ (x_i-1)^2=0. \]
-Eso convierte el fenómeno que parece una monstruosa SNF de tamaño \(2^n\) en una pregunta sobre filtraciones, nilpotencia y extensiones \(2\)-ádicas.
+$$(x_i-1)^2=0.$$
+Eso convierte el fenómeno que parece una monstruosa SNF de tamaño $2^n$ en una pregunta sobre filtraciones, nilpotencia y extensiones $2$-ádicas.
 Y ahí es donde yo buscaría el "puente" que todavía falta.
-De hecho, el propio enfoque moderno ya apunta en esa dirección: Gao et al. utilizan una estructura natural de anillo proveniente de representación y técnicas \(2\)-ádicas para atacar los factores que permanecen inaccesibles. [arXiv](https://arxiv.org/abs/1912.06919?utm_source=chatgpt.com)
-Mi veredicto: no es un muro insuperable para una IA. Es un muro de estructura. Y eso es precisamente el tipo de muro en el que una estrategia humano–IA puede tener una oportunidad real: no intentar ser más rápida que la literatura, sino encontrar una representación del problema en la que la parte \(2\) deje de parecer una SNF monstruosa y revele qué mecanismo genera los exponentes \(2\)-ádicos.
+De hecho, el propio enfoque moderno ya apunta en esa dirección: Gao et al. utilizan una estructura natural de anillo proveniente de representación y técnicas $2$-ádicas para atacar los factores que permanecen inaccesibles. [arXiv](https://arxiv.org/abs/1912.06919?utm_source=chatgpt.com)
+Mi veredicto: no es un muro insuperable para una IA. Es un muro de estructura. Y eso es precisamente el tipo de muro en el que una estrategia humano–IA puede tener una oportunidad real: no intentar ser más rápida que la literatura, sino encontrar una representación del problema en la que la parte $2$ deje de parecer una SNF monstruosa y revele qué mecanismo genera los exponentes $2$-ádicos.
 Y si ese mecanismo aparece, entonces sí estaríamos hablando de una posible solución universal, no simplemente de otro récord computacional.
 
 ### Claude
