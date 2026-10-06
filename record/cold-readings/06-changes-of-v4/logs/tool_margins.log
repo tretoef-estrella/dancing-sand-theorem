@@ -1,0 +1,8 @@
+most common right edges of lines (pt): [(542.0, 812), (539.0, 53), (539.5, 44), (528.0, 19), (528.5, 15), (524.5, 13)]
+largest xMax: 541.93 on p41 word 'con‐' (xMin 522.31)
+words with xMax > 542.5: 0
+leftmost xMin per page (mode): [(54.5, 47), (72.5, 1), (61.0, 1)]
+smallest xMin: 54.34 on p1 word 'Abstract'
+page sizes: {('594.959960', '841.919980')}
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=9888 t=0s

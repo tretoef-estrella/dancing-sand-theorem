@@ -1,0 +1,3 @@
+656:   `c_3 := v'(f) = max_{F_1} v'`,  `c_4 := v'(I ∖ f) = min_{F_2} v'`.
+725:  `ŷ_s(∅) = max_l (−Σ_{j>l} ψ_{t_j})`.
+VIGIA-FIN-OK exit=0 pico_kb=0 t=0s

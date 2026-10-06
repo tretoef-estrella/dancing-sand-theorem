@@ -1,0 +1,22 @@
+right edges (mode): [(542.0, 812), (539.0, 53), (539.5, 45)]
+left edges (mode): [(54.5, 1184), (82.5, 242), (72.5, 36)]
+largest xMax: 541.93 p41 'con‐'
+words beyond the right edge 542.0 + 0.5 pt: 0 []
+top of first line (mode): [(55.3, 23), (55.1, 11), (54.9, 6)]
+bottom of last line (mode): [(773.4, 2), (777.7, 2), (783.9, 2)]
+text block: top 55.3, lowest line bottom over all pages 784.5
+page fill (lowest line bottom − top) / (block bottom − top):
+  pages under 90 %: [(1, 61), (7, 84), (23, 89), (42, 75), (49, 89)]
+words outside the text block vertically: 0 []
+line-end hyphens: 118  flagged: 5
+  p1  «non-in‐» / «creasing»  inside-compound
+  p3  «o-» / «𝐷»  first<2
+  p22  «[ABER‐» / «S55],»  remainder<3:'S55],', citation-key
+  p42  «fami‐» / «ly»  remainder<3:'ly'
+  p48  «list‐» / «ed»  remainder<3:'ed'
+control: 3 hyphens, 3 flagged
+  CONTROL p1  «non-in-» / «creasing»  inside-compound
+  CONTROL p1  «reducibili-» / «ty,»  remainder<3:'ty,'
+  CONTROL p1  «[ABER-» / «S55]»  remainder<3:'S55]', citation-key
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=3600 t=0s

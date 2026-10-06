@@ -1,0 +1,14 @@
+‖x − y‖^2 = ‖x − z‖^2 + ‖z − y‖^2 + 2Σ_j (x_j − z_j)(z_j − y_j)
+   kinds: [('‖', 'fence'), ('=', 'rel'), ('‖', 'fence'), ('+', 'bin'), ('‖', 'fence'), ('+', 'unary')]
+   html : ‖𝑥<span class="b">−</span>𝑦‖<span class="sp">2</span><span class="r">=</span>‖𝑥<span class="b">−</span>𝑧‖<span class="sp">2</span><span class="b">+</span>‖𝑧<span class="b">−</span>𝑦‖<span class="sp">2</span>+2<span class="bo">∑</span><span class="sb">𝑗</span><span class="th"></span>(𝑥<span class="sb">𝑗</span><span class="b">−</span>𝑧<span class="sb">𝑗</span>)(𝑧<span class="sb">𝑗</span><span class=
+Z_2 ⊕ Syl_2 K̄(n) ≅ ⊕(2X)^{m_λ} = 2(Z_2 ⊕ Syl_2 K(Q_n))
+   kinds: [('⊕', 'bin'), ('⊕', 'unary'), ('=', 'rel'), ('⊕', 'bin')]
+   html : 𝑍<span class="sb">2</span><span class="b">⊕</span>Syl<span class="sb">2</span><span class="th"></span>𝐾̄(𝑛)<span class="r">≅</span>⊕(2𝑋)<span class="sp">𝑚<span class="sb">𝜆</span></span><span class="r">=</span>2(𝑍<span class="sb">2</span><span class="b">⊕</span>Syl<span class="sb">2</span><span class="th"></span>𝐾(𝑄<span class="sb">𝑛</span>))
+Θ(B) = Θ(C) =: β
+   kinds: [('=', 'rel'), ('=', 'rel'), (':', 'rel')]
+   html : Θ(𝐵)<span class="r">=</span>Θ(𝐶)<span class="r">=</span><span class="rr">:</span>𝛽
+γ(Δ) := Σ_{u ∈ I∖Δ, u > min Δ} h_u
+   kinds: []
+   html : 𝛾(Δ)<span class="r">:=</span><span class="bo">∑</span><span class="sb">𝑢∈𝐼∖Δ,𝑢&gt;minΔ</span><span class="th"></span>ℎ<span class="sb">𝑢</span>
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=7712 t=0s

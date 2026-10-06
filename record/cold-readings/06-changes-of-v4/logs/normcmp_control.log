@@ -1,0 +1,122 @@
+CONTROL: mutated H11 new line:   `− Σ_{u>s'} [π_{s'}(2f+2) K_{us'}(2f) + K_{us'}(2f+1) π_u(2f) + Σ_{s'<s<u} K_{
+H01 @@ -3,7 +3,7 @@  CHANGED
+    replace: «…October 2026 · version [3] → [4] --- ## Abstract…»
+H02 @@ -29,13 +29,13 @@  CHANGED
+    replace: «…in a remark used [nowhere,] → [nowhere (the author then found the same missing hypothesis in Lemma 10.6(a), harmless because its only use is for an even system), two rows of §12.1 that said more than their code,] and points of presentation,…»
+    replace: «…nowhere, and points of [presentation, all corrected in this version 3;] → [presentation;] it also found that…»
+    insert: «…is integral (Lemma 7.9). [] → [The changes of version 3 were read cold by a fifth reader: **they hold**, with no gap and no error; that reader found points of presentation and defects of typesetting, all corrected in this version 4.] **The changes of version…»
+    replace: «…**The changes of version [3] → [4] have not yet been…»
+    replace: «…subgroup remains a mystery» [[GMM19].] → [[MGM19].] This paper determines the…»
+H03 @@ -51,7 +51,9 @@  CHANGED
+    replace: «…by Σ_λ m_λ(0)[λ] = [[0] and] → [[0],] Σ_λ m_λ(n)[λ] = V·Σ_λ…»
+H04 @@ -59,7 +61,7 @@  CHANGED
+    replace: «…is an integer (Lemma [7.9),] → [7.9, with Proposition 5.3, Lemma 7.5 and Proposition 5.4; see §8),] so ŷ_i below is…»
+H05 @@ -121,7 +123,7 @@  CHANGED
+    replace: «…for n ≥ 4** [[GMM19].] → [[MGM19].] > **Corollary 1.7 ([GMMY24,…»
+H06 @@ -130,7 +132,7 @@  CHANGED
+    replace: «…and D the rank [(this] → [(up to the sign (−1)^{|S|}, this] basis is the change…»
+    insert: «…= x_i − 1 [] → [in the proof] of [GMMY24, Proposition 2.5],…»
+    insert: «…[GMMY24, Proposition 2.5], and [] → [it is] the Laplacian analogue of…»
+H07 @@ -191,7 +193,7 @@  CHANGED
+    replace: «…subsets of I. At [every step] → [the start] each floor pays an…»
+    insert: «…every step each floor [] → [d] pays an even amount,…»
+    replace: «…step each floor pays [an] → [the] even amount, 2^α(i +…»
+    replace: «…floor pays an even [amount,] → [amount] 2^α(i + d) at…»
+    replace: «…even amount, 2^α(i + [d) at] → [d); each move multiplies] the floor d, and…»
+    replace: «…+ d) at the [floor d,] → [payments of two adjacent floors] and at the end…»
+    insert: «…the floor d, and [] → [halves them, so every payment stays even;] at the end the…»
+H08 @@ -200,11 +202,11 @@  CHANGED
+    replace: «…the (n+1)-th factor of [[GMM19]] → [[MGM19]] — we found no…»
+    replace: «…subset-intersection diagonal forms of [[DEGJPP24].] → [[DEGJPP23].] **Contemporary context.** Vetluzhskikh and…»
+H09 @@ -218,7 +220,9 @@  CHANGED
+    insert: «…for inclusion). **Lemma 2.1.** [] → [In R,] s_j s_S = s_{S∪{j}}…»
+    delete: «…if j ∉ S, [and] → [] s_j s_S = 2…»
+H10 @@ -277,7 +281,7 @@  CHANGED
+    replace: «…N times odd denominators [(the] → [(2(s+1)/(2s+1)!! for the] last one gives 2(s+1)/(2s+1)!!).…»
+    replace: «…odd denominators (the last [one gives 2(s+1)/(2s+1)!!).] → [one).] The C(H, r) act…»
+H11 @@ -362,7 +366,8 @@  CHANGED
+    replace: «…n ι_{s'} − Σ_{u>s'} [[π_{s'}(2f+1)] → [[π_{s'}(2f+2)] K_{us'}(2f) + K_{us'}(2f+1) π_u(2f)…»
+H12 @@ -375,7 +380,8 @@  LAYOUT-ONLY
+H13 @@ -475,10 +481,14 @@  CHANGED
+    replace: «…K + o_I + [t_1 and] → [t_1,] 2ψ(D) = 2G(D) +…»
+H14 @@ -486,7 +496,9 @@  LAYOUT-ONLY
+H15 @@ -659,7 +671,7 @@  CHANGED
+    insert: «…a cut is enough. [] → [As written, strictness is also used in Theorem 7.8 (steps 1 and 3) and in Theorem 7.10, to identify integer fits; with Lemma 7.9 a cut suffices there (in Theorem 7.8 by a joint induction with Lemma 7.9, which uses the (Cut) of Theorem 7.8).] It is used where…»
+    replace: «…is enough. It is [used where the level sets themselves matter,] → [indispensable only] in Proposition 9.6 (H).…»
+    replace: «…matter, in Proposition 9.6 [(H).] → [(H), twice: in the induction for the base cell, and for the penalty shift.] Lemma 7.9 also shows…»
+H16 @@ -683,7 +695,7 @@  CHANGED
+    insert: «…level set of numbers [] → [that are all] ≥ 2 has mean…»
+H17 @@ -737,12 +749,13 @@  CHANGED
+    insert: «…Shifts i ≥ 2: [] → [every dancer is] ≤ g(n − i…»
+H18 @@ -786,7 +799,9 @@  LAYOUT-ONLY
+H19 @@ -849,7 +864,7 @@  CHANGED
+    insert: «…the two triangular matrices). [] → [So the twist move is clean: P is invertible, and S = 2G' with G' even (Proposition 4.1), so that the next move applies to G'.] For the split move,…»
+    replace: «…C) with v = [1.] → [1; and the split move is clean, because its pivot block is the one eliminated in Proposition 4.2 (triangular, with the coefficient 1 on each eliminated vector) and S = 2G'' with G'' even (Proposition 4.2).] (b) By (a) and…»
+H20 @@ -920,7 +935,10 @@  CHANGED
+    replace: «…by Strassmann's theorem [Str28]. [Products:] → [*Products.*] (a + 2χ)(b +…»
+    replace: «…+ bχ + 2χω). [Shifts:] → [*Shifts.*] χ(X − 2e) =…»
+    replace: «…and χ(−2e) ∈ 2Z_2. [Inverses:] → [*Inverses.*] (a + 2χ)^{−1} =…»
+H21 @@ -946,7 +964,7 @@  CHANGED
+    replace: «…clean, whatever its payments [(Proposition 4.1, Lemma 10.6(a)).] → [(Lemma 10.6(a), with Propositions 4.1 and 4.2).] With higher divided powers…»
+H22 @@ -986,13 +1004,16 @@  LAYOUT-ONLY
+H23 @@ -1004,7 +1025,7 @@  CHANGED
+    replace: «…(Theorem 10.15 and Lemmas [10.18–10.19);] → [10.18 and 10.19);] N_+ uses (Ψ_i +…»
+H24 @@ -1033,30 +1054,30 @@  CHANGED
+    replace: «…has no control. | [statement |] → [statement, and the] code | range |…»
+    insert: «…| statement | code [] → [that checks it] | range | result…»
+    replace: «…result | control | [|---|---|---|---|---|] → [|---|---|---|---|] | Main Theorem against…»
+    replace: «…DW against that of [Q_n/⟨𝟙⟩ |] → [Q_n/⟨𝟙⟩; code] gate_direct.py | n =…»
+    replace: «…Theorem 4.4 against the [dance |] → [dance; code] gate_dance.py | λ ≤…»
+    replace: «…· 5.3 · 5.4 [|] → [(5.2 against the closed form of Theorem 4.4); code] gate_sections5to7.py | λ <…»
+    replace: «…gate_sections5to7.py | λ < [64] → [64; i = 1, …, 40 (α = 1, 2 for 5.2, α = 1 for 5.3); i = 0, α = 1 for 5.4] | 109 200 ·…»
+    replace: «…M against the pooled [clocks | the same] → [clocks; code gate_sections5to7.py] | λ < 64,…»
+    replace: «…for three admissible prices [c_F | the same] → [c_F; code gate_sections5to7.py] | houses with I…»
+    replace: «…≤ 6 (λ ≤ [127),] → [126),] α ≤ 3, every…»
+    replace: «…deletion at i = [0 |] → [0; code] gate_strict_cut.py | every house…»
+    replace: «…of its deletions is [integral | the same] → [integral; code gate_strict_cut.py] | the same |…»
+    replace: «…Lemma 7.2(b) on random [sequences |] → [sequences; code] gate_lemma72.py | 20 000…»
+    replace: «…6.2: exactly one golden [bijection |] → [bijection; code] gate_theoremO.py | |I| ≤…»
+    replace: «…Lemma 9.7 · Corollary [1.6 |] → [1.6; code] gate_section9.py | n ≤…»
+    replace: «…9.3 · 9.4 · [9.6 | the same] → [9.6; code gate_section9.py] | λ ≤ 300…»
+    replace: «…cells) | | Corollary [1.7 | the same] → [1.7; code gate_section9.py] | e = 1,…»
+    replace: «…formulas, and v_2 = [0 |] → [0; code] gate_section10.py | m ≤…»
+    replace: «…| Lemma 10.1 on [V^{⊗n} | the same] → [V^{⊗n}; code gate_section10.py] | n ≤ 6…»
+    replace: «…the lattices T(λ) of [§3.3 | the same] → [§3.3; code gate_section10.py] | λ ≤ 22,…»
+    replace: «…(2) of §10.5 (a [measurement) | remark2/gate_remark2.py] → [measurement); code gate_remark2.py, in remark2/] | l = 2,…»
+    replace: «…### 12.2 Independent re-computations [Four] → [Five] readers of the project…»
+H25 @@ -1072,9 +1093,11 @@  CHANGED
+    insert: «…α ≤ 3, and [] → [the] 7 634 cells |…»
+    insert: «…and 7 634 cells [] → [with i ≥ 1 of the row above (7 874 less the 240 with i = 0)] | no non-integral level…»
+    insert: «…level set | — [] → [| | Lemma 7.9; the strict (Cut); Lemma 7.2(b) at the penalty shifts; the deletion at i = 0 | 5 | every house with k ≤ 7, α ≤ 3 (65 532); penalties P_r, P_c ≤ 4 for k ≤ 6 (192 024 cells); 741 deletions | 0 failures | x_H with 1 added at its first dancer: non-integral in 1 942 of 16 380 houses; strict …] | | Theorem 6.2…»
+    replace: «…3 | n ≤ [300 ·] → [300;] e ≤ 8 |…»
+H26 @@ -1085,10 +1108,11 @@  CHANGED
+    replace: «…read cold in its [turn] → [turn; and the changes of version 3, among them Lemma 7.9, on which the printed proof of the Main Theorem now rests (§8, Theorem 7.10), were read cold by a fifth reader] (Appendix A). - **Added…»
+    delete: «…in version 3, audited, [not yet] → [] read cold:** Lemma 7.9…»
+    replace: «…proved by the fourth [reader and] → [reader,] re-proved by the auditor;…»
+    replace: «…and re-proved by the [auditor;] → [auditor,] and the corrections listed…»
+    insert: «…by the auditor; and [] → [re-derived by] the corrections listed in…»
+    replace: «…the auditor; and the [corrections listed in Appendix A.] → [fifth reader.] No statement of a…»
+    replace: «…a theorem changed in [version 2] → [versions 2, 3] or in version 3;…»
+    replace: «…in version 2 or [in version 3;] → [4.] Lemma 7.2(b) was restated…»
+    replace: «…was restated in version [2, and] → [2. In version 3,] Lemma 7.9 was strengthened…»
+    replace: «…and Lemma 7.9 was [strengthened] → [strengthened, Lemma 10.6(a) gained the hypothesis «even», and Lemma 10.10 gained the explicit quantifier «for every L ≥ 0 and every floor f». - **Changed] in version 3. -…»
+    replace: «…was strengthened in version [3.] → [4, audited, not yet read cold:** the corrections of the fifth reading and the typesetting (Appendix A). No mathematical statement changed.] - **Measured, not proved:**…»
+    replace: «…the changes of version [3;] → [4;] a human referee; a…»
+H27 @@ -1112,8 +1136,9 @@  CHANGED
+    insert: «…an even one; the [] → [author then found the] same word was missing…»
+    delete: «…one; the same word [was] → [] missing in Lemma 10.6(a)),…»
+    replace: «…was missing in Lemma [10.6(a)),] → [10.6(a), harmless because its only use is for an even system),] two rows of §12.1…»
+    insert: «…(§12.1), and keeps the [] → [mathematics of the] repair of version 2…»
+    replace: «…2 as it was [read. **Its changes have not yet been read cold.**] → [read, with the clarifications listed above.] Every number printed in…»
+    insert: «…against an engine (§12). [] → [Its changes were read cold on 5 October 2026 (cold reader 5) by a reader with no access to the flights, the audits or the earlier readings, who re-derived Lemma 7.9 and every place where it is used, wrote a gate of its own (§12.2), reproduced the gates of §7 and looked at every page of the pdf: the  …] ## References…»
+H28 @@ -1125,13 +1150,12 @@  CHANGED
+    replace: «…(2017), 283–294; arXiv:1511.00272. - [[DEGJPP24]] → [[DEGJPP23]] J. E. Ducey, L.…»
+    replace: «…subset intersection relations, arXiv:2310.09227 [(2024).] → [(2023).] - [DHS18] J. E.…»
+    delete: «…2 (1991), 31–42. - [[GMM19] J. Marx-Kuo, J. Gao, V. McDonald, The sandpile group of Cayley graphs, poster, Joint Mathematics Meetings, Baltimore, January 2019. -] → [] [GMMY24] J. Gao, J.…»
+    replace: «…*Comm. Algebra* 52 (2024), [no. 10, 4459–4479, doi:10.1080/00927872.2024.2347582;] → [4459–4479;] arXiv:1912.06919v3 (cited by its…»
+H29 @@ -1141,11 +1165,12 @@  CHANGED
+    insert: «…Paper No. e11. - [] → [[MGM19] J. Marx-Kuo, J. Gao, V. McDonald, The sandpile group of Cayley graphs, poster, Joint Mathematics Meetings, Baltimore, January 2019. -] [OEIS] The On-Line Encyclopedia…»
+    replace: «…of Integer Sequences, sequence [A193134.] → [A193134, accessed 5 October 2026.] - [RT14] V. Reiner,…»
+    replace: «…graphs, *Electron. J. Combin.* [31(1)] → [31] (2024), P1.38; arXiv:2301.02517.…»
+TOTAL hunks 29, LAYOUT-ONLY 4
+VIGIA-FIN-OK exit=0 pico_kb=6832 t=0s

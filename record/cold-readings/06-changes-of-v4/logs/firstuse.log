@@ -1,0 +1,40 @@
+157:| `D` (operator), `π(d)`, `σ^{(α)}_i` | the floor operator, a payment, `F + 2^α(D 
+157:| `D` (operator), `π(d)`, `σ^{(α)}_i` | the floor operator, a payment, `F + 2^α(D 
+158:| `M(λ, i)`, `q_k`, `a_k(Δ)`, `δ(Δ)` | the final matrix, the coefficient polynomia
+158:| `M(λ, i)`, `q_k`, `a_k(Δ)`, `δ(Δ)` | the final matrix, the coefficient polynomia
+84:  `R_μ(D) := Σ_{t∈D} (h_t − 2^t) − κ(μ, o_D)`,  `x_D := R_m(D) − R_{m+K}(I 
+84:  `R_μ(D) := Σ_{t∈D} (h_t − 2^t) − κ(μ, o_D)`,  `x_D := R_m(D) − R_{m+K}(I 
+154:| `A = Z_2`, `k_0 = F_2` | the base ring and its residue field | §2 |
+159:| `R_μ(D)`, `γ(Δ)`, `x_D`, `ψ(E)` | rulers, gold, clocks of a cell, `Σ_{t∈E}(h_
+158:| `M(λ, i)`, `q_k`, `a_k(Δ)`, `δ(Δ)` | the final matrix, the coefficient polynomia
+2:## The 2-part of the sandpile group of the hyper
+9:## Abstract
+15:## 1. Introduction and main results
+17:### 1.0 Summary of results
+34:### 1.1 The problem
+42:### 1.2 The main theorem
+87:### 1.3 The fold law: dry and wet
+110:### 1.4 Consequences
+133:### 1.5 The idea of the proof
+141:### 1.6 Notation and conventions
+166:### 1.7 Vocabulary, and why these names
+200:### 1.8 Literature and priority
+215:## 2. The group ring as a module over the hype
+217:### 2.1 The Laplacian in the group ring
+231:### 2.2 The hyperalgebra and the dictionary
+250:### 2.3 Weyl lattices, duality, filtrations
+262:## 3. The dance lattices and the family decomp
+264:### 3.1 The doubling functor
+288:### 3.2 Lifting from F₂
+309:### 3.3 The dance lattices
+339:### 3.4 The groups of the families
+352:## 4. The dance: Theorem D
+354:### 4.1 Payment systems
+360:### 4.2 The two moves
+389:### 4.3 The dance
+398:### 4.4 The final matrix in closed form
+414:### 4.5 The coefficients: the deficit law
+444:## 5. The valuations: rulers, gold and clocks
+503:## 6. The Smith form of M: the ceiling
+505:### 6.1 Determinantal divisors and the tropica
+VIGIA-FIN-OK exit=0 pico_kb=2192 t=0s

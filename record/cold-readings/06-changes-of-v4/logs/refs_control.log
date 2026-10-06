@@ -1,0 +1,10 @@
+listed 32 cited 33
+listed not cited: []
+cited not listed: ['Zzz99']
+alphabetical: True
+old key GMM19 occurrences in whole text: 0
+old key DEGJPP24 occurrences in whole text: 0
+MGM19 cited 3 times
+DEGJPP23 cited 1 times
+citation counts: [('ABERS55', 3), ('Aky26', 2), ('BBBB72', 2), ('Bai03', 8), ('Bie93', 1), ('Big99', 2), ('CSX17', 6), ('Cla40', 2), ('DEGJPP23', 1), ('DHS18', 1), ('DJ14', 1), ('Don93', 3), ('EL91', 1), ('GMMY24', 19), ('Hum72', 2), ('IKKY23', 2), ('Jan03', 1), ('Kli18', 1), ('Kos66', 2), ('Kum52', 1), ('LZ22', 1), ('Lar24', 3), ('Lor91', 2), ('MGM19', 3), ('OEIS', 1), ('RT14', 2), ('Str28', 2), ('TW21', 2), ('VZ24', 1), ('Wil90', 1), ('Yue24', 1), ('Zzz99', 1), ('vSt40', 2)]
+VIGIA-FIN-OK exit=0 pico_kb=5248 t=0s

@@ -1,0 +1,6 @@
+559: `y` be non-increasing. Then `‖x − y‖^2 = ‖x − z‖^2
+559: + ‖z − y‖^2 + 2Σ_j (x_j − z_j)(z_j �
+561:ce `y` is non-increasing. So `‖x − y‖ ≥ ‖x − z‖`.
+1301:the rest of the level set would keep 𝑧 non-increasing and decrease the distance; the same with a non-zero total. Conversely, let 𝑦 be non-increasing. Then ‖𝑥 − 𝑦‖2 = ‖𝑥 − 𝑧‖2 + ‖𝑧 − 𝑦‖2+2∑𝑗 (𝑥𝑗 − 𝑧𝑗)(𝑧𝑗 − 𝑦𝑗), and on a
+1312:since 𝑦 is non-increasing. So ‖𝑥 − 𝑦‖ ≥ ‖𝑥 − 𝑧‖. ∎
+VIGIA-FIN-OK exit=0 pico_kb=3968 t=0s

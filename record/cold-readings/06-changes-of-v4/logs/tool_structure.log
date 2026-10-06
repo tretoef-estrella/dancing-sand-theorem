@@ -1,0 +1,9 @@
+== headings in the lowest 12% of the page (y > 740 pt) ==
+== numbered statements running across a page break ==
+  ?? Proposition 4.1: head page 15, tail page None (not located)
+  ?? Proposition 4.3.: head page 16, tail page None (not located)
+  ?? Lemma 7.1: head page 22, tail page None (not located)
+  ?? Lemma 10.10: head page 36, tail page None (not located)
+statements examined: 68
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6576 t=0s

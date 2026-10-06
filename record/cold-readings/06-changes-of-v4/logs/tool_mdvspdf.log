@@ -1,0 +1,18 @@
+   multiset check §1.0 summary table      : OK
+TABLE §1.0 summary table       md numbers   65, pdf numbers   98: NOT a subsequence; first miss (61, '5', ['1', '2', '2', '2', '1', '5', '4', '9', '3'])
+   multiset check §1.6 notation table     : OK
+TABLE §1.6 notation table      md numbers   56, pdf numbers   70: subsequence OK
+   multiset check §1.7 vocabulary table   : OK
+TABLE §1.7 vocabulary table    md numbers   92, pdf numbers  114: NOT a subsequence; first miss (87, '10', ['10', '2', '10', '7', '2', '10', '3', '10', '5', '11'])
+   multiset check §12.1 table             : OK
+TABLE §12.1 table              md numbers  198, pdf numbers  221: NOT a subsequence; first miss (43, '64', ['2', '4', '4', '5', '7', '64', '1', '40', '1', '2'])
+   multiset check §12.2 table             : OK
+TABLE §12.2 table              md numbers  257, pdf numbers  259: subsequence OK
+STATEMENT not matched in order: **Lemma 2.1.** In `R`,
+STATEMENT not matched in order: **Corollary 2.3.** If `V^{⊗n} ≅ ⊕_j M_j` as `Dist_A`-modules, then `Z_
+STATEMENT not matched in order: **Lemma 3.3.** `Ext^1(Δ_A(λ), ∇_A(μ)) = 0` for all `λ, μ ≥ 0` (extensi
+STATEMENT not matched in order: **Lemma 9.7 (multiplicities).** `m_n(n) = 1`; `m_{n−2}(n) = n − 1 − [n
+STATEMENT not matched in order: **Lemma 10.11 (stability).** If `v_2(E_{ij}) ≥ 1` for all `i, j`, then
+statements checked: 68 not matched: 5
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=7984 t=0s
