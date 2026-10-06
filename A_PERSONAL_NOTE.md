@@ -166,7 +166,7 @@ Trabajos posteriores (especialmente Gao et al., 2019/2024, y algunos resultados 
    * fórmulas exactas para los $`n-1`$ mayores factores cíclicos de $`\mathrm{Syl}_2(K(Q_n))`$:
 
 ```math
-v_2(c_1(Q_n)) = \max\bigl\{\max_{x<n}\{v_2(x)+x\},\, v_2(n)+n-1\bigr\},
+v_2(c_1(Q_n)) = \max\bigl\{\max_{x < n}\{v_2(x)+x\},\, v_2(n)+n-1\bigr\},
 ```
 
 y para $`2\le k\le n-1`$, $`v_2(c_k(Q_n))=\max_{1\le x<n}\{v_2(x)+x\}`$.
