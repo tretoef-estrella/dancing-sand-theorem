@@ -1,0 +1,43 @@
+C3a_alpha1 sign +: M(Psi) N in 2 Mat: 1/32
+C3a_alpha1 sign -: M(Psi) N in 2 Mat: 1/24
+C3a_alpha1 sign -: skipped (Psi +- shift has a zero payment): 0/8
+C3a_alpha1: dances clean (else skipped): 32/32
+C3b_plus4 sign +: M(Psi) N in 2 Mat: 1/32
+C3b_plus4 sign -: M(Psi) N in 2 Mat: 1/24
+C3b_plus4 sign -: skipped (Psi +- shift has a zero payment): 0/8
+C3b_plus4: dances clean (else skipped): 32/32
+coth sign +: M(Psi) N in 2 Mat: 32/32
+coth sign +: W = M(Psi(Psi+-2)/2) M(Psi)^-1 in +I + 2Mat: 32/32
+coth sign +: dance of Psi(Psi+-2)/2 clean: 32/32
+coth sign +: entrywise window bound: 32/32
+coth sign +: route (i) == route (ii) exactly: 32/32
+coth sign -: M(Psi) N in 2 Mat: 32/32
+coth sign -: W = M(Psi(Psi+-2)/2) M(Psi)^-1 in -I + 2Mat: 32/32
+coth sign -: dance of Psi(Psi+-2)/2 clean: 32/32
+coth sign -: entrywise window bound: 32/32
+coth sign -: route (i) == route (ii) exactly: 32/32
+coth: dances clean (else skipped): 32/32
+rand sign +: M(Psi) N in 2 Mat: 32/32
+rand sign +: W = M(Psi(Psi+-2)/2) M(Psi)^-1 in +I + 2Mat: 32/32
+rand sign +: dance of Psi(Psi+-2)/2 clean: 32/32
+rand sign +: entrywise window bound: 32/32
+rand sign +: route (i) == route (ii) exactly: 32/32
+rand sign -: M(Psi) N in 2 Mat: 32/32
+rand sign -: W = M(Psi(Psi+-2)/2) M(Psi)^-1 in -I + 2Mat: 32/32
+rand sign -: dance of Psi(Psi+-2)/2 clean: 32/32
+rand sign -: entrywise window bound: 32/32
+rand sign -: route (i) == route (ii) exactly: 32/32
+rand: dances clean (else skipped): 32/32
+tanh sign +: M(Psi) N in 2 Mat: 32/32
+tanh sign +: W = M(Psi(Psi+-2)/2) M(Psi)^-1 in +I + 2Mat: 32/32
+tanh sign +: dance of Psi(Psi+-2)/2 clean: 32/32
+tanh sign +: entrywise window bound: 32/32
+tanh sign +: route (i) == route (ii) exactly: 32/32
+tanh sign -: M(Psi) N in 2 Mat: 32/32
+tanh sign -: W = M(Psi(Psi+-2)/2) M(Psi)^-1 in -I + 2Mat: 32/32
+tanh sign -: dance of Psi(Psi+-2)/2 clean: 32/32
+tanh sign -: entrywise window bound: 32/32
+tanh sign -: route (i) == route (ii) exactly: 32/32
+tanh: dances clean (else skipped): 32/32
+END kclass_test lemmaB
+VIGIA-FIN-OK exit=0 pico_kb=26304 t=0s

@@ -1,0 +1,37 @@
+  input in class [phi] [nonK]: 382/400
+  input in class [phi] [pay2y]: 0/400
+  input in class [vphi] [nonK]: 381/400
+  input in class [vphi] [pay2y]: 0/400
+  output passes a [phi] [nonK]: 400/400
+  output passes a [phi] [pay2y]: 170/400
+  output passes a [vphi] [nonK]: 400/400
+  output passes a [vphi] [pay2y]: 170/400
+  output passes b [phi] [nonK]: 400/400
+  output passes b [phi] [pay2y]: 357/400
+  output passes b [vphi] [nonK]: 400/400
+  output passes b [vphi] [pay2y]: 354/400
+  output passes mahler [phi] [nonK]: 400/400
+  output passes mahler [phi] [pay2y]: 0/400
+  output passes mahler [vphi] [nonK]: 400/400
+  output passes mahler [vphi] [pay2y]: 0/400
+  output passes pair [phi] [nonK]: 388/400
+  output passes pair [phi] [pay2y]: 21/400
+  output passes pair [vphi] [nonK]: 382/400
+  output passes pair [vphi] [pay2y]: 0/400
+S2.2 paso split == paso ABCD [None]: 400/400
+S2.2 paso split == paso ABCD [nonK]: 400/400
+S2.2 paso split == paso ABCD [pay2y]: 400/400
+clean [phi] [None]: 400/400
+clean [phi] [nonK]: 400/400
+clean [phi] [pay2y]: 400/400
+clean [vphi] [None]: 400/400
+clean [vphi] [nonK]: 400/400
+clean [vphi] [pay2y]: 400/400
+clean+class [phi] [None]: 400/400
+clean+class [phi] [nonK]: 388/400
+clean+class [phi] [pay2y]: 0/400
+clean+class [vphi] [None]: 400/400
+clean+class [vphi] [nonK]: 382/400
+clean+class [vphi] [pay2y]: 0/400
+END kclass_test onemove
+VIGIA-FIN-OK exit=0 pico_kb=26704 t=13s

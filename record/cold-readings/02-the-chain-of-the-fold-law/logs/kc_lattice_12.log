@@ -1,0 +1,10 @@
+/Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_FOLD_LAW_1/engines/law_direct.py:18: RuntimeWarning: overflow encountered in scalar multiply
+  x = x * (U64(2) - u * x)
+/Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_FOLD_LAW_1/engines/law_direct.py:18: RuntimeWarning: overflow encountered in scalar subtract
+  x = x * (U64(2) - u * x)
+/Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_FOLD_LAW_1/engines/law_direct.py:19: RuntimeWarning: overflow encountered in scalar multiply
+  assert (u * x) == U64(1)
+S2.0b explicit T(l) divided powers 2-adically integral: yes
+S2.0b direct Smith on explicit T(l) = small clocks + (k + Smith of my final matrix), l <= 12: 120/120
+END kclass_test lattice
+VIGIA-FIN-OK exit=0 pico_kb=28240 t=1s

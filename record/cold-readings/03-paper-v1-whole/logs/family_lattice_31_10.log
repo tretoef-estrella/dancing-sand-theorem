@@ -1,0 +1,7 @@
+lambda <= 31, 0 <= i <= 10, alpha in (1,2)
+  CONTROL raw rejected: 102
+  SKIPPED (predicted exponent >= 60): 43
+  cells compared: 639
+  cells where pooling acts: 102
+TOTAL FAIL COUNT: 0
+VIGIA-FIN-OK exit=0 pico_kb=23920 t=1s

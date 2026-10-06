@@ -1,0 +1,7 @@
+n=12 A(rule==Smith)=True B(free=1,orders)=True C(DW)=True D(a_n form)=True | t_cube=22.9s t_fold=2.7s t_x12=2.7s
+      Syl2 K(Q_12) = {1: 992, 2: 132, 3: 64, 4: 200, 5: 164, 6: 1, 8: 164, 9: 201, 11: 128, 13: 1, inf: 1}
+      Syl2 Kbar(12) = {1: 132, 2: 64, 3: 200, 4: 164, 5: 1, 7: 164, 8: 201, 10: 128, 12: 1, inf: 1}
+      Syl2 K(Q_12/<x1x2>) = {1: 480, 2: 72, 3: 52, 4: 16, 5: 148, 7: 17, 8: 148, 10: 53, 11: 36, 12: 1, inf: 1}   2·Syl2K(Q_n) = {1: 132, 2: 64, 3: 200, 4: 164, 5: 1, 7: 164, 8: 201, 10: 128, 12: 1, inf: 1}
+CONTROLS failed (as they must) at n = {'c1': [12], 'c2': [12], 'c3': [12]}
+ALL MAIN CHECKS: PASS
+VIGIA-FIN-OK exit=0 pico_kb=475136 t=28s

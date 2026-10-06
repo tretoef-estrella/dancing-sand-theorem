@@ -1,0 +1,18 @@
+(15, 'payment 4q(D) random odd q, unit 1', 'clean') 40
+(15, 'payment 4q(D) random, unit 1', 'clean') 40
+(15, 'u(D) random odd AND 4q(D) random', 'clean') 40
+(15, 'u(D) random odd, payment 4(D+c)', 'clean') 40
+(31, 'payment 4q(D) random odd q, unit 1', 'clean') 40
+(31, 'payment 4q(D) random, unit 1', 'clean') 40
+(31, 'u(D) random odd AND 4q(D) random', 'clean') 40
+(31, 'u(D) random odd, payment 4(D+c)', 'clean') 40
+(63, 'payment 4q(D) random odd q, unit 1', 'clean') 40
+(63, 'payment 4q(D) random, unit 1', 'clean') 40
+(63, 'u(D) random odd AND 4q(D) random', 'clean') 40
+(63, 'u(D) random odd, payment 4(D+c)', 'clean') 40
+(7, 'payment 4q(D) random odd q, unit 1', 'clean') 40
+(7, 'payment 4q(D) random, unit 1', 'clean') 40
+(7, 'u(D) random odd AND 4q(D) random', 'clean') 40
+(7, 'u(D) random odd, payment 4(D+c)', 'clean') 40
+first failure reasons: {}
+VIGIA-FIN-OK exit=0 pico_kb=22656 t=0s

@@ -1,0 +1,23 @@
+== material, MISSION, vigia, CLAUDE vs MANIFEST ==
+DIFFERS ./CLAUDE.md (manifest 58f004f85673d148ad1e92618135b128, now c4698f58a87f3835011a76fccf0ffbfa)
+match 38, differ 1
+== files written by this reader ==
+f07b101c6e653f4c9d2f2b3282e71ea8 checks/SEALED.md
+7f65ec116a20befc957ff5ddcea257a8 engines/fdance_COPY.py
+a7f1abc1499300b1595b88daade14de6 engines/kclass_test.py
+d992ab7879ee2d2bfded8d82562b0e77 engines/law_direct.py
+dbce1dfe29a806780850db37eb35ecbe logs/kc_depth_16_63.log
+0daa41a42ca455e39f1dd37c68ca43b6 logs/kc_depth_1_15.log
+9ee7c74efb85508b54b42aad7e95d3a5 logs/kc_family_20_6.log
+b118f206ffd152a2d048f3a1a4d8093b logs/kc_ktest.log
+02eb5cdc0ee56dcef32ef30bc1f7c707 logs/kc_lattice_12.log
+a04c17139f55621ca533475321046e53 logs/kc_lemmaB_24.log
+bfba42b4068ee48fb127d6227f663f94 logs/kc_lemmaB_8.log
+f238f24b4ae5823eca8ec8776fd10c9e logs/kc_onemove_400.log
+47351714700a69e0ef153fc7fbafa4f8 logs/kc_onemove_50.log
+f9102182bf8e45d5b62053f425484117 logs/kc_slots.log
+aa9b5fc0220bf90c75791740bdc69f76 logs/law_direct_12.log
+1aba58cd08000a3f2531a40cd9f1d8cd logs/law_direct_2_11.log
+13c3479f51708457364e39443997eb82 logs/md5_check.log
+6f67170a3169f05e56e9a97315403944 logs/md5_final.log
+VIGIA-FIN-OK exit=0 pico_kb=2288 t=0s

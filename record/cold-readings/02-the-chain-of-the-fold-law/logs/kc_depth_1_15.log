@@ -1,0 +1,9 @@
+tanh: clean 60/60; clean AND in class at every level 60/60; paso split == ABCD at every paso 60/60
+coth: clean 60/60; clean AND in class at every level 60/60; paso split == ABCD at every paso 60/60
+cothN: clean 60/60; clean AND in class at every level 60/60; paso split == ABCD at every paso 60/60
+rand: clean 60/60; clean AND in class at every level 60/60; paso split == ABCD at every paso 60/60
+C2b_alpha1_z2odd: clean in 8/60 dances (control: breaks in 52); first break (3, 0, (1, 'phi', 'pivot diagonal not odd'))
+C2c_oddF_weights: clean in 60/60 dances (control: breaks in 0); first break None
+C2e_oddF_noweights: clean in 60/60 dances (control: breaks in 0); first break None
+END kclass_test depth
+VIGIA-FIN-OK exit=0 pico_kb=25824 t=0s

@@ -1,0 +1,6 @@
+fit(x)          = [Fraction(7, 2), Fraction(7, 2), Fraction(7, 2), Fraction(7, 2)]
+fit(x<b)++fit(x>=b) = [Fraction(7, 2), Fraction(7, 2), Fraction(7, 2), Fraction(7, 2)]  -> cut at b: True
+fit(x+delta)    = [Fraction(9, 2), Fraction(9, 2), Fraction(7, 2), Fraction(7, 2)]  fit(x)+delta = [Fraction(9, 2), Fraction(9, 2), Fraction(7, 2), Fraction(7, 2)]
+intfit(x+delta) = [5, 4, 4, 3]  intfit(x)+delta = [5, 5, 3, 3]  DIFFERENT (as multisets: True)
+control delta=(1,1,1,1): [5, 5, 4, 4] [5, 5, 4, 4] EQUAL
+VIGIA-FIN-OK exit=0 pico_kb=3472 t=0s

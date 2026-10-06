@@ -1,0 +1,4 @@
+S2.0a derived slot matrices (powers of F_Phi / m!) vs FLIGHT2 A.1(b) closed formulas, m = 0..30: ALL EQUAL
+S2.0a V(x)Phi slots from (F_V(x)1 + 1(x)F_Phi)^m/m! vs 1(x)F_Phi^(m) + F_V(x)F_Phi^(m-1), m = 0..20: ALL EQUAL
+END kclass_test slots
+VIGIA-FIN-OK exit=0 pico_kb=10240 t=0s

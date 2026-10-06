@@ -1,0 +1,12 @@
+/usr/bin/python3
+Python 3.9.6
+numpy 2.0.2
+sympy 1.14.0
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'gmpy2'
+/opt/homebrew/bin/pdftoppm
+/opt/homebrew/bin/pdftotext
+8
+8589934592
+VIGIA-FIN-OK exit=0 pico_kb=42400 t=0s

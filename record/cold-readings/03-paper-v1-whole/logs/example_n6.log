@@ -1,0 +1,17 @@
+n = 5 multiplicities {1: 4, 3: 4, 5: 1}
+  lam=5 m=1 k=2 I=[1] h={1: 1} i=0 raw=[1000000000, 4] pooled=[1000000000, 4] X={1: 2, 4: 1, inf: 1}
+  lam=3 m=4 k=2 I=[] h={} i=1 raw=[6] pooled=[6] X={1: 1, 6: 1}
+  lam=1 m=4 k=1 I=[] h={} i=2 raw=[3] pooled=[3] X={3: 1}
+  Syl2+Z2 = {1: 6, 3: 4, 4: 1, 6: 4, inf: 1}  fold: {2: 4, 3: 1, 5: 4, inf: 1}
+n = 6 multiplicities {2: 4, 4: 4, 6: 1}
+  lam=6 m=1 k=2 I=[0, 1] h={0: 1, 1: 1} i=0 raw=[1000000000, 6, 6, 3] pooled=[1000000000, 6, 6, 3] X={1: 4, 3: 1, 6: 2, inf: 1}
+  lam=4 m=4 k=2 I=[0] h={0: 2} i=1 raw=[5, 7] pooled=[6, 6] X={1: 2, 6: 2}
+  lam=2 m=4 k=1 I=[0] h={0: 1} i=2 raw=[5, 2] pooled=[5, 2] X={2: 1, 5: 1}
+  Syl2+Z2 = {1: 12, 2: 4, 3: 1, 5: 4, 6: 10, inf: 1}  fold: {1: 4, 2: 1, 4: 4, 5: 10, inf: 1}
+n = 7 multiplicities {1: 8, 3: 14, 5: 6, 7: 1}
+  lam=7 m=1 k=3 I=[] h={} i=0 raw=[1000000000] pooled=[1000000000] X={1: 2, 2: 1, inf: 1}
+  lam=5 m=6 k=2 I=[1] h={1: 1} i=1 raw=[7, 5] pooled=[7, 5] X={1: 2, 5: 1, 7: 1}
+  lam=3 m=14 k=2 I=[] h={} i=2 raw=[6] pooled=[6] X={1: 1, 6: 1}
+  lam=1 m=8 k=1 I=[] h={} i=3 raw=[4] pooled=[4] X={4: 1}
+  Syl2+Z2 = {1: 28, 2: 1, 4: 8, 5: 6, 6: 14, 7: 6, inf: 1}  fold: {1: 1, 3: 8, 4: 6, 5: 14, 6: 6, inf: 1}
+VIGIA-FIN-OK exit=0 pico_kb=6176 t=0s

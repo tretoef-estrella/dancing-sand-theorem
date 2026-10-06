@@ -1,0 +1,3 @@
+Larsen vs recursion: even n = 2..64: 0 mismatches; control (arrows into 0 allowed) differs at 32/32
+sum m_lambda(n) dim T(lambda) == 2^n for n <= 64: True
+VIGIA-FIN-OK exit=0 pico_kb=2336 t=0s

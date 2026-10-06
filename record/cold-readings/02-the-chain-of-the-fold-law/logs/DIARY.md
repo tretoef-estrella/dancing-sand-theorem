@@ -1,0 +1,53 @@
+# DIARY — Grepy el lector frío del cubo 2
+
+- [Mon Oct  5 08:02:56 CEST 2026] START. Created REPORT_COLD.md with the 10 empty headings of MISSION §6. Read MISSION.md whole (120 lines). Order of the house: no agents/sub-agents/workflows (ultracode is on in the session, but MISSION §0 and CLAUDE.md forbid workflows: I obey MISSION).
+- [Mon Oct  5 08:03:01 CEST 2026] BEFORE step 0b: verify md5 of material against MANIFEST_md5.txt (light, md5 only, no vigia needed? -> run under vigia anyway: estimate <10 MB, <2 s).
+- [Mon Oct  5 08:03:02 CEST 2026] AFTER step 0b: md5 check done (see logs/md5_check.log).
+- [Mon Oct  5 08:03:06 CEST 2026] BEFORE Part 1: reading material/notes/THE_FOLD_LAW_PENCIL_NOTE_v2.md
+- [Mon Oct  5 08:03:11 CEST 2026] AFTER reading pencil note v2 (147 lines). BEFORE reading FLIGHT1_REPORT.md (background: RT, tilting families).
+- [Mon Oct  5 08:03:18 CEST 2026] AFTER FLIGHT1 (431 lines, background: Thm RT, Thm E, D.4 fold-law dictionary Xbar=coker[sigma_c | (-1)^i g - 1]). BEFORE FLIGHT2.
+- [Mon Oct  5 08:03:25 CEST 2026] AFTER FLIGHT2 (290 lines: Phi, P-R1 A.2, B.1 paso, C.0 dance, C.4 coefficient algebra q_k, deficit law). BEFORE FLIGHT3.
+- [Mon Oct  5 08:03:31 CEST 2026] AFTER FLIGHT3 lines 1-223 (Thm RT' elementary, Thm O orphan, strict subadditivity of delta B.3, Thm A2, carries form A.1, F4). Skipping §9 story (lines 224-279) for now. BEFORE FLIGHT4.
+- [Mon Oct  5 08:03:40 CEST 2026] AFTER FLIGHT4 §0 and §11 (Theorem F = floor T>=Y for every family; Theorem U). BEFORE FLIGHT5 (skim §0).
+- [Mon Oct  5 08:03:45 CEST 2026] AFTER FLIGHT5 skim (trophies; not on the fold-law chain). BEFORE FLIGHT6 (target: F1 Lemma RTbar §3.1, Lemma S §1.3, F2 §4.2).
+- [Mon Oct  5 08:04:26 CEST 2026] AFTER FLIGHT6 whole (331 lines). Writing §1 and F1 (provisional) into REPORT_COLD.md now.
+- [Mon Oct  5 08:04:57 CEST 2026] WROTE §1 and F1 (HOLDS, presentation remark). BEFORE FLIGHT7 (F2 §3.1, F3 Lemma A0, H-odd, H-even).
+- [Mon Oct  5 08:06:10 CEST 2026] AFTER FLIGHT7 whole (237 lines). Re-derived A0, H-odd (exp F on Phi(N), a(b0 n)=eps[b0 Ch n - b1 Sh n], P+Q), H-even (coinvariants of V(x)M), P-R1 elimination. Writing F2, F3 verdicts.
+- [Mon Oct  5 08:06:52 CEST 2026] WROTE F2 (HOLDS), F3 (HOLDS). Read FLIGHT8 lines 1-274 (E2,E3,E4, formal dance, Omega statement). BEFORE check 1: design own Smith engine (vertex-basis Laplacian, local Smith at 2 mod 2^64), seal predictions first.
+- [Mon Oct  5 08:08:00 CEST 2026] SEALED Seal 1 (check 1: S1.0-S1.3) in checks/SEALED.md before writing the engine.
+- [Mon Oct  5 08:08:51 CEST 2026] BEFORE run law_direct 2 11 (check 1). Estimate: peak ~150 MB (2048^2 uint64 = 33 MB matrix + outer temporaries), time ~1-2 min (four Smith forms per n, the largest two 2048x2048 at n=11, O(N^3/3) uint64 numpy). Log logs/law_direct_2_11.log.
+- [Mon Oct  5 08:09:40 CEST 2026] AFTER run law_direct 2 11: VIGIA-FIN-OK, 184 MB, 23 s. S1.0a 300/300, S1.0b 6/6, order identities 20/20, LAW holds n=2..11 (10/10), Bai 10/10, controls a_n+-1 and no-shift fire 10/10, wrong fold x1x2 fires n=3..11 (not at n=2 where x1x2=a). Estimate actual 184 MB vs 150 MB estimated (slightly over), time 23 s vs 1-2 min.
+- [Mon Oct  5 08:09:46 CEST 2026] BEFORE run law_direct 12 12. Estimate: n=11 peak 184 MB with a 33 MB matrix (factor ~5.5) -> n=12 matrix 134 MB -> peak ~750 MB (< 1.2 GB); time: two 4096 Smith forms ~8x the 2048 ones, ~3-4 min total. Log logs/law_direct_12.log.
+- [Mon Oct  5 08:12:41 CEST 2026] AFTER run law_direct 12: VIGIA-FIN-OK, 639 MB (estimate 750), 163 s (estimate 3-4 min). LAW holds at n=12; Bai OK; all controls fire. Part 1 DONE.
+- [Mon Oct  5 08:12:45 CEST 2026] BEFORE Part 2: reading FLIGHT9_REPORT.md (311 lines) — Lemma Omega, the main target.
+- [Mon Oct  5 08:12:56 CEST 2026] AFTER reading FLIGHT9 whole (311 lines). BEFORE pencil on F5 (formal dance: fdance.py conventions, FLIGHT2 C.0, FLIGHT8 §2.6).
+- [Mon Oct  5 08:23:59 CEST 2026] PENCIL on F4-F14 done (FLIGHT9 §2-§4 re-derived: slots of Phi from FLIGHT2 A.1(b), fdance doblar/paso conventions, T1/T2/K1/K2, Theta(S) = -beta^2 Theta(P)^-1, paso = V-split + doblar up to pivot rows/cols, IB block-inverse, PS paths, H chain, U, A, B window, continuity). No error found; two presentation remarks. Writing F4-F15 now (provisional, machine checks pending).
+- [Mon Oct  5 08:24:41 CEST 2026] WROTE F4-F9 (all HOLDS on pencil). Next: write F10-F15 pencil verdicts.
+- [Mon Oct  5 08:25:51 CEST 2026] WROTE F10-F15 pencil verdicts (all HOLDS; presentation remarks: V-split odd coupling unstated, arms difference factorisation assumes commutativity, i=0 closedness step compressed, von Staudt-Clausen missing from dependency list). Next: Part 3 checks 2-3; seal first.
+- [Mon Oct  5 08:27:27 CEST 2026] SEALED Seal 2 (check 2) and Seal 3 (check 3) before writing engines/kclass_test.py.
+- [Mon Oct  5 08:32:27 CEST 2026] engines/kclass_test.py written (modes slots, ktest, lattice, onemove, depth). BEFORE runs kc_slots and kc_ktest: estimate < 50 MB, < 10 s each.
+- [Mon Oct  5 08:32:38 CEST 2026] AFTER kc_slots (S2.0a: derived slots = closed formulas, m<=30; V(x)Phi slots consistent, m<=20) and kc_ktest (S2.0c: K-test accepts 4y, 3+8y^2+4y, 1/(1+4y); rejects 2y(y-1), 2y, 4y+2[y odd]). BEFORE run kc_lattice 12: estimate < 150 MB, < 3 min (explicit T(l) dims <= 26, Fraction powers, Smith mod 2^64).
+- [Mon Oct  5 08:32:51 CEST 2026] AFTER kc_lattice_12: VIGIA-FIN-OK 28 MB 1 s; S2.0b integrality yes, 120/120 direct Smith = my dance. BEFORE kc_onemove_50 (timing probe, 50 trials, seed 1): estimate < 100 MB, < 3 min.
+- [Mon Oct  5 08:33:13 CEST 2026] engine edit (declared): onemove now also tallies, for the controls, whether the INPUT is in the class and which output test fails (a, b, pair, mahler). No logic change for in-class trials. BEFORE kc_onemove_400 (seed 2): estimate < 100 MB, < 1 min (50 trials took 2 s).
+- [Mon Oct  5 08:34:38 CEST 2026] AFTER kc_onemove_400: VIGIA-FIN-OK 27 MB 13 s. In class: clean+class 400/400 (doblar) and 400/400 (paso); S2.2 paso split == ABCD 400/400 (also 800/800 in controls). Controls: pay2y input never in class, output never in class (Mahler 0/400) but the ONE move is clean; nonK visible only when parities differ (18/400 inputs, 12-18 outputs). BEFORE kc_depth_1_15 (timing probe): estimate < 100 MB, < 2 min.
+- [Mon Oct  5 08:34:45 CEST 2026] AFTER kc_depth_1_15: 0 s, 26 MB; real/random weights clean+class 240/240; C2b breaks 52/60; C2c, C2e 0 breaks (l<=15). BEFORE kc_depth_16_63 (c=0..3, seed 4): estimate < 300 MB, < 6 min.
+- [Mon Oct  5 08:36:17 CEST 2026] AFTER kc_depth_16_63: VIGIA-FIN-OK 27 MB 29 s. Real/random weights l<=63, c=0..3: clean AND in class at every level 252/252 per kind (tanh, coth unnormalised, coth normalised, random); paso split==ABCD 252/252 each. Controls: C2b breaks 244/252 (first l=3); C2c breaks 53/192 for l>=16 (first l=31, c=1, Schur not even), 0 for l<=15; C2e 0/252 (formal, as predicted).
+- [Mon Oct  5 08:36:25 CEST 2026] WROTE check 2 into REPORT_COLD §3 (fixed placement of the check-1 side observation).
+- [Mon Oct  5 08:36:53 CEST 2026] engine edit (declared): added mode lemmaB (check 3, exact Fractions; routes (i) dances and (ii) Lemma IB path sums; window bound; controls C3a alpha=1, C3b Psi+4). BEFORE kc_lemmaB_8 (probe l<=8, c=1..4): estimate < 100 MB, < 2 min.
+- [Mon Oct  5 08:37:02 CEST 2026] kc_lemmaB_8 CRASHED at first launch (not a result): Psi-2 at alpha=1 or Psi-4 has a zero payment at c=1, d=0. Fix: such control cells are skipped and counted. Re-run, same estimate.
+- [Mon Oct  5 08:37:11 CEST 2026] AFTER kc_lemmaB_8: 26 MB, 0 s; in class 32/32 on every test (tanh, coth a=1/3, random), routes (i)=(ii) exactly 32/32; controls C3a, C3b fire 31/32 (+), 23/24 (-). BEFORE kc_lemmaB_24 (l<=24, c=1..4, seed 6): estimate < 300 MB, < 8 min (exact Fractions, Bernoulli weights).
+- [Mon Oct  5 08:38:01 CEST 2026] AFTER kc_lemmaB_24: VIGIA-FIN-OK 27 MB 18 s; every in-class test 96/96 (tanh, coth a=1/3, random), routes (i)=(ii) exactly 96/96 x2, W in +-I+2Mat 96/96, window bound 96/96; controls fire 95/96 (+) and 71/72 (-) for both C3a and C3b.
+- [Mon Oct  5 08:38:01 CEST 2026] WROTE check 3 in REPORT §3; SEALED outcome 3 and Seal 4 (extra family check).
+- [Mon Oct  5 08:38:21 CEST 2026] engine edit (declared): added mode family (Seal 4). BEFORE kc_family_20_6: estimate < 200 MB, < 5 min (Fraction powers of explicit T(lam) up to dim 64, Smith of d x 2d mod 2^64).
+- [Mon Oct  5 08:39:05 CEST 2026] AFTER kc_family_20_6: VIGIA-FIN-OK 30 MB 31 s; S4.1 140/140; lam=0 fails at i=1..6 (holds at i=0 trivially); sign-free fold fails 131/140. Examples reproduce FLIGHT6/7's X(6,2), Xbar(6,2), X(12,4), Xbar(12,4).
+- [Mon Oct  5 08:39:11 CEST 2026] BEFORE Part 4: reading material/sources (txt versions; pdf for page numbers).
+- [Mon Oct  5 08:39:50 CEST 2026] Part 4: read Reiner-Tseng (Thm 1.2 p.3, §12.2 p.32) and Gao et al. (Prop 2.12 p.9, Remark 2.13 p.10). Now Bai and CSX.
+- [Mon Oct  5 08:40:16 CEST 2026] Part 4: read Bai (Thm 1.1-1.3 p.252-253; Lemma 2.1 p.254 L_n(L_n+2) in M(2Z); 'full Sylow-2 still unknown' p.253) and CSX (Thm 1.1 p.2; §5.2 p.17 'no conjecture' on the 2-Sylow of the critical group). BEFORE web searches (WebSearch tool), each query logged in REPORT §4.
+- [Mon Oct  5 08:42:21 CEST 2026] Part 4 web searches done (9 queries + 7 fetches, listed in REPORT §4). Writing §4.
+- [Mon Oct  5 08:42:51 CEST 2026] WROTE §4 (priority). A python heredoc failed first on an encoding error (nothing written); §4 written with the editor instead. Part 4 DONE.
+- [Mon Oct  5 08:43:29 CEST 2026] WROTE §0 (HOLDS). Next §6-§8.
+- [Mon Oct  5 08:44:05 CEST 2026] WROTE §6 (sealed table), §7 (errors E1-E8), §8 (not read). BEFORE reading material/audits_read_after/ (only now, after everything else).
+- [Mon Oct  5 08:45:13 CEST 2026] Read all of material/audits_read_after/ (6 files) AFTER §0-§4,§6-§8 were on disk. WROTE §5 (5 small disagreements, all presentation-level; agreement on HOLDS). BEFORE §9: md5 of every file I wrote, under vigia (estimate < 10 MB, < 2 s), and md5 re-check of material/ against MANIFEST.
+- [Mon Oct  5 08:45:28 CEST 2026] Part 5 (writing): read-through of REPORT_COLD; fixing two slips of mine: §0 count of presentation remarks (six, not five: F10 has two) and §1(v) imprecise description of Theorem R.
+- [Mon Oct  5 08:45:42 CEST 2026] Writing pass done (F15 line updated). BEFORE md5 run: estimate < 10 MB, < 2 s. Log logs/md5_final.log.
+- [Mon Oct  5 08:46:04 CEST 2026] WROTE §9 (md5) and §7 E9 (overwritten log). CLAUDE.md STATE = DONE. END of the cold reading. Verdict: HOLDS.

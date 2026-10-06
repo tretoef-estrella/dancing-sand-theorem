@@ -1,0 +1,5 @@
+lambda <= 15, 0 <= i <= 6
+  CONTROL -a detected: 105
+  cells compared: 105
+TOTAL FAIL COUNT: 0
+VIGIA-FIN-OK exit=0 pico_kb=3408 t=0s

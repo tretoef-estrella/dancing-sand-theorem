@@ -1,0 +1,18 @@
+/Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_FOLD_LAW_1/engines/law_direct.py:74: RuntimeWarning: overflow encountered in scalar subtract
+  L[v, w] = L[v, w] - U64(1)
+/Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_FOLD_LAW_1/engines/law_direct.py:18: RuntimeWarning: overflow encountered in scalar multiply
+  x = x * (U64(2) - u * x)
+/Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_FOLD_LAW_1/engines/law_direct.py:19: RuntimeWarning: overflow encountered in scalar multiply
+  assert (u * x) == U64(1)
+/Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_FOLD_LAW_1/engines/law_direct.py:18: RuntimeWarning: overflow encountered in scalar subtract
+  x = x * (U64(2) - u * x)
+/Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_FOLD_LAW_1/engines/law_direct.py:91: RuntimeWarning: overflow encountered in scalar subtract
+  L[a, b] = L[a, b] - U64(1)
+/Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_FOLD_LAW_1/engines/law_direct.py:270: RuntimeWarning: overflow encountered in scalar add
+  Lbad = cube_lap(n); Lbad[0, 1] = Lbad[0, 1] + U64(1); Lbad[1, 0] = Lbad[1, 0] + U64(1)
+n=12: K2={1: 992, 2: 132, 3: 64, 4: 200, 5: 164, 6: 1, 8: 164, 9: 201, 11: 128, 13: 1} free=1 | Kbar2={1: 132, 2: 64, 3: 200, 4: 164, 5: 1, 7: 164, 8: 201, 10: 128, 12: 1} free=1
+   order v2: K 7616 vs formula 7616; Kbar 5569 vs 5569 -> OK; edge-removed control order 7603 -> fires
+   LAW Kbar == K lowered: HOLDS | Bai a_n=992 #Z/2=992 #factors=2047 -> OK
+   controls (True = control did NOT fire): a_n+1 False, a_n-1 False, no-shift False, wrong fold x1x2 False (Kwrong={1: 480, 2: 72, 3: 52, 4: 16, 5: 148, 7: 17, 8: 148, 10: 53, 11: 36, 12: 1}, free=1)
+END law_direct
+VIGIA-FIN-OK exit=0 pico_kb=638976 t=163s

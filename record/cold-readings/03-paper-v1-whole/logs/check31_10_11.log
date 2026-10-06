@@ -1,0 +1,11 @@
+n=10 A(rule==Smith)=True B(free=1,orders)=True C(DW)=True D(a_n form)=True | t_cube=0.3s t_fold=0.0s t_x12=0.0s
+      Syl2 K(Q_10) = {1: 240, 2: 36, 3: 26, 5: 16, 6: 148, 8: 1, 10: 26, 11: 18, inf: 1}
+      Syl2 Kbar(10) = {1: 36, 2: 26, 4: 16, 5: 148, 7: 1, 9: 26, 10: 18, inf: 1}
+      Syl2 K(Q_10/<x1x2>) = {1: 112, 2: 20, 3: 12, 4: 14, 5: 16, 6: 52, 9: 15, 10: 12, 11: 2, inf: 1}   2·Syl2K(Q_n) = {1: 36, 2: 26, 4: 16, 5: 148, 7: 1, 9: 26, 10: 18, inf: 1}
+n=11 A(rule==Smith)=True B(free=1,orders)=True C(DW)=True D(a_n form)=True | t_cube=2.6s t_fold=0.3s t_x12=0.3s
+      Syl2 K(Q_11) = {1: 496, 2: 66, 3: 32, 4: 100, 6: 164, 7: 1, 9: 100, 11: 64, inf: 1}
+      Syl2 Kbar(11) = {1: 66, 2: 32, 3: 100, 5: 164, 6: 1, 8: 100, 10: 64, inf: 1}
+      Syl2 K(Q_11/<x1x2>) = {1: 240, 2: 36, 3: 26, 5: 64, 6: 52, 8: 49, 10: 26, 11: 18, inf: 1}   2·Syl2K(Q_n) = {1: 66, 2: 32, 3: 100, 5: 164, 6: 1, 8: 100, 10: 64, inf: 1}
+CONTROLS failed (as they must) at n = {'c1': [10, 11], 'c2': [10, 11], 'c3': [10, 11]}
+ALL MAIN CHECKS: PASS
+VIGIA-FIN-OK exit=0 pico_kb=167936 t=3s

@@ -1,0 +1,9 @@
+S2.0c K-test on 4y (real payment): pair True, Mahler True -> accepted (expected accept)
+S2.0c K-test on 2y(y-1) = 4C(y,2): pair False, Mahler False -> rejected (expected reject)
+S2.0c K-test on 2y (alpha = 1): pair False, Mahler False -> rejected (expected reject)
+S2.0c K-test on 3 + 8y^2 + 4y: pair True, Mahler True -> accepted (expected accept)
+S2.0c K-test on 4y + 2[y odd]: pair False, Mahler False -> rejected (expected reject)
+S2.0c K-test on 1/(1+4y) (odd unit in K): pair True, Mahler True -> accepted (expected accept)
+S2.0c the K-test separates as expected: True
+END kclass_test ktest
+VIGIA-FIN-OK exit=0 pico_kb=9728 t=0s

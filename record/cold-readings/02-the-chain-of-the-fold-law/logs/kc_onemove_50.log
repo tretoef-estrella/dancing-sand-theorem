@@ -1,0 +1,17 @@
+S2.2 paso split == paso ABCD [None]: 50/50
+S2.2 paso split == paso ABCD [nonK]: 50/50
+S2.2 paso split == paso ABCD [pay2y]: 50/50
+clean [phi] [None]: 50/50
+clean [phi] [nonK]: 50/50
+clean [phi] [pay2y]: 50/50
+clean [vphi] [None]: 50/50
+clean [vphi] [nonK]: 50/50
+clean [vphi] [pay2y]: 50/50
+clean+class [phi] [None]: 50/50
+clean+class [phi] [nonK]: 48/50
+clean+class [phi] [pay2y]: 0/50
+clean+class [vphi] [None]: 50/50
+clean+class [vphi] [nonK]: 48/50
+clean+class [vphi] [pay2y]: 0/50
+END kclass_test onemove
+VIGIA-FIN-OK exit=0 pico_kb=26592 t=2s

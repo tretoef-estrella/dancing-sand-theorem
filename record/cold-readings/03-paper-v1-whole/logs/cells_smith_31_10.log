@@ -1,0 +1,7 @@
+cells checked: 682 (lambda <= 31, 0 <= i <= 10, alpha in (1,2))
+  CONTROL raw clocks rejected: 102
+  cells where pooling acts: 102
+  deficit-law coefficients checked: 121
+  entries checked: 7502
+TOTAL FAIL COUNT: 0
+VIGIA-FIN-OK exit=0 pico_kb=6192 t=0s

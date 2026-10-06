@@ -1,0 +1,37 @@
+(15, 'A: payment 4q(D) random + F + tail', 'clean') 12
+(15, 'B: 4(D+c) + u(D)F random odd units + tail', 'clean') 12
+(15, 'C: 2(D+c) + F + tail (alpha = 1)', 'NOT clean') 12
+(15, 'POSITIVE: 4(D+c) + 3F + random constant zeta_m', 'clean') 12
+(15, 'POSITIVE: 4(D+c) + F + tail (Thm 10.15)', 'clean') 12
+(23, 'A: payment 4q(D) random + F + tail', 'clean') 12
+(23, 'B: 4(D+c) + u(D)F random odd units + tail', 'clean') 12
+(23, 'C: 2(D+c) + F + tail (alpha = 1)', 'NOT clean') 12
+(23, 'POSITIVE: 4(D+c) + 3F + random constant zeta_m', 'clean') 12
+(23, 'POSITIVE: 4(D+c) + F + tail (Thm 10.15)', 'clean') 12
+(27, 'A: payment 4q(D) random + F + tail', 'clean') 12
+(27, 'B: 4(D+c) + u(D)F random odd units + tail', 'clean') 12
+(27, 'C: 2(D+c) + F + tail (alpha = 1)', 'NOT clean') 12
+(27, 'POSITIVE: 4(D+c) + 3F + random constant zeta_m', 'clean') 12
+(27, 'POSITIVE: 4(D+c) + F + tail (Thm 10.15)', 'clean') 12
+(29, 'A: payment 4q(D) random + F + tail', 'clean') 12
+(29, 'B: 4(D+c) + u(D)F random odd units + tail', 'clean') 12
+(29, 'C: 2(D+c) + F + tail (alpha = 1)', 'NOT clean') 12
+(29, 'POSITIVE: 4(D+c) + 3F + random constant zeta_m', 'clean') 12
+(29, 'POSITIVE: 4(D+c) + F + tail (Thm 10.15)', 'clean') 12
+(30, 'A: payment 4q(D) random + F + tail', 'clean') 12
+(30, 'B: 4(D+c) + u(D)F random odd units + tail', 'clean') 12
+(30, 'C: 2(D+c) + F + tail (alpha = 1)', 'NOT clean') 12
+(30, 'POSITIVE: 4(D+c) + 3F + random constant zeta_m', 'clean') 12
+(30, 'POSITIVE: 4(D+c) + F + tail (Thm 10.15)', 'clean') 12
+(31, 'A: payment 4q(D) random + F + tail', 'clean') 12
+(31, 'B: 4(D+c) + u(D)F random odd units + tail', 'clean') 12
+(31, 'C: 2(D+c) + F + tail (alpha = 1)', 'NOT clean') 12
+(31, 'POSITIVE: 4(D+c) + 3F + random constant zeta_m', 'clean') 12
+(31, 'POSITIVE: 4(D+c) + F + tail (Thm 10.15)', 'clean') 12
+(63, 'A: payment 4q(D) random + F + tail', 'clean') 12
+(63, 'B: 4(D+c) + u(D)F random odd units + tail', 'clean') 12
+(63, 'C: 2(D+c) + F + tail (alpha = 1)', 'NOT clean') 12
+(63, 'POSITIVE: 4(D+c) + 3F + random constant zeta_m', 'clean') 12
+(63, 'POSITIVE: 4(D+c) + F + tail (Thm 10.15)', 'clean') 12
+first failure reasons: {(15, 'C: 2(D+c) + F + tail (alpha = 1)'): 'pivot not invertible mod 2 at l=7', (23, 'C: 2(D+c) + F + tail (alpha = 1)'): 'pivot not invertible mod 2 at l=11', (27, 'C: 2(D+c) + F + tail (alpha = 1)'): 'pivot not invertible mod 2 at l=13', (29, 'C: 2(D+c) + F + tail (alpha = 1)'): 'pivot not invertible mod 2 at l=14', (30, 'C: 2(D+c) + F + tail (alpha = 1)'): 'pivot not invertible mod 2 at l=14', (31, 'C: 2(D+c) + F + tail (alpha = 1)'): 'pivot not invertible mod 2 at l=15', (63, 'C: 2(D+c) + F + tail (alpha = 1)'): 'pivot not invertible mod 2 at l=31'}
+VIGIA-FIN-OK exit=0 pico_kb=103424 t=17s

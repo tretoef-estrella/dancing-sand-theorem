@@ -1,0 +1,10 @@
+l <= 31, 0 <= j <= 3, E = 256
+  Bernoulli expansion checks: 128
+  Psi (c=0) Smith == M^(2) Smith, row ∅ zero: 32
+  Psi Smith == M^(2) Smith: 96
+  Psi dances clean: 128
+  Psi final: same support and valuations as M^(2): 128
+  Sigma final == M^(2)(l,c): 128
+first l where the CONTROL dances are not clean: {}
+TOTAL FAIL COUNT: 0
+VIGIA-FIN-OK exit=0 pico_kb=135168 t=8s

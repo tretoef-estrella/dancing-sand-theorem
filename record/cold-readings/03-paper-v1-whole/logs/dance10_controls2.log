@@ -1,0 +1,27 @@
+(15, 'A: payment 4q(D) random + F + tail', 'clean') 20
+(15, 'B: 4(D+c) + u(D)F random odd units + tail', 'clean') 20
+(15, 'C: 2(D+c) + F + tail (alpha = 1)', 'NOT clean') 20
+(15, 'POSITIVE: 4(D+c) + 3F + random constant zeta_m', 'clean') 20
+(15, 'POSITIVE: 4(D+c) + F + tail (Thm 10.15)', 'clean') 20
+(3, 'A: payment 4q(D) random + F + tail', 'clean') 20
+(3, 'B: 4(D+c) + u(D)F random odd units + tail', 'clean') 20
+(3, 'C: 2(D+c) + F + tail (alpha = 1)', 'NOT clean') 20
+(3, 'POSITIVE: 4(D+c) + 3F + random constant zeta_m', 'clean') 20
+(3, 'POSITIVE: 4(D+c) + F + tail (Thm 10.15)', 'clean') 20
+(31, 'A: payment 4q(D) random + F + tail', 'clean') 20
+(31, 'B: 4(D+c) + u(D)F random odd units + tail', 'clean') 20
+(31, 'C: 2(D+c) + F + tail (alpha = 1)', 'NOT clean') 20
+(31, 'POSITIVE: 4(D+c) + 3F + random constant zeta_m', 'clean') 20
+(31, 'POSITIVE: 4(D+c) + F + tail (Thm 10.15)', 'clean') 20
+(63, 'A: payment 4q(D) random + F + tail', 'clean') 20
+(63, 'B: 4(D+c) + u(D)F random odd units + tail', 'clean') 20
+(63, 'C: 2(D+c) + F + tail (alpha = 1)', 'NOT clean') 20
+(63, 'POSITIVE: 4(D+c) + 3F + random constant zeta_m', 'clean') 20
+(63, 'POSITIVE: 4(D+c) + F + tail (Thm 10.15)', 'clean') 20
+(7, 'A: payment 4q(D) random + F + tail', 'clean') 20
+(7, 'B: 4(D+c) + u(D)F random odd units + tail', 'clean') 20
+(7, 'C: 2(D+c) + F + tail (alpha = 1)', 'NOT clean') 20
+(7, 'POSITIVE: 4(D+c) + 3F + random constant zeta_m', 'clean') 20
+(7, 'POSITIVE: 4(D+c) + F + tail (Thm 10.15)', 'clean') 20
+first failure reasons: {(3, 'C: 2(D+c) + F + tail (alpha = 1)'): 'pivot not invertible mod 2 at l=1', (7, 'C: 2(D+c) + F + tail (alpha = 1)'): 'pivot not invertible mod 2 at l=3', (15, 'C: 2(D+c) + F + tail (alpha = 1)'): 'pivot not invertible mod 2 at l=7', (31, 'C: 2(D+c) + F + tail (alpha = 1)'): 'pivot not invertible mod 2 at l=15', (63, 'C: 2(D+c) + F + tail (alpha = 1)'): 'pivot not invertible mod 2 at l=31'}
+VIGIA-FIN-OK exit=0 pico_kb=64800 t=2s

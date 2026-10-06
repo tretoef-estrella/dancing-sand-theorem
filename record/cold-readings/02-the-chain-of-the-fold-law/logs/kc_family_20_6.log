@@ -1,0 +1,15 @@
+/Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_FOLD_LAW_1/engines/law_direct.py:18: RuntimeWarning: overflow encountered in scalar subtract
+  x = x * (U64(2) - u * x)
+/Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_FOLD_LAW_1/engines/law_direct.py:18: RuntimeWarning: overflow encountered in scalar multiply
+  x = x * (U64(2) - u * x)
+/Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_FOLD_LAW_1/engines/law_direct.py:19: RuntimeWarning: overflow encountered in scalar multiply
+  assert (u * x) == U64(1)
+  example lam=6 i=2: X=[1, 1, 1, 1, 3, 6, 6, 10]  Xbar=[2, 5, 5, 9]
+  example lam=6 i=4: X=[1, 1, 1, 1, 3, 7, 7, 10]  Xbar=[2, 6, 6, 9]
+  example lam=12 i=2: X=[1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 8, 8, 14, 14]  Xbar=[1, 1, 1, 1, 7, 7, 13, 13]
+  example lam=12 i=4: X=[1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 6, 9, 13, 17]  Xbar=[1, 1, 1, 1, 5, 8, 12, 16]
+S4.1 family law Xbar = 2X on my explicit T(lam), lam = 1..20, i = 0..6: 140/140
+S4.2 control lam = 0 (T(0) = Z): law holds at i = [0] ; fails at i = [1, 2, 3, 4, 5, 6]
+S4.3 control sign-free fold a' = exp F: law holds in 9/140 cells (fails in 131)
+END kclass_test family
+VIGIA-FIN-OK exit=0 pico_kb=30128 t=31s

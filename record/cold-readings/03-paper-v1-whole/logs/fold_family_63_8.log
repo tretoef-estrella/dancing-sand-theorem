@@ -1,0 +1,6 @@
+lambda <= 63, 0 <= i <= 8
+  CONTROL -a detected: 513
+  SKIPPED (exponent >= 60): 54
+  cells compared: 513
+TOTAL FAIL COUNT: 0
+VIGIA-FIN-OK exit=0 pico_kb=139264 t=60s

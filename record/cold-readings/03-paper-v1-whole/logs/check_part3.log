@@ -1,0 +1,43 @@
+n=2 p=3 Syl_p Kbar = {}  pred {}
+n=2 p=5 Syl_p Kbar = {}  pred {}
+n=2 p=7 Syl_p Kbar = {}  pred {}
+n=3 p=3 Syl_p Kbar = {}  pred {}
+n=3 p=5 Syl_p Kbar = {}  pred {}
+n=3 p=7 Syl_p Kbar = {}  pred {}
+n=4 p=3 Syl_p Kbar = {}  pred {}
+n=4 p=5 Syl_p Kbar = {}  pred {}
+n=4 p=7 Syl_p Kbar = {}  pred {}
+n=5 p=3 Syl_p Kbar = {}  pred {}
+n=5 p=5 Syl_p Kbar = {}  pred {}
+n=5 p=7 Syl_p Kbar = {}  pred {}
+n=6 p=3 Syl_p Kbar = {1: 1}  pred {1: 1}
+n=6 p=5 Syl_p Kbar = {}  pred {}
+n=6 p=7 Syl_p Kbar = {}  pred {}
+n=7 p=3 Syl_p Kbar = {1: 7}  pred {1: 7}
+n=7 p=5 Syl_p Kbar = {}  pred {}
+n=7 p=7 Syl_p Kbar = {}  pred {}
+n=8 p=3 Syl_p Kbar = {1: 28}  pred {1: 28}
+n=8 p=5 Syl_p Kbar = {}  pred {}
+n=8 p=7 Syl_p Kbar = {}  pred {}
+n=9 p=3 Syl_p Kbar = {1: 84}  pred {1: 84}
+n=9 p=5 Syl_p Kbar = {}  pred {}
+n=9 p=7 Syl_p Kbar = {}  pred {}
+n=10 p=3 Syl_p Kbar = {1: 210}  pred {1: 210}
+n=10 p=5 Syl_p Kbar = {1: 1}  pred {1: 1}
+n=10 p=7 Syl_p Kbar = {}  pred {}
+n=11 p=3 Syl_p Kbar = {1: 462}  pred {1: 462}
+n=11 p=5 Syl_p Kbar = {1: 11}  pred {1: 11}
+n=11 p=7 Syl_p Kbar = {}  pred {}
+Corollary 1.4 odd part: 0 failures over n=2..11, p=3,5,7; control (all j) differs in 21 cases
+n=3: symmetry pairs ok; 2·Syl2K(Q_n) matches b in [3]
+n=4: symmetry pairs ok; 2·Syl2K(Q_n) matches b in [4]
+n=5: symmetry pairs ok; 2·Syl2K(Q_n) matches b in [5]
+n=6: symmetry pairs ok; 2·Syl2K(Q_n) matches b in [6]
+n=7: symmetry pairs ok; 2·Syl2K(Q_n) matches b in [7]
+n=8: symmetry pairs ok; 2·Syl2K(Q_n) matches b in [8]
+n=9: symmetry pairs ok; 2·Syl2K(Q_n) matches b in [9]
+n=10: symmetry pairs ok; 2·Syl2K(Q_n) matches b in [10]
+n=11: symmetry pairs ok; 2·Syl2K(Q_n) matches b in [11]
+n=12: symmetry pairs ok; 2·Syl2K(Q_n) matches b in [12]
+turned lid: 0 symmetry failures (n=3..12); 'only b = n' failures: 0
+VIGIA-FIN-OK exit=0 pico_kb=604160 t=72s

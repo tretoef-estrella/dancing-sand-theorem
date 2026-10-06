@@ -1,0 +1,8 @@
+Theorem D (direct Smith of sigma on T(lam) = small + coker(2^k M)): 432 ok 0 bad
+closed form = formal dance: mismatches 0
+example M(6,1) row 4 valuations: [[4, 1000000000, 1000000000, 1000000000], [5, 4, 1000000000, 1000000000], [3, 1000000000, 4, 1000000000], [3, 3, 5, 4]]
+ 
+ 
+ 
+VIGIA-INNER-DONE
+VIGIA-FIN-OK exit=0 pico_kb=11536 t=6s

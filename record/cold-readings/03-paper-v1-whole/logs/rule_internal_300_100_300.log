@@ -1,0 +1,9 @@
+S6 equivalent form: 363600 (lambda,i,D) checked, 0 mismatches
+S7 monotone fit: 22650 (lambda,i) with lambda+2i<=300, 0 violations; pooling acts in 8521
+TIE clause matters in 0 cases
+S8 big clocks >= 1: 0 violations
+Cor 1.5 (n=2..300): 0 failures; control (wrong floor) failed at 149 n's
+Cor 1.6 (n=4..300): 0 failures; control (c_n with -1) failed at 65 n's
+Cor 1.6 'in particular' (n=3..300): 0 failures
+Cor 1.7 (2^e <= 300): 0 failures
+VIGIA-FIN-OK exit=0 pico_kb=17312 t=7s
