@@ -1,0 +1,13 @@
+Comparison of the logs of 6 October 2026 (this folder) with those of 5 October 2026 on which §12.1 was written, every line except the watchdog's final line (times and memory peaks).
+identical: gate_direct_11.log
+identical: gate_dance_40_6.log
+identical: gate_sections5to7_127_3.log
+identical: gate_strict_cut_6_4.log
+identical: gate_lemma72_9_20000.log
+identical: gate_theoremO_5.log
+identical: gate_section9_200.log
+identical: gate_section10_22_5.log
+identical: remark2_generic_rand.log
+identical: remark2_generic_eta.log
+identical: remark2_oddU_rand.log
+identical: remark2_oddU_eta.log

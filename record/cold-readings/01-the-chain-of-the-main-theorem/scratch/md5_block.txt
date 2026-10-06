@@ -1,0 +1,42 @@
+
+(Sun Oct  4 20:06:45 CEST 2026; REPORT_COLD.md and logs/DIARY.md are not listed: they change as this list is written. material/ is untouched: its 121 files match MANIFEST_md5.txt, checked at the start. scratch/ holds my temporary files: the rendered Bai page, two matrix dumps, three edit scripts.)
+```
+d2abf544a007e95a4ea6617b334abd59 CLAUDE.md
+ab96ce538f1671d50fec53acdadddea7 MISSION.md
+e5f8cf13253222f0388fe7dab9edfe88 vigia.sh
+dc3cdb7aa0813c0937ca31e82ed06b66 checks/SEALED.md
+838cce703d5691a0ef61a55c62846c59 engines/check1.py
+acb8ff3a7f1b7dee742399e0397fd4b1 engines/check23.py
+4a68e64031369507adb07c5cebfc1387 engines/gate0.py
+a2b0c30294928be20a91b298d7d7c1a0 engines/larsen.py
+f18727b93705322325ed2d41d94396e2 engines/myrule.py
+078bff932642d74175e9176dc588c922 engines/mysmith
+06fa5ffb14898096f100af38b6d94c42 engines/mysmith.c
+252b8c1677b6e2621e0c7a85f6e47384 engines/part2.py
+976b8e16749fb0c707c34d629272a867 engines/rule_gates.py
+2bd8d41461c0851d65a61fd69e546b99 logs/cc_mysmith.log
+d967bde95e1031d0964844bccadf98de logs/check1_12_13.log
+b210fe35fda0be3db50cf727c0c018ec logs/check1_2_11.log
+a71194830a2ff1da4b0e39d7e7b66562 logs/check23.log
+e8e56844996012162e0edc5a6caf524c logs/gate0.log
+688135409fb58aadc980d7ec08c79807 logs/larsen.log
+02b4b24257becb7f89067b30496911b2 logs/p2_C4_128_255_a1.log
+73b6645ad181c4ec9f29b9e497df9d06 logs/p2_C4_128_255_a234.log
+f5ee89bb49c028070b7f431217a9020f logs/p2_C4_63.log
+0fd797f820ea45be807f6f79267e20e8 logs/p2_C4_64_127_a1.log
+e01bb2f443a5679a83c3a74d09ddb975 logs/p2_C4_64_127_a234.log
+980501b8cdef5294978733d2a99b7196 logs/p2_C4b.log
+92ee87720322d882f7c87db9b5608d71 logs/p2_C4i0.log
+c32a2a0b4593eb11bc4add7123c2e37d logs/p2_L34.log
+6b2adcb00628941266335e3a74040ea0 logs/p2_L5.log
+7cc6196d1a6ac4c9acd8e85dcf2d9598 logs/p2_L6.log
+855d087adf5d8e1a67d5fa49a8d6a8dc logs/p2_PINT.log
+2046fdd3b17b5c980d7a14c0ad567e69 logs/rule_gates.log
+586032899451aa6d5dbd5947259a97e4 scratch/bai_p10-10.png
+6419798863860832f8cb50a01a251a18 scratch/edit_part5a.py
+60f5855d57e584e048fd81d125191bce scratch/edit_part5b.py
+ec71c5bc7e2d25358c2e3a183e05403d scratch/edit_part5c.py
+12ecec2ca27dc5767c56bd378ae676b3 scratch/g0_mat.txt
+58351122f5e6070aac5f2a2feb044720 scratch/md5_block.txt
+baada8e89960f417ff3a4bb9b9f9409a scratch/p2_mat.txt
+```

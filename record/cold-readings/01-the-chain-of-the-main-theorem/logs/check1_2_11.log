@@ -1,0 +1,47 @@
+n=2 direct {2:1, Z:1}  [0.0 s]
+   rule(B)={2:1, Z:1}
+   rule = direct: True; mission form = direct: True; #factors = 2^(n-1)-1: True; one Z: True
+   control no-pooling differs: False; control carries-at-m differs: False
+n=3 direct {1:1, 3:2, Z:1}  [0.0 s]
+   rule(B)={1:1, 3:2, Z:1}
+   rule = direct: True; mission form = direct: True; #factors = 2^(n-1)-1: True; one Z: True
+   control no-pooling differs: False; control carries-at-m differs: False
+n=4 direct {1:2, 3:4, 5:1, Z:1}  [0.0 s]
+   rule(B)={1:2, 3:4, 5:1, Z:1}
+   rule = direct: True; mission form = direct: True; #factors = 2^(n-1)-1: True; one Z: True
+   control no-pooling differs: False; control carries-at-m differs: False
+n=5 direct {1:6, 3:4, 4:1, 6:4, Z:1}  [0.0 s]
+   rule(B)={1:6, 3:4, 4:1, 6:4, Z:1}
+   rule = direct: True; mission form = direct: True; #factors = 2^(n-1)-1: True; one Z: True
+   control no-pooling differs: False; control carries-at-m differs: False
+n=6 direct {1:12, 2:4, 3:1, 5:4, 6:10, Z:1}  [0.0 s]
+   rule(B)={1:12, 2:4, 3:1, 5:4, 6:10, Z:1}
+   rule = direct: True; mission form = direct: True; #factors = 2^(n-1)-1: True; one Z: True
+   control no-pooling differs: True; control carries-at-m differs: True
+      no-pooling: {1:12, 2:4, 3:1, 5:8, 6:2, 7:4, Z:1}
+      carries-at-m: {1:12, 2:4, 3:1, 4:4, 6:10, Z:1}
+n=7 direct {1:28, 2:1, 4:8, 5:6, 6:14, 7:6, Z:1}  [0.0 s]
+   rule(B)={1:28, 2:1, 4:8, 5:6, 6:14, 7:6, Z:1}
+   rule = direct: True; mission form = direct: True; #factors = 2^(n-1)-1: True; one Z: True
+   control no-pooling differs: False; control carries-at-m differs: False
+n=8 direct {1:56, 2:2, 4:16, 5:12, 6:28, 7:12, 10:1, Z:1}  [0.0 s]
+   rule(B)={1:56, 2:2, 4:16, 5:12, 6:28, 7:12, 10:1, Z:1}
+   rule = direct: True; mission form = direct: True; #factors = 2^(n-1)-1: True; one Z: True
+   control no-pooling differs: False; control carries-at-m differs: False
+n=9 direct {1:120, 2:10, 4:16, 5:26, 6:48, 7:26, 9:1, 11:8, Z:1}  [0.0 s]
+   rule(B)={1:120, 2:10, 4:16, 5:26, 6:48, 7:26, 9:1, 11:8, Z:1}
+   rule = direct: True; mission form = direct: True; #factors = 2^(n-1)-1: True; one Z: True
+   control no-pooling differs: False; control carries-at-m differs: False
+n=10 direct {1:240, 2:36, 3:26, 5:16, 6:148, 8:1, 10:26, 11:18, Z:1}  [0.0 s]
+   rule(B)={1:240, 2:36, 3:26, 5:16, 6:148, 8:1, 10:26, 11:18, Z:1}
+   rule = direct: True; mission form = direct: True; #factors = 2^(n-1)-1: True; one Z: True
+   control no-pooling differs: True; control carries-at-m differs: True
+      no-pooling: {1:240, 2:36, 3:26, 5:64, 6:52, 7:48, 8:1, 9:8, 10:27, 12:1, 13:8, Z:1}
+      carries-at-m: {1:240, 2:36, 3:26, 6:164, 8:1, 9:26, 11:18, Z:1}
+n=11 direct {1:496, 2:66, 3:32, 4:100, 6:164, 7:1, 9:100, 11:64, Z:1}  [0.1 s]
+   rule(B)={1:496, 2:66, 3:32, 4:100, 6:164, 7:1, 9:100, 11:64, Z:1}
+   rule = direct: True; mission form = direct: True; #factors = 2^(n-1)-1: True; one Z: True
+   control no-pooling differs: False; control carries-at-m differs: True
+      carries-at-m: {1:496, 2:66, 3:32, 4:100, 6:164, 7:1, 8:100, 11:64, Z:1}
+RESULT PASS
+VIGIA-FIN-OK exit=0 pico_kb=5888 t=0s

@@ -1,0 +1,2 @@
+C4b lam<=30: exact Smith(M) = rule 1898/1898; T(r) >= Y(r) all r 1898/1898; T(r) <= d_r 1898/1898; cells with T(r) < U(r) (unpooled) somewhere: 460
+VIGIA-FIN-OK exit=0 pico_kb=22400 t=5s

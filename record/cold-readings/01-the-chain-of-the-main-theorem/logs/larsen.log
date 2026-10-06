@@ -1,0 +1,3 @@
+P-LARSEN: Larsen V^2 rule = flights fusion recursion at n = 2..64 even: 32/32
+control (exception dropped) differs at 32 of 32 even n
+VIGIA-FIN-OK exit=0 pico_kb=6464 t=0s

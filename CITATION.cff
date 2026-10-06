@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the paper as below. The surname is Amichis Luengo (two surnames, in this order)."
+title: "The Dancing Sand Theorem — the 2-part of the sandpile group of the hypercube, for every n"
+type: dataset
+authors:
+  - family-names: "Amichis Luengo"
+    given-names: "Rafael"
+    email: "tretoef@gmail.com"
+    affiliation: "Independent researcher, Madrid, Spain"
+    orcid: "https://orcid.org/0009-0008-6252-675X"
+repository-code: "https://github.com/tretoef-estrella/dancing-sand-theorem"
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: 2026-10-06
+keywords:
+  - sandpile group
+  - critical group
+  - Jacobian of a graph
+  - chip-firing
+  - hypercube graph
+  - folded cube
+  - Sylow 2-subgroup
+  - Smith normal form
+  - tilting modules
+  - SL_2 in characteristic 2
+  - isotonic regression
+preferred-citation:
+  type: generic
+  title: "The Dancing Sand Theorem — the 2-part of the sandpile group of the hypercube, for every n"
+  authors:
+    - family-names: "Amichis Luengo"
+      given-names: "Rafael"
+      orcid: "https://orcid.org/0009-0008-6252-675X"
+  year: 2026
+  month: 10
+  publisher:
+    name: "Zenodo"
+  doi: "10.5281/zenodo.23188298"
+  url: "https://doi.org/10.5281/zenodo.23188298"
+  notes: "Preprint, version 8 (version DOI 10.5281/zenodo.23188299). Not yet refereed."

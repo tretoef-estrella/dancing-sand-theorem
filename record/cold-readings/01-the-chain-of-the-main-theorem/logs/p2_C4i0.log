@@ -1,0 +1,2 @@
+C4-i0: i=0 valuations = one constant + base ruler of house 2^k-1: 120/120; rule i=0 clocks = k + C + pooled base clocks and Cut at 1: 120/120; Theorem U on the i=0 cell: {True: 120, False: 0}; construction checks E {True: 321, False: 0} M {True: 321, False: 0} G {True: 321, False: 0}
+VIGIA-FIN-OK exit=0 pico_kb=1696 t=0s

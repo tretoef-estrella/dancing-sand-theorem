@@ -1,0 +1,4 @@
+Theorem O, |I| <= 5: 69 (s, r) cases, 0 with a count != 1
+control c1 (any subset): count != 1 in 42 cases; control c2 (any run): count != 1 in 26 cases
+VIGIA-INNER-DONE
+VIGIA-FIN-OK exit=0 pico_kb=5024 t=0s

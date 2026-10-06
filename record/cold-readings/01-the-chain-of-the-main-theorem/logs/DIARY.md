@@ -1,0 +1,72 @@
+- Sun Oct  4 19:28:07 CEST 2026 — START. Read MISSION.md whole. Created REPORT_COLD.md with the 10 empty headings of §6. Next: Part 1 (statement, L1, L2, check 1) — reading FLIGHT1_REPORT.md.
+- Sun Oct  4 19:28:16 CEST 2026 — Read FLIGHT1_REPORT.md whole (Theorem Z, B, RT, S, E, L, Conjecture W/H, fusion recursion). Next: FLIGHT2_REPORT.md.
+- Sun Oct  4 19:28:22 CEST 2026 — Read FLIGHT2_REPORT.md whole (Phi, P-R1, even step B.1, dance C.0, coefficient algebra C.4, Theorem D). Next: FLIGHT3_REPORT.md.
+- Sun Oct  4 19:28:27 CEST 2026 — Read FLIGHT3_REPORT.md (RT', Theorem O, A2, carries form, St1/St2, famcheck). Next: FLIGHT4_REPORT.md.
+- Sun Oct  4 19:28:40 CEST 2026 — Read FLIGHT4_REPORT.md whole (A2 table, R2, RW, H, A.4 rulers R_m/R_{m+K}, Lemma M, P, Theorem U/U', 11.2 windows, houses, Theorem F, 11.4 assembly, 13 state of art). Next: the flights' SEALED files and THE_FIRST_OPEN_CELL.
+- Sun Oct  4 19:30:59 CEST 2026 — Material md5 checked against MANIFEST (121 files, 0 differences). Tools: python3.9+numpy+flint 0.6, PARI gp, sage. Next: write §1 (statement as I read it), then build my own engines (rule + direct Smith).
+- Sun Oct  4 19:31:52 CEST 2026 — STEP: write engines/mysmith.c (own 2-adic Smith mod 2^64, valuation-ordered pivots, Laplacian of Q_n built in place) and engines/myrule.py (own rule: fusion + character peeling multiplicities, flight-1 B-form clocks and mission x-form clocks). No flight code consulted.
+- Sun Oct  4 19:32:39 CEST 2026 — Sealed S1 (C-G0, C-R0, C-M0, C1, controls, count) in checks/SEALED.md before any run.
+- Sun Oct  4 19:32:45 CEST 2026 — RUN cc_mysmith: compile engines/mysmith.c. Estimate: 3 s, 100 MB.
+- Sun Oct  4 19:32:46 CEST 2026 — END cc_mysmith (see log).
+- Sun Oct  4 19:33:04 CEST 2026 — RUN gate0 (C-G0): my engine vs PARI matsnf, 60 random + Laplacians n=1..7. Estimate: 40 s, 250 MB.
+- Sun Oct  4 19:33:07 CEST 2026 — END gate0.
+- Sun Oct  4 19:33:16 CEST 2026 — C-G0 HELD (60/60, 7/7, control fires); written to REPORT §3.0 and §6.
+- Sun Oct  4 19:33:30 CEST 2026 — RUN rule_gates (C-R0, C-M0). Estimate: 20 s, 100 MB (64 character peelings of degree <= 64; 2520 cells x 2 forms, <= 32 dancers).
+- Sun Oct  4 19:33:30 CEST 2026 — END rule_gates.
+- Sun Oct  4 19:33:50 CEST 2026 — C-R0 HELD 2520/2520 (my constant right), C-M0 HELD 64/64; recorded in REPORT §3.0b, §6. First pooled cube cell: n=6, lambda=4, i=1.
+- Sun Oct  4 19:33:55 CEST 2026 — RUN check1_2_11 (C1, controls, count): direct Laplacian Smith n=2..11. Estimate: 10 s, 60 MB (n=11: 2048^2 x 8 B = 34 MB, ~3e9 u64 ops).
+- Sun Oct  4 19:33:55 CEST 2026 — END check1_2_11.
+- Sun Oct  4 19:34:15 CEST 2026 — C1 HELD n=2..11, controls fire (no-pool at n=6,10; carries-at-m at n=6,10,11); recorded REPORT §3.1, §6. Sealed S2 (n=12,13).
+- Sun Oct  4 19:34:19 CEST 2026 — RUN check1_12_13: direct n=12,13. Estimate: 60 s, 560 MB (n=13 matrix 537 MB u64; elimination observed sparse).
+- Sun Oct  4 19:34:30 CEST 2026 — END check1_12_13.
+- Sun Oct  4 19:34:43 CEST 2026 — C1 n=12,13 HELD (peak 533 MB, 11 s); recorded. Next: write §1 statement as I read it.
+- Sun Oct  4 19:36:50 CEST 2026 — Wrote §1 (statement as I read it, with constant k+K+kappa(m,K), i=0 convention, three PRESENTATION remarks). Next: L1, L2 verdicts.
+- Sun Oct  4 19:37:00 CEST 2026 — Corrected my §1 example (lambda=6,i=1: x=(1,1,-1,-1), computed by hand; first draft had a wrong vector written before computing — see §7 E1).
+- Sun Oct  4 19:37:31 CEST 2026 — Wrote L1 (HOLDS) and L2 (HOLDS) into §2, error E1 into §7.
+- Sun Oct  4 19:37:38 CEST 2026 — PART 1 DONE. CLAUDE.md STATE updated. Next: Part 2, L3 (Bier basis Theorem Z, Phi, V⊗Phi, P-R1).
+- Sun Oct  4 19:41:51 CEST 2026 — STEP: pencil re-derivation of L3 (P-R1, B.1, C.0), L4 (windows, c-recursion, normal form q, deficit law), L5 (cost form: delta = G + gamma, constant alpha K + kappa(m,K)), L6 (Theorem O induction, convexity step). Writing verdicts now.
+- Sun Oct  4 19:41:51 CEST 2026 — Wrote L3 (HOLDS; Theorem Z not a dependency), L4 (HOLDS), L5 (HOLDS), L6 (HOLDS, convexity step proved by me) into §2.
+- Sun Oct  4 19:47:05 CEST 2026 — STEP: pencil reading of L7 (FLIGHT4 11.2.1-11.2.6, A.5 Theorem U) done; writing verdict before the machine gate.
+- Sun Oct  4 19:47:05 CEST 2026 — Wrote L7 pencil verdict (HOLDS, PRESENTATION gap on integer splitting with counterexample x=(1,2,0,1,2,2)) into §2.
+- Sun Oct  4 19:47:54 CEST 2026 — Sealed S3 (G-L34, G-L5, G-L6, C4, C4b, controls, P-INT).
+- Sun Oct  4 19:51:50 CEST 2026 — engines/part2.py written (G-L34, G-L5, G-L6, C4 bitmask, C4-i0, C4b, PINT); syntax checked. C4b for N=16 (lam=30) reduced to i<=12 for time (declared).
+- Sun Oct  4 19:51:56 CEST 2026 — RUN p2_L34 (G-L34): 1271 dance-lattice Smith forms (dim <= 256) + closed-form M Smith. Estimate: 60 s, 100 MB.
+- Sun Oct  4 19:52:01 CEST 2026 — END p2_L34.
+- Sun Oct  4 19:52:07 CEST 2026 — G-L34 HELD 1230/1230 both sides (30 families x 41 shifts; I had written 1271 in my estimate line: miscount), control fires 191. RUN p2_L5 (G-L5): closed-form valuations lam<=63, i<=64. Estimate: 120 s, 150 MB.
+- Sun Oct  4 19:52:09 CEST 2026 — END p2_L5.
+- Sun Oct  4 19:52:12 CEST 2026 — G-L5 HELD 87360/87360, all entries integral. RUN p2_L6 (G-L6): Theorem O DP, k<=6, |I|<=4. Estimate: 60 s, 200 MB.
+- Sun Oct  4 19:52:13 CEST 2026 — END p2_L6.
+- Sun Oct  4 19:52:18 CEST 2026 — G-L6 HELD 798/798. RUN p2_C4_63 (C4): Theorem F construction lam<=63, alpha 1..4, prices lo/hi/mid, real cells i<=300 (alpha=1) and i<=2K+1 (alpha>1), controls. Estimate: 3 min, 100 MB.
+- Sun Oct  4 19:52:28 CEST 2026 — END p2_C4_63.
+- Sun Oct  4 19:52:41 CEST 2026 — C4 lam<=63 HELD (all checks, controls fire: nogold 244 houses, natural price 24). RUN p2_C4_64_127_a1: lam 64..127, alpha 1, prices lo/hi/mid, real cells i<=4K+1. Estimate: 3 min, 100 MB.
+- Sun Oct  4 19:52:52 CEST 2026 — END p2_C4_64_127_a1.
+- Sun Oct  4 19:53:00 CEST 2026 — C4 64..127 a1 HELD (all checks). RUN p2_C4_64_127_a234: lam 64..127, alpha 2,3,4, prices lo/hi/mid, real cells i<=2K+1. Estimate: 60 s, 100 MB.
+- Sun Oct  4 19:53:22 CEST 2026 — END p2_C4_64_127_a234. RUN p2_C4_128_255_a1: lam 128..255, alpha 1, prices lo/hi/mid, real cells i<=4K+1. Estimate: 4 min, 100 MB.
+- Sun Oct  4 19:54:27 CEST 2026 — END p2_C4_128_255_a1.
+- Sun Oct  4 19:54:32 CEST 2026 — both HELD (0 failures). RUN p2_C4_128_255_a234: lam 128..255, alpha 2,3,4, prices lo/hi/mid, i<=2K+1. Estimate: 4 min, 100 MB.
+- Sun Oct  4 19:56:42 CEST 2026 — END p2_C4_128_255_a234.
+- Sun Oct  4 19:56:47 CEST 2026 — C4 128..255 a234 HELD. RUN p2_C4i0 (i=0 cell, lam<=127), p2_C4b (brute force lam<=30), p2_PINT. Estimate: 3 min total, 300 MB (C4b DP 2^16 masks for lam=30).
+- Sun Oct  4 19:56:53 CEST 2026 — END p2_C4i0, p2_PINT, p2_C4b.
+- Sun Oct  4 19:57:26 CEST 2026 — Recorded §3.2, §3.4, §6 rows; L7 final verdict HOLDS. PART 2 DONE; STATE updated. Next: Part 3 (L8, L9, check 2 Bai, check 3 Gao).
+- Sun Oct  4 19:57:36 CEST 2026 — STEP: reading Bai 2003 (material/sources/Bai_cube_group_LAA2003.txt) for check 2.
+- Sun Oct  4 19:58:17 CEST 2026 — Read Bai 2003 whole (Thm 1.1, 1.2, 1.3, Cor 4.2, table p.260 read from the rendered PDF image scratch/bai_p10-10.png: no superscript 1 is printed). Next: Gao et al. Thm 4.1, 4.2 for check 3.
+- Sun Oct  4 19:59:04 CEST 2026 — Sealed S4 (checks 2, 3). Writing engines/check23.py.
+- Sun Oct  4 19:59:10 CEST 2026 — RUN check23 (checks 2, 3). Estimate: 20 s, 100 MB.
+- Sun Oct  4 19:59:11 CEST 2026 — END check23.
+- Sun Oct  4 19:59:45 CEST 2026 — Checks 2, 3 HELD; L8, L9 written (HOLD). PART 3 DONE; STATE updated. Next: Part 4 priority and credit.
+- Sun Oct  4 19:59:54 CEST 2026 — STEP Part 4: reading sources for priority (CSX first).
+- Sun Oct  4 20:00:20 CEST 2026 — Read CSX (§3 Bier canonical bases, §5 monomial basis eq. (5), §5.2 final remark p.17), Anzis–Prasad intro. Next: Doty–Henke.
+- Sun Oct  4 20:00:44 CEST 2026 — Read Doty–Henke (abstract, intro, Lemma 1.1, Thm 2.5–2.7, §5 p=2 examples): no V^{⊗n} multiplicities. Next: Ducey et al. 2310.09227, Reiner–Tseng.
+- Sun Oct  4 20:01:01 CEST 2026 — Read Ducey et al. 2310.09227 (abstract, intro, §1–2 history), Reiner–Tseng §12.2. Next: web searches (queries logged in REPORT §4).
+- Sun Oct  4 20:03:50 CEST 2026 — Sealed S5 (P-LARSEN). RUN larsen: estimate 2 s, 30 MB.
+- Sun Oct  4 20:03:50 CEST 2026 — END larsen.
+- Sun Oct  4 20:04:28 CEST 2026 — §4 written (11 queries logged). PART 4 DONE; STATE updated. Next: read audits (after own reading, as ordered), then §5, §0, §7–§9.
+- Sun Oct  4 20:05:20 CEST 2026 — STEP Part 5: writing §0, §7, §8 (before reading the audits).
+- Sun Oct  4 20:05:20 CEST 2026 — §0, §7, §8 written. Next: read material/audits_read_after/ (all six), then §5.
+- Sun Oct  4 20:05:39 CEST 2026 — §0, §7, §8 written (via scratch/edit_part5a.py after a heredoc encoding failure, E6). Next: read material/audits_read_after/ (all six), then §5.
+- Sun Oct  4 20:05:43 CEST 2026 — STEP: reading material/audits_read_after/ (after my own reading).
+- Sun Oct  4 20:06:25 CEST 2026 — Read all six audits; §5 written (agree on every link; 4 disagreements: integer splitting, printed statement constant, Doty–Henke citation, basis credit).
+- Sun Oct  4 20:06:38 CEST 2026 — §6 closing line on failures written. Next: §9 md5 (all my files), final STATE.
+- Sun Oct  4 20:06:45 CEST 2026 — FINAL: CLAUDE.md STATE set to done; computing md5 for §9 (REPORT_COLD.md and DIARY.md excluded: still being written).
+- Sun Oct  4 20:06:45 CEST 2026 — §9 md5 appended. COLD READING FINISHED.
+- Sun Oct  4 20:06:52 CEST 2026 — Added a note to §9: the md5 line of scratch/md5_block.txt was taken while the file was being written (self-reference slip).

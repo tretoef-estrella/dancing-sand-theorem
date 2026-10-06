@@ -1,0 +1,17 @@
+C4 lam in [1,63], alpha in [1, 2, 3, 4], prices ['lo', 'hi', 'mid']: 15624 house constructions, 10 s
+   rec  : pass 38232  FAIL 0
+   int  : pass 113481  FAIL 0
+   walk : pass 38232  FAIL 0
+   cut  : pass 19116  FAIL 0
+   lam  : pass 38232  FAIL 0
+   seg  : pass 5031  FAIL 0
+   win  : pass 5031  FAIL 0
+   E    : pass 38232  FAIL 0
+   M    : pass 38232  FAIL 0
+   G    : pass 38232  FAIL 0
+   pen  : pass 75249  FAIL 0
+   U    : pass 75249  FAIL 0
+   U0   : pass 0  FAIL 0
+   control nogold (lam<=63): houses where (G) still holds at every level 4964, where it fails 244
+   control natural price (lam<=63): houses still fine 5184, broken 24
+VIGIA-FIN-OK exit=0 pico_kb=14880 t=9s

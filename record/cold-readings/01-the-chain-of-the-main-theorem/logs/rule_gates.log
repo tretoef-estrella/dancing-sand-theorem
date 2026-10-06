@@ -1,0 +1,7 @@
+C-M0 fusion = peeling: 64/64 (dimension check 2^n passed for every n)
+C-R0 naive clocks equal value by value: 2520/2520; pooled multisets equal: 2520/2520
+first naive mismatch: None
+cells (lam<=63, 1<=i<=40) where pooling changes something: 743
+C-R0 control (constant without kappa(m,K)) differs in 760 cells
+first n with a pooled cell: 6 [(4, 1)]
+VIGIA-FIN-OK exit=0 pico_kb=12080 t=0s

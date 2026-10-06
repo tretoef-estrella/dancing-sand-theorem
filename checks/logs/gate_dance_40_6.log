@@ -1,0 +1,5 @@
+Theorem D (direct Smith of sigma on T(lam) = small + coker(2^k M)): 432 ok 0 bad
+closed form = formal dance: mismatches 0
+control (2^{o(Delta)} dropped): differs from the dance in 420 of 420 cells with I nonempty; Smith prediction wrong in 262 cells
+VIGIA-INNER-DONE
+VIGIA-FIN-OK exit=0 pico_kb=11584 t=11s

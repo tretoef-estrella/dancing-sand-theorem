@@ -1,0 +1,2 @@
+P-INT example [1, 2, 0, 1, 2, 2] -> real blocks [(0, 2, '3/2'), (2, 6, '5/4')] -> integer split [2, 1, 2, 1, 1, 1] antitonic: (False, False)
+VIGIA-FIN-OK exit=0 pico_kb=9120 t=0s

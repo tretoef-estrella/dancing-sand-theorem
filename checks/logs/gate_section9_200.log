@@ -1,0 +1,4 @@
+counts: {'bai': 199, 'mult': 199, 'podium': 197, 'control_cn_not_G': 37, 'p93': 300, 'ceil': 22500, 'ceil_control_fires': 298, 'p94': 292, 'c17': 8}
+BAD: none
+VIGIA-INNER-DONE
+VIGIA-FIN-OK exit=0 pico_kb=11984 t=3s
