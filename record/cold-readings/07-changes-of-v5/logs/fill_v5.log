@@ -1,0 +1,53 @@
+text block: top 55.3 pt (median), bottom 785.1 pt (max over pages); height 729.8 pt
+p1  folio -   last text bottom 512.9  fill  62.7 %  <-- under 90 %
+p2  folio 2   last text bottom 731.1  fill  92.6 %
+p3  folio 3   last text bottom 785.1  fill 100.0 %
+p4  folio 4   last text bottom 763.5  fill  97.0 %
+p5  folio 5   last text bottom 704.1  fill  88.9 %  <-- under 90 %
+p6  folio 6   last text bottom 766.4  fill  97.4 %
+p7  folio 7   last text bottom 771.6  fill  98.2 %
+p8  folio 8   last text bottom 763.5  fill  97.0 %
+p9  folio 9   last text bottom 782.1  fill  99.6 %
+p10 folio 10  last text bottom 751.5  fill  95.4 %
+p11 folio 11  last text bottom 749.3  fill  95.1 %
+p12 folio 12  last text bottom 771.8  fill  98.2 %
+p13 folio 13  last text bottom 704.9  fill  89.0 %  <-- under 90 %
+p14 folio 14  last text bottom 770.1  fill  97.9 %
+p15 folio 15  last text bottom 732.6  fill  92.8 %
+p16 folio 16  last text bottom 744.0  fill  94.4 %
+p17 folio 17  last text bottom 776.9  fill  98.9 %
+p18 folio 18  last text bottom 683.9  fill  86.1 %  <-- under 90 %
+p19 folio 19  last text bottom 784.5  fill  99.9 %
+p20 folio 20  last text bottom 718.4  fill  90.9 %
+p21 folio 21  last text bottom 775.4  fill  98.7 %
+p22 folio 22  last text bottom 770.9  fill  98.0 %
+p23 folio 23  last text bottom 776.9  fill  98.9 %
+p24 folio 24  last text bottom 779.3  fill  99.2 %
+p25 folio 25  last text bottom 762.0  fill  96.8 %
+p26 folio 26  last text bottom 760.4  fill  96.6 %
+p27 folio 27  last text bottom 782.9  fill  99.7 %
+p28 folio 28  last text bottom 781.5  fill  99.5 %
+p29 folio 29  last text bottom 779.9  fill  99.3 %
+p30 folio 30  last text bottom 773.3  fill  98.4 %
+p31 folio 31  last text bottom 758.3  fill  96.3 %
+p32 folio 32  last text bottom 742.4  fill  94.1 %
+p33 folio 33  last text bottom 756.8  fill  96.1 %
+p34 folio 34  last text bottom 754.7  fill  95.8 %
+p35 folio 35  last text bottom 776.1  fill  98.8 %
+p36 folio 36  last text bottom 783.7  fill  99.8 %
+p37 folio 37  last text bottom 777.6  fill  99.0 %
+p38 folio 38  last text bottom 765.0  fill  97.2 %
+p39 folio 39  last text bottom 774.8  fill  98.6 %
+p40 folio 40  last text bottom 783.0  fill  99.7 %
+p41 folio 41  last text bottom 777.8  fill  99.0 %
+p42 folio 42  last text bottom 757.4  fill  96.2 %
+p43 folio 43  last text bottom 726.8  fill  92.0 %
+p44 folio 44  last text bottom 666.8  fill  83.8 %  <-- under 90 %
+p45 folio 45  last text bottom 756.8  fill  96.1 %
+p46 folio 46  last text bottom 774.0  fill  98.5 %
+p47 folio 47  last text bottom 770.1  fill  97.9 %
+p48 folio 48  last text bottom 782.1  fill  99.6 %
+p49 folio 49  last text bottom 773.9  fill  98.5 %
+p50 folio 50  last text bottom 757.7  fill  96.2 %
+p51 folio 51  last text bottom 234.3  fill  24.5 %  <-- under 90 %
+VIGIA-FIN-OK exit=0 pico_kb=6368 t=0s

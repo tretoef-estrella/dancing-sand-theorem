@@ -1,0 +1,15 @@
+--- families from lambda = 1
+12.1 Props 5.2/5.3/5.4: entries 109200  clocks5.3 14560  clocks5.4 301
+12.1 Thm 7.10 lambda<64,i<=12,a=1,2: 1638
+12.2 reader4/6 lambda<=127,i<=30,a=1,2: {'all': 7874, 'i0': 254, 'i0_Ine': 240, 'i0_Ie': 14, 'ige1': 7620, 'ige1_Ine': 7200}
+12.2 reader5/6 lambda<=255,i<=40,a=1: {'all': 10455, 'i0': 255, 'i0_Ine': 247, 'i0_Ie': 8, 'ige1': 10200, 'ige1_Ine': 9880}
+--- families from lambda = 0
+12.1 Props 5.2/5.3/5.4: entries 109280  clocks5.3 14600  clocks5.4 301
+12.1 Thm 7.10 lambda<64,i<=12,a=1,2: 1664
+12.2 reader4/6 lambda<=127,i<=30,a=1,2: {'all': 7936, 'i0': 256, 'i0_Ine': 240, 'i0_Ie': 16, 'ige1': 7680, 'ige1_Ine': 7200}
+12.2 reader5/6 lambda<=255,i<=40,a=1: {'all': 10496, 'i0': 256, 'i0_Ine': 247, 'i0_Ie': 9, 'ige1': 10240, 'ige1_Ine': 9880}
+houses k<=6 a<=3: 16380  with I!=0: 16002  k<=7: 65532
+houses incl k=0, k<=6: 16383
+deletions k<=6: 360  k<=7: 741
+8001*24 = 192024
+VIGIA-FIN-OK exit=0 pico_kb=3968 t=0s

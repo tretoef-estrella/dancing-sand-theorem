@@ -1,0 +1,138 @@
+- 2026-10-06 07:26:19 — START. Created REPORT_COLD_7.md with the empty headings of MISSION §6. Read MISSION.md (whole, 203 lines), ESTADO.md (not started), vigia.sh.
+- 2026-10-06 07:26:19 — NOTE (my error): my first listing command used ls -laR material, which printed the FILE NAMES under material/read_after/ (no file content opened). Recorded in §8.
+- 2026-10-06 07:26:31 — BEFORE run manifest_check: md5 -r of material/paper, sources, tools against MANIFEST_md5.txt (est. <50 MB, <5 s).
+- 2026-10-06 07:26:31 — AFTER run manifest_check: see logs/manifest_check.log.
+- 2026-10-06 07:26:35 — Manifest: 43 files OK, 0 mismatch (logs/manifest_check.log ends VIGIA-FIN-OK). BEGIN Part 1: §1.0, §13, Appendix A of v5 and first pass on the diff.
+- 2026-10-06 07:27:02 — Read v5 §1.0–§1.8 (lines 1–214), §11–§13, Acknowledgements, Appendix A, References (1046–1184), and CORRECTIONS_v4_to_v5.md (whole). First notes in scratch/notes_part1.md.
+- 2026-10-06 07:27:13 — BEFORE run diff_regen: regenerate diff -u v4.md v5.md and compare with DIFF_v4_to_v5.txt minus headers (est. <20 MB, <2 s).
+- 2026-10-06 07:27:14 — AFTER run diff_regen: see log.
+- 2026-10-06 07:27:34 — Wrote scratch/normcmp.py (my normalizing comparison). BEFORE run normcmp_v4v5 (est. <100 MB, <30 s).
+- 2026-10-06 07:27:34 — AFTER run normcmp_v4v5.
+- 2026-10-06 07:27:51 — SEALED batch 1 written (S1–S12) in checks/SEALED.md.
+- 2026-10-06 07:27:59 — BEFORE run normcmp_control: v5 vs v5 with 3 injected edits (where→and l.36, 12→13 l.81, ℤ→Z l.19). Expect 2 CONTENT-DIFF + 1 TYPO-ONLY (est. <100 MB, <10 s).
+- 2026-10-06 07:27:59 — AFTER run normcmp_control.
+- 2026-10-06 07:28:06 — normcmp control: 3 blocks, 2 CONTENT-DIFF (where→and, 12→13), 1 TYPO-ONLY (ℤ→Z): the control fires. Now reading logs/normcmp_v4v5.log.
+- 2026-10-06 07:28:25 — BEFORE run charsubs: char-level tally of v4->v5 substitutions (est. <200 MB, <60 s).
+- 2026-10-06 07:28:26 — AFTER run charsubs.
+- 2026-10-06 07:28:38 — charsubs: 136 Z→ℤ, 34 F→𝔽, 23 Q→ℚ; other runs are word edits listed in normcmp. Now item 2.3 (number sets): grep of remaining Z/Q/F letters in v5 code spans.
+- 2026-10-06 07:29:20 — Item 2.3 (number sets) written in REPORT §2: HOLDS in md, no wrong choice. Mission's «block Q (§10.4)» is in fact §10.2.
+- 2026-10-06 07:29:35 — BEFORE run hunkmap: map blocks to hunks/sections/statement-or-proof (est. <100 MB, <10 s).
+- 2026-10-06 07:29:35 — AFTER run hunkmap.
+- 2026-10-06 07:34:28 — Items 2.1, 2.2 (REPORT §2) and 2.4 (REPORT §1) written: all HOLDS; presentation points P2.2-a, P2.2-b, P2.4-a, P2.4-b.
+- 2026-10-06 07:37:26 — Item 2.5 written: R1 FALSE SENTENCE in §13 («No statement of a theorem changed in versions 2–5» vs App. A «adds strict (Cut) to Theorem 7.8»), R2 inexact «no number except…», R3 «audited» uncheckable.
+- 2026-10-06 07:37:40 — BEFORE run counts: re-count §12 cells/houses from ranges, with λ from 1 and (control) from 0 (est. <50 MB, <10 s).
+- 2026-10-06 07:37:40 — AFTER run counts.
+- 2026-10-06 07:38:05 — Items 2.6 and 2.7 written (HOLDS; P2.6-a,b,c; P2.7-a,b). Checked no «| — |» left in §12 control cells.
+- 2026-10-06 07:38:13 — STATE: Part 2 finished; ESTADO updated. BEGIN Part 3 (the pdf).
+- 2026-10-06 07:38:27 — SEALED batch 2 written (S13–S20). BEFORE run pdfinfo_fonts: pdfinfo, pdffonts, which tools (est. <50 MB, <5 s).
+- 2026-10-06 07:38:27 — AFTER run pdfinfo_fonts.
+- 2026-10-06 07:38:40 — pdffonts: only STIXTwoText (regular/bold/italic), STIXTwoMath-Regular, Menlo-Regular; all embedded; all Type 3 except Menlo (CID TrueType). pdfinfo: 51 pages A4, title/author/subject present. BEFORE run render90: pdftoppm -r 90 all 51 pages (est. <300 MB, <120 s).
+- 2026-10-06 07:38:47 — AFTER run render90.
+- 2026-10-06 07:38:56 — checks/PAGES.md created with 51 «NOT YET LOOKED AT» lines. BEFORE run bbox: pdftotext -bbox and -bbox-layout, and plain -layout text (est. <200 MB, <60 s).
+- 2026-10-06 07:38:58 — AFTER run bbox.
+- 2026-10-06 07:39:27 — BEFORE run render200halves: pdftoppm -r 200, each page in two halves (top/bottom, 1654×1170 px) (est. <400 MB, <300 s).
+- 2026-10-06 07:39:50 — AFTER run render200halves.
+- 2026-10-06 07:40:39 — Pages 1–2 looked at (90 dpi + 200 dpi halves); lines written in checks/PAGES.md.
+- 2026-10-06 07:41:23 — Read the 7 tools of material/tools (gaps_text_words: mean word gap between pure words per full-width line; margins: largest xMax, >542.5; widows: heuristic orphan/widow; structure: headings y>740 and statement split by text match; formula_lines: START-OP/ALONE/END-BAD; md_vs_pdf: table numbers subsequence + statement prose words; xrefs: md-only targets and citation keys). BEFORE run tools_v5: all 7 on v5 (est. <300 MB, <60 s).
+- 2026-10-06 07:41:25 — AFTER run tools_v5 (7 logs logs/tool_*.log).
+- 2026-10-06 07:42:16 — Tools results noted in scratch/notes_pdf.md; p. 3 written.
+- 2026-10-06 07:42:47 — p. 4 written.
+- 2026-10-06 07:43:49 — Wrote scratch/loose.py (stretched word space of every justified line, including list lines and formula lines). BEFORE run loose_v5 (est. <100 MB, <20 s).
+- 2026-10-06 07:43:49 — AFTER run loose_v5.
+- 2026-10-06 07:44:27 — loose.py v2 (bands from text-size boxes only; script boxes attached; gaps ≥15 pt and before ∎ excluded and listed). BEFORE run loose_v5b (est. <100 MB, <20 s).
+- 2026-10-06 07:44:27 — AFTER run loose_v5b.
+- 2026-10-06 07:45:00 — loose.py v3: right-margin threshold 536 (p. 3 line ending with ≅ has xMax 538.9). BEFORE run loose_v5c (est. <100 MB, <20 s).
+- 2026-10-06 07:45:00 — AFTER run loose_v5c.
+- 2026-10-06 07:45:19 — loose_v5c summarized in notes; p. 5 written.
+- 2026-10-06 07:45:42 — p. 6 written.
+- 2026-10-06 07:45:59 — p. 7 written.
+- 2026-10-06 07:46:13 — p. 8 written.
+- 2026-10-06 07:46:26 — p. 9 written.
+- 2026-10-06 07:46:48 — p. 10 written.
+- 2026-10-06 07:48:16 — formula-initial classification saved in notes; p. 11 written.
+- 2026-10-06 07:48:53 — p. 12 written.
+- 2026-10-06 07:49:25 — p. 13 looked at (bottom looks empty ~ 12 %). Wrote scratch/fill.py. BEFORE run fill_v5 (est. <100 MB, <10 s).
+- 2026-10-06 07:49:26 — AFTER run fill_v5.
+- 2026-10-06 07:49:40 — fill noted; p. 13 written.
+- 2026-10-06 07:50:01 — p. 14 written.
+- 2026-10-06 07:50:18 — p. 15 written.
+- 2026-10-06 07:50:41 — p. 16 written.
+- 2026-10-06 07:51:10 — BEFORE run zoom17: 300 dpi crops of p. 17 (Theorem 4.4 display, proof displays) (est. <100 MB, <10 s).
+- 2026-10-06 07:51:24 — BEFORE run zoom17b: 400 dpi crops of p. 17 Theorem 4.4 display and the second ∏ of the proof (est. <100 MB, <10 s).
+- 2026-10-06 07:51:43 — p. 17 written (Theorem 4.4: condition above baseline, limit/∏ collisions).
+- 2026-10-06 07:52:05 — BEFORE run zoom18: 400 dpi crops p. 18 (c^{(h+1)} display; Theorem D second display) (est. <100 MB, <10 s).
+- 2026-10-06 07:52:18 — p. 18 written.
+- 2026-10-06 07:52:38 — BEFORE run zoom19: 400 dpi crop of p. 19 gold display γ(Δ) (est. <100 MB, <10 s).
+- 2026-10-06 07:52:52 — p. 19 written.
+- 2026-10-06 07:53:14 — BEFORE run zoom20: 400 dpi crops p. 20 (ψ display, Prop 5.4 display and following line) (est. <100 MB, <10 s).
+- 2026-10-06 07:53:28 — p. 20 written.
+- 2026-10-06 07:53:51 — p. 21 written.
+- 2026-10-06 07:54:05 — p. 22 written.
+- 2026-10-06 07:54:20 — p. 23 written.
+- 2026-10-06 07:54:44 — BEFORE run zoom24: 400 dpi crop p. 24 (ℓ spacing in proof of Lemma 7.5, house definition line) (est. <100 MB, <10 s).
+- 2026-10-06 07:54:59 — p. 24 written (ℓ spacing defect).
+- 2026-10-06 07:55:17 — p. 25 written.
+- 2026-10-06 07:55:49 — p. 26 written: STEPS 2 AND 3 OF THE PROOF OF THEOREM 7.8 LOST THEIR NUMBERS IN THE PDF (md≠pdf).
+- 2026-10-06 07:56:19 — p. 27 written.
+- 2026-10-06 07:56:35 — p. 28 written.
+- 2026-10-06 07:56:56 — p. 29 written.
+- 2026-10-06 07:57:16 — p. 30 written.
+- 2026-10-06 07:57:33 — p. 31 written.
+- 2026-10-06 07:57:53 — p. 32 written.
+- 2026-10-06 07:58:17 — BEFORE run zoom33: 400 dpi crops p. 33 (glue display; inline matrix line of Lemma 10.4 proof) (est. <100 MB, <10 s).
+- 2026-10-06 07:58:34 — p. 33 written.
+- 2026-10-06 07:58:51 — p. 34 written.
+- 2026-10-06 07:59:32 — p. 35 written (matrix lines measured: p33 spaces 2.6 pt, p35 4.0 pt).
+- 2026-10-06 07:59:59 — p. 36 written.
+- 2026-10-06 08:00:21 — BEFORE run zoom37: 400 dpi crop p. 37 (𝔡 display) (est. <100 MB, <10 s).
+- 2026-10-06 08:00:35 — p. 37 written.
+- 2026-10-06 08:01:04 — p. 38 written.
+- 2026-10-06 08:01:20 — p. 39 written.
+- 2026-10-06 08:01:43 — BEFORE run zoom40: 400 dpi crops p. 40 («out = out_k, in = in_k» line; inline L matrix) (est. <100 MB, <10 s).
+- 2026-10-06 08:01:56 — p. 40 written.
+- 2026-10-06 08:02:19 — BEFORE run zoom41: 400 dpi crops p. 41 (± fraction display; inline glue(W−,W+) matrix) (est. <100 MB, <10 s).
+- 2026-10-06 08:02:33 — p. 41 written (undersized delimiters).
+- 2026-10-06 08:02:55 — p. 42 written.
+- 2026-10-06 08:03:09 — p. 43 written.
+- 2026-10-06 08:03:22 — p. 44 written (short page 84 %).
+- 2026-10-06 08:03:36 — p. 45 written.
+- 2026-10-06 08:03:49 — p. 46 written.
+- 2026-10-06 08:04:01 — p. 47 written.
+- 2026-10-06 08:04:11 — p. 48 written.
+- 2026-10-06 08:04:21 — p. 49 written.
+- 2026-10-06 08:04:37 — p. 50 written.
+- 2026-10-06 08:05:15 — p. 51 written; all 51 pages looked at (PAGES.md has 0 «NOT YET LOOKED AT»). Found two display runs split across pages (p12/13, p24/25).
+- 2026-10-06 08:05:23 — PAGES.md p. 12 and p. 24 completed with the split display runs. Snapshot scratch/PAGES_snapshot_after_pass1.md.
+- 2026-10-06 08:06:09 — BEFORE run mdvspdf_control: md_vs_pdf.py on an md with 7 874→7 875 (§12.2) and convex→concave (Lemma 6.4); expect the §12.2 multiset to flag 7875 and Lemma 6.4 to be unmatched (est. <100 MB, <10 s).
+- 2026-10-06 08:06:10 — AFTER run mdvspdf_control.
+- 2026-10-06 08:06:48 — BEFORE run xrefparts: part references Lemma x.y(p) exist; code names whole (est. <50 MB, <5 s).
+- 2026-10-06 08:06:48 — AFTER run xrefparts.
+- 2026-10-06 08:07:28 — checks/PDF_DEFECTS_7.md written: 28 kinds (S1, M12, m15), 176 instances.
+- 2026-10-06 08:07:36 — My error E2: total of instances first written as 176, recomputed 170 (python); corrected in PDF_DEFECTS_7.md.
+- 2026-10-06 08:07:45 — Severity counts recomputed from the table: S 1, M 11, m 16 (E3: I had written M 12, m 15).
+- 2026-10-06 08:08:13 — REPORT §3 and §4 written.
+- 2026-10-06 08:08:41 — REPORT §5 written.
+- 2026-10-06 08:08:55 — BEFORE run glyphs: re-run of the glyph check as a script under the watchdog (est. <50 MB, <5 s).
+- 2026-10-06 08:08:56 — AFTER run glyphs. NOTE E4: several small inline python3 commands (grep-like inspections: number-set listing, formula-initial classification, bbox debugging of single lines, numbered-list check, first glyph check) were run outside vigia.sh; recorded in REPORT §8.
+- 2026-10-06 08:09:24 — Item 2.5-bis written (left-list incomplete: 7 points). SEALED outcomes filled: 14 hits, 6 failures.
+- 2026-10-06 08:09:36 — STATE: Part 3 finished; ESTADO updated. BEGIN Part 4: opening material/read_after/ for the first time (§2 and §3 are written).
+- 2026-10-06 08:09:51 — REPORT §0 drafted (before read_after): HOLDS WITH GAPS / NO, 28 kinds, 170 instances / AFTER CORRECTIONS.
+- 2026-10-06 08:10:21 — Part 4: read cold_reading_6/checks/PDF_DEFECTS.md (GD1–GD32). Now reading its PAGES.md.
+- 2026-10-06 08:11:16 — Read reading 6 PAGES.md whole; compared its page items with v5 (notes to REPORT §6). Now REPORT_COLD_6.md.
+- 2026-10-06 08:11:29 — Read REPORT_COLD_6 §0, §3–§5. Now reading its scripts lines2.py, pdfcheck.py, stmt_cmp.py, xref2.py, apos.py, codenames.py, accents.py.
+- 2026-10-06 08:11:58 — Copied reading 6 scripts unchanged to scratch/r6run/scratch/ (md5 checked). BEFORE run r6_tools_v5: lines2, pdfcheck, stmt_cmp (+control), xref2 (+control), apos, accents, codenames on v5 (est. <300 MB, <60 s).
+- 2026-10-06 08:12:00 — AFTER run r6_tools_v5 (logs/r6_*.log).
+- 2026-10-06 08:12:29 — reading 6 tools on v5 reproduce the author's §5 figures (lines2 2 lines ≥2×, 55 >1.5×; stmt_cmp 27/75, control 28; xref2 0/640; apos 0; codenames 0/12; pdfcheck 74 hyphens 0 flagged) — limits noted. Now the builder.
+- 2026-10-06 08:13:32 — Builder read: md2html_v5.py header and render_list (rule (52) applied to ordered lists: cause of PD1), phtml.py header and G19 short_groups (limit counts len+1 per atom). Now author_checks.
+- 2026-10-06 08:13:43 — BEFORE run author_fill: author's fill.py on v5, full output and the head -12 of allchecks.sh (est. <100 MB, <20 s).
+- 2026-10-06 08:13:44 — AFTER run author_fill.
+- 2026-10-06 08:13:51 — BEFORE run author_loose2: author's loose2.py on v5 (est. <100 MB, <10 s).
+- 2026-10-06 08:13:51 — AFTER run author_loose2.
+- 2026-10-06 08:15:54 — REPORT §6 written (6.1 GD table and page items; 6.2 reading-6 scripts on v5; 6.3 builder rules; 6.4 author's checks: fill.py output cut by head -12; 6.5 gates).
+- 2026-10-06 08:16:29 — §6.1 loose-line sentence made exact with ratios (11 at ≥1.6×, 3 at 1.3–1.5×); PAGES.md header corrected for lines called loose by eye at 1.3–1.5× (E5).
+- 2026-10-06 08:17:25 — Counts corrected (E6): PD25 55 lines (10 at ≥2×), PD23 +1 (p. 43), total 172; REPORT §0, §2.5-bis, §3, §5 and PAGES p. 43 updated.
+- 2026-10-06 08:17:40 — STATE: Part 4 finished; ESTADO updated. BEGIN Part 5.
+- 2026-10-06 08:18:11 — §0 note, item 2.3 verdict and §9 written.
+- 2026-10-06 08:19:16 — BEGIN §10: md5 of every file I wrote (checks/, logs/, scratch/, ESTADO.md) via vigia.sh; estimate < 50 MB, < 10 s.
+- 2026-10-06 08:20:24 — END §10: md5 list in scratch/md5_final.txt (74 lines, logs/md5_final.log VIGIA-FIN-OK, peak 2 MB, 0 s); §10 table written; §8 order E5/E6 fixed. Report final: 342 lines.
+- 2026-10-06 08:20:27 — REPORT_COLD_7.md listo md5 e20806b86ed82eabdc8a055ac5ed07c6

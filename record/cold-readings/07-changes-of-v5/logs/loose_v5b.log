@@ -1,0 +1,57 @@
+justified lines: 952   median stretched space: 3.47 pt
+  lines with s >= 1.4 x median (4.86 pt): 92
+  lines with s >= 1.6 x median (5.55 pt): 48
+  lines with s >= 1.8 x median (6.25 pt): 23
+  lines with s >= 2.0 x median (6.94 pt): 9
+  lines with s >= 2.5 x median (8.68 pt): 1
+text pairs with a gap >= 15 pt (an object between two words, e.g. a matrix): 0
+-----
+14.37 pt (4.14x) p11 y=228  formula (𝑠) (𝑟) min(𝑟,𝑠) (𝑟−𝑗) (𝑠−𝑗) (K)
+ 8.20 pt (2.36x) p31 y=150  text    is ≤ 𝑔(𝑛 − 𝑖 + 1) ≤ 𝐺 (Proposition 9.6). Shift 1 (the family 𝑛 − 2, where 𝜆 + 1 = 𝑛 − 1): by
+ 7.90 pt (2.28x) p11 y=331  text    grading for any integer 𝑐 ≥ every weight of 𝑋 with 𝑐 ≡ the weights (mod 2): the floor of a weight vector of
+ 7.28 pt (2.10x) p6  y=600  text    the proof of [GMMY24, Proposition 2.5], and it is the Laplacian analogue of [CSX17, §5]).
+ 7.26 pt (2.09x) p26 y=324  text    (b) 𝑇 = 1, sat = 1, 𝐽′ ≡ 0: the boundary is the middle of the sequence, and 𝑋 1 (𝐼′) = 𝑦 ˆ ′(𝐼′) +
+ 7.17 pt (2.07x) p34 y=132  formula Modulo 𝜏 𝑖 , 𝑔 ≡ 1 + 𝜏 𝑀 , so 𝑋(𝜆, 𝑖) ≅ 𝑀/((1 + 𝜏 𝑀 ) 2 − 1)𝑀 = coker(𝜏 𝑀 (𝜏 𝑀 + 2)). With 𝐽 = 𝐷 + 𝑖 and
+ 7.04 pt (2.03x) p31 y=212  text    max(𝜑(𝑛 + 1 − 2 𝑡 1 ) − 2 𝑡 1 , 𝐴 0 ), where 𝐴 0 := max 2≤𝑙≤𝑠 𝜑(𝑌 𝑙 ) ≤ 𝐺 (𝐴 0 = −∞ if 𝑠 < 2). So the factors
+ 7.02 pt (2.02x) p4  y=572  text    𝜆 = 6 (7 = 4 + 2 + 1, 𝑘 = 2, 𝐼 = {0, 1}, ℎ 0 = ℎ 1 = 1), shift 0: small clocks {1: 4}; raw clocks of
+ 6.94 pt (2.00x) p49 y=439  text    §12.2 gained the two rows of the fifth reader; and the row of the fourth reader’s check of
+ 6.63 pt (1.91x) p19 y=694  text    By Lemma 5.1(a), 𝛿(Δ) = 𝐺(𝑎) − 𝐺(𝑏) + 𝛾(Δ) with 𝐺(𝐸) := ∑ 𝑡∈𝐸 (ℎ 𝑡 − 1). Since 𝜅(𝜇, 𝑜 𝐸 ) = 𝑠 2 (𝜇) + |𝐸| −
+ 6.63 pt (1.91x) p37 y=84   text    The final matrix of Σ is known. By Lemma 10.6(b), 𝑀 𝑤 (Σ) = 𝜂 · 𝑀 𝑤 (𝐹 + 𝜂 −1 𝜋(𝐷)), and the proof of
+ 6.59 pt (1.90x) p29 y=415  text    Proof. (a) 𝜓(𝑃 𝑙 ) = ∑ 𝑗≤𝑙 (𝑡 𝑗+1 − 𝑡 𝑗 ) − 𝑜 𝑃 𝑙 = 𝑡 𝑙+1 − 𝑡 1 − 𝑜 𝑃 𝑙 , and 𝜑(𝜆 + 1) = 𝜆 + 1 + 𝑡 1 . (b) Giv
+ 6.59 pt (1.90x) p17 y=298  text    move ℎ = 0, 1, …, 𝑘 − 1 the rank is 2 𝑘+|𝐼|−ℎ ; the factors of move 0 are trivial, and move 𝑎 ≥ 1 gives
+ 6.52 pt (1.88x) p37 y=403  text    Theorem 10.12 (rigidity). If the dance of Ξ along 𝑤 is clean, then 𝑀 𝑤 (Ξ) = 𝑀 𝑤 (Σ) ∘ (1 + 𝐸′) with
+ 6.49 pt (1.87x) p48 y=64   text    instances that read the chains, and then the whole text, cold, with no access to the audits
+ 6.45 pt (1.86x) p41 y=64   text    Proof. Put 𝑤(𝑑) := 𝑣 2 (4(𝑑 + 𝑐)) − 1 = 1 + 𝑣 2 (𝑑 + 𝑐) ≥ 1 and 𝑊[𝑎, 𝑏] := ∑ 𝑏𝑑=𝑎 𝑤(𝑑). As in Corollary 10.9,
+ 6.41 pt (1.85x) p42 y=200  text    with 𝑊 ± = ±(𝐼 − 𝑀 𝑤 (·)𝑁 ± ) −1 . The set 2 · Mat(ℤ 2 ) is closed, so at 𝑐 = 0 the products 𝑀 𝑤 (Ψ 0 )𝑁 + and
+ 6.34 pt (1.83x) p17 y=690  formula where 𝑐 (ℎ) = ∑ Δ 𝑐 (ℎ) Δ 𝑥 Δ ∈ ℚ[𝑥 𝑡 : 𝑡 ∈ 𝐼 <ℎ ]/(𝑥 2 𝑡 ) satisfies 𝑐 (0) = 1 and 𝑐 (ℎ+1) = −(𝑐 (ℎ) ) 2 /2 −
+ 6.34 pt (1.83x) p42 y=718  text    Syl 2 𝐾(𝑄 𝑏 □ 𝐶 𝑎 ), although the graphs are not isomorphic and the odd parts differ; and that
+ 6.29 pt (1.81x) p40 y=356  text    Lemma 10.18 (modulo 2). Let 𝐺, 𝐺′ ∈ 𝒯 0 both satisfy (a) and (b) of Theorem 10.15, and suppose
+ 6.29 pt (1.81x) p10 y=234  text    formula 𝑣 2 (𝑚!) = 𝑚 − 𝑠 2 (𝑚), the von Staudt–Clausen theorem [vSt40], [Cla40], Strassmann’s theorem
+ 6.29 pt (1.81x) p38 y=174  text    tions modulo 2). Then Θ: 𝒦 → 𝒮 is a ring homomorphism, Θ(𝜗(·−𝑒)) = Θ(𝜗) for every 𝑒 ∈ ℤ 2 , and
+ 6.26 pt (1.80x) p20 y=592  text    𝑑 = 0), and no other window contains 0. The same computation with Legendre’s formula at 𝑖 = 0,
+ 6.16 pt (1.77x) p6  y=142  text    Bai states the first count for the invariant factors of 𝐾(𝑄 𝑛 ). They are all even [Bai03, Lemma 2.2,
+ 6.13 pt (1.77x) p13 y=280  text    ules are simple: Φ(∇ 𝐴 (𝜇)) ⊗ ℚ has the character of Δ(2𝜇 + 1), and by Weyl’s theorem on complete
+ 6.11 pt (1.76x) p47 y=709  text    The mathematics of this paper was developed with extensive use of Claude, an AI system made by
+ 6.08 pt (1.75x) p2  y=692  text    5 except as stated in Appendix A. The changes of version 5 have not yet been read cold (§13,
+ 6.08 pt (1.75x) p7  y=142  text    the raw clocks, and convexity turns it into the partial sum of the pooled clocks (Lemma 6.4).
+ 6.04 pt (1.74x) p31 y=276  text    max(𝜑(𝑛 − 1) − 2, 𝐴 0 ). If 𝑛 ≡ 3 (mod 4) (or 𝐼 = ∅), 𝑉 0 ≤ 𝐺, because 𝑛 + 1 − 2 𝑡 1 ≤ 𝑛 − 3. Also, if
+ 5.97 pt (1.72x) p35 y=421  text    𝐵 = (𝜋 + 𝐾)(2𝐷), 𝐶 = (𝜋 + 𝐾)(2𝐷 + 1) and Dd = 2𝐹, so 𝑆/2 = 𝐹 − 12 (𝜋 + 𝐾)(2𝐷) · (𝜋 + 𝐾)(2𝐷 + 1), which
+ 5.95 pt (1.72x) p22 y=501  text    If 𝑟 * > 𝑟 0 + 𝑝 − 𝜌, then 𝑑(𝑟 1 ) − 𝑑(𝑟 * ) < 𝑌(𝑟 1 ) − 𝑌(𝑟 * ) = (𝑟 1 − 𝑟 * )(𝑞 + 1), so some increment of 𝑑
+ 5.89 pt (1.70x) p9  y=676  text    5. the proof techniques of §4–§7 and §10 as combinations: the dance, the cost form with carries,
+ 5.86 pt (1.69x) p37 y=223  text    Lemma 10.11 (stability). If 𝑣 2 (𝐸 𝑖𝑗 ) ≥ 1 for all 𝑖, 𝑗, then (𝑀 𝑤 (Σ) −1 ∘ (1 + 𝐸)) −1 = 𝑀 𝑤 (Σ) ∘ (1 + 𝐸′) 
+ 5.84 pt (1.68x) p18 y=110  text    𝑜 𝐷 + 2 ℎ , ⋯ + 2 ℎ+1 − 1]; the coupling −𝜋 𝐷′ (2𝑓 + 1) from 𝐷′ to 𝐷′ ∪ {ℎ} and the coupling −𝐾 𝐷𝐷′ (2𝑓 + 1)
+ 5.84 pt (1.68x) p13 y=565  text    tices is a lattice: 𝑋 ⊗ ℚ is semisimple by Weyl’s theorem, so 𝐻 is diagonalizable on it with integer
+ 5.84 pt (1.68x) p39 y=421  text    sary: every even payment system dances clean, whatever its payments (proof of Lemma 10.6(a), with
+ 5.82 pt (1.68x) p35 y=576  text    slot (𝑠, 𝐶) with 𝑣 = 1; and the split move is clean, because its pivot block is the one eliminated in
+ 5.80 pt (1.67x) p10 y=643  text    𝑠 𝑆 := ∏ 𝑖∈𝑆 𝑠 𝑖 . The elements 𝑠 𝑆 form a ℤ‑basis of 𝑅 (the change of basis from {𝑥 𝑆 } is unitriangular for
+ 5.79 pt (1.67x) p47 y=627  text    has a written proof that was re-derived by readers other than its author. That is not a substitute for
+ 5.77 pt (1.66x) p9  y=743  text    McDonald and Yuen determined the 𝑛 − 1 largest factors and posed the conjectures we prove; their
+ 5.77 pt (1.66x) p40 y=649  text    only if 𝑈 ≡ 𝑈′ (mod 2); its pivot glue(𝑃 𝑈 , 𝑃 𝑈′ ) is then invertible over ℤ 2 ; and its Schur complement
+ 5.75 pt (1.66x) p16 y=575  text    Proof. The formulas for 𝐹 follow from Δ(𝐹) = 𝐹 ⊗ 1 + 1 ⊗ 𝐹 and §3.1: for instance 𝐹𝐴 𝑛 = 𝑏 1 ⊗ 𝑏 0 𝑛 +
+ 5.71 pt (1.64x) p38 y=568  text    the monomials 𝜇 = 𝐹 (𝑞) 𝐸 Δ , and 𝜇 2 = 𝐶(2𝑞, 𝑞)𝐹 (2𝑞) 𝐸 2Δ = 0 unless 𝜇 = 1 (𝐶(2𝑞, 𝑞) is even for 𝑞 ≥ 1, and
+ 5.67 pt (1.63x) p41 y=203  text    𝔡 1 𝒜𝔡 2 with 𝑣 2 ((𝔡 1 ) 𝐷 ) = −𝑊[0, 𝑜 𝐷 − 1] + 𝑐 0 , 𝑐 0 independent of 𝐷 (as 𝑣 2 (𝜋(𝑑)) = 𝑤(𝑑) + 1). Each t
+ 5.64 pt (1.63x) p30 y=177  text    first half follows 𝑦 𝑗 = max(𝑦 𝑗−1 + 2 𝑡 𝑗 − ℎ 𝑡 𝑗 , 0), where 2 𝑡 𝑗 − ℎ 𝑡 𝑗 = −𝜓 𝑡 𝑗 . Since 𝑘 + 𝐾 − ∑ 𝑗>𝑙 𝜓 
+ 5.64 pt (1.63x) p26 y=449  text    fit(𝑥 𝐻 ) ≥𝑏′∪{𝑐} = (𝑍 2 ) ≥𝑏′∪{𝑐} = fit((𝑥 𝐻 ) ≥𝑏′∪{𝑐} ), and Lemma 7.2(c) gives the cut. It is strict: 𝑏′ ≠ 
+ 5.63 pt (1.62x) p11 y=672  text    Let 𝜄 be the anti-involution of Dist 𝐴 with 𝜄(𝐸 (𝑟) ) = 𝐹 (𝑟) , 𝜄(𝐹 (𝑟) ) = 𝐸 (𝑟) , 𝜄(𝐻) = 𝐻. For a lattice 𝑋 
+ 5.61 pt (1.62x) p48 y=679  text    houses of Theorem 7.8 counted as house-checks, a control announced and not implemented in
+VIGIA-FIN-OK exit=0 pico_kb=6912 t=0s

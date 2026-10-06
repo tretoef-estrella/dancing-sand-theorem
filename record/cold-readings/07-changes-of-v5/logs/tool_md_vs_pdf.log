@@ -1,0 +1,17 @@
+   multiset check §1.0 summary table      : OK
+TABLE §1.0 summary table       md numbers   66, pdf numbers  102: NOT a subsequence; first miss (63, '4', ['2', '2', '2', '1', '5', '4', '9', '3'])
+   multiset check §1.6 notation table     : OK
+TABLE §1.6 notation table      md numbers   63, pdf numbers   78: subsequence OK
+   multiset check §1.7 vocabulary table   : OK
+TABLE §1.7 vocabulary table    md numbers   92, pdf numbers  115: subsequence OK
+   multiset check §12.1 table             : OK
+TABLE §12.1 table              md numbers  201, pdf numbers  226: NOT a subsequence; first miss (68, '64', ['0', '7', '10', '5', '7', '64', '12', '1', '2', '1638'])
+   multiset check §12.2 table             : OK
+TABLE §12.2 table              md numbers  292, pdf numbers  298: subsequence OK
+STATEMENT not matched in order: **Lemma 2.1.** In `R`,
+STATEMENT not matched in order: **Corollary 2.3.** If `V^{⊗n} ≅ ⊕_j M_j` as `Dist_A`-modules, then `ℤ_
+STATEMENT not matched in order: **Lemma 9.7 (multiplicities).** `m_n(n) = 1`; `m_{n−2}(n) = n − 1 − [n
+STATEMENT not matched in order: **Lemma 10.11 (stability).** If `v_2(E_{ij}) ≥ 1` for all `i, j`, then
+statements checked: 68 not matched: 4
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=7312 t=0s

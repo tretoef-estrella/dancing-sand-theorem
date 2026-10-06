@@ -1,0 +1,180 @@
+/opt/homebrew/bin/pdftoppm
+/opt/homebrew/bin/pdftotext
+/opt/homebrew/bin/pdffonts
+/opt/homebrew/bin/pdfinfo
+/usr/bin/python3
+pdftoppm version 26.09.0
+Title:           The Dancing Sand Theorem
+Subject:         The 2-part of the sandpile group of the hypercube, for every n
+Author:          Rafael Amichis Luengo
+Creator:         Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36
+Producer:        Skia/PDF m154
+CreationDate:    Mon Oct  5 23:14:29 2026 CEST
+ModDate:         Mon Oct  5 23:14:29 2026 CEST
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          yes
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           51
+Encrypted:       no
+Page size:       594.96 x 841.92 pts (A4)
+Page rot:        0
+File size:       4950022 bytes
+Optimized:       no
+PDF version:     1.4
+-----
+-----
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+AAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes      4  0
+BAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes      5  0
+BAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes      6  0
+BAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes      7  0
+CAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes      8  0
+CAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes      9  0
+DAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     10  0
+DAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     11  0
+DAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     12  0
+EAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     13  0
+EAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     14  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     15  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     16  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     17  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     18  0
+CAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     19  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     20  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     21  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     22  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     23  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     24  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     25  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     26  0
+HAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     29  0
+EAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     30  0
+IAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     31  0
+IAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     32  0
+IAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     33  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     34  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     35  0
+JAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     36  0
+JAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     37  0
+KAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     38  0
+KAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     39  0
+KAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     40  0
+LAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     41  0
+LAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     42  0
+MAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     43  0
+LAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     44  0
+LAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     45  0
+LAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     46  0
+MAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     47  0
+LAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     48  0
+LAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     49  0
+LAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     50  0
+MAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     51  0
+LAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     52  0
+NAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     53  0
+MAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     54  0
+NAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     55  0
+MAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     56  0
+JAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     57  0
+DAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     58  0
+OAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     61  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     62  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     63  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     64  0
+PAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     65  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     66  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     67  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     68  0
+CAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     71  0
+PAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     72  0
+OAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     73  0
+OAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     74  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     75  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     76  0
+OAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     77  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     78  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     79  0
+QAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     82  0
+QAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     83  0
+JAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     88  0
+LAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     89  0
+LAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     90  0
+MAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     91  0
+LAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     92  0
+KAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     93  0
+LAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     94  0
+RAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    101  0
+SAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    102  0
+TAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes    103  0
+TAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes    104  0
+TAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes    105  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    108  0
+IAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes    109  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    112  0
+UAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    115  0
+VAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    116  0
+OAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    117  0
+WAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    124  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    131  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    138  0
+RAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    141  0
+DAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes    142  0
+EAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes    145  0
+DAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes    152  0
+CAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes    155  0
+OAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    161  0
+TAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes    170  0
+XAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    175  0
+XAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    176  0
+XAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    177  0
+YAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    180  0
+XAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    183  0
+XAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    184  0
+UAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    189  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    192  0
+ZAAAAA+Menlo-Regular                 CID TrueType      Identity-H       yes yes yes    195  0
+ABAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    198  0
+FAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    205  0
+BBAAAA+Menlo-Regular                 CID TrueType      Identity-H       yes yes yes    208  0
+MAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    209  0
+KAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes    212  0
+CBAAAA+STIXTwoText                   Type 3            Custom           yes yes yes    225  0
+CBAAAA+STIXTwoText                   Type 3            Custom           yes yes yes    226  0
+CBAAAA+STIXTwoText                   Type 3            Custom           yes yes yes    227  0
+DBAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes    228  0
+DBAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes    229  0
+DBAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes    230  0
+EBAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    231  0
+CBAAAA+STIXTwoText                   Type 3            Custom           yes yes yes    232  0
+EBAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    233  0
+FBAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    234  0
+FBAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    235  0
+EBAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    236  0
+EBAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes    237  0
+-----
+Title:           The Dancing Sand Theorem
+Subject:         The 2-part of the sandpile group of the hypercube, for every n
+Author:          Rafael Amichis Luengo
+Creator:         Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36
+Producer:        Skia/PDF m154
+CreationDate:    Mon Oct  5 20:30:50 2026 CEST
+ModDate:         Mon Oct  5 20:30:50 2026 CEST
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          yes
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           49
+Encrypted:       no
+Page size:       594.96 x 841.92 pts (A4)
+Page rot:        0
+File size:       4797996 bytes
+Optimized:       no
+VIGIA-FIN-OK exit=0 pico_kb=16768 t=0s

@@ -1,0 +1,585 @@
+11: LETTER Q in `K(Q_n)`
+11: LETTER Q in `Q_n`
+11: LETTER Q in `K(Q_n)`
+11: LETTER Q in `Q_n/⟨(1,…,1)⟩`
+11: LETTER Q in `2·Syl_2 K(Q_n)`
+19: LETTER Q in `K(Q_n)`
+19: LETTER Q in `Q_n/⟨𝟙⟩`
+23: LETTER Q in `Syl_2 K(Q_n) ⊕ ℤ_2 ≅ ⊕_λ X(λ, (n−λ)/2)^{m_λ(n)}`
+26: LETTER Q in `Syl_2 K̄(n) ≅ 2·Syl_2 K(Q_n)`
+26: LETTER Q in `Syl_2 K(Q_n) ≅ (ℤ/2)^{a_n} ⊕ (Syl_2 K̄(n) with every exponent raised by one)`
+29: LETTER Q in `Syl_2 K(Q_n)`
+30: LETTER Q in `Syl_2 K(Q_{2^e}) ≅ Syl_2 K(Q_{2^e−1})^2 ⊕ ℤ/2^{2^e+e−1}`
+30: LETTER Q in `Syl_2 K(Q_{2^e}) ≅ Syl_2 K(Q_{2^e−1})^2 ⊕ ℤ/2^{2^e+e−1}`
+36: LETTER Q in `Q_n`
+36: LETTER Q in `K(Q_n)`
+38: LETTER Q in `K(Q_n)`
+38: LETTER Q in `Syl_p K(Q_n) ≅ Syl_p ⊕_{j=1}^{n} (ℤ/j)^{C(n,j)}`
+38: LETTER Q in `Q_n`
+71: LETTER Q in `Syl_2 K(Q_n) ⊕ ℤ_2 ≅ ⊕_{1 ≤ λ ≤ n, λ ≡ n (mod 2)} X(λ, (n − λ)/2)^{m_λ(n)}`
+81: LETTER Q in `Syl_2 K(Q_6) = {1: 4} ⊕ {6: 2, 3: 1} ⊕ 4·{1: 2, 6: 2} ⊕ 4·{5: 1, 2: 1} = {1: 12, 2: 4, 3: 1, 5: 4, 6: 10}`
+89: LETTER Q in `Q_n/⟨𝟙⟩`
+91: LETTER F in `FQ_m`
+91: LETTER Q in `Q_m`
+91: LETTER Q in `Q_n/⟨𝟙⟩`
+91: LETTER F in `FQ_{n−1}`
+94: LETTER Q in `Syl_2 K̄(n) ≅ 2·Syl_2 K(Q_n)`
+96: LETTER Q in `Syl_2 K(Q_n) ≅ (ℤ/2)^{a_n} ⊕ (Syl_2 K̄(n) with every exponent raised by one)`
+98: LETTER Q in `K(Q_n)`
+102: LETTER Q in `Syl_2 K(Q_5) = {1: 6, 3: 4, 4: 1, 6: 4}`
+106: LETTER Q in `Q_2/⟨𝟙⟩`
+108: LETTER Q in `Q_n/⟨𝟙⟩`
+108: LETTER Q in `K(Q_n)`
+108: LETTER Q in `Syl_2 K(Q_n)`
+112: LETTER Q in `Syl_2 K(Q_n)`
+114: LETTER Q in `K(Q_n)`
+114: LETTER Q in `Q_n`
+114: LETTER Q in `Syl_2 K(Q_n)`
+116: LETTER Q in `c_1(Q_n) ≥ c_2(Q_n) ≥ ⋯`
+116: LETTER Q in `c_1(Q_n) ≥ c_2(Q_n) ≥ ⋯`
+116: LETTER Q in `Syl_2 K(Q_n)`
+116: LETTER Q in `c_i(Q_n)`
+116: LETTER Q in `K(Q_n)`
+116: LETTER Q in `c_i(Q_n)`
+129: LETTER Q in `Syl_2 K(Q_{2^e}) ≅ Syl_2 K(Q_{2^e − 1})^2 ⊕ ℤ/2^{2^e + e − 1}`
+129: LETTER Q in `Syl_2 K(Q_{2^e}) ≅ Syl_2 K(Q_{2^e − 1})^2 ⊕ ℤ/2^{2^e + e − 1}`
+135: LETTER F in `σ = F + n − H`
+138: OUTSIDE-CODE F : ...d clocks (Lemma 6.4). Theorem F shows that every -matching co...
+139: LETTER F in `±exp(F)`
+139: LETTER F in `Σ ζ_m F^{(m)}`
+145: LETTER Q in `Q_n`
+145: LETTER Q in `K(Q_n)`
+145: LETTER Q in `Q_n/⟨𝟙⟩`
+153: LETTER F in `F`
+153: LETTER F in `F^{(r)}`
+157: LETTER F in `F + 2^α(D + i)`
+172: LETTER F in `F + λ − H + 2i`
+175: LETTER F in `F`
+176: LETTER F in `F`
+186: OUTSIDE-CODE F : ... final matrix (Theorems O and F); this «floor» is not the gra...
+189: LETTER Q in `Syl_2 K(Q_n)`
+193: LETTER F in `F^{(m)}`
+198: LETTER F in `F^2`
+198: LETTER F in `2F`
+203: LETTER Q in `K(Q_n)`
+207: OUTSIDE-CODE F : ...th carries, Theorems O, U and F, the ring  with Theorem 10.15...
+209: LETTER Q in `Syl_2 K(Q_n)`
+219: LETTER Q in `Q_n`
+221: LETTER Q in `Q_n`
+221: LETTER Q in `coker(σ on R) ≅ ℤ ⊕ K(Q_n)`
+229: LETTER Q in `ℤ_2 ⊕ Syl_2 K(Q_n) ≅ coker(σ on R ⊗ ℤ_2)`
+233: LETTER F in `E, F, H`
+233: LETTER F in `[H, F] = −2F`
+233: LETTER F in `[H, F] = −2F`
+233: LETTER F in `[E, F] = H`
+233: LETTER F in `F^{(r)} = F^r/r!`
+233: LETTER F in `F^{(r)} = F^r/r!`
+234: LETTER F in `E^{(s)} F^{(r)} = Σ_{j=0}^{min(r,s)} F^{(r−j)} C(H − r − s + 2j, j) E^{(s−j)}`
+234: LETTER F in `E^{(s)} F^{(r)} = Σ_{j=0}^{min(r,s)} F^{(r−j)} C(H − r − s + 2j, j) E^{(s−j)}`
+235: LETTER F in `Δ(F^{(r)}) = Σ_{a+b=r} F^{(a)} ⊗ F^{(b)}`
+235: LETTER F in `Δ(F^{(r)}) = Σ_{a+b=r} F^{(a)} ⊗ F^{(b)}`
+235: LETTER F in `Δ(F^{(r)}) = Σ_{a+b=r} F^{(a)} ⊗ F^{(b)}`
+237: LETTER F in `F`
+239: LETTER F in `F b_0 = b_1`
+239: LETTER F in `F b_1 = E b_0 = 0`
+239: LETTER F in `E^{(r)} = F^{(r)} = 0`
+241: LETTER F in `F`
+242: LETTER F in `σ = F + n − H`
+244: LETTER F in `F = Σ_j 1 ⊗ ⋯ ⊗ F ⊗ ⋯ ⊗ 1`
+244: LETTER F in `F = Σ_j 1 ⊗ ⋯ ⊗ F ⊗ ⋯ ⊗ 1`
+246: LETTER Q in `ℤ_2 ⊕ Syl_2 K(Q_n) ≅ ⊕_j coker(F + n − H on M_j)`
+246: LETTER F in `ℤ_2 ⊕ Syl_2 K(Q_n) ≅ ⊕_j coker(F + n − H on M_j)`
+248: LETTER F in `σ = F + n − H`
+248: LETTER F in `F`
+252: LETTER F in `e_r := F^{(r)} v`
+253: LETTER F in `F e_r = (r + 1) e_{r+1}`
+254: LETTER F in `ι(E^{(r)}) = F^{(r)}`
+254: LETTER F in `ι(F^{(r)}) = E^{(r)}`
+255: LETTER F in `F w_r = (λ − r) w_{r+1}`
+260: LETTER F in `F^{(r)}(v ⊗ b_0) = F^{(r)}v ⊗ b_0 + F^{(r−1)}v ⊗ b_1`
+260: LETTER F in `F^{(r)}(v ⊗ b_0) = F^{(r)}v ⊗ b_0 + F^{(r−1)}v ⊗ b_1`
+260: LETTER F in `F^{(r)}(v ⊗ b_0) = F^{(r)}v ⊗ b_0 + F^{(r−1)}v ⊗ b_1`
+260: LETTER F in `{F^{(r)}v ⊗ b_e}`
+260: LETTER F in `F^{(s)}v ⊗ b_1`
+260: LETTER F in `F^{(m)}v ⊗ b_1 = F^{(m+1)}(v ⊗ b_0) ∈ X_1`
+260: LETTER F in `F^{(m)}v ⊗ b_1 = F^{(m+1)}(v ⊗ b_0) ∈ X_1`
+260: LETTER F in `F^{(s)}(v ⊗ b_1) = F^{(s)}v ⊗ b_1`
+260: LETTER F in `F^{(s)}(v ⊗ b_1) = F^{(s)}v ⊗ b_1`
+260: LETTER F in `F^{(r)} b_1 = 0`
+268: LETTER F in `F(b_0 n) = b_1 n`
+268: LETTER F in `F(b_1 n) = 2 b_0 (F n)`
+268: LETTER F in `F(b_1 n) = 2 b_0 (F n)`
+270: LETTER F in `Ω := 4FE + (H + 1)^2`
+270: LETTER F in `Ω − H^2 = 4FE + 2w + 1`
+275: LETTER F in `F^{(2s)}(b_e n) = b_e F^{(s)} n /(2s − 1)!!`
+275: LETTER F in `F^{(2s)}(b_e n) = b_e F^{(s)} n /(2s − 1)!!`
+275: LETTER F in `F^{(2s+1)}(b_0 n) = b_1 F^{(s)} n /(2s + 1)!!`
+275: LETTER F in `F^{(2s+1)}(b_0 n) = b_1 F^{(s)} n /(2s + 1)!!`
+276: LETTER F in `F^{(2s+1)}(b_1 n) = ((2s + 2)/(2s + 1)!!)·b_0 F^{(s+1)} n`
+276: LETTER F in `F^{(2s+1)}(b_1 n) = ((2s + 2)/(2s + 1)!!)·b_0 F^{(s+1)} n`
+277: LETTER F in `F^{(2s)}`
+277: LETTER F in `F^{(s)}`
+280: LETTER F in `EF(b_0 n) = E(b_1 n) = b_0(4FE + 2w + 1)n`
+280: LETTER F in `FE(b_0 n) = F(2 b_1 E n) = 4 b_0 FE n`
+280: LETTER F in `FE(b_0 n) = F(2 b_1 E n) = 4 b_0 FE n`
+280: LETTER F in `FE(b_0 n) = F(2 b_1 E n) = 4 b_0 FE n`
+280: LETTER F in `[E, F] = 2w + 1`
+280: LETTER F in `FE(b_1 n) = b_1(4FE + 2w + 1)n`
+280: LETTER F in `FE(b_1 n) = b_1(4FE + 2w + 1)n`
+280: LETTER F in `[E, F] = 4(EF − FE) − 2w − 1 = 4w − 2w − 1 = 2w − 1`
+280: LETTER F in `[E, F] = 4(EF − FE) − 2w − 1 = 4w − 2w − 1 = 2w − 1`
+280: LETTER F in `F`
+281: LETTER F in `F^{2s}(b_0 n) = 2^s b_0 F^s n`
+281: LETTER F in `F^{2s}(b_0 n) = 2^s b_0 F^s n`
+281: LETTER F in `F^{2s+1}(b_0 n) = 2^s b_1 F^s n`
+281: LETTER F in `F^{2s+1}(b_0 n) = 2^s b_1 F^s n`
+281: LETTER F in `F^{2s}(b_1 n) = 2^s b_1 F^s n`
+281: LETTER F in `F^{2s}(b_1 n) = 2^s b_1 F^s n`
+281: LETTER F in `F^{2s+1}(b_1 n) = 2^{s+1} b_0 F^{s+1} n`
+281: LETTER F in `F^{2s+1}(b_1 n) = 2^{s+1} b_0 F^{s+1} n`
+285: LETTER F in `F^{(2s)}`
+285: LETTER F in `1 ⊗ F^{(s)}`
+285: LETTER F in `F^{(2s+1)}(b_0 n) = b_1 F^{(s)}n`
+285: LETTER F in `F^{(2s+1)}(b_0 n) = b_1 F^{(s)}n`
+285: LETTER F in `F^{(2s+1)}(b_1 n) = 0`
+286: LETTER F in `F(b_0 w_s) = b_1 w_s`
+286: LETTER F in `F(b_1 w_s) = 2(μ − s) b_0 w_{s+1}`
+286: LETTER F in `F w'_R = (2μ + 1 − R) w'_{R+1}`
+286: LETTER F in `F`
+286: LETTER F in `F`
+286: LETTER F in `E F x = F E x + H x`
+286: LETTER F in `E F x = F E x + H x`
+286: LETTER F in `F e_r = (r+1)e_{r+1}`
+292: LETTER F in `F^{(r)}x = 0`
+292: LETTER F in `f(e_r) := F^{(r)}x`
+293: LETTER F in `F^{(t)}f(e_r) = C(r+t, t) F^{(r+t)}x = f(F^{(t)}e_r)`
+293: LETTER F in `F^{(t)}f(e_r) = C(r+t, t) F^{(r+t)}x = f(F^{(t)}e_r)`
+293: LETTER F in `F^{(t)}f(e_r) = C(r+t, t) F^{(r+t)}x = f(F^{(t)}e_r)`
+295: LETTER F in `E^{(s)}F^{(r)}x = C(λ − r + s, s) F^{(r−s)} x`
+295: LETTER F in `E^{(s)}F^{(r)}x = C(λ − r + s, s) F^{(r−s)} x`
+322: LETTER F in `F`
+322: LETTER F in `b_0 b_1 = F^{(2)}(b_0 b_0)`
+342: LETTER F in `σ^{(α)}_i := F + 2^α(D + i)`
+343: LETTER F in `σ^{(1)}_i = F + λ − H + 2i`
+345: LETTER Q in `ℤ_2 ⊕ Syl_2 K(Q_n) ≅ ⊕_λ X^{(1)}(λ, (n − λ)/2)^{m_λ(n)}`
+348: LETTER F in `σ = F + n − H = F + (λ − H) + (n − λ) = σ^{(1)}_{(n−λ)/2}`
+348: LETTER F in `σ = F + n − H = F + (λ − H) + (n − λ) = σ^{(1)}_{(n−λ)/2}`
+356: LETTER F in `F`
+357: LETTER F in `G(x ι_{s'}) = (F + π_{s'}(D)) x ι_{s'} + Σ_{s > s'} K_{ss'}(D) x ι_s`
+368: LETTER F in `F(b_0 n) = b_1 n`
+368: LETTER F in `F(b_1 n) = 2 b_0 (F n)`
+368: LETTER F in `F(b_1 n) = 2 b_0 (F n)`
+376: LETTER F in `F A_n = B_n + 2 C_n`
+376: LETTER F in `F B_n = 2 A_{Fn}`
+376: LETTER F in `F C_n = Dd_n`
+376: LETTER F in `F Dd_n = 2 C_{Fn}`
+382: LETTER F in `F`
+382: LETTER F in `Δ(F) = F ⊗ 1 + 1 ⊗ F`
+382: LETTER F in `Δ(F) = F ⊗ 1 + 1 ⊗ F`
+382: LETTER F in `Δ(F) = F ⊗ 1 + 1 ⊗ F`
+382: LETTER F in `F A_n = b_1 ⊗ b_0 n + b_0 ⊗ b_1 n = B_n + 2C_n`
+382: LETTER F in `F B_n = b_1 ⊗ b_1 n + 2 b_0 ⊗ b_0 Fn − b_1 ⊗ b_1 n`
+394: LETTER F in `F = 0`
+430: LETTER Q in `ℤ_2 ⊕ Syl_2 K(Q_n)`
+510: LETTER F in `F_r := {D_0, …, D_{r−1}} = {I ∖ D : D ∈ L_r}`
+524: LETTER F in `β_r: L_r → F_r`
+532: LETTER F in `v_2(det M[L_r, F_r]) = r(αK + κ(m, K)) + U(r)`
+534: LETTER F in `β: L_r → F_r`
+535: LETTER F in `Σ_{D∈L_r} R_m(D) − Σ_{E∈F_r} R_{m+K}(E) + Σ_D γ(D ∖ β(D))`
+575: LETTER Z in `Z_1 = fit(x_{<N'})`
+576: LETTER Z in `fit(x) = [max(Z_1, 0), min(Z_2, 0)]`
+576: LETTER Z in `fit(x) = [max(Z_1, 0), min(Z_2, 0)]`
+577: LETTER Z in `Z_2`
+577: LETTER Z in `Z_1`
+577: LETTER Z in `Z_2 = fit(x_{≥N'})`
+579: LETTER Z in `Z_1`
+579: LETTER Z in `P = {Z_1 ≤ 0}`
+579: LETTER Z in `Z_1`
+579: LETTER Z in `Z_1`
+579: LETTER Z in `Z_1`
+579: LETTER Z in `Z_1`
+579: LETTER Z in `Z_1 > 0`
+579: LETTER Z in `Z_1 ≤ 0`
+590: LETTER F in `Σ_C w ≤ Σ_{F_r} w`
+590: LETTER F in `F_r = {I ∖ D : D ∈ L_r}`
+590: LETTER F in `Σ_{L_r} v − Σ_{F_r} w = Σ_{L_r} ŷ`
+627: OUTSIDE-CODE F : ...### 7.4 Theorem F...
+629: OUTSIDE-CODE F : ...**Theorem 7.8 (Theorem F, the floor).** For every hous...
+644: LETTER Z in `Z_1`
+644: LETTER Z in `fit(x_H)_{<b} = (Z_1)_{<b}`
+644: LETTER Z in `(Z_1)_{<b} = fit((x_H)_{<b})`
+644: LETTER Z in `fit(x_H) = max(Z_1, 0)`
+644: LETTER Z in `Z_1 = fit(x_{H'}) + d_1`
+644: LETTER Z in `Z_1(b^−) ≥ Z_1(b) + h`
+644: LETTER Z in `Z_1(b^−) ≥ Z_1(b) + h`
+644: LETTER Z in `Z_1(b^−) > 0`
+644: LETTER Z in `max(Z_1, 0)`
+645: LETTER Z in `Z_1 > 0`
+645: LETTER Z in `Z_1`
+645: LETTER Z in `Z_1(I') > 0`
+645: LETTER Z in `min(Z_2({c}), 0) ≤ 0`
+646: LETTER Z in `Z_2`
+646: LETTER Z in `fit(x_H)_{≥ b'∪{c}} = (Z_2)_{≥ b'∪{c}} = fit((x_H)_{≥ b'∪{c}})`
+646: LETTER Z in `fit(x_H) = min(Z_2, 0)`
+646: LETTER Z in `Z_2 = fit(x_{H'}) + d_2`
+646: LETTER Z in `min(Z_2, 0)`
+656: LETTER F in `F_1 := {X_1 ≤ 0}`
+656: LETTER F in `F_2`
+656: LETTER F in `F := F_1 ∪ F_2`
+656: LETTER F in `F := F_1 ∪ F_2`
+656: LETTER F in `F := F_1 ∪ F_2`
+656: LETTER F in `F`
+656: LETTER F in `F_1`
+656: LETTER F in `F`
+657: LETTER F in `c_3 := v'(f) = max_{F_1} v'`
+657: LETTER F in `c_4 := v'(I ∖ f) = min_{F_2} v'`
+658: LETTER F in `F`
+659: LETTER F in `F`
+659: LETTER F in `F`
+659: LETTER F in `F`
+659: LETTER F in `F`
+659: LETTER F in `F_1`
+659: LETTER F in `F_2`
+660: LETTER F in `a ∈ F_2`
+660: LETTER F in `F`
+661: LETTER F in `a ∈ F_1`
+661: LETTER F in `F`
+662: LETTER F in `b ∈ F_1`
+662: LETTER F in `F`
+663: LETTER F in `b ∈ F_2`
+663: LETTER F in `F`
+664: LETTER F in `F`
+664: LETTER F in `F_1`
+664: LETTER F in `F_2`
+664: LETTER F in `F`
+664: LETTER F in `a ∈ F_2`
+664: LETTER F in `b ∈ F_1`
+673: LETTER Z in `Z_1`
+673: LETTER Z in `fit(x_H) = [max(Z_1, 0), min(Z_2, 0)]`
+673: LETTER Z in `fit(x_H) = [max(Z_1, 0), min(Z_2, 0)]`
+680: LETTER F in `F_r`
+680: LETTER F in `F_r`
+685: LETTER Q in `ℤ_2 ⊕ Syl_2 K(Q_n) ≅ ⊕_λ X^{(1)}(λ, (n − λ)/2)^{m_λ(n)}`
+703: LETTER Q in `Syl_2 K(Q_n)`
+744: LETTER Q in `Q_n`
+746: LETTER Z in `Z_1 ≤ 0`
+763: LETTER Q in `Syl_2 K(Q_3) = {1: 1, 3: 2}`
+781: LETTER Q in `Syl_2 K(Q_n) ≅ Syl_2 K(Q_N)^2 ⊕ ℤ/2^{2^e + e − 1}`
+781: LETTER Q in `Syl_2 K(Q_n) ≅ Syl_2 K(Q_N)^2 ⊕ ℤ/2^{2^e + e − 1}`
+790: LETTER F in `a = (−1)^{(n−H)/2} exp(F)`
+790: LETTER F in `exp(F) := Σ_{r≥0} F^{(r)}`
+790: LETTER F in `exp(F) := Σ_{r≥0} F^{(r)}`
+791: LETTER F in `a = (−1)^{D + i} exp(F)`
+793: LETTER F in `g = (−1)^{D_V} exp(F)`
+793: LETTER F in `exp(F) b_0 = b_0 + b_1`
+793: LETTER F in `exp(F) b_1 = b_1`
+793: LETTER F in `Δ(F^{(r)}) = Σ_{a+b=r} F^{(a)} ⊗ F^{(b)}`
+793: LETTER F in `Δ(F^{(r)}) = Σ_{a+b=r} F^{(a)} ⊗ F^{(b)}`
+793: LETTER F in `Δ(F^{(r)}) = Σ_{a+b=r} F^{(a)} ⊗ F^{(b)}`
+793: LETTER F in `exp(F)`
+793: LETTER F in `(−1)^{floor} exp(F)`
+795: LETTER F in `F`
+796: LETTER F in `τ_i := σ^{(1)}_i = F + 2(D + i)`
+796: LETTER F in `a = (−1)^{D+i} exp F`
+804: LETTER Q in `ℤ_2 ⊕ Syl_2 K̄(n) ≅ ⊕_λ (2X)^{m_λ(n)} = 2(ℤ_2 ⊕ Syl_2 K(Q_n)) ≅ ℤ_2 ⊕ 2Syl_2 K(Q_n)`
+804: LETTER Q in `ℤ_2 ⊕ Syl_2 K̄(n) ≅ ⊕_λ (2X)^{m_λ(n)} = 2(ℤ_2 ⊕ Syl_2 K(Q_n)) ≅ ℤ_2 ⊕ 2Syl_2 K(Q_n)`
+805: LETTER Q in `2·Syl_2 K(Q_n)`
+805: LETTER Q in `Syl_2 K(Q_n)`
+811: LETTER F in `Ch := Σ_{s≥0} F^{(s)}/(2s − 1)!!`
+811: LETTER F in `Sh := Σ_{s≥0} F^{(s)}/(2s + 1)!!`
+811: LETTER F in `F = F_N`
+811: LETTER F in `F = F_N`
+811: LETTER F in `u^2 = 2F`
+811: LETTER F in `F^{(s)}/(2s − 1)!! = (2F)^s/(2s)!`
+811: LETTER F in `F^{(s)}/(2s − 1)!! = (2F)^s/(2s)!`
+812: LETTER F in `Σ_c := F + 4(D + c)`
+814: LETTER F in `Ψ_{2c} = 4(D + c) + Σ_{m≥1} η_m F^{(m)}`
+815: LETTER F in `Ψ_{2c−1} = 4(D + c) + Σ_{m≥1} η'_m F^{(m)}`
+816: LETTER F in `u^{2m} = 2^m m! F^{(m)}`
+816: LETTER F in `F`
+816: LETTER F in `F^{(m)}`
+821: LETTER F in `exp(F)(b_0 n) = b_0 Ch(n) + b_1 Sh(n)`
+821: LETTER F in `b_0 F^{(s)} n`
+821: LETTER F in `b_1 F^{(s)}n`
+821: LETTER Q in `[[P, Q], [Q, P]]`
+821: LETTER Q in `[[P, Q], [Q, P]]`
+821: LETTER Q in `Q = (−1)^{j+1} Sh^{−1}`
+821: LETTER Q in `P + Q = Ψ_j`
+822: LETTER F in `G' = F + π'(D)`
+836: LETTER F in `JF = F(J + 1)`
+836: LETTER F in `τ_M(τ_M + 2)/2 = F^{(2)} + 2F(J + 1) + 2J(J + 1)`
+836: LETTER F in `τ_M(τ_M + 2)/2 = F^{(2)} + 2F(J + 1) + 2J(J + 1)`
+840: LETTER Q in `τ_M ↦ P + Q = Ψ_i`
+840: LETTER Q in `τ_M ↦ P − Q = Ψ_{i+1} − 2`
+846: LETTER F in `F^{(m)}`
+848: LETTER F in `x = Σ_{m≥0} x_m(D) F^{(m)}`
+850: LETTER F in `F^{(a)}F^{(b)} = C(a+b, a)F^{(a+b)}`
+850: LETTER F in `F^{(a)}F^{(b)} = C(a+b, a)F^{(a+b)}`
+850: LETTER F in `F^{(a)}F^{(b)} = C(a+b, a)F^{(a+b)}`
+850: LETTER F in `F^{(a)}p(D) = p(D − a)F^{(a)}`
+850: LETTER F in `F^{(a)}p(D) = p(D − a)F^{(a)}`
+850: LETTER F in `F`
+850: LETTER F in `x·v = Σ_m x_m(f + m) F^{(m)} v`
+850: LETTER F in `F^{(m)}`
+852: LETTER F in `F`
+853: LETTER F in `x^{00} = Σ_q x_{2q}(2D) F^{(q)}/(2q − 1)!!`
+853: LETTER F in `x^{11} = Σ_q x_{2q}(2D + 1) F^{(q)}/(2q − 1)!!`
+854: LETTER F in `x^{10} = Σ_q x_{2q+1}(2D + 1) F^{(q)}/(2q + 1)!!`
+854: LETTER F in `x^{01} = Σ_q ((2q + 2)/(2q + 1)!!)·x_{2q+1}(2D) F^{(q+1)}`
+855: LETTER F in `F^{(2q+1)}(b_1 n') = ((2q+2)/(2q+1)!!)·b_0 F^{(q+1)}n'`
+855: LETTER F in `F^{(2q+1)}(b_1 n') = ((2q+2)/(2q+1)!!)·b_0 F^{(q+1)}n'`
+857: LETTER F in `F^{(m)} = 1 ⊗ F^{(m)} + F ⊗ F^{(m−1)}`
+857: LETTER F in `F^{(m)} = 1 ⊗ F^{(m)} + F ⊗ F^{(m−1)}`
+857: LETTER F in `F^{(m)} = 1 ⊗ F^{(m)} + F ⊗ F^{(m−1)}`
+857: LETTER F in `F^{(m)} = 1 ⊗ F^{(m)} + F ⊗ F^{(m−1)}`
+864: LETTER F in `F`
+868: LETTER F in `G = F + π(D) + K(D)`
+868: LETTER F in `Dd = 2F`
+868: LETTER F in `S/2 = F − ½(π + K)(2D)·(π + K)(2D + 1)`
+887: LETTER F in `Ξ^{−1} = Σ_L y_L(D) F^{(L)}`
+892: LETTER F in `Ξ^{−1} in(e_X) = Σ_L y_L(o_X + L) F^{(L)} in(e_X)`
+893: LETTER F in `γ_{YX} := out_Y(F^{(L)} in(e_X))`
+896: LETTER F in `Σ := 2^α(D + c) + ηF`
+896: LETTER F in `Ξ := Σ + Σ_{m≥2} ζ_m(D) F^{(m)}`
+902: LETTER F in `F^{(L)}`
+906: LETTER F in `M_w(Σ) = η·M_w(F + η^{−1}π(D))`
+914: LETTER F in `D ⊇ E_1 ⊇ F_1 ⊇ ⋯ ⊇ E_j ⊇ F_j ⊇ D'`
+914: LETTER F in `D ⊇ E_1 ⊇ F_1 ⊇ ⋯ ⊇ E_j ⊇ F_j ⊇ D'`
+914: LETTER F in `δ(D ∖ E_1) + δ(E_1 ∖ F_1) + 1 + ⋯ + δ(F_j ∖ D') ≥ δ(D ∖ D') + j`
+914: LETTER F in `δ(D ∖ E_1) + δ(E_1 ∖ F_1) + 1 + ⋯ + δ(F_j ∖ D') ≥ δ(D ∖ D') + j`
+918: LETTER F in `M_w(Σ) = η·M_w(F + η^{−1}π(D))`
+918: LETTER F in `coker Σ ≅ coker(F + π(D))`
+918: LETTER F in `η^{−D}(ηF + π(D))η^{D} = F + π(D)`
+918: LETTER F in `η^{−D}(ηF + π(D))η^{D} = F + π(D)`
+930: LETTER F in `F^{(m)}`
+947: LETTER F in `R_𝒮 := 𝒮[F^{(m)} : m ≥ 1][E_t : t ∈ P_h]/(E_t^2)`
+947: LETTER F in `F`
+950: LETTER F in `Θ_h(G) := Σ_{Δ,m} Θ(Γ_{Δ,m}) F^{(m)} E^Δ`
+955: LETTER F in `μ = F^{(q)}E^Δ`
+955: LETTER F in `μ^2 = C(2q, q)F^{(2q)}E^{2Δ} = 0`
+959: LETTER F in `F`
+960: LETTER F in `2^α(D + c) + ηF + Σ_{m≥2} ζ_m F^{(m)}`
+960: LETTER F in `2^α(D + c) + ηF + Σ_{m≥2} ζ_m F^{(m)}`
+965: LETTER F in `F^{(q+1)}`
+967: LETTER F in `F^{(1)}`
+971: LETTER F in `p(D) + u(D)F + Σ_{m≥2} ζ_m F^{(m)}`
+971: LETTER F in `p(D) + u(D)F + Σ_{m≥2} ζ_m F^{(m)}`
+979: LETTER F in `Ξ := 2^α(D + c) + ηF + Σ_{m≥2} ζ_m F^{(m)}`
+979: LETTER F in `Ξ := 2^α(D + c) + ηF + Σ_{m≥2} ζ_m F^{(m)}`
+981: LETTER F in `Σ'_c := 2^α(D + c) + ηF`
+986: LETTER F in `Ψ_j = 4(D + c) + η F + Σ_{m≥2} η_m F^{(m)}`
+986: LETTER F in `Ψ_j = 4(D + c) + η F + Σ_{m≥2} η_m F^{(m)}`
+992: LETTER F in `R_{ℤ/4} := (ℤ/4)[F^{(m)}][E_t]/(E_t^2)`
+1002: LETTER Z in `L^{−1}ZL`
+1002: LETTER Z in `Z`
+1002: LETTER Z in `Z = diag(X, Y)`
+1004: LETTER F in `Ψ := 4(D + c) + ηF + Σ_{m≥2} ζ_m F^{(m)}`
+1004: LETTER F in `Ψ := 4(D + c) + ηF + Σ_{m≥2} ζ_m F^{(m)}`
+1004: LETTER F in `Σ := 4(D + c) + ηF`
+1018: LETTER F in `F`
+1018: LETTER F in `F`
+1025: LETTER F in `F`
+1028: LETTER F in `F`
+1028: LETTER F in `F`
+1040: LETTER Q in `Syl_2 K̄(n) ≅ 2·Syl_2 K(Q_n)`
+1040: LETTER Q in `Syl_2 K(Q_n)`
+1042: LETTER Q in `Syl_2 K(Q_n)`
+1042: LETTER Q in `K(Q_n)`
+1044: LETTER F in `(−1)^{(n−H)/2} exp(F)`
+1044: LETTER F in `F`
+1048: LETTER F in `±exp(F)`
+1049: LETTER Q in `C_b := Q_b/⟨𝟙⟩`
+1049: LETTER Q in `Q_a □ C_b`
+1049: LETTER Q in `Q_n`
+1049: LETTER Q in `Syl_2 K(Q_a □ C_b) ≅ Syl_2 K(Q_b □ C_a)`
+1049: LETTER Q in `Syl_2 K(Q_a □ C_b) ≅ Syl_2 K(Q_b □ C_a)`
+1049: LETTER Q in `2·Syl_2 K(Q_n) ≅ Syl_2 K(Q_a □ C_b)`
+1049: LETTER Q in `2·Syl_2 K(Q_n) ≅ Syl_2 K(Q_a □ C_b)`
+1050: LETTER Q in `0 → K(G^±) → K(Q_n) → K̄(n) → 0`
+1050: LETTER Q in `Q_n → Q_n/⟨𝟙⟩`
+1050: LETTER Q in `Q_n → Q_n/⟨𝟙⟩`
+1050: LETTER Q in `2·Syl_2 K(Q_n)`
+1063: LETTER Q in `Q_n`
+1063: LETTER Q in `Q_n/⟨𝟙⟩`
+1063: LETTER Q in `Q_n/⟨x_1x_2⟩`
+1080: LETTER Q in `Syl_2 K(Q_5) = {1: 6, 3: 4, 4: 1, 6: 4}`
+1088: LETTER Q in `Q_n`
+1089: LETTER Q in `Q_n/⟨x_1x_2⟩`
+1090: LETTER Q in `Q_n/⟨x_1x_2⟩`
+1108: LETTER F in `F^{(2)}`
+1141: OUTSIDE-CODE F : ...lights 1–4: Theorems D, O, U, F and the integer fit). Audited...
+1159: OUTSIDE-CODE Q : ...SX17] D. B. Chandler, P. Sin, Q. Xiang, The Smith group of th...
+1163: OUTSIDE-CODE Z : ... dimensional algebras, *Math. Z.* 212 (1993), 39–60....
+-----
+19: SET ℤ in `ℤ_2`
+23: SET ℤ in `Syl_2 K(Q_n) ⊕ ℤ_2 ≅ ⊕_λ X(λ, (n−λ)/2)^{m_λ(n)}`
+26: SET ℤ in `Syl_2 K(Q_n) ≅ (ℤ/2)^{a_n} ⊕ (Syl_2 K̄(n) with every exponent raised by one)`
+30: SET ℤ in `Syl_2 K(Q_{2^e}) ≅ Syl_2 K(Q_{2^e−1})^2 ⊕ ℤ/2^{2^e+e−1}`
+36: SET ℤ in `ℤ^{V(G)}`
+36: SET ℤ in `ℤ ⊕ K(G)`
+38: SET ℤ in `ℤ/2`
+38: SET ℤ in `Syl_p K(Q_n) ≅ Syl_p ⊕_{j=1}^{n} (ℤ/j)^{C(n,j)}`
+38: SET 𝔽 in `𝔽_2^r`
+44: SET ℤ in `⊕ (ℤ/2^{e_j})^{c_j}`
+44: SET ℤ in `ℤ_2`
+67: SET ℤ in `X(λ, i) := ⊕_{a=1}^{k−1} (ℤ/2^a)^{2^{|I| + k − 1 − a}} ⊕ ⊕_{D ⊆ I} ℤ/2^{ŷ_i(D)}`
+68: SET ℤ in `ℤ/2^∞ := ℤ_2`
+70: SET ℤ in `ℤ_2`
+71: SET ℤ in `Syl_2 K(Q_n) ⊕ ℤ_2 ≅ ⊕_{1 ≤ λ ≤ n, λ ≡ n (mod 2)} X(λ, (n − λ)/2)^{m_λ(n)}`
+89: SET 𝔽 in `𝔽_2^n/⟨𝟙⟩`
+91: SET 𝔽 in `𝔽_2^m`
+96: SET ℤ in `Syl_2 K(Q_n) ≅ (ℤ/2)^{a_n} ⊕ (Syl_2 K̄(n) with every exponent raised by one)`
+98: SET ℤ in `ℤ/2`
+104: SET ℤ in `ℤ/2`
+104: SET ℤ in `Syl_p K̄(n) ≅ Syl_p ⊕_{j even, 2 ≤ j ≤ n} (ℤ/2j)^{C(n,j)}`
+108: SET ℤ in `ℤ/2`
+108: SET ℤ in `ℤ/2`
+108: SET 𝔽 in `𝔽_2`
+108: SET 𝔽 in `𝔽_2`
+112: SET ℤ in `ℤ/2`
+129: SET ℤ in `Syl_2 K(Q_{2^e}) ≅ Syl_2 K(Q_{2^e − 1})^2 ⊕ ℤ/2^{2^e + e − 1}`
+135: SET ℤ in `ℤ[(ℤ/2)^n]`
+135: SET ℤ in `V = ℤ^2`
+135: SET ℤ in `ℤ`
+136: SET ℤ in `ℤ_2`
+136: SET ℤ in `ℤ`
+152: SET ℤ in `R = ℤ[(ℤ/2)^n]`
+154: SET ℤ in `A = ℤ_2`
+164: SET ℤ in `ℤ_2`
+164: SET ℤ in `ℤ_2`
+164: SET ℤ in `ℤ_2`
+173: SET ℤ in `ℤ_2`
+180: SET ℤ in `ℤ/2^e`
+191: SET ℤ in `ℤ_2`
+198: SET ℤ in `ℤ_2`
+198: SET ℤ in `ℤ/2`
+209: SET ℤ in `ℤ_2`
+209: SET ℤ in `ℤ`
+209: SET 𝔽 in `𝔽_2^r`
+209: SET 𝔽 in `𝔽_2`
+219: SET ℤ in `G = (ℤ/2)^n`
+219: SET ℤ in `R := ℤ[G]`
+219: SET ℤ in `ℤ^G = R`
+221: SET ℤ in `coker(σ on R) ≅ ℤ ⊕ K(Q_n)`
+221: SET ℤ in `ℤ`
+229: SET ℤ in `(ℤ ⊕ K) ⊗ ℤ_2 ≅ ℤ_2 ⊕ Syl_2 K`
+229: SET ℤ in `⊗ ℤ_2`
+229: SET ℤ in `ℤ_2 ⊕ Syl_2 K(Q_n) ≅ coker(σ on R ⊗ ℤ_2)`
+233: SET ℤ in `ℤ`
+233: SET ℤ in `Dist_ℤ`
+233: SET ℤ in `ℤ`
+233: SET ℚ in `U_ℚ`
+233: SET ℚ in `ℚ`
+235: SET ℤ in `A := ℤ_2`
+235: SET ℤ in `Dist_A := A ⊗ Dist_ℤ`
+235: SET ℚ in `U_ℚ`
+246: SET ℤ in `ℤ_2 ⊕ Syl_2 K(Q_n) ≅ ⊕_j coker(F + n − H on M_j)`
+252: SET ℚ in `Δ_ℚ(λ)`
+252: SET ℚ in `U_ℚ`
+260: SET ℚ in `ℚ`
+260: SET ℚ in `X_1 ⊗ ℚ`
+260: SET ℚ in `Δ_ℚ(m + 1)`
+277: SET 𝔽 in `Φ(N) ⊗ 𝔽_2 ≅ V ⊗ (N ⊗ 𝔽_2)^{[1]}`
+277: SET 𝔽 in `Dist_{𝔽_2}`
+280: SET ℚ in `Φ(N) ⊗ ℚ`
+280: SET ℚ in `U_ℚ`
+281: SET ℚ in `U_ℚ`
+286: SET ℚ in `ℚ`
+286: SET ℚ in `Φ(∇_A(μ)) ⊗ ℚ`
+286: SET ℚ in `U_ℚ`
+286: SET ℚ in `Dist_A ⊗ ℚ`
+288: SET 𝔽 in `𝔽_2`
+298: SET ℚ in `X ⊗ ℚ`
+300: SET ℤ in `Dist_ℤ`
+300: SET 𝔽 in `Hom_{Dist_A}(M, N) → Hom_{Dist_{𝔽_2}}(M ⊗ 𝔽_2, N ⊗ 𝔽_2)`
+302: SET 𝔽 in `0 → N → N → N ⊗ 𝔽_2 → 0`
+302: SET 𝔽 in `Hom(M, N) → Hom(M, N ⊗ 𝔽_2) → Ext^1(M, N) = 0`
+303: SET 𝔽 in `Hom_{Dist_A}(M, N ⊗ 𝔽_2) = Hom_{Dist_{𝔽_2}}(M ⊗ 𝔽_2, N ⊗ 𝔽_2)`
+305: SET 𝔽 in `X ⊗ 𝔽_2 ≅ Y ⊗ 𝔽_2`
+319: SET 𝔽 in `𝔽_2`
+320: SET 𝔽 in `(V ⊗ V ⊗ Φ(N)) ⊗ 𝔽_2 ≅ (Φ(N)^2 ⊕ Φ(V ⊗ N)) ⊗ 𝔽_2`
+322: SET 𝔽 in `𝔽_2`
+323: SET 𝔽 in `(V ⊗ V ⊗ Φ(N)) ⊗ 𝔽_2 ≅ V^{⊗3} ⊗ N̄^{[1]} ≅ (V ⊗ V^{[1]} ⊗ N̄^{[1]}) ⊕ (V ⊗ N̄^{[1]})^2 = (V ⊗ (V ⊗ N̄)^{[1]}) ⊕ (V ⊗ N̄^{[1]})^2`
+324: SET 𝔽 in `(Φ(V ⊗ N) ⊕ Φ(N)^2) ⊗ 𝔽_2`
+324: SET 𝔽 in `N̄ := N ⊗ 𝔽_2`
+332: SET ℤ in `ℤ_2`
+332: SET 𝔽 in `T(λ) ⊗ 𝔽_2`
+333: SET ℤ in `ℤ_2`
+333: SET ℚ in `ℚ`
+345: SET ℤ in `ℤ_2 ⊕ Syl_2 K(Q_n) ≅ ⊕_λ X^{(1)}(λ, (n − λ)/2)^{m_λ(n)}`
+356: SET ℤ in `π: ℤ_{≥0} → A`
+392: SET ℤ in `X^{(α)}(λ, i) ≅ ⊕_{a=1}^{k−1} (ℤ/2^a)^{2^{|I| + k − 1 − a}} ⊕ coker(2^k M)`
+394: SET ℤ in `ℤ/2^h`
+394: SET ℤ in `(ℤ/2^a)^{2^{k+|I|−a−1}}`
+396: SET ℤ in `ℤ/2^k`
+396: SET ℤ in `ℤ_2`
+402: SET ℤ in `ℤ[y_t : t ∈ I]/(y_t^2 : t ∈ I)`
+410: SET ℚ in `c^{(h)} = Σ_Δ c^{(h)}_Δ x^Δ ∈ ℚ[x_t : t ∈ I_{<h}]/(x_t^2)`
+427: SET ℤ in `X^{(α)}(λ, i) ≅ ⊕_{a=1}^{k−1} (ℤ/2^a)^{2^{|I|+k−1−a}} ⊕ coker(2^k M^{(α)}(λ, i))`
+430: SET ℤ in `ℤ_2 ⊕ Syl_2 K(Q_n)`
+540: SET ℤ in `d: {0, …, N} → ℤ`
+629: SET ℤ in `V: 2^I → ℤ`
+685: SET ℤ in `ℤ_2 ⊕ Syl_2 K(Q_n) ≅ ⊕_λ X^{(1)}(λ, (n − λ)/2)^{m_λ(n)}`
+688: SET ℤ in `ℤ_2`
+703: SET ℤ in `ℤ_2`
+703: SET ℤ in `ℤ/2`
+703: SET ℤ in `ℤ/2`
+781: SET ℤ in `ℤ_2`
+781: SET ℤ in `ℤ_2`
+781: SET ℤ in `ℤ_2`
+781: SET ℤ in `Syl_2 K(Q_n) ≅ Syl_2 K(Q_N)^2 ⊕ ℤ/2^{2^e + e − 1}`
+787: SET ℤ in `ℤ[G/⟨a⟩] = R/(a − 1)R`
+787: SET ℤ in `ℤ ⊕ K̄(n) ≅ R/(σR + (a − 1)R)`
+799: SET ℤ in `ℤ_2 ⊕ Syl_2 K̄(n) ≅ ⊕_λ X̄(λ, (n − λ)/2)^{m_λ(n)}`
+804: SET ℤ in `ℤ_2 ⊕ Syl_2 K̄(n) ≅ ⊕_λ (2X)^{m_λ(n)} = 2(ℤ_2 ⊕ Syl_2 K(Q_n)) ≅ ℤ_2 ⊕ 2Syl_2 K(Q_n)`
+805: SET ℤ in `ℤ_2`
+805: SET ℤ in `ℤ_2`
+805: SET ℤ in `ℤ/2`
+848: SET ℤ in `ℤ_{≥0} → ℚ_2`
+848: SET ℚ in `ℤ_{≥0} → ℚ_2`
+850: SET ℚ in `ℚ_2`
+872: SET ℤ in `coker(G on T(l)^{⊕r}) ≅ ⊕_{a=1}^{k−1} (ℤ/2^a)^{r·2^{|I|+k−1−a}} ⊕ coker(2^k M_w(G))`
+875: SET ℤ in `coker(2^h G_h) ≅ (ℤ/2^h)^{rank P} ⊕ coker(2^h S) = (ℤ/2^h)^{rank P} ⊕ coker(2^{h+1} G_{h+1})`
+881: SET ℚ in `T(l) ⊗ ℚ`
+881: SET ℚ in `ℚ_2`
+889: SET ℚ in `γ_{YX} ∈ ℚ_2`
+928: SET ℤ in `ℤ_2`
+932: SET ℤ in `ϑ: ℤ_2 → ℤ_2`
+933: SET ℤ in `a ∈ ℤ_2`
+933: SET ℤ in `χ ∈ X·ℤ_2[[X]]`
+936: SET ℤ in `e ∈ ℤ_2`
+937: SET ℤ in `e ∈ ℤ_2`
+937: SET 𝔽 in `𝒮 := 𝔽_2 ⊕ ε·X 𝔽_2[[X]]`
+940: SET ℤ in `y ∈ ℤ_2`
+942: SET ℤ in `χ̃ ∈ X ℤ_2[[X]]`
+942: SET ℤ in `χ(−2e) ∈ 2ℤ_2`
+944: SET ℤ in `2χ(−2e) ∈ 4ℤ_2`
+945: SET ℤ in `2χ(2y) ∈ 4ℤ_2`
+958: SET ℤ in `Γ_{∅,0}(y) ∈ 4ℤ_2`
+960: SET ℤ in `c ∈ ℤ_2`
+960: SET ℤ in `ζ_m ∈ ℤ_2`
+979: SET ℤ in `ζ_m ∈ ℤ_2`
+981: SET ℤ in `c ∈ ℤ_2`
+981: SET ℤ in `c ∈ ℤ_2`
+992: SET ℤ in `c ∈ ℤ_2`
+992: SET ℤ in `𝔞: 𝒦 → ℤ_2`
+992: SET ℤ in `R_{ℤ/4} := (ℤ/4)[F^{(m)}][E_t]/(E_t^2)`
+996: SET ℤ in `R_{ℤ/4}`
+1002: SET ℤ in `ℤ_2`
+1004: SET ℤ in `ζ_m ∈ ℤ_2`
+1006: SET ℤ in `M_w(Ψ)·N_± ∈ 2·Mat(ℤ_2)`
+1016: SET ℤ in `W_± ∈ ±I + 2·Mat(ℤ_2)`
+1031: SET ℤ in `W_+ − W_− ∈ 2·Mat(ℤ_2)`
+1031: SET ℤ in `GL(ℤ_2)`
+1032: SET ℤ in `c ∈ ℤ_2`
+1034: SET ℤ in `2·Mat(ℤ_2)`
+1040: SET ℤ in `ℤ/2`
+1042: SET ℤ in `coker L̄ ≅ ℤ ⊕ K̄(n)`
+1042: SET ℤ in `ℤ/2`
+1042: SET ℤ in `ℤ/2`
+1042: SET 𝔽 in `rank_{𝔽_2} L̄ = 2^{n−1} − (2^{n−1} − a_n) = a_n`
+1048: SET 𝔽 in `𝔽_2^r`
+1052: SET ℤ in `ℤ[(ℤ/p)^n]`
+1052: SET ℤ in `ℤ[ℤ/p]`
+1165: SET 𝔽 in `𝔽_2^r`
+1170: SET ℤ in `ℤ`

@@ -1,0 +1,15 @@
+gate/                    md 1  pdf whole-word 1
+gate/remark2/            md 1  pdf whole-word 1
+gate_dance.py            md 2  pdf whole-word 2
+gate_direct.py           md 1  pdf whole-word 1
+gate_lemma72.py          md 1  pdf whole-word 1
+gate_remark2.py          md 1  pdf whole-word 1
+gate_section10.py        md 3  pdf whole-word 3
+gate_section9.py         md 3  pdf whole-word 3
+gate_sections5to7.py     md 3  pdf whole-word 3
+gate_strict_cut.py       md 2  pdf whole-word 2
+gate_theoremO.py         md 1  pdf whole-word 1
+remark2/                 md 2  pdf whole-word 2
+code names: 12  broken or missing: 0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=15360 t=0s

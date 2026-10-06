@@ -1,0 +1,22 @@
+max 385.9 mean 98.5 p11  sum of the cokernels. ∎
+max 373.0 mean 95.1 p30  the recursion takes over. ∎
+max 363.7 mean 92.7 p28  proves the Main Theorem. ∎
+max 374.5 mean 76.9 p14  So 𝑓 is an isomorphism. ∎
+max 357.9 mean 73.6 p33  do not change the cokernel. ∎
+max 322.1 mean 42.5 p22  and its valuation is that of the term. ∎
+max 248.8 mean 23.1 p27  𝑆 = 𝑝𝑧, so 𝑆 mod 𝑝 = 0 and the integer fit is 𝑧 there. ∎
+max 228.4 mean 23.0 p42  limit. So the final matrices are associates at 𝑐 = 0 as well. ∎
+max 135.8 mean 10.5 p13  which is the same formula as on 𝑣; so 𝑓 is a Dist ‑map splitting the extension. ∎
+max 41.1 mean 8.8 p41  since glue(𝑋, 𝑌) · glue(𝑋′, 𝑌′) = glue(𝑋𝑋′, 𝑌𝑌′). Now glue(𝑊 , 𝑊 ) = − is integral (𝑊 ≡ 𝐼 and
+max 7.7 mean 7.7 p12  𝐹(2𝑏 𝐸𝑛) = 4𝑏 𝐹𝐸𝑛, so [𝐸, 𝐹] = 2𝑤 + 1. On 𝑏 𝑛 (weight 2𝑤 − 1): 𝐸𝐹(𝑏 𝑛) = 4𝑏 𝐸𝐹𝑛 and 𝐹𝐸(𝑏 𝑛) =
+max 11.8 mean 6.8 p42  with 𝑊 = ±(𝐼 − 𝑀 (·)𝑁 ) . The set 2 · Mat(ℤ ) is closed, so at 𝑐 = 0 the products 𝑀 (Ψ )𝑁 and
+max 6.6 mean 6.6 p19  By Lemma 5.1(a), 𝛿(Δ) = 𝐺(𝑎) − 𝐺(𝑏) + 𝛾(Δ) with 𝐺(𝐸) := ∑ (ℎ − 1). Since 𝜅(𝜇, 𝑜 ) = 𝑠 (𝜇) + |𝐸|
+max 18.6 mean 6.6 p38  Let 𝒯 be the set of covariant systems of level ℎ whose functions Γ all lie in 𝒦, and let 𝑅 :=
+max 6.6 mean 6.6 p29  Proof. (a) 𝜓(𝑃 ) = ∑ (𝑡 − 𝑡 ) − 𝑜 = 𝑡 − 𝑡 − 𝑜 , and 𝜑(𝜆 + 1) = 𝜆 + 1 + 𝑡 . (b) Given 𝑦 ≤ 𝑁 with
+max 25.6 mean 6.5 p6  𝑔(𝑁) := max 𝜑(𝑥) = max (𝑥 + 𝑣 𝑥). (Gao et al. write 𝑐 (𝑄 ) for the 𝑖‑th largest invariant facto
+max 6.4 mean 6.4 p41  Proof. Put 𝑤(𝑑) := 𝑣 (4(𝑑 + 𝑐)) − 1 = 1 + 𝑣 (𝑑 + 𝑐) ≥ 1 and 𝑊[𝑎, 𝑏] := ∑ 𝑏𝑑=𝑎 𝑤(𝑑). As in Corol
+max 9.4 mean 6.4 p41  𝔡 𝒜𝔡 with 𝑣 ((𝔡 ) ) = −𝑊[0, 𝑜 − 1] + 𝑐 , 𝑐 independent of 𝐷 (as 𝑣 (𝜋(𝑑)) = 𝑤(𝑑) + 1). Each term
+max 6.3 mean 6.3 p17  where 𝑐 = ∑ 𝑐 𝑥 ∈ ℚ[𝑥 : 𝑡 ∈ 𝐼 ]/(𝑥 ) satisfies 𝑐 = 1 and 𝑐 = −(𝑐 ) /2 − [ℎ ∈ 𝐼] · 𝑥 𝑐 . For
+max 16.7 mean 6.3 p39  and 𝛽 = Θ(Γ ) by Lemma 10.14(c). By (a) and Lemma 10.13(c) the constant 𝑎 of Γ is even, so
+lines 784 max>8: 129 max>10: 79 mean>6: 32 mean>7: 11
+VIGIA-FIN-OK exit=0 pico_kb=5744 t=0s

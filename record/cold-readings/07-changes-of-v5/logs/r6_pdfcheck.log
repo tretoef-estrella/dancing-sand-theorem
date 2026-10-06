@@ -1,0 +1,18 @@
+right edges (mode): [(542.0, 932), (539.0, 68), (302.5, 43)]
+left edges (mode): [(54.5, 1204), (82.5, 269), (60.0, 183)]
+largest xMax: 541.85 p30 'The'
+words beyond the right edge 542.0 + 0.5 pt: 0 []
+top of first line (mode): [(55.3, 26), (55.1, 9), (54.9, 6)]
+bottom of last line (mode): [(820.0, 50), (512.9, 1)]
+text block: top 55.3, lowest line bottom over all pages 820.0
+page fill (lowest line bottom − top) / (block bottom − top):
+  pages under 90 %: [(1, 60)]
+  all pages: [(1, 60), (2, 100), (3, 100), (4, 100), (5, 100), (6, 100), (7, 100), (8, 100), (9, 100), (10, 100), (11, 100), (12, 100), (13, 100), (14, 100), (15, 100), (16, 100), (17, 100), (18, 100), (19, 100), (20, 100), (21, 100), (22, 100), (23, 100), (24, 100), (25, 100), (26, 100), (27, 100), (28, 100), (29, 100), (30, 100), (31, 100), (32, 100), (33, 100), (34, 100), (35, 100), (36, 100), (37, 100), (38, 100), (39, 100), (40, 100), (41, 100), (42, 100), (43, 100), (44, 100), (45, 100), (46, 100), (47, 100), (48, 100), (49, 100), (50, 100), (51, 100)]
+words outside the text block vertically: 0 []
+line-end hyphens: 74  flagged: 0
+control: 3 hyphens, 3 flagged
+  CONTROL p1  «non-in-» / «creasing»  inside-compound
+  CONTROL p1  «reducibili-» / «ty,»  remainder<3:'ty,'
+  CONTROL p1  «[ABER-» / «S55]»  remainder<3:'S55]', citation-key
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=25600 t=0s

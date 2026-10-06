@@ -1,0 +1,4 @@
+statements defined: 80  sections: 55  remarks: {'3.3': {'1'}, '10.5': {'2', '1'}}
+references checked: 640  unresolved: 0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=10240 t=0s

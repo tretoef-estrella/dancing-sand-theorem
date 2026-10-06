@@ -1,0 +1,42 @@
+7.1 p33  𝑏 ChSh 𝑛 − (−1) 𝑎𝑏 Sh 𝑛 and 𝜏 (𝑏 𝑛) = 𝑏 𝑛 + 2(2𝑓 + 𝑗)𝑏 𝑛, 𝜏 has the matrix in this basis, with 𝑃 =
+6.9 p35  Proof. If 𝑃 is invertible, unimodular row and column operations turn into diag(𝑃, 𝑆) and then into
+6.4 p41  Proof. Put 𝑤(𝑑) := 𝑣 (4(𝑑 + 𝑐)) − 1 = 1 + 𝑣 (𝑑 + 𝑐) ≥ 1 and 𝑊[𝑎, 𝑏] := ∑ 𝑏𝑑=𝑎 𝑤(𝑑). As in Corollary 
+6.4 p42  with 𝑊 = ±(𝐼 − 𝑀 (·)𝑁 ) . The set 2 · Mat(ℤ ) is closed, so at 𝑐 = 0 the products 𝑀 (Ψ )𝑁 and
+6.3 p10  formula 𝑣 (𝑚!) = 𝑚 − 𝑠 (𝑚), the von Staudt–Clausen theorem [vSt40], [Cla40], Strassmann’s theorem
+6.3 p38  tions modulo 2). Then Θ: 𝒦 → 𝒮 is a ring homomorphism, Θ(𝜗(·−𝑒)) = Θ(𝜗) for every 𝑒 ∈ ℤ , and
+6.3 p20  𝑑 = 0), and no other window contains 0. The same computation with Legendre’s formula at 𝑖 = 0,
+6.2 p3  proved both and determined every odd Sylow subgroup [Bai03]: for an odd prime 𝑝, Syl 𝐾(𝑄 ) ≅
+6.2 p6  Bai states the first count for the invariant factors of 𝐾(𝑄 ). They are all even [Bai03, Lemma 2.2,
+6.2 p37  The final matrix of Σ is known. By Lemma 10.6(b), 𝑀 (Σ) = 𝜂 · 𝑀 (𝐹 + 𝜂 𝜋(𝐷)), and the proof of
+6.1 p17  move ℎ = 0, 1, …, 𝑘 − 1 the rank is 2 ; the factors of move 0 are trivial, and move 𝑎 ≥ 1 gives
+6.1 p13  ules are simple: Φ(∇ (𝜇)) ⊗ ℚ has the character of Δ(2𝜇 + 1), and by Weyl’s theorem on complete
+6.1 p37  Theorem 10.12 (rigidity). If the dance of Ξ along 𝑤 is clean, then 𝑀 (Ξ) = 𝑀 (Σ) ∘ (1 + 𝐸′) with
+6.1 p40  Lemma 10.18 (modulo 2). Let 𝐺, 𝐺′ ∈ 𝒯 both satisfy (a) and (b) of Theorem 10.15, and suppose
+5.9 p11  Let 𝜄 be the anti-involution of Dist with 𝜄(𝐸 ) = 𝐹 , 𝜄(𝐹 ) = 𝐸 , 𝜄(𝐻) = 𝐻. For a lattice 𝑋 the con‐
+5.8 p18  𝑜 + 2 , ⋯ + 2 − 1]; the coupling −𝜋 (2𝑓 + 1) from 𝐷′ to 𝐷′ ∪ {ℎ} and the coupling −𝐾 (2𝑓 + 1)
+5.8 p13  tices is a lattice: 𝑋 ⊗ ℚ is semisimple by Weyl’s theorem, so 𝐻 is diagonalizable on it with integer
+5.8 p35  slot (𝑠, 𝐶) with 𝑣 = 1; and the split move is clean, because its pivot block is the one eliminated i
+5.8 p38  Let 𝒯 be the set of covariant systems of level ℎ whose functions Γ all lie in 𝒦, and let 𝑅 :=
+5.8 p40  only if 𝑈 ≡ 𝑈′ (mod 2); its pivot glue(𝑃 , 𝑃 ) is then invertible over ℤ ; and its Schur complement
+5.8 p9  McDonald and Yuen determined the 𝑛 − 1 largest factors and posed the conjectures we prove; their
+5.7 p16  Proof. The formulas for 𝐹 follow from Δ(𝐹) = 𝐹 ⊗ 1 + 1 ⊗ 𝐹 and §3.1: for instance 𝐹𝐴 = 𝑏 ⊗ 𝑏 𝑛 +
+5.7 p38  the monomials 𝜇 = 𝐹 𝐸 , and 𝜇 = 𝐶(2𝑞, 𝑞)𝐹 𝐸 = 0 unless 𝜇 = 1 (𝐶(2𝑞, 𝑞) is even for 𝑞 ≥ 1, and
+5.7 p41  𝔡 𝒜𝔡 with 𝑣 ((𝔡 ) ) = −𝑊[0, 𝑜 − 1] + 𝑐 , 𝑐 independent of 𝐷 (as 𝑣 (𝜋(𝑑)) = 𝑤(𝑑) + 1). Each term of
+5.7 p15  Here Φ(𝑇(𝑙)) = 𝑇(2𝑙 + 1) , and 𝑉 ⊗ 𝑇(𝑙) decomposes by induction on 𝑙 (Φ is additive and Φ(𝑇(𝜈)) =
+5.6 p47  The mathematics of this paper was developed with extensive use of Claude, an AI system made by
+5.6 p2  5 except as stated in Appendix A. The changes of version 5 have not yet been read cold (§13,
+5.5 p32  2 − (𝜆 + 1) = 2 − 2 − 𝑜 with 𝑘 < 𝑒, so 𝑣 (𝑖) = 𝑡 − 1. Every digit of 𝐷 is ≥ 𝑡 , so 𝑣 (𝐽) = 𝑣 (𝑖 + 𝑜 
+5.5 p12  Proof. Let 𝑣 be the highest weight vector of Δ (𝑚). The vectors 𝐹 (𝑣 ⊗ 𝑏 ) = 𝐹 𝑣 ⊗ 𝑏 + 𝐹 𝑣 ⊗ 𝑏
+5.4 p9  5. the proof techniques of §4–§7 and §10 as combinations: the dance, the cost form with carries,
+5.4 p39  and 𝛽 = Θ(Γ ) by Lemma 10.14(c). By (a) and Lemma 10.13(c) the constant 𝑎 of Γ is even, so
+5.4 p29  Proof. 𝜑(𝜉) ≥ 𝜉 ≥ 1, and 𝜅 ≥ 0. If 𝜉 = 𝐾 + 𝑜 − 𝑜 = 1, then, since 𝑜 ≤ 𝑜 < 𝐾, we need 𝑜 = 0 and
+5.4 p30  first half follows 𝑦 = max(𝑦 + 2 𝑗 − ℎ , 0), where 2 𝑗 − ℎ = −𝜓 . Since 𝑘 + 𝐾 − ∑ 𝜓 = 𝜑(𝑌 ) (as in
+5.4 p39  sary: every even payment system dances clean, whatever its payments (proof of Lemma 10.6(a), with
+5.4 p21  Theorem 6.2 (Theorem O). For every 𝐼 ⊆ [0, 𝑘) and every 0 ≤ 𝑟 ≤ 𝑁, there is exactly one bijection
+5.3 p10  𝑠 := ∏ 𝑠 . The elements 𝑠 form a ℤ‑basis of 𝑅 (the change of basis from {𝑥 } is unitriangular for
+5.3 p21  top bits, all equal to 1. We must show that there is exactly one bijection from {𝑁 − 𝑟, …, 𝑁 − 1} on
+5.3 p23  hence the sum of 𝑥 − 𝑐 over a prefix of 𝐿 equals its sum over 𝐿 plus that prefix, which is ≤ 0 by
+5.3 p32  Laplacian acts on ℤ[𝐺/⟨𝑎⟩] = 𝑅/(𝑎 − 1)𝑅 as multiplication by 𝜎, and ℤ ⊕ 𝐾 (𝑛) ≅ 𝑅/(𝜎𝑅 + (𝑎 − 1)𝑅) (f
+5.3 p47  has a written proof that was re-derived by readers other than its author. That is not a substitute f
+lines 718 >5: 48 >6: 14 >7: 1 >8: 0
+VIGIA-FIN-OK exit=0 pico_kb=4560 t=0s

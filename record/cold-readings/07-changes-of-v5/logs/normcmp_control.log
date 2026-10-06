@@ -1,0 +1,7 @@
+### block 1: v4 19-19 / v5 19-19: TYPO-ONLY
+### block 2: v4 36-36 / v5 36-36: CONTENT-DIFF
+  [replace] …`Z^{V(G)}` is `Z ⊕ K(G)` , ‹where› → ‹and› `K(G)` is a finite…
+### block 3: v4 81-81 / v5 81-81: CONTENT-DIFF
+  [replace] …So ‹`Syl_2 K(Q_6) = {1: 4} ⊕ {6: 2, 3: 1} ⊕ 4·{1: 2, 6: 2} ⊕ 4·{5: 1, 2: 1} = {1: 12, 2: 4, 3: 1, 5: 4, 6: 10}`› → ‹`Syl_2 K(Q_6) = {1: 4} ⊕ {6: 2, 3: 1} ⊕ 4·{1: 2, 6: 2} ⊕ 4·{5: 1, 2: 1} = {1: 13, 2: 4, 3: 1, 5: 4, 6: 10}`› , as the direct…
+TOTAL blocks=3 typo_only=1 content_diff=2
+VIGIA-FIN-OK exit=0 pico_kb=8272 t=0s

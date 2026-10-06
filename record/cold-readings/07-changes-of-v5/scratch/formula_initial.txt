@@ -1,0 +1,172 @@
+45: label=''                                  :: `κ(a, b) := s_2(a) + s_2(b) − s_2(a + b)`, the number of carries in th
+46: label=''                                  :: `φ(x) := x + v_2(x)` for `x ≥ 1`.
+49: label=''                                  :: `λ + 1 = 2^k + Σ_{t∈I} 2^t`,  `I ⊆ {0, 1, …, k − 1}`,
+51: label=''                                  :: `next(t) := min{u ∈ I ∪ {k} : u > t}`  and  `h_t := next(t) − t`.
+55: label=''                                  :: `Σ_λ m_λ(0)[λ] = [0]`,  `Σ_λ m_λ(n)[λ] = V·Σ_λ m_λ(n−1)[λ]`,
+57: label=''                                  :: `V·[0] = [1]`,  `V·[2l + 1] = [2l + 2]`,  `V·[2l + 2] = 2[2l + 1] + Φ(
+77: label=''                                  :: `λ = 6` (`7 = 4 + 2 + 1`, `k = 2`, `I = {0, 1}`, `h_0 = h_1 = 1`), shi
+78: label=''                                  :: `λ = 4` (`5 = 4 + 1`, `k = 2`, `I = {0}`, `h_0 = 2`), shift `1`: small
+79: label=''                                  :: `λ = 2` (`3 = 2 + 1`, `k = 1`, `I = {0}`, `h_0 = 1`), shift `2`: no sm
+84: label=''                                  :: `R_μ(D) := Σ_{t∈D} (h_t − 2^t) − κ(μ, o_D)`,  `x_D := R_m(D) − R_{m+K}
+112: label='**Corollary 1.5 (Bai [Bai03, Theorems 1.1, 1.3]).**' :: `Syl_2 K(Q_n)` has exactly `2^{n−1} − 1` cyclic factors, and exactly `
+119: label=''                                  :: `n` even: `c_1 = max(G, φ(n) − 1)` and `c_2 = ⋯ = c_{n+1} = G`;
+120: label=''                                  :: `n` odd and `φ(n − 1) ≤ G`: `c_1 = ⋯ = c_{n+1} = G`;
+121: label=''                                  :: `n` odd and `φ(n − 1) > G`: `c_1 = ⋯ = c_{n−1} = φ(n − 1)`, `c_n = max
+124: label=''                                  :: `c_1 = max(g(n), v_2 n + n − 1)` and `c_2 = ⋯ = c_{n−1} = g(n)` for `n
+129: label=''                                  :: `Syl_2 K(Q_{2^e}) ≅ Syl_2 K(Q_{2^e − 1})^2 ⊕ ℤ/2^{2^e + e − 1}`.
+220: label=''                                  :: `σ := Σ_{i=1}^{n} (1 − x_i)`.
+224: label=''                                  :: `s_j s_S = s_{S∪{j}}` if `j ∉ S`,  `s_j s_S = 2 s_S` if `j ∈ S`.
+227: label='*Proof.*'                          :: `s_j^2 = (1 − x_j)^2 = 2 − 2x_j = 2s_j`. ∎
+234: label='**(K)**'                           :: `E^{(s)} F^{(r)} = Σ_{j=0}^{min(r,s)} F^{(r−j)} C(H − r − s + 2j, j) E
+248: label='*Proof.*'                          :: `σ = F + n − H` is an element of `Dist_A` (it acts through `F` and `H`
+253: label=''                                  :: `F e_r = (r + 1) e_{r+1}`,  `E e_r = (λ − r + 1) e_{r−1}`,  `H e_r = (
+255: label=''                                  :: `F w_r = (λ − r) w_{r+1}`,  `E w_r = r w_{r−1}`.
+267: label=''                                  :: `H(b_0 n) = (2w + 1) b_0 n`,  `H(b_1 n) = (2w − 1) b_1 n`,
+268: label=''                                  :: `F(b_0 n) = b_1 n`,  `F(b_1 n) = 2 b_0 (F n)`,
+269: label=''                                  :: `E(b_0 n) = 2 b_1 (E n)`,  `E(b_1 n) = b_0 (Ω − H^2) n`,
+273: label='(a)'                               :: `Φ(N)` is a lattice, `Φ` is an exact functor, and it sends saturated s
+275: label=''                                  :: `F^{(2s)}(b_e n) = b_e F^{(s)} n /(2s − 1)!!`,  `F^{(2s+1)}(b_0 n) = b
+276: label=''                                  :: `F^{(2s+1)}(b_1 n) = ((2s + 2)/(2s + 1)!!)·b_0 F^{(s+1)} n`.
+277: label='(c)'                               :: `Φ(N) ⊗ 𝔽_2 ≅ V ⊗ (N ⊗ 𝔽_2)^{[1]}` as `Dist_{𝔽_2}`-modules, where `M^{
+278: label='(d)'                               :: `Φ(Δ_A(μ)) ≅ Δ_A(2μ + 1)` and `Φ(∇_A(μ)) ≅ ∇_A(2μ + 1)`; `Φ(A) = V`.
+282: label=''                                  :: `E^{2s}(b_1 n) = 2^s ∏_{0≤j<s}(Ω − (w+2j)^2)·b_1 E^s n`,  `E^{2s+1}(b_
+283: label=''                                  :: `E^{2s}(b_0 n) = 2^s ∏_{1≤j≤s}(Ω − (w+2j)^2)·b_0 E^s n`,  `E^{2s+1}(b_
+293: label=''                                  :: `F^{(t)}f(e_r) = C(r+t, t) F^{(r+t)}x = f(F^{(t)}e_r)`
+295: label=''                                  :: `E^{(s)}F^{(r)}x = C(λ − r + s, s) F^{(r−s)} x`,
+299: label=''                                  :: `P(H) = Σ_r (Δ^r P)(w_0)·C(H − w_0, r)`
+303: label=''                                  :: `Hom_{Dist_A}(M, N ⊗ 𝔽_2) = Hom_{Dist_{𝔽_2}}(M ⊗ 𝔽_2, N ⊗ 𝔽_2)`. ∎
+316: label=''                                  :: `ch Φ(N) = (e + e^{−1})·(ch N)(e^2)`  and  `ch(V ⊗ M) = (e + e^{−1}) c
+320: label=''                                  :: `(V ⊗ V ⊗ Φ(N)) ⊗ 𝔽_2 ≅ (Φ(N)^2 ⊕ Φ(V ⊗ N)) ⊗ 𝔽_2`.
+323: label=''                                  :: `(V ⊗ V ⊗ Φ(N)) ⊗ 𝔽_2 ≅ V^{⊗3} ⊗ N̄^{[1]} ≅ (V ⊗ V^{[1]} ⊗ N̄^{[1]}) ⊕
+332: label='**Remarks.** (1)'                  :: `T(λ) ⊗ 𝔽_2` is the indecomposable tilting module of `SL_2` of highest
+348: label=''                                  :: `σ = F + n − H = F + (λ − H) + (n − λ) = σ^{(1)}_{(n−λ)/2}`. ∎
+357: label=''                                  :: `G(x ι_{s'}) = (F + π_{s'}(D)) x ι_{s'} + Σ_{s > s'} K_{ss'}(D) x ι_s`
+363: label=''                                  :: `coker G ≅ coker(2G')`,
+365: label=''                                  :: `π'_s(f) = −π_s(2f) π_s(2f + 1)/2`,
+366: label=''                                  :: `K'_{us'}(f) = −½ [π_{s'}(2f + 1) K_{us'}(2f) + K_{us'}(2f + 1) π_u(2f
+369: label=''                                  :: `2 b_0 (Fn) ι_{s'} − π_{s'}(2f+1) π_{s'}(2f) b_0 n ι_{s'}`
+370: label=''                                  :: `− Σ_{u>s'} [π_{s'}(2f+1) K_{us'}(2f) + K_{us'}(2f+1) π_u(2f) + Σ_{s'<
+374: label=''                                  :: `A_n := b_0 ⊗ b_0 n`,  `B_n := b_0 ⊗ b_1 n − b_1 ⊗ b_0 n`,  `C_n := b_
+376: label=''                                  :: `F A_n = B_n + 2 C_n`,  `F B_n = 2 A_{Fn}`,  `F C_n = Dd_n`,  `F Dd_n 
+378: label=''                                  :: `π''_{(s,A)}(f) = −π_s(2f) π_s(2f+1)/2`,  `π''_{(s,C)}(f) = −π_s(2f+1)
+380: label=''                                  :: `K''_{(s',C),(s',A)}(f) = −π_{s'}(2f + 1)`,  `K''_{(u,C),(s',A)}(f) = 
+383: label=''                                  :: `2 A_{Fn} ι_{s'} − π_{s'}(2f+1)π_{s'}(2f) A_n ι_{s'} − Σ_u [coupling o
+384: label=''                                  :: `− 2π_{s'}(2f+1) C_n ι_{s'} − 2Σ_{u>s'} K_{us'}(2f+1) C_n ι_u`,
+386: label=''                                  :: `2 C_{Fn} ι_{s'} − π_{s'}(2f+2)π_{s'}(2f+1) C_n ι_{s'} − Σ_u [coupling
+403: label=''                                  :: `M_{DD'} = −2^{1 − K + o(D∖D')} · a_k(D∖D') · ∏_{d = o_D}^{o_{D'} + K 
+404: label=''                                  :: `M_{DD'} = 0`  otherwise.
+408: label=''                                  :: `π^{(h)}_D(f) = c^{(h)}_∅ · ∏_{d ∈ W} π_0(d)`, `W = [2^h f + o_D, 2^h 
+409: label=''                                  :: `K^{(h)}_{DD'}(f) = c^{(h)}_{D∖D'} · ∏_{d ∈ W} π_0(d)`, `W = [2^h f + 
+412: label=''                                  :: `c^{(h+1)} = −2^{1 − 2^{h+1}} q_h^2 + [h ∈ I] 2^{1 − 2^h} 2^{−2^h} y_h
+417: label='**Lemma 4.5 (deficit law).**'      :: `a_k(∅) = 1`, and for `∅ ≠ Δ ⊆ I`,
+421: label=''                                  :: `a_{t+1}(Δ) = 2a_t(Δ) + 2Σ a_t(Δ_1) a_t(Δ_2)`,
+434: label='**Example.**'                      :: `λ = 6` (`k = 2`, `I = {0, 1}`): `q_1 = 1 + y_0`, `q_2 = 1 + 2y_0 − y_
+450: label=''                                  :: `R_μ(E) := Σ_{t∈E} (h_t − α 2^t) − κ(μ, o_E)`;
+452: label=''                                  :: `γ(Δ) := Σ_{u ∈ I∖Δ, u > min Δ} h_u`  (`γ(∅) := 0`),
+454: label=''                                  :: `x_D := R_m(D) − R_{m+K}(I ∖ D)`.
+457: label='**Lemma 5.1.** (a)'                :: `δ(Δ) = Σ_{t∈Δ}(h_t − 1) + γ(Δ)`. (b) `γ(Δ) = 0` if and only if `Δ = ∅
+457: label='(b)'                               :: `γ(Δ) = 0` if and only if `Δ = ∅` or `Δ = I ∩ [min Δ, k)` (a **tail** 
+459: label='*Proof.* (a)'                      :: `k − min Δ = Σ_{t ∈ I, t ≥ min Δ} h_t` (the gaps telescope), and the d
+465: label=''                                  :: `v_2(M_{ab}) = 1 + δ(Δ) + α(K + o_b − o_a) − s_2(m + K + o_b) + s_2(m 
+467: label=''                                  :: `R_μ(E) = G(E) − α o_E + s_2(μ + o_E) − s_2(μ)`.
+469: label=''                                  :: `v_2(M_{ab}) − [R_m(a) − R_{m+K}(b) + γ(Δ)] = 1 + αK + s_2(m) − s_2(m 
+473: label=''                                  :: `ĉ(a, b) := R_m(a) − R_{m+K}(b) + γ(a ∖ b)`  (`b ⊆ a`)
+481: label=''                                  :: `u_1(D) = φ(λ + 1) + 2ψ(D)`,  with  `ψ(D) := Σ_{t∈D}(h_t − 2^t)`.
+483: label=''                                  :: `u_1(D) = ξ + v_2(ξ) + s_2(ξ) − 1 + |D| − |E| + h(D) = ξ + s_2(μ) + |D
+484: label=''                                  :: `= K + o_I − 2o_D + k − |I| + 2|D| + G(D) − G(E)`,
+486: label=''                                  :: `φ(λ + 1) = K + o_I + t_1`,  `2ψ(D) = 2G(D) + 2|D| − 2o_D`.
+489: label=''                                  :: `u_i(D) = u_1(D) + κ(m, K + o_E) − κ(m, o_D)`.
+490: label='*Step 3.*'                         :: `x_D = ψ(D) − κ(m, o_D) − ψ(E) + κ(m + K, o_E)`, and
+491: label=''                                  :: `κ(m, K + o_E) + κ(K, o_E) = κ(m, K) + κ(m + K, o_E)`
+497: label=''                                  :: `v_2(M(λ, 0)_{Db}) = αK + R^♯(D) − R^♯(b) + γ(D ∖ b)`,  `R^♯(E) := Σ_{
+501: label=''                                  :: `v_2(M_{Db}) = 1 + δ(Δ) + α(K + o_b − o_D) − s_2(K − 1 + o_b) + s_2(o_
+511: label=''                                  :: `d̂_r := d_r(M) − r(αK + κ(m, K))` (the normalized divisors);
+512: label=''                                  :: `T(r)` := the least normalized cost `Σ ĉ(a, β(a))` of an **`r`-matchin
+513: label=''                                  :: `U(r) := Σ_{D∈L_r} x_D`, the sum of the last `r` clocks (the **natural
+514: label=''                                  :: `Y(r) := Σ_{D∈L_r} ŷ_D`, the same for the integer antitonic fit `ŷ` of
+516: label='**Lemma 6.1 (tropical bound).**'   :: `d̂_r ≥ T(r)`.
+527: label=''                                  :: `r ≤ N/2`: every row has top bit `1` and every column has top bit `0`,
+528: label=''                                  :: `r = N/2 + q` with `0 < q ≤ N/2`: the columns `N/2, …, N/2 + q − 1` ha
+532: label='**Corollary 6.3 (the natural minor).**' :: `v_2(det M[L_r, F_r]) = r(αK + κ(m, K)) + U(r)`; hence `d̂_r ≤ U(r)` f
+535: label=''                                  :: `Σ_{D∈L_r} R_m(D) − Σ_{E∈F_r} R_{m+K}(E) + Σ_D γ(D ∖ β(D))`.
+548: label='*Proof.*'                          :: `Y(r) ≤ T(r) ≤ d̂_r ≤ Y(r)`, by the hypothesis, Lemma 6.1, and Corolla
+561: label=''                                  :: `Σ_{j=p}^{q}(x_j − c)(c − y_j) = −Σ_{s=p}^{q−1} S_s (y_s − y_{s+1}) ≥ 
+595: label=''                                  :: `R_H(E) := Σ_{t∈E} (h_t − α2^t) − κ(ℓ, o_E)`,  `J_H(E) := [ℓ + o_E ≥ 2
+596: label=''                                  :: `x_H(D) := R_H(D) − R_H(I ∖ D)`,  `ĉ_H(a, b) := R_H(a) − R_H(b) + γ(a 
+606: label=''                                  :: `κ_t := min(r_t(ℓ), h_t)` if `T_t = 1`,  `κ_t := 1 + min(r_{t+1}(ℓ), h
+607: label=''                                  :: `sat_t := [κ_t = h_t]` (the window is **saturated** if `sat_t = 1`),  
+619: label=''                                  :: `R_H(D_0) = R_{H'}(D_0) − [T = 1] κ J_{H'}(D_0)`,  `R_H(D_0 ∪ {c}) = τ
+620: label=''                                  :: `J_H(D_0) = [T = 1]·sat·J_{H'}(D_0)`,  `J_H(D_0 ∪ {c}) = sat·([T = 1] 
+622: label=''                                  :: `d_1(D_0) := −τ − [T = 1] κ J_{H'}(D_0) + [T = 0] κ J_{H'}(I' ∖ D_0)`,
+642: label='**(Λ).**'                          :: `d_1 ≤ −τ + [T = 0]κ = α2^c − h + κ ≤ α2^c`, since `κ ≤ h`. With (Λ) f
+644: label='(a)'                               :: `T = 1`, `sat = 1`, `J' ≢ 0`: the boundary `b` of `J_H` is the boundar
+645: label='(b)'                               :: `T = 1`, `sat = 1`, `J' ≡ 0`: the boundary is the middle of the sequen
+646: label='(c)'                               :: `T = 0`, `sat = 1`, `J' ≢ 0`: the boundary is `b' ∪ {c}`, with `b'` th
+653: label='**The junction.**'                 :: `v'({c}) − v'(I') = −X_1(I')`, and, by (Λ) for `H'`,
+654: label=''                                  :: `−X_1(I') = −ŷ'(I') + τ + [T = 1]κJ'(I') − [T = 0]κJ'(∅) ≤ α(2^c − 1) 
+657: label=''                                  :: `c_3 := v'(f) = max_{F_1} v'`,  `c_4 := v'(I ∖ f) = min_{F_2} v'`.
+660: label=''                                  :: `a ∈ F_2`, `b` before `F`: `c_F ≤ c_4 ≤ v'(a)`, and `v'(a) − v'(b) ≤ ĉ
+661: label=''                                  :: `a ∈ F_1`, `b` before `F` (same half): `c_F ≤ c_4 ≤ v'({c}) ≤ v'(I') +
+662: label=''                                  :: `b ∈ F_1`, `a` after `F`: `c_F ≥ c_3 ≥ v'(b)`, and `v'(a) − v'(b) ≤ ĉ_
+663: label=''                                  :: `b ∈ F_2`, `a` after `F` (same half): `c_F ≥ c_3 ≥ v'(I') ≥ v'({c}) − 
+685: label=''                                  :: `ℤ_2 ⊕ Syl_2 K(Q_n) ≅ ⊕_λ X^{(1)}(λ, (n − λ)/2)^{m_λ(n)}`,
+699: label='*Proof.*'                          :: `φ(ξ) ≥ ξ ≥ 1`, and `κ ≥ 0`. If `ξ = K + o_{I∖D} − o_D = 1`, then, sin
+702: label=''                                  :: `Σ_{a=1}^{k−1} 2^{|I|+k−1−a} + 2^{|I|} = 2^{|I|+k−1} = dim T(λ)/2`
+708: label=''                                  :: `Y_l := λ + 1 − o_{P_l} = K + o(I ∖ P_l)`,  so `v_2(Y_l) = t_{l+1}`,
+711: label='**Lemma 9.2.** (a)'                :: `φ(λ + 1) + ψ(P_l) = φ(Y_l)` for `0 ≤ l ≤ s`. (b) For `N ≥ 1`, `max_{1
+711: label='(c)'                               :: `Y_0, …, Y_s` are the clearings of `λ + 1`; hence `max_l φ(Y_l) = g(λ 
+713: label='*Proof.* (a)'                      :: `ψ(P_l) = Σ_{j≤l}(t_{j+1} − t_j) − o_{P_l} = t_{l+1} − t_1 − o_{P_l}`,
+718: label='(a)'                               :: `e(∅) = max_{0≤l≤s} φ(Y_l)`;
+719: label='(b)'                               :: `e(D) ≤ max_{1≤l≤s} φ(Y_l)` for `D ≠ ∅`;
+723: label=''                                  :: `ŷ_j(D_0) = max(ŷ_{j−1}(D_0) − ψ_{t_j}, 0)`  and  `ŷ_j(D_0 ∪ {t_j}) = 
+726: label=''                                  :: `ŷ_s(∅) = max_l (−Σ_{j>l} ψ_{t_j})`.
+729: label='(c)'                               :: `t_1 = 0` and `ψ_0 = h_0 − 1 ≥ 0`, so `ŷ_1({0}) = min(ψ_0, 0) = 0`. Fr
+732: label='(a)'                               :: `e({t_1}) = max(φ(Y_1) − 2^{t_1}, max_{2≤l≤s} φ(Y_l))`;
+733: label='(b)'                               :: `e(D) ≤ max_{2≤l≤s} φ(Y_l)` for every other `D ≠ ∅`.
+741: label=''                                  :: `y := 2^q((a + B) − ((a + B) mod 2^p))`
+748: label=''                                  :: `μ = φ(Y_l) + mean_{D⊆P_l} [κ(m, Y_l + o_D) − κ(m, o_D)]`.
+750: label=''                                  :: `κ(m, Y_l + o_D) − κ(m, o_D) = κ(m_h + c_D, Y_l/2^q)`.
+753: label='**Lemma 9.7 (multiplicities).**'   :: `m_n(n) = 1`; `m_{n−2}(n) = n − 1 − [n even]` for `n ≥ 2`; and for odd
+754: label=''                                  :: `m_{n−4}(n) = (n − 1)(n − 2)/2 − 1 − [n ≡ 1 (mod 4)] ≥ 4`.
+796: label=''                                  :: `τ_i := σ^{(1)}_i = F + 2(D + i)` and `X̄(λ, i) := T(λ)/(τ_i T(λ) + (a
+799: label=''                                  :: `ℤ_2 ⊕ Syl_2 K̄(n) ≅ ⊕_λ X̄(λ, (n − λ)/2)^{m_λ(n)}`.
+804: label=''                                  :: `ℤ_2 ⊕ Syl_2 K̄(n) ≅ ⊕_λ (2X)^{m_λ(n)} = 2(ℤ_2 ⊕ Syl_2 K(Q_n)) ≅ ℤ_2 ⊕
+814: label=''                                  :: `Ψ_{2c} = 4(D + c) + Σ_{m≥1} η_m F^{(m)}`,  `η_m = 2(2^{2m} − 1)B_{2m}
+815: label=''                                  :: `Ψ_{2c−1} = 4(D + c) + Σ_{m≥1} η'_m F^{(m)}`,  `η'_m = 2B_{2m}/(2m − 1
+819: label='(a)'                               :: `X̄(λ, j) ≅ coker(Ψ_j on N)`;  (b) `2X(λ, j) ≅ coker(Σ_c on N)`.
+823: label=''                                  :: `π'(f) = −2(j + 2f)(j + 2f + 1) = −4(c + f) u_f`,
+831: label='(a)'                               :: `X̄(λ, i) ≅ coker(glue(Ψ_{i+1}, Ψ_i) on N ⊕ N)`;
+832: label='(b)'                               :: `2X(λ, i) ≅ coker(glue(Ψ_{i+1}(Ψ_{i+1} − 2)/2, Ψ_i(Ψ_i + 2)/2) on N ⊕ 
+839: label=''                                  :: `coker(w) ≅ coker(glue(w_−, w_+))`,
+849: label=''                                  :: `(xy)_m(f) = Σ_{a+b=m} C(m, a)·x_a(f)·y_b(f − a)`.
+853: label=''                                  :: `x^{00} = Σ_q x_{2q}(2D) F^{(q)}/(2q − 1)!!`,  `x^{11} = Σ_q x_{2q}(2D
+854: label=''                                  :: `x^{10} = Σ_q x_{2q+1}(2D + 1) F^{(q)}/(2q + 1)!!`,  `x^{01} = Σ_q ((2
+858: label=''                                  :: `[[x, 0], [x', x^+]]`,  `x^+_m(g) := x_m(g + 1)`,  `x'_{m−1}(g) := x_m
+891: label='*Proof.*'                          :: `in(e_X)` has floor `o_X` and `out` reads the source `Y` at floor `o_Y
+892: label=''                                  :: `Ξ^{−1} in(e_X) = Σ_L y_L(o_X + L) F^{(L)} in(e_X)`
+900: label=''                                  :: `y^Ξ_L(f) = y^Σ_L(f)·(1 + e_L(f))`  with  **`v_2(e_L(f)) ≥ α − 1`**,  
+903: label=''                                  :: `(−1)^s (L!/∏ m_i!)·∏_i ζ_{m_i}(f_i) / ∏_{j=0}^{s} π(f_j)`.
+907: label='**`M_w(Σ) = 𝔡_1·𝒜·𝔡_2`,**'         :: `(𝔡_1)_D = −2^{1−K} η^{1−K}·(2η)^{o_D}/∏_{d<o_D} π(d)`,  `(𝔡_2)_{D'} =
+929: label=''                                  :: `G[D, D']_m(f) = Γ_{D∖D', m}(2^h f + o_D + c)`
+938: label='(c)'                               :: `ϑ(y) ≡ a (mod 4)` for every `y`.
+941: label='*Products.*'                       :: `(a + 2χ)(b + 2ω) = ab + 2(aω + bχ + 2χω)`.
+942: label='*Shifts.*'                         :: `χ(X − 2e) = χ(−2e) + χ̃(X)` with `χ̃ ∈ X ℤ_2[[X]]`, and `χ(−2e) ∈ 2ℤ_
+943: label='*Inverses.*'                       :: `(a + 2χ)^{−1} = a^{−1} Σ_{j≥0} (−2χ/a)^j`.
+945: label='(c)'                               :: `2χ(2y) ∈ 4ℤ_2`. ∎
+949: label='**Lemma 10.14.** (a)'              :: `𝒯_h` is a ring.
+954: label=''                                  :: `(GH)[D, D']_m(f) = Σ_{D ⊇ D_1 ⊇ D'} Σ_{a+b=m} C(m, a)·Γ^G_{D∖D_1, a}(
+955: label='(c)'                               :: `R_𝒮` is commutative of characteristic `2`, so `β^2 = Σ_μ β_μ^2 μ^2` o
+963: label=''                                  :: `B`: `Γ_{Δ,2q}(y')/(2q − 1)!!`,  `C`: `Γ_{Δ,2q}(y' + 2^h)/(2q − 1)!!`,
+964: label=''                                  :: `P`: `Γ_{Δ,2q+1}(y' + 2^h)/(2q + 1)!!`,  `Dd`: `((2q + 2)/(2q + 1)!!)·
+997: label=''                                  :: `𝔞(S) ≡ 𝔞(Dd) − β^2 π^{−1}`,  `β := 𝔞(B) ≡ 𝔞(C)`,  `π := 𝔞(P)`,
+1002: label='*Proof.*'                          :: `glue(X, Y) = L^{−1} diag(X, Y) L` with the scalar matrix `L = [[1, 0]
+1005: label=''                                  :: `N_± := 2^k·out (Ψ ± 2)^{−1} in`,
+1009: label=''                                  :: `± (∏_i ζ_{m_i}·η^{−L}/∏_i m_i!) · ∏_{landed} π(d)/(π(d) ± 2) · ∏_{ski
+1011: label=''                                  :: `v_2((𝔡_1)_D) − v_2((𝔡_1)_X) + δ(D ∖ Y) + δ(Y ∖ X) + W[o_X, o_Y + K − 
+1012: label=''                                  :: `= δ(D ∖ Y) + δ(Y ∖ X) + W[o_D, o_Y + K − 1] ≥ 1`,
+1018: label='*Proof.* *Cleanliness.*'           :: `Ψ ∈ 𝒯_0` with (a), (b). By Lemma 10.14, `Θ(Ψ^2) = Θ(Ψ)^2 = Θ(4y)^2 = 
+1019: label=''                                  :: `M_w(Ψ(Ψ + 2)/2)^{−1} = M_w(Ψ)^{−1} − N_+ = M_w(Ψ)^{−1}(I − M_w(Ψ)N_+)
+1026: label='*The arms are congruent.*'         :: `Ψ_{i+1} − Ψ_i = 2Y_0 ≡ 0 (mod 2)`. For the second side put `U := Ψ_{i
+1027: label=''                                  :: `U − U' = ΨY_0 + Y_0Ψ − 2Ψ + 2Y_0^2 − 2Y_0 ≡ [Ψ, Y_0] = 4[D, Y_0] ≡ 0 
+1030: label=''                                  :: `M_w(glue(U, U')) = glue(W_− M_w(Ψ_{i+1}), W_+ M_w(Ψ_i)) = glue(W_−, W
+1033: label=''                                  :: `M_w(glue(U, U')) = glue(W_−, W_+)·M_w(glue(Ψ_{i+1}, Ψ_i))`,

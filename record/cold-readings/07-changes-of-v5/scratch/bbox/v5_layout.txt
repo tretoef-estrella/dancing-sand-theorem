@@ -1,0 +1,2420 @@
+      THE DANCING SAND THEOREM
+                  The 2-part of the sandpile group of the hypercube, for every n
+
+                                           Rafael Amichis Luengo
+                        Madrid, Spain · tretoef@gmail.com · 5 October 2026 · version 5
+
+
+
+Abstract
+Let 𝐾(𝑄𝑛) be the sandpile group (critical group, Jacobian) of the 𝑛‑dimensional hypercube graph 𝑄𝑛. Its odd
+part was determined by Bai in 2003; its 2‑part has been open since then, and the latest work on it determines
+its 𝑛 − 1 largest cyclic factors. We determine the whole 2-part of 𝐾(𝑄𝑛) for every 𝑛, by an explicit rule.
+The group splits over the indecomposable tilting modules 𝑇(𝜆) of SL2 in characteristic 2 that occur in 𝑉⊗𝑛,
+with their multiplicities. The contribution of 𝑇(𝜆) at the shift 𝑖 = (𝑛 − 𝜆)/2 consists of explicit small cyclic
+factors and of 2|𝐼| large ones, where 𝐼 is the set of binary digits of 𝜆 + 1 below the leading one. The large ones
+are obtained by pooling a sequence of explicit integers — binomial valuations and carries — into a non-
+increasing sequence, in the manner of isotonic regression. The proof reduces each contribution, by elimina‐
+tion inside explicit 2‑adic lattices, to the Smith form of an explicit 2|𝐼| × 2|𝐼| integer matrix, and computes that
+Smith form from the valuations of its entries. It needs a unique cheapest matching for an upper bound and
+an inductive potential for a lower bound. As consequences we recover Bai’s counts and the theorems of Gao,
+Marx-Kuo, McDonald and Yuen on the largest factors, and we prove their Conjectures 4.14 and 5.4 and the
+formula for the (𝑛 + 1)‑th factor stated in the 2019 poster of three of them. We also prove the fold law: the
+2-part of the sandpile group of the folded cube 𝑄𝑛/⟨(1, …, 1)⟩ is 2 · Syl2 𝐾(𝑄𝑛), the group obtained by low‐
+ering every exponent by one. With the results above this gives the whole 2‑part of the sandpile group of the
+folded cube, and, with the known odd part, its whole sandpile group. This work has not been refereed by a
+human expert.
+1. Introduction and main results
+
+1.0 Summary of results
+For 𝑛 ≥ 1, 𝐾(𝑄𝑛) is the sandpile group of the 𝑛‑cube, 𝐾(𝑛) that of the folded 𝑛‑cube 𝑄𝑛/⟨𝟙⟩ (§1.3), and ℤ2 is
+the ring of 2‑adic integers.
+ Result                 What it says                                                                    Where
+ Main Theorem (the      Syl2 𝐾(𝑄𝑛) ⊕ ℤ2 ≅ ⨁𝜆 𝑋(𝜆, (𝑛 − 𝜆)/2)𝑚𝜆(𝑛), with 𝑋(𝜆, 𝑖) given by an explicit    §1.2, proof in §8
+ Dancing Sand           rule
+ Theorem)
+ Theorem D              each 𝑋(𝜆, 𝑖) is a known group of small clocks plus coker(2𝑘𝑀(𝜆, 𝑖)), 𝑀 an       §4
+                        explicit 2|𝐼| × 2|𝐼| matrix with closed-form entries
+ Theorems O and F       the Smith form of 𝑀(𝜆, 𝑖) is the pooled sequence of clocks: an upper bound      §6, §7
+                        through a unique cheapest matching, a lower bound through a potential
+                        built digit by digit
+ Theorem DW (the        Syl2 𝐾(𝑛) ≅ 2 · Syl2 𝐾(𝑄𝑛); equivalently Syl2 𝐾(𝑄𝑛) ≅ (ℤ/2)𝑎𝑛 ⊕                 §1.3, proof in §10
+ fold law, «dry and     (Syl2 𝐾(𝑛) with every exponent raised by one), 𝑎𝑛 = 2𝑛−2 − 2⌊(𝑛−2)/2⌋
+ wet»)
+ Corollary 1.4          the whole sandpile group of the folded cube                                     §1.3, §10.8
+ Corollary 1.5          Bai’s two counts, re-proved from the rule                                       §9.1
+ Corollary 1.6          the 𝑛 + 1 largest cyclic factors of Syl2 𝐾(𝑄𝑛): Gao et al.’s Theorems 4.1 and   §9.2
+                        4.2, their Conjecture 4.14 and the (𝑛 + 1)‑th factor of the 2019 poster
+                        [MGM19]
+ Corollary 1.7          Syl2 𝐾(𝑄2𝑒) ≅ Syl2 𝐾(𝑄2𝑒−1)2 ⊕ ℤ/22𝑒+𝑒−1 (Gao et al.’s Conjecture 5.4)          §9.3
+
+Every proof behind the table was re-derived by a reader other than its author. The chains of the Main
+Theorem and of Theorem DW were read cold before this text was written, by readers with no access to the
+audits. Version 1 of this text was read cold as a whole on 5 October 2026 by a reader with no access to the
+constructors’ reports, the audits or the earlier readings: «holds with gaps». It found one gap: the integer part
+of Lemma 7.2(b) was false as stated, and four proofs used it; no theorem was affected. Version 2 repaired it
+(§7.1, §7.4, §9.2), and the changes of version 2 were read cold the same day by a fourth reader: the repair
+holds. That reader found one false sentence, in a remark used nowhere (the author then found the same
+missing hypothesis in Lemma 10.6(a), harmless because its only use is for an even system), two rows of
+§12.1 that said more than their code, and points of presentation; it also found, with a two-line proof, that the
+fit of every house is integral (Lemma 7.9). The changes of version 3 were read cold by a fifth reader: they
+hold, with no gap and no error; that reader found points of presentation and defects of typesetting, corrected
+in version 4 except two (Appendix A). The changes of version 4 were read cold by a sixth reader: the mathe‐
+matics of every change holds, with no gap and no error; that reader found one false number and one false
+sentence in the record of the readings, inexact sentences, and defects of typesetting, corrected in this version
+5 except as stated in Appendix A. The changes of version 5 have not yet been read cold (§13,
+Appendix A). No human expert has refereed this work. The words of our own are translated into standard
+terms in §1.7; what we found in the literature, and where we searched, is in §1.8.
+
+
+
+
+                                                            2
+1.1 The problem
+For a finite connected graph 𝐺 with Laplacian 𝐿(𝐺), the cokernel of 𝐿(𝐺) acting on ℤ𝑉(𝐺) is ℤ ⊕ 𝐾(𝐺), where
+𝐾(𝐺) is a finite abelian group of order the number of spanning trees of 𝐺 (Kirchhoff). It is called the sandpile
+group, the critical group or the Jacobian of 𝐺; see [Lor91], [Big99], [Kli18]. For the hypercube 𝑄𝑛 — vertices
+                                                                                            𝑛
+{0, 1}𝑛, edges between words that differ in one letter — the number of spanning trees is 22 −𝑛−1∏𝑛𝑗=1 𝑗𝐶(𝑛,𝑗), so
+𝐾(𝑄𝑛) has order a power of 2 times ∏ 𝑗𝐶(𝑛,𝑗).
+Reiner conjectured in 2001 the number of cyclic factors of 𝐾(𝑄𝑛) and the number of its factors ℤ/2, and Bai
+proved both and determined every odd Sylow subgroup [Bai03]: for an odd prime 𝑝, Syl𝑝 𝐾(𝑄𝑛) ≅
+Syl𝑝 ⨁𝑛𝑗=1 (ℤ/𝑗)𝐶(𝑛,𝑗) [Bai03, Theorem 1.2]. About the 2‑part he wrote: «The full structure of the Sylow-2 sub‐
+group of the critical group of the 𝑛‑cube is still unknown» [Bai03, p. 253]. The question was repeated by
+Ducey and Jalil [DJ14] («the full structure of the 2-primary component of both the critical group and the
+Smith group of the 𝑛‑cube remain unknown»). Chandler, Sin and Xiang computed the Smith group of the
+adjacency matrix of 𝑄𝑛 and wrote about the critical group: «only the 2-Sylow subgroup of the critical group
+remains to be determined, for both odd and even 𝑛. We do not have any conjecture about its exact structure»
+[CSX17, §5.2]. Iga, Klivans, Kostiuk and Yuen observed that for Cayley graphs of 𝔽𝑟2 «the 2-Sylow subgroup of
+their critical groups, or even the just [sic] 2-rank of the Laplacians, has been rather difficult to understand»
+[IKKY23, §7]. Gao, Marx-Kuo, McDonald and Yuen determined the largest cyclic factor and the next 𝑛 − 2
+[GMMY24, Theorems 4.1, 4.2], conjectured the 𝑛‑th [GMMY24, Conjecture 4.14] and a doubling relation
+between the cubes of dimension 2𝑘 − 1 and 2𝑘 [GMMY24, Conjecture 5.4], and wrote that «determining the
+complete structure still seems out of reach at this moment». The (𝑛 + 1)‑th factor was conjectured on the
+2019 poster of Marx-Kuo, Gao and McDonald, which says that «the Sylow-2 subgroup remains a mystery»
+[MGM19].
+This paper determines the whole 2‑part, for every 𝑛.
+
+1.2 The main theorem
+We write Syl2 𝐴 for the 2‑primary part of a finite abelian group 𝐴, and we describe 2‑groups by their expo‐
+nents: {𝑒1: 𝑐1, 𝑒2: 𝑐2, …} means ⊕ (ℤ/2𝑒𝑗)𝑐𝑗. As usual, ℤ2 is the ring of 2‑adic integers, 𝑠2(𝑥) the number of ones
+in the binary expansion of 𝑥 ≥ 0, 𝑣2 the 2‑adic valuation, and
+      𝜅(𝑎, 𝑏) := 𝑠2(𝑎) + 𝑠2(𝑏) − 𝑠2(𝑎 + 𝑏), the number of carries in the binary addition 𝑎 + 𝑏 (𝑎, 𝑏 ≥ 0); by
+      Kummer’s theorem 𝜅(𝑎, 𝑏) = 𝑣2𝐶(𝑎 + 𝑏, 𝑎);
+      𝜑(𝑥) := 𝑥 + 𝑣2(𝑥) for 𝑥 ≥ 1.
+Families. For an integer 𝜆 ≥ 0 write
+                                    𝜆 + 1 = 2𝑘 + ∑ 2𝑡, 𝐼 ⊆ {0, 1, …, 𝑘 − 1},
+                                                   𝑡∈𝐼
+
+so 𝑘 is the leading binary digit of 𝜆 + 1 and 𝐼 the set of the others. For 𝑡 ∈ 𝐼 put
+                          next(𝑡) := min{𝑢 ∈ 𝐼 ∪ {𝑘} : 𝑢 > 𝑡} and ℎ𝑡 := next(𝑡) − 𝑡.
+The subsets 𝐷 ⊆ 𝐼 are the dancers of the family; for a dancer put 𝑜𝐷 := ∑𝑡∈𝐷 2𝑡 and ℎ(𝐷) := ∑𝑡∈𝐷 ℎ𝑡. The
+o‑order lists the dancers by increasing 𝑜𝐷, from ∅ to 𝐼.
+Multiplicities. Let 𝑚𝜆(𝑛) be the integers defined by
+                           ∑ 𝑚𝜆(0)[𝜆] = [0], ∑ 𝑚𝜆(𝑛)[𝜆] = 𝑉 · ∑ 𝑚𝜆(𝑛 − 1)[𝜆],
+                            𝜆                       𝜆                   𝜆
+
+where 𝑉 · is the additive operator on formal sums of symbols [𝜆] given by
+       𝑉 · [0] = [1], 𝑉 · [2𝑙 + 1] = [2𝑙 + 2], 𝑉 · [2𝑙 + 2] = 2[2𝑙 + 1] + Φ(𝑉 · [𝑙]), Φ([𝜈]) := [2𝜈 + 1].
+
+                                                          3
+(The recursion is well founded: 𝑉 · [2𝑙 + 2] calls 𝑉 · [𝑙] with 𝑙 < 2𝑙 + 2.) By Theorem 3.6, 𝑚𝜆(𝑛) is the multi‐
+plicity of the indecomposable tilting module 𝑇(𝜆) of SL2 in characteristic 2 in the tensor power 𝑉⊗𝑛 of the
+natural module. Only 𝜆 ≡ 𝑛 (mod 2) with 1 ≤ 𝜆 ≤ 𝑛 occur for 𝑛 ≥ 1, and 𝑚𝑛(𝑛) = 1.
+Clocks. Fix a family 𝜆 and a shift 𝑖 ≥ 0. For a dancer 𝐷 with (𝑖, 𝐷) ≠ (0, ∅) put 𝜉𝐷 := 𝜆 + 1 − 2𝑜𝐷 (a positive
+integer) and
+                                       𝑢𝑖(𝐷) := 𝜑(𝜉𝐷) + 𝜅(𝑖 + 𝑜𝐷 − 1, 𝜉𝐷) + ℎ(𝐷),
+and put 𝑢0(∅) := ∞. These are the raw clocks of the family at shift 𝑖.
+Pooling. For a finite sequence of integers 𝑥0, …, 𝑥𝑁−1, its integer antitonic fit is obtained as follows.
+Partition the positions into consecutive blocks by the pool-adjacent-violators algorithm, so that the block
+means are strictly decreasing (adjacent blocks with equal means are merged) and each block value is the
+mean of its entries: this is the antitonic least-squares fit [ABERS55], [BBBB72]. Then replace a block of 𝑝
+positions with sum 𝑆 by 𝑆 mod 𝑝 copies of ⌈𝑆/𝑝⌉ followed by 𝑝 − (𝑆 mod 𝑝) copies of ⌊𝑆/𝑝⌋. In the cube the
+rounding never acts: every block mean of the raw clocks is an integer (Lemma 7.9, with Proposition 5.3,
+Lemma 7.5 and Proposition 5.4; see §8), so 𝑦ˆ𝑖 below is the antitonic least-squares fit itself, a non-increasing
+sequence of integers. The rounding is kept in the definition only so that the rule is defined for every sequence
+of integers. At shift 0 the entry ∞ stands first and is not pooled with anything.
+The group of a family. Let 𝑦ˆ𝑖(𝐷) be the integer antitonic fit of the raw clocks 𝑢𝑖(𝐷), read in o‑order. Put
+                                                  𝑘−1
+                                      𝑋(𝜆, 𝑖) := ⨁ (ℤ/2𝑎)2                ⊕ ⨁ ℤ/2𝑦ˆ𝑖(𝐷),
+                                                              |𝐼|+𝑘−1−𝑎
+
+                                                  𝑎=1                        𝐷⊆𝐼
+
+with ℤ/2∞ := ℤ2. The first sum is the family’s small clocks, the second its 2|𝐼| big clocks.
+
+      Main Theorem (the Dancing Sand Theorem). For every 𝑛 ≥ 1, as ℤ2‑modules,
+
+                                   Syl2 𝐾(𝑄𝑛) ⊕ ℤ2 ≅       ⨁
+                                                          1≤𝜆≤𝑛 𝑋(𝜆, (𝑛 − 𝜆)/2)
+                                                                                      𝑚𝜆(𝑛).
+                                                        𝜆≡𝑛 (mod 2)
+
+      The free summand is the big clock 𝑦ˆ0(∅) = ∞ of the family 𝜆 = 𝑛.
+
+The right-hand side is a finite computation with binomial valuations; no Smith form is needed (𝑛 = 1024
+takes seconds). The number of cyclic factors of each copy of 𝑋(𝜆, 𝑖) is 2|𝐼|+𝑘−1 = dim 𝑇(𝜆)/2.
+Example. For 𝑛 = 6 the families are 𝜆 = 6, 4, 2 with 𝑚6(6) = 1, 𝑚4(6) = 4, 𝑚2(6) = 4.
+       𝜆 = 6 (7 = 4 + 2 + 1, 𝑘 = 2, 𝐼 = {0, 1}, ℎ0 = ℎ1 = 1), shift 0: small clocks {1: 4}; raw clocks of
+       ∅, {0}, {1}, {0, 1}: ∞, 6, 6, 3 (for {0}: 𝜉 = 5 and 𝜑(5) + 𝜅(0, 5) + ℎ0 = 5 + 0 + 1; for {1}: 𝜉 = 3 and 𝜑(3) +
+       𝜅(1, 3) + ℎ1 = 3 + 2 + 1); no pooling.
+       𝜆 = 4 (5 = 4 + 1, 𝑘 = 2, 𝐼 = {0}, ℎ0 = 2), shift 1: small clocks {1: 2}; raw clocks 𝜑(5) + 𝜅(0, 5) = 5 and
+       𝜑(3) + 𝜅(1, 3) + 2 = 3 + 2 + 2 = 7. The sequence 5, 7 increases, so it is pooled: 6, 6.
+       𝜆 = 2 (3 = 2 + 1, 𝑘 = 1, 𝐼 = {0}, ℎ0 = 1), shift 2: no small clocks; raw clocks 𝜑(3) + 𝜅(1, 3) = 5 and
+       𝜑(1) + 𝜅(2, 1) + 1 = 2.
+So Syl2 𝐾(𝑄6) = {1: 4} ⊕ {6: 2, 3: 1} ⊕ 4 · {1: 2, 6: 2} ⊕ 4 · {5: 1, 2: 1} = {1: 12, 2: 4, 3: 1, 5: 4, 6: 10}, as the direct
+computation gives. This is the smallest cube in which pooling acts.
+An equivalent form. For 𝑖 ≥ 1, with 𝑚 := 𝑖 − 1 and 𝐾 := 2𝑘, define for 𝜇 ≥ 0
+                          𝑅𝜇(𝐷) := ∑ (ℎ𝑡 − 2𝑡) − 𝜅(𝜇, 𝑜𝐷), 𝑥𝐷 := 𝑅𝑚(𝐷) − 𝑅𝑚+𝐾(𝐼 ∖ 𝐷).
+                                     𝑡∈𝐷
+
+
+
+
+                                                             4
+Then 𝑢𝑖(𝐷) = 𝑘 + 𝐾 + 𝜅(𝑚, 𝐾) + 𝑥𝐷 for every dancer (Proposition 5.3), so the big clocks are 𝑘 + 𝐾 + 𝜅(𝑚, 𝐾)
+plus the integer antitonic fit of 𝑥. This is the form in which the proof computes them.
+
+1.3 The fold law: dry and wet
+Let 𝟙 = (1, …, 1). The folded 𝑛‑cube is the quotient graph 𝑄𝑛/⟨𝟙⟩: its vertices are the 2𝑛−1 pairs of antipodal
+words, and two pairs are joined once for each pair of words, one from each, that differ in one letter. It is the
+Cayley graph of 𝔽𝑛2 /⟨𝟙⟩ with the images of the unit vectors; for 𝑛 ≥ 3 it is a simple 𝑛‑regular graph. We write
+𝐾(𝑛) for its sandpile group.
+A naming trap. In the literature on interconnection networks the «folded hypercube 𝐹𝑄𝑚» is 𝑄𝑚 with the
+antipodal matching added: 2𝑚 vertices, degree 𝑚 + 1 [EL91]. It is the Cayley graph of 𝔽𝑚2 with the unit vec‐
+tors and 𝟙, which is our folded cube in dimension 𝑚 + 1: our folded 𝑛‑cube 𝑄𝑛/⟨𝟙⟩ is 𝐹𝑄𝑛−1. We keep the
+index 𝑛 of the cube that is folded.
+
+     Theorem DW (the fold law). For every 𝑛 ≥ 1,
+                                             Syl2 𝐾(𝑛) ≅ 2 · Syl2 𝐾(𝑄𝑛),
+     where 2 · 𝐴 is the subgroup of doubles. Equivalently,
+         Syl2 𝐾(𝑄𝑛) ≅ (ℤ/2)𝑎𝑛 ⊕ (Syl2 𝐾(𝑛) with every exponent raised by one), 𝑎𝑛 = 2𝑛−2 − 2⌊(𝑛−2)/2⌋.
+
+Here 𝑎𝑛 is the number of factors ℤ/2 of 𝐾(𝑄𝑛), by Bai [Bai03, Theorem 1.3] (re-proved in §9.1). Theorem DW
+is proved family by family (§10): the folded cube splits over the same tilting families with the same multiplic‐
+ities, and the group of each family is halved.
+The names «dry and wet» and «dance» are explained in §1.7.
+Example. For 𝑛 = 5, Syl2 𝐾(𝑄5) = {1: 6, 3: 4, 4: 1, 6: 4} and 𝑎5 = 6, so Syl2 𝐾(5) = {2: 4, 3: 1, 5: 4}.
+
+     Corollary 1.4 (the sandpile group of the folded cube). For every 𝑛 ≥ 2, Syl2 𝐾(𝑛) is the group
+     of the Main Theorem with the 𝑎𝑛 factors ℤ/2 removed and every other exponent lowered by one.
+     For every odd prime 𝑝, Syl𝑝 𝐾(𝑛) ≅ Syl𝑝 ⨁𝑗 even, 2≤𝑗≤𝑛 (ℤ/2𝑗)𝐶(𝑛,𝑗).
+
+The odd part is [GMMY24, Proposition 1.9]: the Laplacian eigenvalues of the folded cube are 2|𝐽| for the sub‐
+sets 𝐽 ⊆ {1, …, 𝑛} of even size. We found no earlier computation of the sandpile group of the folded cube; its
+order, the number of spanning trees, is the sequence OEIS A193134 [OEIS] (for 𝑛 ≥ 3; at 𝑛 = 2 that sequence
+counts the simple graph 𝐾2, while our 𝑄2/⟨𝟙⟩ has a double edge).
+The mod-2 layer. Theorem DW explains a coincidence noted by Gao et al. [GMMY24, Remark 2.13]:
+the 𝔽2‑rank of the Laplacian of the folded cube 𝑄𝑛/⟨𝟙⟩ and the number of factors ℤ/2 of 𝐾(𝑄𝑛) are both 𝑎𝑛
+(«We are not sure if that is a coincident, or a special case of some deeper connection»). Under the fold law
+every factor of Syl2 𝐾(𝑄𝑛) other than the factors ℤ/2 keeps a non-trivial image, so the number of even
+invariant factors of the folded Laplacian is (2𝑛−1 − 1 − 𝑎𝑛) + 1, and its 𝔽2‑rank is 2𝑛−1 minus that number,
+which is 𝑎𝑛 (§10.8). The fold law is specific to the antipodal involution: the quotient by 𝑥1𝑥2 does not halve
+the group (we checked 3 ≤ 𝑛 ≤ 12, §12).
+
+
+
+
+                                                           5
+1.4 Consequences
+
+     Corollary 1.5 (Bai [Bai03, Theorems 1.1, 1.3]). Syl2 𝐾(𝑄𝑛) has exactly 2𝑛−1 − 1 cyclic factors, and
+     exactly 𝑎𝑛 of them are ℤ/2 (𝑛 ≥ 2).
+
+Bai states the first count for the invariant factors of 𝐾(𝑄𝑛). They are all even [Bai03, Lemma 2.2,
+Corollary 2.3]: in his proof the Smith form of the Laplacian of 𝑄𝑛 has 2𝑛−1 entries 1, and the others are those
+of a matrix with even entries. So his count is the number of cyclic factors of Syl2 𝐾(𝑄𝑛).
+Write 𝑐1(𝑄𝑛) ≥ 𝑐2(𝑄𝑛) ≥ ⋯ for the exponents of the cyclic factors of Syl2 𝐾(𝑄𝑛), in decreasing order, and
+𝑔(𝑁) := max1≤𝑥<𝑁 𝜑(𝑥) = max1≤𝑥<𝑁(𝑥 + 𝑣2𝑥). (Gao et al. write 𝑐𝑖(𝑄𝑛) for the 𝑖‑th largest invariant factor of
+𝐾(𝑄𝑛) and state their results for its 2‑adic valuation, which is our 𝑐𝑖(𝑄𝑛).)
+
+     Corollary 1.6 (the podium). Put 𝐺 := 𝑔(𝑛 − 1). For every 𝑛 ≥ 4:
+         𝑛 even: 𝑐1 = max(𝐺, 𝜑(𝑛) − 1) and 𝑐2 = ⋯ = 𝑐𝑛+1 = 𝐺;
+         𝑛 odd and 𝜑(𝑛 − 1) ≤ 𝐺: 𝑐1 = ⋯ = 𝑐𝑛+1 = 𝐺;
+         𝑛 odd and 𝜑(𝑛 − 1) > 𝐺: 𝑐1 = ⋯ = 𝑐𝑛−1 = 𝜑(𝑛 − 1), 𝑐𝑛 = max(𝐺, 𝜑(𝑛 − 1) − 2), 𝑐𝑛+1 = 𝐺.
+     In particular:
+         𝑐1 = max(𝑔(𝑛), 𝑣2𝑛 + 𝑛 − 1) and 𝑐2 = ⋯ = 𝑐𝑛−1 = 𝑔(𝑛) for 𝑛 ≥ 3 [GMMY24, Theorems 4.1, 4.2];
+         𝑐𝑛 = max(𝑔(𝑛 − 1), 𝑣2(𝑛 − 1) + 𝑛 − 3) for 𝑛 ≥ 3 [GMMY24, Conjecture 4.14];
+         𝑐𝑛+1 = 𝑔(𝑛 − 1) for 𝑛 ≥ 4 [MGM19].
+
+     Corollary 1.7 ([GMMY24, Conjecture 5.4]). For every 𝑒 ≥ 1,
+                                                                        𝑒
+                                    Syl2 𝐾(𝑄2𝑒) ≅ Syl2 𝐾(𝑄2𝑒−1)2 ⊕ ℤ/22 +𝑒−1.
+
+The proof of Corollary 1.7 gives more: each tilting family of the cube of dimension 2𝑒 − 1 becomes one family
+of the cube of dimension 2𝑒 with the same multiplicity, and each of its dancers becomes two dancers with the
+same raw clock (§9.3).
+
+1.5 The idea of the proof
+    1. The group ring as an SL2‑module (§2). In the group ring ℤ[(ℤ/2)𝑛] the Laplacian is multiplication
+       by 𝜎 = ∑𝑖 (1 − 𝑥𝑖). In the basis 𝑠𝑆 = ∏𝑖∈𝑆 (1 − 𝑥𝑖) it becomes 𝑈 + 2𝐷, with 𝑈 the raising operator of the
+       Boolean lattice and 𝐷 the rank (up to the sign (−1)|𝑆|, this basis is the change of variables 𝑢𝑖 = 𝑥𝑖 − 1 in
+       the proof of [GMMY24, Proposition 2.5], and it is the Laplacian analogue of [CSX17, §5]).
+       Identifying 𝑠𝑆 with a pure tensor of 𝑉⊗𝑛, 𝑉 = ℤ2 the natural module of SL2, gives 𝜎 = 𝐹 + 𝑛 − 𝐻, an ele‐
+       ment of the hyperalgebra of SL2 over ℤ.
+    2. The family decomposition (§3). Over ℤ2, 𝑉⊗𝑛 is a direct sum of explicit lattices 𝑇(𝜆), built from ℤ by
+       two operations: a lattice form Φ of the Frobenius twist (𝑇(2𝑙 + 1) = Φ(𝑇(𝑙))) and the tensor product
+       with 𝑉 (𝑇(2𝑙 + 2) = 𝑉 ⊗ Φ(𝑇(𝑙))). The proof needs only an elementary lifting lemma for SL2. Since 𝜎 is
+       carried by every isomorphism, the group splits family by family.
+    3. The dance (§4). On Φ(𝑁) half of the relations have unit pivots; eliminating them leaves twice the
+       same kind of operator on 𝑁, with the payment of each floor replaced by a product of two consecutive
+       payments. On 𝑉 ⊗ Φ(𝑁) the same happens with two coupled «dancers». After 𝑘 moves 𝑋(𝜆, 𝑖) is the
+       small clocks plus coker(2𝑘𝑀(𝜆, 𝑖)) (the Smith exponents of 𝑀 raised by 𝑘), 𝑀 an explicit triangular
+
+
+
+                                                        6
+       matrix indexed by the dancers, whose entries are products of payments over windows times the coeffi‐
+       cients of an explicit polynomial (Theorem D). Its entries have valuations given by carries (§5).
+    4. The Smith form of 𝑀 (§6–§8). The 𝑟‑th determinantal divisor 𝑑𝑟 of 𝑀 is bounded below by the cheap‐
+       est 𝑟‑matching in the support of 𝑀, valued by 𝑣2 (the tropical bound). It is at most the valuation of one
+       natural minor, which has a unique cheapest matching (Theorem O); that valuation is a partial sum of
+       the raw clocks, and convexity turns it into the partial sum of the pooled clocks (Lemma 6.4).
+       Theorem F shows that every 𝑟‑matching costs at least the partial sums of the pooled clocks, by a poten‐
+       tial built digit by digit from the bottom of 𝜆 + 1. The two bounds meet.
+    5. The fold (§10). On each family the antipode acts as ±exp(𝐹). The folded group is the cokernel of an
+       operator that differs from the doubled one by a perturbation ∑ 𝜁𝑚𝐹(𝑚) of higher divided powers. The
+       same dance applies to both. Every move stays clean because the coefficients of every level lie in a
+       ring 𝒦 of 2‑adic functions of twice the position, on which a shift-invariant reduction makes every
+       Schur complement vanish modulo 2 (Theorem 10.15). The perturbation then changes no valuation of
+       the final matrix (Theorem 10.12). The even families are glued pairs of odd ones, and the glue survives
+       the dance.
+
+1.6 Notation and conventions
+ symbol                     meaning                                                                               first use
+ 𝑄𝑛, 𝐾(𝑄𝑛), 𝐾(𝑛)            the 𝑛‑cube, its sandpile group, that of the folded cube 𝑄𝑛/⟨𝟙⟩                        §1.1, §1.3
+ 𝑠2, 𝑣2, 𝜅(𝑎, 𝑏), 𝜑(𝑥)      binary digit sum, 2‑adic valuation, carries of 𝑎 + 𝑏, 𝑥 + 𝑣2𝑥                         §1.2
+ 𝜆, 𝑘, 𝐾, 𝐼                 a family: 𝜆 + 1 = 2𝑘 + ∑𝑡∈𝐼 2𝑡, 𝐾 = 2𝑘                                                §1.2
+ 𝐷, 𝑜𝐷, ℎ𝑡, ℎ(𝐷)            dancers 𝐷 ⊆ 𝐼, ∑𝑡∈𝐷 2𝑡, gaps next(𝑡) − 𝑡, ∑𝑡∈𝐷 ℎ𝑡                                     §1.2
+ 𝑖, 𝑚                       the shift (𝑛 − 𝜆)/2, and 𝑚 = 𝑖 − 1 when 𝑖 ≥ 1                                         §1.2
+ 𝑚𝜆(𝑛)                      multiplicity of the family 𝜆 in 𝑉⊗𝑛                                                   §1.2, §3
+ 𝑢𝑖(𝐷), 𝑦ˆ𝑖(𝐷), 𝑋(𝜆, 𝑖)     raw clocks, pooled clocks, the group of a family                                      §1.2
+ 𝑅 = ℤ[(ℤ/2)𝑛], 𝑠𝑆, 𝜎       the group ring, its basis ∏𝑖∈𝑆 (1 − 𝑥𝑖), the Laplacian element                        §2
+ 𝑉, 𝑏0, 𝑏1, 𝐸, 𝐹, 𝐻, 𝐹(𝑟)   the natural module of SL2, its basis, the hyperalgebra generators                     §2
+ 𝐴 = ℤ2                     the base ring                                                                         §2.2
+ Δ𝐴(𝜆), ∇𝐴(𝜆)               Weyl and dual Weyl lattices                                                           §2.3
+ Φ(𝑁), 𝑇(𝜆)                 the doubling functor, the dance lattices                                              §3
+ 𝐷 (operator), 𝜋(𝑑), 𝜎(𝛼)
+                      𝑖     the floor operator, a payment, 𝐹 + 2𝛼(𝐷 + 𝑖)                                          §2.2, §3.4, §4
+ 𝑀(𝜆, 𝑖), 𝑞𝑘, 𝑎𝑘(Δ), 𝛿(Δ)   the final matrix, the coefficient polynomial, its coefficients and their valuations   §4.4, §4.5
+ 𝑅𝜇(𝐷), 𝛾(Δ), 𝑥𝐷, 𝜓(𝐸)      rulers, gold, clocks of a cell, ∑𝑡∈𝐸 (ℎ𝑡 − 2𝑡)                                        §1.2, §5
+ 𝑑𝑟, 𝑇(𝑟), 𝑈(𝑟), 𝑌(𝑟)       determinantal divisors, cheapest 𝑟‑matching, natural and pooled partial sums          §6
+ 𝑎 = 𝑥1⋯𝑥𝑛, 𝜏𝑖, Ψ𝑗          the antipode, the family operator, the folded odd-family operator                     §10
+ 𝒦, Θ, 𝒯ℎ                   the ring of functions 𝜗(𝑦) = 𝑎 + 2𝜒(2𝑦), its reduction, the covariant systems of      §10.5
+                            level ℎ
+
+A few letters have two meanings, each clear from its argument: 𝐷 is a dancer (a subset of 𝐼) and the floor
+operator of §4; 𝐾 is 2𝑘 and the sandpile group 𝐾(·); 𝑇(𝜆) is a dance lattice and 𝑇(𝑟) a cheapest-matching value;
+
+
+                                                                  7
+𝜏𝑡 is a datum of a window (§7.3) and 𝜏𝑖 the family operator of §10; and «window» is a range of floors in
+§4.4 and a range of binary digits in §7.3. Groups are written additively. «Lattice» means a finitely generated
+free ℤ2‑module, and for a square matrix 𝑀 over ℤ2 with non-zero determinant, coker 𝑀 and its Smith form
+are taken over ℤ2.
+
+1.7 Vocabulary, and why these names
+Some words in this paper are ours. Each is defined where it first matters; this table gives its standard
+meaning.
+ our word                             standard meaning                                                             where
+ family 𝜆; shift 𝑖                    the summand 𝑇(𝜆) of 𝑉⊗𝑛 (Theorem 3.6); the integer 𝑖 = (𝑛 − 𝜆)/2, so         §1.2, §3.4
+                                      that the Laplacian acts on 𝑇(𝜆) as 𝐹 + 𝜆 − 𝐻 + 2𝑖
+ dance lattice 𝑇(𝜆)                   a ℤ2‑lattice whose reduction modulo 2 is the indecomposable tilting          §3.3
+                                      module of SL2 of highest weight 𝜆 in characteristic 2 (Remark (1) after
+                                      Theorem 3.6)
+ dancers; o‑order                     the subsets 𝐷 ⊆ 𝐼, which index the slots after the dance; their order by     §1.2, §4.3
+                                      𝑜𝐷 = ∑𝑡∈𝐷 2𝑡
+ floor                                the grading by (𝑐 − 𝑤)/2 on the weight 𝑤; 𝐹 raises it by one                 §2.2
+ payment; payment system              a diagonal operator given by a function of the floor; the operator 𝐹 plus    §4.1
+                                      payments on copies of a lattice, with lower-triangular couplings
+                                      between the copies
+ twist move; split move               one step of block Gaussian elimination: eliminate the unit pivots, take      §4.2, §10.3
+                                      the Schur complement, divide by 2. The split move first separates the
+                                      two basis vectors of 𝑉, so that each dancer becomes two
+ the dance                            the 𝑘 moves, one for each binary digit of 𝜆 + 1 below the leading one        §4.3
+ final matrix; window                 the triangular matrix 𝑀(𝜆, 𝑖) of size 2|𝐼| left by the dance; the range of   §4.4
+                                      floors whose payments are multiplied in one of its entries
+ clock                                a cyclic factor ℤ/2𝑒, named by its exponent 𝑒; the small clocks come         §1.2, §4.3
+                                      from the eliminated pivots, the big clocks from the final matrix
+ raw clocks; pooling                  explicit integers 𝑢𝑖(𝐷); their antitonic least-squares fit (isotonic         §1.2, §7.1
+                                      regression, by pool-adjacent-violators), which in the cube is always an
+                                      integer sequence (Lemma 7.9)
+ cell                                 the data (𝜆, 𝑖, 𝛼) of one final matrix                                       §5, §6.1
+ ruler; gold                          the row and the column term of the valuation of an entry of the final        §5, §6.2
+                                      matrix; the remaining term 𝛾, which vanishes exactly on the golden
+                                      arrows
+ golden matching                      the unique bijection 𝛽𝑟 all of whose arrows are golden; its term is the      §6.2
+                                      unique term of least valuation in the expansion of the natural minor
+ mirror                               the map 𝐷 ↦ 𝐼 ∖ 𝐷, which reverses the o‑order                                §6.1, §7.1
+ ceiling; floor (of the Smith form)   the upper and the lower bound for the determinantal divisors of the          §6, §7
+                                      final matrix (Theorems O and F); this «floor» is not the grading
+ house; penalties                     the binary data (𝐼, 𝑘, ℓ, 𝛼) of a cell, freed from 𝜆 and 𝑖; the two          §7.3
+                                      correction terms of a real cell
+
+
+
+
+                                                               8
+ our word                             standard meaning                                                         where
+ windows 𝑊𝑡; gates                    the intervals of binary digits [𝑡, next(𝑡)); the rule by which each of   §7.3
+                                      them lets a carry through (Lemma 7.6)
+ podium                               the 𝑛 + 1 largest cyclic factors of Syl2 𝐾(𝑄𝑛)                           §1.4, §9.2
+ the fold                             the quotient by the antipode 𝟙, which gives the folded cube              §1.3, §10
+ dry; wet                             reduction modulo 2; the lattice over ℤ2                                  below
+ arms; glue; bend                     the two odd-family operators that make an even family; the triangular    §10.2, §10.7
+                                      block form glue(𝑋, 𝑌) that joins them; the estimate by which the two
+                                      sides of the fold law differ by a unit at the end of the dance
+                                      (Lemma 10.20)
+ formal dance; positions; covariant   the dance of operators with divided powers 𝐹(𝑚); the numbers             §10.3, §10.5
+ system                               2ℎ𝑓 + 𝑜𝐷 + 𝑐; a system whose coefficients depend only on Δ = 𝐷 ∖ 𝐷′,
+                                      on 𝑚 and on the position of the target
+ turned lid                           a symmetry that we measured and did not prove                            §11
+
+Why «dance». Read the binary word of 𝜆 + 1 from the bottom. At a digit 0 every dancer makes the same
+step, the twist move. At a digit 1 every dancer splits into two partners, the split move. After 𝑘 digits there are
+2|𝐼| dancers, the subsets of 𝐼. At the start each floor 𝑑 pays the even amount 2𝛼(𝑖 + 𝑑); each move replaces the
+payments of two adjacent floors by minus half their product, so every payment stays even; at the end the
+final matrix records who owes what to whom. The sand is the sandpile; the dance is the elimination that
+brings it to rest.
+Why «dry» and «wet». Modulo 2 — dry — the module 𝑇(2𝑙 + 1) becomes 𝑉 ⊗ 𝑇(𝑙)[1], the tensor product
+of 𝑉 with a Frobenius twist (Proposition 3.1(c)), and the cokernel of the Laplacian modulo 2 sees only the
+number of cyclic factors of the 2‑part. Over ℤ2 — wet — the twist has an integral form, the lattice Φ(𝑇(𝑙)) of
+§3.1, on which 𝐹2 acts as 2𝐹 of 𝑇(𝑙), and every power of 2 survives. The fold dries the cube by exactly one
+layer: the factors ℤ/2 disappear, and every other exponent drops by one (Theorem DW).
+
+1.8 Literature and priority
+What is ours, to the best of our knowledge, after a search of the literature up to October 2026 (arXiv and
+journal searches, the citation trees of [Bai03], [CSX17] and [GMMY24] in Google Scholar and Semantic
+Scholar, and the sources listed below; MathSciNet was not searched):
+    1. the whole 2‑part of 𝐾(𝑄𝑛), for every 𝑛 (the Main Theorem);
+    2. the decomposition of a sandpile group over tilting modules, with the reduction of each piece to a small
+       explicit matrix (Theorems 3.6 and D) — we found no tilting decomposition of any sandpile group;
+    3. proofs of [GMMY24, Conjectures 4.14 and 5.4] and of the (𝑛 + 1)‑th factor of [MGM19] — we found
+       no other proof;
+    4. the fold law and the sandpile group of the folded cube (Theorem DW, Corollary 1.4);
+    5. the proof techniques of §4–§7 and §10 as combinations: the dance, the cost form with carries,
+       Theorems O, U and F, the ring 𝒦 with Theorem 10.15, and Theorem 10.12. Each ingredient we did not
+       invent is credited where it is used.
+What is not ours. Bai determined the odd part and proved Reiner’s two counts [Bai03]. Gao, Marx-Kuo,
+McDonald and Yuen determined the 𝑛 − 1 largest factors and posed the conjectures we prove; their
+Proposition 1.9 gives the odd part of every Cayley graph of 𝔽𝑟2, their Proposition 2.12 the 𝔽2‑rank of the
+Laplacian of the folded cube (§10.8), their Remark 4.4 contains Lemma 9.2(b), their Table 1 reproduces Bai’s
+
+                                                               9
+table of Syl2 𝐾(𝑄𝑛) for 𝑛 ≤ 11, and the monomials of their change of variables 𝑢𝑖 = 𝑥𝑖 − 1 (proof of their
+Proposition 2.5) are, up to the sign (−1)|𝑆|, the basis we use [GMMY24]. Chandler, Sin and Xiang computed
+the Smith group of the adjacency matrix with the same monomial basis and Bier’s vectors [CSX17], [Bie93],
+[Wil90]. Reiner and Tseng gave the exact sequence relating the critical groups of a double cover and of its
+base [RT14]; we use none of it, but the fold law is a statement about such a cover. The multiplicities of tilting
+modules of SL2 in tensor powers of 𝑉 in characteristic 2 are known: they follow from Donkin’s tensor product
+theorem [Don93] and the characters of [TW21], and Larsen gives the fusion rule of 𝑉⊗2 at 𝑝 = 2 [Lar24, §2],
+which reproduces our recursion (§12.2). The Weyl and dual Weyl filtrations, and the lifting of tilting decom‐
+positions over complete rings, are standard [Jan03, Don93]; we give the short elementary proofs needed for
+SL2 over ℤ2 (§3.2), because the general references are written over fields or for other purposes. Kostant’s com‐
+mutation formula in the ℤ‑form of 𝑈(𝔰𝔩2) is [Kos66], [Hum72, §26]. Kummer’s theorem [Kum52], Legendre’s
+formula 𝑣2(𝑚!) = 𝑚 − 𝑠2(𝑚), the von Staudt–Clausen theorem [vSt40], [Cla40], Strassmann’s theorem
+[Str28], and the pool-adjacent-violators algorithm [ABERS55] are classical. Related representation-theoretic
+computations of Smith and critical groups are those of Sin’s school [CSX17], [DHS18] and the subset-
+intersection diagonal forms of [DEGJPP23].
+Contemporary context. Vetluzhskikh and Zakharov compute the order of the kernel of the pushforward
+between critical groups of abelian covers [VZ24], and Len and Zakharov the order of the Prym group of a
+double cover [LZ22]; both give orders, not group structure. Akyar et al. recall that the exact sequence of
+Reiner and Tseng for a graph cover splits on primary components away from the primes dividing the cov‐
+ering degree, which makes the prime 2 «a natural place to look for additional structure under an involution»
+[Aky26, §4]. Their reflections of odd grids have fixed vertices, so their fold is not a regular double cover, and
+they ask: «Can an analogous integral description with fixed vertices explain both the folded all-ones class and
+the remaining 2-primary factors?» The antipodal fold of the cube has no fixed vertex: it is a regular double
+cover, and there the fold law describes the 2‑part.
+If a result here was obtained earlier, we would be grateful to be told, and we will correct the
+record.
+
+2. The group ring as a module over the hyperalgebra of SL2
+
+2.1 The Laplacian in the group ring
+Let 𝐺 = (ℤ/2)𝑛 with generators 𝑥1, …, 𝑥𝑛, and 𝑅 := ℤ[𝐺]. The Laplacian of the Cayley graph 𝑄𝑛 of 𝐺 acts on
+ℤ𝐺 = 𝑅 as multiplication by
+                                                      𝑛
+                                               𝜎 := ∑ (1 − 𝑥𝑖).
+                                                     𝑖=1
+
+Since 𝑄𝑛 is connected, coker(𝜎 on 𝑅) ≅ ℤ ⊕ 𝐾(𝑄𝑛) [Lor91], [Big99]. Put 𝑠𝑖 := 1 − 𝑥𝑖 and, for 𝑆 ⊆ {1, …, 𝑛},
+𝑠𝑆 := ∏𝑖∈𝑆 𝑠𝑖. The elements 𝑠𝑆 form a ℤ‑basis of 𝑅 (the change of basis from {𝑥𝑆} is unitriangular for
+inclusion).
+Lemma 2.1. In 𝑅,
+                                𝑠𝑗𝑠𝑆 = 𝑠𝑆∪{𝑗} if 𝑗 ∉ 𝑆, 𝑠𝑗𝑠𝑆 = 2𝑠𝑆 if 𝑗 ∈ 𝑆.
+Hence 𝜎𝑠𝑆 = ∑𝑗∉𝑆 𝑠𝑆∪{𝑗} + 2|𝑆| · 𝑠𝑆, that is, 𝜎 = 𝑈 + 2𝐷, where 𝑈𝑠𝑆 = ∑𝑗∉𝑆 𝑠𝑆∪{𝑗} and 𝐷𝑠𝑆 = |𝑆|𝑠𝑆.
+Proof. 𝑠2𝑗 = (1 − 𝑥𝑗)2 = 2 − 2𝑥𝑗 = 2𝑠𝑗.                                                                        ∎
+
+
+
+
+                                                          10
+Up to the sign (−1)|𝑆|, these are the monomials of the change of variables 𝑢𝑖 = 𝑥𝑖 − 1 used by Gao et al.
+[GMMY24, proof of Proposition 2.5], and the basis is the Laplacian analogue of the monomial basis in which
+Chandler, Sin and Xiang write the adjacency matrix [CSX17, §5, (5)]. Since (ℤ ⊕ 𝐾) ⊗ ℤ2 ≅ ℤ2 ⊕ Syl2 𝐾 for a
+finite abelian group 𝐾, and ⊗ ℤ2 is right exact, we have ℤ2 ⊕ Syl2 𝐾(𝑄𝑛) ≅ coker(𝜎 on 𝑅 ⊗ ℤ2).
+
+2.2 The hyperalgebra and the dictionary
+Let 𝑈ℚ be the universal enveloping algebra of 𝔰𝔩2 over ℚ, with generators 𝐸, 𝐹, 𝐻, [𝐻, 𝐸] = 2𝐸, [𝐻, 𝐹] = −2𝐹,
+[𝐸, 𝐹] = 𝐻. Its Kostant ℤ‑form Distℤ is the subring generated by the divided powers 𝐸(𝑟) = 𝐸𝑟/𝑟!, 𝐹(𝑟) = 𝐹𝑟/𝑟!
+and the elements 𝐶(𝐻, 𝑟) = 𝐻(𝐻 − 1)⋯(𝐻 − 𝑟 + 1)/𝑟! [Kos66], [Hum72, §26]; it is the distribution algebra of
+SL2 over ℤ. Kostant’s formula
+                                            min(𝑟,𝑠)
+                                                                                                              (K)
+                               𝐸(𝑠)𝐹(𝑟) =    ∑
+                                             𝑗=0
+                                                 𝐹(𝑟−𝑗)𝐶(𝐻 − 𝑟 − 𝑠 + 2𝑗, 𝑗)𝐸(𝑠−𝑗)
+
+holds in 𝑈ℚ. Put 𝐴 := ℤ2 and Dist𝐴 := 𝐴 ⊗ Distℤ, a Hopf algebra with Δ(𝐹(𝑟)) = ∑𝑎+𝑏=𝑟 𝐹(𝑎) ⊗ 𝐹(𝑏), the same
+for 𝐸, and Δ(𝐻) = 𝐻 ⊗ 1 + 1 ⊗ 𝐻.
+A lattice is a Dist𝐴‑module that is free of finite rank over 𝐴, on which 𝐻 acts diagonally with integer
+eigenvalues (the weights): the module is the direct sum of its weight spaces. A lattice 𝑋 has the floor
+grading for any integer 𝑐 ≥ every weight of 𝑋 with 𝑐 ≡ the weights (mod 2): the floor of a weight vector of
+weight 𝑤 is (𝑐 − 𝑤)/2. We write 𝐷 for the floor operator (the floor relative to the top weight, unless said other‐
+wise); 𝐹 raises the floor by one.
+Let 𝑉 := 𝐴𝑏0 ⊕ 𝐴𝑏1 with 𝐻𝑏0 = 𝑏0, 𝐻𝑏1 = −𝑏1, 𝐹𝑏0 = 𝑏1, 𝐸𝑏1 = 𝑏0, 𝐹𝑏1 = 𝐸𝑏0 = 0, and 𝐸(𝑟) = 𝐹(𝑟) = 0 on 𝑉 for
+𝑟 ≥ 2: the natural module.
+Lemma 2.2 (the dictionary). The 𝐴‑linear isomorphism 𝑅 ⊗ 𝐴 → 𝑉⊗𝑛 that sends 𝑠𝑆 to the pure tensor
+with 𝑏1 in the positions of 𝑆 and 𝑏0 elsewhere carries 𝑈 to 𝐹, 𝐷 to (𝑛 − 𝐻)/2, and therefore
+                                                       𝜎 = 𝐹 + 𝑛 − 𝐻.
+Proof. On 𝑉⊗𝑛, 𝐹 = ∑𝑗 1 ⊗ ⋯ ⊗ 𝐹 ⊗ ⋯ ⊗ 1 turns one 𝑏0 into 𝑏1 in every possible way, which is 𝑈; and a pure
+tensor with |𝑆| letters 𝑏1 has weight 𝑛 − 2|𝑆|.                                                          ∎
+Corollary 2.3. If 𝑉⊗𝑛 ≅ ⨁𝑗 𝑀𝑗 as Dist𝐴‑modules, then ℤ2 ⊕ Syl2 𝐾(𝑄𝑛) ≅ ⨁𝑗 coker(𝐹 + 𝑛 − 𝐻 on 𝑀𝑗).
+Proof. 𝜎 = 𝐹 + 𝑛 − 𝐻 is an element of Dist𝐴 (it acts through 𝐹 and 𝐻), so every isomorphism of Dist𝐴‑mod‐
+ules carries 𝜎 to 𝜎, and the cokernel of an endomorphism that preserves a direct sum decomposition is the
+sum of the cokernels.                                                                                   ∎
+
+2.3 Weyl lattices, duality, filtrations
+For 𝜆 ≥ 0 let Δℚ(𝜆) be the simple 𝑈ℚ‑module of highest weight 𝜆 with highest weight vector 𝑣, and Δ𝐴(𝜆) :=
+Dist𝐴 · 𝑣, the Weyl lattice. It has the basis 𝑒𝑟 := 𝐹(𝑟)𝑣 (0 ≤ 𝑟 ≤ 𝜆), with
+                         𝐹𝑒𝑟 = (𝑟 + 1)𝑒𝑟+1, 𝐸𝑒𝑟 = (𝜆 − 𝑟 + 1)𝑒𝑟−1, 𝐻𝑒𝑟 = (𝜆 − 2𝑟)𝑒𝑟.
+Let 𝜄 be the anti-involution of Dist𝐴 with 𝜄(𝐸(𝑟)) = 𝐹(𝑟), 𝜄(𝐹(𝑟)) = 𝐸(𝑟), 𝜄(𝐻) = 𝐻. For a lattice 𝑋 the con‐
+travariant dual 𝑋𝜄 := Hom𝐴(𝑋, 𝐴) with (𝑔 · 𝜉)(𝑥) := 𝜉(𝜄(𝑔)𝑥) is a lattice; 𝜄 is compatible with the coproduct,
+so (𝑋 ⊗ 𝑌)𝜄 ≅ 𝑋𝜄 ⊗ 𝑌𝜄, and 𝑉𝜄 ≅ 𝑉 (the dual basis of 𝑏0, 𝑏1). The dual Weyl lattice is ∇𝐴(𝜆) := Δ𝐴(𝜆)𝜄; in the
+dual basis 𝑤𝑟 of the 𝑒𝑟,
+                                       𝐹𝑤𝑟 = (𝜆 − 𝑟)𝑤𝑟+1, 𝐸𝑤𝑟 = 𝑟𝑤𝑟−1.
+
+
+
+
+                                                             11
+A Δ‑filtration of a lattice 𝑋 is a chain of sublattices 0 = 𝑋0 ⊂ 𝑋1 ⊂ ⋯ ⊂ 𝑋𝑠 = 𝑋, each 𝑋/𝑋𝑗 free over 𝐴, with
+𝑋𝑗/𝑋𝑗−1 ≅ Δ𝐴(𝜆𝑗); a ∇‑filtration is the same with ∇𝐴. The map 𝜄 exchanges them.
+Lemma 2.4. For 𝑚 ≥ 1, Δ𝐴(𝑚) ⊗ 𝑉 has a Δ‑filtration with factors Δ𝐴(𝑚 + 1) (a sublattice) and Δ𝐴(𝑚 − 1)
+(the quotient), and ∇𝐴(𝑚) ⊗ 𝑉 a ∇‑filtration with factors ∇𝐴(𝑚 − 1), ∇𝐴(𝑚 + 1). Moreover, Δ𝐴(0) ⊗ 𝑉 = 𝑉 =
+Δ𝐴(1) = ∇𝐴(1).
+Proof. Let 𝑣 be the highest weight vector of Δ𝐴(𝑚). The vectors 𝐹(𝑟)(𝑣 ⊗ 𝑏0) = 𝐹(𝑟)𝑣 ⊗ 𝑏0 + 𝐹(𝑟−1)𝑣 ⊗ 𝑏1
+(0 ≤ 𝑟 ≤ 𝑚 + 1) are primitive in the basis {𝐹(𝑟)𝑣 ⊗ 𝑏𝑒}, so they span a saturated sublattice 𝑋1; it is Dist𝐴 ·
+(𝑣 ⊗ 𝑏0). Over ℚ, 𝑋1 ⊗ ℚ is generated by a vector of weight 𝑚 + 1 killed by every 𝐸(𝑠), 𝑠 ≥ 1, and has dimen‐
+sion 𝑚 + 2, so it is the simple module Δℚ(𝑚 + 1), with 𝑣 ⊗ 𝑏0 as highest weight vector; and Dist𝐴 applied to
+the highest weight vector gives Δ𝐴(𝑚 + 1) on one side and 𝑋1 on the other. So 𝑋1 ≅ Δ𝐴(𝑚 + 1). The quotient
+is free of rank 𝑚, spanned by the images of 𝐹(𝑠)𝑣 ⊗ 𝑏1 (0 ≤ 𝑠 < 𝑚): indeed 𝐹(𝑚)𝑣 ⊗ 𝑏1 = 𝐹(𝑚+1)(𝑣 ⊗ 𝑏0) ∈ 𝑋1.
+The image 𝑣′ of 𝑣 ⊗ 𝑏1 is killed by 𝐸 (𝐸(𝑣 ⊗ 𝑏1) = 𝑣 ⊗ 𝑏0 ∈ 𝑋1) and by every 𝐸(𝑠), 𝑠 ≥ 2, and 𝐹(𝑠)(𝑣 ⊗ 𝑏1) =
+𝐹(𝑠)𝑣 ⊗ 𝑏1 (since 𝐹(𝑟)𝑏1 = 0 for 𝑟 ≥ 1); so the quotient is Dist𝐴 · 𝑣′ ≅ Δ𝐴(𝑚 − 1). The statement for ∇ follows by
+the duality 𝜄.                                                                                                   ∎
+
+
+3. The dance lattices and the family decomposition
+
+3.1 The doubling functor
+Let 𝑁 be a lattice. On the free 𝐴‑module Φ(𝑁) := 𝑏0 ⊗ 𝑁 ⊕ 𝑏1 ⊗ 𝑁 (we write 𝑏𝑒𝑛 for 𝑏𝑒 ⊗ 𝑛) define, for 𝑛 of
+weight 𝑤,
+                               𝐻(𝑏0𝑛) = (2𝑤 + 1)𝑏0𝑛,          𝐻(𝑏1𝑛) = (2𝑤 − 1)𝑏1𝑛,
+                               𝐹(𝑏0𝑛) = 𝑏1𝑛,                  𝐹(𝑏1𝑛) = 2𝑏0(𝐹𝑛),
+                               𝐸(𝑏0𝑛) = 2𝑏1(𝐸𝑛),              𝐸(𝑏1𝑛) = 𝑏0(Ω − 𝐻2)𝑛,
+where Ω := 4𝐹𝐸 + (𝐻 + 1)2 acts on 𝑁; on a vector of weight 𝑤, Ω − 𝐻2 = 4𝐹𝐸 + 2𝑤 + 1. For a morphism 𝑓 of
+lattices put Φ(𝑓) := 1 ⊗ 𝑓.
+Proposition 3.1.
+(a) Φ(𝑁) is a lattice, Φ is an exact functor, and it sends saturated sublattices to saturated sublattices.
+(b) On Φ(𝑁), for 𝑠 ≥ 0 and 𝑒 = 0, 1:
+              𝐹(2𝑠)(𝑏𝑒𝑛) = 𝑏𝑒𝐹(𝑠)𝑛/(2𝑠 − 1)!!,                      𝐹(2𝑠+1)(𝑏0𝑛) = 𝑏1𝐹(𝑠)𝑛/(2𝑠 + 1)!!,
+              𝐹(2𝑠+1)(𝑏1𝑛) = ((2𝑠 + 2)/(2𝑠 + 1)!!) · 𝑏0𝐹(𝑠+1)𝑛.
+(c) Φ(𝑁) ⊗ 𝔽2 ≅ 𝑉 ⊗ (𝑁 ⊗ 𝔽2)[1] as Dist𝔽2‑modules, where 𝑀[1] is the Frobenius twist (𝐹(2𝑠), 𝐸(2𝑠) act as 𝐹(𝑠),
+𝐸(𝑠), the odd divided powers act as 0, and 𝐻 acts as 2𝐻).
+(d) Φ(Δ𝐴(𝜇)) ≅ Δ𝐴(2𝜇 + 1) and Φ(∇𝐴(𝜇)) ≅ ∇𝐴(2𝜇 + 1); Φ(𝐴) = 𝑉.
+Proof. (a) The relations. On 𝑏0𝑛 (weight 2𝑤 + 1): 𝐸𝐹(𝑏0𝑛) = 𝐸(𝑏1𝑛) = 𝑏0(4𝐹𝐸 + 2𝑤 + 1)𝑛 and 𝐹𝐸(𝑏0𝑛) =
+𝐹(2𝑏1𝐸𝑛) = 4𝑏0𝐹𝐸𝑛, so [𝐸, 𝐹] = 2𝑤 + 1. On 𝑏1𝑛 (weight 2𝑤 − 1): 𝐸𝐹(𝑏1𝑛) = 4𝑏1𝐸𝐹𝑛 and 𝐹𝐸(𝑏1𝑛) =
+𝑏1(4𝐹𝐸 + 2𝑤 + 1)𝑛, so [𝐸, 𝐹] = 4(𝐸𝐹 − 𝐹𝐸) − 2𝑤 − 1 = 4𝑤 − 2𝑤 − 1 = 2𝑤 − 1. The relations with 𝐻 hold by
+weights. So Φ(𝑁) ⊗ ℚ is a 𝑈ℚ‑module, and Φ(𝑁) is stable under 𝐹 and 𝐻.
+Divided powers. From the formulas, 𝐹2𝑠(𝑏0𝑛) = 2𝑠𝑏0𝐹𝑠𝑛, 𝐹2𝑠+1(𝑏0𝑛) = 2𝑠𝑏1𝐹𝑠𝑛, 𝐹2𝑠(𝑏1𝑛) = 2𝑠𝑏1𝐹𝑠𝑛, 𝐹2𝑠+1(𝑏1𝑛) =
+2𝑠+1𝑏0𝐹𝑠+1𝑛; dividing by (2𝑠)! = 2𝑠𝑠!(2𝑠 − 1)!! and (2𝑠 + 1)! = 2𝑠𝑠!(2𝑠 + 1)!! gives (b), whose denominators are
+odd. For 𝐸, Ω is central in 𝑈ℚ and integral, and 𝐸𝑓(𝐻) = 𝑓(𝐻 − 2)𝐸; by induction, on 𝑛 of weight 𝑤,
+       𝐸2𝑠(𝑏1𝑛) = 2𝑠 ∏ (Ω − (𝑤 + 2𝑗)2) · 𝑏1𝐸𝑠𝑛,           𝐸2𝑠+1(𝑏1𝑛) = 2𝑠 ∏ (Ω − (𝑤 + 2𝑗)2) · 𝑏0𝐸𝑠𝑛,
+                     0≤𝑗<𝑠                                                0≤𝑗≤𝑠
+
+
+
+
+                                                         12
+       𝐸2𝑠(𝑏0𝑛) = 2𝑠 ∏ (Ω − (𝑤 + 2𝑗)2) · 𝑏0𝐸𝑠𝑛,           𝐸2𝑠+1(𝑏0𝑛) = 2𝑠+1 ∏ (Ω − (𝑤 + 2𝑗)2) · 𝑏1𝐸𝑠+1𝑛;
+                     1≤𝑗≤𝑠                                                     1≤𝑗≤𝑠
+
+dividing by the factorials leaves 𝐸(𝑠) or 𝐸(𝑠+1) of 𝑁 times odd denominators (2(𝑠 + 1)/(2𝑠 + 1)!! for the last
+one). The 𝐶(𝐻, 𝑟) act by integers. So Φ(𝑁) is stable under Dist𝐴, and it is a lattice. The map Φ(𝑓) = 1 ⊗ 𝑓
+commutes with all the formulas because they use only the action on 𝑁; exactness and saturation are clear
+because Φ(𝑁) = 𝑁2 as 𝐴‑modules.
+(c) On a vector of weight 𝑤 + 2𝑠, Ω ≡ (𝐻 + 1)2 (mod 4), so Ω − (𝑤 + 2𝑗)2 ≡ (𝑤 + 2𝑠 + 1)2 − (𝑤 + 2𝑗)2 =
+(2𝑠 − 2𝑗 + 1)(2𝑤 + 2𝑠 + 2𝑗 + 1), an odd number, modulo 2. Hence modulo 2, 𝐹(2𝑠) and 𝐸(2𝑠) act as 1 ⊗ 𝐹(𝑠),
+1 ⊗ 𝐸(𝑠); 𝐹(2𝑠+1)(𝑏0𝑛) = 𝑏1𝐹(𝑠)𝑛, 𝐹(2𝑠+1)(𝑏1𝑛) = 0, 𝐸(2𝑠+1)(𝑏1𝑛) = 𝑏0𝐸(𝑠)𝑛, 𝐸(2𝑠+1)(𝑏0𝑛) = 0. These are the formulas
+of 𝑉 ⊗ 𝑀[1] computed with the coproduct, since on 𝑀[1] only the even divided powers act.
+(d) Order the basis of Φ(∇𝐴(𝜇)) by weight: 𝑏0𝑤𝑠 (index 2𝑠), 𝑏1𝑤𝑠 (index 2𝑠 + 1). Then 𝐹(𝑏0𝑤𝑠) = 𝑏1𝑤𝑠 and
+𝐹(𝑏1𝑤𝑠) = 2(𝜇 − 𝑠)𝑏0𝑤𝑠+1, while in ∇𝐴(2𝜇 + 1), 𝐹𝑤′𝑅 = (2𝜇 + 1 − 𝑅)𝑤′𝑅+1, that is 2𝜇 + 1 − 2𝑠 for 𝑅 = 2𝑠 and
+2(𝜇 − 𝑠) for 𝑅 = 2𝑠 + 1. The diagonal map 𝑤′𝑅 ↦ 𝑐𝑅 · (𝑅‑th vector) with 𝑐2𝑠 = (2𝜇 + 1 − 2𝑠)𝑐2𝑠+1, 𝑐2𝑠+1 = 𝑐2𝑠+2,
+𝑐0 = 1, has odd ratios, so it is an isomorphism of 𝐴‑modules; it commutes with 𝐹 and 𝐻. Over ℚ both mod‐
+ules are simple: Φ(∇𝐴(𝜇)) ⊗ ℚ has the character of Δ(2𝜇 + 1), and by Weyl’s theorem on complete
+reducibility a finite-dimensional 𝑈ℚ‑module with the character of a simple module is simple; and on a
+simple module 𝐸 is determined by 𝐹, 𝐻 and 𝐸(top) = 0, through 𝐸𝐹𝑥 = 𝐹𝐸𝑥 + 𝐻𝑥; so the map commutes
+with 𝐸, hence with Dist𝐴 ⊗ ℚ and with Dist𝐴. The same argument with 𝐹𝑒𝑟 = (𝑟 + 1)𝑒𝑟+1 gives Φ(Δ𝐴(𝜇)) ≅
+Δ𝐴(2𝜇 + 1) (ratios (2𝑠 + 1) and 1). Finally, Φ(𝐴) = 𝑉 is (d) with 𝜇 = 0.                                           ∎
+
+3.2 Lifting from 𝔽2
+Lemma 3.2 (Lemma W). Let 𝑋 be a lattice with a sublattice 𝑁 such that 𝑋/𝑁 ≅ Δ𝐴(𝜆) and every weight
+of 𝑁 lies in [−𝜆, 𝜆]. Then the extension splits.
+Proof. Lift the highest weight vector 𝑣 of Δ𝐴(𝜆) to 𝑥 ∈ 𝑋 of weight 𝜆. Every weight of 𝑋 lies in [−𝜆, 𝜆], so
+𝐸(𝑠)𝑥 = 0 for 𝑠 ≥ 1 and 𝐹(𝑟)𝑥 = 0 for 𝑟 > 𝜆. Define the 𝐴‑linear map 𝑓: Δ𝐴(𝜆) → 𝑋 by 𝑓(𝑒𝑟) := 𝐹(𝑟)𝑥. Then
+                                     𝐹(𝑡)𝑓(𝑒𝑟) = 𝐶(𝑟 + 𝑡, 𝑡)𝐹(𝑟+𝑡)𝑥 = 𝑓(𝐹(𝑡)𝑒𝑟)
+(both sides vanish when 𝑟 + 𝑡 > 𝜆), and by (K)
+                                         𝐸(𝑠)𝐹(𝑟)𝑥 = 𝐶(𝜆 − 𝑟 + 𝑠, 𝑠)𝐹(𝑟−𝑠)𝑥,
+which is the same formula as on 𝑣; so 𝑓 is a Dist𝐴‑map splitting the extension.                                   ∎
+Lemma 3.3. For all 𝜆, 𝜇 ≥ 0, Ext1(Δ𝐴(𝜆), ∇𝐴(𝜇)) = 0 (extensions of Dist𝐴‑modules; an extension 𝑋 of two lat‐
+tices is a lattice: 𝑋 ⊗ ℚ is semisimple by Weyl’s theorem, so 𝐻 is diagonalizable on it with integer
+eigenvalues, and the projection onto the weight space of weight 𝑤 is 𝑃(𝐻), where 𝑃 is the polynomial of
+degree at most 𝑤1 − 𝑤0 that takes the value 1 at 𝑤 and 0 at the other integers of [𝑤0, 𝑤1], 𝑤0 and 𝑤1 the least
+and the largest weight; by Newton’s forward differences
+                                       𝑃(𝐻) = ∑ (Δ𝑟𝑃)(𝑤0) · 𝐶(𝐻 − 𝑤0, 𝑟)
+                                                 𝑟
+
+with integer coefficients (Δ𝑟𝑃)(𝑤0), and the 𝐶(𝐻 − 𝑤0, 𝑟) lie in Distℤ; so 𝑋 is the direct sum of its weight spa‐
+ces). Consequently, if 𝑀 has a Δ‑filtration and 𝑁 a ∇‑filtration, then Ext1(𝑀, 𝑁) = 0, and the reduction map
+HomDist𝐴(𝑀, 𝑁) → HomDist𝔽2(𝑀 ⊗ 𝔽2, 𝑁 ⊗ 𝔽2) is onto.
+
+
+
+
+                                                         13
+Proof. If 𝜇 ≤ 𝜆, the weights of ∇𝐴(𝜇) lie in [−𝜇, 𝜇] ⊆ [−𝜆, 𝜆]: Lemma 3.2. If 𝜇 > 𝜆, the duality 𝜄 identifies the
+group with Ext1(Δ𝐴(𝜇), ∇𝐴(𝜆)), which vanishes by the first case. The long exact sequences of Ext along the fil‐
+trations give Ext1(𝑀, 𝑁) = 0. Applying Hom(𝑀, −) to 0 → 𝑁 → 𝑁 → 𝑁 ⊗ 𝔽2 → 0 (the first map is multiplica‐
+tion by 2) gives the exact sequence Hom(𝑀, 𝑁) → Hom(𝑀, 𝑁 ⊗ 𝔽2) → Ext1(𝑀, 𝑁) = 0, and
+                               HomDist𝐴(𝑀, 𝑁 ⊗ 𝔽2) = HomDist𝔽2(𝑀 ⊗ 𝔽2, 𝑁 ⊗ 𝔽2).                                       ∎
+Corollary 3.4. Let 𝑋, 𝑌 be lattices that both have a Δ‑filtration and a ∇‑filtration. If 𝑋 ⊗ 𝔽2 ≅ 𝑌 ⊗ 𝔽2, then
+𝑋 ≅ 𝑌.
+Proof. Lift an isomorphism 𝑓 and its inverse to 𝑓: 𝑋 → 𝑌, 𝑔: 𝑌 → 𝑋 (Lemma 3.3). Then 𝑔𝑓 ≡ 1 (mod 2) in the
+ring End(𝑋), which is a free 𝐴‑module of finite rank, so 𝑔𝑓 = 1 + 2ℎ is invertible (𝐴 is complete); likewise 𝑓𝑔.
+So 𝑓 is an isomorphism.                                                                                       ∎
+
+3.3 The dance lattices
+Define lattices 𝑇(𝜆), 𝜆 ≥ 0, by
+                          𝑇(0) := 𝐴, 𝑇(2𝑙 + 1) := Φ(𝑇(𝑙)), 𝑇(2𝑙 + 2) := 𝑉 ⊗ Φ(𝑇(𝑙)).
+Reading 𝜆 + 1 in binary from the leading digit down, 𝑇(𝜆) is obtained from 𝐴 by 𝑘 moves, one per binary digit
+below the leading one: a digit 0 is a Φ and a digit 1 is a 𝑉 ⊗ Φ. If 𝜆 + 1 = 2𝑘 + ∑𝑡∈𝐼 2𝑡, the rank of 𝑇(𝜆) is 2𝑘+|𝐼|;
+its weights are 𝜆, 𝜆 − 2, …, −𝜆 (the top weight occurs once), and its character is
+                                    ch 𝑇(𝜆) = ∏ (𝑒2 + 𝑒−2 ) · ∏ (𝑒2 + 𝑒−2 ),
+                                                        𝑡        𝑡         𝑡     𝑡
+
+                                                𝑡<𝑘                  𝑡∈𝐼
+
+because
+                      ch Φ(𝑁) = (𝑒 + 𝑒−1) · (ch 𝑁)(𝑒2) and ch(𝑉 ⊗ 𝑀) = (𝑒 + 𝑒−1) ch 𝑀.
+By Lemma 2.4 and Proposition 3.1(d), every 𝑇(𝜆) and every 𝑉⊗𝑛 ⊗ 𝐴 has a Δ‑filtration and a ∇‑filtration
+(both operations preserve each kind of filtration).
+Lemma 3.5. Over 𝔽2, 𝑉⊗3 ≅ Δ(3) ⊕ 𝑉2 and Δ(3) ≅ 𝑉 ⊗ 𝑉[1]. Consequently, for every lattice 𝑁,
+                                (𝑉 ⊗ 𝑉 ⊗ Φ(𝑁)) ⊗ 𝔽2 ≅ (Φ(𝑁)2 ⊕ Φ(𝑉 ⊗ 𝑁)) ⊗ 𝔽2.
+Proof. The submodule of 𝑉⊗3 generated by 𝑏⊗3     0 is Δ(3); its contravariant form takes the values 1, 3, 3, 1 (that is,
+𝐶(3, 𝑟)), all units, so 𝑉 = Δ(3) ⊕ Δ(3) , and Δ(3)⊥ is stable because the form is contravariant. This comple‐
+                         ⊗3               ⊥
+
+ment has weights ±1 only; on its weight-1 space 𝐸 = 0, so 𝐸𝐹 = 𝐻 = 1 there, 𝐹 maps it isomorphically onto
+the weight-(−1) space, and each pair {𝑝, 𝐹𝑝} spans a copy of 𝑉: Δ(3)⊥ ≅ 𝑉2. The construction in the proof of
+Lemma 3.2, which works verbatim over 𝔽2, gives a map Δ(3) → 𝑉 ⊗ 𝑉[1], 𝑣 ↦ 𝑏0 ⊗ 𝑏0; its image contains
+𝑏0𝑏0, 𝑏1𝑏0, 𝑏0𝑏1 = 𝐹(2)(𝑏0𝑏0) and 𝑏1𝑏1, so it is onto, and both have dimension 4. Finally, with Proposition 3.1(c)
+and the monoidality of the twist,
+   (𝑉 ⊗ 𝑉 ⊗ Φ(𝑁)) ⊗ 𝔽2 ≅ 𝑉⊗3 ⊗ 𝑁[1] ≅ (𝑉 ⊗ 𝑉[1] ⊗ 𝑁[1]) ⊕ (𝑉 ⊗ 𝑁[1])2 = (𝑉 ⊗ (𝑉 ⊗ 𝑁)[1]) ⊕ (𝑉 ⊗ 𝑁[1])2,
+which is (Φ(𝑉 ⊗ 𝑁) ⊕ Φ(𝑁)2) ⊗ 𝔽2 (𝑁 := 𝑁 ⊗ 𝔽2).                                                                       ∎
+Theorem 3.6 (the family decomposition). For every 𝑛 ≥ 0, as Dist𝐴‑lattices,
+                                             𝑉⊗𝑛 ⊗ 𝐴 ≅ ⨁ 𝑇(𝜆)𝑚𝜆(𝑛),
+                                                             𝜆
+
+with the multiplicities 𝑚𝜆(𝑛) of §1.2.
+Proof. Induction on 𝑛, applying 𝑉 ⊗ − to the decomposition for 𝑛 − 1; it suffices that 𝑉 ⊗ 𝑇(𝜆) decomposes
+according to the rule 𝑉 · [𝜆] of §1.2. Now 𝑉 ⊗ 𝑇(0) = 𝑉 = Φ(𝐴) = 𝑇(1), and 𝑉 ⊗ 𝑇(2𝑙 + 1) = 𝑉 ⊗ Φ(𝑇(𝑙)) =
+
+
+                                                            14
+𝑇(2𝑙 + 2) by definition. For 𝑉 ⊗ 𝑇(2𝑙 + 2) = 𝑉 ⊗ 𝑉 ⊗ Φ(𝑇(𝑙)): both it and Φ(𝑇(𝑙))2 ⊕ Φ(𝑉 ⊗ 𝑇(𝑙)) have Δ-
+and ∇‑filtrations, and their reductions are isomorphic (Lemma 3.5), so they are isomorphic (Corollary 3.4).
+Here Φ(𝑇(𝑙))2 = 𝑇(2𝑙 + 1)2, and 𝑉 ⊗ 𝑇(𝑙) decomposes by induction on 𝑙 (Φ is additive and Φ(𝑇(𝜈)) =
+𝑇(2𝜈 + 1)).                                                                                              ∎
+Remarks. (1) 𝑇(𝜆) ⊗ 𝔽2 is the indecomposable tilting module of SL2 of highest weight 𝜆 in characteristic 2
+(Donkin’s tensor product theorem [Don93]), so 𝑚𝜆(𝑛) is its multiplicity in 𝑉⊗𝑛; this identification is not used.
+The multiplicities are known: they can be read off by peeling the characters above off (𝑒 + 𝑒−1)𝑛 [TW21], and
+Larsen gives the fusion rule of 𝑉⊗2 in characteristic 2 [Lar24, §2]; iterating Larsen’s rule reproduces the
+recursion of §1.2 for every even 𝑛 ≤ 64 (§12.2). What we add is the integral statement over ℤ2, with explicit
+lattices. (2) The proof uses no result of the general theory of tilting modules: only (K), Lemma 3.2, Weyl’s the‐
+orem on complete reducibility over ℚ, and the completeness of ℤ2.
+Lemma 3.7. For 𝑛 ≥ 1: 𝑚0(𝑛) = 0; 𝑚𝑛(𝑛) = 1; 𝑚1(𝑛) = 2(𝑛−1)/2 for odd 𝑛; 𝑚2(𝑛) = 2(𝑛−2)/2 for even 𝑛.
+Proof. In the rule 𝑉 · [𝜆] the produced symbols are [1], [𝜆 + 1] with 𝜆 odd (even and ≥ 2), [2𝑙 + 1], and Φ(·) =
+[2𝜈 + 1] (odd): [0] is never produced. The symbol [𝜆 + 1] is the largest symbol of 𝑉 · [𝜆], with coefficient 1, so
+𝑚𝑛(𝑛) = 1. The symbol [2] is produced only by 𝑉 · [1], so 𝑚2(𝑛 + 1) = 𝑚1(𝑛). The symbol [1] is produced by
+𝑉 · [0] and by the term 2[2𝑙 + 1] of 𝑉 · [2] (𝑙 = 0), and by Φ(𝑉 · [𝑙]) only if 𝑉 · [𝑙] contains [0], which never
+happens; so 𝑚1(𝑛 + 1) = 𝑚0(𝑛) + 2𝑚2(𝑛) = 2𝑚2(𝑛) for 𝑛 ≥ 1, with 𝑚1(1) = 1.                                       ∎
+
+3.4 The groups of the families
+For a family 𝜆, an integer 𝛼 ≥ 1 and a shift 𝑖 ≥ 0, let 𝐷 be the floor operator of 𝑇(𝜆) (floor (𝜆 − 𝑤)/2 on
+weight 𝑤) and put
+                            𝜎(𝛼)       𝛼          (𝛼)               (𝛼)
+                             𝑖 := 𝐹 + 2 (𝐷 + 𝑖), 𝑋 (𝜆, 𝑖) := coker(𝜎𝑖 on 𝑇(𝜆)).
+
+For 𝛼 = 1, 𝜎(1)
+            𝑖 = 𝐹 + 𝜆 − 𝐻 + 2𝑖.
+Theorem 3.8. For every 𝑛 ≥ 1, ℤ2 ⊕ Syl2 𝐾(𝑄𝑛) ≅ ⨁𝜆 𝑋(1)(𝜆, (𝑛 − 𝜆)/2)𝑚𝜆(𝑛).
+Proof. Corollary 2.3 and Theorem 3.6. On a summand 𝑇(𝜆) of 𝑉⊗𝑛,
+                             𝜎 = 𝐹 + 𝑛 − 𝐻 = 𝐹 + (𝜆 − 𝐻) + (𝑛 − 𝜆) = 𝜎(1)
+                                                                      (𝑛−𝜆)/2.                                  ∎
+The cube uses 𝛼 = 1; the fold law (§10) uses 𝛼 = 2. The rest of the paper computes 𝑋(𝛼)(𝜆, 𝑖).
+
+
+4. The dance: Theorem D
+
+4.1 Payment systems
+Let 𝑁 be a lattice graded by floors 0, 1, …, 𝑓max, on which 𝐹 maps floor 𝑓 into floor 𝑓 + 1. A payment is a
+function 𝜋: ℤ≥0 → 𝐴; 𝜋(𝐷) denotes the operator that multiplies floor 𝑓 by 𝜋(𝑓). A payment system of size 𝑟
+on 𝑁 is an operator on 𝑁⊕𝑟, with slots 1, …, 𝑟, of the form
+                              𝐺(𝑥𝜄𝑠′) = (𝐹 + 𝜋𝑠′(𝐷))𝑥𝜄𝑠′ + ∑ 𝐾𝑠𝑠′(𝐷)𝑥𝜄𝑠 (𝑥 ∈ 𝑁),
+                                                            𝑠>𝑠′
+
+where 𝜄𝑠 places an element in slot 𝑠 and the couplings 𝐾𝑠𝑠′ are payments. It is even if every value of every 𝜋𝑠
+and 𝐾𝑠𝑠′ lies in 2𝐴. The operator 𝜎(𝛼)                                                                 𝛼
+                                   𝑖 on 𝑇(𝜆) (§3.4) is an even payment system of size 1, with 𝜋(𝑑) = 2 (𝑖 + 𝑑),
+because 𝛼 ≥ 1.
+
+
+
+
+                                                       15
+4.2 The two moves
+Proposition 4.1 (the twist move). Let 𝑁 = Φ(𝑁′) with its floor grading (the floor of 𝑏𝑒𝑛′ is 2𝑓 + 𝑒 if 𝑛′ has
+floor 𝑓). For an even payment system 𝐺 of size 𝑟 on 𝑁,
+                                                coker 𝐺 ≅ coker(2𝐺′),
+where 𝐺′ is the even payment system of size 𝑟 on 𝑁′ with
+                                          𝜋′𝑠(𝑓) = −𝜋𝑠(2𝑓)𝜋𝑠(2𝑓 + 1)/2,
+                           [
+             𝐾′𝑢𝑠′(𝑓) = − 12 𝜋𝑠′(2𝑓 + 1)𝐾𝑢𝑠′(2𝑓) + 𝐾𝑢𝑠′(2𝑓 + 1)𝜋𝑢(2𝑓) + ∑ 𝐾𝑠𝑠′(2𝑓 + 1)𝐾𝑢𝑠(2𝑓) .
+                                                                           𝑠′<𝑠<𝑢
+                                                                                                     ]
+Proof. On Φ(𝑁′), 𝐹(𝑏0𝑛) = 𝑏1𝑛 and 𝐹(𝑏1𝑛) = 2𝑏0(𝐹𝑛). For 𝑛 ∈ 𝑁′ of floor 𝑓, the relation 𝐺(𝑏0𝑛𝜄𝑠′) = 𝑏1𝑛𝜄𝑠′ +
+𝜋𝑠′(2𝑓)𝑏0𝑛𝜄𝑠′ + ∑𝑠>𝑠′ 𝐾𝑠𝑠′(2𝑓)𝑏0𝑛𝜄𝑠 has coefficient 1 on 𝑏1𝑛𝜄𝑠′, and every other term lies in 𝑏0 ⊗ 𝑁′. Eliminating
+these, we see that coker 𝐺 is the quotient of (𝑏0 ⊗ 𝑁′)⊕𝑟 by the relations 𝐺(𝑏1𝑛𝜄𝑠′), where every 𝑏1𝑥𝜄𝑠 is
+replaced by −𝜋𝑠(2𝑓)𝑏0𝑥𝜄𝑠 − ∑𝑢>𝑠 𝐾𝑢𝑠(2𝑓)𝑏0𝑥𝜄𝑢. That relation is
+      2𝑏0(𝐹𝑛)𝜄𝑠′ − 𝜋𝑠′(2𝑓 + 1)𝜋𝑠′(2𝑓)𝑏0𝑛𝜄𝑠′
+                                [
+                       − ∑ 𝜋𝑠′(2𝑓 + 1)𝐾𝑢𝑠′(2𝑓) + 𝐾𝑢𝑠′(2𝑓 + 1)𝜋𝑢(2𝑓) + ∑ 𝐾𝑠𝑠′(2𝑓 + 1)𝐾𝑢𝑠(2𝑓) 𝑏0𝑛𝜄𝑢,
+                         𝑢>𝑠′                                                𝑠′<𝑠<𝑢
+                                                                                                         ]
+which is 2𝐺′(𝑛𝜄𝑠′) under 𝑏0𝑥 ↦ 𝑥. The values of 𝐺′ are halves of products of two elements of 2𝐴, so they lie
+in 2𝐴.                                                                                                     ∎
+Proposition 4.2 (the split move). Let 𝑁 = 𝑉 ⊗ Φ(𝑁′). For 𝑛 ∈ 𝑁′ of floor 𝑓 put
+              𝐴𝑛 := 𝑏0 ⊗ 𝑏0𝑛, 𝐵𝑛 := 𝑏0 ⊗ 𝑏1𝑛 − 𝑏1 ⊗ 𝑏0𝑛, 𝐶𝑛 := 𝑏1 ⊗ 𝑏0𝑛, Dd𝑛 := 𝑏1 ⊗ 𝑏1𝑛,
+of floors 2𝑓, 2𝑓 + 1, 2𝑓 + 1, 2𝑓 + 2. They form a basis of 𝑁 over the bases of 𝑁′, and
+                         𝐹𝐴𝑛 = 𝐵𝑛 + 2𝐶𝑛, 𝐹𝐵𝑛 = 2𝐴𝐹𝑛, 𝐹𝐶𝑛 = Dd𝑛, 𝐹Dd𝑛 = 2𝐶𝐹𝑛.
+For an even payment system 𝐺 of size 𝑟 on 𝑁, coker 𝐺 ≅ coker(2𝐺′′), where 𝐺′′ is the even payment system
+of size 2𝑟 on 𝑁′ with slots (𝑠, 𝐴), (𝑠, 𝐶), ordered lexicographically with 𝐴 before 𝐶, and
+      𝜋′′(𝑠,𝐴)(𝑓) = −𝜋𝑠(2𝑓)𝜋𝑠(2𝑓 + 1)/2, 𝜋′′(𝑠,𝐶)(𝑓) = −𝜋𝑠(2𝑓 + 1)𝜋𝑠(2𝑓 + 2)/2;
+      the couplings (𝑠′, 𝐴) → (𝑢, 𝐴) are the formula of Proposition 4.1 at the floors (2𝑓, 2𝑓 + 1), and the cou‐
+      plings (𝑠′, 𝐶) → (𝑢, 𝐶) are the same formula at (2𝑓 + 1, 2𝑓 + 2);
+      𝐾′′(𝑠′,𝐶),(𝑠′,𝐴)(𝑓) = −𝜋𝑠′(2𝑓 + 1), 𝐾′′(𝑢,𝐶),(𝑠′,𝐴)(𝑓) = −𝐾𝑢𝑠′(2𝑓 + 1) (𝑢 > 𝑠′), and there is no coupling from a
+      slot 𝐶 to a slot 𝐴.
+Proof. The formulas for 𝐹 follow from Δ(𝐹) = 𝐹 ⊗ 1 + 1 ⊗ 𝐹 and §3.1: for instance 𝐹𝐴𝑛 = 𝑏1 ⊗ 𝑏0𝑛 +
+𝑏0 ⊗ 𝑏1𝑛 = 𝐵𝑛 + 2𝐶𝑛 and 𝐹𝐵𝑛 = 𝑏1 ⊗ 𝑏1𝑛 + 2𝑏0 ⊗ 𝑏0𝐹𝑛 − 𝑏1 ⊗ 𝑏1𝑛. The relations 𝐺(𝐴𝑛𝜄𝑠′) and 𝐺(𝐶𝑛𝜄𝑠′) have
+coefficient 1 on 𝐵𝑛𝜄𝑠′ and Dd𝑛𝜄𝑠′ respectively; eliminate those vectors. Substituting into 𝐺(𝐵𝑛𝜄𝑠′) gives
+      2𝐴𝐹𝑛𝜄𝑠′ − 𝜋𝑠′(2𝑓 + 1)𝜋𝑠′(2𝑓)𝐴𝑛𝜄𝑠′ − ∑ [coupling of Proposition 4.1 at (2𝑓, 2𝑓 + 1)]𝐴𝑛𝜄𝑢
+                                            𝑢
+                                                                − 2𝜋𝑠′(2𝑓 + 1)𝐶𝑛𝜄𝑠′ − 2 ∑ 𝐾𝑢𝑠′(2𝑓 + 1)𝐶𝑛𝜄𝑢,
+                                                                                         𝑢>𝑠′
+
+and substituting into 𝐺(Dd𝑛𝜄𝑠′) gives
+        2𝐶𝐹𝑛𝜄𝑠′ − 𝜋𝑠′(2𝑓 + 2)𝜋𝑠′(2𝑓 + 1)𝐶𝑛𝜄𝑠′ − ∑ [coupling of Proposition 4.1 at (2𝑓 + 1, 2𝑓 + 2)]𝐶𝑛𝜄𝑢.
+                                                   𝑢
+
+Both are twice the relations of 𝐺′′ under 𝐴𝑥𝜄𝑠 ↦ 𝑥𝜄(𝑠,𝐴), 𝐶𝑥𝜄𝑠 ↦ 𝑥𝜄(𝑠,𝐶). Evenness is as in Proposition 4.1.        ∎
+
+
+
+
+                                                         16
+4.3 The dance
+Proposition 4.3. Let 𝜆 + 1 = 2𝑘 + ∑𝑡∈𝐼 2𝑡, 𝛼 ≥ 1 and 𝑖 ≥ 0. Apply to 𝜎(𝛼)        𝑖 on 𝑇(𝜆) the moves of the binary
+digits 𝑡 = 0, 1, …, 𝑘 − 1 of 𝜆 + 1, in this order: a twist move if 𝑡 ∉ 𝐼, a split move if 𝑡 ∈ 𝐼. After the 𝑘 moves one
+                                               |𝐼|     |𝐼|
+obtains an even payment system on 𝑇(0)⊕2 = 𝐴2 , that is, a lower triangular matrix 𝑀 = 𝑀(𝛼)(𝜆, 𝑖) of size 2|𝐼|,
+and
+                                                 𝑘−1
+                                   𝑋(𝛼)(𝜆, 𝑖) ≅ ⨁ (ℤ/2𝑎)2
+                                                              |𝐼|+𝑘−1−𝑎
+                                                                          ⊕ coker(2𝑘𝑀).
+                                                 𝑎=1
+
+Proof. If 𝜆 = 2𝑙 + 1, then 𝜆 + 1 has last digit 0, 𝑇(𝜆) = Φ(𝑇(𝑙)) and 𝑙 + 1 = (𝜆 + 1)/2; if 𝜆 = 2𝑙 + 2, then 𝜆 + 1
+has last digit 1, 𝑇(𝜆) = 𝑉 ⊗ Φ(𝑇(𝑙)) and 𝑙 + 1 = 𝜆/2 = ⌊(𝜆 + 1)/2⌋. In both cases the floor grading of 𝑇(𝜆)
+(floor (𝜆 − 𝑤)/2 at weight 𝑤) is the grading of Propositions 4.1–4.2: for instance 𝑏0𝑛 has weight 2𝑤 + 1 and
+floor (2𝑙 + 1 − 2𝑤 − 1)/2 = 𝑙 − 𝑤 = 2𝑓. So the moves can be applied digit by digit, and 𝑇(0) = 𝐴 has the
+single floor 0, on which 𝐹 = 0. Each move halves the rank, rank 𝑇(𝜆) = 2𝑘+|𝐼|, and turns coker(2ℎ𝐺) into
+coker(2ℎ+1𝐺′) plus cyclic factors ℤ/2ℎ, as many as half the rank (the eliminated unit pivots, multiplied by 2ℎ):
+the Smith exponents of 2ℎ𝐺 are ℎ, with multiplicity half the rank, and the exponents of 2𝐺′ raised by ℎ. At
+move ℎ = 0, 1, …, 𝑘 − 1 the rank is 2𝑘+|𝐼|−ℎ; the factors of move 0 are trivial, and move 𝑎 ≥ 1 gives
+        𝑘+|𝐼|−𝑎−1
+(ℤ/2𝑎)2           .                                                                                              ∎
+We use the notation coker(2𝑘𝑀) for the module whose Smith exponents are those of 𝑀 raised by 𝑘 (a zero
+exponent of 𝑀 gives ℤ/2𝑘, an infinite one stays ℤ2). The dancers are the subsets 𝐷 ⊆ 𝐼: a split move at the
+digit 𝑡 splits each slot into a slot 𝐴 and a slot 𝐶, and the final slot 𝑠 is identified with 𝐷(𝑠) := {𝑡 ∈ 𝐼 : 𝑠𝑡 = 𝐶}.
+We index 𝑀 by dancers, in the o‑order. The order in which the moves produce the slots is another linear
+extension of inclusion (for 𝐼 = {0, 1} it is ∅, {1}, {0}, {0, 1}); re-indexing does not change the Smith form,
+and 𝑀 is lower triangular in either order, since 𝑀𝐷𝐷′ ≠ 0 only if 𝐷′ ⊆ 𝐷 (Theorem 4.4).
+
+4.4 The final matrix in closed form
+Put 𝜋0(𝑑) := 2𝛼(𝑖 + 𝑑), 𝐾 := 2𝑘 and 𝑜(Δ) := ∑𝑡∈Δ 2𝑡.
+Theorem 4.4 (windows). Let 𝑞0 := −1 and 𝑞𝑡+1 := 𝑞2𝑡 − [𝑡 ∈ 𝐼] · 𝑦𝑡𝑞𝑡 in ℤ[𝑦𝑡 : 𝑡 ∈ 𝐼]/(𝑦2𝑡 : 𝑡 ∈ 𝐼), and let 𝑎𝑘(Δ)
+be the coefficient of 𝑦Δ := ∏𝑡∈Δ 𝑦𝑡 in 𝑞𝑘. Then for dancers 𝐷, 𝐷′:
+                                                                𝑜𝐷′+𝐾−1
+                                                                                      if 𝐷′ ⊆ 𝐷,
+                        𝑀𝐷𝐷′ = −21−𝐾+𝑜(𝐷∖𝐷′) · 𝑎𝑘(𝐷 ∖ 𝐷′) · ∏ 𝜋0(𝑑)
+                                                                  𝑑=𝑜𝐷
+                        𝑀𝐷𝐷′ = 0                                                      otherwise.
+The window [𝑜𝐷, 𝑜𝐷′ + 𝐾 − 1] has 𝐾 − 𝑜(𝐷 ∖ 𝐷′) ≥ 1 elements.
+Proof. Let 𝐼<ℎ := 𝐼 ∩ [0, ℎ). We show by induction on ℎ = 0, …, 𝑘 that after ℎ moves the system has one slot for
+each 𝐷 ⊆ 𝐼<ℎ, couplings only from 𝐷′ to 𝐷 ⊋ 𝐷′, and
+                          𝐷 (𝑓) = 𝑐∅ · ∏ 𝜋0(𝑑), 𝑊 = [2 𝑓 + 𝑜𝐷, 2 𝑓 + 𝑜𝐷 + 2 − 1],
+                         𝜋(ℎ)      (ℎ)                ℎ         ℎ          ℎ
+                                           𝑑∈𝑊
+
+                       𝐾(ℎ)       (ℎ)
+                        𝐷𝐷′(𝑓) = 𝑐𝐷∖𝐷′ ·   ∏
+                                           𝑑∈𝑊
+                                               𝜋0(𝑑), 𝑊 = [2ℎ𝑓 + 𝑜𝐷, 2ℎ𝑓 + 𝑜𝐷′ + 2ℎ − 1],
+
+where 𝑐(ℎ) = ∑Δ 𝑐(ℎ)    Δ                    2              (0)
+                     Δ 𝑥 ∈ ℚ[𝑥𝑡 : 𝑡 ∈ 𝐼<ℎ]/(𝑥𝑡 ) satisfies 𝑐 = 1 and 𝑐
+                                                                       (ℎ+1) = −(𝑐(ℎ))2/2 − [ℎ ∈ 𝐼] · 𝑥 𝑐(ℎ). For
+                                                                                                       ℎ
+ℎ = 0 there is one slot, 𝜋(𝑓) = 𝜋0(𝑓), 𝑐 = 1. In the formula of Proposition 4.1, each of the three kinds of
+terms is a product of the values of 𝜋0 over two adjacent windows of level ℎ, whose union is the window of
+level ℎ + 1: for instance 𝜋𝐷′(2𝑓 + 1)𝐾𝐷𝐷′(2𝑓) multiplies over [2ℎ+1𝑓 + 𝑜𝐷, 2ℎ+1𝑓 + 𝑜𝐷′ + 2ℎ − 1] and [2ℎ+1𝑓 +
+2ℎ + 𝑜𝐷′, 2ℎ+1𝑓 + 𝑜𝐷′ + 2ℎ+1 − 1]. So every term is the same monomial, and the coefficient of the pair (𝐷, 𝐷′)
+is − 12 ∑ 𝑐Δ1𝑐Δ2 over the ordered decompositions 𝐷 ∖ 𝐷′ = Δ1 ⊔ Δ2 (the intermediate slot is 𝑈 = 𝐷′ ⊔ Δ1; the
+
+
+                                                         17
+decompositions with Δ1 = ∅ or Δ2 = ∅ are the first two terms); this is − 12 [(𝑐(ℎ))2]𝐷∖𝐷′, since 𝑥2𝑡 = 0. In a split
+move at ℎ ∈ 𝐼 the slot 𝐷 gives the slots 𝐷 (from 𝐴) and 𝐷 ∪ {ℎ} (from 𝐶), with 𝑜𝐷∪{ℎ} = 𝑜𝐷 + 2ℎ. In the for‐
+mulas of Proposition 4.2, the diagonal entries have the windows [2ℎ+1𝑓 + 𝑜𝐷, ⋯ + 2ℎ+1 − 1] and [2ℎ+1𝑓 +
+𝑜𝐷 + 2ℎ, ⋯ + 2ℎ+1 − 1]; the coupling −𝜋𝐷′(2𝑓 + 1) from 𝐷′ to 𝐷′ ∪ {ℎ} and the coupling −𝐾𝐷𝐷′(2𝑓 + 1)
+from 𝐷′ to 𝐷 ∪ {ℎ} have the windows [2ℎ+1𝑓 + 𝑜𝐷′ + 2ℎ, 2ℎ+1𝑓 + 𝑜𝐷′ + 2ℎ+1 − 1] and [2ℎ+1𝑓 + 𝑜𝐷 + 2ℎ, 2ℎ+1𝑓 +
+𝑜𝐷′ + 2ℎ+1 − 1], which are the windows of the new pairs. Their coefficients −𝑐∅ and −𝑐𝐷∖𝐷′ are the coeffi‐
+cients of 𝑥ℎ and 𝑥ℎ𝑥𝐷∖𝐷′ in −𝑥ℎ𝑐(ℎ); the other couplings carry − 12 [(𝑐(ℎ))2]Δ with ℎ ∉ Δ, and (𝑐(ℎ))2 has no 𝑥ℎ.
+                                       𝑡                   ℎ
+This proves the recursion. Put 𝑦𝑡 := 22 𝑥𝑡 and 𝑐(ℎ) = −21−2 𝑞ℎ. Then 𝑐(0) = 1 gives 𝑞0 = −1, and
+                                  ℎ+1                ℎ     ℎ                    ℎ+1
+                   𝑐(ℎ+1) = −21−2 𝑞2ℎ + [ℎ ∈ 𝐼]21−2 2−2 𝑦ℎ𝑞ℎ = −21−2                  (𝑞2ℎ − [ℎ ∈ 𝐼]𝑦ℎ𝑞ℎ),
+so 𝑐(𝑘)    1−𝐾𝑎 (Δ)2𝑜(Δ). At ℎ = 𝑘 there is only the floor 0, and 𝑀        (𝑘)
+    Δ = −2     𝑘                                                    𝐷𝐷′ = 𝐾𝐷𝐷′(0).                                ∎
+
+4.5 The coefficients: the deficit law
+Lemma 4.5 (deficit law). 𝑎𝑘(∅) = 1, and for ∅ ≠ Δ ⊆ 𝐼,
+                            𝑣2(𝑎𝑘(Δ)) = 𝑘 − |Δ| − min Δ =: 𝛿(Δ); put 𝛿(∅) := 0.
+Proof. The constant term of 𝑞𝑡 is 1 for 𝑡 ≥ 1. We prove 𝑣2(𝑎𝑡(Δ)) = 𝑡 − |Δ| − min Δ for every 𝑡 > max Δ, by
+induction on |Δ| and then on 𝑡. Let 𝑚 := max Δ ∈ 𝐼 and 𝜇 := min Δ. Since 𝑞𝑚 does not involve 𝑦𝑚, the coeffi‐
+cient of 𝑦Δ in 𝑞2𝑚 is 0 and 𝑎𝑚+1(Δ) = −𝑎𝑚(Δ ∖ {𝑚}). This is ±1 if Δ = {𝑚} (valuation 0 = (𝑚 + 1) − 1 − 𝑚);
+otherwise it has valuation 𝑚 − (|Δ| − 1) − 𝜇 by induction. For 𝑡 ≥ 𝑚 + 1, the term 𝑦𝑡𝑞𝑡 does not contribute
+to 𝑦Δ, and
+                                        𝑎𝑡+1(Δ) = 2𝑎𝑡(Δ) + 2∑ 𝑎𝑡(Δ1)𝑎𝑡(Δ2),
+over the unordered decompositions Δ = Δ1 ⊔ Δ2 into non-empty parts. One of min Δ1, min Δ2 is 𝜇 and the
+other is ≤ 𝑚, so each cross term has valuation at least 1 + 2𝑡 − |Δ| − 𝜇 − 𝑚, which exceeds 𝑣2(2𝑎𝑡(Δ)) =
+1 + 𝑡 − |Δ| − 𝜇 by 𝑡 − 𝑚 ≥ 1.                                                                           ∎
+So 𝑣2(𝑎𝑘(Δ)) depends only on 𝑘 and Δ, not on the other digits of 𝜆 + 1; and 𝛿 is strictly subadditive:
+𝛿(Δ1) + 𝛿(Δ2) − 𝛿(Δ1 ⊔ Δ2) = 𝑘 − max(min Δ1, min Δ2) ≥ 1 for non-empty disjoint Δ1, Δ2.
+
+     Theorem D. For every family 𝜆, every 𝛼 ≥ 1 and every shift 𝑖 ≥ 0,
+                                            𝑘−1
+                               𝑋(𝛼)(𝜆, 𝑖) ≅ ⨁ (ℤ/2𝑎)2
+                                                         |𝐼|+𝑘−1−𝑎
+                                                                     ⊕ coker(2𝑘𝑀(𝛼)(𝜆, 𝑖)),
+                                            𝑎=1
+
+     with 𝑀(𝛼)(𝜆, 𝑖) the explicit integer matrix of Theorem 4.4, whose entries have the valuations
+                                                                      𝑜𝐷′+𝐾−1
+                𝑣2(𝑀𝐷𝐷′) = 1 − 𝐾 + 𝑜(𝐷 ∖ 𝐷′) + 𝛿(𝐷 ∖ 𝐷′) +              ∑ (𝛼 + 𝑣2(𝑖 + 𝑑)) (𝐷′ ⊆ 𝐷).
+                                                                       𝑑=𝑜𝐷
+
+     Hence, by Theorem 3.8, ℤ2 ⊕ Syl2 𝐾(𝑄𝑛) is the direct sum, over the families 𝜆, of 𝑚𝜆(𝑛) copies of
+     the small clocks and of coker(2𝑘𝑀(1)(𝜆, (𝑛 − 𝜆)/2)).
+
+Proof. Proposition 4.3, Theorem 4.4 and Lemma 4.5.                                                                ∎
+
+
+
+
+                                                          18
+Example. 𝜆 = 6 (𝑘 = 2, 𝐼 = {0, 1}): 𝑞1 = 1 + 𝑦0, 𝑞2 = 1 + 2𝑦0 − 𝑦1 − 𝑦0𝑦1. With 𝑝𝑑 := 𝜋0(𝑑), 𝑀 = −(1/8) · 𝐴,
+where 𝐴 is, in the o‑order (row 𝐷, column 𝐷′):
+                                 𝐷 \ 𝐷′     ∅                {0}            {1}            {0, 1}
+                                 ∅          𝑝 0𝑝 1𝑝 2𝑝 3     0              0              0
+                                 {0}        4𝑝1𝑝2𝑝3          𝑝 1𝑝 2𝑝 3𝑝 4   0              0
+                                 {1}        −4𝑝2𝑝3           0              𝑝 2𝑝 3𝑝 4𝑝 5   0
+                                 {0, 1}     −8𝑝3             −4𝑝3𝑝4         4𝑝3𝑝4𝑝5        𝑝 3𝑝 4𝑝 5𝑝 6
+
+The matrix 𝑀 has 2|𝐼| ≤ ⌊𝜆/2⌋ + 1 rows (with equality, for instance, when 𝜆 = 2𝑘+1 − 2), against 2𝑛 for the
+Laplacian and 2𝑘+|𝐼| = dim 𝑇(𝜆) for the family; its entries are closed forms. What remains is its Smith form.
+
+5. The valuations: rulers, gold and clocks
+Fix a family 𝜆 (𝜆 + 1 = 2𝑘 + ∑𝑡∈𝐼 2𝑡, 𝐾 = 2𝑘), 𝛼 ≥ 1, and a shift 𝑖 ≥ 1; put 𝑚 := 𝑖 − 1. For 𝑡 ∈ 𝐼 recall ℎ𝑡 =
+next(𝑡) − 𝑡 ≥ 1. Let 𝑡1 := min 𝐼 (𝑡1 := 𝑘 if 𝐼 = ∅). For dancers 𝑎 ⊇ 𝑏 write Δ := 𝑎 ∖ 𝑏.
+Definitions. For 𝜇 ≥ 0 and 𝐸 ⊆ 𝐼, the ruler
+                                          𝑅𝜇(𝐸) := ∑ (ℎ𝑡 − 𝛼2𝑡) − 𝜅(𝜇, 𝑜𝐸);
+                                                           𝑡∈𝐸
+
+the gold of Δ ⊆ 𝐼,
+                                                     ∑ ℎ𝑢 (𝛾(∅) := 0),
+                                            𝛾(Δ) := 𝑢∈𝐼∖Δ
+                                                       𝑢>min Δ
+
+the gaps of 𝐼 above min Δ that Δ skips; and the clocks of the cell
+                                                𝑥𝐷 := 𝑅𝑚(𝐷) − 𝑅𝑚+𝐾(𝐼 ∖ 𝐷).
+For 𝛼 = 1 this is the definition of §1.2.
+Lemma 5.1. (a) 𝛿(Δ) = ∑𝑡∈Δ (ℎ𝑡 − 1) + 𝛾(Δ). (b) 𝛾(Δ) = 0 if and only if Δ = ∅ or Δ = 𝐼 ∩ [min Δ, 𝑘) (a tail
+of 𝐼).
+Proof. (a) 𝑘 − min Δ = ∑𝑡∈𝐼, 𝑡≥min Δ ℎ𝑡 (the gaps telescope), and the digits 𝑡 ≥ min Δ of 𝐼 are those of Δ and
+those counted in 𝛾(Δ). (b) Each ℎ𝑢 ≥ 1.                                                                      ∎
+Proposition 5.2 (the cost form). For dancers 𝑏 ⊆ 𝑎,
+                          𝑣2(𝑀(𝛼)(𝜆, 𝑖)𝑎𝑏) = 𝛼𝐾 + 𝜅(𝑚, 𝐾) + 𝑅𝑚(𝑎) − 𝑅𝑚+𝐾(𝑏) + 𝛾(𝑎 ∖ 𝑏).
+Proof. By Theorem D, 𝑣2(𝑀𝑎𝑏) = 1 − 𝐾 + 𝑜(Δ) + 𝛿(Δ) + 𝛼(𝐾 + 𝑜𝑏 − 𝑜𝑎) + ∑𝑜𝑑=𝑜   𝑏+𝐾−1 𝑣 (𝑖 + 𝑑). By Legendre’s for‐
+                                                                                𝑎    2
+mula 𝑣2(𝑥!) = 𝑥 − 𝑠2(𝑥), ∑𝑦−1 𝑣
+                          𝑑=𝑥 2 (𝑚 + 1 + 𝑑) = (𝑦 − 𝑥) − 𝑠 2 (𝑚 + 𝑦) + 𝑠 2 (𝑚 + 𝑥). With   𝑥 = 𝑜𝑎, 𝑦 = 𝑜𝑏 + 𝐾 and
+𝑜(Δ) = 𝑜𝑎 − 𝑜𝑏:
+                       𝑣2(𝑀𝑎𝑏) = 1 + 𝛿(Δ) + 𝛼(𝐾 + 𝑜𝑏 − 𝑜𝑎) − 𝑠2(𝑚 + 𝐾 + 𝑜𝑏) + 𝑠2(𝑚 + 𝑜𝑎).
+By Lemma 5.1(a), 𝛿(Δ) = 𝐺(𝑎) − 𝐺(𝑏) + 𝛾(Δ) with 𝐺(𝐸) := ∑𝑡∈𝐸 (ℎ𝑡 − 1). Since 𝜅(𝜇, 𝑜𝐸) = 𝑠2(𝜇) + |𝐸| −
+𝑠2(𝜇 + 𝑜𝐸), we have
+                                       𝑅𝜇(𝐸) = 𝐺(𝐸) − 𝛼𝑜𝐸 + 𝑠2(𝜇 + 𝑜𝐸) − 𝑠2(𝜇).
+Substituting,
+                𝑣2(𝑀𝑎𝑏) − [𝑅𝑚(𝑎) − 𝑅𝑚+𝐾(𝑏) + 𝛾(Δ)] = 1 + 𝛼𝐾 + 𝑠2(𝑚) − 𝑠2(𝑚 + 𝐾) = 𝛼𝐾 + 𝜅(𝑚, 𝐾),
+
+                                                                   19
+because 𝑠2(𝐾) = 1.                                                                                                    ∎
+So every entry of 𝑀 is a constant of the cell, plus a row term read from the carries of 𝑚 + 𝑜𝑎, minus a
+column term read from the carries of 𝑚 + 𝐾 + 𝑜𝑏, plus the gold of the arrow. We write
+                                  𝑐ˆ(𝑎, 𝑏) := 𝑅𝑚(𝑎) − 𝑅𝑚+𝐾(𝑏) + 𝛾(𝑎 ∖ 𝑏) (𝑏 ⊆ 𝑎)
+for the normalized cost of the arrow 𝑎 → 𝑏.
+Proposition 5.3 (the clocks of §1.2). For 𝛼 = 1, every family 𝜆, every 𝑖 ≥ 1 and every dancer 𝐷,
+                                           𝑢𝑖(𝐷) = 𝑘 + 𝐾 + 𝜅(𝑚, 𝐾) + 𝑥𝐷.
+Proof. Put 𝐸 := 𝐼 ∖ 𝐷 and 𝜉 := 𝜉𝐷 = 𝜆 + 1 − 2𝑜𝐷 = 𝐾 + 𝑜𝐸 − 𝑜𝐷, so 𝑜𝐷 + 𝜉 = 𝐾 + 𝑜𝐸.
+Step 1 (𝑖 = 1). We show
+                            𝑢1(𝐷) = 𝜑(𝜆 + 1) + 2𝜓(𝐷), with 𝜓(𝐷) := ∑ (ℎ𝑡 − 2𝑡).
+                                                                              𝑡∈𝐷
+
+Let 𝜇 := 𝜉 − 1 = 𝜆 − 2𝑜𝐷. Since 𝐾 − 1 = 𝑜([0, 𝑘) ∖ 𝐼) + 𝑜𝐼, we have 𝜇 = 𝑜([0, 𝑘) ∖ 𝐼) + 2𝑜𝐸. Adding 2𝑡+1 (𝑡 ∈ 𝐸)
+to 𝑜([0, 𝑘) ∖ 𝐼) carries through the positions 𝑡 + 1, …, next(𝑡) − 1, which lie in [0, 𝑘) ∖ 𝐼, and stops at next(𝑡), a
+position that is set neither in 𝑜([0, 𝑘) ∖ 𝐼) nor by any other 𝑡; the stretches [𝑡 + 1, next(𝑡)] of different 𝑡 are dis‐
+joint. Hence 𝑠2(𝜇) = (𝑘 − |𝐼|) + |𝐸| − 𝐺(𝐸). Now 𝜑(𝜉) = 𝜉 + 𝑣2(𝜉) and 𝑠2(𝜉) = 𝑠2(𝜇) + 1 − 𝑣2(𝜉), and 𝜅(𝑜𝐷, 𝜉) =
+|𝐷| + 𝑠2(𝜉) − 𝑠2(𝐾 + 𝑜𝐸) = |𝐷| + 𝑠2(𝜉) − 1 − |𝐸|. So
+      𝑢1(𝐷) = 𝜉 + 𝑣2(𝜉) + 𝑠2(𝜉) − 1 + |𝐷| − |𝐸| + ℎ(𝐷) = 𝜉 + 𝑠2(𝜇) + |𝐷| − |𝐸| + ℎ(𝐷)
+                                                          = 𝐾 + 𝑜𝐼 − 2𝑜𝐷 + 𝑘 − |𝐼| + 2|𝐷| + 𝐺(𝐷) − 𝐺(𝐸),
+using 𝜉 = 𝐾 + 𝑜𝐼 − 2𝑜𝐷 and ℎ(𝐷) = 𝐺(𝐷) + |𝐷|. On the other side
+                              𝜑(𝜆 + 1) = 𝐾 + 𝑜𝐼 + 𝑡1, 2𝜓(𝐷) = 2𝐺(𝐷) + 2|𝐷| − 2𝑜𝐷.
+The difference of the two sides is 𝑘 − |𝐼| − 𝐺(𝐷) − 𝐺(𝐸) − 𝑡1 = 𝑘 − 𝑡1 − ∑𝑡∈𝐼 ℎ𝑡 = 0.
+Step 2 (𝑖 ≥ 1). From 𝜅(𝑎, 𝑏) = 𝑠2(𝑎) + 𝑠2(𝑏) − 𝑠2(𝑎 + 𝑏), 𝜅(𝑚 + 𝑜𝐷, 𝜉) − 𝜅(𝑜𝐷, 𝜉) = 𝜅(𝑚, 𝑜𝐷 + 𝜉) − 𝜅(𝑚, 𝑜𝐷), so
+                                     𝑢𝑖(𝐷) = 𝑢1(𝐷) + 𝜅(𝑚, 𝐾 + 𝑜𝐸) − 𝜅(𝑚, 𝑜𝐷).
+Step 3. 𝑥𝐷 = 𝜓(𝐷) − 𝜅(𝑚, 𝑜𝐷) − 𝜓(𝐸) + 𝜅(𝑚 + 𝐾, 𝑜𝐸), and
+                                 𝜅(𝑚, 𝐾 + 𝑜𝐸) + 𝜅(𝐾, 𝑜𝐸) = 𝜅(𝑚, 𝐾) + 𝜅(𝑚 + 𝐾, 𝑜𝐸)
+(both sides are 𝑠2(𝑚) + 𝑠2(𝐾) + 𝑠2(𝑜𝐸) − 𝑠2(𝑚 + 𝐾 + 𝑜𝐸)), with 𝜅(𝐾, 𝑜𝐸) = 0. Hence 𝑢𝑖(𝐷) − 𝑘 − 𝐾 − 𝜅(𝑚, 𝐾) −
+𝑥𝐷 = 𝜑(𝜆 + 1) + 𝜓(𝐷) + 𝜓(𝐸) − 𝑘 − 𝐾 = 𝜑(𝜆 + 1) + 𝜓(𝐼) − 𝑘 − 𝐾, and 𝜓(𝐼) = (𝑘 − 𝑡1) − 𝑜𝐼, so this is 0.      ∎
+The shift 𝑖 = 0. Here the payment 𝜋0(0) = 0 makes the row ∅ of 𝑀(𝜆, 0) zero (its window [0, 𝐾 − 1] contains
+𝑑 = 0), and no other window contains 0. The same computation with Legendre’s formula at 𝑖 = 0,
+∑𝑦−1
+  𝑑=𝑥 𝑣2(𝑑) = (𝑦 − 𝑥) − 𝑠2(𝑦 − 1) + 𝑠2(𝑥 − 1) (𝑥 ≥ 1), is the case «𝑚 = −1»: since 𝑚 + 𝐾 + 𝑜𝑏 = 𝐾 − 1 + 𝑜𝑏,
+both rulers are read at 𝐾 − 1 (Proposition 5.4). In the language of §7.3 this is the house with ℓ = 𝐾 − 1.
+Proposition 5.4. For 𝐷 ≠ ∅ and every 𝑏 ⊆ 𝐷,
+            𝑣2(𝑀(𝜆, 0)𝐷𝑏) = 𝛼𝐾 + 𝑅♯(𝐷) − 𝑅♯(𝑏) + 𝛾(𝐷 ∖ 𝑏), 𝑅♯(𝐸) := ∑ (ℎ𝑡 − 𝛼2𝑡) − 𝜅(𝐾 − 1, 𝑜𝐸),
+                                                                            𝑡∈𝐸
+
+and, for 𝛼 = 1, 𝑢0(𝐷) = 𝑘 + 𝐾 + 𝑥♯𝐷 with 𝑥♯𝐷 := 𝑅 ♯ (𝐷) − 𝑅 ♯ (𝐼 ∖ 𝐷). Explicitly 𝜅(𝐾 − 1, 𝑜𝐸) = 𝑘 − min 𝐸 (with
+min ∅ := 𝑘).
+
+
+
+
+                                                          20
+Proof. Let 𝐸 ≠ ∅. Then 𝐾 − 1 + 𝑜𝐸 = 𝐾 + (𝑜𝐸 − 1) and 𝑠2(𝑜𝐸 − 1) = |𝐸| − 1 + min 𝐸, so that 𝜅(𝐾 − 1, 𝑜𝐸) =
+𝑘 + |𝐸| − 1 − 𝑠2(𝑜𝐸 − 1) = 𝑘 − min 𝐸; for 𝐸 = ∅ both sides are 0. As in Proposition 5.2, 𝑅♯(𝐸) = 𝐺(𝐸) − 𝛼𝑜𝐸 +
+𝑠2(𝐾 − 1 + 𝑜𝐸) − 𝑘, and, for 𝐷 ≠ ∅, 𝑠2(𝐾 − 1 + 𝑜𝐷) = 1 + 𝑠2(𝑜𝐷 − 1). Legendre’s formula, applied at 𝑖 = 0 with
+𝑥 = 𝑜𝐷 ≥ 1 and 𝑦 = 𝑜𝑏 + 𝐾, gives
+                       𝑣2(𝑀𝐷𝑏) = 1 + 𝛿(Δ) + 𝛼(𝐾 + 𝑜𝑏 − 𝑜𝐷) − 𝑠2(𝐾 − 1 + 𝑜𝑏) + 𝑠2(𝑜𝐷 − 1),
+and with 𝛿(Δ) = 𝐺(𝐷) − 𝐺(𝑏) + 𝛾(Δ) the difference 𝑣2(𝑀𝐷𝑏) − [𝑅♯(𝐷) − 𝑅♯(𝑏) + 𝛾(Δ)] is 𝛼𝐾. For the clocks: in
+𝑢𝑖(𝐷) the first argument of 𝜅 is 𝑖 + 𝑜𝐷 − 1, which is 𝑜𝐷 − 1 at 𝑖 = 0 against 𝑜𝐷 at 𝑖 = 1, while 𝜉 is unchanged;
+and 𝜅(𝑜𝐷 − 1, 𝜉) − 𝜅(𝑜𝐷, 𝜉) = 𝑣2(𝑜𝐷) − 𝑣2(𝑜𝐷 + 𝜉) = min 𝐷 − min 𝐸 (𝑣2(𝐾 + 𝑜𝐸) = min 𝐸). So 𝑢0(𝐷) = 𝑢1(𝐷) +
+min 𝐷 − min 𝐸 = 𝑘 + 𝐾 + 𝜓(𝐷) − 𝜓(𝐸) + min 𝐷 − min 𝐸, and 𝑥♯𝐷 = 𝜓(𝐷) − (𝑘 − min 𝐷) − 𝜓(𝐸) + (𝑘 − min 𝐸)
+is the same.                                                                                                  ∎
+
+6. The Smith form of 𝑀: the ceiling
+
+6.1 Determinantal divisors and the tropical bound
+For a matrix 𝑀 over 𝐴 with Smith exponents 𝑒1 ≤ 𝑒2 ≤ ⋯, the 𝑟‑th determinantal divisor 𝑑𝑟(𝑀), the least
+valuation of an 𝑟 × 𝑟 minor, is 𝑒1 + ⋯ + 𝑒𝑟. So 𝑟 ↦ 𝑑𝑟 is convex with integer increments, and the increments
+are the exponents.
+Fix a cell (𝜆, 𝑖, 𝛼) with 𝑖 ≥ 1, and number the dancers in o‑order, 𝐷0 = ∅, 𝐷1, …, 𝐷𝑁−1 = 𝐼 (𝑁 = 2|𝐼|). Since
+𝑜𝐼∖𝐷 = 𝑜𝐼 − 𝑜𝐷, the map 𝐷 ↦ 𝐼 ∖ 𝐷 reverses the o‑order. Put 𝐿𝑟 := {𝐷𝑁−𝑟, …, 𝐷𝑁−1} (the last 𝑟 dancers) and
+𝐹𝑟 := {𝐷0, …, 𝐷𝑟−1} = {𝐼 ∖ 𝐷 : 𝐷 ∈ 𝐿𝑟} (the first 𝑟). Write
+       𝑑ˆ 𝑟 := 𝑑𝑟(𝑀) − 𝑟(𝛼𝐾 + 𝜅(𝑚, 𝐾)) (the normalized divisors);
+    𝑇(𝑟) := the least normalized cost ∑ 𝑐ˆ(𝑎, 𝛽(𝑎)) of an 𝑟‑matching: a bijection 𝛽 from 𝑟 dancers onto 𝑟
+    dancers with 𝛽(𝑎) ⊆ 𝑎 for every 𝑎;
+    𝑈(𝑟) := ∑𝐷∈𝐿𝑟 𝑥𝐷, the sum of the last 𝑟 clocks (the natural partial sums);
+    𝑌(𝑟) := ∑𝐷∈𝐿𝑟 𝑦ˆ𝐷, the same for the integer antitonic fit 𝑦ˆ of 𝑥 (the pooled partial sums).
+Lemma 6.1 (tropical bound). 𝑑ˆ 𝑟 ≥ 𝑇(𝑟).
+Proof. An 𝑟 × 𝑟 minor is a signed sum of products of 𝑟 entries along a bijection from its rows to its columns. A
+product is non-zero only if every entry lies in the support {𝑏 ⊆ 𝑎} of 𝑀, and then its normalized valuation is
+the cost of the matching (Proposition 5.2).                                                                    ∎
+
+6.2 Theorem O: the unique golden matching
+Call an arrow 𝑎 → 𝑏 (𝑏 ⊆ 𝑎) golden if 𝛾(𝑎 ∖ 𝑏) = 0, that is (Lemma 5.1(b)), if 𝑏 = 𝑎 or 𝑏 = 𝑎 ∖ 𝑇 for a tail
+𝑇 = 𝐼 ∩ [𝑡, 𝑘) of 𝐼 contained in 𝑎.
+Theorem 6.2 (Theorem O). For every 𝐼 ⊆ [0, 𝑘) and every 0 ≤ 𝑟 ≤ 𝑁, there is exactly one bijection
+𝛽𝑟: 𝐿𝑟 → 𝐹𝑟 all of whose arrows 𝐷 → 𝛽𝑟(𝐷) are golden.
+Proof. Let 𝑡1 < ⋯ < 𝑡𝑠 be the digits of 𝐼 and identify a dancer 𝐷 with the integer 𝑝(𝐷) := ∑𝑗 [𝑡𝑗 ∈ 𝐷]2𝑗−1 ∈
+[0, 2𝑠); the o‑order is the order of 𝑝. A tail of 𝐼 contained in 𝐷 is a set of top bits of 𝑝(𝐷) that are all equal to 1,
+so the golden images of 𝑝 are 𝑝 itself and the numbers obtained from 𝑝 by clearing a non-empty block of its
+top bits, all equal to 1. We must show that there is exactly one bijection from {𝑁 − 𝑟, …, 𝑁 − 1} onto
+{0, …, 𝑟 − 1} that sends every 𝑝 to a golden image. Induction on 𝑠; 𝑠 = 0 is trivial. Let 𝑁 = 2𝑠 ≥ 2.
+      𝑟 ≤ 𝑁/2: every row has top bit 1 and every column has top bit 0, so every arrow clears the top bit, fol‐
+      lowed by a golden arrow of the remaining 𝑠 − 1 bits. Removing the top bit of the rows gives exactly the
+
+
+                                                          21
+      problem (𝑠 − 1, 𝑟), which has one solution.
+      𝑟 = 𝑁/2 + 𝑞 with 0 < 𝑞 ≤ 𝑁/2: the columns 𝑁/2, …, 𝑁/2 + 𝑞 − 1 have top bit 1 and are reached only by
+      loops, so they are matched with themselves, and they are rows. The rows 𝑁/2 − 𝑞, …, 𝑁/2 − 1 have top
+      bit 0 and admit only loops, so they are matched with themselves, and they are columns. The remaining
+      rows 𝑁/2 + 𝑞, …, 𝑁 − 1 must go to the remaining columns 0, …, 𝑁/2 − 𝑞 − 1 by clearing the top bit: this
+      is the problem (𝑠 − 1, 𝑁/2 − 𝑞), which has one solution.                                             ∎
+The golden matching is explicit: for 𝑟 ≤ 𝑁/2 it is «remove the top digit of 𝐼 and solve the smaller problem»,
+and for 𝑟 > 𝑁/2 it fixes the 2𝑟 − 𝑁 middle dancers and solves the smaller problem on the rest.
+Corollary 6.3 (the natural minor). 𝑣2(det 𝑀[𝐿𝑟, 𝐹𝑟]) = 𝑟(𝛼𝐾 + 𝜅(𝑚, 𝐾)) + 𝑈(𝑟); hence 𝑑ˆ 𝑟 ≤ 𝑈(𝑟) for every 𝑟.
+Proof. For a bijection 𝛽: 𝐿𝑟 → 𝐹𝑟 inside the support, the normalized valuation of its term is
+                                  ∑ 𝑅𝑚(𝐷) − 𝐸∈𝐹
+                                  𝐷∈𝐿𝑟
+                                            ∑ 𝑅𝑚+𝐾(𝐸) + ∑
+                                                        𝐷
+                                                          𝛾(𝐷 ∖ 𝛽(𝐷)).
+                                                   𝑟
+
+The first two sums do not depend on 𝛽 and add up to ∑𝐷∈𝐿𝑟 (𝑅𝑚(𝐷) − 𝑅𝑚+𝐾(𝐼 ∖ 𝐷)) = 𝑈(𝑟). The gold is a non-
+negative integer, zero exactly for the golden matching 𝛽𝑟. So the minor has a unique term of least valuation,
+and its valuation is that of the term.                                                                     ∎
+
+6.3 From the natural sums to the pooled sums
+Lemma 6.4 (convexity). Let 𝑑: {0, …, 𝑁} → ℤ be convex with integer increments, 𝑑(0) = 0, and 𝑑(𝑟) ≤ 𝑈(𝑟)
+for every 𝑟. Then 𝑑(𝑟) ≤ 𝑌(𝑟) for every 𝑟.
+Proof. Read the dancers from the end. On every level set of the real antitonic fit (§7.1) the sums of 𝑥 and of 𝑦ˆ
+agree, so 𝑌 = 𝑈 at the two ends 𝑟0 < 𝑟1 = 𝑟0 + 𝑝 of each level set, counted from the end. Inside a level set
+with sum 𝑆 = 𝑝𝑞 + 𝜌 (0 ≤ 𝜌 < 𝑝), 𝑌 increases by 𝑞 on the first 𝑝 − 𝜌 steps and by 𝑞 + 1 on the last 𝜌 steps
+(the fit takes the larger values first in o‑order). We argue by induction over the level sets from the end, so we
+may assume 𝑑(𝑟0) ≤ 𝑌(𝑟0). Suppose 𝑑(𝑟*) > 𝑌(𝑟*) with 𝑟0 < 𝑟* < 𝑟1.
+         If 𝑟* ≤ 𝑟0 + 𝑝 − 𝜌, some increment of 𝑑 in (𝑟0, 𝑟*] is at least 𝑞 + 1, hence so is every later one, and
+         𝑑(𝑟1) ≥ 𝑑(𝑟*) + (𝑟1 − 𝑟*)(𝑞 + 1) > 𝑌(𝑟*) + (𝑟1 − 𝑟*)(𝑞 + 1) ≥ 𝑌(𝑟1) = 𝑈(𝑟1), a contradiction.
+         If 𝑟* > 𝑟0 + 𝑝 − 𝜌, then 𝑑(𝑟1) − 𝑑(𝑟*) < 𝑌(𝑟1) − 𝑌(𝑟*) = (𝑟1 − 𝑟*)(𝑞 + 1), so some increment of 𝑑 in
+         (𝑟*, 𝑟1] is at most 𝑞 (they are integers), hence so is every earlier one, and 𝑑(𝑟*) ≤ 𝑑(𝑟0) + (𝑟* − 𝑟0)𝑞 ≤
+         𝑌(𝑟*), a contradiction.                                                                                   ∎
+Theorem 6.5. Suppose 𝑇(𝑟) ≥ 𝑌(𝑟) for every 𝑟 and that the integer fit 𝑦ˆ is non-increasing. Then 𝑑ˆ 𝑟 = 𝑌(𝑟) for
+every 𝑟, and the Smith exponents of 𝑀(𝛼)(𝜆, 𝑖) are 𝛼𝐾 + 𝜅(𝑚, 𝐾) + 𝑦ˆ𝐷, 𝐷 ⊆ 𝐼.
+Proof. 𝑌(𝑟) ≤ 𝑇(𝑟) ≤ 𝑑ˆ 𝑟 ≤ 𝑌(𝑟), by the hypothesis, Lemma 6.1, and Corollary 6.3 with Lemma 6.4 (applied to
+𝑑ˆ ). Since 𝑦ˆ is non-increasing, 𝑌(𝑟) is the sum of the 𝑟 smallest values of 𝑦ˆ, and the exponents are the
+increments.                                                                                                        ∎
+The two hypotheses are proved in §7 (Theorem 7.8 and Lemma 7.9).
+
+7. The Smith form of 𝑀: the floor
+
+7.1 Antitonic fits
+For a real sequence 𝑥 = (𝑥0, …, 𝑥𝑁−1), its antitonic fit 𝑧 = fit(𝑥) is the non-increasing sequence nearest to 𝑥
+in the Euclidean norm; it exists and is unique (projection onto a closed convex cone). Its level sets are the
+maximal runs of positions with equal value. The integer fit replaces, on each level set of 𝑝 positions with
+
+
+                                                        22
+sum 𝑆 (necessarily 𝑆 = 𝑝 · 𝑧), the values by 𝑆 mod 𝑝 copies of ⌈𝑆/𝑝⌉ followed by 𝑝 − (𝑆 mod 𝑝) copies of
+⌊𝑆/𝑝⌋; this is the integer antitonic fit of §1.2, computed there by the pool-adjacent-violators algorithm
+[ABERS55], [BBBB72].
+Lemma 7.1 (characterization). A non-increasing sequence 𝑧 is fit(𝑥) if and only if, for every level set [𝑝, 𝑞]
+of 𝑧, ∑𝑞𝑗=𝑝 (𝑥𝑗 − 𝑧𝑗) = 0 and ∑𝑠𝑗=𝑝 (𝑥𝑗 − 𝑧𝑗) ≤ 0 for 𝑝 ≤ 𝑠 ≤ 𝑞.
+Proof. If a prefix of a level set had a positive sum, raising the values on that prefix by a small 𝜀 and lowering
+the rest of the level set would keep 𝑧 non-increasing and decrease the distance; the same with a non-zero
+total. Conversely, let 𝑦 be non-increasing. Then ‖𝑥 − 𝑦‖2 = ‖𝑥 − 𝑧‖2 + ‖𝑧 − 𝑦‖2 + 2∑𝑗 (𝑥𝑗 − 𝑧𝑗)(𝑧𝑗 − 𝑦𝑗), and
+on a level set [𝑝, 𝑞] with value 𝑐, Abel summation with 𝑆𝑠 := ∑𝑠𝑗=𝑝 (𝑥𝑗 − 𝑐) ≤ 0 (𝑆𝑞 = 0) gives
+                                     𝑞                           𝑞−1
+                                    ∑
+                                    𝑗=𝑝
+                                        (𝑥𝑗 − 𝑐)(𝑐 − 𝑦𝑗) = − ∑ 𝑆𝑠(𝑦𝑠 − 𝑦𝑠+1) ≥ 0,
+                                                             𝑠=𝑝
+
+since 𝑦 is non-increasing. So ‖𝑥 − 𝑦‖ ≥ ‖𝑥 − 𝑧‖.                                                                         ∎
+We say that 𝑥 is cut at a position 𝑏 (0 < 𝑏 < 𝑁) if fit(𝑥) is the concatenation of fit(𝑥<𝑏) and fit(𝑥≥𝑏). The cut is
+strict if moreover fit(𝑥)𝑏−1 > fit(𝑥)𝑏. A position 𝑏 with fit(𝑥)𝑏−1 > fit(𝑥)𝑏 is always a cut, since Lemma 7.1 is a
+condition on each level set separately and so holds for the two pieces; thus 𝑏 is a strict cut if and only if no
+level set of fit(𝑥) contains both 𝑏 − 1 and 𝑏.
+Lemma 7.2 (cuts and shifts).
+(a) If fit(𝑥<𝑏) followed by fit(𝑥≥𝑏) is non-increasing, then 𝑥 is cut at 𝑏.
+(b) Let 𝑥 be cut at the positions 𝑏1 < ⋯ < 𝑏𝑠, and let 𝛿 be a non-increasing sequence that is constant between
+consecutive cut positions. Then fit(𝑥 + 𝛿) = fit(𝑥) + 𝛿, and 𝑥 + 𝛿 is cut at the same positions. If moreover 𝛿 is
+integer and constant on every level set of fit(𝑥) — in particular, if every position at which 𝛿 changes is a strict
+cut of 𝑥 — then fit(𝑥 + 𝛿) has the level sets of fit(𝑥), the strict cuts of 𝑥 are strict cuts of 𝑥 + 𝛿, and the integer
+fit of 𝑥 + 𝛿 is the integer fit of 𝑥 plus 𝛿.
+(c) If fit(𝑥)<𝑏 = fit(𝑥<𝑏), or fit(𝑥)≥𝑏 = fit(𝑥≥𝑏), then 𝑥 is cut at 𝑏.
+Proof. (a) Each level set of the concatenation is a level set of one piece, or the union of a final level set of the
+first piece and an initial one of the second with the same value; Lemma 7.1 for the pieces gives it for the
+union (a prefix that crosses the cut has the total 0 of the first part plus a prefix sum ≤ 0). (b) On each piece
+the fit of 𝑥 + const is the fit plus the constant; the concatenation is non-increasing, so (a) applies. Now let 𝛿
+be integer and constant on every level set. Two adjacent level sets of fit(𝑥), with values 𝜇𝐴 > 𝜇𝐵, receive con‐
+stants 𝛿𝐴 ≥ 𝛿𝐵, so 𝜇𝐴 + 𝛿𝐴 > 𝜇𝐵 + 𝛿𝐵: the level sets of fit(𝑥) + 𝛿 are those of fit(𝑥), and a strict cut stays strict
+(a strict drop of the fit is a cut). On a level set of 𝑝 positions with sum 𝑆, adding the integer 𝛿𝐿 to every posi‐
+tion adds 𝑝𝛿𝐿 to the sum, keeps 𝑆 mod 𝑝, and adds 𝛿𝐿 to ⌈𝑆/𝑝⌉ and to ⌊𝑆/𝑝⌋; so the integer fit is shifted by 𝛿. A
+level set never contains the two sides of a strict cut, so a 𝛿 that changes only at strict cuts is constant on every
+level set. Without this hypothesis the integer claim fails: 𝑥 = (3, 4, 3, 4) is cut at 2 but not strictly (fit(𝑥) =
+(7/2, 7/2, 7/2, 7/2)), and for 𝛿 = (1, 1, 0, 0) the integer fit of 𝑥 + 𝛿 is (5, 4, 4, 3), while the integer fit of 𝑥 plus 𝛿
+is (4, 4, 3, 3) + 𝛿 = (5, 5, 3, 3). (c) Suppose 𝑧 := fit(𝑥) agrees with fit(𝑥<𝑏) before 𝑏. Let 𝐿 = 𝐿1 ∪ 𝐿2 be a level set
+of 𝑧, with value 𝑐, that crosses 𝑏 (𝐿1 before 𝑏). The set 𝐿1 is a final level set of fit(𝑥<𝑏), so ∑𝐿1 (𝑥 − 𝑐) = 0;
+hence the sum of 𝑥 − 𝑐 over a prefix of 𝐿2 equals its sum over 𝐿1 plus that prefix, which is ≤ 0 by
+Lemma 7.1 for 𝑧, and the total over 𝐿2 is 0. The level sets of 𝑧 after 𝑏 are unchanged, so 𝑧≥𝑏 satisfies
+Lemma 7.1 for 𝑥≥𝑏. The second hypothesis is the first one for the reversed and negated sequence.                          ∎
+Antisymmetry. For dancers in o‑order, the mirror is 𝐷 ↦ 𝐼 ∖ 𝐷, the reversal of positions; 𝑥 is antisym‐
+metric if 𝑥𝐼∖𝐷 = −𝑥𝐷. The fit of an antisymmetric sequence is antisymmetric, and so is its integer fit (on a
+level set of size 𝑝 and sum −𝑆 the rule gives 𝑝 − (𝑆 mod 𝑝) copies of −⌊𝑆/𝑝⌋ followed by −⌈𝑆/𝑝⌉); hence a
+position 𝑏 is a cut if and only if its mirror 𝑁 − 𝑏 is, and a strict cut if and only if its mirror is.
+
+
+                                                            23
+Lemma 7.3 (antisymmetric gluing). Let 𝑥 be antisymmetric of length 2𝑁′, let 𝑍1 = fit(𝑥<𝑁′) and let 𝑋1 be
+the integer fit of 𝑥<𝑁′. Then
+            fit(𝑥) = [max(𝑍1, 0), min(𝑍2, 0)] and the integer fit of 𝑥 is [max(𝑋1, 0), min(𝑋2, 0)],
+where 𝑍2, 𝑋2 are the mirror-negatives of 𝑍1, 𝑋1 (so 𝑍2 = fit(𝑥≥𝑁′)).
+Proof. The candidate 𝑧 is non-increasing. Its level sets are the level sets of 𝑍1 with positive value, their mir‐
+rors, and one central level set 𝑃 ∪ 𝑃* with value 0, where 𝑃 = {𝑍1 ≤ 0} is a final segment of the first half, a
+union of level sets of 𝑍1, and 𝑃* is its mirror. The positive level sets satisfy Lemma 7.1 because they do for 𝑍1;
+their mirrors by antisymmetry. On 𝑃 ∪ 𝑃* the total of 𝑥 is 0 by antisymmetry. A prefix contained in 𝑃 has sum
+at most the corresponding sum of 𝑍1, by Lemma 7.1 applied to the level sets of 𝑍1 that it covers, and that sum
+is ≤ 0. A prefix that covers 𝑃 and the first 𝐿 positions of 𝑃* has sum ∑𝑃 𝑥 − ∑last 𝐿 positions of 𝑃 𝑥, the sum over
+the first |𝑃| − 𝐿 positions of 𝑃, which is ≤ 0 again. So 𝑧 = fit(𝑥). The integer fit takes on the positive level sets
+the same values as 𝑋1, and 0 on the central one; and 𝑋1 ≥ 0 where 𝑍1 > 0, 𝑋1 ≤ 0 where 𝑍1 ≤ 0.                     ∎
+
+7.2 Theorem U
+Theorem 7.4 (Theorem U). Let a cell have costs 𝑐ˆ(𝑎, 𝑏) on its arrows and pooled clocks 𝑦ˆ. Suppose there are
+real functions 𝑣 («rows») and 𝑤 («columns») on the dancers such that
+     (U1) 𝑣 and 𝑤 are non-increasing in o‑order;
+     (U2) 𝑣(𝐷) − 𝑤(𝐼 ∖ 𝐷) = 𝑦ˆ𝐷 for every dancer 𝐷;
+     (U3) 𝑣(𝑎) − 𝑤(𝑏) ≤ 𝑐ˆ(𝑎, 𝑏) for every arrow 𝑏 ⊆ 𝑎 (loops included).
+Then every 𝑟‑matching costs at least 𝑌(𝑟) = ∑𝐷∈𝐿𝑟 𝑦ˆ𝐷; that is, 𝑇(𝑟) ≥ 𝑌(𝑟).
+Proof. For an 𝑟‑matching with rows 𝑅 and columns 𝐶, by (U3) its cost is at least ∑𝑅 𝑣 − ∑𝐶 𝑤. By (U1),
+∑𝑅 𝑣 ≥ ∑𝐿𝑟 𝑣 and ∑𝐶 𝑤 ≤ ∑𝐹𝑟 𝑤. Since 𝐹𝑟 = {𝐼 ∖ 𝐷 : 𝐷 ∈ 𝐿𝑟}, (U2) gives ∑𝐿𝑟 𝑣 − ∑𝐹𝑟 𝑤 = ∑𝐿𝑟 𝑦ˆ.      ∎
+
+7.3 Houses, windows and penalties
+A house is 𝐻 = (𝐼, 𝑘, ℓ, 𝛼) with 𝐼 ⊆ [0, 𝑘), 0 ≤ ℓ < 2𝑘 and 𝛼 ≥ 1. Its base ruler, carry-out set, base clocks
+and base costs are
+                 𝑅𝐻(𝐸) := ∑ (ℎ𝑡 − 𝛼2𝑡) − 𝜅(ℓ, 𝑜𝐸),            𝐽𝐻(𝐸) := [ℓ + 𝑜𝐸 ≥ 2𝑘],
+                            𝑡∈𝐸
+                 𝑥𝐻(𝐷) := 𝑅𝐻(𝐷) − 𝑅𝐻(𝐼 ∖ 𝐷),                  𝑐ˆ𝐻(𝑎, 𝑏) := 𝑅𝐻(𝑎) − 𝑅𝐻(𝑏) + 𝛾(𝑎 ∖ 𝑏).
+The sequence 𝑥𝐻 is antisymmetric, and 𝐽𝐻 is an up-set of the o‑order (it is monotone in 𝑜𝐸). For integers
+𝑃𝑟, 𝑃𝑐 ≥ 0 the penalty cell Cell(𝐻; 𝑃𝑟, 𝑃𝑐) has the costs 𝑐ˆ𝐻(𝑎, 𝑏) − 𝑃𝑟𝐽𝐻(𝑎) + 𝑃𝑐𝐽𝐻(𝑏) and the clocks 𝑥𝐻(𝐷) −
+𝑃𝑟𝐽𝐻(𝐷) + 𝑃𝑐𝐽𝐻(𝐼 ∖ 𝐷).
+For 𝜇 ≥ 0 let 𝑟𝑘(𝜇) be the number of consecutive ones of 𝜇 starting at bit 𝑘, that is 𝑟𝑘(𝜇) = 𝑣2(⌊𝜇/2𝑘⌋ + 1).
+Lemma 7.5 (real cells). Let 𝑖 ≥ 1, 𝑚 = 𝑖 − 1 and ℓ := 𝑚 mod 𝐾, and let 𝐻 = (𝐼, 𝑘, ℓ, 𝛼). Then 𝑅𝑚 = 𝑅𝐻 −
+𝑟𝑘(𝑚)𝐽𝐻 and 𝑅𝑚+𝐾 = 𝑅𝐻 − 𝑟𝑘(𝑚 + 𝐾)𝐽𝐻; so the cell (𝜆, 𝑖, 𝛼) is Cell(𝐻; 𝑟𝑘(𝑚), 𝑟𝑘(𝑚 + 𝐾)).
+Proof. In the sum 𝑚 + 𝑜𝐸 the low part ℓ + 𝑜𝐸 produces the carries of 𝜅(ℓ, 𝑜𝐸), and a carry out of bit 𝑘 − 1
+exactly when 𝐽𝐻(𝐸) = 1; that carry then runs through the 𝑟𝑘(𝑚) ones of 𝑚 that start at bit 𝑘. The same holds
+for 𝑚 + 𝐾, whose low part is also ℓ. (One of the two penalties is 0: the bit 𝑘 is 1 in exactly one of 𝑚 and
+𝑚 + 𝐾.)                                                                                                    ∎
+Windows. For 𝑡 ∈ 𝐼 let 𝑊𝑡 := [𝑡, next(𝑡)), of length ℎ𝑡. The type of 𝑡 is the bit 𝑇𝑡 of ℓ at position 𝑡. Let 𝑟𝑢(ℓ) be
+the number of consecutive ones of ℓ starting at bit 𝑢, and put
+   𝜅𝑡 := min(𝑟𝑡(ℓ), ℎ𝑡) if 𝑇𝑡 = 1,                                   𝜅𝑡 := 1 + min(𝑟𝑡+1(ℓ), ℎ𝑡 − 1) if 𝑇𝑡 = 0;
+
+
+                                                         24
+   sat𝑡 := [𝜅𝑡 = ℎ𝑡] (the window is saturated if sat𝑡 = 1),        𝜏𝑡 := ℎ𝑡 − 𝛼2𝑡 − [𝑇𝑡 = 1]𝜅𝑡.
+Lemma 7.6 (the gates). For 𝐸 ⊆ 𝐼, let 𝑐𝑡(𝐸) ∈ {0, 1} be the carry into bit 𝑡 in the sum ℓ + 𝑜𝐸, and 𝑑 = [𝑡 ∈ 𝐸].
+Then 𝑐𝑡1(𝐸) = 0 and:
+      if 𝑇𝑡 = 1, the window 𝑊𝑡 makes 𝜅𝑡 carries if 𝑑 ∨ 𝑐𝑡, and none otherwise;
+      if 𝑇𝑡 = 0, it makes 𝜅𝑡 carries if 𝑑 ∧ 𝑐𝑡, and none otherwise;
+      a carry leaves 𝑊𝑡 (𝑐next(𝑡) = 1) if and only if the window makes carries and is saturated.
+Hence 𝑅𝐻(𝐸) = ∑𝑡∈𝐸 𝜏𝑡 − ∑𝑡∈𝐼 𝜅𝑡𝑐𝑡(𝐸) · [(𝑇𝑡 = 1 ∧ 𝑡 ∉ 𝐸) ∨ (𝑇𝑡 = 0 ∧ 𝑡 ∈ 𝐸)], and 𝐽𝐻(𝐸) = 𝑐𝑘(𝐸).
+Proof. Inside 𝑊𝑡 the addend 𝑜𝐸 has at most the bit 𝑡, and ℓ has the bit 𝑇𝑡 at 𝑡. If 𝑇𝑡 = 1 and 𝑑 + 𝑐𝑡 ≥ 1, bit 𝑡 car‐
+ries, and the carry runs through the ones of ℓ at 𝑡 + 1, …: there are min(𝑟𝑡(ℓ), ℎ𝑡) carries inside the window
+(for 𝑑 + 𝑐𝑡 = 2 the carry out of bit 𝑡 is the same and the run starts at 𝑡 + 1, which gives the same count). If
+𝑇𝑡 = 0, bit 𝑡 carries only when 𝑑 = 𝑐𝑡 = 1, and then the carry runs through the 𝑟𝑡+1(ℓ) ones above 𝑡. The carry
+leaves the window exactly when all its positions carry. Below 𝑡1 the addend is zero, so no carry is born there.
+Finally, 𝜅(ℓ, 𝑜𝐸) = ∑𝑡 (carries in 𝑊𝑡) and ∑𝑡∈𝐸 𝜅𝑡[𝑇𝑡 = 1] is absorbed into 𝜏.                                     ∎
+Lemma 7.7 (the top digit). Let 𝐼 ≠ ∅, 𝑐 := max 𝐼, 𝐼′ := 𝐼 ∖ {𝑐}, 𝐻′ := (𝐼′, 𝑐, ℓ mod 2𝑐, 𝛼), and let 𝑇, 𝜅, sat, 𝜏 be
+the data of the window 𝑊𝑐 = [𝑐, 𝑘) of 𝐻, of length ℎ := 𝑘 − 𝑐. For 𝐷0 ⊆ 𝐼′:
+           𝑅𝐻(𝐷0) = 𝑅𝐻′(𝐷0) − [𝑇 = 1]𝜅𝐽𝐻′(𝐷0),          𝑅𝐻(𝐷0 ∪ {𝑐}) = 𝜏 + 𝑅𝐻′(𝐷0) − [𝑇 = 0]𝜅𝐽𝐻′(𝐷0),
+           𝐽𝐻(𝐷0) = [𝑇 = 1] · sat · 𝐽𝐻′(𝐷0),            𝐽𝐻(𝐷0 ∪ {𝑐}) = sat · ([𝑇 = 1] + [𝑇 = 0]𝐽𝐻′(𝐷0)),
+and for Δ ⊆ 𝐼: 𝛾𝐼(Δ) = 𝛾𝐼′(Δ) + ℎ if 𝑐 ∉ Δ ≠ ∅, and 𝛾𝐼(Δ0 ∪ {𝑐}) = 𝛾𝐼′(Δ0). Consequently the first half of the
+base clocks of 𝐻 (the dancers without 𝑐) is 𝑥𝐻′ + 𝑑1, with
+                             𝑑1(𝐷0) := −𝜏 − [𝑇 = 1]𝜅𝐽𝐻′(𝐷0) + [𝑇 = 0]𝜅𝐽𝐻′(𝐼′ ∖ 𝐷0),
+and the second half is its mirror-negative.
+Proof. The windows of the digits of 𝐼′ are the same in 𝐻 and in 𝐻′ (the predecessor of 𝑐 has next = 𝑐 in both),
+with the same types and data; the carry into 𝑊𝑐 is 𝑐𝑐(𝐸) = 𝐽𝐻′(𝐸 ∩ 𝐼′). Apply Lemma 7.6 to 𝐻 and to 𝐻′. For 𝛾:
+the digit 𝑐 is skipped by every non-empty Δ ∌ 𝑐, and is never skipped otherwise. The clocks follow by sub‐
+traction, with 𝐼 ∖ 𝐷0 = (𝐼′ ∖ 𝐷0) ∪ {𝑐}.                                                                     ∎
+
+7.4 Theorem F
+Theorem 7.8 (Theorem F, the floor). For every house 𝐻 = (𝐼, 𝑘, ℓ, 𝛼), let 𝑦ˆ𝐻 be the integer fit of 𝑥𝐻. There is
+a function 𝑉: 2𝐼 → ℤ with
+      (E) 𝑉(𝐷) − 𝑉(𝐼 ∖ 𝐷) = 𝑦ˆ𝐻(𝐷) for every 𝐷;
+      (M) 𝑉 non-increasing in o‑order;
+      (G) 𝑉(𝑎) − 𝑉(𝑏) ≤ 𝑐ˆ𝐻(𝑎, 𝑏) for every 𝑏 ⊊ 𝑎;
+and moreover:
+       (Cut) 𝑥𝐻 is cut at the first dancer 𝑏 with 𝐽𝐻(𝑏) = 1 (if any), and hence at its mirror; and these cuts are
+       strict: fit(𝑥𝐻) is larger at the dancer before 𝑏 than at 𝑏, and likewise at the mirror. (𝑏 ≠ ∅, since
+       𝐽𝐻(∅) = [ℓ ≥ 2𝑘] = 0.)
+       (Λ) |𝑦ˆ𝐻| ≤ 𝛼(2𝑘 − 1).
+Proof. Induction on |𝐼|. For 𝐼 = ∅ there is one dancer, 𝑥 = 𝑦ˆ = 0, 𝑉 := 0, and 𝐽𝐻(∅) = [ℓ ≥ 2𝑘] = 0. Let 𝐼 ≠ ∅
+and let 𝐻′, 𝑐, 𝑇, 𝜅, sat, 𝜏, ℎ be as in Lemma 7.7, with 𝑉′, 𝑦ˆ′, 𝐽′ given by the induction hypothesis for 𝐻′. Write
+𝑋1 := 𝑦ˆ′ + 𝑑1 on the dancers 𝐷0 ⊆ 𝐼′ and 𝑋2 for its mirror-negative.
+
+
+
+                                                         25
+1. The walk. The sequence 𝑑1 is integer, non-increasing, and changes only at the first dancer with 𝐽′ = 1
+   and at its mirror (𝐽′ is an up-set; 𝐽′ ∘ mirror is a down-set). These are strict cuts of 𝑥𝐻′, by (Cut) for 𝐻′.
+   So, by Lemma 7.2(b), the real fit of 𝑥𝐻′ + 𝑑1 is fit(𝑥𝐻′) + 𝑑1, with the level sets of fit(𝑥𝐻′), and its integer
+   fit is 𝑋1. By Lemma 7.3,
+                                          𝑦ˆ𝐻 = [max(𝑋1, 0), min(𝑋2, 0)].
+   (Λ). 𝑑1 ≤ −𝜏 + [𝑇 = 0]𝜅 = 𝛼2𝑐 − ℎ + 𝜅 ≤ 𝛼2𝑐, since 𝜅 ≤ ℎ. With (Λ) for 𝐻′, 𝑋1 ≤ 𝛼(2𝑐 − 1) + 𝛼2𝑐 ≤
+   𝛼(2𝑘 − 1); so 0 ≤ max(𝑋1, 0) ≤ 𝛼(2𝑘 − 1), and the second half follows by antisymmetry.
+   (Cut). By Lemma 7.7, 𝐽𝐻 = [𝑇 = 1] · sat · (𝐽′, 1), or sat · [𝑇 = 0] · (0, 𝐽′), or 𝐽𝐻 ≡ 0 (we write a function
+   on 2𝐼 as the pair of its values on the two halves).
+   (a) 𝑇 = 1, sat = 1, 𝐽′ ≢ 0: the boundary 𝑏 of 𝐽𝐻 is the boundary of 𝐽′ in the first half. Saturation of
+   type 1 means 𝜅 = ℎ, so 𝜏 = −𝛼2𝑐 and 𝑑1 = 𝛼2𝑐 − ℎ𝐽′. Just before 𝑏, 𝐽′ = 0 and 𝑋1 = 𝑦ˆ′ + 𝛼2𝑐 ≥ 𝛼 > 0 by
+   (Λ) for 𝐻′; so the real fit 𝑍1 of the first half is positive before 𝑏, and by Lemma 7.3 fit(𝑥𝐻)<𝑏 = (𝑍1)<𝑏.
+   The first half is cut at 𝑏 (step 1), so (𝑍1)<𝑏 = fit((𝑥𝐻)<𝑏), and Lemma 7.2(c) gives the cut. It is strict: on
+   the first half fit(𝑥𝐻) = max(𝑍1, 0) (Lemma 7.3), and 𝑍1 = fit(𝑥𝐻′) + 𝑑1 with fit(𝑥𝐻′) non-increasing
+   and 𝑑1 dropping by ℎ ≥ 1 at 𝑏; so, if 𝑏− is the dancer before 𝑏, 𝑍1(𝑏−) ≥ 𝑍1(𝑏) + ℎ, and 𝑍1(𝑏−) > 0. So
+   max(𝑍1, 0) drops strictly at 𝑏.
+   (b) 𝑇 = 1, sat = 1, 𝐽′ ≡ 0: the boundary is the middle of the sequence, and 𝑋1(𝐼′) = 𝑦ˆ′(𝐼′) +
+   𝛼2𝑐 ≥ 𝛼 > 0; so 𝑍1 > 0, fit(𝑥𝐻) restricted to the first half is 𝑍1, and Lemma 7.2(c) gives the cut at the
+   middle. It is strict: fit(𝑥𝐻) is 𝑍1(𝐼′) > 0 at 𝐼′ and min(𝑍2({𝑐}), 0) ≤ 0 at {𝑐}.
+   (c) 𝑇 = 0, sat = 1, 𝐽′ ≢ 0: the boundary is 𝑏′ ∪ {𝑐}, with 𝑏′ the boundary of 𝐽′. Saturation of type 0
+   means 𝜅 = ℎ and 𝜏 = ℎ − 𝛼2𝑐. The second half of the clocks is 𝑥𝐻′ + 𝑑2 with 𝑑2(𝐷0) =
+   𝜏 − [𝑇 = 0]𝜅𝐽′(𝐷0) + [𝑇 = 1]𝜅𝐽′(𝐼′ ∖ 𝐷0) (Lemma 7.7), which is non-increasing and changes only at cuts
+   of 𝑥𝐻′; so the second half is cut at 𝑏′ ∪ {𝑐}, and its integer fit is 𝑋2 = 𝑦ˆ′ + 𝑑2. Here 𝑋2(𝑏′) =
+   𝑦ˆ′(𝑏′) + 𝜏 − 𝜅 = 𝑦ˆ′(𝑏′) − 𝛼2𝑐 ≤ −𝛼 < 0, so the real fit 𝑍2 of the second half is negative from 𝑏′ ∪ {𝑐} on,
+   fit(𝑥𝐻)≥𝑏′∪{𝑐} = (𝑍2)≥𝑏′∪{𝑐} = fit((𝑥𝐻)≥𝑏′∪{𝑐}), and Lemma 7.2(c) gives the cut. It is strict: 𝑏′ ≠ ∅ (as
+   𝐽′(∅) = 0), on the second half fit(𝑥𝐻) = min(𝑍2, 0) (Lemma 7.3), and 𝑍2 = fit(𝑥𝐻′) + 𝑑2 (Lemma 7.2(b),
+   𝑏′ being a strict cut of 𝑥𝐻′) drops by at least 𝜅 = ℎ ≥ 1 at 𝑏′ ∪ {𝑐}, where it is negative. So min(𝑍2, 0)
+   drops strictly at 𝑏′ ∪ {𝑐}.
+   (d) Otherwise sat = 0, or 𝑇 = 0 and 𝐽′ ≡ 0; then 𝐽𝐻 ≡ 0 (Lemma 7.7), and there is nothing to prove. In
+   each case the mirror cut is strict by antisymmetry (§7.1).
+4. The inherited potential. On the first half put 𝑣′(𝐷0) := 𝑉′(𝐷0) − [𝑇 = 1]𝜅𝐽′(𝐷0), and on the second
+   half 𝑣′(𝐷0 ∪ {𝑐}) := 𝜏 + 𝑉′(𝐷0) − [𝑇 = 0]𝜅𝐽′(𝐷0). Then 𝑣′ = 𝑅𝐻 + 𝜔 with 𝜔(𝐷) := (𝑉′ − 𝑅𝐻′)(𝐷 ∩ 𝐼′), and:
+           (G) for 𝑣′, with slack ℎ on same-half arrows: 𝑐ˆ𝐻(𝑎, 𝑏) ≥ 𝑣′(𝑎) − 𝑣′(𝑏) + ℎ if 𝑐 ∈ 𝑎, 𝑏 or 𝑐 ∉ 𝑎, 𝑏,
+           and 𝑐ˆ𝐻(𝑎, 𝑏) ≥ 𝑣′(𝑎) − 𝑣′(𝑏) if 𝑐 ∈ 𝑎 ∖ 𝑏. Indeed 𝑣′(𝑎) − 𝑣′(𝑏) − 𝑅𝐻(𝑎) + 𝑅𝐻(𝑏) = 𝜔(𝑎) − 𝜔(𝑏) =
+           (𝑉′ − 𝑅𝐻′)(𝑎 ∩ 𝐼′) − (𝑉′ − 𝑅𝐻′)(𝑏 ∩ 𝐼′), which is ≤ 𝛾𝐼′((𝑎 ∖ 𝑏) ∩ 𝐼′) by (G) for 𝐻′ (and 0 when
+           𝑎 ∩ 𝐼′ = 𝑏 ∩ 𝐼′), and Lemma 7.7 compares 𝛾𝐼 with 𝛾𝐼′.
+           (E) for 𝑣′ with 𝑋1: 𝑣′(𝐷0) − 𝑣′(𝐼 ∖ 𝐷0) = (𝑉′(𝐷0) − 𝑉′(𝐼′ ∖ 𝐷0)) + 𝑑1(𝐷0) = 𝑦ˆ′(𝐷0) + 𝑑1(𝐷0) =
+           𝑋1(𝐷0), by (E) for 𝐻′; and on the second half with 𝑋2.
+           (M) for 𝑣′ inside each half (𝑉′ is non-increasing and 𝐽′ is an up-set).
+5. The junction. 𝑣′({𝑐}) − 𝑣′(𝐼′) = −𝑋1(𝐼′), and, by (Λ) for 𝐻′,
+            −𝑋1(𝐼′) = −𝑦ˆ′(𝐼′) + 𝜏 + [𝑇 = 1]𝜅𝐽′(𝐼′) − [𝑇 = 0]𝜅𝐽′(∅) ≤ 𝛼(2𝑐 − 1) + ℎ − 𝛼2𝑐 = ℎ − 𝛼.
+6. No central flat. If 𝑋1(𝐼′) > 0, then 𝑦ˆ𝐻 = (𝑋1, 𝑋2), and 𝑉 := 𝑣′ satisfies (E), (M) (at the junction by
+   step 5) and (G).
+
+
+
+                                                      26
+    7. The central flat. If 𝑋1(𝐼′) ≤ 0, let 𝐹1 := {𝑋1 ≤ 0}, a non-empty final segment of the first half contain‐
+       ing 𝐼′, and 𝐹2 its mirror, an initial segment of the second half containing {𝑐}. Put 𝐹 := 𝐹1 ∪ 𝐹2; 𝑦ˆ𝐻 = 0
+       exactly on 𝐹. Let 𝑓 be the first dancer of 𝐹1, 𝑝 the dancer just before 𝑓 (if any) and 𝑝* = 𝐼 ∖ 𝑝 the dancer
+       just after 𝐹 (if any). Put
+                                    𝑐3 := 𝑣′(𝑓) = max 𝑣′, 𝑐4 := 𝑣′(𝐼 ∖ 𝑓) = min 𝑣′.
+                                                   𝐹1                           𝐹2
+
+       Then 𝑐3 − 𝑐4 = 𝑋1(𝑓) ≤ 0 by (E) for 𝑣′, 𝑐3 ≤ 𝑣′(𝑝), 𝑣′(𝑝*) ≤ 𝑐4, and 𝑣′(𝑝*) < 𝑣′(𝑝) (because 𝑣′(𝑝) −
+       𝑣′(𝑝*) = 𝑋1(𝑝) > 0). So the interval [max(𝑐3, 𝑣′(𝑝*)), min(𝑐4, 𝑣′(𝑝))] is non-empty. Choose an integer 𝑐𝐹
+       in it, and put 𝑉 := 𝑐𝐹 on 𝐹 and 𝑉 := 𝑣′ elsewhere.
+    8. Checks. (E): on 𝐹 both sides are 𝑐𝐹 and 𝑦ˆ𝐻 = 0; off 𝐹 nothing changed. (M): 𝑉 is constant on the seg‐
+       ment 𝐹, and 𝑣′(𝑝) ≥ 𝑐𝐹 ≥ 𝑣′(𝑝*). (G) for an arrow 𝑎 → 𝑏 (𝑏 ⊊ 𝑎, so 𝑏 comes before 𝑎 in o‑order) with at
+       least one end in 𝐹. Since 𝐹1 is a final segment of the first half and 𝐹2 an initial segment of the second,
+       the cases are:
+               𝑎 ∈ 𝐹2, 𝑏 before 𝐹: 𝑐𝐹 ≤ 𝑐4 ≤ 𝑣′(𝑎), and 𝑣′(𝑎) − 𝑣′(𝑏) ≤ 𝑐ˆ𝐻(𝑎, 𝑏).
+               𝑎 ∈ 𝐹1, 𝑏 before 𝐹 (same half): 𝑐𝐹 ≤ 𝑐4 ≤ 𝑣′({𝑐}) ≤ 𝑣′(𝐼′) + ℎ − 𝛼 ≤ 𝑣′(𝑎) + ℎ − 𝛼, and 𝑐ˆ𝐻(𝑎, 𝑏) ≥
+               𝑣′(𝑎) − 𝑣′(𝑏) + ℎ; so 𝑐𝐹 − 𝑣′(𝑏) ≤ 𝑐ˆ𝐻(𝑎, 𝑏) − 𝛼.
+               𝑏 ∈ 𝐹1, 𝑎 after 𝐹: 𝑐𝐹 ≥ 𝑐3 ≥ 𝑣′(𝑏), and 𝑣′(𝑎) − 𝑣′(𝑏) ≤ 𝑐ˆ𝐻(𝑎, 𝑏).
+               𝑏 ∈ 𝐹2, 𝑎 after 𝐹 (same half): 𝑐𝐹 ≥ 𝑐3 ≥ 𝑣′(𝐼′) ≥ 𝑣′({𝑐}) − ℎ + 𝛼 ≥ 𝑣′(𝑏) − ℎ + 𝛼, and 𝑐ˆ𝐻(𝑎, 𝑏) ≥
+               𝑣′(𝑎) − 𝑣′(𝑏) + ℎ; so 𝑣′(𝑎) − 𝑐𝐹 ≤ 𝑐ˆ𝐻(𝑎, 𝑏) − 𝛼.
+               Both ends in 𝐹, same half: 𝑐ˆ𝐻(𝑎, 𝑏) ≥ 𝑣′(𝑎) − 𝑣′(𝑏) + ℎ ≥ 𝑣′(𝐼′) − 𝑣′({𝑐}) + ℎ ≥ 𝛼 > 0. If both lie
+               in 𝐹1, then 𝑣′(𝑎) ≥ 𝑣′(𝐼′) and 𝑣′(𝑏) ≤ 𝑐3 ≤ 𝑐4 ≤ 𝑣′({𝑐}); if both lie in 𝐹2, then 𝑣′(𝑎) ≥ 𝑐4 ≥ 𝑐3 ≥
+               𝑣′(𝐼′) and 𝑣′(𝑏) ≤ 𝑣′({𝑐}). Both ends in 𝐹, 𝑎 ∈ 𝐹2 and 𝑏 ∈ 𝐹1: 𝑐ˆ𝐻(𝑎, 𝑏) ≥ 𝑣′(𝑎) − 𝑣′(𝑏) ≥ 𝑐4 −
+               𝑐3 ≥ 0. In every case 𝑉(𝑎) − 𝑉(𝑏) ≤ 𝑐ˆ𝐻(𝑎, 𝑏).                                                     ∎
+The construction has a plain reading: at each new digit exactly one new flat appears, mirror-symmetric,
+and it pays one price, chosen between the dearest dancer of its lower half and the cheapest of its
+upper half; every other dancer keeps the price it had one digit below.
+
+7.5 Every cell
+Lemma 7.9 (integrality). In every house the real fit of 𝑥𝐻 takes integer values. So does the real fit of the
+clocks of every penalty cell Cell(𝐻; 𝑃𝑟, 𝑃𝑐), and that of 𝑥𝐻 with its first dancer deleted, in the house ℓ = 2𝑘 − 1.
+Consequently, in each of these the integer fit is the real fit, and it is non-increasing.
+Proof. Induction on |𝐼|. For 𝐼 = ∅ the sequence is (0). Let 𝐼 ≠ ∅, with 𝐻′ and 𝑑1 as in Lemma 7.7. The shift 𝑑1
+is integer, non-increasing, and changes only at cuts of 𝑥𝐻′ (step 1 of the proof of Theorem 7.8); so, by
+Lemma 7.2(b), the real fit 𝑍1 of the first half is fit(𝑥𝐻′) + 𝑑1, integral by induction, and by Lemma 7.3
+fit(𝑥𝐻) = [max(𝑍1, 0), min(𝑍2, 0)] is integral. The penalty shift of a cell is integer, non-increasing, and changes
+only at cuts of 𝑥𝐻 (Theorem 7.8, (Cut)), so Lemma 7.2(b) again gives an integral fit. In the house ℓ = 2𝑘 − 1
+with 𝐼 ≠ ∅, 𝑥𝐻 is cut at its second dancer {𝑡1} (Theorem 7.8, (Cut)), so the fit of the sequence without its first
+dancer is the restriction of fit(𝑥𝐻). Finally, on a level set of integral value 𝑧 with 𝑝 positions the sum is
+𝑆 = 𝑝𝑧, so 𝑆 mod 𝑝 = 0 and the integer fit is 𝑧 there.                                                            ∎
+Strictness is not used in this proof: a cut is enough. As written, strictness is also used in Theorem 7.8
+(steps 1 and 3) and in Theorem 7.10, to identify integer fits; with Lemma 7.9 a cut suffices there (in
+Theorem 7.8 by a joint induction with Lemma 7.9, which uses the (Cut) of Theorem 7.8). It is indispensable
+only in Proposition 9.6 (H), twice: in the induction for the base cell, and for the penalty shift. Lemma 7.9 also
+shows that the integer part of Lemma 7.2(b) was never needed beyond integral fits; we keep the strict (Cut)
+of Theorem 7.8 because Proposition 9.6 needs it.
+
+                                                        27
+Theorem 7.10. For every family 𝜆, every 𝛼 ≥ 1 and every shift 𝑖 ≥ 1, 𝑇(𝑟) ≥ 𝑌(𝑟) for every 𝑟, and the Smith
+exponents of 𝑀(𝛼)(𝜆, 𝑖) are 𝛼𝐾 + 𝜅(𝑚, 𝐾) + 𝑦ˆ𝐷 (𝐷 ⊆ 𝐼), where 𝑦ˆ is the integer fit of the clocks 𝑥𝐷 of §5. For
+𝑖 = 0 the Smith exponents are ∞ (once) and 𝛼𝐾 + 𝑦ˆ♯𝐷 (𝐷 ≠ ∅), where 𝑦ˆ ♯ is the integer fit of the sequence 𝑥♯𝐷
+(𝐷 ≠ ∅) of Proposition 5.4.
+Proof. The case 𝑖 ≥ 1. By Lemma 7.5 the cell is Cell(𝐻; 𝑃𝑟, 𝑃𝑐) with 𝐻 = (𝐼, 𝑘, 𝑚 mod 𝐾, 𝛼). Let 𝑉 be given by
+Theorem 7.8 and put 𝑣 := 𝑉 − 𝑃𝑟𝐽𝐻, 𝑤 := 𝑉 − 𝑃𝑐𝐽𝐻. (U1) holds because 𝐽𝐻 is an up-set. (U3): 𝑣(𝑎) − 𝑤(𝑏) −
+𝑐ˆ(𝑎, 𝑏) = 𝑉(𝑎) − 𝑉(𝑏) − 𝑐ˆ𝐻(𝑎, 𝑏) ≤ 0 by (G), and it is 0 on loops. (U2): 𝑣(𝐷) − 𝑤(𝐼 ∖ 𝐷) = 𝑦ˆ𝐻(𝐷) − 𝑃𝑟𝐽𝐻(𝐷) +
+𝑃𝑐𝐽𝐻(𝐼 ∖ 𝐷), which is the integer fit of the clocks of the cell by Lemma 7.2(b): the penalty shift −𝑃𝑟𝐽𝐻(𝐷) +
+𝑃𝑐𝐽𝐻(𝐼 ∖ 𝐷) is integer, non-increasing, and changes only at the first dancer with 𝐽𝐻 = 1 and at its mirror,
+which are strict cuts of 𝑥𝐻 (Theorem 7.8, (Cut)). Theorem 7.4 gives 𝑇(𝑟) ≥ 𝑌(𝑟); Lemma 7.9 gives monotonic‐
+ity, and Theorem 6.5 concludes.
+The case 𝑖 = 0. The row ∅ of 𝑀(𝜆, 0) is zero, so the Smith exponents are ∞ and those of the submatrix 𝑀 ♯ of
+the rows 𝐷 ≠ ∅. By Proposition 5.4 its normalized costs are those of the house 𝐻♯ = (𝐼, 𝑘, 𝐾 − 1, 𝛼), for which
+𝐽𝐻♯(𝐷) = [𝐷 ≠ ∅], and 𝑥♯𝐷 = 𝑥𝐻♯(𝐷) for 𝐷 ≠ ∅. If 𝐼 ≠ ∅, the cut of 𝑥𝐻♯ at the dancer {𝑡1} is strict (Theorem 7.8,
+(Cut)), so ∅ is a level set by itself, and the fit and the integer fit of 𝑥 ♯ (the sequence without ∅) are those of
+𝑥𝐻 ♯ restricted to 𝐷 ≠ ∅; if 𝐼 = ∅, 𝑀(𝜆, 0) = 0. For 𝑟 ≤ 𝑁 − 1 the rows 𝐿𝑟 avoid ∅ and the columns 𝐹𝑟 avoid 𝐼.
+So Lemma 6.1, Theorem O, Corollary 6.3 and Lemma 6.4 hold for 𝑀♯ with the same proofs: they involve only
+the rows 𝐿𝑟 and the columns 𝐹𝑟, and every entry of 𝑀 ♯ in the support is non-zero, because no window of a
+row 𝐷 ≠ ∅ contains 𝑑 = 0; and Theorem 7.4 holds with 𝑣 = 𝑤 = 𝑉 restricted to the dancers that occur.              ∎
+
+8. Proof of the Main Theorem
+Let 𝑛 ≥ 1. By Theorem 3.8,
+                                 ℤ2 ⊕ Syl2 𝐾(𝑄𝑛) ≅ ⨁ 𝑋(1)(𝜆, (𝑛 − 𝜆)/2)𝑚𝜆(𝑛),
+                                                       𝜆
+
+the sum over 𝜆 ≡ 𝑛 (mod 2) with 1 ≤ 𝜆 ≤ 𝑛 (Lemma 3.7: 𝑚0(𝑛) = 0). Fix a family 𝜆 and 𝑖 = (𝑛 − 𝜆)/2. By
+Theorem D, 𝑋(1)(𝜆, 𝑖) is the small clocks plus coker(2𝑘𝑀), 𝑀 = 𝑀(1)(𝜆, 𝑖).
+      If 𝑖 ≥ 1, by Theorem 7.10 (with 𝛼 = 1) the Smith exponents of 𝑀 are 𝐾 + 𝜅(𝑚, 𝐾) + 𝑦ˆ𝐷, where 𝑦ˆ is the
+      integer fit of the clocks 𝑥𝐷. Those of coker(2𝑘𝑀) are 𝑘 + 𝐾 + 𝜅(𝑚, 𝐾) + 𝑦ˆ𝐷. By Proposition 5.3 the raw
+      clocks are 𝑢𝑖(𝐷) = 𝑘 + 𝐾 + 𝜅(𝑚, 𝐾) + 𝑥𝐷, and adding an integer constant commutes with the integer fit.
+      So these exponents are the pooled clocks 𝑦ˆ𝑖(𝐷) of §1.2.
+      If 𝑖 = 0 (so 𝜆 = 𝑛 and 𝑚𝑛(𝑛) = 1), the Smith exponents of 𝑀 are ∞ and 𝐾 + 𝑦ˆ♯𝐷 (𝐷 ≠ ∅), and by
+      Proposition 5.4 𝑢0(𝐷) = 𝑘 + 𝐾 + 𝑥♯𝐷. So coker(2𝑘𝑀) is ℤ2 (the big clock 𝑦ˆ0(∅) = ∞) plus the pooled
+      clocks of the sequence 𝑢0(𝐷), 𝐷 ≠ ∅. This is the convention of §1.2: the entry ∞ stands first and is not
+      pooled.
+      If 𝐼 = ∅, 𝑀 is 1 × 1. For 𝑖 ≥ 1 its exponent is 𝐾 + 𝜅(𝑚, 𝐾) (Proposition 5.2 with 𝑥∅ = 0), and 𝑢𝑖(∅) =
+      𝜑(𝐾) + 𝜅(𝑖 − 1, 𝐾) = 𝑘 + 𝐾 + 𝜅(𝑚, 𝐾). For 𝑖 = 0, 𝑀 = 0.
+The fits are integral, so the integer fits are the fits themselves, and they are non-increasing (Lemma 7.9). This
+proves the Main Theorem.                                                                                       ∎
+
+9. Consequences
+
+9.1 Bai’s counts
+Lemma 9.1. Every raw clock 𝑢𝑖(𝐷) with (𝑖, 𝐷) ≠ (0, ∅) is at least 2, and so is every pooled big clock.
+
+
+                                                           28
+Proof. 𝜑(𝜉) ≥ 𝜉 ≥ 1, and 𝜅 ≥ 0. If 𝜉 = 𝐾 + 𝑜𝐼∖𝐷 − 𝑜𝐷 = 1, then, since 𝑜𝐷 ≤ 𝑜𝐼 < 𝐾, we need 𝑜𝐼∖𝐷 = 0 and
+𝑜𝐷 = 𝐾 − 1, that is 𝐷 = 𝐼 = [0, 𝑘); then ℎ(𝐷) = 𝑘 ≥ 1 (the family has 𝜆 ≥ 1). So 𝑢𝑖(𝐷) ≥ 2. A level set of num‐
+bers that are all ≥ 2 has mean ≥ 2, and its integer fit takes values ≥ ⌊mean⌋ ≥ 2.                            ∎
+Proof of Corollary 1.5. A copy of a family with 𝑘 ≥ 1 contributes
+                                     𝑘−1
+                                     ∑
+                                     𝑎=1
+                                         2|𝐼|+𝑘−1−𝑎 + 2|𝐼| = 2|𝐼|+𝑘−1 = dim 𝑇(𝜆)/2
+
+cyclic factors, all non-trivial (Lemma 9.1), one of which is ℤ2 exactly for 𝜆 = 𝑛. By Lemma 3.7 only families
+with 𝑘 ≥ 1 occur, and ∑𝜆 𝑚𝜆(𝑛) dim 𝑇(𝜆) = 2𝑛 (Theorem 3.6). So Syl2 𝐾(𝑄𝑛) has 2𝑛−1 − 1 cyclic factors. A
+factor ℤ/2 can only be a small clock with 𝑎 = 1, and a family with 𝑘 ≥ 2 has 2|𝐼|+𝑘−2 = dim 𝑇(𝜆)/4 of them.
+The families with 𝑘 ≤ 1 and 𝜆 ≥ 1 are 𝜆 = 1 (dim 2) and 𝜆 = 2 (dim 4). So the number of factors ℤ/2 is (2𝑛 −
+2𝑚1(𝑛) − 4𝑚2(𝑛))/4, which by Lemma 3.7 is 2𝑛−2 − 2(𝑛−3)/2 for odd 𝑛 and 2𝑛−2 − 2(𝑛−2)/2 for even 𝑛 ≥ 2; that
+is 𝑎𝑛.                                                                                                      ∎
+
+9.2 The podium
+In this subsection the family is 𝜆, with digits 𝑡1 < ⋯ < 𝑡𝑠 of 𝐼 (𝑡𝑠+1 := 𝑘), and 𝑃𝑙 := {𝑡1, …, 𝑡𝑙}. Put
+                               𝑌𝑙 := 𝜆 + 1 − 𝑜𝑃𝑙 = 𝐾 + 𝑜(𝐼 ∖ 𝑃𝑙), so 𝑣2(𝑌𝑙) = 𝑡𝑙+1,
+and 𝜓(𝐸) = ∑𝑡∈𝐸 (ℎ𝑡 − 2𝑡) as in §5, 𝜓𝑡 := 𝜓({𝑡}) = ℎ𝑡 − 2𝑡. Recall 𝑔(𝑁) = max1≤𝑦<𝑁 𝜑(𝑦).
+Lemma 9.2. (a) 𝜑(𝜆 + 1) + 𝜓(𝑃𝑙) = 𝜑(𝑌𝑙) for 0 ≤ 𝑙 ≤ 𝑠. (b) For 𝑁 ≥ 1, max1≤𝑦≤𝑁 𝜑(𝑦) is attained at a clearing
+of 𝑁: a number obtained from 𝑁 by clearing some of its lowest set bits, not all of them. (c) 𝑌0, …, 𝑌𝑠 are the
+clearings of 𝜆 + 1; hence max𝑙 𝜑(𝑌𝑙) = 𝑔(𝜆 + 2), and max𝑙≥1 𝜑(𝑌𝑙) = max1≤𝑦≤𝑌1 𝜑(𝑦).
+Proof. (a) 𝜓(𝑃𝑙) = ∑𝑗≤𝑙 (𝑡𝑗+1 − 𝑡𝑗) − 𝑜𝑃𝑙 = 𝑡𝑙+1 − 𝑡1 − 𝑜𝑃𝑙, and 𝜑(𝜆 + 1) = 𝜆 + 1 + 𝑡1. (b) Given 𝑦 ≤ 𝑁 with
+𝑣2(𝑦) = 𝑞, let 𝑁𝑞 be 𝑁 with its bits below 𝑞 cleared. Then 𝑦 ≤ 𝑁𝑞, because 𝑦 is a multiple of 2𝑞 not above 𝑁;
+and 𝑣2(𝑁𝑞) ≥ 𝑞, so 𝜑(𝑁𝑞) ≥ 𝜑(𝑦); and 𝑁𝑞 is a clearing. (c) is (b) for 𝑁 = 𝜆 + 1 and 𝑁 = 𝑌1.                 ∎
+For 𝑁 = 𝑛 − 1, part (b) is the observation of [GMMY24, Remark 4.4].
+Proposition 9.3 (shift 1). Let 𝑖 = 1 and write 𝑒(𝐷) for the pooled big clocks. Then
+(a) 𝑒(∅) = max0≤𝑙≤𝑠 𝜑(𝑌𝑙);
+(b) 𝑒(𝐷) ≤ max1≤𝑙≤𝑠 𝜑(𝑌𝑙) for 𝐷 ≠ ∅;
+(c) if 0 ∈ 𝐼, then 𝑒({0}) = max1≤𝑙≤𝑠 𝜑(𝑌𝑙).
+Proof. At 𝑖 = 1, 𝑚 = 0 and ℓ = 0. In the house (𝐼, 𝑘, 0, 1) every window is of type 0 with 𝜅𝑡 = 1, no carry is ever
+born (Lemma 7.6), and 𝐽 ≡ 0. So 𝑅0 = 𝑅𝐾 = 𝜓 and the cell is its base cell. In the proof of Theorem 7.8 at the
+level 𝑗 (digit 𝑐 = 𝑡𝑗) the datum 𝜏 of the window (§7.3) is 𝜓𝑡𝑗, and 𝑑1 = −𝜓𝑡𝑗. With the antisymmetry of 𝑦ˆ𝑗−1,
+step 1 reads
+                 𝑦ˆ𝑗(𝐷0) = max(𝑦ˆ𝑗−1(𝐷0) − 𝜓𝑡𝑗, 0) and 𝑦ˆ𝑗(𝐷0 ∪ {𝑡𝑗}) = min(𝑦ˆ𝑗−1(𝐷0) + 𝜓𝑡𝑗, 0).
+Moreover 𝑒(𝐷) = 𝑘 + 𝐾 + 𝑦ˆ𝑠(𝐷) and 𝑘 + 𝐾 = 𝜑(𝜆 + 1) + 𝜓(𝐼) (proof of Proposition 5.3).
+(a) The recursion 𝑦𝑗 = max(𝑦𝑗−1 − 𝜓𝑡𝑗, 0) with 𝑦0 = 0 gives
+                                                               (
+                                              𝑦ˆ𝑠(∅) = max − ∑ 𝜓𝑡𝑗 .
+                                                          𝑙
+                                                                   𝑗>𝑙
+                                                                         )
+So 𝑒(∅) = max𝑙[𝜑(𝜆 + 1) + 𝜓(𝑃𝑙)] = max𝑙 𝜑(𝑌𝑙), by Lemma 9.2(a).
+(b) Let 𝑏 be the largest index with 𝑡𝑏 ∈ 𝐷. Then 𝑦ˆ𝑏(𝐷 ∩ 𝑃𝑏) ≤ 0, and from level 𝑏 on the same recursion gives
+𝑦ˆ𝑠(𝐷) ≤ max𝑙≥𝑏(−∑𝑗>𝑙 𝜓𝑡𝑗).
+(c) 𝑡1 = 0 and 𝜓0 = ℎ0 − 1 ≥ 0, so 𝑦ˆ1({0}) = min(𝜓0, 0) = 0. From level 1 on, the recursion is that of (a) started
+at 0.                                                                                                             ∎
+
+
+                                                              29
+Proposition 9.4 (shift 0). Let 𝜆 = 𝑛 and 𝑖 = 0, and let 𝑒(𝐷) (𝐷 ≠ ∅) be the pooled big clocks. Then
+(a) 𝑒({𝑡1}) = max(𝜑(𝑌1) − 2𝑡1, max2≤𝑙≤𝑠 𝜑(𝑌𝑙));
+(b) 𝑒(𝐷) ≤ max2≤𝑙≤𝑠 𝜑(𝑌𝑙) for every other 𝐷 ≠ ∅. (A maximum over an empty set is −∞.)
+Proof. By Theorem 7.10 the clocks are those of the house 𝐻 ♯ = (𝐼, 𝑘, 𝐾 − 1, 1), shifted by 𝑘 + 𝐾, with the
+dancer ∅ deleted after pooling. In 𝐻 ♯ every window is of type 1 and saturated (𝜅𝑡 = ℎ𝑡, 𝜏𝑡 = −2𝑡 in the nota‐
+tion of §7.3), and at every level 𝐽′ = [𝐷0 ≠ ∅]. So, in step 1 of the proof of Theorem 7.8, 𝑑1(𝐷0) = 2𝑡𝑗 −
+ℎ𝑡𝑗[𝐷0 ≠ ∅]. At level 1 (𝐼′ = ∅), 𝑋1(∅) = 2𝑡1 and 𝑦ˆ1({𝑡1}) = −2𝑡1. At every level 𝑗 ≥ 2 a dancer 𝐷0 ≠ ∅ of the
+first half follows 𝑦𝑗 = max(𝑦𝑗−1 + 2𝑡𝑗 − ℎ𝑡𝑗, 0), where 2𝑡𝑗 − ℎ𝑡𝑗 = −𝜓𝑡𝑗. Since 𝑘 + 𝐾 − ∑𝑗>𝑙 𝜓𝑡𝑗 = 𝜑(𝑌𝑙) (as in
+Proposition 9.3), (a) follows. For (b), let 𝑏 ≥ 2 be the largest index with 𝑡𝑏 ∈ 𝐷: at level 𝑏 the value is ≤ 0, and
+the recursion takes over.                                                                                          ∎
+Lemma 9.5 (Lemma K). For 𝑎 ≥ 0, 𝐵 ≥ 1 and 𝑞 ≥ 0: 𝜑(2𝑞𝐵) + 𝜅(𝑎, 𝐵) ≤ max1≤𝑦≤2𝑞(𝑎+𝐵) 𝜑(𝑦).
+Proof. If 𝜅(𝑎, 𝐵) = 0, take 𝑦 = 2𝑞𝐵. Otherwise let the highest carry of 𝑎 + 𝐵 leave the bit 𝑝 − 1. Carries leave
+only bits 𝑣2(𝐵), …, 𝑝 − 1, so 𝜅 ≤ 𝑝 − 𝑣2(𝐵). A carry leaves bit 𝑝 − 1, so (𝑎 mod 2𝑝) + (𝐵 mod 2𝑝) ≥ 2𝑝 and
+(𝑎 + 𝐵) mod 2𝑝 < 𝑎 mod 2𝑝 ≤ 𝑎. Then
+                                        𝑦 := 2𝑞((𝑎 + 𝐵) − ((𝑎 + 𝐵) mod 2𝑝))
+satisfies 𝑦 ≤ 2𝑞(𝑎 + 𝐵), 𝑦 ≥ 2𝑞(𝐵 + 1) and 𝑣2(𝑦) ≥ 𝑞 + 𝑝, so 𝜑(𝑦) > 2𝑞𝐵 + 𝑞 + 𝑣2(𝐵) + 𝜅 = 𝜑(2𝑞𝐵) + 𝜅.                 ∎
+Proposition 9.6 (a ceiling for the big clocks). In the cube 𝑄𝑛, every big clock of every family at a shift
+𝑖 ≥ 1 is at most 𝑔(𝑛 − 𝑖 + 1) = max1≤𝑦≤𝑛−𝑖 𝜑(𝑦).
+Proof. (H) The head is dyadic. The first level set of the real fit of the clocks of the cell is {𝐷 : 𝐷 ⊆ 𝑃𝑙} for some 𝑙.
+In the base cell this follows by induction along step 1 of the proof of Theorem 7.8, which keeps the level sets
+of the child because 𝑑1 changes only at strict cuts (Lemma 7.2(b)). The first level set of the first half is the
+child’s first level set if its value is positive; otherwise 𝑍1 ≤ 0 on the whole first half, the fit vanishes on the
+whole level, and the first level set is everything. The penalty shift of a real cell keeps the level sets, because it
+changes only at strict cuts (Theorem 7.8, (Cut), and Lemma 7.2(b)); this is where strictness is needed, since a
+jump of the shift at a cut that is not strict, inside the head, would split it. So the largest big clock is the
+mean 𝜇 of the raw clocks 𝑢𝑖(𝐷), 𝐷 ⊆ 𝑃𝑙, which is an integer (Lemma 7.9).
+(M) The mean over a dyadic head. By steps 1–2 of the proof of Proposition 5.3, 𝑢𝑖(𝐷) = 𝜑(𝜆 + 1) + 2𝜓(𝐷) +
+𝜅(𝑚, 𝐾 + 𝑜𝐼∖𝐷) − 𝜅(𝑚, 𝑜𝐷). Over 𝐷 ⊆ 𝑃𝑙 each digit of 𝑃𝑙 lies in half the sets, so the mean of 2𝜓(𝐷) is 𝜓(𝑃𝑙), and
+𝜑(𝜆 + 1) + 𝜓(𝑃𝑙) = 𝜑(𝑌𝑙). Also 𝐾 + 𝑜𝐼∖𝐷 = 𝑌𝑙 + 𝑜𝑃𝑙∖𝐷, and 𝐷 ↦ 𝑃𝑙 ∖ 𝐷 permutes the subsets of 𝑃𝑙. So
+                                   𝜇 = 𝜑(𝑌𝑙) + mean [𝜅(𝑚, 𝑌𝑙 + 𝑜𝐷) − 𝜅(𝑚, 𝑜𝐷)].
+                                                  𝐷⊆𝑃𝑙
+
+Let 𝑞 := 𝑡𝑙+1 = 𝑣2(𝑌𝑙), write 𝑚 = 2𝑞𝑚ℎ + 𝑚 ℓ with 𝑚 ℓ < 2𝑞, and put 𝑐𝐷 := [𝑚 ℓ + 𝑜𝐷 ≥ 2𝑞] (note 𝑜𝐷 < 2𝑞). The
+low parts carry in the same way in both sums, and 𝑠2(𝑌𝑙 + 𝑜𝐷) = 𝑠2(𝑌𝑙/2𝑞) + 𝑠2(𝑜𝐷), so
+                                   𝜅(𝑚, 𝑌𝑙 + 𝑜𝐷) − 𝜅(𝑚, 𝑜𝐷) = 𝜅(𝑚ℎ + 𝑐𝐷, 𝑌𝑙/2𝑞).
+(K) The bound. Apply Lemma 9.5 with 𝐵 = 𝑌𝑙/2𝑞 and 𝑎 = 𝑚ℎ + 𝑐𝐷. If 𝑐𝐷 = 1, then 2𝑞 ≤ 𝑚ℓ + 𝑜𝐷 ≤ 𝑚ℓ + 𝑜𝑃𝑙. In
+both cases 𝑌𝑙 + 2𝑞(𝑚ℎ + 𝑐𝐷) ≤ 𝑌𝑙 + 𝑚 + 𝑜𝑃𝑙 = 𝜆 + 1 + 𝑚 = 𝑛 − 𝑖. So every term of the mean is ≤ 𝑔(𝑛 − 𝑖 + 1),
+and so is 𝜇.                                                                                              ∎
+Lemma 9.7 (multiplicities). 𝑚𝑛(𝑛) = 1; 𝑚𝑛−2(𝑛) = 𝑛 − 1 − [𝑛 even] for 𝑛 ≥ 2; and for odd 𝑛 ≥ 5,
+                             𝑚𝑛−4(𝑛) = (𝑛 − 1)(𝑛 − 2)/2 − 1 − [𝑛 ≡ 1 (mod 4)] ≥ 4.
+Proof. By Theorem 3.6 the weight multiplicities of 𝑉⊗𝑛, 𝐶(𝑛, 𝑗) at 𝑛 − 2𝑗, are ∑𝜆 𝑚𝜆(𝑛) mult𝑛−2𝑗 𝑇(𝜆), and
+𝑇(𝜆) has highest weight 𝜆 with multiplicity 1. From the character of §3.3, mult𝜆−2 𝑇(𝜆) = [𝑘 ≥ 1] + [0 ∈ 𝐼]
+(one factor 𝑒±1 turned), and mult𝜆−4 𝑇(𝜆) = [𝑘 ≥ 2] + [1 ∈ 𝐼] + [𝑘 ≥ 1][0 ∈ 𝐼] (one factor 𝑒±2, or two factors
+
+
+                                                          30
+𝑒±1). For 𝜆 = 𝑛: 0 ∈ 𝐼 ⟺ 𝑛 even, and for odd 𝑛, 1 ∈ 𝐼 ⟺ 𝑛 ≡ 1 (mod 4). Peeling at the weights 𝑛 − 2 and
+𝑛 − 4 gives the formulas, with mult𝑛−4 𝑇(𝑛 − 2) = 1 for odd 𝑛. For 𝑛 = 5 the last value is 4, and it increases
+with 𝑛.                                                                                                      ∎
+Proof of Corollary 1.6. Let 𝑛 ≥ 4 and 𝐺 = 𝑔(𝑛 − 1) = max1≤𝑦≤𝑛−2 𝜑(𝑦); 𝐺 ≥ 𝜑(𝑛 − 2) ≥ 𝑛 − 2.
+    1. Nothing else rises above 𝐺. Small clocks are ≤ 𝑘 − 1 ≤ log2(𝑛 + 1) − 1 < 𝐺. Shifts 𝑖 ≥ 2: every dancer
+       is ≤ 𝑔(𝑛 − 𝑖 + 1) ≤ 𝐺 (Proposition 9.6). Shift 1 (the family 𝑛 − 2, where 𝜆 + 1 = 𝑛 − 1): by
+       Proposition 9.3 and Lemma 9.2, 𝑒(∅) = max𝑦≤𝑛−1 𝜑(𝑦) = max(𝐺, 𝜑(𝑛 − 1)), and every other dancer
+       is ≤ max𝑦≤𝑌1 𝜑(𝑦) ≤ 𝐺 because 𝑌1 = 𝑛 − 1 − 2𝑡1 ≤ 𝑛 − 2. Shift 0 (the family 𝑛): by Proposition 9.4 every
+       dancer other than {𝑡1} is ≤ 𝐺, since 𝑌𝑙 ≤ 𝑛 + 1 − 2𝑡1 − 2𝑡2 ≤ 𝑛 − 2 for 𝑙 ≥ 2. The dancer {𝑡1} is at 𝑉0 =
+       max(𝜑(𝑛 + 1 − 2𝑡1) − 2𝑡1, 𝐴0), where 𝐴0 := max2≤𝑙≤𝑠 𝜑(𝑌𝑙) ≤ 𝐺 (𝐴0 = −∞ if 𝑠 < 2). So the factors
+       above 𝐺 are at most the 𝑚𝑛−2(𝑛) copies of 𝜑(𝑛 − 1), when 𝜑(𝑛 − 1) > 𝐺, and the single 𝑉0, when
+       𝑉0 > 𝐺.
+    2. The value of 𝑉0. If 𝑛 is even, 𝑡1 = 0 and 𝑉0 = max(𝜑(𝑛) − 1, 𝐴0). If 𝑛 ≡ 1 (mod 4), 𝑡1 = 1 and 𝑉0 =
+       max(𝜑(𝑛 − 1) − 2, 𝐴0). If 𝑛 ≡ 3 (mod 4) (or 𝐼 = ∅), 𝑉0 ≤ 𝐺, because 𝑛 + 1 − 2𝑡1 ≤ 𝑛 − 3. Also, if
+       𝑛 ≡ 3 (mod 4), then 𝑣2(𝑛 − 1) = 1 and 𝜑(𝑛 − 1) − 2 = 𝑛 − 2 ≤ 𝐺; and if 𝑛 is even, 𝜑(𝑛 − 1) = 𝑛 − 1 ≤
+       𝜑(𝑛 − 2) ≤ 𝐺.
+    3. Enough factors at 𝐺. If 𝑛 is even, each of the 𝑛 − 2 copies of the family 𝑛 − 2 has two dancers at
+       exactly 𝐺: ∅, at max(𝐺, 𝜑(𝑛 − 1)) = 𝐺, and {0}, at max𝑦≤𝑛−2 𝜑(𝑦) = 𝐺 (Proposition 9.3(c); 0 ∈ 𝐼 because
+       𝑛 − 1 is odd). That is 2(𝑛 − 2) factors at 𝐺: at least 𝑛 + 1 for 𝑛 ≥ 6, which is enough even when 𝑐1 = 𝐺;
+       for 𝑛 = 4, 𝑐1 = 𝜑(4) − 1 = 5 > 𝐺 = 3, and 2(𝑛 − 2) = 4 = 𝑛 factors are enough. If 𝑛 is odd, the family
+       𝑛 − 2 gives 𝑛 − 1 copies of ∅ at max(𝐺, 𝜑(𝑛 − 1)) ≥ 𝐺. The family 𝑛 − 4, at shift 2, gives 𝑚𝑛−4(𝑛) ≥ 4
+       copies of a factor at exactly 𝐺: there 𝑚 = 1, 0 ∉ 𝐼 (𝜆 odd), and as in Proposition 9.3 no carry is born and
+       𝐽 ≡ 0, so the same walk gives 𝑒(∅) = max𝑦≤𝑛−3 𝜑(𝑦) = 𝑔(𝑛 − 2), which is 𝐺 because 𝜑(𝑛 − 2) =
+       𝑛 − 2 ≤ 𝜑(𝑛 − 3).
+    4. Reading off. For 𝑛 even, 𝑐1 = max(𝐺, 𝜑(𝑛) − 1) and 𝑐2 = ⋯ = 𝑐𝑛+1 = 𝐺. For 𝑛 odd with 𝜑(𝑛 − 1) ≤ 𝐺,
+       nothing lies above 𝐺, so 𝑐1 = ⋯ = 𝑐𝑛+1 = 𝐺. For 𝑛 odd with 𝜑(𝑛 − 1) > 𝐺, the 𝑛 − 1 copies of 𝜑(𝑛 − 1)
+       come first. Then comes 𝑉0 = 𝜑(𝑛 − 1) − 2 if this exceeds 𝐺 (which forces 𝑡1 = 1), and otherwise 𝐺; so
+       𝑐𝑛 = max(𝐺, 𝜑(𝑛 − 1) − 2) and 𝑐𝑛+1 = 𝐺.
+The particular cases: 𝑔(𝑛) = max(𝐺, 𝜑(𝑛 − 1)), and 𝑣2𝑛 + 𝑛 − 1 = 𝜑(𝑛) − 1. For 𝑛 odd, 𝜑(𝑛) − 1 = 𝑛 − 1 ≤
+𝜑(𝑛 − 1) ≤ 𝑔(𝑛), which gives [GMMY24, Theorems 4.1, 4.2] for 𝑛 ≥ 4. In all cases 𝑐𝑛 = max(𝐺, 𝜑(𝑛 − 1) − 2)
+and 𝑣2(𝑛 − 1) + 𝑛 − 3 = 𝜑(𝑛 − 1) − 2 (for 𝑛 even, 𝑛 − 3 < 𝐺). For 𝑛 = 3, Syl2 𝐾(𝑄3) = {1: 1, 3: 2} and the three
+statements hold.                                                                                               ∎
+
+9.3 Gao et al.’s Conjecture 5.4
+Write 𝑁 := 2𝑒 − 1 and 𝑛 := 2𝑒.
+Lemma 9.8. For odd 𝑁′, the families of 𝑁′ + 1 are the 𝜆 + 1, 𝜆 a family of 𝑁′, with 𝑚𝜆+1(𝑁′ + 1) = 𝑚𝜆(𝑁′)
+and the same shift. If 𝜆 + 1 = 2𝑘 + ∑𝑡∈𝐼 2𝑡, the family 𝜆 + 1 has the same 𝑘 and the set 𝐼 ∪ {0}, with ℎ′0 = 𝑡1 :=
+min(𝐼 ∪ {𝑘}) and the other gaps unchanged; its small clocks are those of 𝜆 taken twice, and its dancers are 𝐷
+and 𝐷 ∪ {0}, 𝐷 ⊆ 𝐼, adjacent in o‑order.
+Proof. Every family of an odd 𝑁′ is odd, and 𝑉 · [2𝑙 + 1] = [2𝑙 + 2]. Since 𝜆 + 1 is even, 𝜆 + 2 = 2𝑘 + 𝑜𝐼 + 1
+with 𝑜𝐼 + 1 < 2𝑘.                                                                                            ∎
+Lemma 9.9. Let 𝐽 := 𝑖 + 𝑜𝐷 ≥ 1. In the cube 𝑁, 𝑢(𝐷) = 2𝑒 − 2𝐽 + 𝑣2(𝐽) + 𝑠2(𝐽) + ℎ(𝐷). In the cube 𝑛, for a
+family with dancer 𝐷′ and 𝐽′ := 𝑖 + 𝑜𝐷′ ≥ 1, 𝑢(𝐷′) = 2𝑒 + 1 − 2𝐽′ + 𝑠2(𝐽′ − 1) + ℎ′(𝐷′).
+
+
+
+                                                       31
+Proof. In the cube 𝑁, 𝜉 = 𝜆 + 1 − 2𝑜𝐷 = 𝑁 + 1 − 2𝐽 = 2𝑒 − 2𝐽, and 𝐽 ≤ 2𝑒−1 − 1, so 𝜑(𝜉) = 2𝑒 − 2𝐽 + 1 + 𝑣2(𝐽).
+With 𝑎 = 𝐽 − 1, 𝑎 + 𝜉 = (2𝑒 − 1) − 𝐽 and 𝜉/2 = (2𝑒−1 − 1) − 𝑎, so 𝑠2(𝑎 + 𝜉) = 𝑒 − 𝑠2(𝐽), 𝑠2(𝜉) = 𝑒 − 1 − 𝑠2(𝑎),
+and 𝜅(𝑎, 𝜉) = 𝑠2(𝐽) − 1. In the cube 𝑛, 𝜉′ = 2𝑒 + 1 − 2𝐽′ is odd. With 𝑎 = 𝐽′ − 1, 𝑎 + 𝜉′ = (2𝑒 − 1) − 𝑎 and 𝜉′ =
+(2𝑒 − 1) − 2𝑎, so 𝜅(𝑎, 𝜉′) = 𝑠2(𝑎).                                                                              ∎
+Theorem 9.10 (the mirror that doubles). For every family 𝜆 < 𝑁 of the cube 𝑁 (shift 𝑖 ≥ 1) and every
+𝐷 ⊆ 𝐼, the dancers 𝐷 and 𝐷 ∪ {0} of the family 𝜆 + 1 of the cube 𝑛 have the raw clock 𝑢𝑁(𝐷).
+Proof. For 𝐷′ = 𝐷: 𝐽′ = 𝐽, ℎ′(𝐷) = ℎ(𝐷), and 𝑠2(𝐽 − 1) = 𝑠2(𝐽) − 1 + 𝑣2(𝐽), so Lemma 9.9 gives 𝑢𝑛(𝐷) = 𝑢𝑁(𝐷).
+For 𝐷′ = 𝐷 ∪ {0}: 𝐽′ = 𝐽 + 1 and ℎ′(𝐷 ∪ {0}) = ℎ(𝐷) + 𝑡1, so 𝑢𝑛(𝐷 ∪ {0}) = 𝑢𝑁(𝐷) + 𝑡1 − 1 − 𝑣2(𝐽). Finally, 2𝑖 =
+2𝑒 − (𝜆 + 1) = 2𝑒 − 2𝑘 − 𝑜𝐼 with 𝑘 < 𝑒, so 𝑣2(𝑖) = 𝑡1 − 1. Every digit of 𝐷 is ≥ 𝑡1, so 𝑣2(𝐽) = 𝑣2(𝑖 + 𝑜𝐷) =
+𝑡1 − 1.                                                                                                         ∎
+Proof of Corollary 1.7. By Lemma 9.8 and Theorem 9.10, the raw sequence of (𝜆 + 1, 𝑖) in o‑order is that of
+(𝜆, 𝑖) with every entry written twice. The real fit of a doubled sequence is the doubled fit (Lemma 7.1). A dou‐
+bled level set, with 2𝑝 positions and sum 2𝑆, gets 2(𝑆 mod 𝑝) copies of ⌈𝑆/𝑝⌉ and the rest ⌊𝑆/𝑝⌋, the same
+multiset as two copies of the original. So for 𝜆 < 𝑁 the family 𝜆 + 1 of 𝑛 contributes twice what 𝜆 contributes
+to 𝑁, small clocks included. The family 𝑁 of 𝑁 (𝐼 = ∅) contributes its small clocks and ℤ2. The family
+𝑛 = 𝑁 + 1 of 𝑛 (𝐼 = {0}) contributes these small clocks twice, ℤ2, and the dancer {0} at shift 0, with 𝜉 = 2𝑒 − 1,
+                                                                                   𝑒
+𝜅 = 0 and ℎ0 = 𝑒: 𝑢 = 2𝑒 + 𝑒 − 1. Cancelling ℤ2, Syl2 𝐾(𝑄𝑛) ≅ Syl2 𝐾(𝑄𝑁)2 ⊕ ℤ/22 +𝑒−1.                          ∎
+
+10. The fold law
+
+10.1 The fold on the families
+Let 𝑎 := 𝑥1𝑥2⋯𝑥𝑛 ∈ 𝐺. The folded cube is the Cayley graph of 𝐺/⟨𝑎⟩ with the images of the generators, so its
+Laplacian acts on ℤ[𝐺/⟨𝑎⟩] = 𝑅/(𝑎 − 1)𝑅 as multiplication by 𝜎, and ℤ ⊕ 𝐾(𝑛) ≅ 𝑅/(𝜎𝑅 + (𝑎 − 1)𝑅) (for
+𝑛 ≥ 2 the graph is connected).
+Lemma 10.1. Under the dictionary of Lemma 2.2, 𝑎 acts on 𝑉⊗𝑛 as
+                                  𝑎 = (−1)(𝑛−𝐻)/2 exp(𝐹), exp(𝐹) := ∑ 𝐹(𝑟).
+                                                                       𝑟≥0
+
+On a summand 𝑇(𝜆) of 𝑉⊗𝑛 at shift 𝑖 = (𝑛 − 𝜆)/2 this is 𝑎 = (−1)𝐷+𝑖 exp(𝐹), 𝐷 the floor operator of 𝑇(𝜆).
+Proof. On 𝑉, 𝑥 = 1 − 𝑠 acts by 𝑔: 𝑏0 ↦ 𝑏0 − 𝑏1, 𝑏1 ↦ −𝑏1 (Lemma 2.1), and 𝑔 = (−1)𝐷𝑉 exp(𝐹) (exp(𝐹)𝑏0 =
+𝑏0 + 𝑏1, exp(𝐹)𝑏1 = 𝑏1). Since Δ(𝐹(𝑟)) = ∑𝑎+𝑏=𝑟 𝐹(𝑎) ⊗ 𝐹(𝑏), exp(𝐹) is group-like, and so is (−1)floor; so 𝑎 = 𝑔⊗𝑛
+is (−1)floor exp(𝐹) on 𝑉⊗𝑛, where the floor of a pure tensor is its number of letters 𝑏1, (𝑛 − 𝐻)/2. On 𝑇(𝜆) the
+weight is 𝜆 − 2𝐷, so (𝑛 − 𝐻)/2 = 𝐷 + 𝑖.                                                                          ∎
+Since 𝑎 is expressed through 𝐻 and the divided powers of 𝐹, it is carried by every isomorphism of Dist𝐴‑lat‐
+tices, and Theorem 3.6 gives, with
+        𝜏𝑖 := 𝜎(1)
+               𝑖 = 𝐹 + 2(𝐷 + 𝑖) and 𝑋(𝜆, 𝑖) := 𝑇(𝜆)/(𝜏𝑖𝑇(𝜆) + (𝑎 − 1)𝑇(𝜆)) (𝑎 = (−1)
+                                                                                     𝐷+𝑖 exp 𝐹):
+
+Corollary 10.2. For every 𝑛 ≥ 2, with the multiplicities of Theorem 3.6,
+                                   ℤ2 ⊕ Syl2 𝐾(𝑛) ≅ ⨁ 𝑋(𝜆, (𝑛 − 𝜆)/2)𝑚𝜆(𝑛).
+                                                       𝜆
+
+Proposition 10.3. If 𝑋(𝜆, 𝑖) ≅ 2𝑋(𝜆, 𝑖) for every 𝜆 ≥ 1 and every 𝑖 ≥ 0 (where 𝑋 := 𝑋(1)), then Theorem DW
+holds.
+
+
+
+
+                                                       32
+Proof. By Theorem 3.8 and Corollary 10.2,
+                  ℤ2 ⊕ Syl2 𝐾(𝑛) ≅ ⨁ (2𝑋)𝑚𝜆(𝑛) = 2(ℤ2 ⊕ Syl2 𝐾(𝑄𝑛)) ≅ ℤ2 ⊕ 2 Syl2 𝐾(𝑄𝑛);
+                                      𝜆
+
+cancel ℤ2 (the torsion submodule of a finitely generated ℤ2‑module is determined). Passing to 2 · Syl2 𝐾(𝑄𝑛)
+removes exactly the factors ℤ/2 of Syl2 𝐾(𝑄𝑛), whose number is 𝑎𝑛 (Corollary 1.5). For 𝑛 = 1 both groups are
+trivial.                                                                                                   ∎
+So the fold law is a statement family by family. We prove it on the half-size lattice 𝑁 := 𝑇(𝑙), where 𝜆 = 2𝑙 + 1
+or 𝜆 = 2𝑙 + 2.
+
+10.2 The two families on the half-size lattice
+On Φ(𝑁) put Ch := ∑𝑠≥0 𝐹(𝑠)/(2𝑠 − 1)!! and Sh := ∑𝑠≥0 𝐹(𝑠)/(2𝑠 + 1)!!, operators on 𝑁 (𝐹 = 𝐹𝑁); Sh is invert‐
+ible. With 𝑢2 = 2𝐹, Ch = cosh 𝑢 and Sh = sinh(𝑢)/𝑢 as power series, since 𝐹(𝑠)/(2𝑠 − 1)!! = (2𝐹)𝑠/(2𝑠)!. For
+𝑗 ≥ 0 put
+                      Ψ𝑗 := 2(2𝐷 + 𝑗) + (Ch − (−1)𝑗) · Sh−1 and Σ𝑐 := 𝐹 + 4(𝐷 + 𝑐),
+operators on 𝑁. As power series, (Ch − 1)Sh−1 = 𝑢 · tanh(𝑢/2) and (Ch + 1)Sh−1 = 𝑢 · coth(𝑢/2), so
+                     Ψ2𝑐 = 4(𝐷 + 𝑐) + ∑ 𝜂𝑚𝐹(𝑚),             𝜂𝑚 = 2(22𝑚 − 1)𝐵2𝑚/(2𝑚 − 1)!!,
+                                          𝑚≥1
+                     Ψ2𝑐−1 = 4(𝐷 + 𝑐) + ∑ 𝜂′𝑚𝐹(𝑚),          𝜂′𝑚 = 2𝐵2𝑚/(2𝑚 − 1)!!,
+                                           𝑚≥1
+
+with Bernoulli numbers 𝐵2𝑚    (𝑢2𝑚 = 2𝑚𝑚!𝐹(𝑚) and (2𝑚)! = 2𝑚𝑚!(2𝑚 − 1)!!). By the von Staudt–Clausen the‐
+orem [vSt40], [Cla40], 𝑣2(𝐵2𝑚) = −1, so every 𝜂𝑚 and 𝜂′𝑚 is a 2‑adic unit; 𝜂1 = 1, 𝜂′1 = 1/3. In particular Ψ𝑗 has
+the payment 4(𝐷 + ⌈𝑗/2⌉), an odd constant coefficient of 𝐹, and constant integral coefficients of 𝐹(𝑚), 𝑚 ≥ 2.
+Lemma 10.4 (odd families). For 𝜆 = 2𝑙 + 1 and every 𝑗 ≥ 0, with 𝑁 = 𝑇(𝑙) and 𝑐 := ⌈𝑗/2⌉:
+(a) 𝑋(𝜆, 𝑗) ≅ coker(Ψ𝑗 on 𝑁); (b) 2𝑋(𝜆, 𝑗) ≅ coker(Σ𝑐 on 𝑁).
+Proof. (a) On 𝑇(𝜆) = Φ(𝑁), Proposition 3.1(b) gives exp(𝐹)(𝑏0𝑛) = 𝑏0Ch(𝑛) + 𝑏1Sh(𝑛). The floor of 𝑏0𝐹(𝑠)𝑛 in
+𝑇(𝜆) is 2(𝑓 + 𝑠) and that of 𝑏1𝐹(𝑠)𝑛 is one more, so 𝑎(𝑏0𝑛) = (−1)𝑗[𝑏0Ch(𝑛) − 𝑏1Sh(𝑛)]. Since Sh is invertible,
+{𝑏0𝑛, 𝑎𝑏0𝑛} (𝑛 over a basis of 𝑁) is a basis of 𝑇(𝜆), which is therefore free over 𝐴[𝑎]/(𝑎2 − 1). From 𝑏1𝑛 =
+𝑏0ChSh−1𝑛 − (−1)𝑗𝑎𝑏0Sh−1𝑛 and 𝜏𝑗(𝑏0𝑛) = 𝑏1𝑛 + 2(2𝑓 + 𝑗)𝑏0𝑛, 𝜏𝑗 has the matrix 𝑄𝑃 𝑄𝑃 in this basis, with 𝑃 =
+ChSh−1 + 2(2𝐷 + 𝑗) and 𝑄 = (−1)𝑗+1Sh−1. On the coinvariants 𝑇(𝜆)/(𝑎 − 1)𝑇(𝜆) ≅ 𝑁, 𝜏𝑗 acts as 𝑃 + 𝑄 = Ψ𝑗.
+(b) By Proposition 4.1 with 𝛼 = 1, 𝑋(𝜆, 𝑗) ≅ coker(2𝐺′), with 𝐺′ = 𝐹 + 𝜋′(𝐷) on 𝑁 and
+                                𝜋′(𝑓) = −2(𝑗 + 2𝑓)(𝑗 + 2𝑓 + 1) = −4(𝑐 + 𝑓)𝑢𝑓,
+where 𝑢𝑓 is odd (𝑢𝑓 = 𝑗 + 2𝑓 + 1 for even 𝑗, 𝑗 + 2𝑓 for odd 𝑗). So 2𝑋(𝜆, 𝑗) ≅ coker 𝐺′. Right multiplication by
+the floor unit (−𝑢(𝐷))−1 and conjugation by the floor units 𝑠(𝐷) with 𝑠(𝑓 + 1) = −𝑢−1𝑓 𝑠(𝑓) turn 𝐺′ into Σ𝑐 and
+do not change the cokernel.                                                                                   ∎
+For operators 𝑋, 𝑌 on 𝑁, put on 𝑁 ⊕ 𝑁
+                                                             𝑋     0
+                                           glue(𝑋, 𝑌) := (𝑌 − 𝑋)/2 𝑌 ,
+                                               1 0 , and glue(𝑋, 𝑌) · glue(𝑋′, 𝑌′) = glue(𝑋𝑋′, 𝑌𝑌′).
+so that glue(𝑋, 𝑌) = 𝐿−1 diag(𝑋, 𝑌)𝐿 with 𝐿 = 1/2 1
+Lemma 10.5 (even families). For 𝜆 = 2𝑙 + 2, 𝑁 = 𝑇(𝑙) and every 𝑖 ≥ 0:
+(a) 𝑋(𝜆, 𝑖) ≅ coker(glue(Ψ𝑖+1, Ψ𝑖) on 𝑁 ⊕ 𝑁);
+(b) 2𝑋(𝜆, 𝑖) ≅ coker(glue(Ψ𝑖+1(Ψ𝑖+1 − 2)/2, Ψ𝑖(Ψ𝑖 + 2)/2) on 𝑁 ⊕ 𝑁).
+
+
+
+
+                                                       33
+Proof. Let 𝜈 = 2𝑙 + 1, so 𝑇(𝜆) = 𝑉 ⊗ 𝑇(𝜈) (§3.3) at the same shift 𝑖. By Lemma 10.1 and the coproduct, on
+𝑉 ⊗ 𝑀 (𝑀 = 𝑇(𝜈)) we have 𝑎 = 𝑔 ⊗ 𝑎𝑀 and 𝜏𝑖 = (1 − 𝑔) ⊗ 1 + 1 ⊗ 𝜏𝑀. Here (1 − 𝑔)𝑏0 = 𝑏1 and (1 − 𝑔)𝑏1 =
+2𝑏1, and 𝑉 ≅ 𝐴[𝑔]/(𝑔2 − 1) is the regular module with generator 𝑏0.
+      Modulo 𝑎 − 1, 𝑔 ≡ 𝑎𝑀, so 𝑋(𝜆, 𝑖) ≅ coker(𝑓 on 𝑀) with 𝑓 := 1 + 𝜏𝑀 − 𝑎𝑀.
+      Modulo 𝜏𝑖, 𝑔 ≡ 1 + 𝜏𝑀, so 𝑋(𝜆, 𝑖) ≅ 𝑀/((1 + 𝜏𝑀)2 − 1)𝑀 = coker(𝜏𝑀(𝜏𝑀 + 2)). With 𝐽 = 𝐷 + 𝑖 and
+      𝐽𝐹 = 𝐹(𝐽 + 1), 𝜏𝑀(𝜏𝑀 + 2)/2 = 𝐹(2) + 2𝐹(𝐽 + 1) + 2𝐽(𝐽 + 1) is integral, so 2𝑋(𝜆, 𝑖) ≅ coker(𝜃 on 𝑀) with
+      𝜃 := 𝜏𝑀(𝜏𝑀 + 2)/2 = 𝑓 · ℎ, ℎ := (1 + 𝜏𝑀 + 𝑎𝑀)/2.
+Now 𝑀 = Φ(𝑁), and by the proof of Lemma 10.4(a) every 𝑤 ∈ 𝐴[𝜏𝑀, 𝑎𝑀] has the circulant matrix 𝑋𝑌 𝑋𝑌 in the
+basis (𝑏0𝑁, 𝑎 · 𝑏0𝑁). Adding column 2 to column 1, subtracting row 1 from row 2, and exchanging the two
+slots give
+                                        coker(𝑤) ≅ coker(glue(𝑤−, 𝑤+)),
+where 𝑤+ := 𝑋 + 𝑌 and 𝑤− := 𝑋 − 𝑌 are the actions of 𝑤 on the coinvariants and the anti-coinvariants of 𝑎𝑀.
+They are ring maps, with 𝜏𝑀 ↦ 𝑃 + 𝑄 = Ψ𝑖, 𝑎𝑀 ↦ 1, and 𝜏𝑀 ↦ 𝑃 − 𝑄 = Ψ𝑖+1 − 2, 𝑎𝑀 ↦ −1. So 𝑓+ = Ψ𝑖,
+𝑓− = Ψ𝑖+1, 𝜃+ = Ψ𝑖(Ψ𝑖 + 2)/2 and 𝜃− = Ψ𝑖+1(Ψ𝑖+1 − 2)/2.                                                  ∎
+So the fold law asks: (odd) coker Ψ𝑗 ≅ coker Σ⌈𝑗/2⌉ on 𝑇(𝑙); (even) the two glued systems of Lemma 10.5 have
+the same cokernel. Note Ψ𝑖+1 − Ψ𝑖 = 2(1 + (−1)𝑖Sh−1).
+
+10.3 The formal dance
+The operators of §10.2 are not payment systems: they carry the divided powers 𝐹(𝑚), 𝑚 ≥ 2. We extend the
+dance of §4 to them.
+Formal operators. Let 𝔅 be the set of formal sums 𝑥 = ∑𝑚≥0 𝑥𝑚(𝐷)𝐹(𝑚), where each 𝑥𝑚 is a function
+ℤ≥0 → ℚ2 (the coefficient at the target floor), with the product
+                                  (𝑥𝑦)𝑚(𝑓) = ∑ 𝐶(𝑚, 𝑎) · 𝑥𝑎(𝑓) · 𝑦𝑏(𝑓 − 𝑎).
+                                              𝑎+𝑏=𝑚
+
+It is an associative ℚ2‑algebra (the rule is that of 𝐹(𝑎)𝐹(𝑏) = 𝐶(𝑎 + 𝑏, 𝑎)𝐹(𝑎+𝑏) and 𝐹(𝑎)𝑝(𝐷) = 𝑝(𝐷 − 𝑎)𝐹(𝑎) for a
+function 𝑝 of the floor), and 𝑥 is integral if every 𝑥𝑚 takes values in 𝐴. An element of 𝔅 acts on every floor-
+graded lattice with divided powers of 𝐹 — in particular on every 𝑇(𝑙) — by 𝑥 · 𝑣 = ∑𝑚 𝑥𝑚(𝑓 + 𝑚)𝐹(𝑚)𝑣 for 𝑣
+of floor 𝑓 (a finite sum), and this is a ring homomorphism. A value 𝑥𝑚(𝑔) with 𝑔 < 𝑚 never acts, and we
+identify two formal sums that agree at every 𝑔 ≥ 𝑚; then the action on all the 𝑇(𝑙) together is faithful,
+because on the sublattice generated by the top vector of 𝑇(𝑙) the operator 𝐹(𝑚) sends the vector of floor 𝑔 to
+𝐶(𝑔 + 𝑚, 𝑚) times the vector of floor 𝑔 + 𝑚, which is non-zero for 𝑔 + 𝑚 ≤ 𝑙. A system of size 𝑟 is an 𝑟 × 𝑟
+matrix 𝐺 = (𝐺[𝑠, 𝑠′]) over 𝔅, acting on 𝑁⊕𝑟; 𝐺[𝑠, 𝑠′] maps the slot 𝑠′ (the source) to the slot 𝑠 (the coordinate).
+The operators 𝜎(𝛼)𝑖 , Ψ𝑗, Σ𝑐, their products, and the glued operators of Lemma 10.5 are systems of size 1 or 2.
+The twist map. On Φ(𝑁′), Proposition 3.1(b) writes the action of 𝑥 ∈ 𝔅 in the slots 𝑏0 ⊗ 𝑁′, 𝑏1 ⊗ 𝑁′ as the
+               00   01
+block matrix 𝑥𝑥10 𝑥𝑥11 (coordinate slot first, source slot second), with 𝐷, 𝐹 those of 𝑁′:
+         𝑥00 = ∑ 𝑥2𝑞(2𝐷)𝐹(𝑞)/(2𝑞 − 1)!!,               𝑥11 = ∑ 𝑥2𝑞(2𝐷 + 1)𝐹(𝑞)/(2𝑞 − 1)!!,
+                 𝑞                                             𝑞
+         𝑥10 = ∑ 𝑥2𝑞+1(2𝐷 + 1)𝐹(𝑞)/(2𝑞 + 1)!!,         𝑥01 = ∑ ((2𝑞 + 2)/(2𝑞 + 1)!!) · 𝑥2𝑞+1(2𝐷)𝐹(𝑞+1).
+                 𝑞                                             𝑞
+
+(The floor of 𝑏𝑒 ⊗ 𝑛′ is 2𝑓 + 𝑒; for instance 𝐹(2𝑞+1)(𝑏1𝑛′) = ((2𝑞 + 2)/(2𝑞 + 1)!!) · 𝑏0𝐹(𝑞+1)𝑛′ lands at the floor
+2(𝑓 + 𝑞 + 1).) The denominators are odd. Since this is the action on Φ(𝑁′) for every 𝑁′, and the action is
+                00   01
+faithful, 𝑥 ↦ 𝑥𝑥10 𝑥𝑥11 is multiplicative; it is applied entrywise to systems.
+
+
+
+
+                                                        34
+The 𝑉‑split. On 𝑉 ⊗ 𝑀, 𝐹(𝑚) = 1 ⊗ 𝐹(𝑚) + 𝐹 ⊗ 𝐹(𝑚−1) and the floor of 𝑏𝑣 ⊗ 𝑦 is 𝑣 plus the floor of 𝑦. So the
+action of 𝑥 in the slots 𝑏0 ⊗ 𝑀, 𝑏1 ⊗ 𝑀 is
+                       𝑥 0     𝑥+ (𝑔) := 𝑥𝑚(𝑔 + 1), 𝑥′𝑚−1(𝑔) := 𝑥𝑚(𝑔 + 1) (𝑚 ≥ 1),
+                       𝑥′ 𝑥+ , 𝑚
+operators on 𝑀: a system of size 𝑟 on 𝑉 ⊗ 𝑀 becomes a system of size 2𝑟 on 𝑀.
+The moves. Let 𝐺 be a system of size 𝑟 on 𝑁.
+      If 𝑁 = Φ(𝑁′), apply the twist map. Order the coordinates as (the 𝑏1‑slots, the 𝑏0‑slots) and the sources
+      as (the 𝑏0‑slots, the 𝑏1‑slots); then 𝐺 = 𝐵𝑃 Dd
+                                                   𝐶 with pivot 𝑃 := 𝐺10, 𝐶 := 𝐺11, 𝐵 := 𝐺00, Dd := 𝐺01, blocks
+
+      of size 𝑟 over 𝔅′.
+      If 𝑁 = 𝑉 ⊗ Φ(𝑁′), first 𝑉‑split (size 2𝑟 on Φ(𝑁′)), then proceed as in the first case.
+The move is clean if 𝑃 is invertible on 𝑁′⊕𝑟′ and 𝑆 := Dd − 𝐵𝑃−1𝐶 ≡ 0 (mod 2); then the next system is
+𝐺′ := 𝑆/2, of size 𝑟′ = 𝑟 or 2𝑟 on 𝑁′. The dance of a system 𝐺 on 𝑇(𝑙) along the word 𝑤 of 𝑙 (§4.3: the digits
+𝑡 = 0, …, 𝑘 − 1 of 𝑙 + 1 = 2𝑘 + ∑𝑡∈𝐼 2𝑡, a twist move if 𝑡 ∉ 𝐼, a split move if 𝑡 ∈ 𝐼) is the sequence 𝐺0 = 𝐺, 𝐺1,
+…, 𝐺𝑘; it is clean if every move is clean, and then its final matrix is 𝑀𝑤(𝐺) := 𝐺𝑘, a matrix over 𝐴 of size
+𝑟 · 2|𝐼| (on 𝑇(0) = 𝐴, 𝐹 acts as 0). The final slots are indexed by (𝑠, 𝐷), 𝑠 a slot of 𝐺 and 𝐷 ⊆ 𝐼 a dancer, as in
+§4.3.
+Lemma 10.6. (a) For an even payment system the twist move is the elimination of Proposition 4.1, and the
+split move (𝑉‑split followed by the twist move) has the same next system as Proposition 4.2. (b) Hence the
+dance of 𝜎(𝛼)                             (𝛼)    (𝛼)
+           𝑐 on 𝑇(𝑙) is clean and 𝑀𝑤(𝜎𝑐 ) = 𝑀 (𝑙, 𝑐), the matrix of Theorem 4.4; and for a unit 𝑢 ∈ 𝐴,
+𝑀𝑤(𝑢𝐺) = 𝑢 · 𝑀𝑤(𝐺).
+Proof. (a) For an even payment system 𝐺 = 𝐹 + 𝜋(𝐷) + 𝐾(𝐷) (couplings of degree 0), 𝑃 = 𝐺10 is the identity,
+𝐵 = (𝜋 + 𝐾)(2𝐷), 𝐶 = (𝜋 + 𝐾)(2𝐷 + 1) and Dd = 2𝐹, so 𝑆/2 = 𝐹 − 12 (𝜋 + 𝐾)(2𝐷) · (𝜋 + 𝐾)(2𝐷 + 1), which
+is 𝐺′ of Proposition 4.1 (expand the product of the two triangular matrices). So the twist move is clean: 𝑃 is
+invertible, and 𝑆 = 2𝐺′ with 𝐺′ even (Proposition 4.1), so that the next move applies to 𝐺′. For the split move,
+Proposition 4.2 eliminates the coordinates 𝐵𝑛, Dd𝑛 against the sources 𝐴𝑛, 𝐶𝑛, in the basis (𝐴𝑛, 𝐵𝑛, 𝐶𝑛, Dd𝑛);
+the 𝑉‑split followed by the twist move eliminates the coordinates 𝑏0 ⊗ 𝑏1𝑛, Dd𝑛 against the same sources 𝐴𝑛,
+𝐶𝑛, in the basis (𝐴𝑛, 𝑏0 ⊗ 𝑏1𝑛, 𝐶𝑛, Dd𝑛). The two bases differ by 𝐵𝑛 = 𝑏0 ⊗ 𝑏1𝑛 − 𝐶𝑛. In the matrix of 𝐺, this
+replaces the remaining column of the source 𝑏0 ⊗ 𝑏1𝑛 by itself minus the pivot column of 𝐶𝑛, and the
+remaining row of the coordinate 𝐶 by itself plus the pivot row of the coordinate 𝑏0 ⊗ 𝑏1; the pivot block does
+not change. Neither operation changes the Schur complement: for a pivot row 𝑝, 𝑀𝑝,𝑐 − 𝑀𝑝,𝑃𝑀−1        𝑃,𝑃𝑀𝑃,𝑐 = 0,
+and symmetrically for a pivot column. So the two next systems coincide, slot (𝑠, 𝐴) with the dancer 𝑣 = 0 and
+slot (𝑠, 𝐶) with 𝑣 = 1; and the split move is clean, because its pivot block is the one eliminated in
+Proposition 4.2 (triangular, with the coefficient 1 on each eliminated vector) and 𝑆 = 2𝐺′′ with 𝐺′′ even
+(Proposition 4.2).
+(b) By (a) and Proposition 4.3. For the last claim, 𝑢Dd − 𝑢𝐵(𝑢𝑃)−1𝑢𝐶 = 𝑢𝑆.                                     ∎
+Proposition 10.7. Let 𝐺 be a system of size 𝑟 on 𝑇(𝑙) whose dance is clean. Then
+                                                 𝑘−1
+                          coker(𝐺 on 𝑇(𝑙)⊕𝑟) ≅ ⨁ (ℤ/2𝑎)𝑟·2
+                                                              |𝐼|+𝑘−1−𝑎
+                                                                          ⊕ coker(2𝑘𝑀𝑤(𝐺)).
+                                                 𝑎=1
+
+In particular, two systems of the same size on 𝑇(𝑙) with clean dances and final matrices of equal Smith form
+have isomorphic cokernels.
+Proof. If 𝑃 is invertible, unimodular row and column operations turn 𝐵𝑃 Dd    𝐶 into diag(𝑃, 𝑆) and then into
+
+diag(1, 𝑆); so coker(2ℎ𝐺ℎ) ≅ (ℤ/2ℎ)rank 𝑃 ⊕ coker(2ℎ𝑆) = (ℤ/2ℎ)rank 𝑃 ⊕ coker(2ℎ+1𝐺ℎ+1). Count the ranks as in
+Proposition 4.3.                                                                                             ∎
+
+
+                                                        35
+10.4 Rigidity: the inverse block
+In this section 𝐺 = Ξ is a system of size 1 on 𝑇(𝑙), 𝑙 + 1 = 2𝑘 + ∑𝑡∈𝐼 2𝑡, 𝐾 = 2𝑘. A dancer of level ℎ is a sub‐
+set 𝐷 of 𝐼 ∩ [0, ℎ).
+Lemma 10.8 (inverse block). Suppose Ξ is invertible on 𝑇(𝑙) ⊗ ℚ and every pivot met by its dance is invert‐
+ible over ℚ2. Then for every level ℎ,
+                                            𝐺−1   ℎ          −1
+                                             ℎ = 2 · outℎ ∘ Ξ ∘ inℎ,
+
+where inℎ sends the coordinate (𝐷, 𝑔) of level ℎ (dancer 𝐷, level-ℎ floor 𝑔) to a vector of 𝑇(𝑙) of floor 2ℎ𝑔 + 𝑜𝐷,
+outℎ reads the source (𝐷, 𝑔) of level ℎ off the vectors of 𝑇(𝑙) of floor 2ℎ𝑔 + 𝑜𝐷 + 2ℎ − 1, and both are fixed by
+the word 𝑤 alone.
+Proof. In the order of §10.3, 𝐺ℎ = 𝐵𝑃 Dd𝐶 with 𝑃 invertible; since 𝐺 is invertible, so is 𝑆, and the block of 𝐺−1
+                                                                       ℎ                                          ℎ
+on (the remaining sources) × (the remaining coordinates) is 𝑆−1 (the standard identity for the inverse of a
+block matrix). So 𝐺−1         −1                         −1
+                     ℎ+1 = 2𝑆 is 2 times a block of 𝐺ℎ ; compose over the levels. The remaining coordinates
+of a twist move are the 𝑏0‑slots, of level-ℎ floor 2𝑔, and the remaining sources the 𝑏1‑slots, of level-ℎ floor
+2𝑔 + 1; after a 𝑉‑split, the dancer 𝑣 adds 𝑣 to the level-ℎ floor. By induction, a coordinate of level ℎ sits at the
+floor 2ℎ𝑔 + 𝑜𝐷 of 𝑇(𝑙) and a source at 2ℎ𝑔 + 𝑜𝐷 + (2ℎ − 1): a twist move, or a split move with 𝑣 = 0, adds 0 to
+the coordinate offset and 2ℎ to the source offset; a split move with 𝑣 = 1 adds 2ℎ and 2ℎ+1.                       ∎
+Corollary 10.9. Suppose Ξ−1 = ∑𝐿 𝑦𝐿(𝐷)𝐹(𝐿) in 𝔅. Then for dancers 𝑋, 𝑌 ⊆ 𝐼,
+                        (𝑀𝑤(Ξ)−1)𝑌𝑋 = 2𝑘 · 𝛾𝑌𝑋 · 𝑦𝐿(𝑜𝑌 + 𝐾 − 1), 𝐿 := 𝑜𝑌 − 𝑜𝑋 + 𝐾 − 1,
+where 𝛾𝑌𝑋 ∈ ℚ2 depends only on the word 𝑤, and 𝛾𝑌𝑋 = 0 if 𝐿 < 0. The floors visited form the window
+[𝑜𝑋, 𝑜𝑌 + 𝐾 − 1], which is the window of Theorem 4.4.
+Proof. in(𝑒𝑋) has floor 𝑜𝑋 and out reads the source 𝑌 at floor 𝑜𝑌 + 𝐾 − 1; of
+                                      Ξ−1 in(𝑒𝑋) = ∑ 𝑦𝐿(𝑜𝑋 + 𝐿)𝐹(𝐿) in(𝑒𝑋)
+                                                     𝐿
+
+only the term 𝐿 = 𝑜𝑌 − 𝑜𝑋 + 𝐾 − 1 has that floor. Put 𝛾𝑌𝑋 := out𝑌(𝐹(𝐿) in(𝑒𝑋)).                                   ∎
+From now on let 𝛼 ≥ 2, 𝑐 ≥ 1, 𝜂 ∈ 𝐴 a unit, and
+                                 Σ := 2𝛼(𝐷 + 𝑐) + 𝜂𝐹, Ξ := Σ + ∑ 𝜁𝑚(𝐷)𝐹(𝑚),
+                                                                    𝑚≥2
+
+with integral functions 𝜁𝑚. Put 𝜋(𝑑) := 2𝛼(𝑑 + 𝑐) ≠ 0 and 𝜁1 := 𝜂.
+Lemma 10.10 (path sum). For every 𝐿 ≥ 0 and every floor 𝑓,
+                                                                                          (−1)𝐿𝐿!𝜂𝐿
+             𝑦Ξ𝐿 (𝑓) = 𝑦Σ𝐿(𝑓) · (1 + 𝑒𝐿(𝑓)) with 𝑣2(𝑒𝐿(𝑓)) ≥ 𝛼 − 1, and 𝑦Σ𝐿(𝑓) =            𝑓         .
+                                                                                           ∏ 𝜋(𝑑)
+                                                                                          𝑑=𝑓−𝐿
+
+Proof. Write Ξ = 𝜋(𝐷) + 𝑁. Then Ξ−1 = ∑𝑠≥0 (−1)𝑠(𝜋(𝐷)−1𝑁)𝑠𝜋(𝐷)−1, and the coefficient of 𝐹(𝐿) at the target
+floor 𝑓 is the sum, over the compositions 𝐿 = 𝑚1 + ⋯ + 𝑚𝑠 (landing floors 𝑓 − 𝐿 = 𝑓0 < 𝑓1 < ⋯ < 𝑓𝑠 = 𝑓),
+of
+                                          (−1)𝑠(𝐿!/∏ 𝑚𝑖!) · ∏ 𝜁𝑚𝑖(𝑓𝑖)
+                                                                𝑖
+                                                      𝑠                   .
+                                                    ∏ 𝜋(𝑓𝑗)
+                                                     𝑗=0
+
+For Σ only the composition 1 + ⋯ + 1 occurs. Any other composition, divided by that term, is ±∏𝑖 𝜁𝑚𝑖(𝑓𝑖) ·
+𝜂−𝐿/∏𝑖 𝑚𝑖! times the payments of the ∑𝑖 (𝑚𝑖 − 1) floors of [𝑓 − 𝐿, 𝑓] that it skips; its valuation is at least
+
+                                                           36
+∑𝑖 [𝛼(𝑚𝑖 − 1) − 𝑣2(𝑚𝑖!)] ≥ (𝛼 − 1)∑𝑖 (𝑚𝑖 − 1) ≥ 𝛼 − 1, since 𝑣2(𝑚!) ≤ 𝑚 − 1.                                    ∎
+The final matrix of Σ is known. By Lemma 10.6(b), 𝑀𝑤(Σ) = 𝜂 · 𝑀𝑤(𝐹 + 𝜂−1𝜋(𝐷)), and the proof of
+Theorem 4.4 uses only the products of the payment over windows. So, with 𝒜 the matrix of multiplication
+by 𝑞𝑘 in the basis 𝑦𝐷 (𝒜𝐷𝐷′ = 𝑎𝑘(𝐷 ∖ 𝐷′) if 𝐷′ ⊆ 𝐷, else 0):
+                                           21−𝐾𝜂1−𝐾 · (2𝜂)𝑜𝐷
+             𝑀𝑤(Σ) = 𝔡1 · 𝒜 · 𝔡2, (𝔡1)𝐷 = − ∏ 𝜋(𝑑) , (𝔡2)𝐷′ = (2𝜂)−𝑜𝐷′ ·                   ∏ 𝜋(𝑑),
+                                                                                       𝑑≤𝑜𝐷′+𝐾−1
+                                                   𝑑<𝑜𝐷
+
+diagonal and invertible, and 𝑣2(𝒜𝐷𝐷′) = 𝛿(𝐷 ∖ 𝐷′) exactly (Lemma 4.5).
+For matrices 𝐵, 𝐸 of the same size, 𝐵 ∘ (1 + 𝐸) is the matrix with entries 𝐵𝑖𝑗(1 + 𝐸𝑖𝑗).
+Lemma 10.11 (stability). If 𝑣2(𝐸𝑖𝑗) ≥ 1 for all 𝑖, 𝑗, then (𝑀𝑤(Σ)−1 ∘ (1 + 𝐸))−1 = 𝑀𝑤(Σ) ∘ (1 + 𝐸′) with
+𝑣2(𝐸′𝑖𝑗) ≥ 1 for all 𝑖, 𝑗.
+Proof. Diagonal scalings commute with ∘, so it suffices to treat 𝒜. Its inverse 𝒜−1 is multiplication by 𝑞−1 𝑘 =
+           𝑗
+∑𝑗 (1 − 𝑞𝑘) (𝑞𝑘 has constant term 1 for 𝑘 ≥ 1; for 𝑘 = 0 everything is 1 × 1); its (𝐷, 𝐷′) entry is a sum over the
+ordered partitions of 𝐷 ∖ 𝐷′ into non-empty blocks 𝐵1, …, 𝐵𝑗 of ±𝑎𝑘(𝐵1)⋯𝑎𝑘(𝐵𝑗), so by the strict subadditivity
+of 𝛿 (§4.5) 𝑣2((𝒜−1)𝐷𝐷′) ≥ 𝛿(𝐷 ∖ 𝐷′), and it vanishes unless 𝐷′ ⊆ 𝐷. Put 𝐵 := 𝒜−1. Then (𝐵 ∘ (1 + 𝐸))−1 =
+(1 + 𝒜(𝐵 ∘ 𝐸))−1𝒜 = ∑𝑗≥0 (−1)𝑗[𝒜(𝐵 ∘ 𝐸)]𝑗𝒜, which converges because 𝒜(𝐵 ∘ 𝐸) ≡ 0 (mod 2). The (𝐷, 𝐷′)
+entry of the 𝑗‑th term is a sum over chains 𝐷 ⊇ 𝐸1 ⊇ 𝐹1 ⊇ ⋯ ⊇ 𝐸𝑗 ⊇ 𝐹𝑗 ⊇ 𝐷′ of products whose valuation is,
+by subadditivity, at least 𝛿(𝐷 ∖ 𝐸1) + 𝛿(𝐸1 ∖ 𝐹1) + 1 + ⋯ + 𝛿(𝐹𝑗 ∖ 𝐷′) ≥ 𝛿(𝐷 ∖ 𝐷′) + 𝑗. Since 𝑣2(𝒜𝐷𝐷′) is exactly
+𝛿(𝐷 ∖ 𝐷′), the terms 𝑗 ≥ 1 change 𝒜𝐷𝐷′ by a factor 1 + 𝐸′𝐷𝐷′ with 𝑣2(𝐸′𝐷𝐷′) ≥ 1, and they vanish where 𝒜
+does.                                                                                                            ∎
+Theorem 10.12 (rigidity). If the dance of Ξ along 𝑤 is clean, then 𝑀𝑤(Ξ) = 𝑀𝑤(Σ) ∘ (1 + 𝐸′) with
+𝑣2(𝐸′) ≥ 1 entrywise. Consequently 𝑀𝑤(Ξ) and 𝑀𝑤(Σ) have the same support and the same entry valuations,
+the same Smith form, and coker(Ξ on 𝑇(𝑙)) ≅ coker(Σ on 𝑇(𝑙)) ≅ 𝑋(𝛼)(𝑙, 𝑐).
+Proof. The dance of Σ is clean (Lemma 10.6). By Corollary 10.9 for Ξ and for Σ, with the same 𝛾, and
+Lemma 10.10, 𝑀𝑤(Ξ)−1 = 𝑀𝑤(Σ)−1 ∘ (1 + 𝐸) with 𝑣2(𝐸) ≥ 𝛼 − 1 ≥ 1; Lemma 10.11 inverts this. The Smith
+form of 𝑀(𝛼)(𝑙, 𝑐) is computed in Theorems 6.5 and 7.10 from the valuations of its entries and from its support
+alone: the tropical bound (Lemma 6.1) and the unique golden matching (Theorem 6.2) see nothing else.
+Since 𝑀𝑤(Σ) = 𝜂 · 𝑀𝑤(𝐹 + 𝜂−1𝜋(𝐷)) has the valuations and the support of 𝑀(𝛼)(𝑙, 𝑐) (Theorem D, with the
+payment 𝜂−1𝜋), all three matrices have the same Smith form. Proposition 10.7 gives the cokernels; and
+coker Σ ≅ coker(𝐹 + 𝜋(𝐷)) because 𝜂−𝐷(𝜂𝐹 + 𝜋(𝐷))𝜂𝐷 = 𝐹 + 𝜋(𝐷).                                               ∎
+The case 𝑐 = 0. Then 𝜋(0) = 0 and Ξ is not invertible. We treat it by continuity in §10.6.
+
+10.5 Cleanliness: the ring 𝒦
+Theorem 10.12 needs the dance of Ξ to be clean. This is not automatic: the payments are functions of the
+floor, and the moves mix floors.
+Positions. At level ℎ the dancers are the subsets 𝐷 of 𝑃ℎ := 𝐼 ∩ [0, ℎ). The position of the dancer 𝐷 at the
+level-ℎ floor 𝑓 is
+                                                𝑦 := 2ℎ𝑓 + 𝑜𝐷 + 𝑐,
+where 𝑐 is a fixed element of ℤ2 (the shift). A system 𝐺 of level ℎ is covariant if 𝐺[𝐷, 𝐷′] = 0 unless 𝐷′ ⊆ 𝐷,
+and there are functions ΓΔ,𝑚 such that
+                                      𝐺[𝐷, 𝐷′]𝑚(𝑓) = Γ𝐷∖𝐷′,𝑚(2ℎ𝑓 + 𝑜𝐷 + 𝑐)
+(the coefficient of 𝐹(𝑚) at the target floor 𝑓 depends only on Δ = 𝐷 ∖ 𝐷′, 𝑚 and the position of the target).
+
+
+                                                          37
+The ring 𝒦. Let 𝒦 be the set of functions 𝜗: ℤ2 → ℤ2 of the form
+                                𝜗(𝑦) = 𝑎 + 2𝜒(2𝑦), 𝑎 ∈ ℤ2, 𝜒 ∈ 𝑋 · ℤ2[[𝑋]]
+(the series converges at 𝑋 = 2𝑦).
+Lemma 10.13. (a) The representation (𝑎, 𝜒) of 𝜗 ∈ 𝒦 is unique. The set 𝒦 is a ring, it is stable under every
+shift 𝑦 ↦ 𝑦 − 𝑒 (𝑒 ∈ ℤ2), and 1/𝜗 ∈ 𝒦 when 𝑎 is odd.
+(b) Let 𝒮 := 𝔽2 ⊕ 𝜀 · 𝑋𝔽2[[𝑋]] with 𝜀2 = 0, a commutative ring of characteristic 2, and Θ(𝜗) := 𝑎 + 𝜀𝜒 (reduc‐
+tions modulo 2). Then Θ: 𝒦 → 𝒮 is a ring homomorphism, Θ(𝜗(·−𝑒)) = Θ(𝜗) for every 𝑒 ∈ ℤ2, and
+ker Θ = 2𝒦.
+(c) 𝜗(𝑦) ≡ 𝑎 (mod 4) for every 𝑦.
+Proof. (a) If 𝑎 + 2𝜒(2𝑦) = 𝑎′ + 2𝜒′(2𝑦) for all 𝑦 ∈ ℤ2, the power series (𝑎 − 𝑎′) + 2(𝜒 − 𝜒′)(2𝑌) in 𝑌 has coef‐
+ficients tending to 0 and infinitely many zeros, so it vanishes by Strassmann’s theorem [Str28].
+Products. (𝑎 + 2𝜒)(𝑏 + 2𝜔) = 𝑎𝑏 + 2(𝑎𝜔 + 𝑏𝜒 + 2𝜒𝜔).
+Shifts. 𝜒(𝑋 − 2𝑒) = 𝜒(−2𝑒) + 𝜒˜ (𝑋) with 𝜒˜ ∈ 𝑋ℤ2[[𝑋]], and 𝜒(−2𝑒) ∈ 2ℤ2.
+Inverses. (𝑎 + 2𝜒)−1 = 𝑎−1∑𝑗≥0 (−2𝜒/𝑎)𝑗.
+(b) The product rule in (a) reduces to (𝑎 + 𝜀𝜒)(𝑏 + 𝜀𝜔). Modulo 2, the coefficient ∑𝑛≥𝑗 𝑐𝑛𝐶(𝑛, 𝑗)(−2𝑒)𝑛−𝑗 of 𝑋𝑗
+in 𝜒˜ is ≡ 𝑐𝑗, and 2𝜒(−2𝑒) ∈ 4ℤ2; so Θ is shift-invariant. Finally, Θ(𝜗) = 0 means 𝑎, 𝜒 even, 𝜗 = 2(𝑎/2 +
+2(𝜒/2)(2𝑦)).
+(c) 2𝜒(2𝑦) ∈ 4ℤ2.                                                                                             ∎
+Let 𝒯ℎ be the set of covariant systems of level ℎ whose functions ΓΔ,𝑚 all lie in 𝒦, and let 𝑅𝒮 :=
+𝒮[𝐹(𝑚) : 𝑚 ≥ 1][𝐸𝑡 : 𝑡 ∈ 𝑃ℎ]/(𝐸2𝑡 ), a commutative ring (divided-power multiplication in 𝐹).
+Lemma 10.14. (a) 𝒯ℎ is a ring.
+(b) Θℎ(𝐺) := ∑Δ,𝑚 Θ(ΓΔ,𝑚)𝐹(𝑚)𝐸Δ (𝐸Δ := ∏𝑡∈Δ 𝐸𝑡) is a ring homomorphism 𝒯ℎ → 𝑅𝒮.
+(c) In 𝑅𝒮, every element 𝛽 satisfies 𝛽2 = 𝛽20, where 𝛽0 is its constant term.
+Proof. (a) For 𝐺, 𝐻 ∈ 𝒯ℎ,
+               (𝐺𝐻)[𝐷, 𝐷′]𝑚(𝑓) =      ∑ ∑ 𝐶(𝑚, 𝑎) · Γ𝐺𝐷∖𝐷 ,𝑎(𝑦) · Γ𝐻𝐷 ∖𝐷′,𝑏(𝑦 − 𝑎 · 2ℎ − 𝑜𝐷∖𝐷 ),
+                                    𝐷⊇𝐷1⊇𝐷′ 𝑎+𝑏=𝑚
+                                                                1        1                       1
+
+
+
+because the position of (𝐷1, 𝑓 − 𝑎) is 𝑦 − 𝑎 · 2ℎ − 𝑜𝐷∖𝐷1 (𝑜 is additive on disjoint sets). The sum over 𝐷1 is a
+sum over the decompositions Δ = (𝐷 ∖ 𝐷1) ⊔ (𝐷1 ∖ 𝐷′), so it depends only on Δ, 𝑚 and 𝑦, and lies in 𝒦 by
+Lemma 10.13(a). (b) Apply Θ to this formula: by shift-invariance the shifts disappear, and the sum over
+decompositions of Δ is the product of the 𝐸Δ. (c) 𝑅𝒮 is commutative of characteristic 2, so 𝛽2 = ∑𝜇 𝛽2𝜇𝜇2 over
+the monomials 𝜇 = 𝐹(𝑞)𝐸Δ, and 𝜇2 = 𝐶(2𝑞, 𝑞)𝐹(2𝑞)𝐸2Δ = 0 unless 𝜇 = 1 (𝐶(2𝑞, 𝑞) is even for 𝑞 ≥ 1, and
+𝐸2𝑡 = 0).                                                                                                      ∎
+Theorem 10.15 (cleanliness). Let 𝐺ℎ ∈ 𝒯ℎ satisfy
+(a) the payments are ≡ 0 (mod 4): Γ∅,0(𝑦) ∈ 4ℤ2 for every 𝑦;
+(b) the diagonal coefficients of 𝐹 are odd: Γ∅,1(𝑦) is a unit for every 𝑦. Then the move of level ℎ is clean, and
+𝐺ℎ+1 ∈ 𝒯ℎ+1 again satisfies (a) and (b). Consequently, for every 𝛼 ≥ 2, every 𝑐 ∈ ℤ2, every unit 𝜂 and all con‐
+stants 𝜁𝑚 ∈ ℤ2, the dance of 2𝛼(𝐷 + 𝑐) + 𝜂𝐹 + ∑𝑚≥2 𝜁𝑚𝐹(𝑚) on every 𝑇(𝑙) is clean.
+Proof. The twist move. The level does not change the dancers. The position of (𝐷, 𝑓′) at level ℎ + 1 is 𝑦′ =
+2ℎ+1𝑓′ + 𝑜𝐷 + 𝑐; the level-ℎ floors 2𝑓′ and 2𝑓′ + 1 have the positions 𝑦′ and 𝑦′ + 2ℎ. By the formulas of
+§10.3 the blocks have the coefficient functions
+                    𝐵: ΓΔ,2𝑞(𝑦′)/(2𝑞 − 1)!!,           𝐶: ΓΔ,2𝑞(𝑦′ + 2ℎ)/(2𝑞 − 1)!!,
+                    𝑃: ΓΔ,2𝑞+1(𝑦′ + 2ℎ)/(2𝑞 + 1)!!,    Dd: ((2𝑞 + 2)/(2𝑞 + 1)!!) · ΓΔ,2𝑞+1(𝑦′)
+
+
+
+                                                       38
+(the last is the coefficient of 𝐹(𝑞+1)). All four lie in 𝒯ℎ+1 (Lemma 10.13(a); the denominators are odd). The
+diagonal constant term of 𝑃 is Γ∅,1(𝑦′ + 2ℎ), a unit by (b), and the other terms of 𝑃 raise 𝑚 or Δ; so 𝑃−1 exists,
+is integral and lies in 𝒯ℎ+1 (a Neumann series in which each coefficient receives finitely many terms). So 𝑆 =
+Dd − 𝐵𝑃−1𝐶 ∈ 𝒯ℎ+1. Apply Θℎ+1: Θ(Dd) = 0, because every coefficient of Dd is (2𝑞 + 2) times an element
+of 𝒦; Θ(𝐵) = Θ(𝐶) =: 𝛽, because the shift by 2ℎ is invisible to Θ. In the commutative ring 𝑅𝒮,
+                                     Θ(𝑆) = −𝛽 · Θ(𝑃)−1 · 𝛽 = −𝛽2 · Θ(𝑃)−1,
+and 𝛽2 = Θ(Γ∅,0)2 by Lemma 10.14(c). By (a) and Lemma 10.13(c) the constant 𝑎 of Γ∅,0 is even, so
+Θ(Γ∅,0) = 𝜀𝜒 and 𝛽2 = 𝜀2𝜒2 = 0. So every coefficient function of 𝑆 lies in ker Θ = 2𝒦: the move is clean and
+𝐺ℎ+1 = 𝑆/2 ∈ 𝒯ℎ+1. For (a): the new payment is −Γ∅,0(𝑦′) · Γ∅,1(𝑦′ + 2ℎ)−1 · Γ∅,0(𝑦′ + 2ℎ)/2 (only constant
+terms contribute to the constant term, and Dd has none), which is ≡ 0 (mod 8). For (b): the coefficient of
+𝐹(1) on the diagonal of 𝑆 is 2Γ∅,1(𝑦′) (from Dd) minus terms of 𝐵𝑃−1𝐶 that each contain a constant term of 𝐵
+or of 𝐶, that is a payment ≡ 0 (mod 4); after division by 2 it is odd.
+The split move. First the 𝑉‑split: by §10.3 the dancer 𝐷 gives the dancers 𝐷 (𝑣 = 0) and 𝐷 ∪ {ℎ} (𝑣 = 1); the
+position of (𝐷 ∪ {ℎ}, 𝑔) is 2ℎ(𝑔 + 1) + 𝑜𝐷 + 𝑐 = 2ℎ𝑔 + 𝑜𝐷∪{ℎ} + 𝑐, so the diagonal blocks keep their functions
+ΓΔ,𝑚, and the new coupling from 𝐷′ to 𝐷 ∪ {ℎ} has Γnew Δ∪{ℎ},𝑚−1 := ΓΔ,𝑚 at the same position. The split system is
+covariant with functions in 𝒦 and still satisfies (a), (b). It has couplings with an odd constant term (Γnew{ℎ},0 =
+                                                              2                           2
+Γ∅,1); they are harmless, because in 𝑅𝒮 they carry 𝐸ℎ and 𝐸ℎ = 0, so they do not enter 𝛽 . Then the twist move,
+as above, with the dancers of 𝑃ℎ+1.
+The operators. At level 0 the only dancer is ∅, the position is 𝑦 = 𝑓 + 𝑐, and Γ∅,0(𝑦) = 2𝛼𝑦 = 2𝜒(2𝑦) with
+𝜒(𝑋) = 2𝛼−2𝑋, which is in 𝒦 because 𝛼 ≥ 2; Γ∅,1 = 𝜂, Γ∅,𝑚 = 𝜁𝑚.                                                    ∎
+Remarks. (1) At 𝛼 = 1 the payment 2𝑦 is not in 𝒦 (𝜒 would be 𝑋/2), and the cleanliness of the dance of 𝜎(1)𝑖
+(Lemma 10.6) comes from the fact that it is an even payment system. (2) The class 𝒦 is sufficient, not neces‐
+sary: every even payment system dances clean, whatever its payments (proof of Lemma 10.6(a), with
+Propositions 4.1 and 4.2). With higher divided powers some restriction is needed. We measured the dances
+on 𝑇(𝑙), 𝑙 = 2, …, 63, of 𝑝(𝐷) + 𝑢(𝐷)𝐹 + ∑𝑚≥2 𝜁𝑚𝐹(𝑚) with constant random integers 𝜁𝑚 ∈ [−5, 5], four for
+each 𝑙 (248 dances in each case; this is used nowhere, and the code is gate/remark2/, §12.1):
+      random payments 𝑝(𝑑) = 4𝑞(𝑑), 𝑞(𝑑) ∈ [−9, 9] non-zero, and 𝑢 = 1: three dances are not clean, all at
+      𝑙 = 63;
+      the payments 4(𝑑 + 𝑐), 𝑐 = 1, …, 4, and random odd 𝑢(𝑑) ∈ [−17, 19]: 79 dances are not clean, the first
+      at 𝑙 = 32.
+With the coefficients 𝜂𝑚 of Ψ0 in place of the random 𝜁𝑚, all 496 dances are clean.
+
+10.6 The odd families
+Theorem 10.16. Let 𝛼 ≥ 2, 𝑐 ≥ 0, 𝜂 ∈ 𝐴 a unit, 𝜁𝑚 ∈ ℤ2 constants and Ξ := 2𝛼(𝐷 + 𝑐) + 𝜂𝐹 + ∑𝑚≥2 𝜁𝑚𝐹(𝑚).
+Then for every 𝑙 ≥ 0, coker(Ξ on 𝑇(𝑙)) ≅ 𝑋(𝛼)(𝑙, 𝑐).
+Proof. For 𝑐 ≥ 1: Theorems 10.15 and 10.12. For 𝑐 = 0, let Ξ𝑐 and Σ′𝑐 := 2𝛼(𝐷 + 𝑐) + 𝜂𝐹 be the operators with
+the shift 𝑐 ∈ ℤ2. By Theorem 10.15 their dances are clean for every 𝑐 ∈ ℤ2, and the entries of their final
+matrices are continuous functions of 𝑐: each level is obtained from the previous one by ring operations, odd
+denominators, the inversion of a pivot whose diagonal constant term is a unit, and a division by 2 that stays
+integral. For 𝑐 = 2𝑛, 𝑛 ≥ 0, Theorem 10.12 gives 𝑀𝑤(Ξ𝑐) − 𝑀𝑤(Σ′𝑐) = 𝑀𝑤(Σ′𝑐) ∘ 𝐸′𝑐 with 𝑣2(𝐸′𝑐) ≥ 1, that is: for
+every entry, 𝑣2(𝑀𝑤(Ξ𝑐) − 𝑀𝑤(Σ′𝑐)) ≥ 𝑣2(𝑀𝑤(Σ′𝑐)) + 1 (both sides ∞ if the entry of 𝑀𝑤(Σ′𝑐) is 0). Let 𝑛 → ∞.
+Where 𝑀𝑤(Σ′0) has a non-zero entry, its valuation is that of 𝑀𝑤(Σ′2𝑛) for large 𝑛, and the inequality passes to
+the limit. Where it has a zero entry, 𝑣2(𝑀𝑤(Σ′2𝑛)) → ∞, hence 𝑣2(𝑀𝑤(Ξ2𝑛)) → ∞ and the entry of 𝑀𝑤(Ξ0) is 0.
+So 𝑀𝑤(Ξ0) has the support and the entry valuations of 𝑀𝑤(Σ′0), which are those of 𝑀(𝛼)(𝑙, 0) (Lemma 10.6 and
+
+
+                                                        39
+Theorem D). Theorem 7.10 at the shift 0 uses only these data, so the Smith forms agree, and the cokernels
+follow from Proposition 10.7.                                                                          ∎
+Corollary 10.17 (the fold law on the odd families). For every 𝑙 ≥ 0 and every 𝑗 ≥ 0,
+                                          𝑋(2𝑙 + 1, 𝑗) ≅ 2𝑋(2𝑙 + 1, 𝑗).
+Proof. Let 𝑐 = ⌈𝑗/2⌉. By §10.2, Ψ𝑗 = 4(𝐷 + 𝑐) + 𝜂𝐹 + ∑𝑚≥2 𝜂𝑚𝐹(𝑚) with constant integral 𝜂𝑚 and 𝜂 = 𝜂1 a unit
+(1 for even 𝑗, 1/3 for odd 𝑗). By Theorem 10.16 (𝛼 = 2), coker(Ψ𝑗 on 𝑇(𝑙)) ≅ 𝑋(2)(𝑙, 𝑐) = coker(Σ𝑐 on 𝑇(𝑙)).
+Lemma 10.4 identifies the two sides with 𝑋(2𝑙 + 1, 𝑗) and 2𝑋(2𝑙 + 1, 𝑗).                                  ∎
+
+10.7 The even families
+Lemma 10.5 presents both sides of an even family as glued systems of size 2 on 𝑁 = 𝑇(𝑙). Their arms are odd-
+family operators, which differ by multiples of 2. Two facts make the glue harmless: the dance modulo 2 sees
+only the operator modulo 2 (Lemma 10.18), and gluing commutes with the dance (Lemma 10.19). Then the
+second side differs from the first by a unit at the bottom of the dance (Lemma 10.20).
+Fix the shift 𝑐 ∈ ℤ2 used for the positions, and let 𝔞: 𝒦 → ℤ2, 𝑎 + 2𝜒(2𝑦) ↦ 𝑎. It is a ring homomorphism,
+and 𝔞(𝜗(·−𝑒)) = 𝔞(𝜗) + 2𝜒(−2𝑒) ≡ 𝔞(𝜗) (mod 4). So 𝔞 modulo 4 is a shift-invariant ring homomorphism;
+exactly as in Lemma 10.14, it induces a ring homomorphism from 𝒯ℎ to the commutative ring 𝑅ℤ/4 :=
+(ℤ/4)[𝐹(𝑚)][𝐸𝑡]/(𝐸2𝑡 ). By Lemma 10.13(c), every value 𝜗(𝑦) is ≡ 𝔞(𝜗) (mod 4).
+Lemma 10.18 (modulo 2). Let 𝐺, 𝐺′ ∈ 𝒯0 both satisfy (a) and (b) of Theorem 10.15, and suppose
+𝐺 ≡ 𝐺′ (mod 2) (every coefficient, at every position). Then 𝐺ℎ ≡ 𝐺′ℎ (mod 2) at every level ℎ.
+Proof. By induction it suffices to treat one twist move (a 𝑉‑split does not change the congruence). By
+Theorem 10.15, 𝑆 ∈ 2𝒯, so 𝔞(𝐺ℎ+1) = 𝔞(𝑆)/2, and 𝐺ℎ+1 modulo 2 is determined by 𝔞(𝑆) modulo 4. In 𝑅ℤ/4,
+                           𝔞(𝑆) ≡ 𝔞(Dd) − 𝛽2𝜋−1, 𝛽 := 𝔞(𝐵) ≡ 𝔞(𝐶), 𝜋 := 𝔞(𝑃),
+because the shift 2ℎ between 𝐵 and 𝐶 is invisible modulo 4. Now pass from 𝐺ℎ to 𝐺′ℎ, whose 𝔞‑image differs
+by 2𝛿. Then 𝔞(Dd) changes by a multiple of 4 (the factor 2𝑞 + 2). Next, 𝛽 changes to 𝛽 + 2𝛿′ and 𝛽2 by 4𝛽𝛿′ +
+4𝛿′2 ≡ 0 (commutativity). The inverse 𝜋−1 changes by −2𝜋−2𝛿′′ (mod 4), so 𝛽2𝜋−1 changes by −2𝛽2𝜋−2𝛿′′,
+which is ≡ 0 (mod 4) because 𝛽2 ≡ 0 (mod 2): modulo 2, 𝛽2 is the square of the constant term of 𝛽, that is of
+a payment, which is even. So 𝔞(𝑆′) ≡ 𝔞(𝑆) (mod 4), and 𝐺′ℎ+1 ≡ 𝐺ℎ+1 (mod 2).                                 ∎
+Lemma 10.19 (the glue). Let 𝑋, 𝑌 be systems of size 1 on 𝑇(𝑙) whose dances along 𝑤 are clean, with 𝑋ℎ ≡
+𝑌ℎ (mod 2) at every level ℎ. Then the dance of glue(𝑋, 𝑌) is clean, glue(𝑋, 𝑌)ℎ = glue(𝑋ℎ, 𝑌ℎ) at every level,
+and in particular 𝑀𝑤(glue(𝑋, 𝑌)) = glue(𝑀𝑤(𝑋), 𝑀𝑤(𝑌)).
+Proof. glue(𝑋, 𝑌) = 𝐿−1 diag(𝑋, 𝑌)𝐿 with the scalar matrix 𝐿 = 112 01 , which acts on the outer slot. Every move
+acts slot by slot on the inner structure, so the move of 𝐿−1𝑍𝐿 is 𝐿−1 times the move of 𝑍 times 𝐿: the pivot, the
+other blocks and the Schur complement are conjugated by 𝐿. For 𝑍 = diag(𝑋, 𝑌) the dance is the two dances
+side by side. So glue(𝑋, 𝑌)ℎ = glue(𝑋ℎ, 𝑌ℎ) as rational systems. A glued system glue(𝑈, 𝑈′) is integral if and
+only if 𝑈 ≡ 𝑈′ (mod 2); its pivot glue(𝑃𝑈, 𝑃𝑈′) is then invertible over ℤ2; and its Schur complement
+glue(𝑆𝑈, 𝑆𝑈′) is ≡ 0 (mod 2) if and only if 𝑆𝑈 ≡ 𝑆𝑈′ ≡ 0 (mod 2) and 𝑆𝑈 ≡ 𝑆𝑈′ (mod 4), that is 𝑈ℎ+1 ≡
+𝑈′ℎ+1 (mod 2).                                                                                                  ∎
+Lemma 10.20 (the bend). Let 𝑐 ≥ 1, Ψ := 4(𝐷 + 𝑐) + 𝜂𝐹 + ∑𝑚≥2 𝜁𝑚𝐹(𝑚) (𝜂 a unit, 𝜁𝑚 ∈ ℤ2 constants), Σ :=
+4(𝐷 + 𝑐) + 𝜂𝐹, and
+                                          𝑁± := 2𝑘 · out(Ψ ± 2)−1 in,
+with the maps out = out𝑘, in = in𝑘 of Lemma 10.8 (Ψ ± 2 is invertible: its payments 4(𝑑 + 𝑐) ± 2 never van‐
+ish). Then 𝑀𝑤(Ψ) · 𝑁± ∈ 2 · Mat(ℤ2).
+
+                                                       40
+Proof. Put 𝑤(𝑑) := 𝑣2(4(𝑑 + 𝑐)) − 1 = 1 + 𝑣2(𝑑 + 𝑐) ≥ 1 and 𝑊[𝑎, 𝑏] := ∑𝑏𝑑=𝑎 𝑤(𝑑). As in Corollary 10.9,
+(𝑁±)𝑌𝑋 = (𝑀𝑤(Σ)−1)𝑌𝑋 · 𝑅𝑌𝑋, where 𝑅𝑌𝑋 = 𝑦Ψ±2       Σ
+                                          𝐿 (𝑓)/𝑦𝐿(𝑓) on the window [𝑜𝑋, 𝑜𝑌 + 𝐾 − 1]. Expand 𝑦
+                                                                                               Ψ±2 as in
+
+Lemma 10.10. A composition, divided by the main term of 𝑦Σ, is
+                     ∏  𝜁𝑚 · 𝜂−𝐿
+                  ±(             ) · landed
+                             𝑖
+                     𝑖
+                                      ∏ 𝜋(𝑑)/(𝜋(𝑑) ± 2) · ∏ 𝜋(𝑑), 𝜋(𝑑) = 4(𝑑 + 𝑐).
+                       ∏
+                       𝑖
+                          𝑚𝑖 !                           skipped
+
+
+Here 𝑣2(𝜋(𝑑)/(𝜋(𝑑) ± 2)) = 𝑤(𝑑), 𝑣2(𝜋(𝑑)) = 𝑤(𝑑) + 1, and −∑𝑖 𝑣2(𝑚𝑖!) ≥ −𝑠′, where 𝑠′ is the number of
+skipped floors. So 𝑣2(𝑅𝑌𝑋) ≥ 𝑊[𝑜𝑋, 𝑜𝑌 + 𝐾 − 1]. By Theorem 10.12, 𝑀𝑤(Ψ) = 𝑀𝑤(Σ) ∘ (1 + 𝐸′), and 𝑀𝑤(Σ) =
+𝔡1𝒜𝔡2 with 𝑣2((𝔡1)𝐷) = −𝑊[0, 𝑜𝐷 − 1] + 𝑐0, 𝑐0 independent of 𝐷 (as 𝑣2(𝜋(𝑑)) = 𝑤(𝑑) + 1). Each term of
+(𝑀𝑤(Ψ)𝑁±)𝐷𝑋 = ∑𝑌 𝑀𝑤(Ψ)𝐷𝑌(𝑁±)𝑌𝑋 is non-zero only for 𝑋 ⊆ 𝑌 ⊆ 𝐷, and then has valuation at least
+      𝑣2((𝔡1)𝐷) − 𝑣2((𝔡1)𝑋) + 𝛿(𝐷 ∖ 𝑌) + 𝛿(𝑌 ∖ 𝑋) + 𝑊[𝑜𝑋, 𝑜𝑌 + 𝐾 − 1]
+                                                         = 𝛿(𝐷 ∖ 𝑌) + 𝛿(𝑌 ∖ 𝑋) + 𝑊[𝑜𝐷, 𝑜𝑌 + 𝐾 − 1] ≥ 1,
+because 𝑜𝐷 − 𝑜𝑌 = 𝑜𝐷∖𝑌 ≤ 𝐾 − 1, so the window [𝑜𝐷, 𝑜𝑌 + 𝐾 − 1] is non-empty and 𝑤 ≥ 1 on it. ((𝔡2)𝑌 cancels,
+and 𝑣2((𝒜−1)𝑌𝑋) ≥ 𝛿(𝑌 ∖ 𝑋), proof of Lemma 10.11.)                                                        ∎
+Corollary 10.21. In Lemma 10.20, the dances of Ψ(Ψ ± 2)/2 are clean, and
+        𝑀𝑤(Ψ(Ψ + 2)/2) = 𝑊+ · 𝑀𝑤(Ψ), 𝑀𝑤(Ψ(Ψ − 2)/2) = 𝑊− · 𝑀𝑤(Ψ), 𝑊± ∈ ±𝐼 + 2 · Mat(ℤ2).
+Proof. Cleanliness. Ψ ∈ 𝒯0 with (a), (b). By Lemma 10.14, Θ(Ψ2) = Θ(Ψ)2 = Θ(4𝑦)2 = 0 and Θ(2Ψ) = 0, so
+Ψ(Ψ ± 2) ∈ 2𝒯0 and Ψ(Ψ ± 2)/2 ∈ 𝒯0. Its payment is 4𝑦(4𝑦 ± 2)/2 = 4𝑦(2𝑦 ± 1) = 2𝜒(2𝑦) with 𝜒 = 𝑋2 ± 𝑋,
+which is ≡ 0 (mod 4). Its coefficient of 𝐹 is (𝜂 · 4(𝑦 − 1) + 4𝑦 · 𝜂 ± 2𝜂)/2 = 𝜂(4𝑦 − 2 ± 1), which is odd.
+Theorem 10.15 applies. The identity. By partial fractions (all operators are series in 𝐹 and 𝐷, and Ψ, Ψ ± 2
+commute), (Ψ(Ψ + 2)/2)−1 = Ψ−1 − (Ψ + 2)−1 and (Ψ(Ψ − 2)/2)−1 = (Ψ − 2)−1 − Ψ−1. By Lemma 10.8 applied
+to the clean dances of Ψ and Ψ(Ψ ± 2)/2 (same out, in):
+                       𝑀𝑤(Ψ(Ψ + 2)/2)−1 = 𝑀𝑤(Ψ)−1 − 𝑁+ = 𝑀𝑤(Ψ)−1(𝐼 − 𝑀𝑤(Ψ)𝑁+),
+so 𝑊+ = (𝐼 − 𝑀𝑤(Ψ)𝑁+)−1. Likewise 𝑊− = −(𝐼 − 𝑀𝑤(Ψ)𝑁−)−1. By Lemma 10.20, 𝑊± ≡ ±𝐼 (mod 2).                     ∎
+Theorem 10.22 (the fold law on the even families). For every 𝑙 ≥ 0 and every 𝑖 ≥ 0,
+                                          𝑋(2𝑙 + 2, 𝑖) ≅ 2𝑋(2𝑙 + 2, 𝑖).
+Proof. Let 𝑌0 := 1 + (−1)𝑖Sh−1, so that Ψ𝑖+1 = Ψ𝑖 + 2𝑌0 (§10.2). Take the positions 𝑦 = 𝑓 + ⌈𝑖/2⌉ at level 0. In
+these positions both Ψ𝑖 and Ψ𝑖+1 lie in 𝒯0 with (a) and (b): their payments are 4𝑦 and 4(𝑦 + [𝑖 even]), their
+coefficients of 𝐹 are the units 1, 1/3, and their other coefficients are constants.
+The arms are congruent. Ψ𝑖+1 − Ψ𝑖 = 2𝑌0 ≡ 0 (mod 2). For the second side put 𝑈 := Ψ𝑖+1(Ψ𝑖+1 − 2)/2 and
+𝑈′ := Ψ𝑖(Ψ𝑖 + 2)/2, both in 𝒯0 with (a) and (b) (proof of Corollary 10.21). With Ψ := Ψ𝑖,
+                  𝑈 − 𝑈′ = Ψ𝑌0 + 𝑌0Ψ − 2Ψ + 2𝑌20 − 2𝑌0 ≡ [Ψ, 𝑌0] = 4[𝐷, 𝑌0] ≡ 0 (mod 2),
+because 𝑌0 and the 𝐹‑part of Ψ are power series in 𝐹 with constant coefficients and commute, while Ψ con‐
+tains 4𝐷. (Ψ𝑖 and 𝑌0 do not commute, so the product (Ψ𝑖+1 + Ψ𝑖)(𝑌0 − 1) is not the difference.)
+The case 𝑖 ≥ 1. By Lemma 10.18 the arms dance congruently modulo 2, so by Lemma 10.19 the dances of
+glue(Ψ𝑖+1, Ψ𝑖) and glue(𝑈, 𝑈′) are clean, and by Corollary 10.21 (with Ψ𝑖+1 and Ψ𝑖, whose shifts ⌈(𝑖 + 1)/2⌉,
+⌈𝑖/2⌉ are ≥ 1)
+           𝑀𝑤(glue(𝑈, 𝑈′)) = glue(𝑊−𝑀𝑤(Ψ𝑖+1), 𝑊+𝑀𝑤(Ψ𝑖)) = glue(𝑊−, 𝑊+) · 𝑀𝑤(glue(Ψ𝑖+1, Ψ𝑖)),
+since glue(𝑋, 𝑌) · glue(𝑋′, 𝑌′) = glue(𝑋𝑋′, 𝑌𝑌′). Now glue(𝑊−, 𝑊+) = (𝑊+ −𝑊𝑊
+                                                                           −       0 is integral (𝑊 ≡ 𝐼 and
+                                                                             −)/2 𝑊+               +
+𝑊− ≡ −𝐼 (mod 2), so 𝑊+ − 𝑊− ∈ 2 · Mat(ℤ2)) and has invertible diagonal blocks, so it lies in GL(ℤ2). The
+
+
+                                                       41
+two final matrices are associates and have the same Smith form; Proposition 10.7 and Lemma 10.5 give
+𝑋(2𝑙 + 2, 𝑖) ≅ 2𝑋(2𝑙 + 2, 𝑖).
+The case 𝑖 = 0. Then Ψ0 = 4𝐷 + 𝑢 · tanh(𝑢/2) is not invertible. Replace the shift by a parameter: 𝑖 = 2𝑐, 𝑐 ∈ ℤ2,
+with payments 4(𝐷 + 𝑐) for Ψ𝑖 and 4(𝐷 + 𝑐 + 1) for Ψ𝑖+1. Every object above is continuous in 𝑐: the dances are
+clean for every 𝑐 (Theorem 10.15 and Lemmas 10.18 and 10.19); 𝑁+ uses (Ψ𝑖 + 2)−1, whose payments
+4(𝑑 + 𝑐) + 2 never vanish, and 𝑁− uses (Ψ𝑖+1 − 2)−1, with payments 4(𝑑 + 𝑐 + 1) − 2. For 𝑐 = 2𝑛, 𝑛 ≥ 0, we
+have 𝑀𝑤(Ψ𝑖)𝑁+ ∈ 2 · Mat, 𝑀𝑤(Ψ𝑖+1)𝑁− ∈ 2 · Mat, and the identity
+                            𝑀𝑤(glue(𝑈, 𝑈′)) = glue(𝑊−, 𝑊+) · 𝑀𝑤(glue(Ψ𝑖+1, Ψ𝑖)),
+with 𝑊± = ±(𝐼 − 𝑀𝑤(·)𝑁±)−1. The set 2 · Mat(ℤ2) is closed, so at 𝑐 = 0 the products 𝑀𝑤(Ψ0)𝑁+ and
+𝑀𝑤(Ψ1)𝑁− still lie in 2 · Mat; then 𝑊± are defined and ≡ ±𝐼 (mod 2) there, and the identity passes to the
+limit. So the final matrices are associates at 𝑐 = 0 as well.                                           ∎
+
+10.8 Proof of Theorem DW, and the folded cube
+Proof of Theorem DW. By Proposition 10.3 it suffices that 𝑋(𝜆, 𝑖) ≅ 2𝑋(𝜆, 𝑖) for every 𝜆 ≥ 1 and every 𝑖 ≥ 0. For
+𝜆 = 2𝑙 + 1 this is Corollary 10.17, and for 𝜆 = 2𝑙 + 2 Theorem 10.22.                                           ∎
+Proof of Corollary 1.4. The 2‑part is Theorem DW: Syl2 𝐾(𝑛) ≅ 2 · Syl2 𝐾(𝑄𝑛) is Syl2 𝐾(𝑄𝑛) with every exponent
+lowered by one, the 𝑎𝑛 factors ℤ/2 disappearing (Corollary 1.5). The odd part is given by [GMMY24,
+Proposition 1.9].                                                                                            ∎
+The mod-2 layer. Let 𝐿 be the Laplacian of the folded cube, a square matrix of size 2𝑛−1 (𝑛 ≥ 2), with
+coker 𝐿 ≅ ℤ ⊕ 𝐾(𝑛). Its invariant factors divisible by 2 are the zero one and one for each cyclic factor of
+Syl2 𝐾(𝑛). By Corollary 1.5, Syl2 𝐾(𝑄𝑛) has 2𝑛−1 − 1 cyclic factors, of which 𝑎𝑛 are ℤ/2; by Theorem DW,
+Syl2 𝐾(𝑛) has 2𝑛−1 − 1 − 𝑎𝑛. So rank𝔽2 𝐿 = 2𝑛−1 − (2𝑛−1 − 𝑎𝑛) = 𝑎𝑛. This is [GMMY24, Proposition 2.12] (with
+their 𝑟 = 𝑛 − 1). Their Remark 2.13 asks whether its coincidence with Bai’s count of the factors ℤ/2 of 𝐾(𝑄𝑛)
+is a «special case of some deeper connection». Theorem DW is such a connection: the coincidence is its first
+layer.
+Remark (what the fold sees). The proof uses the antipode 𝑎 = 𝑥1⋯𝑥𝑛 through Lemma 10.1 only: 𝑎 is
+(−1)(𝑛−𝐻)/2 exp(𝐹), an operator built from the weight and the divided powers of 𝐹, so it is carried by the family
+decomposition of Theorem 3.6. An element such as 𝑥1𝑥2 acts on two tensor factors only; it is not of this kind,
+and the quotient by it does not halve the group (we checked 3 ≤ 𝑛 ≤ 12, §12).
+
+11. Open questions
+    1. Other quotients of the cube. The Cayley graphs of 𝔽𝑟2 are the quotients of cubes by binary linear
+       codes [IKKY23, Proposition 37], and those containing 𝟙 — the «non-generic» ones in the sense of
+       [GMMY24], see also [Yue24] — are built from the folded cube by successive quotients of codimension
+       one [GMMY24, §2.2]. Does the method of §10 compute their 2‑parts? The antipode was special
+       because it is ±exp(𝐹) on every family (Lemma 10.1); a general code element acts on some tensor fac‐
+       tors only.
+    2. The turned lid. Write 𝐶𝑏 := 𝑄𝑏/⟨𝟙⟩ (so 𝐶1 is a point). For 𝑎 + 𝑏 = 𝑛, the graph 𝑄𝑎 □ 𝐶𝑏 is the quotient
+       of 𝑄𝑛 by a translation of weight 𝑏. We measured, for every 𝑛 ≤ 12 and every 𝑏, that Syl2 𝐾(𝑄𝑎 □ 𝐶𝑏) ≅
+       Syl2 𝐾(𝑄𝑏 □ 𝐶𝑎), although the graphs are not isomorphic and the odd parts differ; and that
+       2 · Syl2 𝐾(𝑄𝑛) ≅ Syl2 𝐾(𝑄𝑎 □ 𝐶𝑏) holds only for 𝑏 = 𝑛 (Theorem DW). Theorem DW is the degenerate
+       end of this symmetry (the twin of 𝑏 = 𝑛 would be the quotient by 0). We have no proof.
+
+
+
+                                                       42
+    3. A direct proof of the fold law. Reiner and Tseng give an exact sequence 0 → 𝐾(𝐺±) → 𝐾(𝑄𝑛) →
+       𝐾(𝑛) → 0 for the double cover 𝑄𝑛 → 𝑄𝑛/⟨𝟙⟩ (𝑛 ≥ 3), with 𝐾(𝐺±) the critical group of a signed graph
+       [RT14]. Theorem DW identifies the 2‑part of the target, abstractly, with 2 · Syl2 𝐾(𝑄𝑛). Is there a proof
+       through the signed graph, without tilting modules?
+    4. The meaning of pooling. The integer antitonic fit appears because the Smith form of 𝑀(𝜆, 𝑖) is gov‐
+       erned by the cheapest matchings of a triangular cost matrix (§6–§7). Is there a module-theoretic rea‐
+       son, such as a filtration of 𝑋(𝜆, 𝑖) whose layers are the pooled blocks?
+    5. Other primes and other graphs. For the Hamming graphs 𝐻(𝑛, 𝑝), 𝑝 odd, the group ring ℤ[(ℤ/𝑝)𝑛]
+       is the 𝑛‑th tensor power of ℤ[ℤ/𝑝], and the Laplacian is again a sum over the tensor factors. Is there a
+       decomposition of their 𝑝‑parts over tilting modules of a suitable group in characteristic 𝑝?
+    6. Formal verification. No part of this paper has been checked by a proof assistant. The dance (§4,
+       §10.3) and the valuation arguments (§5–§7) are finite and explicit, and seem suited to it.
+
+12. Computations
+
+12.1 The checks published with this paper
+All the checks below were run on a laptop, under a watchdog with limits on memory and time; a log counts
+only if it ends with the watchdog’s final line. The code is in the folder gate/ that accompanies this paper. A
+control is a deliberately wrong variant that must fail; «none» means that the row has no control.
+ statement, and the code that                range                    result                     control
+ checks it
+ Main Theorem against the                    𝑛 = 2, …, 11             10/10 and 10/10            the rule without pooling fails at
+ direct 2‑adic Smith form of the                                                                 𝑛 = 6, 10; the rule without the
+ Laplacian of 𝑄𝑛; Theorem DW against                                                             term ℎ(𝐷) at 𝑛 = 2 and 4, …, 11;
+ that of 𝑄𝑛/⟨𝟙⟩; code gate_direct.py                                                             𝑄𝑛/⟨𝑥1𝑥2⟩ in place of the folded
+                                                                                                 cube fails for every 𝑛 = 3, …, 11
+ Theorem D: direct Smith form of 𝜎(𝛼)
+                                   𝑖         𝜆 ≤ 40, 𝛼 = 1, 2,        432/432; 0 mismatches      the closed form without the
+ on 𝑇(𝜆) against small                       𝑖 ≤ 6,                                              factor 2𝑜(Δ) differs from the
+ clocks ⊕ coker(2𝑘𝑀);                        dim 𝑇(𝜆) ≤ 64                                       dance in 420/420 cells, and
+ Theorem 4.4 against the dance; code                                                             predicts a wrong Smith form in
+ gate_dance.py                                                                                   262
+ Propositions 5.2 · 5.3 · 5.4 (5.2 against   𝜆 < 64; 𝑖 = 1, …, 40     109 200 matrix entries ·   none
+ the closed form of Theorem 4.4; of 5.4,     (𝛼 = 1, 2 for 5.2,       14 560 clocks ·
+ the formula for the clocks 𝑢0(𝐷),           𝛼 = 1 for 5.3);          301 clocks, 0 failures
+ 𝐷 ≠ ∅); code gate_sections5to7.py           𝑖 = 0, 𝛼 = 1 for 5.4
+ Theorem 7.10: Smith form of 𝑀               𝜆 < 64, 𝑖 ≤ 12,          1 638 cells, 0 failures    the raw clocks, without pooling,
+ against the pooled clocks; code             𝛼 = 1, 2                                            are rejected in all 322 cells
+ gate_sections5to7.py                                                                            where pooling changes them
+ Theorem 7.8: the construction of 𝑉          houses with 𝐼 ≠ ∅        16 002 houses, 48 006      without gold, (G) fails in
+ and the claims of its proof, for three      and 𝑘 ≤ 6                house-checks,              164 houses (𝜆 < 64, 𝛼 = 1); with
+ admissible prices 𝑐𝐹; code                  (𝜆 ≤ 126), 𝛼 ≤ 3,        0 failures                 𝑐𝐹 := 𝑣′(𝐼′), in 24
+ gate_sections5to7.py                        every ℓ
+
+
+
+
+                                                                 43
+ statement, and the code that               range                   result                      control
+ checks it
+ Theorem 7.8, strict (Cut);                 every house with        16 380 houses,              strictness tested one dancer
+ Lemma 7.2(b) where it is applied: the      𝑘 ≤ 6, 𝛼 ≤ 3            8 001 boundaries,           after the boundary fails in
+ penalty shifts 𝑃𝑟, 𝑃𝑐 ≤ 4 and the                                  192 024 non-zero shifts     1 911 of 7 038 houses; the shift
+ deletion at 𝑖 = 0; code                                            (24 on each house with      moved one dancer late breaks
+ gate_strict_cut.py                                                 a boundary),                the integer shift in 18 606 of
+                                                                    360 deletions,              192 024
+                                                                    0 failures
+ Lemma 7.9: the fit of 𝑥𝐻, of its shifts    the same                0 non-integral values       𝑥𝐻 with 1 added at its first
+ and of its deletions is integral; code                                                         dancer (not a house) has a non-
+ gate_strict_cut.py                                                                             integral fit in 1 942 houses
+ Lemma 7.2(b) on random sequences;          20 000 sequences        0 failures                  jumps of 𝛿 at cuts that are not
+ code gate_lemma72.py                       of length ≤ 9                                       strict break the integer part in
+                                                                                                189 of 2 841 trials
+ Theorem 6.2: exactly one golden            |𝐼| ≤ 5, every 𝑟        69 cases, 0 failures        «golden» replaced by «any
+ bijection; code gate_theoremO.py                                                               subset» or by «any run of
+                                                                                                digits»: the count is not 1 in
+                                                                                                42 and in 26 cases
+ Corollary 1.5 · Lemma 9.7 ·                𝑛 ≤ 200                 199 · 199 · 197 values,     none (a counter shows that
+ Corollary 1.6; code gate_section9.py                               0 failures                  𝑐𝑛 = 𝐺 fails for 37 values of 𝑛)
+ Propositions 9.3 · 9.4 · 9.6; code         𝜆 ≤ 300                 300 · 292 · 22 500 cells,   none (a counter shows that the
+ gate_section9.py                                                   0 failures                  bound 𝑔(𝑛 − 𝑖) is exceeded in
+                                                                                                298 cells)
+ Corollary 1.7; code gate_section9.py       𝑒 = 1, …, 8             8/8                         none
+ the weights 𝜂𝑚, 𝜂′𝑚 of §10.2: the          𝑚 ≤ 39                  0 failures                  none
+ Bernoulli formulas, and 𝑣2 = 0; code
+ gate_section10.py
+
+ Lemma 10.1 on 𝑉⊗𝑛; code                    𝑛≤6                     0 failures                  none
+ gate_section10.py
+
+ Lemmas 10.4 and 10.5, both sides, and      𝜆 ≤ 22, 𝑖 ≤ 5           66 + 66 + 66 + 66 and       the sign-free fold fails in
+ 𝑋(𝜆, 𝑖) ≅ 2𝑋(𝜆, 𝑖), on the lattices 𝑇(𝜆)                           132/132                     124/132; a wrong sign in Ψ𝑗 fails
+ of §3.3; code gate_section10.py                                                                66/66
+ Remark (2) of §10.5 (a measurement);       𝑙 = 2, …, 63,           as stated there             none
+ code gate_remark2.py, in remark2/          seed 11
+
+The folder remark2/ contains three engines of the project, copied unchanged, and the driver that sets the
+four experiments of the remark. The direct computations of the first row also give the example of §1.3:
+Syl2 𝐾(𝑄5) = {1: 6, 3: 4, 4: 1, 6: 4} and Syl2 𝐾(5) = {2: 4, 3: 1, 5: 4}.
+
+
+
+
+                                                               44
+12.2 Independent re-computations
+Six readers of the project (Appendix A) recomputed what follows, each with code of its own, never the
+authors’. Their code and logs are part of the project’s record. As in §12.1, «none» means that the row has no
+control; «fires» means that the reader’s control failed, as it must.
+ statement                        reader   range                   result                    control
+ Main Theorem against the         1        𝑛 ≤ 13                  12/12                     fires
+ Smith form of the Laplacian
+ of 𝑄𝑛
+ Main Theorem, from the rule      3        𝑛 ≤ 12                  12/12 and 12/12           the rule without the lowest
+ as printed in §1;                                                                           digit of 𝐼, 𝑎𝑛 ± 1, and 𝑄𝑛/⟨𝑥1𝑥2⟩
+ Theorem DW                                                                                  fail
+ Theorem DW, in the vertex        2        𝑛 ≤ 12                  11/11                     𝑄𝑛/⟨𝑥1𝑥2⟩ fails for 𝑛 = 3, …, 12
+ basis
+ Gao et al.’s Table 1             3        𝑛 = 7, …, 11            agrees entry by entry     none
+ the recursion of §1.2 against    1, 3     even 𝑛 ≤ 64             32/32                     fires
+ Larsen’s fusion rule
+ [Lar24, §2]
+ Theorem 7.8                      1        houses with             0 failures                none
+                                           𝜆 ≤ 255, 𝛼 ≤ 4
+ Theorem 7.8, every claim of      3        all houses with         43 690 houses,            two wrong prices of the central
+ its proof, strict (Cut), the              𝑘 ≤ 7, 𝛼 = 1, 2,        0 failures                flat are detected in 2 550 and
+ integer separation of adjacent            penalties ≤ 6                                     2 808 of 3 979 houses
+ level sets (Lemma 7.9 of
+ version 2), the integer shifts
+ Theorems D and 7.10 on the       3        𝜆 ≤ 63, 𝑖 ≤ 8,          1 401 cells, 0 failures   the raw clocks are rejected in
+ lattices 𝑇(𝜆)                             𝛼 = 1, 2                                          all 274 cells where pooling acts
+ Theorem 7.10 on the              3        𝜆 ≤ 127, 𝑖 ≤ 30,        7 874 cells, 0 failures   the raw clocks are rejected in
+ matrices 𝑀                                𝛼 = 1, 2                                          all 1 876 cells where pooling
+                                                                                             acts
+ Theorem 7.8, strict (Cut), the   4        every house with        65 532 houses, 777 240    a price of the central flat one
+ integer separation of adjacent            𝑘 ≤ 7, 𝛼 ≤ 3            non-zero shifts,          above or one below the
+ level sets (Lemma 7.9 of                                          741 deletions,            interval fails in 10 374 houses
+ version 2), the penalty shifts                                    0 failures                each; the shift one dancer late
+ 𝑃𝑟, 𝑃𝑐 ≤ 4 and the deletion at                                                              fails in 78 070 of 721 872;
+ 𝑖=0                                                                                         strictness one dancer after the
+                                                                                             boundary fails in 7 967 of
+                                                                                             30 078
+ Theorem 7.10 on the              4        𝜆 ≤ 127, 𝑖 ≤ 30,        7 874 cells, 0 failures   the raw clocks are rejected in
+ matrices 𝑀                                𝛼 = 1, 2                                          all 1 834 cells with 𝑖 ≥ 1 where
+                                                                                             pooling acts; the penalty one
+                                                                                             dancer late in all 1 904
+ Lemma 7.2(b), restated, on       4        50 000 sequences        0 failures                a jump at a cut that is not strict
+ random sequences                          of length ≤ 10                                    breaks the integer part in
+                                                                                             736 of 9 939 trials
+
+
+
+
+                                                              45
+statement                        reader   range                  result                  control
+Lemma 7.9 (integrality)          4        every house with       no non-integral level   none
+                                          𝑘 ≤ 7, 𝛼 ≤ 3, and      set
+                                          the 7 634 cells of
+                                          the row above
+                                          other than the
+                                          240 with 𝑖 = 0 and
+                                          𝐼 ≠ ∅ (the
+                                          7 620 with 𝑖 ≥ 1,
+                                          and the 14 with
+                                          𝑖 = 0 and 𝐼 = ∅,
+                                          where 𝑀 = 0)
+Lemma 7.9; the strict (Cut);     5        every house with       0 failures              𝑥𝐻 with 1 added at its first
+Lemma 7.2(b) at the penalty               𝑘 ≤ 7, 𝛼 ≤ 3                                   dancer: non-integral in
+shifts; the deletion at 𝑖 = 0             (65 532); penalties                            1 942 of 16 380 houses;
+                                          𝑃𝑟, 𝑃𝑐 ≤ 4 on the                              strictness one dancer after the
+                                          8 001 houses with                              boundary fails in 7 967 of
+                                          𝑘 ≤ 6 that have a                              30 078
+                                          boundary
+                                          (192 024 cells);
+                                          741 deletions
+§1.2 (the rounding never         5        every family           0 failures              for the integrality: the raw
+acts); Propositions 5.3,                  𝜆 ≤ 255, every                                 clocks with 1 added at the first
+5.4 and Lemma 7.5;                        shift 𝑖 ≤ 40                                   dancer have a non-integral
+Proposition 9.6 (H)                       (10 455 cells; (H)                             block mean in 2 316 of the
+                                          on the 10 200 with                             9 880 cells with 𝐼 ≠ ∅ and
+                                          𝑖 ≥ 1)                                         𝑖 ≥ 1; none for (H) and
+                                                                                         Lemma 7.5
+Theorem 6.2                      3        |𝐼| ≤ 5                69/69                   «any run» and «any subset»
+                                                                                         fail in 26 and 42 cases
+Corollaries 1.5, 1.6 (from the   3        𝑛 ≤ 300; 𝑒 ≤ 8         0 failures              a wrong exponent in
+rule) and 1.7                                                                            Corollary 1.5 and a wrong
+                                                                                         constant in Corollary 1.6 fail
+                                                                                         for 149 and 65 values of 𝑛
+odd part of Corollary 1.4        3        𝑝 = 3, 5, 7, 𝑛 ≤ 11    30/30                   fires
+𝑋(𝜆, 𝑖) ≅ 2𝑋(𝜆, 𝑖) on explicit   2        𝜆 ≤ 20, 𝑖 ≤ 6          140/140                 𝜆 = 0 and the sign-free fold fail
+lattices
+𝑋(𝜆, 𝑖) ≅ 2𝑋(𝜆, 𝑖) from the      3        𝜆 ≤ 63, 𝑖 ≤ 8          513/513                 𝑎 replaced by −𝑎 fails 513/513
+definition
+𝑇(𝜆)/(𝜏𝑖𝑇(𝜆) + (𝑎 − 1)𝑇(𝜆))
+the formal dance of Ψ𝑗: clean,   3        𝑙 ≤ 31, 𝑗 ≤ 7          256/256                 𝛼 = 1, and a coefficient of 𝐹(2)
+with the support, the entry                                                              depending on the parity of the
+valuations and the Smith                                                                 floor, fail
+form of 𝑀(2)(𝑙, ⌈𝑗/2⌉)
+(Theorems 10.12, 10.15,
+10.16)
+Theorem 10.15: one move on       2        levels 0–3, 1–4        800/800                 none
+random covariant systems                  dancers
+
+
+
+                                                            46
+ statement                    reader    range                  result                    control
+ Lemma 10.20                  2         𝑙 ≤ 24, 𝑐 = 1, …, 4,   96/96 for each kind       𝛼 = 1 and Ψ ± 4 fail in
+                                        three kinds of         and sign                  95/96 and 71/72
+                                        weights
+ the turned lid (§11,         3         𝑛 = 3, …, 12,          0 failures (a             none
+ question 2)                            every 𝑏                measurement)
+ the cells of the rows of     6         𝜆 ≤ 127, 𝑖 ≤ 30,       7 874 cells: 254 with     the controls of
+ readers 4 and 5;                       𝛼 = 1, 2; houses       𝑖 = 0 (240 with 𝐼 ≠ ∅),   reader 5 reproduced: 1 942 of
+ Lemma 7.9 on houses and on             with 𝑘 ≤ 6, 𝛼 ≤ 3;     7 620 with 𝑖 ≥ 1;         16 380 houses, 2 316 of
+ the cells of §1.2                      𝜆 ≤ 255, 𝑖 ≤ 40        16 380 houses and         9 880 cells
+                                                               10 455 cells, no non-
+                                                               integral fit
+
+
+13. Exact status
+       Proved, with the grade «pencil, audited, read cold»: the Main Theorem; Theorem D; Theorems O
+       and F; Theorem DW and Corollary 1.4; Corollaries 1.5, 1.6 and 1.7. Their proofs were read cold as text
+       in version 1, which had one gap (Lemma 7.2(b)); the repair of version 2 (the restated Lemma 7.2(b),
+       the strict (Cut) of Theorem 7.8, and their uses in Theorem 7.10 and Proposition 9.6) was read cold in
+       its turn; and the changes of version 3, among them Lemma 7.9, on which the printed proof of the
+       Main Theorem now rests (§8, Theorem 7.10), were read cold by a fifth reader, and the changes of ver‐
+       sion 4 by a sixth (Appendix A).
+       Added in version 3, audited, read cold: Lemma 7.9 in its new form (integrality of the fit), found and
+       proved by the fourth reader, re-proved by the auditor, and re-derived by the fifth reader. No statement
+       of a theorem changed in versions 2, 3, 4 or 5. Lemma 7.2(b) was restated in version 2. In version 3,
+       Lemma 7.9 was strengthened, Lemma 10.6(a) gained the hypothesis «even», and Lemma 10.10 gained
+       the explicit quantifier «for every 𝐿 ≥ 0 and every floor 𝑓».
+       Changed in version 4, audited, read cold: the corrections of the fifth reading and the typesetting
+       (Appendix A). No mathematical statement changed.
+       Changed in version 5, audited, not yet read cold: the corrections of the sixth reading and the type‐
+       setting (Appendix A). No mathematical statement changed.
+       Measured, not proved: the turned lid (§11, question 2), and the measurements of Remark (2) of
+       §10.5.
+       Not done: a cold reading of the changes of version 5; a human referee; a formal verification.
+No human expert has refereed any part of this work. The results are stated as theorems because every step
+has a written proof that was re-derived by readers other than its author. That is not a substitute for
+refereeing.
+
+Acknowledgements and use of AI
+The mathematics of this paper was developed with extensive use of Claude, an AI system made by
+Anthropic, working under the author’s direction in separate roles:
+       instances that proposed and wrote proofs, each from a written mission;
+       instances that re-derived them step by step and ran their own checks;
+
+
+                                                         47
+      instances that read the chains, and then the whole text, cold, with no access to the audits
+      (Appendix A).
+The author directed the project and takes responsibility for the content.
+The work took four days, from 2 to 5 October 2026. It began on 2 October 2026 as a search, inside another
+project of the author, for open problems within reach of the same methods. The full record — the missions,
+the reports, the audits, the cold readings, the engines and their logs, including the routes that failed — is kept
+with the project and is available from the author.
+
+Appendix A. How this work was done
+Writing and checking. The proofs were found, family of statements by family of statements, by separate
+instances of an AI system working as constructors, each from a written mission and in a folder of its own
+(«flights» 1 to 9, 3–5 October 2026). Each flight was then audited by a different instance, which re-derived
+every step in its own words, marked it CORRECT, GAP or ERROR, and ran its own engines (never the con‐
+structor’s) with controls built to fail. A step went into the chain only after the audit. The chains and then the
+text were read by cold readers: further instances that never saw the audits, and wrote their own verdicts and
+their own code. Every computation ran under a watchdog with limits on memory and time, and every log is
+checked for its final line.
+Readings.
+      The Main Theorem (flights 1–4: Theorems D, O, U, F and the integer fit). Audited flight by flight.
+      Read cold on 4 October (cold reader 1), from the statements and the flights’ reports, with no access to
+      the audits: «holds», every link re-derived, with three remarks on presentation, applied in version 1.
+      Corollaries 1.5–1.7 (flights 5–6). Audited, with the auditor’s own gates; read cold numerically by cold
+      reader 1 (𝑛 ≤ 64), and as text with version 1 (below).
+      Theorem DW (flights 6–9). Audited flight by flight. Read cold on 5 October (cold reader 2), with no
+      access to the audits: «holds», with six remarks on presentation and a priority search, applied in ver‐
+      sion 1.
+      Version 1 of this text was written by the auditor from the flights, the audits and the readings. Two
+      parts were new in the writing: the proof of Theorem 6.2 by top bits, and the organization of §10 around
+      Theorems 10.12 and 10.15. It was read cold as a whole on 5 October 2026 (cold reader 3) by a reader
+      with no access to the flights, the audits or the earlier readings, who re-derived every numbered state‐
+      ment and wrote its own code: «holds with gaps». It found one gap: the integer part of Lemma 7.2(b)
+      is false as stated (the example in its proof), and it was used in Theorem 7.8 (step 1), Lemma 7.9,
+      Theorem 7.10 and Proposition 9.6. No theorem is affected. Version 2 restates Lemma 7.2(b), adds strict
+      (Cut) to Theorem 7.8 with its proof, and cites it at each use; this repair is the reader’s, re-derived by the
+      auditor and checked by machine (§12.1). The reader also found that Remark (2) of §10.5 stated more
+      than had been measured, that the quotation of [Aky26] had been trimmed so as to change its meaning,
+      that four entries of the verification record said more than the code did (the range of Theorem 6.2, the
+      houses of Theorem 7.8 counted as house-checks, a control announced and not implemented in
+      gate_dance.py, and rows resting on code not printed), and about thirty points of presentation; all are
+      corrected in version 2.
+      Version 2 repaired the gap. Its changes were read cold on 5 October 2026 (cold reader 4) by a reader
+      with no access to the flights, the audits or the earlier readings, who re-derived every changed step,
+      checked the repair on every house with 𝑘 ≤ 7 and against the Smith form of 𝑀 in 7 874 cells, and wrote
+      its own code: the repair holds. It found one false sentence (Remark (2) of §10.5 said «every payment
+
+                                                        48
+system» where Proposition 4.1 needs an even one; the author then found the same word missing in
+Lemma 10.6(a), harmless because its only use is for an even system), two rows of §12.1 that said more
+than their code (zero shifts counted as shifts, and a range wider than the one run), a control that did
+not control the house check, and points of presentation, the main one being that the cases of the proof
+of Theorem 7.8 ran together in the pdf. It also found, with a two-line proof, that the fit of every house
+is integral, so the rounding of the integer fit never acts in this paper: the gap of version 1 was a gap of
+proof, never of conclusion.
+Version 3 states that integrality as Lemma 7.9, makes all the corrections above, gives the gates of §7
+house-level controls that can fail and runs Theorem 7.10 on the whole printed range (§12.1), and keeps
+the mathematics of the repair of version 2 as it was read, with the clarifications listed above. Every
+number printed in it was checked against an engine (§12), but three ranges were printed wider or
+vaguer than the code ran. Its changes were read cold on 5 October 2026 (cold reader 5) by a reader
+with no access to the flights, the audits or the earlier readings, who re-derived Lemma 7.9 and every
+place where it is used, wrote a gate of its own (§12.2), reproduced the gates of §7 and looked at every
+page of the pdf: the changes hold, with no gap and no error. It found points of presentation (where
+strictness is used after Lemma 7.9, three citations, four sentences of the reading record, one sentence
+of «Why dance», three ranges of §12) and defects of typesetting: every formula was set in one italic
+font, scripts were not stacked, and some statements, displays and tables were broken badly across lines
+and pages.
+Version 4 made those corrections, except two defects of typesetting (a short page in §1, and a break
+inside a formula of §10.5), and set the mathematics anew: letters italic, digits, brackets, operators and
+operator names upright, scripts stacked, displays in display style, and no statement, display, table row
+or short proof broken across a page (the long tables of §12 run over several pages, row by row, with
+their header repeated). No mathematical statement changed. The three ranges of §12 were corrected;
+§12.2 gained the two rows of the fifth reader; and the row of the fourth reader’s check of
+Lemma 7.9 gained a parenthesis, composed by the author and not checked by the fifth reader, which
+was wrong. Its changes were read cold on 5 October 2026 (cold reader 6) by a reader with no access to
+the flights, the audits or the earlier readings, who compared every changed passage with version 3 by a
+script with a control, re-derived every new sentence, re-counted the cells of §12 with its own code, and
+looked at every page of the pdf: the mathematics of every change holds, with no gap and no error. It
+found one false number (the 7 634 cells of the fourth reader’s row are not the cells with 𝑖 ≥ 1: they are
+the 7 620 with 𝑖 ≥ 1 and the 14 with 𝑖 = 0 and 𝐼 = ∅), one false sentence (version 3 was still called
+«this text»), inexact sentences in this record and in §12, points of presentation, and defects of typeset‐
+ting in 32 kinds: bars and hats placed off their letters, no page numbers, stray bold words, matrices
+written as lists, breaks inside short formulas, the number sets in italic, the end-of-proof mark from
+another font, and loose lines.
+Version 5 (this text) makes those corrections and sets the page anew: accents centred over their letters,
+the number sets in double-struck letters, matrices as matrices, limits under max and min in displays,
+enlarged brackets around sums with limits, page numbers, the end-of-proof mark at the right margin,
+tables with horizontal rules only, no sentence of the running text beginning with a formula, no break
+inside a short formula, a short bracket group, a pure tensor or a citation, and fourteen passages
+reworded to remove loose lines. Left as they are: two lines that carry a small matrix in the text keep
+wide word spaces; a statement set right after its bold label may begin with a formula; and short last
+lines of paragraphs are kept, as TeX keeps them (the end-of-proof mark never stands alone on a line).
+No mathematical statement changed, and no number, except the description of the 7 634 cells. Its
+changes have not yet been read cold.
+
+
+                                                 49
+References
+[ABERS55]  M. Ayer, H. D. Brunk, G. M. Ewing, W. T. Reid, E. Silverman, An empirical distribution function for
+           sampling with incomplete information, Ann. Math. Statist. 26 (1955), 641–647.
+[Aky26]    T. Akyar, A. Beliakov, K. Delchev, N. Kalinin, E. Lupercio, H. Serrano, M. Shkolnikov, D. Tabares, N.
+           Terekhov, The 2-adic valuation of the order of the all-ones class in the sandpile group of a square,
+           arXiv:2609.10625 (2026).
+[Bai03]    H. Bai, On the critical group of the 𝑛‑cube, Linear Algebra Appl. 369 (2003), 251–261.
+[BBBB72]   R. E. Barlow, D. J. Bartholomew, J. M. Bremner, H. D. Brunk, Statistical Inference under Order
+           Restrictions, Wiley, 1972.
+[Bie93]    T. Bier, Remarks on recent formulas of Wilson and Frankl, European J. Combin. 14 (1993), 1–8.
+[Big99]    N. L. Biggs, Chip-firing and the critical group of a graph, J. Algebraic Combin. 9 (1999), 25–45.
+[Cla40]    T. Clausen, Lehrsatz aus einer Abhandlung über die Bernoullischen Zahlen, Astron. Nachr. 17 (1840),
+           351–352.
+[CSX17]    D. B. Chandler, P. Sin, Q. Xiang, The Smith group of the hypercube graph, Des. Codes Cryptogr. 84 (2017),
+           283–294; arXiv:1511.00272.
+[DEGJPP23] J. E. Ducey, L. Engelthaler, J. Gathje, B. Jones, I. Pfaff, J. Plute, Integer diagonal forms for subset
+           intersection relations, arXiv:2310.09227 (2023).
+[DHS18]    J. E. Ducey, I. Hill, P. Sin, The critical group of the Kneser graph on 2-subsets of an 𝑛‑element set, Linear
+           Algebra Appl. 546 (2018), 154–168; arXiv:1707.09115.
+[DJ14]     J. E. Ducey, D. M. Jalil, Integer invariants of abelian Cayley graphs, Linear Algebra Appl. 445 (2014),
+           316–325; arXiv:1308.2335.
+[Don93]    S. Donkin, On tilting modules for algebraic groups and finite dimensional algebras, Math. Z. 212 (1993),
+           39–60.
+[EL91]     A. El-Amawy, S. Latifi, Properties and performance of folded hypercubes, IEEE Trans. Parallel Distrib.
+           Syst. 2 (1991), 31–42.
+[GMMY24] J. Gao, J. Marx-Kuo, V. McDonald, C. H. Yuen, Sandpile groups of Cayley graphs of 𝔽𝑟2, Comm.
+           Algebra 52 (2024), 4459–4479; arXiv:1912.06919v3 (cited by its numbering).
+[Hum72]    J. E. Humphreys, Introduction to Lie Algebras and Representation Theory, Graduate Texts in Mathematics
+           9, Springer, 1972.
+[IKKY23]   K. Iga, C. Klivans, J. Kostiuk, C. H. Yuen, Eigenvalues and critical groups of Adinkras, Adv. in Appl.
+           Math. 143 (2023), 102450; arXiv:2202.02821.
+[Jan03]    J. C. Jantzen, Representations of Algebraic Groups, 2nd ed., Mathematical Surveys and Monographs 107,
+           AMS, 2003.
+[Kli18]    C. J. Klivans, The Mathematics of Chip-Firing, CRC Press, 2018.
+[Kos66]    B. Kostant, Groups over ℤ, in Algebraic Groups and Discontinuous Subgroups, Proc. Sympos. Pure Math.
+           9, AMS, 1966, 90–98.
+[Kum52]    E. E. Kummer, Über die Ergänzungssätze zu den allgemeinen Reciprocitätsgesetzen, J. Reine Angew.
+           Math. 44 (1852), 93–146.
+[Lar24]    M. Larsen, Bounds for SL2‑indecomposables in tensor powers of the natural representation in
+           characteristic 2, arXiv:2405.16015 (2024).
+[Lor91]    D. J. Lorenzini, A finite group attached to the Laplacian of a graph, Discrete Math. 91 (1991), 277–282.
+[LZ22]     Y. Len, D. Zakharov, Kirchhoff’s theorem for Prym varieties, Forum Math. Sigma 10 (2022), Paper No.
+           e11; arXiv:2012.15235.
+[MGM19]    J. Marx-Kuo, J. Gao, V. McDonald, The sandpile group of Cayley graphs, poster, Joint Mathematics
+           Meetings, Baltimore, January 2019.
+[OEIS]     The On-Line Encyclopedia of Integer Sequences, sequence A193134, accessed 5 October 2026.
+
+
+
+
+                                                           50
+[RT14]    V. Reiner, D. Tseng, Critical groups of covering, voltage and signed graphs, Discrete Math. 318 (2014),
+          10–40; arXiv:1301.2977.
+[Str28]   R. Strassmann, Über den Wertevorrat von Potenzreihen im Gebiet der 𝑝‑adischen Zahlen, J. Reine Angew.
+          Math. 159 (1928), 13–28.
+[TW21]    D. Tubbenhauer, P. Wedrich, Quivers for SL2 tilting modules, Represent. Theory 25 (2021), 440–480.
+[vSt40]   K. G. C. von Staudt, Beweis eines Lehrsatzes, die Bernoullischen Zahlen betreffend, J. Reine Angew.
+          Math. 21 (1840), 372–374.
+[VZ24]    M. Vetluzhskikh, D. Zakharov, Critical groups in harmonic abelian quotients, arXiv:2409.04629 (2024).
+[Wil90]   R. M. Wilson, A diagonal form for the incidence matrices of 𝑡‑subsets vs. 𝑘‑subsets, European J.
+          Combin. 11 (1990), 609–615.
+[Yue24]   C. H. Yuen, The critical groups of Adinkras up to 2-rank of Cayley graphs, Electron. J. Combin. 31 (2024),
+          P1.38; arXiv:2301.02517.
+
+
+
+
+                                                      51
+
