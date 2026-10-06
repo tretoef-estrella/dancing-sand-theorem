@@ -1,0 +1,79 @@
+----- 1 list numbers FAIL
+    2. (Λ).
+    3. (Cut).
+----- 2 md words in the pdf PASS
+    14328 words, none lost
+----- 3 margins PASS
+    text right edge 542 pt; words beyond it: 0
+----- 4 widows FAIL
+    p. 20: «because 𝑠 (𝐾) = 1.»
+----- 5 page fill (a short page before a new section is allowed) PASS
+    every page from 2 to 50 at least 85 % full, or followed by a new section
+    p. 44: 83.8 % (next page begins «12.2 Independent re-computations»)
+----- 6 loose lines (no text line at 3× the median or more) PASS
+    none
+    justified lines: 1015   median stretched space: 3.48 pt
+      lines with s >= 1.4 x median (4.87 pt): 106
+      lines with s >= 1.6 x median (5.56 pt): 57
+      lines with s >= 1.8 x median (6.26 pt): 27
+      lines with s >= 2.0 x median (6.95 pt): 12
+      lines with s >= 2.5 x median (8.69 pt): 3
+    text pairs with a gap >= 15 pt (an object between two words, e.g. a matrix): 2
+       p2 y=312 Theorem DW (the Syl 2 𝐾 (𝑛) ≅ 2 · Syl 2 𝐾(𝑄 𝑛 ); equivalently Syl 2 𝐾(𝑄 𝑛 ) ≅ (ℤ/2) 𝑎 𝑛 ⊕ §1.3, proof in §10
+       p9 y=181 arms; glue; bend the two odd-family operators that make an even family; the triangular §10.2, §10.7
+    -----
+    14.37 pt (4.13x) p11 y=228  formula (𝑠) (𝑟) min(𝑟,𝑠) (𝑟−𝑗) (𝑠−𝑗) (K)
+    12.77 pt (3.67x) p9  y=242  text    formal dance; positions; covariant the dance of operators with divided powers 𝐹 (𝑚) ; the numbers §10.3, §10.5
+     9.09 pt (2.61x) p26 y=388  text    means 𝜅 = ℎ and 𝜏 = ℎ − 𝛼2 𝑐 . The second half of the clocks is 𝑥 𝐻′ + 𝑑 2 with 𝑑 2 (𝐷 0 ) =
+     8.20 pt (2.36x) p31 y=150  text    is ≤ 𝑔(𝑛 − 𝑖 + 1) ≤ 𝐺 (Proposition 9.6). Shift 1 (the family 𝑛 − 2, where 𝜆 + 1 = 𝑛 − 1): by
+     7.90 pt (2.27x) p11 y=331  text    grading for any integer 𝑐 ≥ every weight of 𝑋 with 𝑐 ≡ the weights (mod 2): the floor of a weight vector of
+     7.69 pt (2.21x) p12 y=655  formula 𝐹(2𝑏 1 𝐸𝑛) = 4𝑏 0 𝐹𝐸𝑛, so [𝐸, 𝐹] = 2𝑤 + 1. On 𝑏 1 𝑛 (weight 2𝑤 − 1): 𝐸𝐹(𝑏 1 𝑛) = 4𝑏 1 𝐸𝐹𝑛 and 𝐹𝐸(𝑏 1 𝑛) =
+     7.67 pt (2.21x) p26 y=640  text    (E) for 𝑣′ with 𝑋 1 : 𝑣′(𝐷 0 ) − 𝑣′(𝐼 ∖ 𝐷 0 ) = (𝑉′(𝐷 0 ) − 𝑉′(𝐼′ ∖ 𝐷 0 )) + 𝑑 1 (𝐷 0 ) = 𝑦 ˆ ′(𝐷 0 ) + 𝑑 1 (𝐷
+     7.28 pt (2.10x) p6  y=600  text    the proof of [GMMY24, Proposition 2.5], and it is the Laplacian analogue of [CSX17, §5]).
+     7.26 pt (2.09x) p26 y=324  text    (b) 𝑇 = 1, sat = 1, 𝐽′ ≡ 0: the boundary is the middle of the sequence, and 𝑋 1 (𝐼′) = 𝑦 ˆ ′(𝐼′) +
+     7.17 pt (2.06x) p34 y=132  formula Modulo 𝜏 𝑖 , 𝑔 ≡ 1 + 𝜏 𝑀 , so 𝑋(𝜆, 𝑖) ≅ 𝑀/((1 + 𝜏 𝑀 ) 2 − 1)𝑀 = coker(𝜏 𝑀 (𝜏 𝑀 + 2)). With 𝐽 = 𝐷 + 𝑖 and
+     7.04 pt (2.02x) p31 y=212  text    max(𝜑(𝑛 + 1 − 2 𝑡 1 ) − 2 𝑡 1 , 𝐴 0 ), where 𝐴 0 := max 2≤𝑙≤𝑠 𝜑(𝑌 𝑙 ) ≤ 𝐺 (𝐴 0 = −∞ if 𝑠 < 2). So the factors
+     7.02 pt (2.02x) p4  y=572  text    𝜆 = 6 (7 = 4 + 2 + 1, 𝑘 = 2, 𝐼 = {0, 1}, ℎ 0 = ℎ 1 = 1), shift 0: small clocks {1: 4}; raw clocks of
+----- 7 fonts and glyphs PASS
+    fonts: 127, not embedded: 0
+    missing or private glyphs: 0
+----- 8 hyphenation (every break listed for the eye) FAIL
+    «‑mod-/ules»
+    «spa-/ces).»
+    «‑lat-/tices,»
+    all: elimina-/tion · low-/ering · mathe-/matics · sub-/group · expo-/nents: · multi-/plicity · vec-/tors · multiplic-/ities, · sub-/sets · ele-/ment · coeffi-/cients · cheap-/est · poten-/tial · decom-/positions · com-/mutation · cov-/ering · other-/wise); · ‑mod-/ules · con-/travariant · dimen-/sion · mod-/ules · lat-/tices · spa-/ces). · fil-/trations · multiplica-/tion · comple-/ment · the-/orem · cou-/plings · for-/mulas · coeffi-/cients · coeffi-/cient · dis-/joint. · fol-/lowed · con-/stants · posi-/tion · antisym-/metric · mir-/rors, · car-/ries, · sub-/traction, · contain-/ing · seg-/ment · monotonic-/ity, · num-/bers · nota-/tion · dou-/bled · ‑lat-/tices, · invert-/ible. · the-/with · sub-/set · invert-/ible · (reduc-/tions · coef-/ficients · con-/stants · neces-/sary: · van-/ish). · con-/tains · fac-/tors · gov-/erned · rea-/son, · ver-/sion · type-/setting · con-/structor’s) · ver-/sion · state-/ment · typeset-/ting
+----- 9 xrefs and statements (read the output) PASS
+    MISSING TARGET § 5.2  …ture about its exact structure» [CSX17, §5.2]. Iga, Kl…
+    MISSING TARGET § 26  …`-form of `U(sl_2)` is [Kos66], [Hum72, §26]. Kummer'…
+    reference keys: 32  cited keys: 32
+    cited but not in the list: []
+    in the list but never cited: []
+    duplicates in the list: []
+    list in alphabetical order (case-insensitive): True
+    FIN-OK
+    TABLE §1.0 summary table       md numbers   66, pdf numbers  102: NOT a subsequence; first miss (63, '4', ['2', '2', '2', '1', '5', '4', '9', '3'])
+       multiset check §1.6 notation table     : OK
+    TABLE §1.6 notation table      md numbers   63, pdf numbers   78: subsequence OK
+       multiset check §1.7 vocabulary table   : OK
+    TABLE §1.7 vocabulary table    md numbers   92, pdf numbers  115: subsequence OK
+       multiset check §12.1 table             : OK
+    TABLE §12.1 table              md numbers  201, pdf numbers  226: NOT a subsequence; first miss (68, '64', ['0', '7', '10', '5', '7', '64', '12', '1', '2', '1638'])
+       multiset check §12.2 table             : OK
+    TABLE §12.2 table              md numbers  292, pdf numbers  298: subsequence OK
+    STATEMENT not matched in order: **Lemma 2.1.** In `R`,
+    STATEMENT not matched in order: **Corollary 2.3.** If `V^{⊗n} ≅ ⊕_j M_j` as `Dist_A`-modules, then `ℤ_
+    STATEMENT not matched in order: **Lemma 9.7 (multiplicities).** `m_n(n) = 1`; `m_{n−2}(n) = n − 1 − [n
+    STATEMENT not matched in order: **Lemma 10.11 (stability).** If `v_2(E_{ij}) ≥ 1` for all `i, j`, then
+    statements checked: 68 not matched: 4
+    FIN-OK
+----- SUMMARY
+FAIL 1 list numbers
+PASS 2 md words in the pdf
+PASS 3 margins
+FAIL 4 widows
+PASS 5 page fill (a short page before a new section is allowed)
+PASS 6 loose lines (no text line at 3× the median or more)
+PASS 7 fonts and glyphs
+FAIL 8 hyphenation (every break listed for the eye)
+PASS 9 xrefs and statements (read the output)
+VIGIA-FIN-OK exit=0 pico_kb=66992 t=2s

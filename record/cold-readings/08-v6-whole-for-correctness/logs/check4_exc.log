@@ -1,0 +1,33 @@
+v6
+p2: width 212 short=True ends=False left=True label=False WIDOW=False | 1. Introduction and main results
+p3: width 87 short=True ends=False left=True label=False WIDOW=False | 1.1 The problem
+p4: width 234 short=True ends=False left=True label=False WIDOW=False | Multiplicities. Let 𝑚 (𝑛) be the integers defined by
+p10: width 487 short=False ends=False left=True label=True WIDOW=False | Proposition 1.9 gives the odd part of every Cayley graph of 𝔽 , their Proposition 2.12 the
+p16: width 99 short=True ends=False left=True label=False WIDOW=False | 4.2 The two moves
+p17: width 73 short=True ends=False left=True label=False WIDOW=False | 4.3 The dance
+p21: width 203 short=True ends=False left=True label=True WIDOW=False | Proposition 5.4. For 𝐷 ≠ ∅ and every 𝑏 ⊆ 𝐷,
+p23: width 212 short=True ends=False left=True label=False WIDOW=False | 7. The Smith form of 𝑀: the floor
+p26: width 76 short=True ends=False left=True label=False WIDOW=False | 7.4 Theorem F
+p28: width 70 short=True ends=False left=True label=False WIDOW=False | 7.5 Every cell
+p33: width 299 short=False ends=False left=True label=True WIDOW=False | Lemma 10.1. Under the dictionary of Lemma 2.2, 𝑎 acts on 𝑉 as
+p38: width 487 short=False ends=False left=True label=True WIDOW=False | Theorem 10.12 (rigidity). If the dance of Ξ along 𝑤 is clean, then 𝑀 (Ξ) = 𝑀 (Σ) ∘ (1 + 𝐸′
+p39: width 137 short=True ends=True left=True label=True WIDOW=False | Lemma 10.14. (a) 𝒯 is a ring.
+p44: width 114 short=True ends=False left=True label=False WIDOW=False | 12. Computations
+v5
+p2: width 212 short=True ends=False left=True label=False WIDOW=False | 1. Introduction and main results
+p3: width 87 short=True ends=False left=True label=False WIDOW=False | 1.1 The problem
+p6: width 95 short=True ends=False left=True label=False WIDOW=False | 1.4 Consequences
+p13: width 248 short=True ends=False left=False label=False WIDOW=False | ∏ ∏
+p16: width 99 short=True ends=False left=True label=False WIDOW=False | 4.2 The two moves
+p17: width 73 short=True ends=False left=True label=False WIDOW=False | 4.3 The dance
+p20: width 82 short=True ends=True left=True label=False WIDOW=True | because 𝑠 (𝐾) = 1.
+p22: width 189 short=True ends=True left=False label=False WIDOW=False | problem (𝑠 − 1, 𝑟), which has one solution.
+p24: width 487 short=False ends=False left=True label=True WIDOW=False | Lemma 7.3 (antisymmetric gluing). Let 𝑥 be antisymmetric of length 2𝑁′, let 𝑍 = fit(𝑥 ) an
+p28: width 487 short=False ends=False left=True label=True WIDOW=False | Theorem 7.10. For every family 𝜆, every 𝛼 ≥ 1 and every shift 𝑖 ≥ 1, 𝑇(𝑟) ≥ 𝑌(𝑟) for every
+p30: width 440 short=False ends=False left=True label=True WIDOW=False | Proposition 9.4 (shift 0). Let 𝜆 = 𝑛 and 𝑖 = 0, and let 𝑒(𝐷) (𝐷 ≠ ∅) be the pooled big clo
+p33: width 186 short=True ends=False left=True label=False WIDOW=False | Proof. By Theorem 3.8 and Corollary 10.2,
+p36: width 165 short=True ends=False left=True label=False WIDOW=False | 10.4 Rigidity: the inverse block
+p38: width 290 short=True ends=False left=True label=False WIDOW=False | The ring 𝒦. Let 𝒦 be the set of functions 𝜗: ℤ → ℤ of the form
+p45: width 186 short=True ends=False left=True label=False WIDOW=False | 12.2 Independent re-computations
+p50: width 72 short=True ends=False left=True label=False WIDOW=False | References
+VIGIA-FIN-OK exit=0 pico_kb=46016 t=0s

@@ -1,0 +1,44 @@
+- 2026-10-06 11:29:28 START cold reading 9. Created REPORT_COLD_9.md with empty §5 headings. Next: md5 check of material against MANIFEST.
+- 2026-10-06 11:29:34 md5 check done: all 25 material files + vigia.sh match MANIFEST_md5.txt; MISSION.md and CLAUDE.md also match.
+- 2026-10-06 11:29:34 BEFORE step §2.1: reading DIFF_v6_to_v7.txt and CORRECTIONS_v6_to_v7.md.
+- 2026-10-06 11:30:22 SEALED P1–P7 in checks/SEALED.md (before any measurement).
+- 2026-10-06 11:30:22 BEFORE run diff_check: estimate <10 MB, <1 s. diff -u v6.md v7.md vs DIFF file.
+- 2026-10-06 11:30:22 AFTER run diff_check: see logs/diff_check.log.
+- 2026-10-06 11:32:12 AFTER reading diff hunks, §1.0, §4.1–4.3, §7, §12, §13, Ack, App A of v7, LZ22 source head. Writing §1 verdicts + first §2 verdicts.
+- 2026-10-06 11:32:29 WROTE §1 of report (10 hunks).
+- 2026-10-06 11:32:33 BEFORE step: read the two family_lattice logs.
+- 2026-10-06 11:32:41 AFTER logs: row matches. BEFORE: grep 65 532 in REPORT_COLD_4 (only those lines, per mission).
+- 2026-10-06 11:32:49 AFTER REPORT_COLD_4 grep (3 lines: k ≤ 7, α ≤ 3, 65 532). BEFORE: read gate_strict_cut.py.
+- 2026-10-06 11:33:00 AFTER reading gate_strict_cut.py: loop is k in range(1, K_MAX+1), α in (1,2,3). BEFORE run gate_k6: python3 gate_strict_cut.py 6 4 (copy in scratch). Estimate: <150 MB, 1–5 min (16 380 houses, ~192k exact fits of length ≤ 64).
+- 2026-10-06 11:33:43 AFTER run gate_k6: see logs/gate_k6.log.
+- 2026-10-06 11:33:59 WROTE §2 items 2.1–2.9 (2.4bis pending the gate_k6 run).
+- 2026-10-06 11:34:10 WROTE 2.4bis (gate_k6 reproduces all numbers of the two §12.1 rows). BEFORE step §3: page counts of both pdfs; check tools (pdftoppm, pdftotext).
+- 2026-10-06 11:34:18 BEFORE run render_cmp: pdfinfo both, render both pdfs at 72 dpi gray PGM, md5 per page. Estimate <200 MB, <1 min.
+- 2026-10-06 11:34:23 AFTER run render_cmp.
+- 2026-10-06 11:34:31 AFTER render_cmp: changed pages = 1,2,3,9,30,44,46–52 (P5 hit). BEFORE run render90: v7 changed pages at 90 dpi PNG. Estimate <200 MB, <30 s.
+- 2026-10-06 11:34:33 AFTER run render90.
+- 2026-10-06 11:34:49 Looked at pp. 1–3 at 90 dpi; PAGES.md started.
+- 2026-10-06 11:34:58 Looked at pp. 9, 30, 44.
+- 2026-10-06 11:35:09 Looked at pp. 46–48.
+- 2026-10-06 11:35:18 Looked at pp. 49–52. PAGES.md complete. Corrected my page reference in §2.9 (p. 52 → p. 51).
+- 2026-10-06 11:35:32 WROTE §3. BEFORE step §4: write scratch/md_vs_pdf9.py (changed md lines vs pdftotext of v7, with controls on v6 pdf and a mutated passage).
+- 2026-10-06 11:35:58 BEFORE run mdpdf: pdftotext v6, v7; md_vs_pdf9 on v7, on v6 (control), mutated on v7 (control). Estimate <100 MB, <10 s.
+- 2026-10-06 11:35:59 AFTER run mdpdf.
+- 2026-10-06 11:36:32 WROTE §4 (md = pdf on changed passages; controls fire). BEFORE step §5: read acceptance.py.
+- 2026-10-06 11:37:12 AFTER reading acceptance.py, fill.py, loose.py, xrefs_reader8.py, numbers_reader8.py. BEFORE run acc_v7 (mission command). Estimate <200 MB, <1 min.
+- 2026-10-06 11:37:14 AFTER run acc_v7. BEFORE run acc_v7_control. Estimate <200 MB, <1 min.
+- 2026-10-06 11:37:16 AFTER run acc_v7_control.
+- 2026-10-06 11:37:21 MY ERROR: wrote echo ====== in zsh (word starting with =), the command stopped after printing acc_v7 tail; harmless, nothing lost (both runs had finished).
+- 2026-10-06 11:38:04 Read both acceptance logs: 9/9 PASS, control 9/9 FAIL; each damage visible in its own check's output. BEFORE run acc_v6 (same command on v6, for comparing the unjudged md_vs_pdf.py output). Estimate <200 MB, <1 min.
+- 2026-10-06 11:38:06 AFTER run acc_v6.
+- 2026-10-06 11:38:28 WROTE §5.
+- 2026-10-06 11:38:38 Corrected my count in §5 (37/36 → 38/37 lost words, counted from the log). BEFORE §6: opening material/read_after/ now that §2 is written.
+- 2026-10-06 11:39:10 Read REPORT_COLD_8.md whole. Next: CALIFICACION_LECTOR_FRIO_8_v1.md.
+- 2026-10-06 11:39:54 Read CALIFICACION_LECTOR_FRIO_8_v1.md whole. Writing §6.
+- 2026-10-06 11:39:54 WROTE §6.
+- 2026-10-06 11:40:32 WROTE §0, §7, §8, §9, §10. BEFORE run md5_final: md5 of every file I made (estimate <10 MB, <2 s).
+- 2026-10-06 11:40:45 AFTER run md5_final. BEFORE run md5_material: material/ and vigia.sh against MANIFEST again (estimate <10 MB, <2 s).
+- 2026-10-06 11:40:45 AFTER run md5_material.
+- 2026-10-06 11:40:54 WROTE §11.
+- 2026-10-06 11:41:09 Re-read the report; made §2.9's fixes identical to §0 items 1–2.
+- 2026-10-06 11:41:09 REPORT_COLD_9.md listo — md5 859424acff771a6f926f0ed72eaff456

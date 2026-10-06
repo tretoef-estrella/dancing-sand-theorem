@@ -1,0 +1,125 @@
+----- 1 list numbers PASS
+    every numbered item found
+----- 2 md words in the pdf PASS
+    14693 words, none lost
+----- 3 margins PASS
+    text right edge 542 pt; words beyond it: 0
+----- 4 widows PASS
+    no short last line of a paragraph alone at the top of a page
+----- 5 page fill (a short page before a new section is allowed) PASS
+    every page from 2 to 51 at least 85 % full, or followed by a new section
+    p. 25: 77.9 % (next page begins «7.4 Theorem F»)
+    p. 43: 81.1 % (next page begins «12. Computations»)
+----- 6 loose lines (no text line at 3× the median or more) PASS
+    none
+    justified lines: 1040   median stretched space: 3.49 pt
+      lines with s >= 1.4 x median (4.89 pt): 116
+      lines with s >= 1.6 x median (5.59 pt): 63
+      lines with s >= 1.8 x median (6.29 pt): 34
+      lines with s >= 2.0 x median (6.99 pt): 18
+      lines with s >= 2.5 x median (8.73 pt): 4
+    text pairs with a gap >= 15 pt (an object between two words, e.g. a matrix): 5
+       p2 y=312 Theorem DW (the Syl 2 𝐾 (𝑛) ≅ 2 · Syl 2 𝐾(𝑄 𝑛 ); equivalently Syl 2 𝐾(𝑄 𝑛 ) ≅ (ℤ/2) 𝑎 𝑛 ⊕ §1.3, proof in §10
+       p9 y=215 arms; glue; bend the two odd-family operators that make an even family; the triangular §10.2, §10.7
+       p34 y=81 𝑏 0 ChSh 𝑛 − (−1) 𝑎𝑏 0 Sh 𝑛 and 𝜏 𝑗 (𝑏 0 𝑛) = 𝑏 1 𝑛 + 2(2𝑓 + 𝑗)𝑏 0 𝑛, 𝜏 𝑗 has the matrix in this basis, with
+       p34 y=473 Now 𝑀 = Φ(𝑁) , and by the proof of Lemma 10.4(a) every 𝑤 ∈ 𝐴[𝜏 𝑀 , 𝑎 𝑀 ] has the circulant matrix in
+       p36 y=321 Proof. If 𝑃 is invertible, unimodular row and column operations turn into diag(𝑃, 𝑆) and then into
+    -----
+    14.37 pt (4.11x) p11 y=228  formula (𝑠) (𝑟) min(𝑟,𝑠) (𝑟−𝑗) (𝑠−𝑗) (K)
+    12.77 pt (3.66x) p9  y=276  text    formal dance; positions; covariant the dance of operators with divided powers 𝐹 (𝑚) ; the numbers §10.3, §10.5
+    11.11 pt (3.18x) p35 y=482  formula 𝑃 𝐶 10 11 00 01
+     9.09 pt (2.60x) p26 y=638  text    means 𝜅 = ℎ and 𝜏 = ℎ − 𝛼2 𝑐 . The second half of the clocks is 𝑥 𝐻′ + 𝑑 2 with 𝑑 2 (𝐷 0 ) =
+     8.20 pt (2.35x) p31 y=476  text    is ≤ 𝑔(𝑛 − 𝑖 + 1) ≤ 𝐺 (Proposition 9.6). Shift 1 (the family 𝑛 − 2, where 𝜆 + 1 = 𝑛 − 1): by
+     7.90 pt (2.26x) p11 y=333  text    grading for any integer 𝑐 ≥ every weight of 𝑋 with 𝑐 ≡ the weights (mod 2): the floor of a weight vector of
+     7.78 pt (2.23x) p34 y=98   text    𝑃 = ChSh −1 + 2(2𝐷 + 𝑗) and 𝑄 = (−1) 𝑗+1 Sh −1 . On the coinvariants 𝑇(𝜆)/(𝑎 − 1)𝑇(𝜆) ≅ 𝑁, 𝜏 𝑗 acts as
+     7.69 pt (2.20x) p12 y=655  formula 𝐹(2𝑏 1 𝐸𝑛) = 4𝑏 0 𝐹𝐸𝑛, so [𝐸, 𝐹] = 2𝑤 + 1. On 𝑏 1 𝑛 (weight 2𝑤 − 1): 𝐸𝐹(𝑏 1 𝑛) = 4𝑏 1 𝐸𝐹𝑛 and 𝐹𝐸(𝑏 1 𝑛) =
+     7.67 pt (2.20x) p27 y=193  text    (E) for 𝑣′ with 𝑋 1 : 𝑣′(𝐷 0 ) − 𝑣′(𝐼 ∖ 𝐷 0 ) = (𝑉′(𝐷 0 ) − 𝑉′(𝐼′ ∖ 𝐷 0 )) + 𝑑 1 (𝐷 0 ) = 𝑦 ˆ ′(𝐷 0 ) + 𝑑 1 (𝐷
+     7.29 pt (2.09x) p27 y=433  text    𝑣′(𝑝 * ) = 𝑋 1 (𝑝) > 0). So the interval [max(𝑐 3 , 𝑣′(𝑝 * )), min(𝑐 4 , 𝑣′(𝑝))] is non-empty. Choose an
+     7.28 pt (2.09x) p6  y=643  text    the proof of [GMMY24, Proposition 2.5], and it is the Laplacian analogue of [CSX17, §5]).
+     7.27 pt (2.08x) p11 y=534  text    Proof. 𝜎 = 𝐹 + 𝑛 − 𝐻 is an element of Dist 𝐴 (it acts through 𝐹 and 𝐻), so every isomorphism of
+     7.26 pt (2.08x) p26 y=574  text    (b) 𝑇 = 1, sat = 1, 𝐽′ ≡ 0: the boundary is the middle of the sequence, and 𝑋 1 (𝐼′) = 𝑦 ˆ ′(𝐼′) +
+     7.17 pt (2.05x) p34 y=421  formula Modulo 𝜏 𝑖 , 𝑔 ≡ 1 + 𝜏 𝑀 , so 𝑋(𝜆, 𝑖) ≅ 𝑀/((1 + 𝜏 𝑀 ) 2 − 1)𝑀 = coker(𝜏 𝑀 (𝜏 𝑀 + 2)). With 𝐽 = 𝐷 + 𝑖 and
+     7.04 pt (2.02x) p31 y=538  text    max(𝜑(𝑛 + 1 − 2 𝑡 1 ) − 2 𝑡 1 , 𝐴 0 ), where 𝐴 0 := max 2≤𝑙≤𝑠 𝜑(𝑌 𝑙 ) ≤ 𝐺 (𝐴 0 = −∞ if 𝑠 < 2). So the factors
+     7.02 pt (2.01x) p4  y=671  text    𝜆 = 6 (7 = 4 + 2 + 1, 𝑘 = 2, 𝐼 = {0, 1}, ℎ 0 = ℎ 1 = 1), shift 0: small clocks {1: 4}; raw clocks of
+     7.02 pt (2.01x) p48 y=476  text    Changed in version 5, read cold: the corrections of the sixth reading and the typesetting
+     7.02 pt (2.01x) p48 y=380  text    2 added the strictness of the cuts to the (Cut) of Theorem 7.8 and restated Lemma 7.2(b);
+----- 7 fonts and glyphs PASS
+    fonts: 126, not embedded: 0
+    missing or private glyphs: 0
+----- 8 hyphenation (every break listed for the eye) PASS
+    no formula compound broken, no piece under 3 letters, no known wrong break
+    all: elimina-/tion · low-/ering · mathe-/matics · bro-/ken; · sub-/group · expo-/nents: · multi-/plicity · vec-/tors · multiplic-/ities, · sub-/sets · ele-/ment · coeffi-/cients · cheap-/est · poten-/tial · decom-/positions · com-/mutation · cov-/ering · other-/wise); · decomposi-/tion · con-/travariant · dimen-/sion · mod-/ules · lat-/tices · fil-/trations · multiplica-/tion · comple-/ment · the-/orem · cou-/plings · for-/mulas · coeffi-/cients · coeffi-/cient · dis-/joint. · fol-/lowed · con-/stants · posi-/tion · antisym-/metric · mir-/rors, · car-/ries, · sub-/traction, · contain-/ing · seg-/ment · monotonic-/ity, · num-/bers · nota-/tion · dou-/bled · invert-/ible. · the-/orem · sub-/set · invert-/ible · (reduc-/tions · coef-/ficients · neces-/sary: · inte-/gral · van-/ish). · con-/tains · fac-/tors · gov-/erned · rea-/son, · mathe-/matical · con-/structor’s) · state-/ment · typeset-/ting
+----- 9 xrefs, citations and numbers (judged; the author's tools printed whole) PASS
+    --- xrefs_reader8.py
+    reference keys: 32
+    not cited: []
+    cited, not in list: []
+    defined items: 72  sections: 55
+    unresolved numbered refs: 3
+       ('Theorem', '4.1', "factors of `Syl_2 K(Q_n)`: Gao et al.'s Theorems 4.1 and 4.2, their Conj")
+       ('Theorem', '4.2', "factors of `Syl_2 K(Q_n)`: Gao et al.'s Theorems 4.1 and 4.2, their Conj")
+       ('Proposition', '2.5', '1` used by Gao et al. [GMMY24, proof of Proposition 2.5], and the')
+    unresolved §: ['26', '5.2']
+    defined: [('Corollary', '1.4'), ('Corollary', '1.5'), ('Corollary', '1.6'), ('Corollary', '1.7'), ('Lemma', '2.1'), ('Lemma', '2.2'), ('Corollary', '2.3'), ('Lemma', '2.4'), ('Proposition', '3.1'), ('Lemma', '3.2'), ('Lemma', '3.3'), ('Corollary', '3.4'), ('Lemma', '3.5'), ('Theorem', '3.6'), ('Lemma', '3.7'), ('Theorem', '3.8'), ('Proposition', '4.1'), ('Proposition', '4.2'), ('Proposition', '4.3'), ('Theorem', '4.4'), ('Lemma', '4.5'), ('Lemma', '5.1'), ('Proposition', '5.2'), ('Proposition', '5.3'), ('Proposition', '5.4'), ('Lemma', '6.1'), ('Theorem', '6.2'), ('Corollary', '6.3'), ('Lemma', '6.4'), ('Theorem', '6.5'), ('Lemma', '7.1'), ('Lemma', '7.2'), ('Lemma', '7.3'), ('Theorem', '7.4'), ('Lemma', '7.5'), ('Lemma', '7.6'), ('Lemma', '7.7'), ('Theorem', '7.8'), ('Lemma', '7.9'), ('Theorem', '7.10'), ('Lemma', '9.1'), ('Lemma', '9.2'), ('Proposition', '9.3'), ('Proposition', '9.4'), ('Lemma', '9.5'), ('Proposition', '9.6'), ('Lemma', '9.7'), ('Lemma', '9.8'), ('Lemma', '9.9'), ('Theorem', '9.10'), ('Lemma', '10.1'), ('Corollary', '10.2'), ('Proposition', '10.3'), ('Lemma', '10.4'), ('Lemma', '10.5'), ('Lemma', '10.6'), ('Proposition', '10.7'), ('Lemma', '10.8'), ('Corollary', '10.9'), ('Lemma', '10.10'), ('Lemma', '10.11'), ('Theorem', '10.12'), ('Lemma', '10.13'), ('Lemma', '10.14'), ('Theorem', '10.15'), ('Theorem', '10.16'), ('Corollary', '10.17'), ('Lemma', '10.18'), ('Lemma', '10.19'), ('Lemma', '10.20'), ('Corollary', '10.21'), ('Theorem', '10.22')]
+    --- numbers_reader8.py
+    == §12 md numbers 108 pdf numbers 108
+    == §1.0-1.4 md numbers 7 pdf numbers 7
+    == §13+App A md numbers 16 pdf numbers 16
+    DIFFERENCES 0
+    --- xrefs.py (read; it does not see labels set in a blockquote)
+    defined statements: 68  sections: 56
+    MISSING TARGET Theorem D  …explicit rule | §1.2, proof in §8 | | **Theorem D** | each …
+    MISSING TARGET Theorem O  …rix with closed-form entries | §4 | | **Theorems O and F** | the S…
+    MISSING TARGET Theorem F  …rix with closed-form entries | §4 | | **Theorems O and F** | the S…
+    MISSING TARGET Theorem DW  …ial built digit by digit | §6, §7 | | **Theorem DW** (the fo…
+    MISSING TARGET Corollary 1.4  …{⌊(n−2)/2⌋}` | §1.3, proof in §10 | | **Corollary 1.4** | the w…
+    MISSING TARGET Corollary 1.5  … of the folded cube | §1.3, §10.8 | | **Corollary 1.5** | Bai's…
+    MISSING TARGET Corollary 1.6  …s, re-proved from the rule | §9.1 | | **Corollary 1.6** | the `…
+    MISSING TARGET Theorem 4.1  …factors of `Syl_2 K(Q_n)`: Gao et al.'s Theorems 4.1 and 4.2, their Co…
+    MISSING TARGET Theorem 4.2  …factors of `Syl_2 K(Q_n)`: Gao et al.'s Theorems 4.1 and 4.2, their Co…
+    MISSING TARGET Corollary 1.7  …of the 2019 poster [MGM19] | §9.2 | | **Corollary 1.7** | `Syl_…
+    MISSING TARGET Theorem 1.2  …l_p ⊕_{j=1}^{n} (ℤ/j)^{C(n,j)}` [Bai03, Theorem 1.2]. About t…
+    MISSING TARGET Theorem 1.3  …ctors `ℤ/2` of `K(Q_n)`, by Bai [Bai03, Theorem 1.3] (re-prov…
+    MISSING TARGET Proposition 1.9  …j)^{C(n,j)}`.  The odd part is [GMMY24, Proposition 1.9]: the Lap…
+    MISSING TARGET Theorem 1.1  …quences  > **Corollary 1.5 (Bai [Bai03, Theorems 1.1, 1.3]).** `Syl…
+    MISSING TARGET Proposition 2.5  …u_i = x_i − 1` in the proof of [GMMY24, Proposition 2.5], and it …
+    MISSING TARGET Theorem U  … the dance, the cost form with carries, Theorems O, U and F, the ring…
+    MISSING TARGET Proposition 2.12  …of every Cayley graph of `𝔽_2^r`, their Proposition 2.12 the `𝔽_2`…
+    MISSING TARGET Lemma W  …## 3.2 Lifting from `𝔽_2`  **Lemma 3.2 (Lemma W).** Let `…
+    MISSING TARGET Lemma K  …e recursion takes over. ∎  **Lemma 9.5 (Lemma K).** For `…
+    MISSING TARGET § 5.2  …ture about its exact structure» [CSX17, §5.2]. Iga, Kl…
+    MISSING TARGET § 26  …`-form of `U(sl_2)` is [Kos66], [Hum72, §26]. Kummer'…
+    reference keys: 32  cited keys: 32
+    cited but not in the list: []
+    in the list but never cited: []
+    duplicates in the list: []
+    list in alphabetical order (case-insensitive): True
+    FIN-OK
+    --- md_vs_pdf.py (read)
+    multiset check §1.0 summary table      : OK
+    TABLE §1.0 summary table       md numbers   66, pdf numbers  112: NOT a subsequence; first miss (64, '9', ['2', '2', '1', '5', '4', '9', '3'])
+       multiset check §1.6 notation table     : OK
+    TABLE §1.6 notation table      md numbers   63, pdf numbers   78: subsequence OK
+       multiset check §1.7 vocabulary table   : OK
+    TABLE §1.7 vocabulary table    md numbers   92, pdf numbers  115: subsequence OK
+       multiset check §12.1 table             : OK
+    TABLE §12.1 table              md numbers  202, pdf numbers  226: NOT a subsequence; first miss (68, '64', ['0', '7', '10', '5', '7', '64', '12', '1', '2', '1638'])
+       multiset check §12.2 table             : OK
+    TABLE §12.2 table              md numbers  307, pdf numbers  314: subsequence OK
+    STATEMENT not matched in order: **Lemma 2.1.** In `R`,
+    STATEMENT not matched in order: **Corollary 2.3.** If `V^{⊗n} ≅ ⊕_j M_j` as `Dist_A`-modules, then `ℤ_
+    STATEMENT not matched in order: **Lemma 9.7 (multiplicities).** `m_n(n) = 1`; `m_{n−2}(n) = n − 1 − [n
+    STATEMENT not matched in order: **Lemma 10.11 (stability).** If `v_2(E_{ij}) ≥ 1` for all `i, j`, then
+    statements checked: 68 not matched: 4
+    FIN-OK
+----- SUMMARY
+PASS 1 list numbers
+PASS 2 md words in the pdf
+PASS 3 margins
+PASS 4 widows
+PASS 5 page fill (a short page before a new section is allowed)
+PASS 6 loose lines (no text line at 3× the median or more)
+PASS 7 fonts and glyphs
+PASS 8 hyphenation (every break listed for the eye)
+PASS 9 xrefs, citations and numbers (judged; the author's tools printed whole)
+VIGIA-FIN-OK exit=0 pico_kb=107584 t=2s

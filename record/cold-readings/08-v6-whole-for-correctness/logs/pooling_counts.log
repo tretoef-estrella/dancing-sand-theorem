@@ -1,0 +1,8 @@
+(a) λ<64,i≤12,α=1,2: pooling cells, non-integral: (322, 0)
+(b) λ≤127,i≤30,α=1,2: (1876, 0)
+(c)   of which i≥1: (1834, 0)
+(d) λ≤63,i≤8,α=1,2: (218, 0)
+(e) non-integral with +1 at first dancer: 2316 of 9880
+(f) houses k≤6: total 16380  non-integral x_H: 0  non-integral with +1 at first dancer: 1942
+(g) houses k≤7: total 65532  non-integral fits: 0
+VIGIA-FIN-OK exit=0 pico_kb=10656 t=14s

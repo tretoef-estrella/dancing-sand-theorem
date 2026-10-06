@@ -1,0 +1,57 @@
+# PAGES — every page of THE_DANCING_SAND_THEOREM_v6.pdf (md5 f0ebd590af2e47d1406f9cc7c6145c4d), looked at in order
+Rendered with `pdftoppm -r 90 -png` (scratch/png/), doubtful regions at `-r 200` (scratch/png200/).
+
+- p. 1 — OK (title, author line «6 October 2026 · version 6», abstract; no page number on the title page, as usual).
+- p. 2 — OK (§1.0 table, record paragraph; table zoomed at 200 dpi: every formula legible).
+- p. 3 — OK (§1.1, start of §1.2).
+- p. 4 — OK (multiplicities, clocks, pooling, `X(λ, i)`, Main Theorem, example; displays zoomed at 200 dpi).
+- p. 5 — OK (end of example, equivalent form, §1.3, Theorem DW, Cor. 1.4; the symbol `𝟙` is the double-struck one, zoomed).
+- p. 6 — OK (Cor. 1.5–1.7, §1.5 start). Taste note: the md bolds the two bullets «`c_n = …` for `n ≥ 3`» and «`c_{n+1} = …` for `n ≥ 4`» of Cor. 1.6; in the pdf they are not bold (a bold span beginning with a formula is set as plain math throughout the pdf, displays included). Not counted.
+- p. 7 — OK (§1.5 items 3–5, §1.6 table).
+- p. 8 — OK (two meanings, §1.7 table first part).
+- p. 9 — defect D1 (PRESENTATION): «Why «dance»», 4th–5th line: «gives every new floor the payment minus half the product of the payments of two adjacent old floors» reads as a subtraction. Rest OK (§1.7 table end, «dry and wet», §1.8 start).
+- p. 10 — OK (§1.8 end, §2.1, Lemma 2.1).
+- p. 11 — OK (§2.1 end, §2.2, Lemma 2.2, Cor. 2.3, §2.3 start).
+- p. 12 — OK (Lemma 2.4, §3.1, Prop. 3.1 start).
+- p. 13 — OK (proof of Prop. 3.1, §3.2, Lemmas 3.2–3.3; the stacked `w'_R` zoomed: legible).
+- p. 14 — OK (Cor. 3.4, §3.3, Lemma 3.5, Thm 3.6).
+- p. 15 — OK (proof of Thm 3.6, Remarks, Lemma 3.7, §3.4, Thm 3.8, §4.1).
+- p. 16 — OK (Props 4.1–4.2 with proofs; stacked primes `π'_s`, `π''_{(s,A)}`, `K''_{(s',C),(s',A)}` zoomed: legible; the changed sentence «Eliminating these relations (one for each `n` and `s'`)» present).
+- p. 17 — OK (§4.3 Prop. 4.3, §4.4 Thm 4.4 and start of proof).
+- p. 18 — OK (end of proof of Thm 4.4, §4.5 Lemma 4.5, Theorem D).
+- p. 19 — OK (example matrix of Thm 4.4, as a table; §5 definitions, Lemma 5.1, Prop. 5.2 start).
+- p. 20 — OK (proof of Prop. 5.2, Prop. 5.3 with steps 1–3, «The shift `i = 0`»).
+- p. 21 — OK (Prop. 5.4, §6.1, Lemma 6.1, §6.2, Thm 6.2 start).
+- p. 22 — OK (proof of Thm 6.2, Cor. 6.3, §6.3 Lemma 6.4, Thm 6.5).
+- p. 23 — OK (§7.1, Lemma 7.1, cuts, Lemma 7.2 and proof; the counterexample (3, 4, 3, 4) re-computed: right).
+- p. 24 — OK (antisymmetry, Lemma 7.3, §7.2 Thm 7.4, §7.3 houses, Lemma 7.5).
+- p. 25 — OK (proof of Lemma 7.5, windows, Lemmas 7.6–7.7). The page ends at about three quarters, before §7.4: a short page before a new section, not a defect by §1.
+- p. 26 — OK (§7.4, Thm 7.8 statement whole on the page with its label, proof steps 1, 2, 3 numbered and printed).
+- p. 27 — OK (proof of Thm 7.8, steps 4–8 numbered, cases of step 8 as separate items; the plain reading).
+- p. 28 — OK (§7.5 Lemma 7.9, the strictness paragraph, Thm 7.10, §8 heading followed by its first lines and display).
+- p. 29 — OK (§8 end, §9.1 Lemma 9.1, proof of Cor. 1.5, §9.2, Lemma 9.2).
+- p. 30 — OK (Props 9.3–9.4, Lemma 9.5, Prop. 9.6 start; the changed sentence «keeps the level sets of fit(`x_{H'}`) (the house `H'` of Lemma 7.7)» and «the first level set of fit(`x_{H'}`)» present and legible).
+- p. 31 — OK (end of proof of Prop. 9.6, Lemma 9.7, proof of Cor. 1.6 items 1–3).
+- p. 32 — OK (item 4 and particular cases, §9.3 Lemmas 9.8–9.9, Thm 9.10, proof of Cor. 1.7, §10.1 start).
+- p. 33 — OK (Lemma 10.1 with `exp(F)`, Cor. 10.2, Prop. 10.3, §10.2 with `cosh(u)`, Lemma 10.4 start).
+- p. 34 — OK (proof of Lemma 10.4, glue, Lemma 10.5, §10.3 start; inline matrices zoomed at 200 and 400 dpi: legible). Doubtful (taste list): the comma closing the display `glue(X, Y) := [[X, 0], [(Y − X)/2, Y]],` sits at the top right of the bracket, where a prime would sit; the comma after the inline `L` sits on the baseline.
+- p. 35 — OK (§10.3 formal operators, twist map, `V`-split, moves, Lemma 10.6 start). Same taste note as p. 34: the comma after the display matrix `[[x, 0], [x', x^+]]` sits at the top right of the bracket.
+- p. 36 — OK (proof of Lemma 10.6, Prop. 10.7, §10.4, Lemma 10.8, Cor. 10.9; `M_{p,c} − M_{p,P} M_{P,P}^{−1} M_{P,c}` zoomed: legible).
+- p. 37 — OK (proof of Cor. 10.9, `Σ`, `Ξ`, Lemma 10.10 with its quantifier, `M_w(Σ) = 𝔡_1·𝒜·𝔡_2`, Lemma 10.11 with the moved «by subadditivity»).
+- p. 38 — OK (Thm 10.12, case `c = 0`, §10.5 positions, the ring `𝒦`, Lemma 10.13, `𝒯_h`, `R_𝒮`).
+- p. 39 — OK (Lemma 10.14, Thm 10.15 with (a), (b) on their own lines, «Then …» on a new line, the conclusion in bold as in the md; proof).
+- p. 40 — OK (Remarks (1)–(2) of §10.5: 62 × 4 = 248, 2 × 248 = 496; §10.6 Thm 10.16, Cor. 10.17; §10.7 start, Lemma 10.18 statement whole, proof on p. 41).
+- p. 41 — OK (proof of Lemma 10.18, Lemma 10.19 with `L = [[1, 0], [1/2, 1]]`, Lemma 10.20, Cor. 10.21 statement).
+- p. 42 — OK (proof of Cor. 10.21, Thm 10.22 with the cases `i ≥ 1` and `i = 0`; the inline `glue(W_−, W_+)` matrix zoomed: legible; §10.8 proofs of Thm DW and Cor. 1.4).
+- p. 43 — OK (mod-2 layer, Remark, §11). The page ends at about three quarters, before §12: a short page before a new section, not a defect by §1.
+- p. 44 — OK (§12.1 heading, text, table header and first nine rows; no cell cut).
+- p. 45 — OK (end of the §12.1 table, header repeated; the remark2 paragraph; §12.2 heading, text, first six rows).
+- p. 46 — OK (§12.2 rows of readers 3, 4 and 5; header repeated; the changed cell «the 7 634 cells of its row on the matrices `M`» present).
+- p. 47 — OK (end of §12.2 with the changed cells «none for Propositions 5.3 and 5.4, Lemma 7.5 and (H)» and «the 10 455 cells of the fifth reader's second row»; §13 heading with its first bullet, which continues on p. 48).
+- p. 48 — error E1 printed here (§13, bullet «Added in version 3»: «no other statement of a theorem changed in versions 2 to 6», followed by three lemmas changed in version 3); error E2 printed here (Acknowledgements: «The work took four days, from 2 to 5 October 2026»). Page itself OK (§13, Acknowledgements, Appendix A start).
+- p. 49 — OK (Appendix A: writing and checking, readings of the chains, versions 1–3).
+- p. 50 — OK (versions 4–6; «Its changes have not yet been read cold.» in bold as in the md; References start).
+- p. 51 — OK (references [BBBB72] to [VZ24]).
+- p. 52 — OK (last page: [Wil90], [Yue24]).
+
+Summary: 52 of 52 pages looked at, at 90 dpi, with 200/400 dpi zooms on pp. 2, 4, 5, 6, 13, 16, 34, 35, 36, 41, 42. No page looks broken; no glyph missing or boxed; no word past the margin seen; no heading alone at a foot; every statement label with its text; the step numbers 1–8 of the proof of Theorem 7.8 are printed (pp. 26–27). Defects seen on the page: D1 (p. 9, wording), and the record errors E1, E2 (p. 48).

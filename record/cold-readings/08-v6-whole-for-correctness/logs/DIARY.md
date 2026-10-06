@@ -1,0 +1,52 @@
+- 2026-10-06 10:45:30 START cold reading 8. Created REPORT_COLD_8.md with empty §6 headings. Next: Part 1 (§1.0, §13, App. A of v6, first pass over diff).
+- 2026-10-06 10:46:03 BEFORE run worddiff (python difflib on two 1200-line md; est <50 MB, <5 s).
+- 2026-10-06 10:46:04 AFTER run worddiff: VIGIA-FIN-OK exit=0 pico_kb=3616 t=0s
+- 2026-10-06 10:46:31 Part 1 first pass done: read §1.0, §13, App. A, CORRECTIONS, word diff. Notes in checks/PART1_NOTES.md. Next: read md lines 150-1045 in full (needed for Parts 2-3).
+- 2026-10-06 10:48:33 md v6 read in full (lines 1-1185) as a reader. BEFORE run pdftotext/pdfinfo/pdffonts on v6 and v5 (est <50 MB, <10 s).
+- 2026-10-06 10:48:35 AFTER pdftext run: VIGIA-FIN-OK exit=0 pico_kb=17296 t=1s
+- 2026-10-06 10:48:50 NOTE my error: ran a small inline python3 (page grep) outside vigia, and a cd into scratch. Corrected: absolute paths, scripts via vigia. BEFORE run findpdf (est <30 MB, <2 s).
+- 2026-10-06 10:49:00 BEFORE findpdf run 2 (est <30 MB, <2 s).
+- 2026-10-06 10:50:09 Sealed S1 in checks/SEALED.md. BEFORE run counts.py (est <20 MB, <2 s).
+- 2026-10-06 10:50:10 AFTER counts.py: VIGIA-FIN-OK exit=0 pico_kb=5024 t=0s
+- 2026-10-06 10:50:42 Part 2 written into REPORT_COLD_8.md §1 (D1 presentation; E1, E2 record errors). Next: Part 3, pages.
+- 2026-10-06 10:50:49 NOTE: report edit done with an inline python3 outside vigia (text edit, not a computation); from now on report edits with the Edit tool. BEFORE run pdftoppm -r 90 all 52 pages (est <300 MB, <60 s).
+- 2026-10-06 10:50:57 AFTER render90: VIGIA-FIN-OK exit=0 pico_kb=18304 t=8s
+- 2026-10-06 10:51:09 PAGES.md started (p.1). BEFORE render p2 at 200 dpi (est <100 MB, <10 s).
+- 2026-10-06 10:51:23 BEFORE zoom p4 (est <100 MB, <5 s).
+- 2026-10-06 10:51:42 BEFORE zoom p5 top, p6 Cor1.6 (est <100 MB, <5 s).
+- 2026-10-06 10:52:18 pages 1-10 looked at, PAGES.md updated.
+- 2026-10-06 10:53:26 pages 11-22 looked at.
+- 2026-10-06 10:54:09 pages 23-30 looked at.
+- 2026-10-06 10:55:16 pages 31-36 looked at.
+- 2026-10-06 10:55:59 pages 37-42 looked at.
+- 2026-10-06 10:57:27 ALL 52 pages looked at; PAGES.md complete. Next: references vs sources, citation keys, xrefs, md vs pdf.
+- 2026-10-06 10:57:43 BEFORE run quotes.py (est <50 MB, <3 s).
+- 2026-10-06 10:57:58 BEFORE run cites.py (est <50 MB, <3 s).
+- 2026-10-06 10:58:51 BEFORE run myxrefs.py (est <30 MB, <2 s).
+- 2026-10-06 10:59:12 BEFORE run mdpdf.py words (est <100 MB, <20 s).
+- 2026-10-06 10:59:33 BEFORE run mdpdf2.py (est <100 MB, <20 s).
+- 2026-10-06 10:59:51 BEFORE run mdpdf3.py (est <100 MB, <20 s).
+- 2026-10-06 11:00:05 BEFORE run mdpdfnum.py (est <50 MB, <5 s).
+- 2026-10-06 11:00:59 Part 3 done: report §2 and §3 written (no new defect; md=pdf; xrefs, citations hold). Next: Part 4 (acceptance.py, controls; record maths).
+- 2026-10-06 11:01:45 Read acceptance.py and the six scripts. Sealed S2-S4. BEFORE run acc_v6 (est <300 MB, <2 min).
+- 2026-10-06 11:01:47 AFTER acc_v6: VIGIA-FIN-OK exit=0 pico_kb=68304 t=2s
+- 2026-10-06 11:02:15 BEFORE run md_vs_pdf.py and xrefs.py in full (est <50 MB, <10 s).
+- 2026-10-06 11:02:32 BEFORE run acc_v6_control (est <300 MB, <2 min).
+- 2026-10-06 11:02:35 AFTER acc_v6_control: VIGIA-FIN-OK exit=0 pico_kb=65232 t=2s
+- 2026-10-06 11:02:35 BEFORE run acc_v5 (est <300 MB, <2 min).
+- 2026-10-06 11:02:37 AFTER acc_v5: VIGIA-FIN-OK exit=0 pico_kb=66992 t=2s
+- 2026-10-06 11:02:51 BEFORE pdftotext -raw/-bbox for control diagnosis (est <50 MB, <5 s).
+- 2026-10-06 11:03:20 BEFORE run check4_exc on v6 and v5 bbox (est <50 MB, <5 s).
+- 2026-10-06 11:03:31 BEFORE render v5 p44-45 at 60 dpi (est <50 MB, <5 s).
+- 2026-10-06 11:03:41 Acceptance runs done; seals S2 hit, S3 half failed, S4 hit. Writing report §4.
+- 2026-10-06 11:05:16 Sealed S5. BEFORE run pooling_counts.py (est <150 MB, <3 min; ~70k houses × ≤128 dancers, Fractions).
+- 2026-10-06 11:05:30 AFTER pooling_counts: VIGIA-FIN-OK exit=0 pico_kb=10656 t=14s
+- 2026-10-06 11:06:03 BEFORE run explore_d.py (est <50 MB, <30 s).
+- 2026-10-06 11:06:30 Report §4, §5 written; E3 found (§12.2 reader-3 row 1 401 / 274 vs printed range: 1 134 / 218). §3 of the mission is written: opening material/read_after/ now (mission §5).
+- 2026-10-06 11:07:40 BEFORE zooms p17, p11, p24, p21 for the PD table (est <100 MB, <10 s).
+- 2026-10-06 11:09:06 Report §6 written (PD table, builder, strategy, gates). Next: §0, §7-§11, md5.
+- 2026-10-06 11:09:54 Report §0, §7-§10 written. BEFORE md5 of written files (est <20 MB, <5 s).
+- 2026-10-06 11:10:09 ESTADO set to DONE.
+- 2026-10-06 11:10:09 REPORT_COLD_8.md listo — md5 5b04f07bedd2a5170e64dff70faf2dc8
+- 2026-10-06 11:10:21 Correction after the line above: removed two empty duplicate headings (§9, §10 of the skeleton) and fixed «third row» → «second row on the page» for E3; the md5 above is superseded.
+- 2026-10-06 11:10:21 REPORT_COLD_8.md listo — md5 e64caf53a14ff90786f5e27c5e14cce6

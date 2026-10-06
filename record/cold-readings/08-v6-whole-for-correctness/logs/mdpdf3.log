@@ -1,0 +1,59 @@
+W1 replace: md<non increasing> pdf<nonincreasing>  | ctx: explicit integers binomial valuations and carries into
+W2 replace: md<constructors> pdf<constructors'>  | ctx: by reader with no access to the
+W3 insert: md<> pdf<our word standard meaning where>  | ctx: and this floor is not the grading
+W4 replace: md<subset intersection> pdf<subsetintersection>  | ctx: of Sin's school CSX DHS and the
+W5 replace: md<Hom Dist Hom Dist> pdf<HomDist HomDist>  | ctx: filtration then Ext and the reduction map
+W6 replace: md<Hom Dist Hom Dist> pdf<HomDist HomDist>  | ctx: the exact sequence Hom Hom Ext and
+W7 insert: md<> pdf<For>  | ctx: for each couplings only from to and
+W8 delete: md<For> pdf<>  | ctx: only from to and where satisfies and
+W9 delete: md<so> pdf<>  | ctx: the recursion Put and Then gives and
+W10 insert: md<> pdf<so>  | ctx: At there is only the floor and
+W11 replace: md<Proof> pdf<By Legendre's forProof>  | ctx: Each Proposition the cost form For dancers
+W12 replace: md<By Legendre's formula> pdf<mula>  | ctx: cost form For dancers Proof By Theorem
+W13 replace: md<non negative> pdf<nonnegative>  | ctx: and add up to The gold is
+W14 delete: md<min if> pdf<>  | ctx: starting at bit and put min if
+W15 insert: md<> pdf<min if>  | ctx: sat the window is saturated if sat
+W16 insert: md<> pdf<exp>  | ctx: of Dist lattices and Theorem gives with
+W17 delete: md<exp> pdf<>  | ctx: Dist lattices and Theorem gives with and
+W18 replace: md<Ch Sh> pdf<ChSh>  | ctx: of which is therefore free over From
+W19 replace: md<Ch Sh> pdf<ChSh>  | ctx: has the matrix in this basis with
+W20 insert: md<> pdf<and glue glue glue>  | ctx: cokernel For operators on put on glue
+W21 delete: md<and glue glue glue> pdf<>  | ctx: on glue so that glue diag with
+W22 replace: md<floor graded> pdf<floorgraded>  | ctx: in An element of acts on every
+W23 insert: md<> pdf<with pivot Dd>  | ctx: the slots the slots and the sources
+W24 delete: md<Dd with pivot> pdf<>  | ctx: sources as the slots the slots then
+W25 insert: md<> pdf<Dd>  | ctx: By and Proposition For the last claim
+W26 insert: md<> pdf<into diag and then into>  | ctx: of equal Smith form have isomorphic cokernels
+W27 delete: md<into diag and then into> pdf<>  | ctx: unimodular row and column operations turn Dd
+W28 delete: md<Proof In the order of Dd> pdf<>  | ctx: both are fixed by the word alone
+W29 insert: md<> pdf<Proof In the order of Dd>  | ctx: invertible so is and the block of
+W30 replace: md<odd family> pdf<oddfamily>  | ctx: systems of size on Their arms are
+W31 insert: md<> pdf<which acts on the outer slot Every>  | ctx: every level and in particular glue glue
+W32 delete: md<which acts on the outer slot Every> pdf<>  | ctx: Proof glue diag with the scalar matrix
+W33 insert: md<> pdf<as in>  | ctx: Mat Proof Put and As in Corollary
+W34 delete: md<as in> pdf<>  | ctx: in Corollary where on the window Expand
+W35 insert: md<> pdf<is integral>  | ctx: whose shifts are glue glue glue glue
+W36 delete: md<is integral> pdf<>  | ctx: glue since glue glue glue Now glue
+W37 delete: md<gate dance py> pdf<>  | ctx: clocks coker Theorem against the dance code
+W38 delete: md<gate sections to py> pdf<>  | ctx: form of against the pooled clocks code
+W39 delete: md<Theorem the construction of and the claims of its proof for three admissible prices code gate sections to py> pdf<>  | ctx: in all cells where pooling changes them
+W40 delete: md<Theorem strict Cut Lemma where it is applied the penalty shifts and the deletion at code gate strict cut py> pdf<>  | ctx: without gold fails in houses with in
+W41 delete: md<Lemma the fit of of its shifts and of its deletions is integral code gate strict cut py> pdf<>  | ctx: late breaks the integer shift in of
+W42 replace: md<non integral> pdf<nonintegral>  | ctx: at its first dancer not house has
+W43 insert: md<> pdf<gate dance py gate sections to py Theorem the construction of and the claims of its proof for three admissible prices code gate sections to py Theorem>  | ctx: count is not in and in cases
+W44 delete: md<gate section py> pdf<>  | ctx: that fails for values of Propositions code
+W45 delete: md<gate section py> pdf<>  | ctx: weights of the Bernoulli formulas and code
+W46 delete: md<Lemma on code gate section py> pdf<>  | ctx: and code gate section py failures none
+W47 insert: md<> pdf<gate section py gate section py Lemma on code gate section py>  | ctx: in remark seed as stated there none
+W48 replace: md<authors> pdf<authors'>  | ctx: with code of its own never the
+W49 insert: md<> pdf<statement reader range result control>  | ctx: even fires Theorem houses with failures none
+W50 insert: md<> pdf<statement reader range result control>  | ctx: dancer after the boundary fails in of
+W51 replace: md<non integral> pdf<nonintegral>  | ctx: with with with houses and cells no
+W52 replace: md<flights> pdf<flights'>  | ctx: cold reader from the statements and the
+W53 insert: md<> pdf<Aky Bai>  | ctx: not yet been read cold References ABERS
+W54 delete: md<Aky> pdf<>  | ctx: sampling with incomplete information Ann Math Statist
+W55 delete: md<Bai> pdf<>  | ctx: in the sandpile group of square arXiv
+W56 insert: md<> pdf<Yue>  | ctx: groups in harmonic abelian quotients arXiv Wil
+W57 delete: md<Yue> pdf<>  | ctx: matrices of subsets vs subsets European Combin
+word ops: 57  md words 18829  pdf words 18842
+VIGIA-FIN-OK exit=0 pico_kb=16160 t=1s

@@ -1,0 +1,4 @@
+RESULT {'houses': 16380, 'bnd': 8001, 'strict_fail': 0, 'pen_checks': 192024, 'pen_fail': 0, 'del_checks': 360, 'del_fail': 0, 'nonint': 0, 'ctl_strict_next_tests': 7038, 'ctl_strict_next_fires': 1911, 'ctl_late_tests': 192024, 'ctl_late_fires': 18606, 'ctl_e0_fires': 1942}
+CONTROL counterexample of the reader: integer shift fails -> True [5, 4, 4, 3] [5, 5, 3, 3]
+CONTROL it is a non-strict cut at 2 -> True
+VIGIA-FIN-OK exit=0 pico_kb=10752 t=42s

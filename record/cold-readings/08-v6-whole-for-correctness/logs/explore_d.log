@@ -1,0 +1,7 @@
+α=1 pooling cells per i=0..12 (λ 1..63): [12, 21, 21, 19, 16, 21, 21, 17, 13, 21, 21, 19, 16]  cumulative i≤8: 161  i≤10: 203  i≤12: 238
+α=2 pooling cells per i=0..12 (λ 1..63): [4, 8, 7, 7, 5, 8, 7, 7, 4, 8, 7, 7, 5]  cumulative i≤8: 57  i≤10: 72  i≤12: 84
+dim≤64: 32 families
+dim≤128: 46 families
+dim≤256: 57 families
+dim≤512: 62 families
+VIGIA-FIN-OK exit=0 pico_kb=4800 t=0s

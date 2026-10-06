@@ -1,0 +1,34 @@
+cb883e8380c2aaba1ab446a4c000ff26 checks/PAGES.md
+c3d2df0c0ebda81eae397feb592a48ca checks/SEALED.md
+f39722fb6be19347fabf32505ec8373e scratch/md_vs_pdf9.py
+150c315bfd45c8060170bc407c78feed scratch/gate_strict_cut_copy.py
+2166ffe04bd5a1f946aaa0f8f51a4019 scratch/mydiff.txt
+85bcca1a7b80afff25a631e22bd1e3d2 scratch/v6.txt
+f573ab029e52c241d8e4274981e3d94f scratch/v7.txt
+aa3e6f1c16d31fca485b1aa3da3c8b5e logs/diff_check.log
+e6646d9c608d005189c97f3d784413e6 logs/gate_k6.log
+72499e7752cdd30d00b5dc4c64347f66 logs/render_cmp.log
+e7e9c6fff740a1b072af1a0b86c87a39 logs/render90.log
+1b834cbd5b45420cb8f0f09b7a826495 logs/mdpdf.log
+1101b935228d47858b2e588cee929230 logs/acc_v7.log
+9154d5603c7db6ba9961de059cf77e89 logs/acc_v7_control.log
+c075d933be10fe48715f3990b0f38be0 logs/acc_v6.log
+5b88b6f349f2f7df6ba518226966845a scratch/p90/v7-01.png
+44993cbd253e7e47172e7b0e1bf796d5 scratch/p90/v7-02.png
+500a20dce99807481e483e2b162662a5 scratch/p90/v7-03.png
+8d19b098d276bc3c4f581e57016c7a0a scratch/p90/v7-09.png
+82aa567365b1aaa7720aad48488c2830 scratch/p90/v7-30.png
+3b8f21acab640bbea34e4ee95eec2c16 scratch/p90/v7-44.png
+3e96871bbe93c014937c030ed11b644b scratch/p90/v7-46.png
+23d0cea8496862219368a33d12f7b46b scratch/p90/v7-47.png
+96d49936dc5823767127429714d193ea scratch/p90/v7-48.png
+48383ab4a32fc49098fa602aaaf86c23 scratch/p90/v7-49.png
+c03c334ff0b8d8198b748a3617f0024d scratch/p90/v7-50.png
+f8f72329609d7e2b7c91bc32e90649f5 scratch/p90/v7-51.png
+6e953b00ef9d6c57d7d95b01bf4f699f scratch/p90/v7-52.png
+scratch/r6+r7 pgm list md5: fbf9781433b1961ed894332c74b4af8c
+150c315bfd45c8060170bc407c78feed
+150c315bfd45c8060170bc407c78feed
+       0
+       3
+VIGIA-FIN-OK exit=0 pico_kb=2240 t=0s

@@ -1,0 +1,60 @@
+### HUNK 1: replace v5 6-6 v6 6-6
+  [replace] ...Madrid, Spain · tretoef@gmail.com ·  -<5>  +<6>
+  [replace] ...· 5 October 2026 · version  -<5>  +<6>
+### HUNK 2: replace v5 32-32 v6 32-32
+  [insert] ...and defects of typesetting, corrected in  -<>  +<version 5. The changes of version 5 were read cold by a seventh reader: the mathematics of every change **holds**, with no gap and no error; that reader found one false sentence in the record of the readings, inexact sentences, and defects of typesetting, corrected in>
+  [replace] ...of typesetting, corrected in this version  -<5 except as stated in Appendix A.>  +<6.>
+  [replace] ...Appendix A. **The changes of version  -<5>  +<6>
+### HUNK 3: replace v5 196-196 v6 196-196
+  [replace] ...amount `2^α(i + d)`; each move  -<replaces>  +<gives every new floor the payment minus half the product of>
+  [replace] ...replaces the payments of two adjacent  -<floors by minus half their product,>  +<old floors,>
+### HUNK 4: replace v5 368-368 v6 368-368
+  [replace] ...lies in `b_0 ⊗ N'`. Eliminating  -<these,>  +<these relations (one for each `n` and `s'`),>
+### HUNK 5: replace v5 746-746 v6 746-746
+  [replace] ...which keeps the level sets of  -<the child>  +<`fit(x_{H'})` (the house `H'` of Lemma 7.7)>
+  [delete] ...of the first half is the  -<child's>  +<>
+  [insert] ...is the child's first level set  -<>  +<of `fit(x_{H'})`>
+### HUNK 6: replace v5 796-796 v6 796-796
+  [replace] ...− 1) T(λ))` (`a = (−1)^{D+i}  -<exp F`):>  +<exp(F)`):>
+### HUNK 7: replace v5 811-811 v6 811-811
+  [replace] ...With `u^2 = 2F`, `Ch =  -<cosh u`>  +<cosh(u)`>
+### HUNK 8: replace v5 914-914 v6 914-914
+  [replace] ...⊇ D'` of products whose valuation  -<is, by subadditivity,>  +<is>
+  [replace] ...1 + ⋯ + δ(F_j ∖  -<D') ≥>  +<D')`, which is `≥>
+  [replace] ...D') ≥ δ(D ∖ D') +  -<j`.>  +<j` by subadditivity.>
+### HUNK 9: replace v5 1002-1002 v6 1002-1002
+  [replace] ...scalar matrix `L = [[1, 0],  -<[½,>  +<[1/2,>
+### HUNK 10: replace v5 1100-1100 v6 1100-1100
+  [insert] ...and the 7 634 cells of  -<>  +<its row on>
+  [replace] ...the 7 634 cells of the  -<row above>  +<matrices `M`>
+### HUNK 11: replace v5 1102-1102 v6 1102-1102
+  [replace] ...and `i ≥ 1`; none for  -<(H)>  +<Propositions 5.3>
+  [insert] ...≥ 1`; none for (H) and  -<>  +<5.4,>
+  [insert] ...none for (H) and Lemma 7.5  -<>  +<and (H)>
+### HUNK 12: replace v5 1112-1112 v6 1112-1112
+  [insert] ...7.9 on houses and on the  -<>  +<10 455>
+  [replace] ...houses and on the cells of  -<§1.2>  +<the fifth reader's second row>
+### HUNK 13: replace v5 1116-1117 v6 1116-1117
+  [delete] ...read cold by a fifth reader,  -<and>  +<>
+  [replace] ...changes of version 4 by a  -<sixth>  +<sixth, and the changes of version 5 by a seventh>
+  [replace] ...and re-derived by the fifth reader.  -<No>  +<Version 2 added the strictness of the cuts to the (Cut) of Theorem 7.8 and restated Lemma 7.2(b); no other>
+  [replace] ...of a theorem changed in versions  -<2, 3, 4 or 5. Lemma 7.2(b) was restated in version 2.>  +<2 to 6.>
+### HUNK 14: replace v5 1119-1119 v6 1119-1120
+  [delete] ...- **Changed in version 5,  -<audited, not yet>  +<>
+  [insert] ...(Appendix A). No mathematical statement changed.  -<>  +<
+ - **Changed in version 6, made by the auditor, not yet read cold:** the corrections of the seventh reading (Appendix A). No mathematical statement changed.>
+### HUNK 15: replace v5 1121-1121 v6 1122-1122
+  [replace] ...reading of the changes of version  -<5;>  +<6;>
+### HUNK 16: replace v5 1148-1148 v6 1149-1150
+  [delete] ...- **Version 5**  -<(this text)>  +<>
+  [insert] ...end-of-proof mark at the right margin,  -<>  +<and>
+  [replace] ...right margin, tables with horizontal rules  -<only, no sentence of the running text beginning with a formula, no break inside a short formula, a short bracket group, a pure tensor or a citation, and fourteen passages reworded to remove loose lines. Left as they are: two lines that carry a small matrix in the text keep wide word spaces; a statement set right after its bold label may begin with a formula; and short last lines of paragraphs are kept, as TeX keeps them (the end-of-proof mark never stands alone on a line).>  +<only.>
+  [replace] ...No mathematical statement changed, and no  -<number, except>  +<number;>
+  [replace] ...changed, and no number, except the  -<description>  +<descriptions of four counts of §12 were made exact (the 7 634 cells, the 301 clocks, the 192 024 cells, the 9 880 cells). Its changes were read cold on 6 October 2026 (cold reader 7) by a reader with no access to the flights or the audits, who opened the sixth reading only after writing its verdicts. It compared every changed passage with version 4 by a script with a control, re-counted the numbers of §12 with its own code, and looked at every page>
+  [replace] ...number, except the description of the  -<7 634 cells.>  +<pdf: the mathematics of every change **holds**, with no gap and no error. It found one false sentence in this record (§13 said that no statement of a theorem had changed in versions 2 to 5, while version 2 added the strict (Cut) to Theorem 7.8), inexact sentences, points of presentation, and defects of typesetting, the main one being that two steps of the proof of Theorem 7.8 had lost their numbers in the pdf. 
+ - **Version 6** (this text) makes those corrections. No mathematical statement changed.>
+### HUNK 17: replace v5 1167-1167 v6 1169-1169
+  [insert] ...*Adv. in Appl. Math.* 143 (2023),  -<>  +<Paper No.>
+### HUNK 18: replace v5 1183-1183 v6 1185-1185
+  [insert] ...graphs, *Electron. J. Combin.* 31 (2024),  -<>  +<Paper No.>
+VIGIA-FIN-OK exit=0 pico_kb=3616 t=0s
