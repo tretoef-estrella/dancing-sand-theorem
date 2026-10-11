@@ -1,0 +1,1 @@
+estimate: light, < 4 min, < 300 MB (Lean build running in parallel, as for chkC43)

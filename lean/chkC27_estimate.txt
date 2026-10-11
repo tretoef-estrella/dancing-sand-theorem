@@ -1,0 +1,1 @@
+chkC27 estimate: 49 pairs (M, N), unknowns per pair <= ~300, equations built once per pair by evaluating on basis vectors (pure Python, dense <= 12x12); ranks over Q and F_2, F_3, F_5. Expected < 8 min, < 400 MB. Run under vigia (1.2 GB / 10 min).
