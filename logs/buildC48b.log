@@ -1,0 +1,16 @@
+=== MODULE PartT 06:36:38
+vigia_rc=0
+✔ [8290/8290] Built RequestProject.DanceXi.PartT (116s)
+Build completed successfully (8290 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1585536 t=128s
+=== MODULE PartR 06:38:46
+vigia_rc=0
+✔ [8339/8339] Built RequestProject.DanceXi.PartR (103s)
+Build completed successfully (8339 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1551152 t=113s
+=== MODULE All 06:40:39
+vigia_rc=0
+✔ [8340/8340] Built RequestProject.DanceXi.All (71s)
+Build completed successfully (8340 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1678480 t=79s
+BUILD-LOOP-END
