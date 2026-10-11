@@ -1,0 +1,5 @@
+KMAX 4
+COUNTS {'A': 12440, 'A-onezero': 2728, "A'-cost": 88888, "A'-clock": 12440, 'A0': 3110, 'A0-up': 12666, 'B5': 3110, 'B6': 3110, 'B1': 3048, 'B3': 3940, 'B4': 7880, 'C1': 1524, 'C2': 1524, 'C3': 1524, 'C4': 1524, 'C5': 2428, 'C6': 1524, 'C7': 1524, 'B2': 3940}
+TOTAL FAILURES 0
+CONTROLS {'A with bit_k for r_k': 956, 'B3 without 1+': 338, 'C3 without sat': 26, 'C5 without +h': 904} ALL FIRE
+VIGIA-FIN-OK exit=0 pico_kb=10096 t=2s

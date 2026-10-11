@@ -1,0 +1,21 @@
+PASS S0 aN 1 = 0
+PASS S1 Syl2 K(Q_1) trivial
+PASS S2 Syl2 KBar(1) trivial
+PASS S3 lapBar at n=1 is zero
+PASS DW'1 H trivial: l0=l1=1
+PASS L1-1 l0 Syl2 KBar 1 = 2^(2^0-1-aN 1)=1
+PASS R1 rank over F2 of lapBar(1) = aN 1
+PASS T0 Syl2 K(Q_2) = Z/4
+PASS T1 gmax 2 = 1
+PASS G1-2 cExp 1 = max(gmax 2, v2 2 + 2 - 1)
+PASS G1 n=3 first clause
+PASS G1 n=3 second clause
+PASS G1 n=4 first clause
+PASS G1 n=4 second clause
+controls (must FAIL):
+FAIL CONTROL cExp(Z/4,1)=1
+FAIL CONTROL K(Q_2)=Z/2
+FAIL CONTROL aN 1 = 1
+FAIL CONTROL lapBar(1) nonzero
+done 14 4
+VIGIA-FIN-OK exit=0 pico_kb=40096 t=0s

@@ -1,0 +1,36 @@
+=== MODULE Basic 11:41:34
+vigia_rc=0
+✔ [8036/8036] Built RequestProject.Dance.Basic (154s)
+Build completed successfully (8036 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1170256 t=163s
+=== MODULE Relabel 11:44:18
+vigia_rc=0
+✔ [8037/8037] Built RequestProject.Dance.Relabel (150s)
+Build completed successfully (8037 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1167648 t=158s
+=== MODULE D1 11:46:56
+vigia_rc=0
+✔ [8038/8038] Built RequestProject.Dance.D1 (156s)
+Build completed successfully (8038 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1426272 t=164s
+=== MODULE D2 11:49:41
+vigia_rc=0
+✔ [8037/8037] Built RequestProject.Dance.D2 (160s)
+Build completed successfully (8037 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1312368 t=169s
+=== MODULE D3 11:52:31
+vigia_rc=0
+✔ [8038/8038] Built RequestProject.Dance.D3 (205s)
+Build completed successfully (8038 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1018992 t=213s
+=== MODULE Proposition 11:56:04
+vigia_rc=0
+✔ [8041/8041] Built RequestProject.Dance.Proposition (179s)
+Build completed successfully (8041 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1210816 t=189s
+=== MODULE All 11:59:14
+vigia_rc=0
+✔ [8042/8042] Built RequestProject.Dance.All (128s)
+Build completed successfully (8042 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1377248 t=137s
+BUILD-LOOP-END

@@ -1,0 +1,4 @@
+checks 204 fails 0
+controls (number of cells where the false variant FAILS; each must be > 0): {'fold_vs_all': 15, 'cube_vs_even': 12, 'p2_cube': 7}
+CONTROLS-FIRE
+VIGIA-FIN-OK exit=0 pico_kb=26704 t=2s
