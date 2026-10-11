@@ -1,0 +1,31 @@
+=== MODULE Basic 08:08:01
+vigia_rc=0
+✔ [8028/8028] Built RequestProject.Deficit.Basic (182s)
+Build completed successfully (8028 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1066864 t=190s
+=== MODULE Polynomials 08:11:12
+vigia_rc=0
+✔ [8029/8029] Built RequestProject.Deficit.Polynomials (151s)
+Build completed successfully (8029 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1374656 t=159s
+=== MODULE DeficitLaw 08:13:51
+vigia_rc=0
+✔ [8030/8030] Built RequestProject.Deficit.DeficitLaw (100s)
+Build completed successfully (8030 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1502400 t=108s
+=== MODULE Rescaling 08:15:39
+vigia_rc=0
+✔ [8029/8029] Built RequestProject.Deficit.Rescaling (110s)
+Build completed successfully (8029 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1480208 t=118s
+=== MODULE ClosedForm 08:17:38
+vigia_rc=0
+✔ [8031/8031] Built RequestProject.Deficit.ClosedForm (105s)
+Build completed successfully (8031 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1576192 t=113s
+=== MODULE All 08:19:31
+vigia_rc=0
+✔ [8033/8033] Built RequestProject.Deficit.All (132s)
+Build completed successfully (8033 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1560960 t=139s
+BUILD-LOOP-END

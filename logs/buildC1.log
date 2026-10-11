@@ -1,0 +1,43 @@
+=== MODULE Basic 17:22:39
+vigia_rc=0
+✔ [8026/8026] Built RequestProject.AntitonicFit.Basic (123s)
+Build completed successfully (8026 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1490208 t=133s
+=== MODULE Characterization 17:24:53
+vigia_rc=0
+✔ [8027/8027] Built RequestProject.AntitonicFit.Characterization (72s)
+Build completed successfully (8027 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1666704 t=80s
+=== MODULE IntegerFit 17:26:13
+vigia_rc=0
+✔ [8028/8028] Built RequestProject.AntitonicFit.IntegerFit (89s)
+Build completed successfully (8028 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1561440 t=96s
+=== MODULE Cuts 17:27:50
+vigia_rc=0
+✔ [8029/8029] Built RequestProject.AntitonicFit.Cuts (78s)
+Build completed successfully (8029 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1604560 t=86s
+=== MODULE Antisymmetry 17:29:17
+vigia_rc=0
+✔ [8030/8030] Built RequestProject.AntitonicFit.Antisymmetry (83s)
+Build completed successfully (8030 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1624736 t=90s
+=== MODULE Examples 17:30:48
+vigia_rc=0
+✔ [8030/8030] Built RequestProject.AntitonicFit.Examples (84s)
+Build completed successfully (8030 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1633856 t=91s
+=== MODULE Gluing 17:32:19
+=== RESUME (first loop killed by the 600 s timeout of the shell task, not by the watchdog) 17:32:56
+=== MODULE Gluing 17:32:56
+vigia_rc=0
+✔ [8031/8031] Built RequestProject.AntitonicFit.Gluing (74s)
+Build completed successfully (8031 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1651792 t=82s
+=== MODULE All 17:34:18
+vigia_rc=0
+✔ [8033/8033] Built RequestProject.AntitonicFit.All (72s)
+Build completed successfully (8033 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1673632 t=80s
+BUILD-LOOP-END

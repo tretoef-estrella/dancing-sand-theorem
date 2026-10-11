@@ -1,0 +1,26 @@
+checks/CheckCubo.lean:75:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  HSMul ℤ (Submodule ℤ (Fin (2 ^ (ds.length + mCount ds - 1 - ↑a)) → ℤ)) ?m.89
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+'MainTheorem.M1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MainTheorem.M2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MainTheorem.G2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MainTheorem.M3_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MainTheorem.M3_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MainTheorem.M3_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MainTheorem.M3_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Windows.theorem_D_i' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BaiCounts.B1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BaiCounts.B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PodiumCor.G1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PodiumCor.G2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PodiumCor.G3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Mirror.Y2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldLaw.H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldLaw.DW' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldLaw.DW'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldLaw.L1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldLaw.R' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddParts.B1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddParts.C5' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=1 pico_kb=1614416 t=193s

@@ -1,0 +1,41 @@
+=== MODULE Basic 12:49:36
+vigia_rc=0
+✔ [8049/8049] Built RequestProject.Windows.Basic (205s)
+Build completed successfully (8049 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1113088 t=213s
+=== MODULE Labels 12:53:09
+vigia_rc=0
+✔ [8050/8050] Built RequestProject.Windows.Labels (176s)
+Build completed successfully (8050 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1134432 t=184s
+=== MODULE Hom 12:56:14
+vigia_rc=0
+✔ [8050/8050] Built RequestProject.Windows.Hom (200s)
+Build completed successfully (8050 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1165744 t=208s
+=== MODULE Step 12:59:42
+vigia_rc=0
+✔ [8051/8051] Built RequestProject.Windows.Step (155s)
+Build completed successfully (8051 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1211408 t=164s
+=== MODULE Moves 13:02:26
+vigia_rc=0
+✔ [8052/8052] Built RequestProject.Windows.Moves (172s)
+Build completed successfully (8052 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1273248 t=181s
+=== MODULE TheoremW 13:05:28
+vigia_rc=0
+✔ [8054/8054] Built RequestProject.Windows.TheoremW (175s)
+Build completed successfully (8054 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1274720 t=185s
+=== MODULE TheoremD 13:08:33
+vigia_rc=0
+✔ [8055/8055] Built RequestProject.Windows.TheoremD (193s)
+Build completed successfully (8055 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1181728 t=205s
+=== MODULE All 13:11:58
+vigia_rc=0
+✔ [8056/8056] Built RequestProject.Windows.All (200s)
+Build completed successfully (8056 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1197936 t=209s
+BUILD-LOOP-END
