@@ -1,0 +1,7 @@
+(lifts tested: 43 basis morphisms modulo 2)
+chkC28: 582 checks, 0 failures
+control Hom(Δ0, Δ2): dim_Q 0 < dim_F2 1, and the procedure fails: FIRES
+control a non-weight-preserving morphism modulo 2 exists (None): SILENT
+control a matrix ≡ 1 mod 3 with even determinant ([[1,3],[3,1]], det −8): FIRES
+controls: 2/3 fire
+VIGIA-FIN-OK exit=0 pico_kb=28672 t=63s

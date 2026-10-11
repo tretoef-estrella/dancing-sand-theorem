@@ -1,0 +1,6 @@
+chkC30: 56 checks, 0 failures
+control wrong himg row not weight-preserving: FIRES
+control wrong reindexing does not intertwine: FIRES
+control flipped matrix does not commute: FIRES
+controls: 3/3 fire
+VIGIA-FIN-OK exit=0 pico_kb=315392 t=231s

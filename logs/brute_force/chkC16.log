@@ -1,0 +1,4 @@
+COUNTS {'L-coker-diagonal': 300, 'L-scaled': 300, 'R0-shift': 400, 'X3-I-empty': 15, 'X1-exponents': 279, 'X1-positive': 279, 'R1-raw-clocks': 93, 'X-theorem-i>=1': 93, 'X2-exponents': 78, 'R2-raw-clocks': 26, 'X-theorem-i=0': 26, 'example-n6-lambda6': 1, 'example-n6-lambda4': 1, 'example-n6-lambda2': 1}
+FAILURES 0 []
+CONTROLS {'ctl-even-det-breaks': 190, 'ctl-unpooled-raw': 26, 'ctl-kappa-shift-wrong': 24, 'ctl-sharp-with-i1-clock': 26} ALL FIRE
+VIGIA-FIN-OK exit=0 pico_kb=12048 t=0s

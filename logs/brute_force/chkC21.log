@@ -1,0 +1,9 @@
+chkC21: 22196 checks, 0 failures
+control no twist: FIRES
+control odd F nonzero: FIRES
+control weights not doubled: FIRES
+control Lucas over Z: FIRES
+control twist mod 3: FIRES
+control C2 mod 3: FIRES
+controls: 6/6 fire
+VIGIA-FIN-OK exit=0 pico_kb=13968 t=2s

@@ -1,0 +1,4 @@
+checks 83102 fails 0
+controls {'A-even': 19, 'C-shift': 14757, 'B1-no-v2': 4916, 'F-concat': 2215, 'X-noextra': 8, 'X-extra+1': 8}
+FIN
+VIGIA-FIN-OK exit=0 pico_kb=14320 t=1s

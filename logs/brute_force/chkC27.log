@@ -1,0 +1,7 @@
+chkC27: 297 checks, 0 failures
+control Ext^1(Δ0, Δ2) ≠ 0 mod 2 (Z=1, B=0): FIRES
+control Ext^1(∇2, ∇0) ≠ 0 mod 2 (Z=1, B=0): FIRES
+control (sanity, must hold) Ext^1(Δ0, Δ2) = 0 mod 3 (Z=1, B=1): FIRES
+control a random c is not a cocycle (glued data not DP): FIRES
+controls: 4/4 fire
+VIGIA-FIN-OK exit=0 pico_kb=54272 t=14s

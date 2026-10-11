@@ -1,0 +1,6 @@
+chkC29: 470 checks, 0 failures
+control ∇(2) fails the Δ-test: FIRES
+control Δ(2) fails the ∇-test: FIRES
+control wrong Φ is not DP: FIRES
+controls: 3/3 fire
+VIGIA-FIN-OK exit=0 pico_kb=27648 t=67s
