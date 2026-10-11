@@ -1,0 +1,10 @@
+'ArmsEven.P1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArmsEven.P2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArmsEven.P3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArmsEven.A1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArmsEven.H1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArmsEven.H2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArmsEven.C1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArmsEven.E1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArmsEven.E2' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1813792 t=144s

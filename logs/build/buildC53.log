@@ -1,0 +1,21 @@
+=== MODULE PartS 14:37:47
+vigia_rc=0
+✔ [8424/8424] Built RequestProject.SmallCases.PartS (81s)
+Build completed successfully (8424 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1667808 t=89s
+=== MODULE PartT 14:39:16
+vigia_rc=0
+✔ [8425/8425] Built RequestProject.SmallCases.PartT (75s)
+Build completed successfully (8425 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1786560 t=82s
+=== MODULE PartU 14:40:39
+vigia_rc=0
+✔ [8427/8427] Built RequestProject.SmallCases.PartU (78s)
+Build completed successfully (8427 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1725840 t=85s
+=== MODULE All 14:42:04
+vigia_rc=0
+✔ [8428/8428] Built RequestProject.SmallCases.All (60s)
+Build completed successfully (8428 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1826336 t=67s
+BUILD-LOOP-END

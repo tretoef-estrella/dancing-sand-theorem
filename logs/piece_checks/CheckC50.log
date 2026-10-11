@@ -1,0 +1,13 @@
+'GlueDance.B1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueDance.B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueDance.B3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueDance.B4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueDance.G2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueDance.S1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueDance.S2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueDance.S3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueDance.S4' depends on axioms: [propext]
+'GlueDance.D1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueDance.D2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueDance.D3' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1808960 t=140s

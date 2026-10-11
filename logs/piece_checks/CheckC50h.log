@@ -1,0 +1,9 @@
+'EvenZero.M0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenZero.M1'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenZero.K1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenZero.K2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenZero.K3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenZero.L' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenZero.T0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenZero.TT' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1719856 t=155s
