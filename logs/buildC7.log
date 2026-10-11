@@ -1,0 +1,26 @@
+=== MODULE Dancers 22:10:12
+vigia_rc=0
+✔ [8033/8033] Built RequestProject.TheoremF.Dancers (199s)
+Build completed successfully (8033 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1183632 t=209s
+=== MODULE Sequences 22:13:41
+vigia_rc=0
+✔ [8041/8041] Built RequestProject.TheoremF.Sequences (129s)
+Build completed successfully (8041 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1383168 t=136s
+=== MODULE Walk 22:15:58
+vigia_rc=0
+✔ [8042/8042] Built RequestProject.TheoremF.Walk (95s)
+Build completed successfully (8042 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1454224 t=103s
+=== MODULE TheoremF 22:17:41
+vigia_rc=0
+✔ [8043/8043] Built RequestProject.TheoremF.TheoremF (93s)
+Build completed successfully (8043 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1598912 t=100s
+=== MODULE All 22:19:21
+vigia_rc=0
+✔ [8044/8044] Built RequestProject.TheoremF.All (78s)
+Build completed successfully (8044 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1572560 t=85s
+BUILD-LOOP-END

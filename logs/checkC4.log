@@ -1,0 +1,9 @@
+'GoldenMatching.theorem_A' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GoldenMatching.theorem_B' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GoldenMatching.lemma_C1_oE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GoldenMatching.lemma_C1_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GoldenMatching.lemma_C1_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GoldenMatching.lemma_C1_bijOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GoldenMatching.lemma_C2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GoldenMatching.corollary_D' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=940160 t=228s

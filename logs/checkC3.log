@@ -1,0 +1,12 @@
+'Rulers.lemma_5_0_xi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Rulers.lemma_5_0_sdiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Rulers.lemma_5_1_a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Rulers.lemma_5_1_b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Rulers.legendre_sum_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Rulers.legendre_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Rulers.proposition_5_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Rulers.proposition_5_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Rulers.proposition_5_4_a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Rulers.proposition_5_4_b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Rulers.proposition_5_4_c' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1030448 t=209s

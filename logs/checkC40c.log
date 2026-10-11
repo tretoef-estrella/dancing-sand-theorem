@@ -1,0 +1,13 @@
+'FormalAct.N1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAct.N2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAct.A1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAct.A2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAct.A3_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAct.A3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAct.A4_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAct.A4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAct.T1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAct.T2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAct.S1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalAct.S2' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1936928 t=141s

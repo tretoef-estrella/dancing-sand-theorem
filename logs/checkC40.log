@@ -1,0 +1,13 @@
+'FormalOps.Bf.instRing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalOps.Bf.instAlgebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalOps.B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalOps.B3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalOps.B4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalOps.T0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalOps.T1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalOps.V0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalOps.V1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalOps.S1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalOps.S2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalOps.S3' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1638480 t=150s

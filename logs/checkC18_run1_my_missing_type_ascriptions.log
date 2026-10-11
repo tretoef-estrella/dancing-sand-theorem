@@ -1,0 +1,161 @@
+checks/CheckC18.lean:35:43: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (V A).ι 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  (V A).ι
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+checks/CheckC18.lean:35:60: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (V A).ι 1
+numerals are polymorphic in Lean, but the numeral `1` cannot be used in a context where the expected type is
+  (V A).ι
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+checks/CheckC18.lean:37:26: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (V A).ι 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  (V A).ι
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+checks/CheckC18.lean:37:43: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (V A).ι 1
+numerals are polymorphic in Lean, but the numeral `1` cannot be used in a context where the expected type is
+  (V A).ι
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+checks/CheckC18.lean:37:71: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (V A).ι 1
+numerals are polymorphic in Lean, but the numeral `1` cannot be used in a context where the expected type is
+  (V A).ι
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+checks/CheckC18.lean:38:26: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (V A).ι 1
+numerals are polymorphic in Lean, but the numeral `1` cannot be used in a context where the expected type is
+  (V A).ι
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+checks/CheckC18.lean:38:43: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (V A).ι 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  (V A).ι
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+checks/CheckC18.lean:38:71: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (V A).ι 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  (V A).ι
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+checks/CheckC18.lean:74:6: error: failed to synthesize
+  HSMul A ((j : Fin (l + 1)) → ?m.32 j) ?m.54
+(deterministic) timeout at `typeclass`, maximum number of heartbeats (20000) has been reached
+
+Note: Use `set_option synthInstance.maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+checks/CheckC18.lean:74:82: error: Application type mismatch: The argument
+  1
+has type
+  A
+but is expected to have type
+  ?m.32 ⟨↑r + t, ⋯⟩
+in the application
+  Pi.single ⟨↑r + t, ⋯⟩ 1
+checks/CheckC18.lean:78:6: error: failed to synthesize
+  HSMul A ((j : Fin (l + 1)) → ?m.32 j) ?m.54
+(deterministic) timeout at `typeclass`, maximum number of heartbeats (20000) has been reached
+
+Note: Use `set_option synthInstance.maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+checks/CheckC18.lean:78:80: error: Application type mismatch: The argument
+  1
+has type
+  A
+but is expected to have type
+  ?m.32 ⟨↑r - s, ⋯⟩
+in the application
+  Pi.single ⟨↑r - s, ⋯⟩ 1
+checks/CheckC18.lean:82:6: error: failed to synthesize
+  HSMul A ((j : Fin (l + 1)) → ?m.32 j) ?m.54
+(deterministic) timeout at `typeclass`, maximum number of heartbeats (20000) has been reached
+
+Note: Use `set_option synthInstance.maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+checks/CheckC18.lean:82:76: error: Application type mismatch: The argument
+  1
+has type
+  A
+but is expected to have type
+  ?m.32 ⟨↑r + t, ⋯⟩
+in the application
+  Pi.single ⟨↑r + t, ⋯⟩ 1
+checks/CheckC18.lean:86:6: error: failed to synthesize
+  HSMul A ((j : Fin (l + 1)) → ?m.24 j) ?m.46
+(deterministic) timeout at `typeclass`, maximum number of heartbeats (20000) has been reached
+
+Note: Use `set_option synthInstance.maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+checks/CheckC18.lean:86:76: error: Application type mismatch: The argument
+  1
+has type
+  A
+but is expected to have type
+  ?m.24 ⟨↑r - s, ⋯⟩
+in the application
+  Pi.single ⟨↑r - s, ⋯⟩ 1
+checks/CheckC18.lean:101:6: error: failed to synthesize
+  HSMul A ((j : (tensorPow A n).ι) → ?m.24 j) ?m.35
+(deterministic) timeout at `typeclass`, maximum number of heartbeats (20000) has been reached
+
+Note: Use `set_option synthInstance.maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+checks/CheckC18.lean:101:63: error: Application type mismatch: The argument
+  1
+has type
+  A
+but is expected to have type
+  ?m.24 (pt A n S)
+in the application
+  Pi.single (pt A n S) 1
+'DPLattice.T1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.T2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.T3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.T4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.T5_delta_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.T5_nabla_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.T5_delta_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.T5_nabla_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.delta_Fd_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.nabla_Ed_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.tensorV_Fd_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.tensorV_Ed_b1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.pt_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.L1_F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.L1_H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.L2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.C1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CubeLaplacian.C1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPLattice.C2' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=1 pico_kb=1300864 t=200s

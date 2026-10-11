@@ -1,0 +1,11 @@
+checks/CheckC11.lean:35:36: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  HSMul A (Submodule A (⨁ (q : S × ι), N q.2)) ?m.89
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+'Payment.theorem_A' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Payment.corollary_A1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Payment.corollary_A2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Payment.blockCokerEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Payment.map_shear_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Payment.projS_comp_G' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=1 pico_kb=1266160 t=187s
