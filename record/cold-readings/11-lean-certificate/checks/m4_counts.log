@@ -1,0 +1,54 @@
+Table 6b rows parsed: 69
+folders on disk: 68 in Table 6b: 68 same set: True
+  Cocycle: counting with any indentation/modifiers gives thms 105 defs 26 (col0: 84, 26)
+  Conjugation: counting with any indentation/modifiers gives thms 54 defs 7 (col0: 53, 7)
+  CubeLaplacian: counting with any indentation/modifiers gives thms 60 defs 31 (col0: 57, 31)
+  DPLattice: counting with any indentation/modifiers gives thms 132 defs 43 (col0: 114, 43)
+  Dance: counting with any indentation/modifiers gives thms 26 defs 29 (col0: 24, 29)
+  DanceMod2: counting with any indentation/modifiers gives thms 42 defs 6 (col0: 41, 6)
+  DanceSmith: counting with any indentation/modifiers gives thms 84 defs 14 (col0: 79, 14)
+  Doubling: counting with any indentation/modifiers gives thms 170 defs 40 (col0: 165, 40)
+  FoldCube: counting with any indentation/modifiers gives thms 76 defs 25 (col0: 75, 25)
+  FoldHalf: counting with any indentation/modifiers gives thms 121 defs 30 (col0: 110, 30)
+  FoldOdd: counting with any indentation/modifiers gives thms 24 defs 11 (col0: 22, 11)
+  FormalAct: counting with any indentation/modifiers gives thms 25 defs 11 (col0: 22, 11)
+  FormalDance: counting with any indentation/modifiers gives thms 97 defs 17 (col0: 96, 17)
+  FormalOps: counting with any indentation/modifiers gives thms 72 defs 18 (col0: 49, 18)
+  GlueDance: counting with any indentation/modifiers gives thms 55 defs 6 (col0: 44, 6)
+  GlueEven: counting with any indentation/modifiers gives thms 14 defs 3 (col0: 13, 3)
+  InvBlock: counting with any indentation/modifiers gives thms 24 defs 8 (col0: 17, 8)
+  InvFloors: counting with any indentation/modifiers gives thms 44 defs 6 (col0: 43, 6)
+  Lemma35: counting with any indentation/modifiers gives thms 70 defs 39 (col0: 58, 39)
+  Lemma35b: counting with any indentation/modifiers gives thms 60 defs 24 (col0: 54, 24)
+  LemmaW: counting with any indentation/modifiers gives thms 61 defs 16 (col0: 58, 16)
+  PathSum: counting with any indentation/modifiers gives thms 21 defs 5 (col0: 19, 5)
+  Payment: counting with any indentation/modifiers gives thms 22 defs 19 (col0: 12, 19)
+  RingK: counting with any indentation/modifiers gives thms 73 defs 14 (col0: 69, 14)
+  Rulers: counting with any indentation/modifiers gives thms 46 defs 21 (col0: 45, 21)
+  Smith2: counting with any indentation/modifiers gives thms 61 defs 3 (col0: 60, 3)
+  Split: counting with any indentation/modifiers gives thms 82 defs 30 (col0: 38, 30)
+  Tensor2: counting with any indentation/modifiers gives thms 77 defs 17 (col0: 74, 17)
+  Twist: counting with any indentation/modifiers gives thms 76 defs 17 (col0: 72, 17)
+  WeylFilt: counting with any indentation/modifiers gives thms 76 defs 26 (col0: 70, 26)
+Main.lean: lines 24 thms 0 defs 0 rebuild {'exit': 0, 'kb': 1919584, 't': 129, 'wall': 130}
+68 folders totals (mine): {'files': 415, 'lines': 60940, 'thms': 3237, 'defs': 876, 'thms_any': 3450, 'defs_any': 876, 'mods': 415, 'secs': 25107}
+certificate §7: 415 files, 60 940 lines, 3 237 theorems, 876 definitions
+Table 6b mismatches: none
+rebuild entries 416 all exit 0: True
+sum t 25236 sum wall 25454
+longest Lemma35.L1Comm 192 s; peak Lemma35.All 2581312 kB = 2.462 GiB
+START/END lines: ['START 2026-10-10 22:16:14', 'END 2026-10-11 05:20:33 built_this_run=416 skipped_done=0', 'FIN-OK']
+duration 7:04:19
+modules on disk 416 all in rebuild log: True
+cr_logs files 416
+cr_logs not ending in VIGIA-FIN-OK exit=0: []
+cr_logs disagreeing with the main log: []
+orden_modulos entries 416 commented 0
+order is topological (every import earlier): True []
+order of the main log equals orden_modulos: True
+module logs that built more than their own module: 0 []
+example cr_log: ✔ [8209/8209] Built RequestProject.MainTheorem.Theorem (54s)
+Build completed successfully (8209 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1980144 t=61s
+
+VIGIA-FIN-OK exit=0 pico_kb=12176 t=0s

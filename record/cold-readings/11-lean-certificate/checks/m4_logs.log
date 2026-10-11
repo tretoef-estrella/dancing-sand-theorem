@@ -1,0 +1,42 @@
+pieces 68 with exactly one final check log: 68 []
+axiom lines over the 68 final logs: 885
+  by content: {'propext, Classical.choice, Quot.sound': 868, '(none)': 1, 'propext': 4, 'propext, Quot.sound': 12}
+  final logs not ending with exit=0 or containing sorryAx/error: []
+  pieces with 0 axiom lines: []
+    C13 Dance.slots_eq [propext]
+    C14 Windows.H2_Mfin [propext, Quot.sound]
+    C14 Windows.H2_pσ [propext, Quot.sound]
+    C16 FamilyGroup.L3_unit [propext, Quot.sound]
+    C31 FamDec.Vdot_even [propext, Quot.sound]
+    C32 Families.ds_even [propext, Quot.sound]
+    C33 MainTheorem.S5_zero [propext, Quot.sound]
+    C35 Podium.Lb_le [propext]
+    C37 Mirror.cancel_torsion [propext, Quot.sound]
+    C39 FoldHalf.S4 [propext, Quot.sound]
+    C48b DanceXi.T1 [propext, Quot.sound]
+    C50 GlueDance.S4 [propext]
+    C52 OddParts.Q0 [propext]
+    C6 Houses.lemma_A0_upset [propext, Quot.sound]
+    C7 TheoremF.lemma_0a [propext, Quot.sound]
+    C7 TheoremF.lemma_0f_J0 [propext, Quot.sound]
+CheckCubo.log per_piece copy identical to final_checks: True
+CheckCubo_postclean.log per_piece copy identical to final_checks: True
+CheckCubo_run1.log per_piece copy identical to final_checks: True
+CheckCubo.log vs CheckCubo_postclean.log : lines 22 22 ; identical except the last (watchdog) line: True ; last lines: VIGIA-FIN-OK exit=0 pico_kb=1757536 t=166s | VIGIA-FIN-OK exit=0 pico_kb=1636320 t=213s
+DepsCubo.log vs DepsCubo_postclean.log : lines 1986 1986 ; identical except the last (watchdog) line: True ; last lines: VIGIA-FIN-OK exit=0 pico_kb=1709888 t=241s | VIGIA-FIN-OK exit=0 pico_kb=1633920 t=298s
+cone ('MainTheorem.M1', '4255', '161')
+cone ('Windows.theorem_D_i', '262', '17')
+cone ('BaiCounts.B2', '4412', '166')
+cone ('PodiumCor.G1', '5036', '181')
+cone ('Mirror.Y2', '4522', '168')
+cone ('FoldLaw.DW', '6452', '297')
+cone ("FoldLaw.DW'", '6771', '310')
+cone ('FoldLaw.R', '6749', '310')
+cone ('OddParts.B1', '196', '10')
+cone ('OddParts.C5', '277', '13')
+cone ('UNION', '7988', '341')
+union modules listed 341
+modules outside the union: 75 ; .All: 67 ; others: ['AntitonicFit.Examples', 'FoldOdd.PartC', 'Houses.Windows', 'Lemma35.PartL3', 'LiftExt.Basic', 'LiftExt.PartB', 'LiftExt.PartX', 'Main']
+number of .All modules in the project: 67 ; folders without .All: ['Lemma35b']
+.All modules with something other than imports: []
+VIGIA-FIN-OK exit=0 pico_kb=4672 t=0s

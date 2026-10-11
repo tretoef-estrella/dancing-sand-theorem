@@ -1,0 +1,10 @@
+theorem/lemma declarations in code (68 folders): 3449 ; at column 0 (the certificate rule): 3236
+missed by the rule, by kind: {'@[simp]': 210, '@[ext]': 3}
+examples:
+   Split/ChangeOfBasis.lean: @[simp] lemma theta_lof00 (i : ι) (x : N i) : theta (A := A) (lV (i, 0, 0) x) = lP (i, 0) 
+   Split/ChangeOfBasis.lean: @[simp] lemma theta_lof01 (i : ι) (x : N i) :
+   Split/ChangeOfBasis.lean: @[simp] lemma theta_lof10 (i : ι) (x : N i) : theta (A := A) (lV (i, 1, 0) x) = lP (i, 2) 
+   Split/ChangeOfBasis.lean: @[simp] lemma theta_lof11 (i : ι) (x : N i) : theta (A := A) (lV (i, 1, 1) x) = lP (i, 3) 
+   Split/ChangeOfBasis.lean: @[simp] lemma thetaInv_lof0 (i : ι) (x : N i) : thetaInv (A := A) (lP (i, 0) x) = lV (i, 0
+   Split/ChangeOfBasis.lean: @[simp] lemma thetaInv_lof1 (i : ι) (x : N i) :
+VIGIA-FIN-OK exit=0 pico_kb=11200 t=0s

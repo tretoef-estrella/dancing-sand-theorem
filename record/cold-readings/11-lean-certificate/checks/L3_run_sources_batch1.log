@@ -1,0 +1,4 @@
+RequestProject/MainTheorem/Theorem.lean: VIGIA-FIN-OK exit=0 pico_kb=1739328 t=70s  errors=0
+RequestProject/FoldLaw/PartH.lean: VIGIA-FIN-OK exit=0 pico_kb=1929520 t=53s  errors=0
+RequestProject/FoldLaw/PartD.lean: VIGIA-FIN-OK exit=0 pico_kb=2000032 t=46s  errors=0
+RequestProject/DanceSmith/Positive.lean: VIGIA-FIN-OK exit=0 pico_kb=2180688 t=37s  errors=0

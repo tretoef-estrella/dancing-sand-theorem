@@ -1,0 +1,10 @@
+lean files under RequestProject: 416
+Main.lean at top: 1
+lines (newline chars) all files: 60964  without Main.lean: 60940  Main.lean: 24
+column-0 rule lines ('theorem '/'lemma ' at col 0, raw): 3237  of which inside comments: 1
+theorem/lemma declarations in code (comments stripped, attributes allowed): 3449
+declarations preceded by an attribute: 213 {'@[simp]': 210, '@[ext]': 3}
+rebuild entries: 416  exit=0: 416  distinct modules: 416  equal to source modules: True
+rebuild other lines: ['START 2026-10-10 22:16:14', 'END 2026-10-11 05:20:33 built_this_run=416 skipped_done=0', 'FIN-OK']
+manifest lines: 416  bad md5: 0  md5 of manifest file: cb0e4f7ad0bd315e3394c28c02a6321f
+VIGIA-FIN-OK exit=0 pico_kb=14704 t=1s

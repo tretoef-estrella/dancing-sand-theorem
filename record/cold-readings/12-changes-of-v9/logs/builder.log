@@ -1,0 +1,22 @@
+ok 556295
+exit1=0
+ok 556295
+exit2=0
+ok 565525
+exit3=0
+d5f6729432ce210c9102c5f798ed5c48 v8_by_v9builder.html
+d5f6729432ce210c9102c5f798ed5c48 v8_by_v8builder.html
+f7324734d8043df3e9449c9a69316283 /Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_PAPER_9_CHANGES/material/paper/THE_DANCING_SAND_THEOREM_v8.html
+68386ef16f3b704b3c6898777f7772a3 v9_by_v9builder.html
+e350bfa6328a1580ab84204d3c69a314 /Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_PAPER_9_CHANGES/material/paper/THE_DANCING_SAND_THEOREM_v9.html
+v8_by_v9builder.html /Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_PAPER_9_CHANGES/material/paper/THE_DANCING_SAND_THEOREM_v8.html differ: char 61, line 1
+v9_by_v9builder.html /Users/rafa/Desktop/LECTORES_EN_FRIO/CUBO_PAPER_9_CHANGES/material/paper/THE_DANCING_SAND_THEOREM_v9.html differ: char 61, line 1
+build_v8.sh
+build_v9.sh
+chrome_pdf.sh
+md2html_v8.py
+md2html_v9.py
+pdf_meta.py
+phtml.py
+pmath.py
+VIGIA-FIN-OK exit=0 pico_kb=20640 t=1s

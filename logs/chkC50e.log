@@ -1,0 +1,4 @@
+checks 8253 failures 0
+min v2(W - I) distribution: {1: 592, 2: 202, 3: 33, 4: 31, 5: 15, 6: 15, 7: 14, 8: 8, 9: 3, 10: 7, 11: 10, 12: 2, 14: 1, 15: 10, 16: 1, 17: 1, 23: 10, 24: 2, 1000000000: 3} t=+-2 with v2 = 1: 203
+controls fired 6 of 6
+VIGIA-FIN-OK exit=0 pico_kb=15792 t=50s

@@ -1,0 +1,22 @@
+MainTheorem.M1               mine==CertCubo.log: True   mine==certificate §1.1: True
+MainTheorem.M2               mine==CertCubo.log: True   mine==certificate §1.1: True
+Windows.theorem_D_i          mine==CertCubo.log: True   mine==certificate §1.1: True
+BaiCounts.B1                 mine==CertCubo.log: True   mine==certificate §1.1: True
+BaiCounts.B2                 mine==CertCubo.log: True   mine==certificate §1.1: True
+PodiumCor.G1                 mine==CertCubo.log: True   mine==certificate §1.1: True
+PodiumCor.G2                 mine==CertCubo.log: True   mine==certificate §1.1: True
+PodiumCor.G3                 mine==CertCubo.log: True   mine==certificate §1.1: True
+Mirror.Y2                    mine==CertCubo.log: True   mine==certificate §1.1: True
+FoldLaw.H                    mine==CertCubo.log: True   mine==certificate §1.1: True
+FoldLaw.DW                   mine==CertCubo.log: True   mine==certificate §1.1: True
+FoldLaw.DW'                  mine==CertCubo.log: True   mine==certificate §1.1: True
+FoldLaw.L1                   mine==CertCubo.log: True   mine==certificate §1.1: True
+FoldLaw.R                    mine==CertCubo.log: True   mine==certificate §1.1: True
+OddParts.B1                  mine==CertCubo.log: True   mine==certificate §1.1: True
+OddParts.C5                  mine==CertCubo.log: True   mine==certificate §1.1: True
+PodiumCor.P1                 mine==CertCubo.log: True   mine==certificate §1.1: True
+PodiumCor.P2                 mine==CertCubo.log: True   mine==certificate §1.1: True
+PodiumCor.P3                 mine==CertCubo.log: True   mine==certificate §1.1: True
+certificate §1.1 statements not in my list: ['MainTheorem.G2', 'MainTheorem.M3_self', 'MainTheorem.M3_shift', 'MainTheorem.M3_support', 'MainTheorem.M3_zero']
+FamDec.m (Lean #eval) == multiplicities from the paper (Python), n <= 11: True
+VIGIA-FIN-OK exit=0 pico_kb=1888 t=0s

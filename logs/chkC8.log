@@ -1,0 +1,5 @@
+KMAX 6
+COUNTS {'E': 32766, 'M': 32766, 'G': 32766, 'P1-dir': 598932, 'P1-cross': 598932, 'P2': 64008, 'P3': 32004, 'P5': 64008, 'X1-noninc': 32004, 'P7': 10152, 'P7-interval': 3384, 'P7-F': 3384, 'P6': 28620, 'P1-slack': 862704}
+TOTAL FAILURES 0
+CONTROLS {'junction h-a-1': 1926, 'c_F = low-1': 2060, 'c_F = high+1': 2060, 'G without gold': 2600, 'P1 slack h+1': 261776} ALL FIRE
+VIGIA-FIN-OK exit=0 pico_kb=25600 t=17s

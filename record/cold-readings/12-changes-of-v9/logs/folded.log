@@ -1,0 +1,10 @@
+n=1: vertices=1 (2^(n-1)=1) edges=1 loops=1 preimage-counts={1: 1} Laplacian==lapBar:True simple=False degrees=[2] max multiplicity=1 v8-literal pair counts={}
+n=2: vertices=2 (2^(n-1)=2) edges=2 loops=0 preimage-counts={2: 2} Laplacian==lapBar:True simple=False degrees=[2] max multiplicity=2 v8-literal pair counts={4: 1}
+n=3: vertices=4 (2^(n-1)=4) edges=6 loops=0 preimage-counts={2: 6} Laplacian==lapBar:True simple=True degrees=[3] max multiplicity=1 v8-literal pair counts={2: 6}
+n=4: vertices=8 (2^(n-1)=8) edges=16 loops=0 preimage-counts={2: 16} Laplacian==lapBar:True simple=True degrees=[4] max multiplicity=1 v8-literal pair counts={2: 16}
+n=5: vertices=16 (2^(n-1)=16) edges=40 loops=0 preimage-counts={2: 40} Laplacian==lapBar:True simple=True degrees=[5] max multiplicity=1 v8-literal pair counts={2: 40}
+n=6: vertices=32 (2^(n-1)=32) edges=96 loops=0 preimage-counts={2: 96} Laplacian==lapBar:True simple=True degrees=[6] max multiplicity=1 v8-literal pair counts={2: 96}
+n=7: vertices=64 (2^(n-1)=64) edges=224 loops=0 preimage-counts={2: 224} Laplacian==lapBar:True simple=True degrees=[7] max multiplicity=1 v8-literal pair counts={2: 224}
+n=8: vertices=128 (2^(n-1)=128) edges=512 loops=0 preimage-counts={2: 512} Laplacian==lapBar:True simple=True degrees=[8] max multiplicity=1 v8-literal pair counts={2: 512}
+n=9: vertices=256 (2^(n-1)=256) edges=1152 loops=0 preimage-counts={2: 1152} Laplacian==lapBar:True simple=True degrees=[9] max multiplicity=1 v8-literal pair counts={2: 1152}
+VIGIA-FIN-OK exit=0 pico_kb=7568 t=0s

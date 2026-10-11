@@ -1,0 +1,11 @@
+MANIFEST_md5_416.txt lines 416 ok 416 bad 0 sorted bytewise True
+MANIFEST_sources_md5.txt lines 489 ok 489 bad 0 sorted bytewise True
+md5 of MANIFEST_md5_416.txt = cb0e4f7ad0bd315e3394c28c02a6321f
+lean sources on disk 416 same set as manifest True
+extra entries in sources manifest: 73
+   ['checks/CheckC1.lean', 'checks/CheckC10.lean', 'checks/CheckC11.lean', 'checks/CheckC12.lean', 'checks/CheckC13.lean'] ... ['checks/CheckCubo.lean', 'checks/DepsCubo.lean', 'lake-manifest.json', 'lakefile.toml', 'lean-toolchain']
+project/checks files 71 not in sources manifest: ['checks/CertCubo.lean']
+oleans missing 0 [] olean older than source 0 []
+olean mtimes from 2026-10-10 22:17:35.357761 to 2026-10-11 05:20:32.980659
+other dirs in .lake: ['packages', 'build']
+VIGIA-FIN-OK exit=0 pico_kb=5312 t=0s

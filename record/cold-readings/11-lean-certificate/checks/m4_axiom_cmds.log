@@ -1,0 +1,3 @@
+#print axioms commands in the 68 CheckC*.lean (comments removed): 885 ; outputs in the 68 final logs: 885
+pieces where the two differ: []
+VIGIA-FIN-OK exit=0 pico_kb=5920 t=0s

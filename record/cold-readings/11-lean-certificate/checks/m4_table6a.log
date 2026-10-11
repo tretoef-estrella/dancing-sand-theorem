@@ -1,0 +1,70 @@
+Table 6a rows: 68
+C1    table: 0 failures; controls 2/2                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=11504 t=215s
+C2    table: 0 failures; controls 5/5                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=13920 t=49s
+C3    table: 0 failures; controls 3/3                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=9232 t=5s
+C4    table: 0 failures; controls 4/4                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=11744 t=481s
+C5    table: 0 failures; controls 3/3                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=50416 t=4s
+C6    table: 0 failures; controls 4/4                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=10160 t=208s
+C7    table: 0 failures; controls 3/3                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=11456 t=13s
+C8    table: 0 failures; controls 5/5                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=25600 t=17s
+C9    table: 0 failures; controls 4/4                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=11728 t=54s
+C10   table: 0 failures; controls 5/5                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=11216 t=3s
+C11   table: 0 failures; controls 4/4                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=93184 t=22s
+C12   table: 0 failures; controls 5/5                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=54192 t=8s
+C13   table: 144 checks  0 failures; controls 4/4          | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=52736 t=1s   <-- look
+C14   table: 0 failures; controls 5/5                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=11424 t=1s
+C15   table: 0 failures; controls 3/3                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=11520 t=0s
+C16   table: 0 failures; controls 4/4                      | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=12048 t=0s
+C17   table: 7 449 checks  0 failures; controls 5/5        | log: checks [7449] fails ['0'] controls [('5', '5')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=3488 t=0s
+C18   table: 227 checks  0 failures; controls 5/5          | log: checks [227] fails ['0'] controls [('5', '5')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=10016 t=0s
+C19   table: 1 030 checks  0 failures; controls 5/5        | log: checks [1030] fails ['0'] controls [('5', '5')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=12896 t=0s
+C20   table: 2 238 checks  0 failures; controls 4/4        | log: checks [2238] fails ['0'] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=13952 t=1s
+C21   table: 0 failures; controls 6/6                      | log: checks [22196] fails [] controls [('6', '6')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=13968 t=2s   <-- look
+C22   table: 0 failures; controls 5/5                      | log: checks [7] fails [] controls [('5', '5')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=12560 t=2s   <-- look
+C23   table: 0 failures; controls 5/5                      | log: checks [347] fails [] controls [('5', '5')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=12784 t=5s   <-- look
+C24   table: 0 failures; controls 5/5                      | log: checks [98] fails [] controls [('5', '5')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=14240 t=10s   <-- look
+C25   table: 0 failures; controls 5/5                      | log: checks [686] fails [] controls [('5', '5')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=14512 t=1s   <-- look
+C26   table: 0 failures; controls 5/5                      | log: checks [2088] fails [] controls [('5', '5')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=15632 t=5s   <-- look
+C27   table: 0 failures; controls 4/4                      | log: checks [297] fails [] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=54272 t=14s   <-- look
+C28   table: 0 failures; controls 2/3 (one silent, declared) | log: checks [582] fails [] controls [('2', '3')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=28672 t=63s   <-- look
+C29   table: 0 failures; controls 3/3                      | log: checks [470] fails [] controls [('3', '3')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=27648 t=67s   <-- look
+C30   table: 0 failures; controls 3/3                      | log: checks [56] fails [] controls [('3', '3')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=315392 t=231   <-- look
+C31   table: 833 checks  0 failures; controls 3/3          | log: checks [833] fails ['0'] controls [('3', '3')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=19040 t=1s
+C32   table: 2 343 checks  0 failures; controls 3/3        | log: checks [2343] fails ['0'] controls [('3', '3')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=13312 t=1s
+C33   table: 2 407 checks  0 failures; controls 3/4 (one silent, declared) | log: checks [2407] fails ['0'] controls [('3', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=21504 t=8s
+C34   table: 53 945 checks  0 failures; controls 4/4       | log: checks [53945] fails ['0'] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=21200 t=7s
+C35   table: 337 528 checks  0 failures; controls 4/4      | log: checks [337528] fails ['0'] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=9968 t=8s
+C35b  table: 22 447 checks  0 failures; controls 4/4       | log: checks [22447] fails ['0'] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=10672 t=32s
+C36   table: 267 891 checks  0 failures; controls 5/5      | log: checks [267891] fails ['0'] controls [('5', '5')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=24304 t=22s
+C37   table: 83 102 checks  0 failures; controls 6/6       | log: checks [83102] fails ['0'] controls [] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=14320 t=1s   <-- look
+C38   table: 977 checks  0 failures; controls 3/3          | log: checks [977] fails ['0'] controls [] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=10864 t=33s   <-- look
+C38b  table: 254 checks  0 failures; controls 4/4          | log: checks [254] fails ['0'] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=13248 t=6s
+C39   table: 711 checks  0 failures; controls 4/4          | log: checks [711] fails ['0'] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=12720 t=15s
+C39b  table: 673 checks  0 failures; controls 4/4          | log: checks [673] fails ['0'] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=13152 t=4s
+C40   table: 773 checks  0 failures; controls 6/6          | log: checks [773] fails ['0'] controls [('6', '6')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=13792 t=5s
+C40b  table: 412 checks  0 failures; controls 6/6          | log: checks [412] fails ['0'] controls [('6', '6')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=19456 t=26s
+C40c  table: 184 checks  0 failures; controls 6/6          | log: checks [184] fails ['0'] controls [('6', '6')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=18640 t=1s
+C40d  table: 493 checks  0 failures; controls 5/5          | log: checks [493] fails ['0'] controls [('5', '5')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=11984 t=1s
+C41   table: 334 checks  0 failures; controls 5/5          | log: checks [334] fails ['0'] controls [('5', '5')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=14736 t=1s
+C42   table: 528 checks  0 failures; controls 5/5          | log: checks [528] fails ['0'] controls [('5', '5')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=14976 t=7s
+C43   table: 19 713 checks  0 failures; controls 4/4       | log: checks [19713] fails ['0'] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=13680 t=1s
+C44   table: 11 994 checks  0 failures; controls 5/5       | log: checks [11994] fails ['0'] controls [('5', '5')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=15856 t=2s
+C45   table: 1 391 checks  0 failures; controls 4/4        | log: checks [1391] fails ['0'] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=13744 t=5s
+C46   table: 1 008 checks  0 failures; controls 4/4        | log: checks [112, 1008] fails ['0'] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=15184 t=2s
+C47   table: 12 622 checks  0 failures; controls 4/4       | log: checks [12622] fails ['0'] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=12160 t=5s
+C48   table: 24 493 checks  0 failures; controls 5/5       | log: checks [24493] fails ['0'] controls [] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=16688 t=2s   <-- look
+C48b  table: 1 286 checks  0 failures; controls 3/3        | log: checks [240, 1286] fails ['0'] controls [('3', '3')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=14320 t=1s
+C49   table: 288 checks  0 failures; controls 4/4          | log: checks [288] fails ['0'] controls [] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=12944 t=3s   <-- look
+C49b  table: 1 464 checks  0 failures; controls 3/4 (one silent, declared) | log: checks [72, 1464] fails ['0'] controls [('3', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=15168 t=1s
+C49c  table: 2 437 checks  0 failures; controls 5/5        | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=12208 t=0s   <-- look
+C50   table: 4 114 checks  0 failures; controls 4/4        | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=11264 t=5s   <-- look
+C50b  table: 11 616 checks  0 failures; controls 3/3       | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=17456 t=1s   <-- look
+C50c  table: 10 968 checks  0 failures; controls 4/4       | log: checks [] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=13696 t=7s   <-- look
+C50d  table: 35 887 checks  0 failures; controls 4/4       | log: checks [35887] fails ['0'] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=15200 t=6s
+C50e  table: 8 253 checks  0 failures; controls 6/6        | log: checks [8253] fails ['0'] controls [('6', '6')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=15792 t=50s
+C50f  table: 750 checks  0 failures; controls 4/4          | log: checks [750] fails ['0'] controls [] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=12736 t=6s   <-- look
+C50g  table: 1 490 checks  0 failures; controls 4/4        | log: checks [1490] fails ['0'] controls [('4', '4')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=14800 t=2s
+C50h  table: 302 checks  0 failures; controls 3/3          | log: checks [302] fails ['0'] controls [('3', '3')] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=14848 t=2s
+C51   table: 66 checks  0 failures; controls 3/3           | log: checks [66] fails ['0'] controls [] fireflags 0 | VIGIA-FIN-OK exit=0 pico_kb=86016 t=2s   <-- look
+C52   table: 204 checks  0 failures; controls 3/3          | log: checks [204] fails ['0'] controls [] fireflags 1 | VIGIA-FIN-OK exit=0 pico_kb=26704 t=2s
+VIGIA-FIN-OK exit=0 pico_kb=5024 t=0s

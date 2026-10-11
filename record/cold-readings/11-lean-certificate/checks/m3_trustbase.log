@@ -1,0 +1,140 @@
+===== RequestProject: 416 files
+--- sorry: 0 in code (0 files), 0 in comments/strings
+--- admit: 0 in code (0 files), 0 in comments/strings
+--- axiom: 0 in code (0 files), 2 in comments/strings
+   COMMENT RequestProject/FoldCube/All.lean 16 | redefined. Used directly: C18 `DPLattice` (`ι`, `wt`, `Fd`, `H`, axiom (W) `isDP.W_F`, (P1)
+   COMMENT RequestProject/InvFloors/All.lean 16 | `Windows.Ids_cons`, `Windows.mem_Ids`; C18 `DPLattice` (`ι`, `wt`, `Fd`, the axiom (W)),
+--- native_decide: 0 in code (0 files), 0 in comments/strings
+--- implemented_by: 0 in code (0 files), 0 in comments/strings
+--- extern: 0 in code (0 files), 0 in comments/strings
+--- unsafe: 0 in code (0 files), 0 in comments/strings
+--- opaque: 0 in code (0 files), 0 in comments/strings
+--- partial: 0 in code (0 files), 1 in comments/strings
+   COMMENT RequestProject/BendCor/PartA.lean 6 | # `C50e_corollary_10_21.md`: Part A — partial fractions
+--- csimp: 0 in code (0 files), 0 in comments/strings
+--- skipKernelTC: 0 in code (0 files), 0 in comments/strings
+--- debug.: 0 in code (0 files), 0 in comments/strings
+--- set_option: 21 in code (6 files), 0 in comments/strings
+   CODE RequestProject/DPLattice/Weyl.lean 153 | set_option hygiene false in
+   CODE RequestProject/Lemma35/L1Comm.lean 28 | set_option maxHeartbeats 4000000 in
+   CODE RequestProject/Lemma35/L1Comm.lean 39 | set_option maxHeartbeats 4000000 in
+   CODE RequestProject/Lemma35/L1Defs.lean 118 | set_option maxHeartbeats 1000000 in
+   CODE RequestProject/Lemma35/L1Defs.lean 125 | set_option maxHeartbeats 1000000 in
+   CODE RequestProject/Lemma35/PartL2.lean 82 | set_option maxHeartbeats 1000000 in
+   CODE RequestProject/Lemma35/PartL2.lean 94 | set_option maxHeartbeats 1000000 in
+   CODE RequestProject/Main.lean 9 | set_option maxHeartbeats 8000000
+   CODE RequestProject/Main.lean 10 | set_option maxRecDepth 4000
+   CODE RequestProject/Main.lean 11 | set_option synthInstance.maxHeartbeats 20000
+   CODE RequestProject/Main.lean 12 | set_option synthInstance.maxSize 128
+   CODE RequestProject/Main.lean 14 | set_option relaxedAutoImplicit false
+   CODE RequestProject/Main.lean 15 | set_option autoImplicit false
+   CODE RequestProject/Main.lean 17 | set_option pp.fullNames true
+   CODE RequestProject/Main.lean 18 | set_option pp.structureInstances true
+   CODE RequestProject/Main.lean 19 | set_option pp.coercions.types true
+   CODE RequestProject/Main.lean 20 | set_option pp.funBinderTypes true
+   CODE RequestProject/Main.lean 21 | set_option pp.letVarTypes true
+   CODE RequestProject/Main.lean 22 | set_option pp.piBinderTypes true
+   CODE RequestProject/Main.lean 24 | set_option grind.warning false
+   CODE RequestProject/RingK/PartR.lean 18 | set_option synthInstance.maxHeartbeats 400000
+--- elab: 0 in code (0 files), 0 in comments/strings
+--- macro: 3 in code (2 files), 0 in comments/strings
+   CODE RequestProject/DPLattice/Weyl.lean 155 | local macro "weyl_close" : tactic => `(tactic| (
+   CODE RequestProject/WeylFilt/Comm.lean 31 | macro "wf_simp" : tactic => `(tactic| (
+   CODE RequestProject/WeylFilt/Comm.lean 39 | macro "wf_close" : tactic => `(tactic| (
+--- syntax: 0 in code (0 files), 0 in comments/strings
+--- notation: 2 in code (1 files), 8 in comments/strings
+   CODE RequestProject/Split/ChangeOfBasis.lean 26 | local notation "lV" => DirectSum.lof A (ι × Fin 2 × Fin 2) (NVΦ N)
+   CODE RequestProject/Split/ChangeOfBasis.lean 28 | local notation "lP" => DirectSum.lof A (ι × Fin 4) (NΨ N)
+--- instance: 39 in code (13 files), 18 in comments/strings
+   CODE RequestProject/Cocycle/PartFV.lean 50 | instance : IsEmpty (zeroL A).ι := inferInstanceAs (IsEmpty Empty)
+   CODE RequestProject/DPLattice/Basic.lean 85 | attribute [instance] DPLattice.fintype DPLattice.decEq
+   CODE RequestProject/Dance/Basic.lean 91 | instance instDecEqIdx : (ds : List Bool) → DecidableEq (Idx ds)
+   CODE RequestProject/Dance/Basic.lean 101 | instance instFintypeIdx : (ds : List Bool) → Fintype (Idx ds)
+   CODE RequestProject/DanceMod2/Defs.lean 41 | instance : AddCommGroup (RA R) := inferInstanceAs (AddCommGroup (Finset ℕ → ℕ → R))
+   CODE RequestProject/DanceMod2/Defs.lean 43 | instance : CoeFun (RA R) (fun _ => Finset ℕ → ℕ → R) := ⟨fun β => β⟩
+   CODE RequestProject/DanceMod2/Defs.lean 55 | instance : One (RA R) := ⟨one⟩
+   CODE RequestProject/DanceMod2/Defs.lean 56 | instance : Mul (RA R) := ⟨mul⟩
+   CODE RequestProject/DanceMod2/PartR.lean 99 | instance instCommRing : CommRing (RA R) :=
+   CODE RequestProject/Doubling/Basic.lean 51 | instance : OddUnits ℤ_[2] := ⟨padicInt_two_hodd⟩
+   CODE RequestProject/FoldGroup/PartK.lean 155 | instance ker_sBar_finite : Finite (LinearMap.ker (sBar n)) := by
+   CODE RequestProject/FormalOps/Bf.lean 46 | instance : Zero (Bf A) := ⟨⟨fun _ _ => 0⟩⟩
+   CODE RequestProject/FormalOps/Bf.lean 47 | instance : Add (Bf A) := ⟨fun x y => ⟨fun m f => x.coef m f + y.coef m f⟩⟩
+   CODE RequestProject/FormalOps/Bf.lean 48 | instance : Neg (Bf A) := ⟨fun x => ⟨fun m f => -x.coef m f⟩⟩
+   CODE RequestProject/FormalOps/Bf.lean 49 | instance : Sub (Bf A) := ⟨fun x y => ⟨fun m f => x.coef m f - y.coef m f⟩⟩
+   CODE RequestProject/FormalOps/Bf.lean 50 | instance : SMul ℕ (Bf A) := ⟨fun n x => ⟨fun m f => n • x.coef m f⟩⟩
+   CODE RequestProject/FormalOps/Bf.lean 51 | instance : SMul ℤ (Bf A) := ⟨fun n x => ⟨fun m f => n • x.coef m f⟩⟩
+   CODE RequestProject/FormalOps/Bf.lean 52 | instance : SMul A (Bf A) := ⟨fun a x => ⟨fun m f => a * x.coef m f⟩⟩
+   CODE RequestProject/FormalOps/Bf.lean 53 | instance : One (Bf A) := ⟨⟨fun m _ => if m = 0 then 1 else 0⟩⟩
+   CODE RequestProject/FormalOps/Bf.lean 54 | instance : NatCast (Bf A) := ⟨fun n => ⟨fun m _ => if m = 0 then (n : A) else 0⟩⟩
+   CODE RequestProject/FormalOps/Bf.lean 55 | instance : IntCast (Bf A) := ⟨fun n => ⟨fun m _ => if m = 0 then (n : A) else 0⟩⟩
+   CODE RequestProject/FormalOps/Bf.lean 58 | instance : Mul (Bf A) :=
+   CODE RequestProject/FormalOps/Bf.lean 86 | instance : AddCommGroup (Bf A) :=
+   CODE RequestProject/FormalOps/Bf.lean 113 | instance instRing : Ring (Bf A) :=
+   CODE RequestProject/FormalOps/Bf.lean 148 | instance : Module A (Bf A) :=
+   CODE RequestProject/FormalOps/Bf.lean 162 | instance instAlgebra : Algebra A (Bf A) := Algebra.ofModule smul_mul mul_smul
+   CODE RequestProject/MainTheorem/Group.lean 43 | noncomputable instance instAddCommGroupXFam (lam : ℕ) : (i : ℕ) → AddCommGroup (XFam lam i)
+   CODE RequestProject/MainTheorem/Group.lean 53 | noncomputable instance instModuleXFam (lam : ℕ) : (i : ℕ) → Module ℤ_[2] (XFam lam i)
+   CODE RequestProject/PathSum/Defs.lean 30 | instance instOddUnitsPadicTwo : OddUnits ℚ_[2] :=
+   CODE RequestProject/RingK/Defs.lean 56 | instance instIsCentralScalarPS : IsCentralScalar (ZMod 2) (PowerSeries (ZMod 2)) :=
+   CODE RequestProject/RingK/Defs.lean 64 | instance instCommRingS : CommRing S := inferInstance
+   CODE RequestProject/RingK/Defs.lean 85 | instance : AddCommGroup RS := inferInstanceAs (AddCommGroup (Finset ℕ → ℕ → S))
+   CODE RequestProject/RingK/Defs.lean 87 | instance : CoeFun RS (fun _ => Finset ℕ → ℕ → S) := ⟨fun β => β⟩
+   CODE RequestProject/RingK/Defs.lean 97 | instance : One RS := ⟨one⟩
+   CODE RequestProject/RingK/Defs.lean 98 | instance : Mul RS := ⟨mul⟩
+   CODE RequestProject/RingK/Defs.lean 123 | instance (P : Finset ℕ) : Fintype (Dn P) :=
+   CODE RequestProject/RingK/Defs.lean 126 | instance (P : Finset ℕ) : DecidableEq (Dn P) :=
+   CODE RequestProject/RingK/PartR.lean 174 | instance instCommRing : CommRing RS :=
+   CODE RequestProject/Stability/Defs.lean 32 | instance (ds : List Bool) : DecidableRel (nest ds) := fun s s' =>
+--- local instance: 1 in code (1 files), 0 in comments/strings
+   CODE RequestProject/DPLattice/Basic.lean 85 | attribute [instance] DPLattice.fintype DPLattice.decEq
+--- decide: 38 in code (16 files), 0 in comments/strings
+   decide-file RequestProject/AntitonicFit/Examples.lean 12
+   decide-file RequestProject/BendCor/PartW.lean 1
+   decide-file RequestProject/CubeLaplacian/GroupRing.lean 2
+   decide-file RequestProject/DanceMod2/PartK.lean 1
+   decide-file RequestProject/DanceMod2/PartM.lean 1
+   decide-file RequestProject/Deficit/DeficitLaw.lean 2
+   decide-file RequestProject/Deficit/Polynomials.lean 2
+   decide-file RequestProject/Doubling/Phi.lean 1
+   decide-file RequestProject/Doubling/PhiOps.lean 2
+   decide-file RequestProject/Fold/PartG.lean 2
+   decide-file RequestProject/FoldLaw/Groups.lean 1
+   decide-file RequestProject/FoldLaw/PartD.lean 1
+   decide-file RequestProject/OddParts/Defs.lean 1
+   decide-file RequestProject/OddParts/PartC.lean 2
+   decide-file RequestProject/OddParts/PartF.lean 3
+   decide-file RequestProject/PodiumCor/Gao.lean 4
+--- Lean.Elab/meta: 0 in code (0 files), 0 in comments/strings
+--- privateAxiom: 0 in code (0 files), 0 in comments/strings
+===== checks: 71 files
+--- sorry: 0 in code (0 files), 0 in comments/strings
+--- admit: 0 in code (0 files), 0 in comments/strings
+--- axiom: 0 in code (0 files), 0 in comments/strings
+--- native_decide: 0 in code (0 files), 0 in comments/strings
+--- implemented_by: 0 in code (0 files), 0 in comments/strings
+--- extern: 0 in code (0 files), 0 in comments/strings
+--- unsafe: 0 in code (0 files), 0 in comments/strings
+--- opaque: 0 in code (0 files), 0 in comments/strings
+--- partial: 1 in code (1 files), 0 in comments/strings
+   CODE checks/DepsCubo.lean 16 | partial def collect (env : Environment) (n : Name) (acc : NameSet) : NameSet := Id.run do
+--- csimp: 0 in code (0 files), 0 in comments/strings
+--- skipKernelTC: 0 in code (0 files), 0 in comments/strings
+--- debug.: 0 in code (0 files), 0 in comments/strings
+--- set_option: 0 in code (0 files), 0 in comments/strings
+--- elab: 2 in code (1 files), 0 in comments/strings
+   CODE checks/DepsCubo.lean 41 | elab "#deps " id:ident : command => do
+   CODE checks/DepsCubo.lean 45 | elab "#depsall " ids:ident* : command => do
+--- macro: 0 in code (0 files), 0 in comments/strings
+--- syntax: 0 in code (0 files), 0 in comments/strings
+--- notation: 0 in code (0 files), 0 in comments/strings
+--- instance: 0 in code (0 files), 2 in comments/strings
+--- local instance: 0 in code (0 files), 0 in comments/strings
+--- decide: 11 in code (4 files), 3 in comments/strings
+   decide-file checks/CheckC14.lean 4
+   decide-file checks/CheckC15.lean 3
+   decide-file checks/CheckC35.lean 3
+   decide-file checks/CheckC50c.lean 1
+--- Lean.Elab/meta: 1 in code (1 files), 0 in comments/strings
+   CODE checks/DepsCubo.lean 26 | def report (env : Environment) (s : NameSet) (title : String) : CommandElabM Unit := do
+--- privateAxiom: 0 in code (0 files), 0 in comments/strings
+VIGIA-FIN-OK exit=0 pico_kb=11040 t=2s

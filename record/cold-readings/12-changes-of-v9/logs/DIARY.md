@@ -1,0 +1,61 @@
+- 2026-10-11 10:26:29 START Grepy Cotejo. Read CLAUDE.md, MISSION.md, ESTADO.md (not started). Created REPORT_COLD_11.md with empty §5 headings.
+- 2026-10-11 10:26:29 BEFORE manifest check (estimate: md5 of ~1000 files, <50 MB, <30 s)
+- 2026-10-11 10:26:37 AFTER manifest check: 630/630 match (logs/manifest_start.log VIGIA-FIN-OK). BEFORE reading DIFF_v8_to_v9.txt
+- 2026-10-11 10:27:01 AFTER reading DIFF_v8_to_v9.txt (9 hunks counted). Sealed 11 predictions in checks/SEALED.md. BEFORE own diff -u (estimate <10 MB, <1 s)
+- 2026-10-11 10:27:05 AFTER own diff: body identical to DIFF_v8_to_v9.txt, 9 hunks (logs/diff_md.log OK)
+- 2026-10-11 10:27:14 BEFORE reading the certificate (current) for (b)/(c)
+- 2026-10-11 10:27:29 AFTER reading current certificate src. BEFORE reading cold_reading/REPORT_CUBO_LEAN_1.md
+- 2026-10-11 10:28:04 AFTER reading REPORT_CUBO_LEAN_1.md (whole). BEFORE reading CertCubo.log statements
+- 2026-10-11 10:29:17 BEFORE run count_lean (estimate: 416 files ~3 MB, <100 MB, <10 s)
+- 2026-10-11 10:29:38 AFTER count_lean (VIGIA-FIN-OK): 416 files, 60 964 lines (60 940 without Main.lean), 3 237 col-0 lines, 3 449 decls, 213 attr (210 simp, 3 ext), rebuild 416/416 exit 0, manifest 416/416, md5 cb0e4f7a. Writing (a) into report.
+- 2026-10-11 10:29:57 Corrected my own hunk table in §1 of the report (§13 is inside hunk 5; noted in §9 My errors later).
+- 2026-10-11 10:30:12 BEFORE run folded.py (estimate <50 MB, <5 s)
+- 2026-10-11 10:30:29 AFTER folded.py (VIGIA-FIN-OK): v9 description = lapBar for n=1..9; simple n-regular n>=3; double edge n=2; two preimages for n>=2; n=1 one loop with ONE preimage.
+- 2026-10-11 10:32:23 NOTE: 9 final check logs are not in material (C30 C34 C35 C50 C50b C50c C50h C51 C52); only 59 of 68. BEFORE run axioms.py (estimate <50 MB, <5 s)
+- 2026-10-11 10:32:34 AFTER axioms.py (OK): 59 logs, 767 lines = 753+12+1+1(none); sorry/admit/native_decide/axiom 0 in code; decide 38 in 16 files; 'axiom' substring 7.
+- 2026-10-11 10:33:21 BEFORE run table6a.py (estimate <50 MB, <5 s)
+- 2026-10-11 10:33:34 table6a.py run 1 crashed on an unparsed cell (my bug); patched; BEFORE run 2 (same estimate)
+- 2026-10-11 10:33:44 patched failure/control patterns; BEFORE run 3 (same estimate)
+- 2026-10-11 10:33:50 my failure regex caught 'checks N failures 0' (my bug); BEFORE run 4
+- 2026-10-11 10:33:59 AFTER table6a.py run 4 (OK): 68/68 rows agree (checks, kinds, failures, controls). BEFORE reading make_tables.py and the certificate diff
+- 2026-10-11 10:34:18 Wrote §3.1 (Table 6a) into the report. BEFORE reading DIFF_certificate_before_after.txt
+- 2026-10-11 10:35:12 AFTER reading certificate diff (14 hunks). BEFORE own diff of certificate md (estimate trivial)
+- 2026-10-11 10:35:36 NOTE: some quick greps ran outside vigia (numbered statements, missing logs, instance grep); redoing them under vigia now (estimate <50 MB, <5 s)
+- 2026-10-11 10:36:14 Wrote §3.2–3.4 (certificate corrections) into the report: E-C1, P-C1, pre-existing §3.2→§3.3 seen in passing.
+- 2026-10-11 10:37:25 BEFORE small run: Kirchhoff grep, toolchain files, LC-DOI in v9 md/html/pdf text, §3.3 heading (estimate <100 MB, <10 s)
+- 2026-10-11 10:38:34 AFTER misc2 (OK): no Kirchhoff in Lean; toolchain v4.28.0, mathlib rev v4.28.0 / 8f9d9cff; v9 pdf prints 'DOI [LC-DOI]' (placeholder). Writing (b).
+- 2026-10-11 10:38:34 Wrote §2 (b) into the report: E-B2, E-B3, E-B9, E-B10, E-B14; P-B5, P-B11, P-B16.
+- 2026-10-11 10:38:44 BEFORE render both papers at 40 dpi (estimate: 101 pages ppm ~ 25 MB, <300 MB RAM, <60 s)
+- 2026-10-11 10:38:56 BEFORE pages.py (40 dpi hashes + pdftotext word diff; estimate <200 MB, <60 s)
+- 2026-10-11 10:39:10 AFTER pages.py (OK): 37 v9 pages (6-42) identical to v8 pages 6-42; 14 differ (1-5, 43-51); word diff only at md hunks + hyphenation 'ref-ereed' + repeated table headers moved. BEFORE render 14 v9 pages at 90 dpi (estimate <300 MB, <60 s)
+- 2026-10-11 10:39:22 Looked at v9 p1, p2 at 90 dpi; created checks/PAGES.md
+- 2026-10-11 10:39:31 Looked at v9 p3-p5
+- 2026-10-11 10:39:40 Looked at v9 p43-p45
+- 2026-10-11 10:39:50 Looked at v9 p46-p48
+- 2026-10-11 10:40:07 Looked at v9 p49-p51 (PAGES.md done for the paper). BEFORE certpages.py (pdftotext of certificate; <100 MB, <10 s)
+- 2026-10-11 10:40:14 AFTER certpages (OK). BEFORE render certificate pages 1,2,7,9,10,11,14,15,17-24 at 90 dpi (<300 MB, <60 s)
+- 2026-10-11 10:40:31 Looked at cert p1, p2, p7. BEFORE crop renders at 220 dpi of cert p1 (DW bullet) and p7 (folded row) to see the 𝟙 glyph (<200 MB, <20 s)
+- 2026-10-11 10:40:43 Looked at cert p1, p2, p7 (+zoom)
+- 2026-10-11 10:40:51 Looked at cert p9-p11
+- 2026-10-11 10:41:03 Looked at cert p14, p15, p17
+- 2026-10-11 10:41:16 Looked at cert p18-p20 (orphan caption Table 6b at foot of p20)
+- 2026-10-11 10:41:37 Looked at cert p21-p24; PAGES.md complete. Writing (d) to report.
+- 2026-10-11 10:41:41 BEFORE reading acceptance.py (read only)
+- 2026-10-11 10:42:04 AFTER reading acceptance.py. BEFORE run acceptance v9 (estimate <200 MB, <1 min)
+- 2026-10-11 10:42:07 AFTER acc_v9: VIGIA-FIN-OK exit=0 pico_kb=77856 t=2s. BEFORE run acceptance v9 control (same estimate)
+- 2026-10-11 10:42:10 AFTER acc_v9_control: VIGIA-FIN-OK exit=0 pico_kb=149472 t=2s
+- 2026-10-11 10:42:18 my echo of a word starting with '=' failed in zsh (my error; house rule). Re-reading control output.
+- 2026-10-11 10:42:26 BEFORE diff of acceptance lists v8 vs v9 and builders (trivial)
+- 2026-10-11 10:42:46 BEFORE builder runs: v8 md with md2html_v9.py, v8 md with md2html_v8.py, v9 md with md2html_v9.py, into scratch/ (estimate <300 MB, <1 min each)
+- 2026-10-11 10:43:02 extracted the html post-step of build_v9.sh (identical to build_v8.sh's) into scratch/post_v9.py. BEFORE applying it to my three builds (<100 MB, <10 s)
+- 2026-10-11 10:43:11 BEFORE rule68 check: v9 md by md2html_v8.py vs by md2html_v9.py (<200 MB, <30 s)
+- 2026-10-11 10:44:25 AFTER rule68 (OK): 23 changes, all Lean names / sorry / propext / v4.28.0. Writing (e).
+- 2026-10-11 10:44:58 BEFORE replacements.py (uniqueness of each text to remove; copies in scratch; <50 MB, <5 s)
+- 2026-10-11 10:45:30 AFTER replacements.py (OK, all 10 unique). Writing §0.
+- 2026-10-11 10:45:30 Wrote §0 (first lines and 11 replacements + 1 in passing).
+- 2026-10-11 10:46:07 Wrote §7-§10. BEFORE manifest end-check (<50 MB, <30 s)
+- 2026-10-11 10:46:12 AFTER manifest end-check: 630/630 match, nothing new in material, no __pycache__. §2 written; NOW opening material/read_after/ (mission §4)
+- 2026-10-11 10:46:34 BEFORE run of a copy of text_edits.py with SRC=material v8 md, DST=scratch (<50 MB, <5 s)
+- 2026-10-11 10:46:52 AFTER text_edits run (OK): reproduces v9 md byte for byte; 14 edits ('ok' lines); md/pdf/html md5 = the author's. Writing §6.
+- 2026-10-11 10:47:09 Re-read the whole report from disk; softened one clause of E-B10 (record of §1.0/App. A reports, does not list every sentence). BEFORE md5 of my files (<20 MB, <5 s)
+- 2026-10-11 10:47:18 REPORT_COLD_11.md listo — md5 fc1066fd1e37886dba1a5bb5fb871357

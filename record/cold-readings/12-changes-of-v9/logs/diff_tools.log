@@ -1,0 +1,60 @@
+2c2,5
+< """acceptance.py (v7) — the fixed acceptance list for version 7 (from v6; cold reading 8 found the controls of checks 1 and 4 dead,
+---
+> """acceptance.py (v9) — v8's list (unchanged checks 1-9, except the declared short page of check 5) plus three checks of version 9:
+> 10 no sentence saying that no proof assistant checked the paper; 11 every Lean name printed exists in logs/CertCubo.log;
+> 12 the placeholder [LC-DOI] appears exactly once. Each new check has a control that damages the input.
+> acceptance.py (v7) — the fixed acceptance list for version 7 (from v6; cold reading 8 found the controls of checks 1 and 4 dead,
+117a121,124
+> # v9 (Grepy Escribano, 11 Oct 2026): page 45 is short because the next row of the §12.2 table (Lemma 7.9, a tall row)
+> # does not split; looked at on the page (60 dpi, pages 45-46): the table continues with its header on page 46. Allowed
+> # only while the next page begins with that table's header; if the build moves it, the check fails and it must be looked at again.
+> SHORT_OK = {('45', 'statement reader range result control')}
+118a126,127
+>     if float(f) < 85 and int(p) not in (1, last) and (p, first_line(int(p) + 1)[:37]) in SHORT_OK and not CONTROL:
+>         before_section.append(f'p. {p}: {f} % (declared: a table row that does not split; next page «{first_line(int(p) + 1)[:40]}»)'); continue
+177a187,207
+> # 10-12: the checks of version 9
+> md10 = md
+> if CONTROL:
+>     md10 = md10 + '\nNo part of this paper has been checked by a proof assistant.\n'
+> bad10 = [m.group(0) for m in re.finditer(r'[^.\n]*(no part of this paper has been checked by a proof assistant|not been checked by a proof assistant|has not been formally verified)[^.\n]*', md10, re.I)]
+> plain10 = run(['pdftotext', PDF, '-']).replace('\n', ' ')
+> if re.search(r'no part of this paper has been checked by a proof assistant', plain10, re.I): bad10.append('in the pdf')
+> verdict('10 no sentence saying that no proof assistant checked the paper', not bad10, bad10 or ['none, in the md and in the pdf'])
+> 
+> CERT = open(os.environ.get('CERTLOG', os.path.join(HERE, '..', '..', 'logs', 'CertCubo.log')), encoding='utf-8').read()   # CERTLOG: for a reader's copy
+> declared = set(re.findall(r"^(?:@\[[a-z]+\] )?(?:def |theorem |abbrev )?([A-Z][A-Za-z0-9]*\.[A-Za-z0-9_.']+?)(?:\.\{[^}]*\})? :", CERT, re.M))
+> md11 = md + ('\n`MainTheorem.M9`\n' if CONTROL else '')
+> names = sorted(set(re.findall(r"`([A-Z][A-Za-z0-9]*(?:\.[A-Za-z_][A-Za-z0-9_']*)+)`", md11)))
+> STD = {'Classical.choice', 'Quot.sound'}   # the standard axioms, printed by #print axioms, not declared in the log
+> miss11 = [n for n in names if n not in declared and n not in STD]
+> verdict('11 every Lean name printed exists in logs/CertCubo.log', not miss11, ['names: ' + ', '.join(names)] + ([f'not in the log: {miss11}'] if miss11 else ['all found']))
+> 
+> md12 = md + (' [LC-DOI]' if CONTROL else '')
+> n12md = md12.count('[LC-DOI]'); n12pdf = plain10.count('[LC-DOI]')
+> verdict('12 the placeholder [LC-DOI] exactly once (md and pdf)', n12md == 1 and n12pdf == 1, [f'md {n12md}, pdf {n12pdf}'])
+> 
+
+BUILDER-DIFF
+0a1
+> # paper/md2html_v9.py: copy of md2html_v8.py with one rule added, (68) Lean names as code (11 Oct 2026).
+184a186
+> LEANCODE = {'sorry', 'propext', 'v4.28.0'}   # (68) v9: Lean words that are not dotted names
+185a188,191
+>     # (68) v9 (Grepy Escribano, 11 Oct 2026): a Lean name «Namespace.Name» (and the words of LEANCODE) is printed as code,
+>     # in pieces that may break after a dot (code.file never wraps). Checked: version 8 built with this file gives the same html.
+>     if content in LEANCODE or re.fullmatch(r"[A-Z][A-Za-z0-9]*(\.[A-Za-z_][A-Za-z0-9_']*)+", content):
+>         return '<wbr>'.join('<code class="file">' + html.escape(x) + '</code>' for x in re.split(r'(?<=\.)', content))
+BUILD-SH-DIFF
+2c2
+< # Builds THE_DANCING_SAND_THEOREM_v8: md -> html (paper/md2html_v8.py, mathematics set by paper/phtml.py) -> Chrome headless pdf by paper/chrome_pdf.sh (light flags, see its header).
+---
+> # Builds THE_DANCING_SAND_THEOREM_v9: md -> html (paper/md2html_v9.py, mathematics set by paper/phtml.py) -> Chrome headless pdf by paper/chrome_pdf.sh (light flags, see its header).
+4,5c4,5
+< N=THE_DANCING_SAND_THEOREM_v8
+< python3 md2html_v8.py $N.md $N.html 'The Dancing Sand Theorem'
+---
+> N=THE_DANCING_SAND_THEOREM_v9
+> python3 md2html_v9.py $N.md $N.html 'The Dancing Sand Theorem'
+VIGIA-FIN-OK exit=1 pico_kb=0 t=0s

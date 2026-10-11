@@ -1,0 +1,7 @@
+no pooling: dimensions n=1..11 where the variant disagrees with the Smith form: assertion
+floors first in the integer fit : not testable (the rounding never acts, see m2_rule.log)
+kappa(i+o_D, xi) without -1: dimensions n=1..11 where the variant disagrees with the Smith form: 8
+digits of lambda (not lambda+1): dimensions n=1..11 where the variant disagrees with the Smith form: 10
+no h(D) term: dimensions n=1..11 where the variant disagrees with the Smith form: 9
+original rule disagreements: 0
+VIGIA-FIN-OK exit=0 pico_kb=5296 t=0s

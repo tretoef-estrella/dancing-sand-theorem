@@ -1,0 +1,4 @@
+RequestProject/RingK/PartK.lean: VIGIA-FIN-OK exit=0 pico_kb=2312512 t=30s  errors=0
+RequestProject/Families/Theorem.lean: VIGIA-FIN-OK exit=0 pico_kb=2240160 t=34s  errors=0
+RequestProject/AntitonicFit/IntegerFit.lean: VIGIA-FIN-OK exit=0 pico_kb=2144752 t=39s  errors=0
+RequestProject/CubeLaplacian/Reduction.lean: VIGIA-FIN-OK exit=0 pico_kb=2175056 t=39s  errors=0

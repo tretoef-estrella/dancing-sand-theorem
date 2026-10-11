@@ -1,0 +1,21 @@
+final check logs present: 59
+axiom lines total: 767 {'propext, Classical.choice, Quot.sound': 753, 'propext': 1, 'propext, Quot.sound': 12, 'NONE': 1}
+no-axiom lines: [('checkC40b.log', 'FormalDance.C1')]
+log endings: {'VIGIA-FIN-OK exit=0': 59}
+sorryAx: []
+  fewer: checkC13.log Dance.slots_eq propext
+  fewer: checkC14.log Windows.H2_Mfin propext, Quot.sound
+  fewer: checkC14.log Windows.H2_pσ propext, Quot.sound
+  fewer: checkC16.log FamilyGroup.L3_unit propext, Quot.sound
+  fewer: checkC31b.log FamDec.Vdot_even propext, Quot.sound
+  fewer: checkC32.log Families.ds_even propext, Quot.sound
+  fewer: checkC33.log MainTheorem.S5_zero propext, Quot.sound
+  fewer: checkC37.log Mirror.cancel_torsion propext, Quot.sound
+  fewer: checkC39.log FoldHalf.S4 propext, Quot.sound
+  fewer: checkC48b.log DanceXi.T1 propext, Quot.sound
+  fewer: checkC6.log Houses.lemma_A0_upset propext, Quot.sound
+  fewer: checkC7.log TheoremF.lemma_0a propext, Quot.sound
+  fewer: checkC7.log TheoremF.lemma_0f_J0 propext, Quot.sound
+in code (comments stripped): {'sorry': (0, 0), 'admit': (0, 0), 'native_decide': (0, 0), 'implemented_by': (0, 0), 'extern': (0, 0), 'unsafe': (0, 0), 'opaque': (0, 0), 'partial': (0, 0), 'axiom': (0, 0), 'decide': (38, 16)}
+substring 'axiom' anywhere (case-insensitive, comments included): 7
+VIGIA-FIN-OK exit=0 pico_kb=14112 t=1s

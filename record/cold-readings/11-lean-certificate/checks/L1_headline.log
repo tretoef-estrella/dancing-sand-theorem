@@ -1,0 +1,159 @@
+MainTheorem.M1 : ∀ (n : ℕ),
+  1 ≤ n →
+    Nonempty
+      (ℤ_[2] × ↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n)) ≃+
+        ((q : (lam : Fin (n + 1)) × Fin (FamDec.m (↑lam) n)) → MainTheorem.XFam (↑q.fst) ((n - ↑q.fst) / 2)))
+MainTheorem.M2 : ∀ (n : ℕ),
+  1 ≤ n →
+    Nonempty
+      (ℤ_[2] × ↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n)) ≃+
+        ((j : Fin (FamDec.L n).length) → MainTheorem.XFam ((FamDec.L n).get j) ((n - (FamDec.L n).get j) / 2)))
+Windows.theorem_D_i : ∀ (ds : List Bool) (α i : ℕ),
+  1 ≤ α →
+    Nonempty
+      ((Dance.SysT ℤ ds (Fin 1) ⧸ (Dance.sigma ℤ ds α i).range) ≃ₗ[ℤ]
+        ((a : Fin ds.length) → (Fin (2 ^ (ds.length + Dance.mCount ds - 1 - ↑a)) → ℤ) ⧸ 2 ^ ↑a • ⊤) ×
+          (Fin (2 ^ Dance.mCount ds) → ℤ) ⧸ (2 ^ ds.length • Matrix.toLin' (Windows.finalMatrix ℤ ds α i)).range)
+BaiCounts.B1 : ∀ (n : ℕ), 1 ≤ n → BaiCounts.l0 ↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n)) = 2 ^ (2 ^ (n - 1) - 1)
+BaiCounts.B2 : ∀ (n : ℕ),
+  2 ≤ n → BaiCounts.l1 ↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n)) = 2 ^ (2 ^ (n - 1) - 1 - BaiCounts.aN n)
+PodiumCor.G1 : ∀ (n : ℕ),
+  3 ≤ n →
+    ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) 1) =
+        max (PodiumCor.gmax n) (↑(Rulers.v2 n) + ↑n - 1) ∧
+      ∀ (r : ℕ), 2 ≤ r → r ≤ n - 1 → ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) r) = PodiumCor.gmax n
+PodiumCor.G2 : ∀ (n : ℕ),
+  3 ≤ n →
+    ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) n) =
+      max (PodiumCor.gmax (n - 1)) (↑(Rulers.v2 (n - 1)) + ↑n - 3)
+PodiumCor.G3 : ∀ (n : ℕ),
+  4 ≤ n → ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) (n + 1)) = PodiumCor.gmax (n - 1)
+Mirror.Y2 : ∀ (e : ℕ),
+  1 ≤ e →
+    Nonempty
+      (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K (2 ^ e))) ≃+
+        (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K (2 ^ e - 1))) × ↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K (2 ^ e - 1)))) ×
+          ZMod (2 ^ (2 ^ e + e - 1)))
+FoldLaw.H : ∀ (lam : ℕ),
+  1 ≤ lam → ∀ (i : ℕ), Nonempty (FoldGroup.XbarFam lam i ≃+ ↥(FoldGroup.twoM (FamilyGroup.X (Families.ds lam) 1 i)))
+FoldLaw.DW : ∀ (n : ℕ),
+  1 ≤ n →
+    Nonempty (↥(CubeLaplacian.Syl2 ↥(Fold.KBar n)) ≃+ ↥(FoldGroup.twoM ↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))))
+FoldLaw.DW' : ∀ (n : ℕ),
+  2 ≤ n →
+    ∃ H x,
+      ∃ (_ : Finite H),
+        Nonempty (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n)) ≃+ (Fin (BaiCounts.aN n) → ZMod 2) × H) ∧
+          Nonempty (↥(CubeLaplacian.Syl2 ↥(Fold.KBar n)) ≃+ ↥(FoldGroup.twoM H)) ∧ BaiCounts.l0 H = BaiCounts.l1 H
+FoldLaw.L1 : ∀ (n : ℕ),
+  2 ≤ n → BaiCounts.l0 ↥(CubeLaplacian.Syl2 ↥(Fold.KBar n)) = 2 ^ (2 ^ (n - 1) - 1 - BaiCounts.aN n)
+FoldLaw.R : ∀ (n : ℕ), 2 ≤ n → Module.finrank (ZMod 2) ↥(Fold.lapBar (ZMod 2) n).range = BaiCounts.aN n
+OddParts.B1 : ∀ (n p : ℕ),
+  Nat.Prime p →
+    p ≠ 2 →
+      Nonempty
+        (↥(OddParts.Sylp p ↥(CubeLaplacian.K n)) ≃+
+          ↥(OddParts.Sylp p ((j : Fin n) → Fin (n.choose (↑j + 1)) → ZMod (↑j + 1))))
+OddParts.C5 : ∀ (n : ℕ),
+  1 ≤ n →
+    ∀ (p : ℕ),
+      Nat.Prime p →
+        p ≠ 2 →
+          Nonempty
+            (↥(OddParts.Sylp p ↥(Fold.KBar n)) ≃+
+              ↥(OddParts.Sylp p ((t : Fin (n / 2)) → Fin (n.choose (2 * (↑t + 1))) → ZMod (2 * (2 * (↑t + 1))))))
+PodiumCor.P1 : ∀ (n : ℕ),
+  4 ≤ n →
+    n % 2 = 0 →
+      ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) 1) =
+          max (PodiumCor.gmax (n - 1)) (Rulers.phi n - 1) ∧
+        ∀ (r : ℕ),
+          2 ≤ r → r ≤ n + 1 → ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) r) = PodiumCor.gmax (n - 1)
+PodiumCor.P2 : ∀ (n : ℕ),
+  4 ≤ n →
+    n % 2 = 1 →
+      Rulers.phi (n - 1) ≤ PodiumCor.gmax (n - 1) →
+        ∀ (r : ℕ),
+          1 ≤ r → r ≤ n + 1 → ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) r) = PodiumCor.gmax (n - 1)
+PodiumCor.P3 : ∀ (n : ℕ),
+  4 ≤ n →
+    n % 2 = 1 →
+      PodiumCor.gmax (n - 1) < Rulers.phi (n - 1) →
+        (∀ (r : ℕ),
+            1 ≤ r → r ≤ n - 1 → ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) r) = Rulers.phi (n - 1)) ∧
+          ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) n) =
+              max (PodiumCor.gmax (n - 1)) (Rulers.phi (n - 1) - 2) ∧
+            ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) (n + 1)) = PodiumCor.gmax (n - 1)
+'MainTheorem.M1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MainTheorem.M2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Windows.theorem_D_i' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BaiCounts.B1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BaiCounts.B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PodiumCor.G1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PodiumCor.G2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PodiumCor.G3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Mirror.Y2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldLaw.H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldLaw.DW' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldLaw.DW'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldLaw.L1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldLaw.R' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddParts.B1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddParts.C5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PodiumCor.P1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PodiumCor.P2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PodiumCor.P3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AntitonicFit.existsUnique_fit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceSmith.S_main' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RingK.K2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Families.T3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CubeLaplacian.D2' depends on axioms: [propext, Classical.choice, Quot.sound]
+@[reducible] def FamilyGroup.X : List Bool → ℕ → ℕ → Type :=
+fun ds α i => Dance.SysT ℤ_[2] ds (Fin 1) ⧸ (Dance.sigma ℤ_[2] ds α i).range
+@[reducible] def Dance.SysT.{u} : (A : Type u) → [CommRing A] → List Bool → Type → Type u :=
+fun A [CommRing A] ds S => Payment.Sys (fun x => A) S
+def Dance.sigma.{u} : (A : Type u) →
+  [inst : CommRing A] → (ds : List Bool) → ℕ → ℕ → Dance.SysT A ds (Fin 1) →ₗ[A] Dance.SysT A ds (Fin 1) :=
+fun A [CommRing A] ds α i => Payment.G (Dance.fl ds) (Dance.F A ds) (Dance.pσ α i) Dance.κσ
+def BaiCounts.aN : ℕ → ℕ :=
+fun n => 2 ^ (n - 2) - 2 ^ ((n - 2) / 2)
+def BaiCounts.l0.{u_1} : (G : Type u_1) → [AddCommGroup G] → ℕ :=
+fun G [AddCommGroup G] => Nat.card (G ⧸ BaiCounts.twoPow G 1)
+def BaiCounts.l1.{u_1} : (G : Type u_1) → [AddCommGroup G] → ℕ :=
+fun G [AddCommGroup G] =>
+  Nat.card (↥(BaiCounts.twoPow G 1) ⧸ (BaiCounts.twoPow G 2).addSubgroupOf (BaiCounts.twoPow G 1))
+def PodiumCor.cExp.{u_1} : (G : Type u_1) → [AddCommGroup G] → ℕ → ℕ :=
+fun G [AddCommGroup G] r => sSup {e | 1 ≤ e ∧ 2 ^ r ≤ PodiumCor.layer G (e - 1)}
+def PodiumCor.layer.{u_1} : (G : Type u_1) → [AddCommGroup G] → ℕ → ℕ :=
+fun G [AddCommGroup G] j =>
+  Nat.card (↥(BaiCounts.twoPow G j) ⧸ (BaiCounts.twoPow G (j + 1)).addSubgroupOf (BaiCounts.twoPow G j))
+[2, 2, 4, 2, 2, 4, 4, 4, 6]
+[[1], [0, 1], [0, 0, 1], [0, 2, 0, 1], [0, 0, 2, 0, 1], [0, 4, 0, 4, 0, 1], [0, 0, 4, 0, 4, 0, 1],
+  [0, 8, 0, 14, 0, 6, 0, 1], [0, 0, 8, 0, 14, 0, 6, 0, 1], [0, 16, 0, 48, 0, 26, 0, 8, 0, 1],
+  [0, 0, 16, 0, 48, 0, 26, 0, 8, 0, 1], [0, 32, 0, 164, 0, 100, 0, 44, 0, 10, 0, 1]]
+[[], [false], [true], [false, false], [true, false], [false, true], [true, true], [false, false, false],
+  [true, false, false], [false, true, false], [true, true, false], [false, false, true], [true, false, true],
+  [false, true, true], [true, true, true], [false, false, false, false]]
+[(∅, 0),
+ (∅, 0),
+ ({0}, 1),
+ (∅, 0),
+ ({0}, 1),
+ ({1}, 1),
+ ({0, 1}, 2),
+ (∅, 0),
+ ({0}, 1),
+ ({1}, 1),
+ ({0, 1}, 2),
+ ({2}, 1),
+ ({0, 2}, 2),
+ ({1, 2}, 2),
+ ({0, 1, 2}, 3),
+ (∅, 0)]
+[∅, {0}, {1}, {0, 1}]
+[∅, {0}, {2}, {0, 2}, {3}, {0, 3}, {2, 3}, {0, 2, 3}]
+[6, 6, 3]
+[5, 7]
+[5, 2]
+[0, 0, 0, 1, 2, 6, 12, 28, 56, 120, 240, 496]
+VIGIA-FIN-OK exit=0 pico_kb=2022368 t=176s
