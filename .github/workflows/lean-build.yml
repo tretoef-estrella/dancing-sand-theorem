@@ -1,5 +1,5 @@
 # Builds the Lean proof of «The Dancing Sand Theorem» from source and runs the hand restatements of its main results.
-# Started by hand (Actions tab → «Lean build» → «Run workflow»); a full build takes hours.
+# Started by hand (Actions tab → «Lean build» → «Run workflow»); a full build takes about 25 minutes (run 38172080438, 11 Oct 2026: success).
 name: Lean build
 
 on:
