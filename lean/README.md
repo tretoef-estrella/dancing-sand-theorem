@@ -67,7 +67,7 @@ lake build
 lake env lean checks/CheckCubo2.lean
 ```
 
-On a machine with little memory, build the modules one at a time, in the order of `clean_rebuild/orden_modulos.txt`, then the four modules of `SmallCases`, as the author did. A GitHub Actions workflow, [../.github/workflows/lean-build.yml](../.github/workflows/lean-build.yml), runs the first three commands on GitHub's machines; it is started by hand from the repository's Actions tab, and a full build takes hours.
+On a machine with little memory, build the modules one at a time, in the order of `clean_rebuild/orden_modulos.txt`, then the four modules of `SmallCases`, as the author did. A GitHub Actions workflow, [../.github/workflows/lean-build.yml](../.github/workflows/lean-build.yml), runs the first three commands on GitHub's machines, from the files as published, and then checks that no printed axiom list contains `sorryAx` or anything beyond `propext`, `Classical.choice` and `Quot.sound`; it is started by hand from the repository's Actions tab. Its run of 11 October 2026, on commit `f6d95a4`, built the 420 modules from source in 21 minutes and passed the hand restatements and the check «no `sorry`, no axiom beyond the three standard ones», 24 minutes in all ([run 38172080438](https://github.com/tretoef-estrella/dancing-sand-theorem/actions/runs/38172080438); its output is kept in [logs/actions/](../logs/actions/README.md), because GitHub deletes run logs after 90 days). GitHub's machines build many modules at once; the author's clean rebuild took 7 hours because it built one module at a time, on a machine with 8 GB.
 
 For the Main Theorem alone, make a file `Check.lean` next to `lakefile.toml` with
 
