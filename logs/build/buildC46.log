@@ -1,0 +1,36 @@
+=== MODULE Defs 21:46:38
+vigia_rc=0
+✔ [8277/8277] Built RequestProject.Smith2.Defs (60s)
+Build completed successfully (8277 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1979648 t=67s
+=== MODULE PartM 21:47:46
+vigia_rc=0
+✔ [8279/8279] Built RequestProject.Smith2.PartM (51s)
+Build completed successfully (8279 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2059728 t=58s
+=== MODULE PartZ 21:48:45
+vigia_rc=0
+✔ [8278/8278] Built RequestProject.Smith2.PartZ (40s)
+Build completed successfully (8278 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2221392 t=47s
+=== MODULE PartG 21:49:33
+vigia_rc=0
+✔ [8109/8109] Built RequestProject.Smith2.PartG (39s)
+Build completed successfully (8109 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2204432 t=44s
+=== MODULE PartV 21:50:17
+vigia_rc=0
+✔ [8323/8323] Built RequestProject.Smith2.PartV (51s)
+Build completed successfully (8323 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2000656 t=57s
+=== MODULE PartR 21:51:15
+vigia_rc=0
+✔ [8324/8324] Built RequestProject.Smith2.PartR (65s)
+Build completed successfully (8324 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1909440 t=72s
+=== MODULE All 21:52:27
+vigia_rc=0
+✔ [8325/8325] Built RequestProject.Smith2.All (45s)
+Build completed successfully (8325 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2080640 t=52s
+BUILD-LOOP-END

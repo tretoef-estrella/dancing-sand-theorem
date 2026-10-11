@@ -1,0 +1,26 @@
+=== MODULE Defs 18:46:39
+vigia_rc=0
+✔ [8272/8272] Built RequestProject.PathSum.Defs (62s)
+Build completed successfully (8272 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1841008 t=69s
+=== MODULE Aux 18:47:49
+vigia_rc=0
+✔ [8273/8273] Built RequestProject.PathSum.Aux (55s)
+Build completed successfully (8273 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1950752 t=62s
+=== MODULE PartP 18:48:52
+vigia_rc=0
+✔ [8274/8274] Built RequestProject.PathSum.PartP (52s)
+Build completed successfully (8274 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2027504 t=59s
+=== MODULE PartR 18:49:51
+vigia_rc=0
+✔ [8301/8301] Built RequestProject.PathSum.PartR (63s)
+Build completed successfully (8301 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1844560 t=70s
+=== MODULE All 18:51:01
+vigia_rc=0
+✔ [8302/8302] Built RequestProject.PathSum.All (57s)
+Build completed successfully (8302 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1921184 t=64s
+BUILD-LOOP-END
