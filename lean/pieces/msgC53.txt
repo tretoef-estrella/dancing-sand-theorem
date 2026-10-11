@@ -1,0 +1,101 @@
+Formalize the file C53_the_small_cases.md, whose full text follows below the line, in the existing project, in a new folder RequestProject/SmallCases/ with namespace SmallCases. Do not change any existing file, and redefine nothing that the Setting lists as reused (CubeLaplacian, Fold, FoldGroup, BaiCounts, FoldLaw, PodiumCor, Rulers). Prove every statement of Parts S, T and U exactly as written: (S0), (S1), (S2), (S3), DW'_one, (L1-1), (R1), (T0), (T1), G1_two, DW'_all, L1_all, R_all, G1_all. If a statement needs a hypothesis that the file does not give, stop and say which one rather than changing the statement. No sorry, no new axioms, no native_decide. Add a file All.lean that imports every part, and a docstring on each theorem naming its item in the file.
+
+----- C53_the_small_cases.md -----
+
+# C53 — the small cases: Theorem DW′, (L1) and (R) at `n = 1`, and Gao et al.'s Theorem 4.1 at `n = 2`
+
+*Lean piece C53 of the Dancing Sand Theorem. Grepy Escribano, 11 October 2026. Folder `RequestProject/SmallCases/`, namespace `SmallCases`. Do not change any earlier file.*
+
+The certificate (§2, «Generality») lists four statements that Lean proves for fewer values of `n` than the paper states:
+
+- `FoldLaw.DW'`, `FoldLaw.L1` and `FoldLaw.R` are stated for `n ≥ 2`; the paper states them for `n ≥ 1`.
+- `PodiumCor.G1` is stated for `n ≥ 3`; Gao, Marx-Kuo, McDonald and Yuen state their Theorem 4.1 for `n ≥ 2`.
+
+This piece proves the missing cases. Each statement is then given for every `n` the paper states it for.
+
+**What the small cases are.**
+
+- At `n = 1`, `Q_1` is one edge, so `K(Q_1)` is trivial. The folded cube `Q_1/⟨𝟙⟩` is one vertex with one loop, so `Fold.lapBar A 1 = 0` and its cokernel is `ℤ` with no torsion. Also `BaiCounts.aN 1 = 2^0 − 2^0 = 0` in `ℕ`.
+- At `n = 2`, `K(Q_2) ≅ ℤ/4`. Then `layer 0 = layer 1 = 2` and `layer 2 = 1`, so `cExp (Syl2 (K 2)) 1 = 2`. On the other side, `gmax 2 = φ(1) = 1` and `v2 2 + 2 − 1 = 2`. The second clause of `G1` is empty (`2 ≤ r ≤ 1`).
+
+## Setting (reuse; do not redefine)
+
+- C17: `CubeLaplacian.K`, `CubeLaplacian.K_finite`, `CubeLaplacian.Syl2`.
+- C38: `Fold.aElt`, `Fold.Gbar`, `Fold.mk`, `Fold.lapBar`, `Fold.lapBar_apply`, `Fold.KBar`.
+- C38b: `FoldGroup.twoM`, `FoldGroup.KBar_finite`.
+- C34: `BaiCounts.aN`, `BaiCounts.l0`, `BaiCounts.l1`, `BaiCounts.B1` (`1 ≤ n → l0 (Syl2 (K n)) = 2 ^ (2 ^ (n − 1) − 1)`).
+- C51: `FoldLaw.DW` (for `1 ≤ n`), `FoldLaw.DW'`, `FoldLaw.L1`, `FoldLaw.R` (all three for `2 ≤ n`).
+- C36: `PodiumCor.cExp`, `PodiumCor.layer`, `PodiumCor.gmax`, `PodiumCor.G1` (for `3 ≤ n`), `Rulers.v2`, `Rulers.phi`.
+
+## Part S — `n = 1`
+
+- **(S0)** `BaiCounts.aN 1 = 0`.
+- **(S1)** `Subsingleton (CubeLaplacian.Syl2 (CubeLaplacian.K 1))`. *Hint:* `BaiCounts.B1 1` gives `l0 = 1`, so `S = 2S`; a finite group in which every element has `2`-power order and `S = 2S` is trivial. A direct computation of `K 1` is also fine.
+- **(S2)** `Subsingleton (CubeLaplacian.Syl2 (Fold.KBar 1))`. *Hint:* `FoldLaw.DW 1` and (S1).
+- **(S3)** `Fold.lapBar A 1 = 0` for every commutative ring `A`. *Reason:* in `Gbar 1`, `mk 1 (e 0) = mk 1 (aElt 1) = 0`, so `lapBar A 1 u x = 1 • u x − u x = 0`.
+- **(DW'1)** Theorem DW′ at `n = 1`, in exactly the form of `FoldLaw.DW'`:
+
+```lean
+theorem DW'_one :
+    ∃ (H : Type) (_ : AddCommGroup H) (_ : Finite H),
+      Nonempty (CubeLaplacian.Syl2 (CubeLaplacian.K 1) ≃+
+        (Fin (BaiCounts.aN 1) → ZMod 2) × H) ∧
+      Nonempty (CubeLaplacian.Syl2 (Fold.KBar 1) ≃+ FoldGroup.twoM H) ∧
+      BaiCounts.l0 H = BaiCounts.l1 H
+```
+
+  (`H = PUnit` works.)
+
+- **(L1-1)** `BaiCounts.l0 (CubeLaplacian.Syl2 (Fold.KBar 1)) = 2 ^ (2 ^ (1 - 1) - 1 - BaiCounts.aN 1)`. Both sides are `1`.
+- **(R1)** `Module.finrank (ZMod 2) (LinearMap.range (Fold.lapBar (ZMod 2) 1)) = BaiCounts.aN 1`. Both sides are `0`.
+
+## Part T — `n = 2`
+
+- **(T0)** `Nonempty (CubeLaplacian.Syl2 (CubeLaplacian.K 2) ≃+ ZMod 4)`. Any proof is fine. For example, the Laplacian of the 4-cycle has Smith form `diag(1, 1, 4, 0)`; or use `BaiCounts.B1 2` (`l0 = 2`) together with the order of `K 2`.
+- **(T1)** `PodiumCor.gmax 2 = 1`.
+- **(G1-2)** `PodiumCor.G1` at `n = 2`, in exactly its form:
+
+```lean
+theorem G1_two :
+    (PodiumCor.cExp (CubeLaplacian.Syl2 (CubeLaplacian.K 2)) 1 : ℤ) =
+        max (PodiumCor.gmax 2) ((Rulers.v2 2 : ℤ) + 2 - 1) ∧
+      ∀ r, 2 ≤ r → r ≤ 2 - 1 →
+        (PodiumCor.cExp (CubeLaplacian.Syl2 (CubeLaplacian.K 2)) r : ℤ) = PodiumCor.gmax 2
+```
+
+## Part U — every `n` the paper states
+
+```lean
+theorem DW'_all (n : ℕ) (hn : 1 ≤ n) :
+    ∃ (H : Type) (_ : AddCommGroup H) (_ : Finite H),
+      Nonempty (CubeLaplacian.Syl2 (CubeLaplacian.K n) ≃+
+        (Fin (BaiCounts.aN n) → ZMod 2) × H) ∧
+      Nonempty (CubeLaplacian.Syl2 (Fold.KBar n) ≃+ FoldGroup.twoM H) ∧
+      BaiCounts.l0 H = BaiCounts.l1 H
+
+theorem L1_all (n : ℕ) (hn : 1 ≤ n) :
+    BaiCounts.l0 (CubeLaplacian.Syl2 (Fold.KBar n)) =
+      2 ^ (2 ^ (n - 1) - 1 - BaiCounts.aN n)
+
+theorem R_all (n : ℕ) (hn : 1 ≤ n) :
+    Module.finrank (ZMod 2) (LinearMap.range (Fold.lapBar (ZMod 2) n)) = BaiCounts.aN n
+
+theorem G1_all (n : ℕ) (hn : 2 ≤ n) :
+    (PodiumCor.cExp (CubeLaplacian.Syl2 (CubeLaplacian.K n)) 1 : ℤ) =
+        max (PodiumCor.gmax n) ((Rulers.v2 n : ℤ) + n - 1) ∧
+      ∀ r, 2 ≤ r → r ≤ n - 1 →
+        (PodiumCor.cExp (CubeLaplacian.Syl2 (CubeLaplacian.K n)) r : ℤ) = PodiumCor.gmax n
+```
+
+Each one is the case `n = 1` (or `n = 2`) of this piece together with the existing theorem for the other values.
+
+## Checked before sending
+
+`chkC53.py`:
+
+- Smith forms over `ℤ` of the Laplacians of `Q_1`, `Q_2` and of the folded cubes at `n = 1, 2`;
+- the layers and `cExp` of `ℤ/4`;
+- `gmax 2`, `aN 1`, `aN 2`;
+- the right-hand sides of the four statements.
+
+Negative controls must fail: `cExp = 1` at `n = 2`, `K(Q_2) ≅ ℤ/2`, `aN 1 = 1`, and `lapBar ≠ 0` at `n = 1`.
