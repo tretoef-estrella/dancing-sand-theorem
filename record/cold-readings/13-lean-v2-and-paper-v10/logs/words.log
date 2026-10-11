@@ -1,0 +1,52 @@
+pdf word changes: 25
+  PDF replace |- 9 |+ 10
+  PDF replace |- and, |+ and its equivalent form (SmallCases.DW'_all;
+  PDF replace |- 2, its equivalent form (FoldLaw.DW'); |+ 2 it is FoldLaw.DW');
+  PDF replace |- FoldLaw.DW' |+ SmallCases.DW'_all
+  PDF insert |-  |+ every
+  PDF replace |- 3) |+ 2 is SmallCases. G1_all)
+  PDF replace |- file. |+ file; a 69th piece added the cases that the first 68 left out (Theorem DW′, the count of §10.8 and the 𝔽2‑rank of the folded Laplacian at 𝑛 = 1, and G
+  PDF replace |- forbidden |+ for‐ bidden
+  PDF replace |- state‐ ments |+ statements
+  PDF insert |-  |+ of the 68 pieces
+  PDF replace |- modules |+ mod‐ ules
+  PDF replace |- 0. |+ 0; the four modules of the 69th piece were then compiled from their sources, with the sources of the other 416 unchanged.
+  PDF replace |- 416 |+ 420
+  PDF replace |- (415 |+ (419
+  PDF replace |- 68 |+ 69
+  PDF replace |- 60 964 |+ 61 285
+  PDF replace |- 449 |+ 470
+  PDF insert |-  |+ Version 2 of the certificate, which adds the 69th piece, was read cold in its turn before release.
+  PDF delete |- the equivalent form of Theorem DW at 𝑛 = 1, where both groups are trivial, and Gao et al.’s Theorem 4.1 at 𝑛 = 2, where 𝐾(𝑄2) = ℤ/4; |+ 
+  PDF replace |- 68 |+ 69
+  PDF insert |-  |+ a 69th piece, for
+  PDF insert |-  |+ small cases, followed on 11 October 2026. The
+  PDF replace |- 2026 |+ 2026, and so was its version 2, which adds the 69th piece
+  PDF insert |-  |+ version 2,
+  PDF replace |- 10.5281/zenodo.23296708. |+ 10.5281/zenodo.23298436; all versions, concept DOI 10.5281/zenodo.23296707.
+md word changes: 22
+  MD  replace |- 9 |+ 10
+  MD  replace |- and, |+ and its equivalent form (`SmallCases.DW'_all`;
+  MD  replace |- 2`, its equivalent form (`FoldLaw.DW'`); |+ 2` it is `FoldLaw.DW'`);
+  MD  replace |- `FoldLaw.DW'` |+ `SmallCases.DW'_all`
+  MD  insert |-  |+ every
+  MD  replace |- 3`) |+ 2` is `SmallCases.G1_all`)
+  MD  replace |- file. |+ file; a 69th piece added the cases that the first 68 left out (Theorem DW′, the count of §10.8 and the `𝔽_2`-rank of the folded Laplacian at `n = 1`, 
+  MD  insert |-  |+ of the 68 pieces
+  MD  replace |- 0. |+ 0; the four modules of the 69th piece were then compiled from their sources, with the sources of the other 416 unchanged.
+  MD  replace |- 416 |+ 420
+  MD  replace |- (415 |+ (419
+  MD  replace |- 68 |+ 69
+  MD  replace |- 60 964 |+ 61 285
+  MD  replace |- 449 |+ 470
+  MD  insert |-  |+ Version 2 of the certificate, which adds the 69th piece, was read cold in its turn before release.
+  MD  delete |- - the equivalent form of Theorem DW at `n = 1`, where both groups are trivial, and Gao et al.'s Theorem 4.1 at `n = 2`, where `K(Q_2) = ℤ/4`; |+ 
+  MD  replace |- 68 |+ 69
+  MD  insert |-  |+ a 69th piece, for
+  MD  insert |-  |+ small cases, followed on 11 October 2026. The
+  MD  replace |- 2026 |+ 2026, and so was its version 2, which adds the 69th piece
+  MD  insert |-  |+ version 2,
+  MD  replace |- 10.5281/zenodo.23296708. |+ 10.5281/zenodo.23298436; all versions, concept DOI 10.5281/zenodo.23296707.
+pdf removed words 53 added 144
+md  removed words 50 added 138
+VIGIA-FIN-OK exit=0 pico_kb=35968 t=3s

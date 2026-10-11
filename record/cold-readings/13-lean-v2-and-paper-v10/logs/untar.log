@@ -1,0 +1,24 @@
+output-final_aristotle/lake-manifest.json
+output-final_aristotle/lakefile.toml
+output-final_aristotle/lean-toolchain
+output-final_aristotle/RequestProject/Main.lean
+output-final_aristotle/RequestProject/SmallCases/PartS.lean
+output-final_aristotle/RequestProject/SmallCases/PartT.lean
+output-final_aristotle/RequestProject/SmallCases/PartU.lean
+output-final_aristotle/RequestProject/SmallCases/All.lean
+output-final_aristotle/RequestProject/AntitonicFit/All.lean
+output-final_aristotle/RequestProject/AntitonicFit/Antisymmetry.lean
+output-final_aristotle/RequestProject/AntitonicFit/Basic.lean
+output-final_aristotle/RequestProject/AntitonicFit/Characterization.lean
+output-final_aristotle/RequestProject/AntitonicFit/Cuts.lean
+output-final_aristotle/RequestProject/AntitonicFit/Examples.lean
+output-final_aristotle/RequestProject/AntitonicFit/Gluing.lean
+output-final_aristotle/RequestProject/AntitonicFit/IntegerFit.lean
+output-final_aristotle/RequestProject/ArmsEven/All.lean
+output-final_aristotle/RequestProject/ArmsEven/Defs.lean
+output-final_aristotle/RequestProject/ArmsEven/PartA.lean
+output-final_aristotle/RequestProject/ArmsEven/PartC.lean
+     494
+6bc461fd2d92c8c2a20289737787359f
+output-final_aristotle
+VIGIA-FIN-OK exit=0 pico_kb=2176 t=0s

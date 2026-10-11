@@ -1,0 +1,89 @@
+== diff -rq RequestProject
+rc=0
+== counts
+     421
+     420
+     421
+     420
+== non-RequestProject files in tar
+scratch/tar69/output-final_aristotle/ARISTOTLE_SUMMARY.md
+scratch/tar69/output-final_aristotle/C10_deficit_law.md
+scratch/tar69/output-final_aristotle/C11_payment_systems_twist.md
+scratch/tar69/output-final_aristotle/C12_split_move.md
+scratch/tar69/output-final_aristotle/C13_the_dance.md
+scratch/tar69/output-final_aristotle/C14_windows_and_theorem_D.md
+scratch/tar69/output-final_aristotle/C15_smith_form_of_the_dance_matrix.md
+scratch/tar69/output-final_aristotle/C16_the_family_group_over_Z2.md
+scratch/tar69/output-final_aristotle/C17_the_laplacian_in_the_group_ring.md
+scratch/tar69/output-final_aristotle/C18_divided_power_lattices_and_the_dictionary.md
+scratch/tar69/output-final_aristotle/C19_weyl_filtrations_of_V_tensor.md
+scratch/tar69/output-final_aristotle/C1_antitonic_fits.md
+scratch/tar69/output-final_aristotle/C20_the_doubling_functor.md
+scratch/tar69/output-final_aristotle/C21_reduction_mod_2_and_the_twist.md
+scratch/tar69/output-final_aristotle/C22_lemma_35_over_F2.md
+scratch/tar69/output-final_aristotle/C23_the_tensor_product.md
+scratch/tar69/output-final_aristotle/C24_lemma_35_second_sentence.md
+scratch/tar69/output-final_aristotle/C25_lemma_W_and_ext.md
+scratch/tar69/output-final_aristotle/C26_lifting_and_extension.md
+scratch/tar69/output-final_aristotle/C27_cocycles_and_filtrations.md
+scratch/tar69/output-final_aristotle/C28_lifting_mod_2_and_corollary_34.md
+scratch/tar69/output-final_aristotle/C29_filtrations_and_dance_lattices.md
+scratch/tar69/output-final_aristotle/C2_smith_bounds.md
+scratch/tar69/output-final_aristotle/C30_the_step_of_theorem_36.md
+scratch/tar69/output-final_aristotle/C31_theorem_36_the_family_decomposition.md
+scratch/tar69/output-final_aristotle/C32_theorem_38_the_groups_of_the_families.md
+scratch/tar69/output-final_aristotle/C33_the_main_theorem.md
+scratch/tar69/output-final_aristotle/C34_bais_counts.md
+scratch/tar69/output-final_aristotle/C35_the_podium_arithmetic.md
+scratch/tar69/output-final_aristotle/C35b_the_podium_walk.md
+scratch/tar69/output-final_aristotle/C36_the_podium_corollary.md
+scratch/tar69/output-final_aristotle/C37_the_mirror_that_doubles.md
+scratch/tar69/output-final_aristotle/C38_the_fold_in_the_group_ring.md
+scratch/tar69/output-final_aristotle/C38b_the_folded_cube_and_proposition_103.md
+scratch/tar69/output-final_aristotle/C39_the_fold_on_the_half_lattice.md
+scratch/tar69/output-final_aristotle/C39b_the_cube_side_on_the_half_lattice.md
+scratch/tar69/output-final_aristotle/C3_rulers_gold_clocks.md
+scratch/tar69/output-final_aristotle/C40_the_formal_operators.md
+scratch/tar69/output-final_aristotle/C40b_the_formal_dance_of_payment_systems.md
+scratch/tar69/output-final_aristotle/C40c_the_action_of_a_system_and_one_move.md
+scratch/tar69/output-final_aristotle/C40d_proposition_10_7.md
+scratch/tar69/output-final_aristotle/C41_inverse_block.md
+scratch/tar69/output-final_aristotle/C42_floors_and_corollary_10_9.md
+scratch/tar69/output-final_aristotle/C43_path_sum.md
+scratch/tar69/output-final_aristotle/C44_stability_and_rigidity.md
+scratch/tar69/output-final_aristotle/C45_conjugation_and_general_eta.md
+scratch/tar69/output-final_aristotle/C46_smith_form_and_cokernel_over_Z2.md
+scratch/tar69/output-final_aristotle/C47_the_ring_K_and_covariant_systems.md
+scratch/tar69/output-final_aristotle/C48_cleanliness_one_move.md
+scratch/tar69/output-final_aristotle/C48b_the_dance_of_Xi_is_clean.md
+scratch/tar69/output-final_aristotle/C49_the_fold_law_on_the_odd_families.md
+scratch/tar69/output-final_aristotle/C49b_congruence_and_the_data_at_zero.md
+scratch/tar69/output-final_aristotle/C49c_smith_form_and_cokernel_at_zero.md
+scratch/tar69/output-final_aristotle/C4_golden_matching.md
+scratch/tar69/output-final_aristotle/C50_the_glue_commutes_with_the_dance.md
+scratch/tar69/output-final_aristotle/C50b_the_dance_modulo_two.md
+scratch/tar69/output-final_aristotle/C50c_the_arms_of_the_even_families.md
+scratch/tar69/output-final_aristotle/C50d_the_bend.md
+scratch/tar69/output-final_aristotle/C50e_corollary_10_21.md
+scratch/tar69/output-final_aristotle/C50f_the_glued_system_on_T.md
+scratch/tar69/output-final_aristotle/C50g_theorem_10_22_for_i_positive.md
+scratch/tar69/output-final_aristotle/C50h_theorem_10_22_at_zero.md
+scratch/tar69/output-final_aristotle/C51_theorem_DW.md
+scratch/tar69/output-final_aristotle/C52_odd_parts.md
+scratch/tar69/output-final_aristotle/C5_divisors_theorem_65.md
+scratch/tar69/output-final_aristotle/C6_houses_windows_penalties.md
+scratch/tar69/output-final_aristotle/C7_theorem_F_walk_and_cut.md
+scratch/tar69/output-final_aristotle/C8_theorem_F_potential.md
+scratch/tar69/output-final_aristotle/C9_integrality_and_cell_floor.md
+scratch/tar69/output-final_aristotle/README.md
+scratch/tar69/output-final_aristotle/lake-manifest.json
+scratch/tar69/output-final_aristotle/lakefile.toml
+scratch/tar69/output-final_aristotle/lean-toolchain
+== manifest 416 head
+20767b4a1cd580f02eb5bc8edd2bb72c  RequestProject/AntitonicFit/All.lean
+7a859f11f5f11583d862bedb975bbf41  RequestProject/AntitonicFit/Antisymmetry.lean
+28179b915c0675647b0e70ee07f5566a  RequestProject/AntitonicFit/Basic.lean
+     416 material/final_checks/MANIFEST_md5_416.txt
+     420 material/final_checks/MANIFEST_md5_420.txt
+     836 total
+VIGIA-FIN-OK exit=0 pico_kb=2240 t=0s

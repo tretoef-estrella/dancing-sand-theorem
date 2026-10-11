@@ -1,0 +1,76 @@
+AntitonicFit     files=  8 lines=  1645 theorem=   92 lemma=    7 def=  23 naiveTL=99
+ArmsEven         files=  7 lines=   471 theorem=    9 lemma=   11 def=   3 naiveTL=20
+BaiCounts        files=  6 lines=   987 theorem=   26 lemma=   42 def=   5 naiveTL=68
+Bend             files=  7 lines=   715 theorem=   10 lemma=   12 def=   1 naiveTL=22
+BendCor          files=  6 lines=   524 theorem=   14 lemma=    3 def=   3 naiveTL=17
+CellFloor        files=  4 lines=   524 theorem=   14 lemma=    7 def=  10 naiveTL=21
+Cleanliness      files=  6 lines=   820 theorem=   20 lemma=   23 def=  14 naiveTL=43
+Cocycle          files=  7 lines=  1655 theorem=   27 lemma=   78 def=  23 naiveTL=105
+Conjugation      files=  8 lines=  1005 theorem=   39 lemma=   15 def=   7 naiveTL=54
+ContZero         files=  6 lines=   760 theorem=   45 lemma=   16 def=   2 naiveTL=61
+CubeLaplacian    files=  8 lines=   951 theorem=   20 lemma=   40 def=  22 naiveTL=60
+DPLattice        files=  7 lines=  1705 theorem=   37 lemma=   95 def=  42 naiveTL=132
+Dance            files=  7 lines=   873 theorem=    9 lemma=   17 def=  25 naiveTL=26
+DanceMod2        files=  6 lines=   783 theorem=   24 lemma=   17 def=   5 naiveTL=42
+DanceSmith       files=  7 lines=  1680 theorem=   17 lemma=   67 def=  14 naiveTL=84
+DanceXi          files=  3 lines=   239 theorem=    6 lemma=    2 def=   3 naiveTL=8
+Deficit          files=  6 lines=   620 theorem=   13 lemma=    9 def=   5 naiveTL=22
+Divisors         files=  6 lines=   770 theorem=   45 lemma=    0 def=   5 naiveTL=45
+Doubling         files= 12 lines=  2148 theorem=   26 lemma=  144 def=  40 naiveTL=170
+EvenFold         files=  5 lines=   314 theorem=    6 lemma=    2 def=   0 naiveTL=8
+EvenZero         files=  6 lines=   381 theorem=    8 lemma=    3 def=   1 naiveTL=11
+FamDec           files=  4 lines=   517 theorem=   31 lemma=    5 def=   4 naiveTL=36
+Families         files=  6 lines=  1108 theorem=   16 lemma=   34 def=  21 naiveTL=50
+FamilyGroup      files=  6 lines=   532 theorem=   19 lemma=    4 def=   3 naiveTL=23
+Filt             files=  6 lines=  1077 theorem=   34 lemma=   29 def=   9 naiveTL=63
+Fold             files=  6 lines=   922 theorem=   17 lemma=   42 def=  18 naiveTL=59
+FoldCube         files=  8 lines=  1182 theorem=   19 lemma=   57 def=  25 naiveTL=76
+FoldGroup        files=  5 lines=   554 theorem=    9 lemma=   13 def=  19 naiveTL=22
+FoldHalf         files=  7 lines=  1381 theorem=   16 lemma=  105 def=  30 naiveTL=121
+FoldLaw          files=  6 lines=   534 theorem=    6 lemma=   16 def=   3 naiveTL=22
+FoldOdd          files=  5 lines=   455 theorem=    9 lemma=   15 def=  11 naiveTL=24
+FormalAct        files=  6 lines=   636 theorem=   17 lemma=    8 def=  11 naiveTL=25
+FormalDance      files=  6 lines=  1074 theorem=   43 lemma=   54 def=  17 naiveTL=97
+FormalOps        files=  7 lines=   992 theorem=   29 lemma=   43 def=  18 naiveTL=72
+FormalProp       files=  5 lines=   521 theorem=    7 lemma=    4 def=   7 naiveTL=11
+GlueDance        files=  6 lines=   668 theorem=   22 lemma=   33 def=   6 naiveTL=55
+GlueEven         files=  5 lines=   382 theorem=    8 lemma=    6 def=   2 naiveTL=14
+GoldenMatching   files=  5 lines=   897 theorem=   10 lemma=   28 def=  11 naiveTL=38
+Houses           files=  5 lines=  1015 theorem=   20 lemma=   35 def=  14 naiveTL=55
+InvBlock         files=  4 lines=   529 theorem=    6 lemma=   18 def=   7 naiveTL=24
+InvFloors        files=  6 lines=   857 theorem=   13 lemma=   31 def=   6 naiveTL=44
+Lemma35          files=  8 lines=   893 theorem=   21 lemma=   49 def=  27 naiveTL=70
+Lemma35b         files=  2 lines=   868 theorem=   20 lemma=   40 def=  24 naiveTL=60
+LemmaW           files=  5 lines=  1002 theorem=   29 lemma=   32 def=  15 naiveTL=61
+Lift2            files=  5 lines=   464 theorem=   13 lemma=    7 def=   4 naiveTL=20
+LiftExt          files=  4 lines=   575 theorem=   16 lemma=   13 def=   1 naiveTL=29
+(top)            files=  1 lines=    24 theorem=    0 lemma=    0 def=   0 naiveTL=0
+MainTheorem      files=  4 lines=   420 theorem=   24 lemma=    4 def=   6 naiveTL=28
+Mirror           files=  7 lines=  1463 theorem=   38 lemma=   29 def=  11 naiveTL=67
+OddParts         files=  7 lines=   973 theorem=   18 lemma=   34 def=  23 naiveTL=52
+PathSum          files=  5 lines=   516 theorem=    5 lemma=   16 def=   5 naiveTL=21
+Payment          files=  5 lines=   600 theorem=    3 lemma=   19 def=  17 naiveTL=22
+Podium           files=  5 lines=   779 theorem=   16 lemma=   37 def=   5 naiveTL=53
+PodiumCor        files= 11 lines=  1910 theorem=   35 lemma=   92 def=   8 naiveTL=127
+PodiumWalk       files=  6 lines=  1073 theorem=   19 lemma=   30 def=   1 naiveTL=49
+Potential        files=  6 lines=   993 theorem=   20 lemma=   15 def=   9 naiveTL=35
+RingK            files=  6 lines=  1144 theorem=   39 lemma=   34 def=  12 naiveTL=73
+Rulers           files=  6 lines=   852 theorem=   11 lemma=   35 def=  21 naiveTL=46
+SmallCases       files=  4 lines=   321 theorem=   14 lemma=    7 def=   1 naiveTL=21
+Smith2           files=  7 lines=  1221 theorem=   17 lemma=   44 def=   3 naiveTL=61
+SmithBounds      files=  6 lines=   648 theorem=   21 lemma=    7 def=  10 naiveTL=28
+Split            files=  7 lines=  1225 theorem=   11 lemma=   71 def=  28 naiveTL=82
+Stability        files=  7 lines=  1032 theorem=   20 lemma=   33 def=   9 naiveTL=53
+Step36           files=  4 lines=   548 theorem=   20 lemma=    6 def=  17 naiveTL=26
+Tensor2          files=  7 lines=  1147 theorem=   24 lemma=   53 def=  17 naiveTL=77
+TheoremF         files=  5 lines=   968 theorem=   19 lemma=   24 def=   7 naiveTL=43
+Twist            files=  6 lines=  1033 theorem=   33 lemma=   43 def=  17 naiveTL=76
+WeylFilt         files=  7 lines=  1089 theorem=   16 lemma=   60 def=  26 naiveTL=76
+Windows          files=  8 lines=  1128 theorem=   22 lemma=   24 def=   7 naiveTL=46
+ZeroSmith        files=  7 lines=   973 theorem=   11 lemma=    9 def=   1 naiveTL=20
+TOTAL {'files': 420, 'lines': 61285, 'naive': 3471, 'theorem': 1413, 'def': 827, 'lemma': 2057, 'abbrev': 50, 'structure': 12, 'inductive': 2, 'instance': 38, 'class': 1} theorem+lemma= 3470
+FOLDERS ONLY {'files': 419, 'lines': 61261, 'naive': 3471, 'theorem': 1413, 'def': 827, 'lemma': 2057, 'abbrev': 50, 'structure': 12, 'inductive': 2, 'instance': 38, 'class': 1} theorem+lemma= 3470
+== wc -l total
+   61285
+      24 material/project/RequestProject/Main.lean
+VIGIA-FIN-OK exit=0 pico_kb=16224 t=1s

@@ -1,0 +1,89 @@
+RequestProject/.gitkeep
+== 416 manifest check
+ 416 OK
+== 420 manifest check
+ 420 OK
+== 420 minus 416
+345a346,349
+> b2d6d963efdf31ad4e2e049f465d82a4  RequestProject/SmallCases/All.lean
+> 5b0f5dd30bfba3a3717df80291893dbe  RequestProject/SmallCases/PartS.lean
+> 87d2830e0b59b20bf4be9c68cdedc3b3  RequestProject/SmallCases/PartT.lean
+> 49d79e9b10c9d9ea4534d6455ee67fed  RequestProject/SmallCases/PartU.lean
+== lean files not in 420 manifest
+== folders
+      69
+AntitonicFit
+ArmsEven
+BaiCounts
+Bend
+BendCor
+CellFloor
+Cleanliness
+Cocycle
+Conjugation
+ContZero
+CubeLaplacian
+DPLattice
+Dance
+DanceMod2
+DanceSmith
+DanceXi
+Deficit
+Divisors
+Doubling
+EvenFold
+EvenZero
+FamDec
+Families
+FamilyGroup
+Filt
+Fold
+FoldCube
+FoldGroup
+FoldHalf
+FoldLaw
+FoldOdd
+FormalAct
+FormalDance
+FormalOps
+FormalProp
+GlueDance
+GlueEven
+GoldenMatching
+Houses
+InvBlock
+InvFloors
+Lemma35
+Lemma35b
+LemmaW
+Lift2
+LiftExt
+Main.lean
+MainTheorem
+Mirror
+OddParts
+PathSum
+Payment
+Podium
+PodiumCor
+PodiumWalk
+Potential
+RingK
+Rulers
+SmallCases
+Smith2
+SmithBounds
+Split
+Stability
+Step36
+Tensor2
+TheoremF
+Twist
+WeylFilt
+Windows
+ZeroSmith
+== folders in 416
+      68
+== top-level lean in 416
+ed88941a2dd1e55987580cc81c348d53  RequestProject/Main.lean
+VIGIA-FIN-OK exit=0 pico_kb=6352 t=1s

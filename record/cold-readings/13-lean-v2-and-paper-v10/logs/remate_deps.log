@@ -1,0 +1,35 @@
+old log lines 1987 old last VIGIA-FIN-OK exit=0 pico_kb=1633920 t=298s
+old[:-2] == new[:len(old)-2]: False first differing old line idx 1643
+MainTheorem.M1           decls=4255 modules=161 listed=161
+Windows.theorem_D_i      decls=262 modules=17 listed=17
+BaiCounts.B2             decls=4412 modules=166 listed=166
+PodiumCor.G1             decls=5036 modules=181 listed=181
+Mirror.Y2                decls=4522 modules=168 listed=168
+FoldLaw.DW               decls=6452 modules=297 listed=297
+FoldLaw.DW'              decls=6771 modules=310 listed=310
+FoldLaw.R                decls=6749 modules=310 listed=310
+OddParts.B1              decls=196 modules=10 listed=10
+OddParts.C5              decls=277 modules=13 listed=13
+SmallCases.DW'_all       decls=6782 modules=312 listed=312
+SmallCases.L1_all        decls=6761 modules=311 listed=311
+SmallCases.R_all         decls=6753 modules=312 listed=312
+SmallCases.G1_all        decls=5108 modules=186 listed=186
+UNION                    decls=7988 modules=341 listed=341
+UNION#2                  decls=8019 modules=344 listed=344
+old union subset of new: True new minus old: ['RequestProject.SmallCases.PartS', 'RequestProject.SmallCases.PartT', 'RequestProject.SmallCases.PartU']
+modules in project: 420 outside new union: 76
+outside .All: 68  non-All: ['RequestProject.AntitonicFit.Examples', 'RequestProject.FoldOdd.PartC', 'RequestProject.Houses.Windows', 'RequestProject.Lemma35.PartL3', 'RequestProject.LiftExt.Basic', 'RequestProject.LiftExt.PartB', 'RequestProject.LiftExt.PartX', 'RequestProject.Main']
+SmallCases in union: ['RequestProject.SmallCases.PartS', 'RequestProject.SmallCases.PartT', 'RequestProject.SmallCases.PartU']
+LEAN_CERTIFICATE_DANCING_SAND_v2.md block of §1.5 byte-identical to CertCubo2.log lines 93 - 105 : True
+   occurrences of SmallCases.DW'_all : 1
+   occurrences of SmallCases.L1_all : 1
+   occurrences of SmallCases.R_all : 1
+   occurrences of SmallCases.G1_all : 1
+LEAN_CERTIFICATE_DANCING_SAND_v2.src.md block of §1.5 byte-identical to CertCubo2.log lines 93 - 105 : False
+   occurrences of SmallCases.DW'_all : 0
+   occurrences of SmallCases.L1_all : 0
+   occurrences of SmallCases.R_all : 0
+   occurrences of SmallCases.G1_all : 0
+log2 lines after G1_all block: '      ∀ (r : ℕ), 2 ≤ r → r ≤ n - 1 → ↑(PodiumCor.cExp (↥(Cub'
+CheckCubo_postclean lines 23 last VIGIA-FIN-OK exit=0 pico_kb=1636320 t=213s
+VIGIA-FIN-OK exit=0 pico_kb=2176 t=0s

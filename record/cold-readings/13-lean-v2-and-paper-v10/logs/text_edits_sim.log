@@ -1,0 +1,19 @@
+ok F1 header
+ok F2 DW prime
+ok F3 Corollary 1.4
+ok F4 Gao 4.1
+ok F5a How, pieces
+ok F5b How, counts
+ok F6 read cold
+ok F7 small cases bullet
+ok F8 where
+ok F9 Appendix A
+ok F10 [LC26]
+written scratch/te/v10_sim.md
+SIM_EQUALS_V10
+2d1914d9f5e7f77b5eef120a2545d29d material/c53/msgC53.txt
+9ecde08a71528ab34c76213feb836bb5 material/c53/C53_the_small_cases.md
+bd43ece1895532d0adad7597ff2ddace material/c53/instrC53.txt
+17ee26a2531efd8ec7fff1040be36af3 material/c53/chkC53.py
+5837
+VIGIA-FIN-OK exit=0 pico_kb=13648 t=0s

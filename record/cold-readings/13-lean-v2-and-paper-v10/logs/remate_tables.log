@@ -1,0 +1,9 @@
+folders 69 files 419 lines 61261 thm-lines 3258 defs 877
+build modules 420 seconds 25559 peak 2.46 True ['1', '129', '1.83']
+folders where data_v2 differs from my recount: []
+my totals [419, 61261, 3258, 877]
+tables.md block in v2.md: True **Table 6a. Provenance.**
+tables.md block in v2.md: True | Piece | Aristotle task | Tarball | md5
+tables.md block in v2.md: True **Table 6b. The Lean folders and their c
+tables.md block in v2.md: True | Piece | Folder | Files | Lines | `theo
+VIGIA-FIN-OK exit=0 pico_kb=2512 t=0s

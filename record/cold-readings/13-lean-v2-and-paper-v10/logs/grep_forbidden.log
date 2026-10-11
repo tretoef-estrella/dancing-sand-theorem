@@ -1,0 +1,40 @@
+sorry: 
+admit: 
+axiom: 
+native_decide: 
+opaque: 
+unsafe: 
+implemented_by: 
+extern: 
+set_option: 
+partial: 
+decide: PartT.lean:37:  have hc : (Windows.Ids (ds 1)).card = 0 := by rw [PodiumCor.ds_one]; decide PartT.lean:111:      (by rw [exps_two]; decide) (by rw [exps_two]; decide) 
+== decl count
+PartS.lean:29:def addEquivOfSubsingleton (M N : Type*) [AddCommGroup M] [AddCommGroup N] [Subsingleton M]
+PartS.lean:39:lemma l0_of_subsingleton (M : Type*) [AddCommGroup M] [Subsingleton M] : l0 M = 1 := by
+PartS.lean:46:lemma l1_of_subsingleton (M : Type*) [AddCommGroup M] [Subsingleton M] : l1 M = 1 := by
+PartS.lean:54:theorem S0 : BaiCounts.aN 1 = 0 := by
+PartS.lean:60:theorem S1 : Subsingleton (CubeLaplacian.Syl2 (CubeLaplacian.K 1)) := by
+PartS.lean:77:theorem S2 : Subsingleton (CubeLaplacian.Syl2 (Fold.KBar 1)) := by
+PartS.lean:84:theorem S3 (A : Type*) [CommRing A] : Fold.lapBar A 1 = 0 := by
+PartS.lean:98:theorem DW'_one :
+PartS.lean:114:theorem L1_one :
+PartS.lean:123:theorem R1 :
+PartT.lean:29:lemma L_two : FamDec.L 2 = [2] := by
+PartT.lean:36:lemma famExps_one_zero : famExps 1 0 = 0 := by
+PartT.lean:45:lemma exps_two : exps 2 = {2} := by
+PartT.lean:56:lemma layer_zmod (f j : ℕ) : layer (ZMod (2 ^ f)) j = 2 ^ (if j < f then 1 else 0) := by
+PartT.lean:62:lemma layer_two (j : ℕ) :
+PartT.lean:72:theorem T0 : Nonempty (CubeLaplacian.Syl2 (CubeLaplacian.K 2) ≃+ ZMod 4) := by
+PartT.lean:98:theorem T1 : PodiumCor.gmax 2 = 1 := PodiumCor.gmax_two
+PartT.lean:103:theorem G1_two :
+PartU.lean:23:theorem DW'_all (n : ℕ) (hn : 1 ≤ n) :
+PartU.lean:35:theorem L1_all (n : ℕ) (hn : 1 ≤ n) :
+PartU.lean:44:theorem R_all (n : ℕ) (hn : 1 ≤ n) :
+PartU.lean:52:theorem G1_all (n : ℕ) (hn : 2 ≤ n) :
+      18 All.lean
+     127 PartS.lean
+     115 PartT.lean
+      61 PartU.lean
+     321 total
+VIGIA-FIN-OK exit=0 pico_kb=2240 t=0s

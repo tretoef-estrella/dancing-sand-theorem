@@ -1,0 +1,11 @@
+n=1 Syl2K exps=[] Syl2KBar exps=[] snfKBar=[0] | L1: 1==1 True | R: rank=0 aN=0 True
+n=2 Syl2K exps=[2] Syl2KBar exps=[1] snfKBar=[2, 0] | L1: 2==2 True | R: rank=0 aN=0 True
+   G1: cExp1=2 max=2 True second=True
+n=3 Syl2K exps=[1, 3, 3] Syl2KBar exps=[2, 2] snfKBar=[1, 4, 4, 0] | L1: 4==4 True | R: rank=1 aN=1 True
+   G1: cExp1=3 max=3 True second=True
+n=4 Syl2K exps=[1, 1, 3, 3, 3, 3, 5] Syl2KBar exps=[2, 2, 2, 2, 4] snfKBar=[1, 1, 4, 4, 4, 4, 16, 0] | L1: 32==32 True | R: rank=2 aN=2 True
+   G1: cExp1=5 max=5 True second=True
+n=5 Syl2K exps=[1, 1, 1, 1, 1, 1, 3, 3, 3, 3, 4, 6, 6, 6, 6] Syl2KBar exps=[2, 2, 2, 2, 3, 5, 5, 5, 5] snfKBar=[1, 1, 1, 1, 1, 1, 4, 4, 4, 4, 8, 32, 32, 32, 32, 0] | L1: 512==512 True | R: rank=6 aN=6 True
+   G1: cExp1=6 max=6 True second=True
+control: rank at n=1 if lapBar were Laplacian of Q1 instead: 1
+VIGIA-FIN-OK exit=0 pico_kb=1776 t=0s

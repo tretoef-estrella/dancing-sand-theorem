@@ -1,0 +1,36 @@
+== decide files (grep -lw)
+./AntitonicFit/Examples.lean
+./BendCor/PartW.lean
+./CubeLaplacian/GroupRing.lean
+./DanceMod2/PartK.lean
+./DanceMod2/PartM.lean
+./Deficit/DeficitLaw.lean
+./Deficit/Polynomials.lean
+./Doubling/Phi.lean
+./Doubling/PhiOps.lean
+./Fold/PartG.lean
+./FoldLaw/Groups.lean
+./FoldLaw/PartD.lean
+./OddParts/Defs.lean
+./OddParts/PartC.lean
+./OddParts/PartF.lean
+./PodiumCor/Gao.lean
+./SmallCases/PartT.lean
+      17
+== per forbidden word: lines
+sorry:        0
+admit:        0
+native_decide:        0
+opaque:        0
+unsafe:        0
+implemented_by:        0
+extern:        0
+axiom:        2
+== axiom lines
+./InvFloors/All.lean:16:`Windows.Ids_cons`, `Windows.mem_Ids`; C18 `DPLattice` (`ι`, `wt`, `Fd`, the axiom (W)),
+./FoldCube/All.lean:16:redefined. Used directly: C18 `DPLattice` (`ι`, `wt`, `Fd`, `H`, axiom (W) `isDP.W_F`, (P1)
+== partial def
+       0
+== @[extern
+       0
+VIGIA-FIN-OK exit=0 pico_kb=2256 t=0s

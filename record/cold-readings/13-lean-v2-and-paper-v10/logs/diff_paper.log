@@ -1,0 +1,66 @@
+--- THE_DANCING_SAND_THEOREM_v9.md	2026-10-11 15:02:06
++++ THE_DANCING_SAND_THEOREM_v10.md	2026-10-11 15:02:06
+@@ -3,7 +3,7 @@
+ 
+ **Rafael Amichis Luengo**
+ 
+-Madrid, Spain · tretoef@gmail.com · 11 October 2026 · version 9
++Madrid, Spain · tretoef@gmail.com · 11 October 2026 · version 10
+ 
+ ---
+ ## Abstract
+@@ -1117,9 +1117,9 @@
+ 
+ **What Lean proves.** For every `n ≥ 1`:
+ - the Main Theorem (`MainTheorem.M1`), with the rule of §1.2 written out in Lean: the recursion for the multiplicities, the binary digits of `λ + 1`, the raw clocks, the integer antitonic fit and the groups `X(λ, i)`;
+-- Theorem DW (`FoldLaw.DW`) and, for `n ≥ 2`, its equivalent form (`FoldLaw.DW'`);
+-- Corollary 1.4: the odd part (`OddParts.C5`); the `2`-part is `FoldLaw.DW'` read together with the Main Theorem, which Lean does not state as one theorem;
+-- Corollaries 1.5 (`BaiCounts.B1`, `BaiCounts.B2`), 1.6 (`PodiumCor.P1`, `PodiumCor.P2`, `PodiumCor.P3`, `PodiumCor.G1`, `PodiumCor.G2`, `PodiumCor.G3`; Gao et al.'s Theorem 4.1 for `n ≥ 3`) and 1.7 (`Mirror.Y2`);
++- Theorem DW (`FoldLaw.DW`) and its equivalent form (`SmallCases.DW'_all`; for `n ≥ 2` it is `FoldLaw.DW'`);
++- Corollary 1.4: the odd part (`OddParts.C5`); the `2`-part is `SmallCases.DW'_all` read together with the Main Theorem, which Lean does not state as one theorem;
++- Corollaries 1.5 (`BaiCounts.B1`, `BaiCounts.B2`), 1.6 (`PodiumCor.P1`, `PodiumCor.P2`, `PodiumCor.P3`, `PodiumCor.G1`, `PodiumCor.G2`, `PodiumCor.G3`; Gao et al.'s Theorem 4.1 for every `n ≥ 2` is `SmallCases.G1_all`) and 1.7 (`Mirror.Y2`);
+ - Bai's odd part of `K(Q_n)` (`OddParts.B1`), which this paper cites [Bai03] and Lean proves;
+ - Theorem D (`Windows.theorem_D_i`), and each of the 68 numbered statements of §2–§10, from Lemma 2.1 to Theorem 10.22.
+ 
+@@ -1127,19 +1127,18 @@
+ 
+ **The one point of trust** is that the Lean definitions say what this paper says. The certificate prints every definition the statements use and compares it with this paper (its §1.2–§1.3). That comparison is what a reader should check.
+ 
+-**How.** The text of §2–§10 was cut into 68 pieces, each a short self-contained file. Aristotle, an AI system made by Harmonic [Har26], wrote the Lean proofs. On the author's machine each returned project was compared with the previous one, searched for forbidden constructs, and compiled module by module; the main statements of each piece were restated by hand in a check file, and their faithfulness to the paper was audited. At the end all 416 modules were compiled again from their sources, in one clean rebuild, all with exit code 0. The project has 416 Lean files (415 in its 68 folders, and the main file), 60 964 lines and 3 449 theorem and lemma declarations.
++**How.** The text of §2–§10 was cut into 68 pieces, each a short self-contained file; a 69th piece added the cases that the first 68 left out (Theorem DW′, the count of §10.8 and the `𝔽_2`-rank of the folded Laplacian at `n = 1`, and Gao et al.'s Theorem 4.1 at `n = 2`). Aristotle, an AI system made by Harmonic [Har26], wrote the Lean proofs. On the author's machine each returned project was compared with the previous one, searched for forbidden constructs, and compiled module by module; the main statements of each piece were restated by hand in a check file, and their faithfulness to the paper was audited. At the end of the 68 pieces all 416 modules were compiled again from their sources, in one clean rebuild, all with exit code 0; the four modules of the 69th piece were then compiled from their sources, with the sources of the other 416 unchanged. The project has 420 Lean files (419 in its 69 folders, and the main file), 61 285 lines and 3 470 theorem and lemma declarations.
+ 
+-**Read cold.** Before release, the certificate was read by a reader other than its writer, with the compiled project at hand. The reader re-read every definition in the statements against this paper, re-elaborated from source the files of the Main Theorem and of Theorem DW and five more of the chain, and compared the rule with Smith forms it computed from the graphs (`n ≤ 11`). Verdict: «holds as far as I can check»; no Lean statement says something other than this paper. It found four errors in the record and none in a statement: one sentence, the description of the edges of the folded cube in §1.3 of version 8 of this paper, which the certificate repeated (corrected in §1.3 here and in [LC26]), and three counts of the certificate (corrected in [LC26]).
++**Read cold.** Before release, the certificate was read by a reader other than its writer, with the compiled project at hand. The reader re-read every definition in the statements against this paper, re-elaborated from source the files of the Main Theorem and of Theorem DW and five more of the chain, and compared the rule with Smith forms it computed from the graphs (`n ≤ 11`). Verdict: «holds as far as I can check»; no Lean statement says something other than this paper. It found four errors in the record and none in a statement: one sentence, the description of the edges of the folded cube in §1.3 of version 8 of this paper, which the certificate repeated (corrected in §1.3 here and in [LC26]), and three counts of the certificate (corrected in [LC26]). Version 2 of the certificate, which adds the 69th piece, was read cold in its turn before release.
+ 
+ **What Lean does not state** ([LC26], §1.3 and §2):
+ - the pool-adjacent-violators algorithm (Lean has the fit it computes);
+ - that the dance lattices are the indecomposable tilting modules (not used);
+-- the equivalent form of Theorem DW at `n = 1`, where both groups are trivial, and Gao et al.'s Theorem 4.1 at `n = 2`, where `K(Q_2) = ℤ/4`;
+ - the numerical facts of §1.2, §1.3 and §12.
+ 
+ The Main Theorem is an isomorphism of groups in Lean and of `ℤ_2`-modules here. The two statements are equivalent, because an additive map between finitely generated `ℤ_2`-modules is `ℤ_2`-linear ([LC26], §1.3).
+ 
+-**Where.** The certificate [LC26] is published with the Lean project, the check files, the files of the 68 pieces, and the logs of every piece and of the clean rebuild.
++**Where.** The certificate [LC26] is published with the Lean project, the check files, the files of the 69 pieces, and the logs of every piece and of the clean rebuild.
+ 
+ ## 13. Exact status
+ 
+@@ -1177,7 +1176,7 @@
+ - **Version 2** repaired the gap. Its changes were read cold on 5 October 2026 (cold reader 4) by a reader with no access to the flights, the audits or the earlier readings, who re-derived every changed step, checked the repair on every house with `1 ≤ k ≤ 7`, `α ≤ 3` and against the Smith form of `M` in 7 874 cells, and wrote its own code: the repair **holds**. It found one false sentence (Remark (2) of §10.5 said «every payment system» where Proposition 4.1 needs an even one; the author then found the same word missing in Lemma 10.6(a), harmless because its only use is for an even system), two rows of §12.1 that said more than their code (zero shifts counted as shifts, and a range wider than the one run), a control that did not control the house check, and points of presentation, the main one being that the cases of the proof of Theorem 7.8 ran together in the pdf. It also found, with a two-line proof, that the fit of every house is integral, so the rounding of the integer fit never acts in this paper: the gap of version 1 was a gap of proof, never of conclusion.
+ - **Later versions.** Each later version made corrections asked for by the reading before it; version 4 also set the mathematics anew, and version 5 the page. No numbered statement changed in what it states after version 3 (§13). The changes of each version were read cold by a new reader (cold reader 5 and each later one, from 5 October 2026), with no access to the flights or the audits, who checked every changed passage against the version before it, re-counted or re-ran with code of its own the numbers and checks it concerned, and looked at the pdf: at every page, or at the changed pages after comparing all the pages by image. None of these readings found a gap or an error in the mathematics. Between them, they found false or inexact sentences in this record and in §12, points of presentation, and defects of typesetting. This summary replaces a version-by-version account; that account, the list of corrections of each version with its sources, every report and every grading are kept with the project.
+ 
+-**Formal verification.** From 6 to 10 October 2026 the proofs were checked in Lean 4 with Mathlib, in 68 pieces; the certificate was read cold on 11 October 2026 (§12.3, [LC26]).
++**Formal verification.** From 6 to 10 October 2026 the proofs were checked in Lean 4 with Mathlib, in 68 pieces; a 69th piece, for the small cases, followed on 11 October 2026. The certificate was read cold on 11 October 2026, and so was its version 2, which adds the 69th piece (§12.3, [LC26]).
+ 
+ ## References
+ 
+@@ -1204,7 +1203,7 @@
+ - [Kos66] B. Kostant, Groups over `ℤ`, in *Algebraic Groups and Discontinuous Subgroups*, Proc. Sympos. Pure Math. 9, AMS, 1966, 90–98.
+ - [Kum52] E. E. Kummer, Über die Ergänzungssätze zu den allgemeinen Reciprocitätsgesetzen, *J. Reine Angew. Math.* 44 (1852), 93–146.
+ - [Lar24] M. Larsen, Bounds for `SL_2`-indecomposables in tensor powers of the natural representation in characteristic 2, arXiv:2405.16015 (2024).
+-- [LC26] R. Amichis Luengo, *The Dancing Sand Theorem — Lean certificate*, Zenodo (2026), DOI 10.5281/zenodo.23296708.
++- [LC26] R. Amichis Luengo, *The Dancing Sand Theorem — Lean certificate*, version 2, Zenodo (2026), DOI 10.5281/zenodo.23298436; all versions, concept DOI 10.5281/zenodo.23296707.
+ - [Lor91] D. J. Lorenzini, A finite group attached to the Laplacian of a graph, *Discrete Math.* 91 (1991), 277–282.
+ - [LZ22] Y. Len, D. Zakharov, Kirchhoff's theorem for Prym varieties, with an appendix by S. Casalaina-Martin, *Forum Math. Sigma* 10 (2022), Paper No. e11; arXiv:2012.15235.
+ - [mC20] The mathlib Community, The Lean mathematical library, in *Proceedings of the 9th ACM SIGPLAN International Conference on Certified Programs and Proofs (CPP 2020)*, ACM, 2020, 367–381.
+VIGIA-FIN-OK exit=1 pico_kb=0 t=0s
