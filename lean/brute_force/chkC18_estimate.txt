@@ -1,0 +1,2 @@
+chkC18.py estimate (Grepy Escribano, 7 Oct 2026): lattices of rank <= 32 (V^{⊗5}), relations for r, s, a, b <= 5,
+pure Python dicts. Memory < 100 MB, time < 2 min. Run inside vigia.sh (1.2 GB / 10 min).

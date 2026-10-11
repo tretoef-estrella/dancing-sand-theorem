@@ -1,0 +1,1 @@
+chkC22 estimate: 8x8 and 4x4 maps, r <= 6; seconds, < 50 MB. Measured: 2 s, 13 MB (run 1 had a bug of mine in is_hom, log kept as chkC22_run1_my_bug.log).

@@ -1,0 +1,2 @@
+chkC12.py: 200 trials x 5 c x 6 variants, matrices up to 72x72 (sympy ~0.1 s each): estimate < 6 min, < 300 MB. Watchdog 10 min.
+v2: r<=2, nI<=2 (matrices <= 32x32), 150 trials; run only after the Lean build ends. Estimate < 3 min, < 300 MB.

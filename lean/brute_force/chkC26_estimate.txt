@@ -1,0 +1,1 @@
+chkC26 estimate: dense matrices <= ~40x40, ~2000 checks over Q and mod 2,3,5; < 3 min, < 200 MB
