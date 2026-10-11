@@ -1,0 +1,26 @@
+=== MODULE Defs 22:58:18
+vigia_rc=0
+✔ [8254/8254] Built RequestProject.FoldGroup.Defs (122s)
+Build completed successfully (8254 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1461552 t=130s
+=== MODULE PartK 23:00:29
+vigia_rc=0
+✔ [8255/8255] Built RequestProject.FoldGroup.PartK (174s)
+Build completed successfully (8255 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1330288 t=182s
+=== MODULE PartD 23:03:31
+vigia_rc=0
+✔ [8256/8256] Built RequestProject.FoldGroup.PartD (99s)
+Build completed successfully (8256 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1580800 t=106s
+=== MODULE PartP 23:05:18
+vigia_rc=0
+✔ [8257/8257] Built RequestProject.FoldGroup.PartP (152s)
+Build completed successfully (8257 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1422704 t=159s
+=== MODULE All 23:07:58
+vigia_rc=0
+✔ [8258/8258] Built RequestProject.FoldGroup.All (92s)
+Build completed successfully (8258 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1534624 t=99s
+BUILD-LOOP-END
