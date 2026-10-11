@@ -1,0 +1,11 @@
+=== MODULE Basic 07:13:06
+vigia_rc=0
+✔ [8067/8067] Built RequestProject.Lemma35b.Basic (116s)
+Build completed successfully (8067 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1484336 t=124s
+=== MODULE PartL 07:15:10
+vigia_rc=0
+✔ [8073/8073] Built RequestProject.Lemma35b.PartL (99s)
+Build completed successfully (8073 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1615504 t=106s
+BUILD-LOOP-END

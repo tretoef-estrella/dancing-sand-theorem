@@ -1,0 +1,36 @@
+=== MODULE Kron 22:39:03
+vigia_rc=0
+✔ [8060/8060] Built RequestProject.Tensor2.Kron (121s)
+Build completed successfully (8060 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1449104 t=128s
+=== MODULE Comb 22:41:12
+vigia_rc=0
+✔ [8026/8026] Built RequestProject.Tensor2.Comb (114s)
+Build completed successfully (8026 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1444816 t=122s
+=== MODULE Basic 22:43:15
+vigia_rc=0
+✔ [8062/8062] Built RequestProject.Tensor2.Basic (141s)
+Build completed successfully (8062 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1329504 t=149s
+=== MODULE Morph 22:45:44
+vigia_rc=0
+✔ [8063/8063] Built RequestProject.Tensor2.Morph (116s)
+Build completed successfully (8063 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1496144 t=124s
+=== MODULE VTensor 22:47:48
+vigia_rc=0
+✔ [8064/8064] Built RequestProject.Tensor2.VTensor (114s)
+Build completed successfully (8064 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1487520 t=122s
+=== MODULE Iso 22:49:51
+vigia_rc=0
+✔ [8065/8065] Built RequestProject.Tensor2.Iso (128s)
+Build completed successfully (8065 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1444816 t=135s
+=== MODULE All 22:52:06
+vigia_rc=0
+✔ [8066/8066] Built RequestProject.Tensor2.All (97s)
+Build completed successfully (8066 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1476272 t=104s
+BUILD-LOOP-END
