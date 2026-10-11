@@ -1,0 +1,36 @@
+=== MODULE Basic 17:03:42
+vigia_rc=0
+✔ [8026/8026] Built RequestProject.DPLattice.Basic (119s)
+Build completed successfully (8026 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1499344 t=127s
+=== MODULE Tensor 17:05:49
+vigia_rc=0
+✔ [8027/8027] Built RequestProject.DPLattice.Tensor (126s)
+Build completed successfully (8027 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1445248 t=134s
+=== MODULE Weyl 17:08:03
+vigia_rc=0
+✔ [8028/8028] Built RequestProject.DPLattice.Weyl (83s)
+Build completed successfully (8028 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1684720 t=90s
+=== MODULE PartT 17:09:34
+vigia_rc=0
+✔ [8029/8029] Built RequestProject.DPLattice.PartT (122s)
+Build completed successfully (8029 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1683696 t=130s
+=== MODULE Dictionary 17:11:44
+vigia_rc=0
+✔ [8029/8029] Built RequestProject.DPLattice.Dictionary (90s)
+Build completed successfully (8029 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1747936 t=98s
+=== MODULE Corollary 17:13:23
+vigia_rc=0
+✔ [8036/8036] Built RequestProject.DPLattice.Corollary (76s)
+Build completed successfully (8036 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1673280 t=83s
+=== MODULE All 17:14:47
+vigia_rc=0
+✔ [8039/8039] Built RequestProject.DPLattice.All (65s)
+Build completed successfully (8039 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1692912 t=72s
+BUILD-LOOP-END

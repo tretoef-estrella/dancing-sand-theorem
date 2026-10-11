@@ -1,0 +1,41 @@
+=== MODULE Sum 21:38:48
+vigia_rc=0
+✔ [8059/8059] Built RequestProject.Lemma35.Sum (171s)
+Build completed successfully (8059 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1139440 t=182s
+=== MODULE Basic 21:41:51
+vigia_rc=0
+✔ [8060/8060] Built RequestProject.Lemma35.Basic (173s)
+Build completed successfully (8060 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1121568 t=180s
+=== MODULE L1Defs 21:44:51
+vigia_rc=0
+✔ [8061/8061] Built RequestProject.Lemma35.L1Defs (180s)
+Build completed successfully (8061 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1324784 t=187s
+=== MODULE L1Comm 21:47:59
+vigia_rc=0
+✔ [8062/8062] Built RequestProject.Lemma35.L1Comm (293s)
+Build completed successfully (8062 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1934336 t=302s
+=== MODULE PartL1 21:53:02
+vigia_rc=0
+✔ [8063/8063] Built RequestProject.Lemma35.PartL1 (111s)
+Build completed successfully (8063 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1539152 t=118s
+=== MODULE PartL2 21:55:01
+vigia_rc=0
+✔ [8061/8061] Built RequestProject.Lemma35.PartL2 (127s)
+Build completed successfully (8061 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1481968 t=134s
+=== MODULE PartL3 21:57:15
+vigia_rc=0
+✔ [8065/8065] Built RequestProject.Lemma35.PartL3 (88s)
+Build completed successfully (8065 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1599232 t=96s
+=== MODULE All 21:58:52
+vigia_rc=0
+✔ [8066/8066] Built RequestProject.Lemma35.All (75s)
+Build completed successfully (8066 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1678512 t=83s
+BUILD-LOOP-END
