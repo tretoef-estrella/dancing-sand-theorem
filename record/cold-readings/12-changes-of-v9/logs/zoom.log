@@ -1,0 +1,31 @@
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+AAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes      4  0
+AAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes      5  0
+AAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes      6  0
+BAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes      7  0
+BAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes      8  0
+BAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes      9  0
+CAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     10  0
+CAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     11  0
+DAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     12  0
+DAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     13  0
+DAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     14  0
+DAAAAA+STIXTwoText                   Type 3            Custom           yes yes yes     15  0
+EAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes     16  0
+EAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes     17  0
+EAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes     18  0
+FAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     19  0
+FAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     20  0
+FAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     21  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     22  0
+HAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes     23  0
+HAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes     24  0
+EAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes     25  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     26  0
+HAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes     27  0
+EAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes     28  0
+IAAAAA+STIXTwoText-Italic            Type 3            Custom           yes yes yes     29  0
+CAAAAA+STIXTwoText_Bold              Type 3            Custom           yes yes yes     30  0
+GAAAAA+STIXTwoMath-Regular           Type 3            Custom           yes yes yes     31  0
+VIGIA-FIN-OK exit=0 pico_kb=13952 t=0s

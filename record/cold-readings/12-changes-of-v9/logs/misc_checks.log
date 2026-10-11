@@ -1,0 +1,4 @@
+numbered statements in §2–§10 (distinct, in order): 68 first Lemma 2.1 last Theorem 10.22
+pieces 68 final check logs missing from material: ['C30', 'C34', 'C35', 'C50', 'C50b', 'C50c', 'C50h', 'C51', 'C52']
+instance declarations in code: 38
+VIGIA-FIN-OK exit=0 pico_kb=15456 t=0s

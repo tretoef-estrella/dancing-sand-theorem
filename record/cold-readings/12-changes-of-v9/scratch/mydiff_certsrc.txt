@@ -1,0 +1,163 @@
+--- LEAN_CERTIFICATE_DANCING_SAND_v1.src_antes_de_la_lectura_fria.md	2026-10-11 08:53:50
++++ LEAN_CERTIFICATE_DANCING_SAND_v1.src.md	2026-10-11 10:08:59
+@@ -3,7 +3,7 @@
+ 
+ **Rafael Amichis Luengo** · Madrid, Spain · tretoef@gmail.com
+ 
+-Certificate v1 · 11 October 2026
++Certificate v1 · 11 October 2026 · read cold and corrected the same day (§2 item 7)
+ 
+ Companion to *The Dancing Sand Theorem — The 2-part of the sandpile group of the hypercube, for every n*, version 8 (6 October 2026), Zenodo DOI 10.5281/zenodo.23188299. The numbers of sections and results below are those of version 8.
+ 
+@@ -14,8 +14,8 @@
+ For **every** `n ≥ 1`, Lean 4 proves:
+ 
+ - **the Main Theorem** (paper §1.2): `Syl_2 K(Q_n) ⊕ ℤ_2 ≅ ⊕_{λ} X(λ, (n − λ)/2)^{m_λ(n)}`, with the family groups `X(λ, i)` given by the explicit rule of §1.2 (binary digits of `λ + 1`, raw clocks, integer antitonic fit) and the multiplicities `m_λ(n)` given by the recursion of §1.2;
+-- **Theorem DW, the fold law** (§1.3): `Syl_2 K̄(n) ≅ 2·Syl_2 K(Q_n)`, where `K̄(n)` is the sandpile group of the folded cube `Q_n/⟨𝟙⟩`, and its equivalent form `Syl_2 K(Q_n) ≅ (ℤ/2)^{a_n} ⊕ H` with `H` free of factors `ℤ/2` and `Syl_2 K̄(n) ≅ 2H`;
+-- **Corollaries 1.4–1.7**: the odd part of `K̄(n)` (with the two statements above, the whole sandpile group of the folded cube); Bai's two counts; the `n + 1` largest cyclic factors of `Syl_2 K(Q_n)` in all three cases, including Gao, Marx-Kuo, McDonald and Yuen's Theorems 4.1–4.2, their Conjecture 4.14 and the `(n + 1)`-th factor of the 2019 poster; and their Conjecture 5.4;
++- **Theorem DW, the fold law** (§1.3): `Syl_2 K̄(n) ≅ 2·Syl_2 K(Q_n)`, where `K̄(n)` is the sandpile group of the folded cube `Q_n/⟨𝟙⟩`, and, for `n ≥ 2`, its equivalent form `Syl_2 K(Q_n) ≅ (ℤ/2)^{a_n} ⊕ H` with `H` free of factors `ℤ/2` and `Syl_2 K̄(n) ≅ 2H`;
++- **Corollaries 1.4–1.7**: the odd part of `K̄(n)` (with the two statements above, the whole sandpile group of the folded cube); Bai's two counts; the `n + 1` largest cyclic factors of `Syl_2 K(Q_n)` in all three cases, including Gao, Marx-Kuo, McDonald and Yuen's Theorem 4.1 for `n ≥ 3` and Theorem 4.2, their Conjecture 4.14 and the `(n + 1)`-th factor of the 2019 poster; and their Conjecture 5.4;
+ - **Bai's odd part of `K(Q_n)`** (§1.1, [Bai03, Theorem 1.2]): for every odd prime `p`, `Syl_p K(Q_n) ≅ Syl_p ⊕_{j=1}^{n} (ℤ/j)^{C(n,j)}`;
+ 
+ and every one of the 68 numbered statements of §2–§10 on which these rest, from Lemma 2.1 to Theorem 10.22, Theorem D among them (§3).
+@@ -24,7 +24,7 @@
+ 
+ **Nothing is cited.** Unlike the Lean certificate of the Chaise Longue, whose Main Theorem rests on a topological result that Lean does not have, the statements here are about a finite graph: the Laplacian of `Q_n`, its cokernel and the torsion of that cokernel. Lean certifies the theorems of the paper themselves, not an algebraic form of them. The one place where trust in the author remains is the faithfulness of the statements: that the Lean definitions say what the paper says. §1 prints every definition the statements use, verbatim, and compares it with the paper line by line.
+ 
+-**Not yet read cold.** This certificate has not yet been read by a reader other than its writer. That reading is owed before it is released (§2 item 7).
++**Read cold.** A reader other than its writer, with the compiled project at hand, read this certificate before release; verdict «holds as far as I can check», with four errors in the record (one sentence and three counts) and no error in a statement. They are corrected here (§2 item 7).
+ 
+ §1 states exactly what is proved. §2 states exactly what is not. §3–§8 describe how the result was obtained and how to check it.
+ 
+@@ -34,7 +34,7 @@
+ 
+ ### 1.1 The theorems, verbatim
+ 
+-Printed by Lean with `#check` (log `logs/CertCubo.log`, from `checks/CertCubo.lean`, run on the rebuilt project of §8). The Main Theorem, in its multiplicity form and in its list form, with the identification of the group of a family and the support of the multiplicities:
++Printed by Lean with `#check` (log `logs/CertCubo.log`, from `checks/CertCubo.lean`, run on the rebuilt project of §8). **Twenty-four statements are printed here.** Sixteen of them are the *headline theorems*, whose dependency cones are counted in §3.3: `M1`, `M2`, `theorem_D_i`, `BaiCounts.B1`, `B2`, `G1`, `G2`, `G3`, `Y2`, `FoldLaw.H`, `DW`, `DW'`, `L1`, `FoldLaw.R`, `OddParts.B1`, `C5`. With `MainTheorem.G2` and the four `M3_*` they are the twenty-one statements restated by hand in `CheckCubo.lean` (§1.4); with the three cases `P1`–`P3` of Corollary 1.6, the twenty-four printed here. The Main Theorem, in its multiplicity form and in its list form, with the identification of the group of a family and the support of the multiplicities:
+ 
+ <<<MainTheorem.M1 MainTheorem.M2 MainTheorem.G2 MainTheorem.M3_support MainTheorem.M3_shift MainTheorem.M3_self MainTheorem.M3_zero>>>
+ 
+@@ -106,7 +106,7 @@
+ | the Laplacian `L(Q_n)` acting on `ℤ^{V}` | `lap`, `CubeLaplacian.L` | Literal: `lap ℤ n f g = n·f g − Σ_i f (g + e i)`, degree `n` minus the adjacency; `CubeLaplacian.L n = lap ℤ n`. |
+ | `K(Q_n)`: the finite group with `coker L(Q_n) = ℤ ⊕ K(Q_n)` (§1.1) | `coker`, `K` | `K n` is the torsion subgroup of `coker n`. Lean proves `coker n ≃ ℤ × K n` (`CubeLaplacian.cokerEquivK`, piece C17), so the two definitions agree. |
+ | `Syl_2 A`, `Syl_p A` | `Syl2`, `Sylp` | Literal: the elements killed by a power of `2`, resp. of `p`. |
+-| the folded cube `Q_n/⟨𝟙⟩`: vertices the pairs of antipodal words, two pairs joined once for each pair of words, one from each, that differ in one letter (§1.3) | `aElt`, `Gbar`, `mk`, `lapBar` | Literal: `Gbar n` is `G n` modulo `aElt n = 𝟙`, and `lapBar ℤ n u x = n·u x − Σ_i u (x + mk (e i))`, with the multiplicities of the paper: at `n = 2` the two images of `e_1`, `e_2` coincide and give the double edge of §1.3. |
++| the folded cube `Q_n/⟨𝟙⟩`: vertices the `2^{n−1}` pairs `{x, x + 𝟙}` of antipodal words; `{x, x + 𝟙}` is joined to `{x + e_i, x + 𝟙 + e_i}` once for each `i = 1, …, n`; the Cayley graph of `𝔽_2^n/⟨𝟙⟩` with the images of the unit vectors (§1.3) | `aElt`, `Gbar`, `mk`, `lapBar` | `Gbar n` is `G n` modulo `aElt n = 𝟙`, and `lapBar ℤ n u x = n·u x − Σ_i u (x + mk (e i))`: the Laplacian of the Cayley multigraph of `𝔽_2^n/⟨𝟙⟩` with the `n` images of the unit vectors, one edge for each `i`. At `n = 2` the two images of `e_1`, `e_2` coincide and give the double edge of §1.3. Version 8 of the paper describes the edges as «once for each pair of words, one from each, that differ in one letter»; read literally, that sentence counts each edge twice (`(x, x + e_i)` and `(x + 𝟙, x + 𝟙 + e_i)`). The paper's next sentence, its proofs and its numbers use the Cayley graph, as Lean does. |
+ | `K̄(n)` | `KBar` | As for `K`: the torsion of `(Gbar n → ℤ) ⧸ range (lapBar ℤ n)`. Lean proves `cokerBar n ≃ ℤ × KBar n` and that `KBar n` is finite (`FoldGroup.cokerBarEquivKBar`, `FoldGroup.KBar_finite`, C38b). |
+ | `2·A`, «the subgroup of doubles» | `twoM` | Literal: the range of `x ↦ 2x`. |
+ | the multiplicities: `V·[0] = [1]`, `V·[2l+1] = [2l+2]`, `V·[2l+2] = 2[2l+1] + Φ(V·[l])`, `Φ[ν] = [2ν+1]`, and `Σ m_λ(n)[λ] = V·Σ m_λ(n−1)[λ]` from `[0]` (§1.2) | `Vdot`, `FamDec.L`, `FamDec.m` | A formal sum is a list of its symbols with repetition. `Vdot 0 = [1]`; for `n + 1 = 2l + 1` (`n` even) `Vdot` gives `[2l + 2]`; for `n + 1 = 2l + 2` (`n` odd) it gives `[2l+1, 2l+1]` followed by `Φ(V·[l])`, since `n/2 = l`. Lean proves these three equations (`FamDec.Vdot_zero`, `Vdot_odd`, `Vdot_even`). `L (n+1) = (L n).flatMap Vdot` is the additive extension of `V·`, and `m λ n = (L n).count λ`. |
+@@ -119,19 +119,19 @@
+ | `ŷ_i`: the integer antitonic fit of the raw clocks `u_i(D)`, read in o-order; at shift `0` the entry `∞` of `∅` stands first and is not pooled (§1.2) | `yPool`, `yPool0` | Literal: `yPool ds i` is the integer fit of the clocks of the `2^{\|I\|}` dancers in o-order; `yPool0 ds` is the integer fit of the clocks of the `2^{\|I\|} − 1` dancers after `∅`. |
+ | `X(λ, i) = ⊕_{a=1}^{k−1} (ℤ/2^a)^{2^{\|I\|+k−1−a}} ⊕ ⊕_{D⊆I} ℤ/2^{ŷ_i(D)}`, with `ℤ/2^∞ := ℤ_2` | `XFam`, `SC`, `Q` | `SC` is the product over `a < k` of `(ℤ_2)^{2^{k+\|I\|−1−a}}` modulo `2^a`; its extra index `a = 0` gives the factor `ℤ_2^r ⧸ 2^0 = 0`, and `ℤ_2 ⧸ (2^a) ≅ ℤ/2^a`. `Q e = ℤ_2 ⧸ (2^e)`. At shift `i ≥ 1`, `XFam` is `SC` times the big clocks `Q(ŷ_i(p))`, `p < 2^{\|I\|}`; at shift `0`, `SC` times `ℤ_2` (the big clock `ŷ_0(∅) = ∞`) times the `Q(ŷ_0(q))` of the other dancers. The exponents are integers turned into natural numbers by `toNat`; Lean proves they are `≥ 0` (`MainTheorem.G1_pos`, `G1_zero`), so `toNat` changes nothing. |
+ | the Main Theorem: for every `n ≥ 1`, as `ℤ_2`-modules, `Syl_2 K(Q_n) ⊕ ℤ_2 ≅ ⊕_{1≤λ≤n, λ≡n (2)} X(λ, (n−λ)/2)^{m_λ(n)}` | `M1`, `M2`, `M3_support` | (i) `M1` takes the product over all `λ ≤ n`, with `m λ n` copies of `XFam λ ((n − λ)/2)`; `M3_support` shows `m λ n = 0` unless `1 ≤ λ ≤ n` and `λ ≡ n (mod 2)`, so it is the paper's sum. (ii) A finite product is the direct sum. (iii) `≃+` is an isomorphism of groups. It is automatically `ℤ_2`-linear, because both sides are finitely generated `ℤ_2`-modules (the finite `2`-group `Syl_2 K(Q_n)` in a unique way), hence `2`-adically separated and complete: an additive map `f` satisfies `f(2^j x) = 2^j f(x)`, so it is continuous for the `2`-adic topologies; then `f(ax) = a f(x)` holds for `a ∈ ℤ`, and by density for `a ∈ ℤ_2`. So the group isomorphism of Lean and the module isomorphism of the paper are equivalent statements. `M2` is the same with the list `L n` in place of the multiplicities. |
+-| Theorem DW and its equivalent form (§1.3) | `DW`, `DW'` | `DW` is literal, for `n ≥ 1`. The paper's equivalent form says `Syl_2 K(Q_n) ≅ (ℤ/2)^{a_n} ⊕ (Syl_2 K̄(n) with every exponent raised by one)`. `DW'` gives, for `n ≥ 2`, a finite `H` with `Syl_2 K(Q_n) ≅ (ℤ/2)^{a_n} × H`, `Syl_2 K̄(n) ≅ 2H` and `l0 H = l1 H`, that is, `\|H/2H\| = \|2H/4H\|`: every cyclic factor of `H` has order `≥ 4`. Such an `H` is `Syl_2 K̄(n)` with every exponent raised by one. `H` is a `2`-group because it is a direct factor of one. The form is stated for `n ≥ 2`, where `a_n` is defined; at `n = 1` the paper's formula for `a_n` has a negative exponent. |
++| Theorem DW and its equivalent form (§1.3) | `DW`, `DW'` | `DW` is literal, for `n ≥ 1`. The paper's equivalent form says `Syl_2 K(Q_n) ≅ (ℤ/2)^{a_n} ⊕ (Syl_2 K̄(n) with every exponent raised by one)`. `DW'` gives, for `n ≥ 2`, a finite `H` with `Syl_2 K(Q_n) ≅ (ℤ/2)^{a_n} × H`, `Syl_2 K̄(n) ≅ 2H` and `l0 H = l1 H`, that is, `\|H/2H\| = \|2H/4H\|`: every cyclic factor of `H` has order `≥ 4`. Such an `H` is `Syl_2 K̄(n)` with every exponent raised by one. `H` is a `2`-group because it is a direct factor of one. `DW'` is stated for `n ≥ 2`. At `n = 1` the paper's `a_1 = 2^{−1} − 2^{−1} = 0` and both groups are trivial (`B1` at `n = 1` gives `l0 (Syl2 (K 1)) = 1`), but Lean does not state that case. |
+ | `a_n = 2^{n−2} − 2^{⌊(n−2)/2⌋}` | `aN` | Literal, in `ℕ`; no truncation for `n ≥ 2`. |
+ | Corollary 1.5: `2^{n−1} − 1` cyclic factors, `a_n` of them `ℤ/2` | `B1`, `B2`, `l0`, `l1` | `l0 S = \|S/2S\|` and `l1 S = \|2S/4S\|`. For a finite abelian `2`-group, `\|S/2S\|` is `2` to the number of cyclic factors and `\|2S/4S\|` is `2` to the number of factors of order `≥ 4`. So `B1` (`l0 = 2^{2^{n−1}−1}`) and `B2` (`l1 = 2^{2^{n−1}−1−a_n}`) are equivalent to the two counts. |
+-| Corollary 1.6: `c_r`, the `r`-th largest exponent; `g(N) = max_{1≤x<N} φ(x)`; `G = g(n−1)` | `cExp`, `layer`, `gmax`, `P1`–`P3`, `G1`–`G3` | `layer S j = \|2^j S / 2^{j+1} S\|` is `2` to the number of factors of order `> 2^j`, so `cExp S r`, the largest `e` with `2^r ≤ layer S (e−1)`, is the largest `e` with at least `r` factors of exponent `≥ e`, which is `c_r`. Lean proves this reading (`PodiumCor.cExp_eq_getD`, `E2`, `E3`). `gmax` is literal. `P1`–`P3` are the three cases of the corollary for `n ≥ 4`; `G1`–`G3` the four statements of «In particular», for `n ≥ 3`, `n ≥ 3`, `n ≥ 4`. |
++| Corollary 1.6: `c_r`, the `r`-th largest exponent; `g(N) = max_{1≤x<N} φ(x)`; `G = g(n−1)` | `cExp`, `layer`, `gmax`, `P1`–`P3`, `G1`–`G3` | `layer S j = \|2^j S / 2^{j+1} S\|` is `2` to the number of factors of order `> 2^j`, so `cExp S r`, the largest `e` with `2^r ≤ layer S (e−1)`, is the largest `e` with at least `r` factors of exponent `≥ e`, which is `c_r`. Lean proves this reading (`PodiumCor.cExp_eq_getD`, `E2`, `E3`). `gmax` is literal. `P1`–`P3` are the three cases of the corollary for `n ≥ 4`; `G1`–`G3` the four statements of «In particular», for `n ≥ 3`, `n ≥ 3`, `n ≥ 4`. Gao et al. state their Theorem 4.1 for `n ≥ 2`; the case `n = 2` (`K(Q_2) = ℤ/4`) is not in Lean. |
+ | Corollary 1.7: `Syl_2 K(Q_{2^e}) ≅ Syl_2 K(Q_{2^e−1})^2 ⊕ ℤ/2^{2^e+e−1}`, `e ≥ 1` | `Y2` | Literal. |
+ | Corollary 1.4: (2-part) `Syl_2 K̄(n)` is the group of the Main Theorem with the `a_n` factors `ℤ/2` removed and every other exponent lowered by one; (odd part) `Syl_p K̄(n) ≅ Syl_p ⊕_{j even, 2≤j≤n} (ℤ/2j)^{C(n,j)}` | 2-part: `DW`, `DW'`, `M1`; odd part: `C5` | The odd part is literal, with `j = 2(t + 1)` for `t < n/2`. The 2-part is the reading of `DW'` given above, combined with `M1`; Lean has no separate theorem for it. |
+ | Bai's odd part (§1.1): `Syl_p K(Q_n) ≅ Syl_p ⊕_{j=1}^{n} (ℤ/j)^{C(n,j)}` | `OddParts.B1` | Literal, for every prime `p ≠ 2` and every `n`, with `j = j' + 1` for `j' < n`. |
+ 
+-**Generality.** Every statement holds for every `n` for which the paper states it, and `OddParts.B1` for every `n ≥ 0`. The paper's results for which Lean asks for more than the paper are `DW'`, `L1` and `R`, which need `n ≥ 2`, where `a_n` is defined.
++**Generality.** Every statement holds for every `n` for which the paper states it, and `OddParts.B1` for every `n ≥ 0`. The paper's results for which Lean asks for more than the paper are `DW'`, `L1` and `FoldLaw.R`, stated in Lean for `n ≥ 2`; at `n = 1` every group involved is trivial and every count is `0`, but Lean does not state that case. In Corollary 1.6, Gao et al.'s Theorem 4.1 at `n = 2` is not in Lean.
+ 
+ ### 1.4 The final check file
+ 
+-`checks/CheckCubo.lean` restates **by hand**, with every type written out, the objects of §1.2 (by `rfl`) and the twenty-one headline statements (closed by the name of the certified theorem). Lean accepts every restatement. If a statement in the project differed from the restatement, the file would not compile. Then `#print axioms` for each of the twenty-one theorems; every line is `[propext, Classical.choice, Quot.sound]` (log `logs/CheckCubo_postclean.log`, exit code 0, 213 s, peak 1.56 GiB). The three cases `P1`–`P3` of Corollary 1.6 are printed in `CertCubo.lean`, with the same three axioms each.
++`checks/CheckCubo.lean` restates **by hand**, with every type written out, the objects of §1.2 (by `rfl`) and the twenty-one statements of §1.1 named there (closed by the name of the certified theorem). Lean accepts every restatement. If a statement in the project differed from the restatement, the file would not compile. Then `#print axioms` for each of the twenty-one theorems; every line is `[propext, Classical.choice, Quot.sound]` (log `logs/CheckCubo_postclean.log`, exit code 0, 213 s, peak 1.56 GiB). The three cases `P1`–`P3` of Corollary 1.6 are printed in `CertCubo.lean`, with the same three axioms each.
+ 
+ ---
+ 
+@@ -152,7 +152,7 @@
+    - the literature and the vocabulary of §1.7–§1.8;
+    - Remark (2) of §10.5, an observation used nowhere.
+ 6. **Seven modules of the project are outside the cone of every headline theorem** (§3.2). They are examples, an earlier form of Corollary 10.17, and alternative forms of Lemmas 3.3, 3.5 and 7.6. They compile, and they are not needed.
+-7. **Not yet read cold.** No reader other than the writer has read this certificate. A cold reading, with the compiled project at hand, is owed before release.
++7. **The cold reading.** On 11 October 2026 a reader other than the writer (a separate Claude session, with the paper, the sources, the pieces, the logs and the compiled project, but not the author's notes) read this certificate. It re-read every definition in the statements against the paper; printed the statements and their axioms itself; re-elaborated from source the eight files of `M1`, `DW`, `DW'` and five more of the chain; evaluated the multiplicities and 2 121 raw clocks in Lean against its own Python; and checked the Main Theorem, Theorem DW and Corollaries 1.4–1.7 against Smith forms it computed from the graphs (`n ≤ 11` for the 2-parts, `n ≤ 9` for the odd parts): 161 checks, 0 failures. Verdict: «holds as far as I can check»; no Lean statement says something other than the paper. It found four errors in the record, none in a statement: the folded-cube sentence of §1.3; the number of checks in Table 6a (C13, and C21–C30 left blank; the author then found that C1–C16 report counts too); 885, not 884, lines of `#print axioms`; and 3 449 theorem and lemma declarations, not 3 237 (the latter counts lines). They are corrected here. What it did not check: 408 of the 416 modules were not re-elaborated by it, 59 of the 68 rows of the §3 table were not read statement by statement, and the provenance data of Table 6a. Its report and checks are kept with the record (`reports/LECTOR_FRIO_LEAN_1/delivered/`).
+ 8. **Aristotle's per-task times** are shown on its web page and were not exported. The download times in §6 are the save times of the result files. Aristotle's own account of its 68 runs is in `ARISTOTLE_SUMMARY.md` of the returned project, one section per run.
+ 
+ ---
+@@ -238,7 +238,7 @@
+ | C51 | Theorem DW, §10.8 | `FoldLaw` | **`FoldLaw.H`**, **`DW`**, **`DW'`**, `L0`, **`L1`**, **`FoldLaw.R`** |
+ | C52 | the odd parts, Corollary 1.4 | `OddParts` | **`OddParts.B1`**, **`C5`**, `Q0`–`Q2`, `OddParts.X`, `F1`–`F3`, `B0` |
+ 
+-The third column lists the folder (and namespace) and the fourth the main results of each piece, among those whose axioms its check file prints. The names in bold are the headline theorems of §1.1. Every one of the 68 numbered statements of §2–§10 of the paper is in a piece of this table.
++The third column lists the folder (and namespace) and the fourth the main results of each piece, among those whose axioms its check file prints. The names in bold are statements printed in §1.1. Every one of the 68 numbered statements of §2–§10 of the paper is in a piece of this table.
+ 
+ ### 3.1 The chain of the Main Theorem
+ 
+@@ -269,7 +269,7 @@
+ 
+ ### 3.3 The dependency cone
+ 
+-A short Lean program (`checks/DepsCubo.lean`, log `logs/DepsCubo_postclean.log`) collects every declaration that a theorem uses, directly or indirectly, and keeps those defined in the project. Its output is identical, line for line, before and after the clean rebuild (§8).
++A short Lean program (`checks/DepsCubo.lean`, log `logs/DepsCubo_postclean.log`) collects every declaration that a theorem uses, directly or indirectly, and keeps those defined in the project. Its output is identical, line for line, before and after the clean rebuild (§8), except the watchdog's final line (time and memory).
+ 
+ | Theorem | Project declarations in its cone | Project modules in its cone |
+ |---|---|---|
+@@ -321,11 +321,13 @@
+   - **facts**: decidability, finiteness, `IsEmpty`, `IsCentralScalar`;
+   - **two instances of the project's class `OddUnits`**, for `ℤ_[2]` and `ℚ_[2]`: a structure whose field is a proof that odd integers are units there.
+ 
++  Besides, one line `attribute [instance] DPLattice.fintype DPLattice.decEq` (`DPLattice/Basic.lean`) makes two more declarations instances: the finiteness and the decidable equality of the index type of a divided-power lattice. The project also has three tactic macros (`weyl_close`, local, in `DPLattice/Weyl.lean`; `wf_simp` and `wf_close` in `WeylFilt/Comm.lean`) and two local notations (`lV`, `lP` in `Split/ChangeOfBasis.lean`, abbreviations of `DirectSum.lof`). A macro only produces a proof term that the kernel still checks.
++
+   An instance adds no axiom. The structures on the types in the statements of §1.1 are the product structures of Mathlib (`XFam`, through `inferInstanceAs`).
+ - **Axioms**, printed after each piece (68 final check logs; for C31 the final run is `checkC31b.log`) and again in `CheckCubo_postclean.log` and `CertCubo.log`.
+-  - Over the 68 final check logs, 884 lines of `#print axioms`: 868 give the three axioms, 12 give `[propext, Quot.sound]` and 4 give `[propext]`. The last sixteen are small lemmas about digits, lists, ranks and units.
++  - Over the 68 final check logs, 885 lines of `#print axioms`: 868 give the three axioms, 12 give `[propext, Quot.sound]`, 4 give `[propext]`, and one (`FormalDance.C1`, `checkC40b.log`) depends on no axiom. The last seventeen are small lemmas about digits, lists, ranks and units.
+   - No line names any other axiom, and none contains `sorryAx`.
+-  - In `CheckCubo_postclean.log` the twenty-one headline theorems give the three axioms.
++  - In `CheckCubo_postclean.log` the twenty-one statements of §1.4 give the three axioms.
+ - **Aristotle's own register** for the project: 527 properties PROVED, 0 NEGATED, 0 in progress, after the last piece (audit log `lean/INFORME_ARISTOTLE_CUBO_v1.md`, run C52).
+ 
+ ---
+@@ -365,11 +367,11 @@
+ 
+ - **Task:** Aristotle's task (run) identifier, first 8 hex digits; project `968c28ea-180f-4dbd-a11f-1f97b45d6d95`.
+ - **Tarball:** the file returned by Aristotle, saved in `~/Downloads` as `968c28ea-…-aristotle (n).tar.gz`; `n` absent for C1; `(33)` is a second download of `(32)`, identical by md5; md5 first 8 hex digits; **downloaded** is its save time (CEST).
+-- **Brute force:** the script `lean/chkC<N>.py`, log `logs/chkC<N>.log`, every one with 0 failures. The number of checks is given where the log reports one.
+-- **Files, lines, theorems, definitions:** of the folder, in the final project. Theorems are lines beginning with `theorem ` or `lemma `; definitions are lines beginning with `def`, `abbrev`, `noncomputable def` or `noncomputable abbrev`.
++- **Brute force:** the script `lean/chkC<N>.py`, log `logs/chkC<N>.log`, every one with 0 failures. The number of checks is the total the log reports; where the log reports counts by kind only (C1–C16), it is their sum, with the number of kinds.
++- **Files, lines, theorems, definitions:** of the folder, in the final project. The column «`theorem`/`lemma` lines» counts lines beginning with the word `theorem` or `lemma` (it leaves out the declarations preceded by an attribute such as `@[simp]`; the declarations are counted in §7); definitions are lines beginning with `def`, `abbrev`, `noncomputable def` or `noncomputable abbrev`.
+ - **Rebuild:** the clean rebuild of §8, summed over the folder's modules, and its largest real-memory peak (GiB = kB/1 048 576). These numbers come from one uniform run of the whole project, not from the builds made piece by piece.
+ 
+-The two tables are generated from data files by `lean/CERTIFICADO/make_tables.py`; no number in them was copied by hand.
++The two tables are generated by `lean/CERTIFICADO/make_tables.py`: Table 6b from data files, and the checks column of Table 6a from the brute-force logs themselves. Two columns of Table 6a were transcribed by hand into that script: the Aristotle task identifiers, from the audit log, and the controls (fired/total), from the logs; the cold reader checked the controls against the 68 logs, with no mismatch.
+ 
+ <<<TABLES>>>
+ 
+@@ -377,11 +379,12 @@
+ 
+ ## 7. Totals
+ 
+-| | Files | Lines | Theorems and lemmas | Definitions |
++| | Files | Lines | `theorem`/`lemma` lines | Definitions |
+ |---|---|---|---|---|
+ | The 68 folders | 415 | 60 940 | 3 237 | 876 |
+ | `Main.lean` (imports Mathlib, sets options) | 1 | 24 | 0 | 0 |
+ 
++- **Theorem and lemma declarations in code: 3 449.** The column above counts lines that begin with the word `theorem` or `lemma`; it leaves out the 213 declarations preceded by an attribute (`@[simp]` 210, `@[ext]` 3) and counts one comment line.
+ - **`sorry`: 0.**
+ - **Brute-force checks before sending:** 68 scripts, 0 failures. Every script carried negative controls; all fired except one control in each of C28, C33 and C49b, declared.
+ - **Calendar:** piece C1 sent on 6 October 2026 at about 16:30 CEST; the result of piece C52 downloaded on 10 October at 21:46 CEST, about four days and five hours for the 68 pieces.
+@@ -399,6 +402,8 @@
+ 8f9d9cff6bd728b17a24e163c9402775d9e6a365
+ ```
+ 
++**Paths.** Every path in this certificate is relative to the project folder of the author's working tree; the public repository keeps the same relative paths (`lean/…`, `logs/…`, `checks/…`).
++
+ **Commands**, from the project root (`lean/proyecto_cubo/` here):
+ 
+ ```
+@@ -422,7 +427,7 @@
+ - Every one of the 416 compiled `.olean` files is newer than the start of the rebuild.
+ - The sources did not change during the rebuild: the md5 of each of the 489 files of the manifest taken before it (`lean/clean_rebuild/MANIFEST_sources_md5.txt`: the 416 sources, the check files and the three lake files) is the same after it.
+ 
+-Then `CheckCubo.lean` and `DepsCubo.lean` were run again against the rebuilt files: logs `CheckCubo_postclean.log` (213 s, peak 1.56 GiB) and `DepsCubo_postclean.log` (298 s, peak 1.56 GiB), both with exit code 0. **Their output is identical, line for line, to the runs before the rebuild** (`CheckCubo.log`, `DepsCubo.log`). `CertCubo.lean` was written and run after the rebuild (165 s, peak 1.50 GiB, exit code 0); it proves nothing and only prints.
++Then `CheckCubo.lean` and `DepsCubo.lean` were run again against the rebuilt files: logs `CheckCubo_postclean.log` (213 s, peak 1.56 GiB) and `DepsCubo_postclean.log` (298 s, peak 1.56 GiB), both with exit code 0. **Their output is identical, line for line, to the runs before the rebuild** (`CheckCubo.log`, `DepsCubo.log`), except the watchdog's final line (time and memory). `CertCubo.lean` was written and run after the rebuild (165 s, peak 1.50 GiB, exit code 0); it proves nothing and only prints.
+ 
+ **Fingerprints of the source:**
+ - The md5 of every one of the 416 `.lean` files of `RequestProject/` is listed in `lean/clean_rebuild/MANIFEST_md5_416.txt` (paths sorted bytewise). The md5 of that list is `cb0e4f7ad0bd315e3394c28c02a6321f`.

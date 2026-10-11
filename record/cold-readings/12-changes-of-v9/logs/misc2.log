@@ -1,0 +1,19 @@
+KIRCHHOFF_in_lean: 0
+leanprover/lean4:v4.28.0
+5:name = "mathlib"
+6:git = "https://github.com/leanprover-community/mathlib4.git"
+7-rev = "v4.28.0"
+8-
+9-[[lean_lib]]
+8:   "rev": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+18:   "rev": "55c8532eb21ec9f6d565d51d96b8ca50bd1fbef3",
+LCDOI md: 1 html: 1
+2230:with the Mathlib library [mC20], tag v4.28.0. The certificate [LC26] prints the Lean statements and every
+2267:one sentence) and none in a statement; they are corrected in [LC26].
+2268:What Lean does not state ([LC26], §2):
+2275:equivalent, because an additive map between finitely generated ℤ2‑modules is ℤ2‑linear ([LC26], §1.3).
+2276:Where. The certificate [LC26] is published with the Lean project, the check files, the files of the 68 pieces,
+2377:68 pieces; the certificate was read cold on 11 October 2026 (§12.3, [LC26]).
+2426:[LC26]     R. Amichis Luengo, The Dancing Sand Theorem — Lean certificate, Zenodo (2026), DOI [LC-DOI].
+309:### 3.3 The dance lattices
+VIGIA-FIN-OK exit=0 pico_kb=17344 t=1s

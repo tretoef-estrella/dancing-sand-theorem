@@ -1,0 +1,26 @@
+ok 564810
+1: v8-rule text «𝑣4.28.0» -> v9 «<code class="file">v4.</code><wbr><code class="file">28.</code><wbr><code class="file">0</code>»
+2: v8-rule text «𝑣4.28.0» -> v9 «<code class="file">v4.</code><wbr><code class="file">28.</code><wbr><code class="file">0</code>»
+3: v8-rule text «𝑀𝑎𝑖𝑛𝑇ℎ𝑒𝑜𝑟𝑒𝑚.𝑀1» -> v9 «<code class="file">MainTheorem.</code><wbr><code class="file">M1</code>»
+4: v8-rule text «𝐹𝑜𝑙𝑑𝐿𝑎𝑤.𝐷𝑊» -> v9 «<code class="file">FoldLaw.</code><wbr><code class="file">DW</code>»
+5: v8-rule text «𝐹𝑜𝑙𝑑𝐿𝑎𝑤.𝐷𝑊′» -> v9 «<code class="file">FoldLaw.</code><wbr><code class="file">DW&#x27;</code>»
+6: v8-rule text «𝑂𝑑𝑑𝑃𝑎𝑟𝑡𝑠.𝐶5» -> v9 «<code class="file">OddParts.</code><wbr><code class="file">C5</code>»
+7: v8-rule text «𝐹𝑜𝑙𝑑𝐿𝑎𝑤.𝐷𝑊′» -> v9 «<code class="file">FoldLaw.</code><wbr><code class="file">DW&#x27;</code>»
+8: v8-rule text «𝐵𝑎𝑖𝐶𝑜𝑢𝑛𝑡𝑠.𝐵1» -> v9 «<code class="file">BaiCounts.</code><wbr><code class="file">B1</code>»
+9: v8-rule text «𝐵𝑎𝑖𝐶𝑜𝑢𝑛𝑡𝑠.𝐵2» -> v9 «<code class="file">BaiCounts.</code><wbr><code class="file">B2</code>»
+10: v8-rule text «𝑃𝑜𝑑𝑖𝑢𝑚𝐶𝑜𝑟.𝑃1» -> v9 «<code class="file">PodiumCor.</code><wbr><code class="file">P1</code>»
+11: v8-rule text «𝑃𝑜𝑑𝑖𝑢𝑚𝐶𝑜𝑟.𝑃2» -> v9 «<code class="file">PodiumCor.</code><wbr><code class="file">P2</code>»
+12: v8-rule text «𝑃𝑜𝑑𝑖𝑢𝑚𝐶𝑜𝑟.𝑃3» -> v9 «<code class="file">PodiumCor.</code><wbr><code class="file">P3</code>»
+13: v8-rule text «𝑃𝑜𝑑𝑖𝑢𝑚𝐶𝑜𝑟.𝐺1» -> v9 «<code class="file">PodiumCor.</code><wbr><code class="file">G1</code>»
+14: v8-rule text «𝑃𝑜𝑑𝑖𝑢𝑚𝐶𝑜𝑟.𝐺2» -> v9 «<code class="file">PodiumCor.</code><wbr><code class="file">G2</code>»
+15: v8-rule text «𝑃𝑜𝑑𝑖𝑢𝑚𝐶𝑜𝑟.𝐺3» -> v9 «<code class="file">PodiumCor.</code><wbr><code class="file">G3</code>»
+16: v8-rule text «𝑀𝑖𝑟𝑟𝑜𝑟.𝑌2» -> v9 «<code class="file">Mirror.</code><wbr><code class="file">Y2</code>»
+17: v8-rule text «𝑂𝑑𝑑𝑃𝑎𝑟𝑡𝑠.𝐵1» -> v9 «<code class="file">OddParts.</code><wbr><code class="file">B1</code>»
+18: v8-rule text «𝑊𝑖𝑛𝑑𝑜𝑤𝑠.𝑡ℎ𝑒𝑜𝑟𝑒𝑚𝑖» -> v9 «<code class="file">Windows.</code>»
+19: v8-rule text «» -> v9 «<wbr><code class="file">theorem_D_i</code>»
+20: v8-rule text «𝑠𝑜𝑟𝑟𝑦» -> v9 «<code class="file">sorry</code>»
+21: v8-rule text «𝑝𝑟𝑜𝑝𝑒𝑥𝑡» -> v9 «<code class="file">propext</code>»
+22: v8-rule text «𝐶𝑙𝑎𝑠𝑠𝑖𝑐𝑎𝑙.𝑐ℎ𝑜𝑖𝑐𝑒» -> v9 «<code class="file">Classical.</code><wbr><code class="file">choice</code>»
+23: v8-rule text «𝑄𝑢𝑜𝑡.𝑠𝑜𝑢𝑛𝑑» -> v9 «<code class="file">Quot.</code><wbr><code class="file">sound</code>»
+changes: 23
+VIGIA-FIN-OK exit=0 pico_kb=33856 t=51s

@@ -1,0 +1,71 @@
+Table 6a rows: 68
+OK  C1    table: 1591122 checks in 10 kinds, 0 failures, controls 2/2 | log (by kind): 1591122 in 10 kinds, failures [0], controls 2/2
+OK  C2    table: 10766285 checks in 6 kinds, 0 failures, controls 5/5 | log (by kind): 10766285 in 6 kinds, failures [0], controls 5/5
+OK  C3    table: 317339 checks in 7 kinds, 0 failures, controls 3/3 | log (by kind): 317339 in 7 kinds, failures [0], controls 3/3
+OK  C4    table: 10000 checks in 4 kinds, 0 failures, controls 4/4 | log (by kind): 10000 in 4 kinds, failures [0], controls 4/4
+OK  C5    table: 6829 checks in 4 kinds, 0 failures, controls 3/3 | log (by kind): 6829 in 4 kinds, failures [0], controls 3/3
+OK  C6    table: 12745256 checks in 19 kinds, 0 failures, controls 4/4 | log (by kind): 12745256 in 19 kinds, failures [0], controls 4/4
+OK  C7    table: 177666 checks in 16 kinds, 0 failures, controls 3/3 | log (by kind): 177666 in 16 kinds, failures [0], controls 3/3
+OK  C8    table: 2396430 checks in 14 kinds, 0 failures, controls 5/5 | log (by kind): 2396430 in 14 kinds, failures [0], controls 5/5
+OK  C9    table: 660735 checks in 14 kinds, 0 failures, controls 4/4 | log (by kind): 660735 in 14 kinds, failures [0], controls 4/4
+OK  C10   table: 70919 checks in 11 kinds, 0 failures, controls 5/5 | log (by kind): 70919 in 11 kinds, failures [0], controls 5/5
+OK  C11   table: 1500 checks in 1 kinds, 0 failures, controls 4/4 | log (by kind): 1500 in 1 kinds, failures [0], controls 4/4
+OK  C12   table: 1500 checks in 2 kinds, 0 failures, controls 5/5 | log (by kind): 1500 in 2 kinds, failures [0], controls 5/5
+OK  C13   table: 552 checks in 4 kinds, 0 failures, controls 4/4 | log (by kind): 552 in 4 kinds, failures [0], controls 4/4
+OK  C14   table: 24060 checks in 6 kinds, 0 failures, controls 5/5 | log (by kind): 24060 in 6 kinds, failures [0], controls 5/5
+OK  C15   table: 3920 checks in 13 kinds, 0 failures, controls 3/3 | log (by kind): 3920 in 13 kinds, failures [0], controls 3/3
+OK  C16   table: 1892 checks in 14 kinds, 0 failures, controls 4/4 | log (by kind): 1892 in 14 kinds, failures [0], controls 4/4
+OK  C17   table: 7449 checks, 0 failures, controls 5/5 | log (total): 7449, failures [0], controls 5/5
+OK  C18   table: 227 checks, 0 failures, controls 5/5 | log (total): 227, failures [0], controls 5/5
+OK  C19   table: 1030 checks, 0 failures, controls 5/5 | log (total): 1030, failures [0], controls 5/5
+OK  C20   table: 2238 checks, 0 failures, controls 4/4 | log (total): 2238, failures [0], controls 4/4
+OK  C21   table: 22196 checks, 0 failures, controls 6/6 | log (total): 22196, failures [0], controls 6/6
+OK  C22   table: 7 checks, 0 failures, controls 5/5 | log (total): 7, failures [0], controls 5/5
+OK  C23   table: 347 checks, 0 failures, controls 5/5 | log (total): 347, failures [0], controls 5/5
+OK  C24   table: 98 checks, 0 failures, controls 5/5 | log (total): 98, failures [0], controls 5/5
+OK  C25   table: 686 checks, 0 failures, controls 5/5 | log (total): 686, failures [0], controls 5/5
+OK  C26   table: 2088 checks, 0 failures, controls 5/5 | log (total): 2088, failures [0], controls 5/5
+OK  C27   table: 297 checks, 0 failures, controls 4/4 | log (total): 297, failures [0], controls 4/4
+OK  C28   table: 582 checks, 0 failures, controls 2/3 | log (total): 582, failures [0], controls 2/3
+OK  C29   table: 470 checks, 0 failures, controls 3/3 | log (total): 470, failures [0], controls 3/3
+OK  C30   table: 56 checks, 0 failures, controls 3/3 | log (total): 56, failures [0], controls 3/3
+OK  C31   table: 833 checks, 0 failures, controls 3/3 | log (total): 833, failures [0], controls 3/3
+OK  C32   table: 2343 checks, 0 failures, controls 3/3 | log (total): 2343, failures [0], controls 3/3
+OK  C33   table: 2407 checks, 0 failures, controls 3/4 | log (total): 2407, failures [0], controls 3/4
+OK  C34   table: 53945 checks, 0 failures, controls 4/4 | log (total): 53945, failures [0], controls 4/4
+OK  C35   table: 337528 checks, 0 failures, controls 4/4 | log (total): 337528, failures [0], controls 4/4
+OK  C35b  table: 22447 checks, 0 failures, controls 4/4 | log (total): 22447, failures [0], controls 4/4
+OK  C36   table: 267891 checks, 0 failures, controls 5/5 | log (total): 267891, failures [0], controls 5/5
+OK  C37   table: 83102 checks, 0 failures, controls 6/6 | log (total): 83102, failures [0], controls 6/6
+OK  C38   table: 977 checks, 0 failures, controls 3/3 | log (total): 977, failures [0], controls 3/3
+OK  C38b  table: 254 checks, 0 failures, controls 4/4 | log (total): 254, failures [0], controls 4/4
+OK  C39   table: 711 checks, 0 failures, controls 4/4 | log (total): 711, failures [0], controls 4/4
+OK  C39b  table: 673 checks, 0 failures, controls 4/4 | log (total): 673, failures [0], controls 4/4
+OK  C40   table: 773 checks, 0 failures, controls 6/6 | log (total): 773, failures [0], controls 6/6
+OK  C40b  table: 412 checks, 0 failures, controls 6/6 | log (total): 412, failures [0], controls 6/6
+OK  C40c  table: 184 checks, 0 failures, controls 6/6 | log (total): 184, failures [0], controls 6/6
+OK  C40d  table: 493 checks, 0 failures, controls 5/5 | log (total): 493, failures [0], controls 5/5
+OK  C41   table: 334 checks, 0 failures, controls 5/5 | log (total): 334, failures [0], controls 5/5
+OK  C42   table: 528 checks, 0 failures, controls 5/5 | log (total): 528, failures [0], controls 5/5
+OK  C43   table: 19713 checks, 0 failures, controls 4/4 | log (total): 19713, failures [0], controls 4/4
+OK  C44   table: 11994 checks, 0 failures, controls 5/5 | log (total): 11994, failures [0], controls 5/5
+OK  C45   table: 1391 checks, 0 failures, controls 4/4 | log (total): 1391, failures [0], controls 4/4
+OK  C46   table: 1008 checks, 0 failures, controls 4/4 | log (total): 1008, failures [0], controls 4/4
+OK  C47   table: 12622 checks, 0 failures, controls 4/4 | log (total): 12622, failures [0], controls 4/4
+OK  C48   table: 24493 checks, 0 failures, controls 5/5 | log (total): 24493, failures [0], controls 5/5
+OK  C48b  table: 1286 checks, 0 failures, controls 3/3 | log (total): 1286, failures [0], controls 3/3
+OK  C49   table: 288 checks, 0 failures, controls 4/4 | log (total): 288, failures [0], controls 4/4
+OK  C49b  table: 1464 checks, 0 failures, controls 3/4 | log (total): 1464, failures [0], controls 3/4
+OK  C49c  table: 2437 checks, 0 failures, controls 5/5 | log (total): 2437, failures [0], controls 5/5
+OK  C50   table: 4114 checks, 0 failures, controls 4/4 | log (total): 4114, failures [0], controls 4/4
+OK  C50b  table: 11616 checks, 0 failures, controls 3/3 | log (total): 11616, failures [0], controls 3/3
+OK  C50c  table: 10968 checks, 0 failures, controls 4/4 | log (total): 10968, failures [0], controls 4/4
+OK  C50d  table: 35887 checks, 0 failures, controls 4/4 | log (total): 35887, failures [0], controls 4/4
+OK  C50e  table: 8253 checks, 0 failures, controls 6/6 | log (total): 8253, failures [0], controls 6/6
+OK  C50f  table: 750 checks, 0 failures, controls 4/4 | log (total): 750, failures [0], controls 4/4
+OK  C50g  table: 1490 checks, 0 failures, controls 4/4 | log (total): 1490, failures [0], controls 4/4
+OK  C50h  table: 302 checks, 0 failures, controls 3/3 | log (total): 302, failures [0], controls 3/3
+OK  C51   table: 66 checks, 0 failures, controls 3/3 | log (total): 66, failures [0], controls 3/3
+OK  C52   table: 204 checks, 0 failures, controls 3/3 | log (total): 204, failures [0], controls 3/3
+rows that disagree: 0
+VIGIA-FIN-OK exit=0 pico_kb=6432 t=0s

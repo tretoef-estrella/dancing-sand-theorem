@@ -1,0 +1,20 @@
+ok E1 header
+ok E2 abstract
+ok E4 §1.0 sentence
+ok E5 §1.3
+ok E6 §11 Q6
+ok E7 §12.3
+ok E8 §13 bullets
+ok E8 §13 closing
+ok E9 acknowledgements
+ok E10 appendix A
+ok E11 [Har26]
+ok E11 [dMU21]
+ok E11 [LC26]
+ok E11 [mC20]
+written scratch/v9_by_text_edits.md
+REPRODUCES-V9-MD-BYTE-FOR-BYTE
+79f4d7f9fc2a45bc872bac1dec23e4fa material/paper/THE_DANCING_SAND_THEOREM_v9.md
+fd7d8d1ab891c916542c6b13d108279a material/paper/THE_DANCING_SAND_THEOREM_v9.pdf
+e350bfa6328a1580ab84204d3c69a314 material/paper/THE_DANCING_SAND_THEOREM_v9.html
+VIGIA-FIN-OK exit=0 pico_kb=2176 t=0s
