@@ -1,0 +1,43 @@
+# Builds the Lean proof of «The Dancing Sand Theorem» from source and runs the hand restatements of its main results.
+# Started by hand (Actions tab → «Lean build» → «Run workflow»); a full build takes hours.
+name: Lean build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    defaults:
+      run:
+        shell: bash
+        working-directory: lean/proyecto_cubo
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install elan (the toolchain in lean-toolchain is installed by lake)
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Mathlib's compiled files
+        run: lake exe cache get
+
+      - name: Build the 420 modules of RequestProject
+        run: lake build
+
+      - name: The hand restatements of the main results, and their axioms
+        run: lake env lean checks/CheckCubo2.lean 2>&1 | tee CheckCubo_actions.log
+
+      - name: No sorry and no extra axiom in the printed axioms
+        run: |
+          if grep -q 'sorryAx' CheckCubo_actions.log; then exit 1; fi
+          test "$(grep -c 'depends on axioms' CheckCubo_actions.log)" -eq 25
+          grep 'depends on axioms' CheckCubo_actions.log | grep -v -E '\[(propext|Classical\.choice|Quot\.sound)(, (propext|Classical\.choice|Quot\.sound))*\]$' && exit 1 || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: CheckCubo_actions_log
+          path: lean/proyecto_cubo/CheckCubo_actions.log
