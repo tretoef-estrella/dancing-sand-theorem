@@ -1,2 +1,0 @@
-chkC9 estimate (written before running): k<=3 PMAX 2 took 0 s, 12 MB. k<=5 PMAX 4: houses x16, pairs x25/9, U3 N^2 x16 -> ~2-5 min, <100 MB. k=6 PMAX 2 maybe 10+ min: run only if k<=5 is fast.
-k<=5 PMAX 4: 54 s, 12 MB. k<=6 PMAX 2 estimate ~5-8 min, <100 MB.

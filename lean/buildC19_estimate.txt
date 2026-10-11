@@ -1,1 +1,0 @@
-buildC19: 7 modules of WeylFilt (1089 lines), Lean cap 4.5 GB / 900 s per module. Estimate: < 20 min total, peak < 2.5 GB (C18 was 1.75 GB).

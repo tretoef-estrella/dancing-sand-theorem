@@ -1,1 +1,0 @@
-chkC29 estimate: < 5 min, < 400 MB (32-dim lattices, RM = 8)

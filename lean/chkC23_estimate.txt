@@ -1,2 +1,0 @@
-chkC23 estimate (Grepy Escribano, 7 Oct 2026): pure Python, lattices of at most 24 basis vectors, r,s <= 5.
-Time: under 2 minutes. Memory: under 100 MB. Runs alone beside the Lean build (light).

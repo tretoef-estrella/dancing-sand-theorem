@@ -1,1 +1,0 @@
-chkC13.py: 18 digit lists x 8 (alpha,i) with sigma matrices <= 32x32 plus controls, and 60 random r=2 trials x 2 h (<= 32x32); sympy. Estimate < 6 min, < 300 MB. Run only after the C12 Lean build ends.

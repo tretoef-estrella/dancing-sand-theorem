@@ -1,1 +1,0 @@
-chkC20: exact rationals, 13 lattices N (Weyl lattices up to 4, V⊗Δ(2), V⊗∇(3), V^3), RM = 6; Φ(N) up to rank 16; DP check O(n·RM^2) compositions. Estimate: < 3 min, < 200 MB. Runs alone after buildC19.

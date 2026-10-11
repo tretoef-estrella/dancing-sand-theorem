@@ -1,1 +1,0 @@
-chkC1.py estimate (6 Oct 2026): memory < 100 MB (no large arrays); time: grid part ~625k pairs, exhaustive part ~19k sequences with up to 32 delta-masks each, antisymmetric ~7k, random 20k. Expected 1-5 minutes in CPython. Cap: vigia defaults (1.2 GB / 600 s).

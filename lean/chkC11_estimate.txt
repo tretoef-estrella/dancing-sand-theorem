@@ -1,2 +1,0 @@
-chkC11.py: 300 trials x 5 scalars x 5 variants, matrices <= 36x36 integer SNF in pure python. Estimate < 50 MB, < 3 min.
-chkC11.py v2 (sympy invariant_factors, 8 ms per 24x24): 300 trials x 5 scalars x 5 variants = 7500 pairs of SNFs up to 36x36; estimate < 4 min, < 200 MB.

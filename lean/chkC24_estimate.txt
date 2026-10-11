@@ -1,1 +1,0 @@
-chkC24.py estimate: logged in BITACORA.md before the run (7 Oct 2026, the line «chkC24 run: estimate < 200 MB, < 2 min»); this file was written after the run, as its copy. Pure Python, exact rationals; largest lattice 8|N| = 48 basis vectors; Phi of tensorV N up to 20 basis vectors. Measured: 14 MB, 10 s.

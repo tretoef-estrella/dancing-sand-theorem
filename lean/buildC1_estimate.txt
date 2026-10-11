@@ -1,3 +1,0 @@
-Build of Lean piece C1 (8 modules of RequestProject/AntitonicFit), written BEFORE running (Grepy Escribano, 6 Oct 2026).
-Estimate per module: 1.5-2.5 GB real footprint (Chaise records: 1.8-2.4 GB per module with Mathlib), 1-5 min each; whole loop under 30 min.
-Cap: TOPE_KB=4718592 TOPE_S=900 per module (Rafa's OK of 6 Oct 16:28: the Chaise's Lean cap), watchdog v3 of corpus4 (measures phys_footprint), one module at a time; no other Lean or engine running (checked with ps).

@@ -1,1 +1,0 @@
-chkC15 estimate (written before running): ~40 digit lists, N <= 8, 12 (alpha,i) cells each; Smith by elimination on <= 8x8 rationals, minors only for N <= 4 (<= 36 4x4 dets per r). Expect < 2 min, < 200 MB. Run alone, after buildC14 and CheckC14.

@@ -1,1 +1,0 @@
-Build of Lean piece C4 (5 modules of RequestProject/GoldenMatching), written BEFORE running (Grepy Escribano, 6 Oct 2026). Estimate from C1-C3 (76-217 s, peak 1.67 GB per module): 1-4 min and under 2.4 GB per module; whole loop under 20 min. Cap TOPE_KB=4718592 TOPE_S=900 per module, watchdog v3, one module at a time, background task limit 45 min.

@@ -1,1 +1,0 @@
-chkC5.py (Lean piece C5 brute force), estimate written BEFORE running (Grepy Escribano, 6 Oct 2026): A minors of n <= 4 (about 400 matrices, 70^2 minors each at n=4), sympy Smith forms; B up to 10^5 sequences e per sample, 40 samples at N=5. Under 8 min and under 300 MB (machine shared with no Lean build: run after the C4 build). Watchdog 1.2 GB / 600 s.

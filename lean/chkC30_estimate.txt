@@ -1,1 +1,0 @@
-chkC30 estimate: < 8 min, < 500 MB (32-dim lattices, 2-adic solves on ~100 unknowns)

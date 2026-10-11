@@ -1,2 +1,0 @@
-chkC17.py estimate (Grepy Escribano, 7 Oct 2026): n <= 6, matrices 64x64 integer Smith in pure Python,
-group-ring products of 64-term dicts. Memory < 100 MB, time < 2 min. Run inside vigia.sh (1.2 GB / 10 min).

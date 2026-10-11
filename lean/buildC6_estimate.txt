@@ -1,1 +1,0 @@
-estimate: 5 modules, ~2 min each (as C5), peak ~1.8 GB, under Lean cap 4.5 GB / 900 s per module

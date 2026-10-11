@@ -1,1 +1,0 @@
-chkC4.py (Lean piece C4 brute force), estimate written BEFORE running (Grepy Escribano, 6 Oct 2026): parts A-D, k <= 6 (A, B), k <= 5 (C), k <= 4 with 16x16 exact determinants (D); under 2 min and under 200 MB. Watchdog cap 1.2 GB / 600 s.

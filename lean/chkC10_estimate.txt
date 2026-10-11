@@ -1,1 +1,0 @@
-chkC10.py k<=5: subsets of [0,6) =64 per table, t<=5, convolution 64*64; closed-form loop 2*4*3^5 pairs. Estimate < 30 MB, < 60 s. k<=6 second run: ~4x tables, < 100 MB, < 5 min.

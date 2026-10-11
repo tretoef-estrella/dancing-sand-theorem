@@ -1,1 +1,0 @@
-chkC19.py estimate (Grepy Escribano, 7 Oct 2026): lattices of rank <= 20 (V⊗Δ(9)), relations r,s <= 11, ranks mod 6 primes, pure Python. Memory < 100 MB, time < 2 min. Run inside vigia.sh (1.2 GB / 10 min), after the Lean build.

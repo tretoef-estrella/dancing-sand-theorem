@@ -1,1 +1,0 @@
-chkC21 estimate: 15 lattices x RM=7, exact rationals; seconds, < 50 MB. Measured: 2 s, 14 MB.
