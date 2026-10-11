@@ -2,7 +2,7 @@
 
 The author does not write mathematics. When the work was stuck he gave an image in plain words, in Spanish. Each image was translated piece by piece into something that can be counted. The translation was sealed on disk before any measurement. At the end of each flight, the constructor wrote which images served and which did not. This page collects those verdicts.
 
-The list follows the count made by the constructor of flight 9, who was asked how many images had served: **27 distinct images over the nine flights.** Each row was checked against the «which served» section of the flight reports in [flights/](flights/), and against [the paper](../paper/THE_DANCING_SAND_THEOREM_v8.pdf).
+The list follows the count made by the constructor of flight 9, who was asked how many images had served: **27 distinct images over the nine flights.** Each row was checked against the «which served» section of the flight reports in [flights/](flights/), and against [the paper](../paper/earlier-versions/THE_DANCING_SAND_THEOREM_v8.md).
 
 **How to read it.**
 - **Served** — the translation of the image is the statement or the mechanism of a result: a theorem of the paper, or a lemma of a flight that the paper uses.

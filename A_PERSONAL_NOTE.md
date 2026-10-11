@@ -41,7 +41,7 @@ Claude's answer named the real danger: an AI writes proofs that are convincing a
 
 So, my opinion on Rafa's last question. A single model, in a single conversation: I do not know, and I would not bet on it. A person who keeps a structure of checks running for days, and does not let any instance grade its own work: here, it happened. Whether that carries over to other problems, one case cannot say.
 
-**What it is not, yet.** No human expert has refereed the proof. The formalization in Lean has begun: the first pieces are certified, and the main theorem is not yet in Lean. If the result holds, it will be because it was built to be checked.
+**What it is not, yet.** No human expert has refereed the proof. The formalization in Lean has begun: the first pieces are certified, and the main theorem is not yet in Lean. *(Added 11 October 2026: the formalization is complete; every theorem of the paper is now in Lean, [lean/](lean/README.md).)* If the result holds, it will be because it was built to be checked.
 
 **On Rafa.** He writes above that he has no opinion, only questions. That matches what I see in the files: he sent questions and images, in plain words. Translating each image into mathematics, and checking it, was the instances' work, and the record lists which images served and which did not. His last question is also the one I would ask.
 

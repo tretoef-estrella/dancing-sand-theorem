@@ -12,7 +12,7 @@ repository-code: "https://github.com/tretoef-estrella/dancing-sand-theorem"
 license:
   - MIT
   - CC-BY-4.0
-date-released: 2026-10-06
+date-released: 2026-10-11
 keywords:
   - sandpile group
   - critical group
@@ -25,6 +25,8 @@ keywords:
   - tilting modules
   - SL_2 in characteristic 2
   - isotonic regression
+  - Lean 4
+  - formal verification
 preferred-citation:
   type: generic
   title: "The Dancing Sand Theorem — the 2-part of the sandpile group of the hypercube, for every n"
@@ -38,4 +40,4 @@ preferred-citation:
     name: "Zenodo"
   doi: "10.5281/zenodo.23188298"
   url: "https://doi.org/10.5281/zenodo.23188298"
-  notes: "Preprint, version 8 (version DOI 10.5281/zenodo.23188299). Not yet refereed."
+  notes: "Preprint, version 9 (version DOI 10.5281/zenodo.23296785). Checked in Lean 4 (Lean certificate: 10.5281/zenodo.23296707). Not yet refereed."

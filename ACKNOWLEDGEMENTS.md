@@ -21,9 +21,11 @@ The full list of the works used, and how each was used, is in §1.8 and the refe
 
 The instances took names («Grepy el volador», «Grepy Bross», «Grepy Muchas Pilas», «Grepy Escribano», and others); their work is in [record/](record/README.md), and their story in [THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md).
 
+**Aristotle (Harmonic).** The Lean proofs were written by Aristotle, Harmonic's AI system, from 68 pieces written from the paper ([lean/](lean/README.md)). Nothing was accepted on its word: the Lean kernel checks every proof, and every returned project was compiled again on the author's machine.
+
 ## The limits of this
 
-**No human expert has yet refereed this work, and no proof assistant has checked it.** Every reading so far was made by an instance of the same AI system. The readers worked separately, never saw each other's code, and did not see the audits, but they are not independent in the way that different human experts are. The paper says so (§13).
+**No human expert has yet refereed this work.** The proof has been checked in Lean 4; the one point of trust left there is that the Lean definitions say what the paper says, which the Lean certificate lays out for checking. Every reading so far was made by an instance of the same AI system. The readers worked separately, never saw each other's code, and did not see the audits, but they are not independent in the way that different human experts are. The paper says so (§13).
 
 The author, **Rafael Amichis Luengo**, directed the project and takes responsibility for its content.
 

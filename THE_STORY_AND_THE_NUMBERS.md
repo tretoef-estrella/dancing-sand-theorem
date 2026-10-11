@@ -1,6 +1,6 @@
 # The story and the numbers
 
-How the 2-part of the sandpile group of the cube was found and checked, told as it happened, with the dead ends and the failed predictions. The mathematics stands on its own, in [the paper](paper/THE_DANCING_SAND_THEOREM_v8.pdf); this page is the record of how it was made.
+How the 2-part of the sandpile group of the cube was found and checked, told as it happened, with the dead ends and the failed predictions. The mathematics stands on its own, in [the paper](paper/THE_DANCING_SAND_THEOREM_v9.pdf); this page is the record of how it was made.
 
 ## Who did what
 
@@ -75,9 +75,13 @@ The record keeps every failure at the same size as the successes. A few of them:
 - **The gap of version 1** (Lemma 7.2(b)), found by the third cold reader.
 - **Sealed predictions that failed.** Dozens, published as they failed; the auditor's own include «there is no dry corner», «the prize decreases strictly», and «the weight at `m = 4` will bite».
 
+## After version 8: the Lean
+
+Version 8 was released with the proof written and read, and with no proof assistant. The proof was then cut into 68 pieces, each a short file stating what one part of the paper proves, and sent to Aristotle (Harmonic), which wrote the Lean proofs one piece at a time. Each piece was checked by brute force before it was sent, with controls that had to fail; each returned project was compiled again on the author's laptop and audited against the paper before the next piece went out. When the last piece, the odd parts, came back, every theorem of the paper was in Lean, with nothing cited. All 416 modules were then rebuilt from source overnight, the certificate was written, and a reader who had not written it read it cold with the compiled project at hand. It found four errors in the record, one of them a sentence of the paper itself (the description of the edges of the folded cube), and none in a Lean statement. Version 9 of the paper carries the corrections and §12.3, on the Lean.
+
 ## The numbers
 
-Counted in the working folder of the project when version 8 was published, each file counted once by content.
+Counted in the working folder of the project when version 8 was published, each file counted once by content (the Lean that followed is counted in its certificate: 416 files, 60 964 lines, 68 pieces).
 
 | | |
 |---|---|
