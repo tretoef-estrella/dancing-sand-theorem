@@ -1,0 +1,1 @@
+chkC16 estimate (written before running): same digit lists as chkC15 (<=40), alpha<=3, i<=3, Smith by elimination <=8x8 rationals, no minors; 300 random 4x4 (L) trials and 400 ifit trials. Expect < 2 min, < 200 MB. Run alone, after buildC15 and CheckC15.
