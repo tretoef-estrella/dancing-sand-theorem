@@ -1,0 +1,43 @@
+checks/CheckC19.lean:60:34: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (gNablaLin m) ((bvec 0) (Pi.single r 1))
+in the target expression
+  (gNablaLin m) ((bvec 0) (Pi.single r 1)) = Pi.single ⟨↑r, ⋯⟩ 1
+
+case refine_1
+A : Type
+inst✝ : CommRing A
+m : ℕ
+r : Fin (m + 1)
+h0 : (gNablaLin m) ((bvec 0) (Pi.single r 1)) = ev (m + 1) ↑↑r
+h1 : (gNablaLin m) ((bvec 1) (Pi.single r 1)) = ev (m + 1) (↑↑r + 1)
+⊢ (gNablaLin m) ((bvec 0) (Pi.single r 1)) = Pi.single ⟨↑r, ⋯⟩ 1
+checks/CheckC19.lean:61:34: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (gNablaLin m) ((bvec 1) (Pi.single r 1))
+in the target expression
+  (gNablaLin m) ((bvec 1) (Pi.single r 1)) = Pi.single ⟨↑r + 1, ⋯⟩ 1
+
+case refine_2
+A : Type
+inst✝ : CommRing A
+m : ℕ
+r : Fin (m + 1)
+h0 : (gNablaLin m) ((bvec 0) (Pi.single r 1)) = ev (m + 1) ↑↑r
+h1 : (gNablaLin m) ((bvec 1) (Pi.single r 1)) = ev (m + 1) (↑↑r + 1)
+⊢ (gNablaLin m) ((bvec 1) (Pi.single r 1)) = Pi.single ⟨↑r + 1, ⋯⟩ 1
+'WeylFilt.fDeltaLin_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.gDeltaLin_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.fNablaLin_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.gNablaLin_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.gDeltaLin_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.M1_fDelta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.M1_gDelta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.M1_fNabla' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.M1_gNabla' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.M2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.S1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.S2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.S3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.S4_delta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.S4_nabla' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeylFilt.S4' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=1 pico_kb=1311888 t=193s

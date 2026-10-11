@@ -1,0 +1,15 @@
+checks/CheckC5.lean:35:13: warning: unused variable `hr`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Divisors.cauchy_binet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Divisors.minorVals_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Divisors.dd_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Divisors.lemma_A1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Divisors.lemma_A2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Divisors.corollary_A3_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Divisors.corollary_A3_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Divisors.corollary_A3_convex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Divisors.theorem_B' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Divisors.theorem_B_without_M' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Divisors.corollary_B'' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1255536 t=179s

@@ -1,0 +1,6 @@
+'PathSum.instOddUnitsPadicTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PathSum.P0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PathSum.P1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PathSum.P2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PathSum.R' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1578224 t=167s

@@ -1,0 +1,12 @@
+'DanceSmith.P1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceSmith.P2_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceSmith.P2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceSmith.Q1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceSmith.Q2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceSmith.S1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceSmith.S2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceSmith.S3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceSmith.Z1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceSmith.Z2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceSmith.Z3' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1361648 t=161s

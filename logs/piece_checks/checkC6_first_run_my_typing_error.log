@@ -1,0 +1,27 @@
+checks/CheckC6.lean:32:2: error: Type mismatch
+  lemma_A hI α μ hE
+has type
+  ruler k I α μ E = RH I k (μ % 2 ^ k) α E - ↑(r k μ) * ↑(JH k (μ % 2 ^ k) E)
+but is expected to have type
+  ruler k I α μ E = ruler k I α (μ % 2 ^ k) E - ↑(v2 (μ / 2 ^ k + 1)) * if 2 ^ k ≤ μ % 2 ^ k + oE E then 1 else 0
+'Houses.lemma_A0_antisymm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_A0_upset' depends on axioms: [propext, Quot.sound]
+'Houses.lemma_A' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_A_exactly_one_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_A'_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_A'_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_B1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_B3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_B4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_B5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_B6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_C1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_C2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_C3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_C4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_C5_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_C5_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_C6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Houses.lemma_C7' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=1 pico_kb=1014304 t=218s

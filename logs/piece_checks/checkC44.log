@@ -1,0 +1,11 @@
+'Stability.S0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stability.S1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stability.S2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stability.A1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stability.A2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stability.A3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stability.F1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stability.F2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stability.T1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stability.T2' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1792880 t=162s
