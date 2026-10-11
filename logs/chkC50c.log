@@ -1,0 +1,4 @@
+COUNTS {'P2-i': 480, 'P2-i+1': 480, 'F-unit': 12, 'A1': 504, 'kJ-int': 504, 'H-even': 2400, 'H-half-K-mod4': 2400, 'H-pay': 150, 'H-coefB': 150, 'H-even-psi': 384, 'H-half-K-mod4-psi': 384, 'H-pay-psi': 24, 'H-coefB-psi': 24, 'C1': 2560, 'C1-psi': 512}
+TOTAL 10968 FAILURES 0 []
+CONTROLS {'ctl-shift-wrong': 12, 'ctl-odd-payment': 12, 'ctl-nonK-half': 12, 'ctl-not-congruent': 12} ALL FIRE
+VIGIA-FIN-OK exit=0 pico_kb=13696 t=7s

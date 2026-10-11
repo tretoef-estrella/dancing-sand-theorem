@@ -1,0 +1,9 @@
+'Bend.N0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bend.N1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bend.N2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bend.Y0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bend.Y1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bend.W' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bend.B1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bend.B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1664336 t=152s

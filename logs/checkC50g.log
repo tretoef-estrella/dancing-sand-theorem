@@ -1,0 +1,7 @@
+'EvenFold.P0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenFold.P1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenFold.M1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenFold.M2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenFold.A' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenFold.T' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1677840 t=159s

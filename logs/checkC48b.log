@@ -1,0 +1,7 @@
+'DanceXi.T1' depends on axioms: [propext, Quot.sound]
+'DanceXi.T2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceXi.T3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceXi.R0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceXi.R1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DanceXi.R2' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1472784 t=208s

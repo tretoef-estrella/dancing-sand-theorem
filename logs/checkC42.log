@@ -1,0 +1,8 @@
+'InvFloors.F1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InvFloors.F2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InvFloors.F3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InvFloors.F4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InvFloors.F5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InvFloors.F6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InvFloors.C109' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1543008 t=163s

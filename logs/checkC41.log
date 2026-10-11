@@ -1,0 +1,6 @@
+'InvBlock.V1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InvBlock.V2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InvBlock.V3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InvBlock.V4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InvBlock.V5' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1765168 t=138s

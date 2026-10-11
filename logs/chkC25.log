@@ -1,0 +1,8 @@
+chkC25: 686 checks, 0 failures
+control x not of weight l: FIRES
+control W on V⊗Δ(2) -> Δ(1) (sub weights too big): FIRES
+control dual without the swap is not DP: FIRES
+control dual Δ(3) is not Δ(3): FIRES
+control m > l by W directly: FIRES
+controls: 5/5 fire
+VIGIA-FIN-OK exit=0 pico_kb=14512 t=1s

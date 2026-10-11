@@ -1,0 +1,7 @@
+A: 134 cases; control (top block not all ones) fails uniqueness in 99 cases
+B: 1220 cases; control (gold <= 1 allowed) fails uniqueness in 525 cases
+C: 7686 cost identities; control (columns = L_r) differs in 5355 cases
+D: 960 minors; control (one entry 1 outside the support) breaks the valuation in 720 cases
+TOTAL FAILURES 0
+CONTROLS {'A': 99, 'B': 525, 'C': 5355, 'D': 720} ALL FIRE
+VIGIA-FIN-OK exit=0 pico_kb=11744 t=481s

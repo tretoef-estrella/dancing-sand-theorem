@@ -1,0 +1,9 @@
+'GlueEven.S1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueEven.S2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueEven.O1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueEven.O2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueEven.Q1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueEven.Q2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueEven.Q3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlueEven.Q4' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1667552 t=142s

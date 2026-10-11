@@ -1,0 +1,8 @@
+chkC24: 98 checks, 0 failures
+control g in place of h: FIRES
+control third summand without the twist: FIRES
+control u without the swap: FIRES
+control frob odd powers not killed: FIRES
+control both V copies sent to the first: FIRES
+controls: 5/5 fire
+VIGIA-FIN-OK exit=0 pico_kb=14240 t=10s

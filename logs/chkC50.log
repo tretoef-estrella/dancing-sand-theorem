@@ -1,0 +1,4 @@
+COUNTS {'B1-mul': 400, 'B1-add': 400, 'B1-one': 400, 'G2-int': 400, 'G2-inv-right': 400, 'G2-inv-left': 400, 'G2-blocks': 400, 'G2-2L': 400, 'G2-L=2W': 400, 'S3-top': 6, 'S4': 508}
+TOTAL 4114 FAILURES 0 []
+CONTROLS {'ctl-sign': 400, 'ctl-perturb-BZ': 400, 'ctl-not-congruent': 400, 'ctl-bottom-digit': 5} ALL FIRE
+VIGIA-FIN-OK exit=0 pico_kb=11264 t=5s

@@ -1,0 +1,5 @@
+  File "/Users/rafa/Desktop/ARBOLYAML/HYPERCUBE/lean/chkC16.py", line 138
+    import random
+    ^
+IndentationError: expected an indented block
+VIGIA-FIN-OK exit=1 pico_kb=4000 t=0s

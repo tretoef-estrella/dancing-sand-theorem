@@ -1,0 +1,3 @@
+cells 240 checks 1286 failures 0
+controls fired 3 of 3 {'eta = 2': True, 'shift c + 1': True, 'alpha = 1': True}
+VIGIA-FIN-OK exit=0 pico_kb=14320 t=1s

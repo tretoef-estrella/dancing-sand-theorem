@@ -1,0 +1,9 @@
+controls L1 (fire = differ): {'swap': 148, 'nosign': 147, 'B=n': 145} of 150
+n=1 fold coker free=1 2-part=[] | ctrl e1 False | ctrl nosign False
+n=2 fold coker free=1 2-part=[1] | ctrl e1 True | ctrl nosign False
+n=3 fold coker free=1 2-part=[2, 2] | ctrl e1 True | ctrl nosign True
+n=4 fold coker free=1 2-part=[2, 2, 2, 2, 4] | ctrl e1 True | ctrl nosign True
+n=5 fold coker free=1 2-part=[2, 2, 2, 2, 3, 5, 5, 5, 5] | ctrl e1 True | ctrl nosign True
+n=6 fold coker free=1 2-part=[1, 1, 1, 1, 2, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5] | ctrl e1 True | ctrl nosign True
+checks 977 failures 0
+VIGIA-FIN-OK exit=0 pico_kb=10864 t=33s

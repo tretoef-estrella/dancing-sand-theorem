@@ -1,0 +1,3 @@
+cells 112 checks 1008 failures 0
+controls fired 4 of 4 {'truncation too short': True, 'one valuation changed': True, 'one entry killed': True, 'zeta of valuation -1': True}
+VIGIA-FIN-OK exit=0 pico_kb=15184 t=2s
