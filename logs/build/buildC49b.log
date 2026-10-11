@@ -1,0 +1,31 @@
+=== MODULE Defs 08:30:57
+vigia_rc=0
+✔ [8277/8277] Built RequestProject.ContZero.Defs (83s)
+Build completed successfully (8277 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1718560 t=92s
+=== MODULE PartK 08:32:29
+vigia_rc=0
+✔ [8278/8278] Built RequestProject.ContZero.PartK (57s)
+Build completed successfully (8278 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1975280 t=64s
+=== MODULE PartT 08:33:33
+vigia_rc=0
+✔ [8279/8279] Built RequestProject.ContZero.PartT (79s)
+Build completed successfully (8279 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1835152 t=86s
+=== MODULE PartC 08:35:00
+vigia_rc=0
+✔ [8329/8329] Built RequestProject.ContZero.PartC (79s)
+Build completed successfully (8329 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1686560 t=87s
+=== MODULE PartV 08:36:27
+vigia_rc=0
+✔ [8345/8345] Built RequestProject.ContZero.PartV (83s)
+Build completed successfully (8345 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1755056 t=91s
+=== MODULE All 08:37:59
+vigia_rc=0
+✔ [8346/8346] Built RequestProject.ContZero.All (67s)
+Build completed successfully (8346 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1724352 t=75s
+BUILD-LOOP-END
