@@ -1,7 +1,0 @@
-'Payment.theorem_A' depends on axioms: [propext, Classical.choice, Quot.sound]
-'Payment.corollary_A1' depends on axioms: [propext, Classical.choice, Quot.sound]
-'Payment.corollary_A2' depends on axioms: [propext, Classical.choice, Quot.sound]
-'Payment.blockCokerEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
-'Payment.map_shear_range' depends on axioms: [propext, Classical.choice, Quot.sound]
-'Payment.projS_comp_G' depends on axioms: [propext, Classical.choice, Quot.sound]
-VIGIA-FIN-OK exit=0 pico_kb=1302912 t=181s

@@ -1,5 +1,0 @@
-KMAX 6
-COUNTS {'dancer-bij': 127, 'dancer-order': 127, 'dancer-mirror': 127, 'antisym': 16383, 'Lambda': 16383, 'J0': 16383, 'dancer-halves': 120, 'd1-noninc': 16002, 'd1-changes': 16002, 'W-Z1': 16002, 'W-X1': 16002, 'W-real': 16002, 'W-int': 16002, 'C6-reuse': 16002, 'Cut': 8001, 'Cut-mirror': 8001}
-TOTAL FAILURES 0
-CONTROLS {'Lambda with 2^k-2': 272, 'W without max': 1106, 'Cut at b+1': 1911} ALL FIRE
-VIGIA-FIN-OK exit=0 pico_kb=11456 t=13s

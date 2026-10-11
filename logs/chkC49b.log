@@ -1,3 +1,0 @@
-cells 72 checks 1464 failures 0
-controls fired 3 of 4 {'bound + 1 fails somewhere': False, 'eta = 2': True, 'alpha = 1': True, 'support of sigma_1 instead of sigma_0': True}
-VIGIA-FIN-OK exit=0 pico_kb=15168 t=1s

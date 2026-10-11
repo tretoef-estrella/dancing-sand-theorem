@@ -1,7 +1,0 @@
-'FoldLaw.H' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FoldLaw.DW' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FoldLaw.DW'' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FoldLaw.L0' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FoldLaw.L1' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FoldLaw.R' depends on axioms: [propext, Classical.choice, Quot.sound]
-VIGIA-FIN-OK exit=0 pico_kb=1605232 t=159s

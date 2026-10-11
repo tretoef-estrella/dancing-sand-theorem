@@ -1,5 +1,0 @@
-COUNTS {'twist': 1500}
-TOTAL FAILURES 0
-[]
-CONTROLS {'no-middle': 40, 'pu-wrong-floor': 260, 'no-factor-2': 1490, 'no-B1-summand': 1200} ALL FIRE
-VIGIA-FIN-OK exit=0 pico_kb=93184 t=22s

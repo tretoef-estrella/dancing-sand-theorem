@@ -1,5 +1,0 @@
-i = 0 (not claimed here, C50h): Smith equal in 7 of 7
-wrong arm: non-integral 0 different Smith 14
-controls (each must be > 0): {'ZF_sign': 98, 'Z_zero': 21, 'U_wrong_arm': 14, 'Zop_shift': 98}
-checks 750, failures 0
-VIGIA-FIN-OK exit=0 pico_kb=12736 t=6s

@@ -1,5 +1,0 @@
-COUNTS {'rescale': 15472, 'support': 14507, 'const1': 258, 'lemma45': 363, 'M-integer': 10788, 'M-val': 10788, 'window': 10788, 'nonzero': 645, 'deficit': 645, 'subadd': 6664, 'example6': 1}
-TOTAL FAILURES 0
-[]
-CONTROLS {'no-cross-double': 218, 'shiftI': 403, 'card-1': 645, 'rescale-wrong': 965, 'valuation-no-delta': 6576} ALL FIRE
-VIGIA-FIN-OK exit=0 pico_kb=11216 t=3s

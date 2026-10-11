@@ -1,4 +1,0 @@
-COUNTS {'A1': 1650, 'A3': 1140, 'A2': 3000, 'B': 1039}
-TOTAL FAILURES 0
-CONTROLS {'A1 with det P even': 510, 'A2 without sorting': 598, 'B without e non-decreasing': 3132} ALL FIRE
-VIGIA-FIN-OK exit=0 pico_kb=50416 t=4s

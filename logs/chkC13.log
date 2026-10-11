@@ -1,4 +1,0 @@
-COUNTS {'prop43': 144, 'D4-triangular-even': 144, 'cross-closed-form': 144, 'D1-random-r2': 120}
-FAILURES 0 []
-CONTROLS {'digits-from-top': 80, 'relabel-reversed': 46, 'clocks-exp-a+1': 144, 'final-2^(k-1)': 136} ALL FIRE
-VIGIA-FIN-OK exit=0 pico_kb=52736 t=1s

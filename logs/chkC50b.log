@@ -1,4 +1,0 @@
-COUNTS {'K1': 60, 'K2': 960, 'R2': 9600, 'M2-entries': 948, 'M2-dance': 28, 'W5-sanity': 20}
-TOTAL 11616 FAILURES 0 []
-CONTROLS {'ctl-notcong': 22, 'ctl-oddpay': 9, 'ctl-nonK': 22} ALL FIRE
-VIGIA-FIN-OK exit=0 pico_kb=17456 t=1s

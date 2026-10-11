@@ -1,4 +1,0 @@
-checks 302 failures 0
-v2(W(2^(n+1)) - W(2^n)) by l (the W need not converge; compactness gives a subsequence): {0: [1, 2, 3, 4, 5, 6, 7, 8], 1: [4, 3, 4, 5, 6, 7, 8, 9], 2: [1, 2, 3, 4, 5, 6, 7, 8], 3: [9, 8, 7, 8, 9, 10, 11, 12], 4: [6, 5, 6, 7, 8, 9, 10, 11], 5: [5, 3, 4, 5, 6, 7, 8, 9], 6: [1, 2, 3, 4, 5, 6, 7, 8]}
-controls fired 3 of 3
-VIGIA-FIN-OK exit=0 pico_kb=14848 t=2s

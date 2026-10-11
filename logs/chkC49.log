@@ -1,3 +1,0 @@
-controls (each must be > 0): {'psi_d+1': 78, 'sig_c+1': 31, 'eta2': 1, 'wrong_shift': 31}
-checks 288, failures 0
-VIGIA-FIN-OK exit=0 pico_kb=12944 t=3s

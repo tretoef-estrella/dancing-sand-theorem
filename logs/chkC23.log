@@ -1,8 +1,0 @@
-chkC23: 347 checks, 0 failures
-control naive F⊗1 + 1⊗F is not DP: FIRES
-control weights subtracted: FIRES
-control assoc with the inner pair swapped: FIRES
-control kron of a non-Hom (e_r -> e_r, λ = 2): FIRES
-control tensorV M != M ⊗ V (order matters for the index): FIRES
-controls: 5/5 fire
-VIGIA-FIN-OK exit=0 pico_kb=12784 t=5s

@@ -1,4 +1,0 @@
-checks 2407 fails 0
-SILENT control {'pool_inf': True}
-controls fired 3 of 4
-VIGIA-FIN-OK exit=0 pico_kb=21504 t=8s

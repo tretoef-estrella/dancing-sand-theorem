@@ -1,7 +1,0 @@
-'FormalProp.Q0' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FormalProp.Q1' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FormalProp.Q2' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FormalProp.Q2_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FormalProp.Q3' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FormalProp.Q4' depends on axioms: [propext, Classical.choice, Quot.sound]
-VIGIA-FIN-OK exit=0 pico_kb=1671776 t=180s

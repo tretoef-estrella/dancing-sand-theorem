@@ -1,5 +1,0 @@
-COUNTS {'basis-change': 750, 'split': 750}
-TOTAL FAILURES 0
-[]
-CONTROLS {'no-CA-coupling-sp': 35, 'CC-wrong-floors': 75, 'no-factor-2': 745, 'one-copy-only': 600, 'C-from-A-sign': 25} ALL FIRE
-VIGIA-FIN-OK exit=0 pico_kb=54192 t=8s

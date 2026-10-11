@@ -1,4 +1,0 @@
-COUNTS {'W-payment': 8820, 'thm-4.4': 3468, 'D-ii-integer': 3468, 'D-iii-zero-entry-when-i+oD=0': 93, 'D-iii-valuation': 1911, 'W-coupling': 6300}
-FAILURES 0 []
-CONTROLS {'W-without-half': 8403, 'thm-4.4-c-instead-of-a': 1911, 'D-iii-valuation+1': 1911, 'W-bits-reversed': 1944, 'thm-4.4-claim-on-non-nested': 228} ALL FIRE
-VIGIA-FIN-OK exit=0 pico_kb=11424 t=1s

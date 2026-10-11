@@ -1,5 +1,0 @@
-KMAX 6
-COUNTS {'A': 447896, 'A-onezero': 43688, "A'-cost": 8888888, "A'-clock": 447896, 'A0': 111974, 'A0-up': 1167098, 'B5': 111974, 'B6': 111974, 'B1': 111720, 'B3': 216484, 'B4': 432968, 'C1': 55860, 'C2': 55860, 'C3': 55860, 'C4': 55860, 'C5': 101052, 'C6': 55860, 'C7': 55860, 'B2': 216484}
-TOTAL FAILURES 0
-CONTROLS {'A with bit_k for r_k': 36596, 'B3 without 1+': 23882, 'C3 without sat': 1564, 'C5 without +h': 45192} ALL FIRE
-VIGIA-FIN-OK exit=0 pico_kb=10160 t=208s

@@ -1,4 +1,0 @@
-COUNTS {'integer': 93, 'D-data0': 93, 'D-I-empty-zero': 15, 'G-data0-kept': 279, 'G-zero': 45, 'D-smith=Z3': 78, 'G-smith': 234, 'Z-corner-integral': 800, 'Z-smith': 800}
-TOTAL 2437 FAILURES 0 []
-CONTROLS {'ctl-valuation+1': 78, 'ctl-mu=2^k': 78, 'ctl-doubled-entry-changes-smith': 138, 'ctl-Z-E=N': 140, 'ctl-Z-det-nonzero': 800} ALL FIRE
-VIGIA-FIN-OK exit=0 pico_kb=12208 t=0s

@@ -1,3 +1,0 @@
-checks 337528 fails 0
-controls fired 4 of 4 {'a': 1, 'b': 1, 'M1': 1, 'K': 1}
-VIGIA-FIN-OK exit=0 pico_kb=9968 t=8s

@@ -1,3 +1,0 @@
-checks 12622 failures 0
-controls fired 4 of 4 {'p(0) != 0 breaks the mod-4 property': True, 'Θ without q̄⁻¹ is not multiplicative': True, 'without E_t^2 = 0 the square is not beta_0^2': True, 'position without -o(Δ1)': True}
-VIGIA-FIN-OK exit=0 pico_kb=12160 t=5s

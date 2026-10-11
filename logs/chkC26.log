@@ -1,8 +1,0 @@
-chkC26: 2088 checks, 0 failures
-control X1 recipe with K weights beyond [-l, l]: FIRES
-control L1 recipe with kernel weights beyond [-l, l]: FIRES
-control no section of Δ(2) -> V⊗V -> Δ(0) modulo 2: FIRES
-control (sanity, must hold) a section exists modulo 3: FIRES
-control sW of an x not of weight l is not a section: FIRES
-controls: 5/5 fire
-VIGIA-FIN-OK exit=0 pico_kb=15632 t=5s

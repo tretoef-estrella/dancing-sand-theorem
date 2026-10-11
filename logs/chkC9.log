@@ -1,5 +1,0 @@
-KMAX 5 PMAX 4
-COUNTS {'I1': 4095, 'I1-noninc': 4095, 'I2': 102375, 'I2-shift': 102375, 'U1': 102375, 'U2': 102375, 'U3': 102375, 'U3-loop': 102375, 'U-conclusion': 37440, 'C-J': 171, 'C-cut': 171, 'C-del': 171, 'C-U2': 171, 'C-U3': 171}
-TOTAL FAILURES 0
-CONTROLS {'I1: x_H with +1 at the first dancer': 452, 'U3 with w := V (no column penalty)': 31248, 'C with l = 2^k - 2': 93, 'I2: shift moved one dancer late': 3478} ALL FIRE
-VIGIA-FIN-OK exit=0 pico_kb=11728 t=54s

@@ -1,4 +1,0 @@
-checks 24493 failures 0
-controls {'C2 unshifted C': True, 'C3 split offset': True, 'C4 even F-coefficient': True, 'C1a odd payment: not clean': True, 'C1b payment 2 mod 4: (a) or (b) lost at next level': True}
-FIN
-VIGIA-FIN-OK exit=0 pico_kb=16688 t=2s

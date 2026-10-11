@@ -1,4 +1,0 @@
-checks 1490 failures 0
-min v2(W - I): {1: 62, 2: 8, 3: 12, 4: 7, 5: 1, 6: 2, 7: 11, 15: 7, 1000000000: 2}
-controls fired 4 of 4
-VIGIA-FIN-OK exit=0 pico_kb=14800 t=2s

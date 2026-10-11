@@ -1,4 +1,0 @@
-COUNTS {'P1-bijection': 83, 'integer': 372, 'P2-perm-invariance': 372, 'T2-det-zero': 93, 'T2-I-empty-zero': 15, 'T1-exponents-i>=1': 279, 'T1-nonincreasing': 279, 'T1-det-nonzero': 279, 'T1-dd-formula': 1026, 'T1-dd-by-minors': 675, 'T2-exponents-i=0': 78, 'T2-dd-formula': 234, 'T2-dd-by-minors': 135}
-FAILURES 0 []
-CONTROLS {'ctl-kappa-i-not-i-1': 6, 'ctl-natural-not-pooled': 42, 'ctl-sharp-with-i=1-clocks': 78} ALL FIRE
-VIGIA-FIN-OK exit=0 pico_kb=11520 t=0s
