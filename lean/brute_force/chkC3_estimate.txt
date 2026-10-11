@@ -1,0 +1,1 @@
+chkC3.py, written before running (6 Oct 2026): k <= 6, all I, all pairs b ⊆ a (3^|I| <= 729 per I, 64 sets I at k = 6), alpha <= 3, i <= 17, sums of length <= 64: about 10^6 identity checks of length <= 64, pure Python. Estimate 1-4 min, < 50 MB. Cap: cube default 1.2 GB / 10 min.

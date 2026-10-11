@@ -1,0 +1,2 @@
+estimate: k<=4 seconds; k<=5 ~1 min; k<=6 arrows 3^6=729/house x 16k houses x2 modes ~ few min, <100 MB
+chkC8 k<=6 estimate (written before running): k<=4 took <1 s at 12 MB; arrows grow 3^|I|, houses x4 per k step ⟹ k=6 ~ 3-6 min, < 100 MB

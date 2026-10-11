@@ -1,0 +1,1 @@
+chkC6 estimate (written first): k<=4 trial ~ seconds, <100 MB; full k<=6 ~ 5^6*4*64*2 ≈ 8M cost evaluations ≈ 2-6 min sharing CPU with the Lean build, <200 MB.
