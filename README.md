@@ -4,11 +4,11 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23188298.svg)](https://doi.org/10.5281/zenodo.23188298) [![Lean certificate DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23296707.svg)](https://doi.org/10.5281/zenodo.23296707)
 
-**Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint, version 9, 11 October 2026
+**Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint, version 10, 11 October 2026
 
-> **Status.** A complete proof, published as a preprint. Every step has a written proof that can be checked with pencil and paper; no step uses a computer. Before release the proofs were re-derived by auditors who had not written them, and there were twelve cold readings — two of the chains of proof, nine of the text, one of the Lean certificate — by readers who had not watched it being written: AI systems, all of them instances of Claude. One gap was found, in the first version of the text, and repaired; no theorem was affected ([record/](record/README.md)). **The whole proof has also been checked in the proof assistant Lean 4, with nothing cited** ([below](#formal-verification-in-lean-4)). **It has not been refereed by a human expert.**
+> **Status.** A complete proof, published as a preprint. Every step has a written proof that can be checked with pencil and paper; no step uses a computer. Before release the proofs were re-derived by auditors who had not written them, and there were thirteen cold readings — two of the chains of proof, nine of the text, one of the Lean certificate, and one of the last changes of the text and of the certificate — by readers who had not watched it being written: AI systems, all of them instances of Claude. One gap was found, in the first version of the text, and repaired; no theorem was affected ([record/](record/README.md)). **The whole proof has also been checked in the proof assistant Lean 4, with nothing cited** ([below](#formal-verification-in-lean-4)). **It has not been refereed by a human expert.**
 
-**Read the paper:** [paper/THE_DANCING_SAND_THEOREM_v9.pdf](paper/THE_DANCING_SAND_THEOREM_v9.pdf) · [Markdown source](paper/THE_DANCING_SAND_THEOREM_v9.md) · permanent archive: [doi.org/10.5281/zenodo.23188298](https://doi.org/10.5281/zenodo.23188298) (this version: [doi.org/10.5281/zenodo.23296785](https://doi.org/10.5281/zenodo.23296785)) · **Lean certificate:** [lean/](lean/README.md), [doi.org/10.5281/zenodo.23296707](https://doi.org/10.5281/zenodo.23296707)
+**Read the paper:** [paper/THE_DANCING_SAND_THEOREM_v10.pdf](paper/THE_DANCING_SAND_THEOREM_v10.pdf) · [Markdown source](paper/THE_DANCING_SAND_THEOREM_v10.md) · permanent archive: [doi.org/10.5281/zenodo.23188298](https://doi.org/10.5281/zenodo.23188298) (this version: [doi.org/10.5281/zenodo.23298437](https://doi.org/10.5281/zenodo.23298437)) · **Lean certificate:** [lean/](lean/README.md), [doi.org/10.5281/zenodo.23296707](https://doi.org/10.5281/zenodo.23296707)
 
 ---
 
@@ -61,7 +61,7 @@ With the known odd part this gives the whole sandpile group of the folded cube (
 | **Corollary 1.6** | the `n + 1` largest cyclic factors: Gao et al.'s Theorems 4.1–4.2 (known), **their Conjecture 4.14, and the `(n+1)`-th factor of the 2019 poster** | the conjectures are new proofs; in Lean |
 | **Corollary 1.7** | `Syl_2 K(Q_{2^e}) ≅ Syl_2 K(Q_{2^e−1})^2 ⊕ ℤ/2^{2^e+e−1}`: **Gao et al.'s Conjecture 5.4** | new proof; in Lean |
 
-«In Lean»: checked in Lean 4 with Mathlib (the few small cases and equivalent forms Lean does not state are listed in §12.3 of the paper). A guided tour of these results, with the lemmas a referee should look at first and their Lean names, is in **[THEOREMS.md](THEOREMS.md)**.
+«In Lean»: checked in Lean 4 with Mathlib, for every `n` for which the paper states the result. A guided tour of these results, with the lemmas a referee should look at first and their Lean names, is in **[THEOREMS.md](THEOREMS.md)**.
 
 ---
 
@@ -70,8 +70,8 @@ With the known odd part this gives the whole sandpile group of the folded cube (
 1. **Read, in this order:** §1.0 (the summary table) and §1.2 (the rule) → §2–§3 (the group ring as an `SL_2`-module, and the family decomposition) → §4 (the dance, Theorem D) → §5–§7 (valuations; Theorem O, the ceiling; Theorem F, the floor) → §8 (assembly) → §10 (the fold law) → §13 (exact status).
 2. **Press where it is most likely to break:** [WHERE_TO_ATTACK.md](WHERE_TO_ATTACK.md) names the load-bearing joints, in the order we would attack them, and says where the one gap of the first version was.
 3. **Run the checks:** [HOW_TO_VERIFY.md](HOW_TO_VERIFY.md). Every check of §12.1 of the paper is in [checks/](checks/README.md), runs on a laptop in seconds or minutes, and has, where the paper says so, a deliberately wrong variant that must fail.
-4. **Check the Lean:** [lean/](lean/README.md) — the certificate first, then the hand restatements in `CheckCubo.lean` and their log.
-5. **Read the record of the checking:** [record/](record/README.md) holds the twelve cold readings (each with its mission, its report, its own code and logs, and the author's grading), the nine flights in which the proofs were found and the audit of each, the list of corrections of every version, and the literature search.
+4. **Check the Lean:** [lean/](lean/README.md) — the certificate first, then the hand restatements in `CheckCubo2.lean` and their log.
+5. **Read the record of the checking:** [record/](record/README.md) holds the thirteen cold readings (each with its mission, its report, its own code and logs, and the author's grading), the nine flights in which the proofs were found and the audit of each, the list of corrections of every version, and the literature search.
 6. **What is NOT done:** no human referee. The texts of the readings are by AI readers; their code is their own.
 
 ---
@@ -80,12 +80,12 @@ With the known odd part this gives the whole sandpile group of the folded cube (
 
 **Every theorem of the paper has been checked in the proof assistant Lean 4, with the Mathlib library, with nothing cited.** Lean defines the Laplacian of `Q_n`, its cokernel and the torsion of that cokernel, and proves the theorems themselves; Kirchhoff's theorem is not used. The proof has no `sorry`, and every theorem depends only on the three standard axioms `propext`, `Classical.choice` and `Quot.sound`.
 
-- **What Lean proves:** the Main Theorem (`MainTheorem.M1`), Theorem DW (`FoldLaw.DW`), Corollaries 1.4–1.7, Bai's odd part of `K(Q_n)`, Theorem D, and each of the 68 numbered statements of §2–§10 of the paper. The few small cases and equivalent forms that Lean does not state are listed in §12.3 of the paper.
-- **The one point of trust** is that the Lean definitions say what the paper says. The **[Lean certificate](lean/CERTIFICADO/LEAN_CERTIFICATE_DANCING_SAND_v1.pdf)** prints every definition the statements use, exactly as Lean prints it, and compares it with the paper line by line. That comparison is what a reader should check.
-- **How it was done:** the text of the paper was cut into 68 pieces, each a short self-contained file. Aristotle (Harmonic) wrote the Lean proofs, one piece at a time. Every returned project was compiled again on the author's machine, and the main statements of each piece were restated by hand and audited against the paper. At the end all 416 modules were rebuilt from source, all with exit code 0.
-- **Read cold:** before release, a reader other than the writer of the certificate, with the compiled project at hand, re-read every definition against the paper, re-elaborated the files of the Main Theorem, of Theorem DW and five more, and compared the rule with Smith forms computed from the graphs. Verdict: «holds as far as I can check»; four errors in the record and none in a statement, all corrected ([reading 11](record/cold-readings/11-lean-certificate/REPORT.md)).
-- **Where:** [lean/](lean/README.md) holds the Lean project, the 68 pieces as sent, the brute-force check run before sending each piece, the check files, the audit log and the clean rebuild; [logs/](logs/README.md) holds the log of every piece. The same files are archived on Zenodo: [doi.org/10.5281/zenodo.23296707](https://doi.org/10.5281/zenodo.23296707).
-- **Check it yourself:** from `lean/proyecto_cubo/`, run `lake exe cache get`, `lake build` and `lake env lean checks/CheckCubo.lean`. The workflow [lean-build.yml](.github/workflows/lean-build.yml) does the same on GitHub's machines; it is started by hand from the Actions tab, and a full build takes hours.
+- **What Lean proves:** the Main Theorem (`MainTheorem.M1`), Theorem DW (`FoldLaw.DW`) and its equivalent form (`SmallCases.DW'_all`), Corollaries 1.4–1.7, Bai's odd part of `K(Q_n)`, Theorem D, and each of the 68 numbered statements of §2–§10 of the paper: every theorem, for every `n` for which the paper states it.
+- **The one point of trust** is that the Lean definitions say what the paper says. The **[Lean certificate](lean/CERTIFICADO/LEAN_CERTIFICATE_DANCING_SAND_v2.pdf)** prints every definition the statements use, exactly as Lean prints it, and compares it with the paper line by line. That comparison is what a reader should check.
+- **How it was done:** the text of the paper was cut into 68 pieces, each a short self-contained file; a 69th piece added the small cases (`n = 1`, and `n = 2` for Gao et al.'s Theorem 4.1). Aristotle (Harmonic) wrote the Lean proofs, one piece at a time. Every returned project was compiled again on the author's machine, and the main statements of each piece were restated by hand and audited against the paper. At the end of the 68 pieces all 416 modules were rebuilt from source, all with exit code 0; the four modules of the 69th piece were then compiled from their sources, with the sources of the other 416 unchanged. The project has 420 Lean files, 61 285 lines and 3 470 theorem and lemma declarations.
+- **Read cold:** before release, a reader other than the writer of the certificate, with the compiled project at hand, re-read every definition against the paper, re-elaborated the files of the Main Theorem, of Theorem DW and five more, and compared the rule with Smith forms computed from the graphs. Verdict: «holds as far as I can check»; four errors in the record and none in a statement, all corrected ([reading 11](record/cold-readings/11-lean-certificate/REPORT.md)). The changes of version 2 of the certificate were read cold in their turn, with the Lean of the 69th piece: right, faithful and clean; nine points of wording and presentation, all corrected ([reading 13](record/cold-readings/13-lean-v2-and-paper-v10/REPORT.md)).
+- **Where:** [lean/](lean/README.md) holds the certificate, the Lean project, the 69 pieces as sent, the brute-force check run before sending each piece, the build scripts, the audit log and the clean rebuild, each in its own folder; [logs/](logs/README.md) holds the log of every piece and of the final checks. The same files are archived on Zenodo: [doi.org/10.5281/zenodo.23296707](https://doi.org/10.5281/zenodo.23296707) (this version: [doi.org/10.5281/zenodo.23298436](https://doi.org/10.5281/zenodo.23298436)).
+- **Check it yourself:** from `lean/proyecto_cubo/`, run `lake exe cache get`, `lake build` and `lake env lean checks/CheckCubo2.lean`. The workflow [lean-build.yml](.github/workflows/lean-build.yml) does the same on GitHub's machines; it is started by hand from the Actions tab, and a full build takes hours.
 
 The paper's own proof of the family decomposition does not cite the theory of tilting modules either: it proves it from an elementary lifting lemma for `SL_2` over `ℤ_2` (§3.2). Besides that, the written proof uses only classical results (Weyl's theorem on complete reducibility over `ℚ`, Kostant's `ℤ`-form of `U(sl_2)`, Kummer's theorem, Legendre's formula, the von Staudt–Clausen theorem, Strassmann's theorem), and in Lean each of them is either proved or taken from Mathlib, where it is proved too.
 
@@ -112,14 +112,15 @@ The author asked four AIs, Claude among them, whether this problem could be solv
 ## Repository map
 
 ```
-paper/                    the paper, version 9 (PDF and Markdown source);
-                          earlier-versions/  the Markdown of versions 1 to 8
-lean/                     the Lean 4 proof: the certificate (lean/CERTIFICADO/), the project (lean/proyecto_cubo/),
-                          the 68 pieces, their brute-force checks, the audit log, the clean rebuild
-logs/                     the logs of every Lean piece and of the final checks
+paper/                    the paper, version 10 (PDF and Markdown source);
+                          earlier-versions/  the Markdown of versions 1 to 9
+lean/                     the Lean 4 proof: the certificate (CERTIFICADO/), the project (proyecto_cubo/),
+                          the 69 pieces (pieces/), their brute-force checks (brute_force/), the build scripts (build/),
+                          the audit log (audit/), the clean rebuild (clean_rebuild/)
+logs/                     the logs of every Lean piece and of the final checks, in four folders
 .github/workflows/        the Lean build on GitHub's machines (started by hand)
 checks/                   the folder gate/ of §12.1, with the watchdog and the logs of one complete run
-record/cold-readings/     the twelve cold readings: mission, report, the reader's own code and logs, grading
+record/cold-readings/     the thirteen cold readings: mission, report, the reader's own code and logs, grading
 record/flights/           the nine missions in which the proofs were found, their reports and their audits
 record/corrections/       what changed from each version to the next, with its source
 record/literature/        the literature search, the novelty sweep for Theorem D, Bai (2003) read in the original
@@ -134,4 +135,4 @@ WHERE_TO_ATTACK.md        the load-bearing joints of the proof
 
 [CITATION.md](CITATION.md) · [LICENSE-TEXT.md](LICENSE-TEXT.md) · [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md) · [THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md) · [A_PERSONAL_NOTE.md](A_PERSONAL_NOTE.md)
 
-*Cite as:* Amichis Luengo, R. (2026). *The Dancing Sand Theorem — the 2-part of the sandpile group of the hypercube, for every n* (preprint, version 9). Zenodo. https://doi.org/10.5281/zenodo.23188298
+*Cite as:* Amichis Luengo, R. (2026). *The Dancing Sand Theorem — the 2-part of the sandpile group of the hypercube, for every n* (preprint, version 10). Zenodo. https://doi.org/10.5281/zenodo.23188298

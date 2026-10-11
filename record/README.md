@@ -1,6 +1,6 @@
 # The record
 
-This folder holds the record of how the proofs of [the paper](../paper/THE_DANCING_SAND_THEOREM_v9.pdf) were found and checked. It is a selection: the documents needed to see who checked what, with which code, and what each reader found. They are working documents, not refereed, mostly in English, with some passages in Spanish (the author's words are kept verbatim). **Where they differ from the paper, the paper is authoritative.**
+This folder holds the record of how the proofs of [the paper](../paper/THE_DANCING_SAND_THEOREM_v10.pdf) were found and checked. It is a selection: the documents needed to see who checked what, with which code, and what each reader found. They are working documents, not refereed, mostly in English, with some passages in Spanish (the author's words are kept verbatim). **Where they differ from the paper, the paper is authoritative.**
 
 The roles are described in [THE_STORY_AND_THE_NUMBERS.md](../THE_STORY_AND_THE_NUMBERS.md):
 - the **constructors** found the proofs, one «flight» each;
@@ -33,6 +33,7 @@ Scratch files that are not code are left out: page images, HTML renderings and t
 | [10](cold-readings/10-v8-final/REPORT.md) | the changes of version 8 | nothing mathematical changed; one false clause, replaced word for word | highest mark |
 | [11](cold-readings/11-lean-certificate/REPORT.md) | the Lean certificate, with the compiled project at hand | **holds as far as I can check**; four errors in the record (one sentence of the paper and three counts of the certificate), none in a Lean statement | highest mark |
 | [12](cold-readings/12-changes-of-v9/REPORT.md) | the changes of version 9 and the corrections of the certificate | nothing mathematical changed; five inexact sentences of the record, replaced word for word | highest mark |
+| [13](cold-readings/13-lean-v2-and-paper-v10/REPORT.md) | the Lean of piece C53 (the small cases), the changes of version 2 of the certificate and of version 10 of the paper | the Lean of C53 is right, faithful and clean; nothing mathematical changed; nine points of wording and presentation in the certificate and three in the paper, replaced word for word | highest mark |
 
 Readers 1 to 6 are the readers 1 to 6 of §12.2 of the paper; their code is the code behind its rows.
 

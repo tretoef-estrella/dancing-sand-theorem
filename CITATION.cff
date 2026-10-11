@@ -40,4 +40,4 @@ preferred-citation:
     name: "Zenodo"
   doi: "10.5281/zenodo.23188298"
   url: "https://doi.org/10.5281/zenodo.23188298"
-  notes: "Preprint, version 9 (version DOI 10.5281/zenodo.23296785). Checked in Lean 4 (Lean certificate: 10.5281/zenodo.23296707). Not yet refereed."
+  notes: "Preprint, version 10 (version DOI 10.5281/zenodo.23298437). Checked in Lean 4 (Lean certificate: 10.5281/zenodo.23296707; version 2: 10.5281/zenodo.23298436). Not yet refereed."

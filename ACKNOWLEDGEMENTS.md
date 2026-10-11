@@ -21,7 +21,7 @@ The full list of the works used, and how each was used, is in §1.8 and the refe
 
 The instances took names («Grepy el volador», «Grepy Bross», «Grepy Muchas Pilas», «Grepy Escribano», and others); their work is in [record/](record/README.md), and their story in [THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md).
 
-**Aristotle (Harmonic).** The Lean proofs were written by Aristotle, Harmonic's AI system, from 68 pieces written from the paper ([lean/](lean/README.md)). Nothing was accepted on its word: the Lean kernel checks every proof, and every returned project was compiled again on the author's machine.
+**Aristotle (Harmonic).** The Lean proofs were written by Aristotle, Harmonic's AI system, from 69 pieces written from the paper ([lean/](lean/README.md)). Nothing was accepted on its word: the Lean kernel checks every proof, and every returned project was compiled again on the author's machine.
 
 ## The limits of this
 

@@ -1,0 +1,31 @@
+FoldLaw.DW : ∀ (n : ℕ),
+  1 ≤ n →
+    Nonempty (↥(CubeLaplacian.Syl2 ↥(Fold.KBar n)) ≃+ ↥(FoldGroup.twoM ↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))))
+FoldLaw.DW' : ∀ (n : ℕ),
+  2 ≤ n →
+    ∃ H x,
+      ∃ (_ : Finite H),
+        Nonempty (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n)) ≃+ (Fin (BaiCounts.aN n) → ZMod 2) × H) ∧
+          Nonempty (↥(CubeLaplacian.Syl2 ↥(Fold.KBar n)) ≃+ ↥(FoldGroup.twoM H)) ∧ BaiCounts.l0 H = BaiCounts.l1 H
+FoldLaw.L1 : ∀ (n : ℕ),
+  2 ≤ n → BaiCounts.l0 ↥(CubeLaplacian.Syl2 ↥(Fold.KBar n)) = 2 ^ (2 ^ (n - 1) - 1 - BaiCounts.aN n)
+FoldLaw.R : ∀ (n : ℕ), 2 ≤ n → Module.finrank (ZMod 2) ↥(Fold.lapBar (ZMod 2) n).range = BaiCounts.aN n
+PodiumCor.G1 : ∀ (n : ℕ),
+  3 ≤ n →
+    ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) 1) =
+        max (PodiumCor.gmax n) (↑(Rulers.v2 n) + ↑n - 1) ∧
+      ∀ (r : ℕ), 2 ≤ r → r ≤ n - 1 → ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) r) = PodiumCor.gmax n
+PodiumCor.gmax_two : PodiumCor.gmax 2 = 1
+SmallCases.G1_all : ∀ (n : ℕ),
+  2 ≤ n →
+    ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) 1) =
+        max (PodiumCor.gmax n) (↑(Rulers.v2 n) + ↑n - 1) ∧
+      ∀ (r : ℕ), 2 ≤ r → r ≤ n - 1 → ↑(PodiumCor.cExp (↥(CubeLaplacian.Syl2 ↥(CubeLaplacian.K n))) r) = PodiumCor.gmax n
+SmallCases.S3 : ∀ (A : Type u_1) [inst : CommRing A], Fold.lapBar A 1 = 0
+'SmallCases.T0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SmallCases.S3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SmallCases.DW'_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SmallCases.L1_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SmallCases.R_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SmallCases.G1_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1688304 t=161s

@@ -1,6 +1,6 @@
 # The theorems — a guided tour
 
-This page walks through the results of [the paper](paper/THE_DANCING_SAND_THEOREM_v9.pdf) (version 9) in the order of the proof, says what each one does, and points to the statements a referee should read first. Section and statement numbers are those of version 9, which are those of version 8. The authoritative statements are the paper's; nothing here replaces them.
+This page walks through the results of [the paper](paper/THE_DANCING_SAND_THEOREM_v10.pdf) (version 10) in the order of the proof, says what each one does, and points to the statements a referee should read first. Section and statement numbers are those of version 9, which are those of version 8. The authoritative statements are the paper's; nothing here replaces them.
 
 Notation: `K(Q_n)` is the sandpile group of the `n`-cube, `Syl_2` its `2`-part, `ℤ_2` the `2`-adic integers, `v_2` the `2`-adic valuation, `κ(a, b)` the number of carries in the binary addition `a + b`.
 
@@ -98,10 +98,10 @@ Every result above is checked in Lean 4 with Mathlib (§12.3 of the paper; the [
 | Main Theorem | `MainTheorem.M1` |
 | Theorem D | `Windows.theorem_D_i` |
 | Theorems O and F | Theorems 6.2 and 7.8, among the 68 numbered statements (pieces C4 and C7–C8 of the certificate) |
-| Theorem DW | `FoldLaw.DW`, and for `n ≥ 2` its equivalent form `FoldLaw.DW'` |
-| Corollary 1.4 | `OddParts.C5` (the odd part); the `2`-part is `FoldLaw.DW'` with the Main Theorem |
+| Theorem DW | `FoldLaw.DW`, and its equivalent form `SmallCases.DW'_all` (for `n ≥ 2` it is `FoldLaw.DW'`) |
+| Corollary 1.4 | `OddParts.C5` (the odd part); the `2`-part is `SmallCases.DW'_all` with the Main Theorem |
 | Corollary 1.5 | `BaiCounts.B1`, `BaiCounts.B2` |
-| Corollary 1.6 | `PodiumCor.P1`–`P3`, `PodiumCor.G1`–`G3` (Gao et al.'s Theorem 4.1 for `n ≥ 3`) |
+| Corollary 1.6 | `PodiumCor.P1`–`P3`, `PodiumCor.G1`–`G3`; Gao et al.'s Theorem 4.1 for every `n ≥ 2` is `SmallCases.G1_all` |
 | Corollary 1.7 | `Mirror.Y2` |
 | Bai's odd part of `K(Q_n)` | `OddParts.B1` |
 

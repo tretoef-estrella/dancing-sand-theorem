@@ -1,6 +1,6 @@
 # Where to attack
 
-We believe the proof is correct. If it is not, the error is most likely in one of the places below, and we would rather hear about it than be agreed with. This page names the load-bearing joints of [the paper](paper/THE_DANCING_SAND_THEOREM_v9.pdf) (version 9), in the order in which we would press on them, and says what has already been found there.
+We believe the proof is correct. If it is not, the error is most likely in one of the places below, and we would rather hear about it than be agreed with. This page names the load-bearing joints of [the paper](paper/THE_DANCING_SAND_THEOREM_v10.pdf) (version 10), in the order in which we would press on them, and says what has already been found there.
 
 ## 1. The floor: Theorem 7.8 (Theorem F) and the pooling (§7)
 
@@ -52,7 +52,7 @@ Exactly one golden bijection for every `r`; the proof is an induction on the top
 
 ## The Lean, and what it leaves to attack
 
-Every theorem of the paper is checked in Lean 4 with Mathlib ([lean/](lean/README.md)). That moves the most likely place of an error from the proofs to the **definitions**: if a Lean definition said something other than the paper, Lean would have proved a different theorem. The [certificate](lean/CERTIFICADO/LEAN_CERTIFICATE_DANCING_SAND_v1.pdf), §1.2–§1.3, prints every definition the statements use and compares it with the paper; that is the place to press. What Lean does not state (the pool-adjacent-violators algorithm, the identification with tilting modules, two small cases, the numerical facts) is listed in §12.3 of the paper and §2 of the certificate.
+Every theorem of the paper is checked in Lean 4 with Mathlib ([lean/](lean/README.md)). That moves the most likely place of an error from the proofs to the **definitions**: if a Lean definition said something other than the paper, Lean would have proved a different theorem. The [certificate](lean/CERTIFICADO/LEAN_CERTIFICATE_DANCING_SAND_v2.pdf), §1.2–§1.3 and §1.5, prints every definition the statements use and compares it with the paper; that is the place to press. What Lean does not state (the pool-adjacent-violators algorithm, the identification with tilting modules, the numerical facts) is listed in §12.3 of the paper and §2 of the certificate.
 
 ## How to report
 
