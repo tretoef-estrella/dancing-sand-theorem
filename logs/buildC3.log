@@ -1,0 +1,31 @@
+=== MODULE Basic 19:07:44
+vigia_rc=0
+✔ [8026/8026] Built RequestProject.Rulers.Basic (217s)
+Build completed successfully (8026 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1017280 t=236s
+=== MODULE Family 19:11:40
+vigia_rc=0
+✔ [8027/8027] Built RequestProject.Rulers.Family (184s)
+Build completed successfully (8027 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1141984 t=194s
+=== MODULE Bits 19:14:55
+vigia_rc=0
+✔ [8028/8028] Built RequestProject.Rulers.Bits (161s)
+Build completed successfully (8028 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1316256 t=170s
+=== MODULE CostForm 19:17:45
+vigia_rc=0
+✔ [8029/8029] Built RequestProject.Rulers.CostForm (193s)
+Build completed successfully (8029 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1361152 t=202s
+=== MODULE Clocks 19:21:07
+vigia_rc=0
+✔ [8030/8030] Built RequestProject.Rulers.Clocks (190s)
+Build completed successfully (8030 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1209968 t=198s
+=== MODULE All 19:24:26
+vigia_rc=0
+✔ [8031/8031] Built RequestProject.Rulers.All (205s)
+Build completed successfully (8031 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1089344 t=214s
+BUILD-LOOP-END

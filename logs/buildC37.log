@@ -1,0 +1,36 @@
+=== MODULE Families 21:10:06
+vigia_rc=0
+✔ [8240/8240] Built RequestProject.Mirror.Families (130s)
+Build completed successfully (8240 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1540928 t=138s
+=== MODULE Clocks 21:12:25
+vigia_rc=0
+✔ [8032/8032] Built RequestProject.Mirror.Clocks (104s)
+Build completed successfully (8032 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1556400 t=112s
+=== MODULE Fit 21:14:17
+vigia_rc=0
+✔ [8034/8034] Built RequestProject.Mirror.Fit (109s)
+Build completed successfully (8034 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1516352 t=117s
+=== MODULE Theorem 21:16:14
+vigia_rc=0
+✔ [8242/8242] Built RequestProject.Mirror.Theorem (115s)
+Build completed successfully (8242 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1577904 t=122s
+=== MODULE Exps 21:18:17
+vigia_rc=0
+✔ [8246/8246] Built RequestProject.Mirror.Exps (103s)
+Build completed successfully (8246 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1595136 t=110s
+=== MODULE Group 21:20:08
+vigia_rc=0
+✔ [8247/8247] Built RequestProject.Mirror.Group (95s)
+Build completed successfully (8247 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1661152 t=103s
+=== MODULE All 21:21:51
+vigia_rc=0
+✔ [8248/8248] Built RequestProject.Mirror.All (89s)
+Build completed successfully (8248 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1691200 t=97s
+BUILD-LOOP-END

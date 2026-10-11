@@ -1,0 +1,38 @@
+=== MODULE Defs 06:51:22
+vigia_rc=0
+✔ [8259/8259] Built RequestProject.FoldHalf.Defs (273s)
+Build completed successfully (8259 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=992256 t=290s
+=== MODULE Ops 06:56:13
+vigia_rc=0
+✔ [8260/8260] Built RequestProject.FoldHalf.Ops (196s)
+Build completed successfully (8260 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1118176 t=206s
+=== MODULE Quot 06:59:39
+=== RESUME after a background-timeout kill (my error) 07:01:35
+=== MODULE Quot 07:01:35
+vigia_rc=0
+✔ [8026/8026] Built RequestProject.FoldHalf.Quot (89s)
+Build completed successfully (8026 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1699968 t=97s
+=== MODULE PartS 07:03:13
+vigia_rc=0
+✔ [8261/8261] Built RequestProject.FoldHalf.PartS (160s)
+Build completed successfully (8261 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1296672 t=168s
+=== MODULE PartE 07:06:02
+vigia_rc=0
+✔ [8262/8262] Built RequestProject.FoldHalf.PartE (186s)
+Build completed successfully (8262 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1119600 t=195s
+=== MODULE PartA 07:09:18
+vigia_rc=0
+✔ [8264/8264] Built RequestProject.FoldHalf.PartA (188s)
+Build completed successfully (8264 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1276384 t=196s
+=== MODULE All 07:12:34
+vigia_rc=0
+✔ [8265/8265] Built RequestProject.FoldHalf.All (173s)
+Build completed successfully (8265 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1275136 t=182s
+BUILD-LOOP-END

@@ -1,0 +1,31 @@
+=== MODULE Sub 11:37:31
+vigia_rc=0
+✔ [8091/8091] Built RequestProject.Filt.Sub (131s)
+Build completed successfully (8091 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1473280 t=140s
+=== MODULE PartI 11:39:51
+vigia_rc=0
+✔ [8092/8092] Built RequestProject.Filt.PartI (158s)
+Build completed successfully (8092 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1286496 t=167s
+=== MODULE PartE 11:42:39
+vigia_rc=0
+✔ [8093/8093] Built RequestProject.Filt.PartE (119s)
+Build completed successfully (8093 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1487168 t=127s
+=== MODULE PartV 11:44:46
+vigia_rc=0
+✔ [8100/8100] Built RequestProject.Filt.PartV (104s)
+Build completed successfully (8100 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1497280 t=111s
+=== MODULE PartT 11:46:38
+vigia_rc=0
+✔ [8101/8101] Built RequestProject.Filt.PartT (96s)
+Build completed successfully (8101 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1553184 t=104s
+=== MODULE All 11:48:22
+vigia_rc=0
+✔ [8102/8102] Built RequestProject.Filt.All (83s)
+Build completed successfully (8102 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1659152 t=90s
+BUILD-LOOP-END
