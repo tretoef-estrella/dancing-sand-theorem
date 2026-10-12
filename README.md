@@ -2,7 +2,7 @@
 
 ### The 2-part of the sandpile group of the hypercube, for every n
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23188298.svg)](https://doi.org/10.5281/zenodo.23188298) [![Lean certificate DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23296707.svg)](https://doi.org/10.5281/zenodo.23296707) [![Lean build](https://github.com/tretoef-estrella/dancing-sand-theorem/actions/workflows/lean-build.yml/badge.svg)](https://github.com/tretoef-estrella/dancing-sand-theorem/actions/workflows/lean-build.yml)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23188298-blue.svg)](https://doi.org/10.5281/zenodo.23188298) [![Lean certificate DOI](https://img.shields.io/badge/Lean_certificate_DOI-10.5281%2Fzenodo.23296707-blue.svg)](https://doi.org/10.5281/zenodo.23296707) [![Lean build](https://github.com/tretoef-estrella/dancing-sand-theorem/actions/workflows/lean-build.yml/badge.svg)](https://github.com/tretoef-estrella/dancing-sand-theorem/actions/workflows/lean-build.yml)
 
 **Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint, version 10, 11 October 2026
 
