@@ -113,3 +113,7 @@ Rafa kept a Chrome window open and solved two captchas; the auditor read the pag
   - Chhetri et al. 2025 and Rigobert et al. 2026 are other objects.
 
 **Verdict of §6:** the gap of §5 for Scholar is CLOSED. No paper of 2025 or 2026 on the 2-part of the hypercube's critical group was found. The novelty sentence of §4 stands. MathSciNet remains unchecked (subscription).
+
+## Correction, 14 October 2026
+
+The verdict on claim C3 in §0, «OURS: proved; no other proof found», is wrong for Gao et al.'s Conjecture 4.14. D. N. Betzer proved it earlier, in a preprint of August 2026 on Zenodo (doi:10.5281/zenodo.22065778), through Gao et al.'s Remark 4.13, which they state without proof. This search did not reach Zenodo: his preprint did not appear among the citations of Gao et al. in Google Scholar when we searched, and it is not on the arXiv. We learned of his paper on 13 October 2026 and searched Zenodo and Hexagon that day; no other work on the 2-part of the sandpile group of the cube was found there. Our proof of Conjecture 4.14 does not use that remark. The rest of C3 (Conjecture 5.4 and the `(n+1)`-th factor of the poster) stands. Version 11 of the paper credits him (abstract, §1.0, §1.1, the remark after Corollary 1.6, §1.8, §13, Appendix A, references). The file above is left as it was written.

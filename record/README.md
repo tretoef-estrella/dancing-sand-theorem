@@ -1,6 +1,6 @@
 # The record
 
-This folder holds the record of how the proofs of [the paper](../paper/THE_DANCING_SAND_THEOREM_v10.pdf) were found and checked. It is a selection: the documents needed to see who checked what, with which code, and what each reader found. They are working documents, not refereed, mostly in English, with some passages in Spanish (the author's words are kept verbatim). **Where they differ from the paper, the paper is authoritative.**
+This folder holds the record of how the proofs of [the paper](../paper/THE_DANCING_SAND_THEOREM_v11.pdf) were found and checked. It is a selection: the documents needed to see who checked what, with which code, and what each reader found. They are working documents, not refereed, mostly in English, with some passages in Spanish (the author's words are kept verbatim). **Where they differ from the paper, the paper is authoritative.**
 
 The roles are described in [THE_STORY_AND_THE_NUMBERS.md](../THE_STORY_AND_THE_NUMBERS.md):
 - the **constructors** found the proofs, one «flight» each;
@@ -67,13 +67,14 @@ The constructors' engines and logs are not included. The audits name them, and t
 
 ## Corrections — [corrections/](corrections/)
 
-What changed from each version of the paper to the next, with the source of each change: the report that asked for it, or the auditor's own finding. The Markdown of versions 1 to 8 is in [../paper/earlier-versions/](../paper/earlier-versions/), so every quotation in a report can be found in the version it quotes.
+What changed from each version of the paper to the next, with the source of each change: the report that asked for it, or the auditor's own finding. The Markdown of versions 1 to 10 is in [../paper/earlier-versions/](../paper/earlier-versions/), so every quotation in a report can be found in the version it quotes.
 
 ## Literature — [literature/](literature/)
 
 - [LITERATURE_SWEEP.md](literature/LITERATURE_SWEEP.md): the search behind §1.8 of the paper. It holds the query log, the sources read in the original, and the verdict on each claim (ours, others', shared).
 - [SWEEP_NOVELTY_OF_THEOREM_D.md](literature/SWEEP_NOVELTY_OF_THEOREM_D.md): the search for an earlier tilting decomposition of a sandpile group. None was found.
 - [BAI_2003_READ_IN_THE_ORIGINAL.md](literature/BAI_2003_READ_IN_THE_ORIGINAL.md): Bai's paper, read in the original.
+- The search above missed one earlier proof: D. N. Betzer's preprint of August 2026 on Zenodo ([doi.org/10.5281/zenodo.22065778](https://doi.org/10.5281/zenodo.22065778)), which proves Gao et al.'s Conjecture 4.14 through their Remark 4.13. It did not appear among the citations of Gao et al. in Google Scholar when we searched, and it is not on the arXiv. We learned of it on 13 October 2026 and searched Zenodo and Hexagon that day; version 11 of the paper credits it ([corrections/CORRECTIONS_v10_to_v11.md](corrections/CORRECTIONS_v10_to_v11.md)), and a correction is appended to [LITERATURE_SWEEP.md](literature/LITERATURE_SWEEP.md#correction-14-october-2026).
 
 ---
 

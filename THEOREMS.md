@@ -1,6 +1,6 @@
 # The theorems — a guided tour
 
-This page walks through the results of [the paper](paper/THE_DANCING_SAND_THEOREM_v10.pdf) (version 10) in the order of the proof, says what each one does, and points to the statements a referee should read first. Section and statement numbers are those of version 9, which are those of version 8. The authoritative statements are the paper's; nothing here replaces them.
+This page walks through the results of [the paper](paper/THE_DANCING_SAND_THEOREM_v11.pdf) (version 11) in the order of the proof, says what each one does, and points to the statements a referee should read first. Section and statement numbers are those of version 11, which are those of version 8. The authoritative statements are the paper's; nothing here replaces them.
 
 Notation: `K(Q_n)` is the sandpile group of the `n`-cube, `Syl_2` its `2`-part, `ℤ_2` the `2`-adic integers, `v_2` the `2`-adic valuation, `κ(a, b)` the number of carries in the binary addition `a + b`.
 
@@ -59,7 +59,7 @@ The decomposition is proved here; it is not cited from the general theory of til
 
 ### 7. The consequences (§9)
 - **Corollary 1.5**: Bai's two counts.
-- **Corollary 1.6 (the podium)**: the `n + 1` largest cyclic factors. It re-proves Gao et al.'s Theorems 4.1–4.2, and proves their Conjecture 4.14 and the `(n+1)`-th factor stated on the 2019 poster.
+- **Corollary 1.6 (the podium)**: the `n + 1` largest cyclic factors. It re-proves Gao et al.'s Theorems 4.1–4.2, proves their Conjecture 4.14 without their Remark 4.13 (D. N. Betzer proved it earlier, through that remark, which they state without proof), and proves the `(n+1)`-th factor stated on the 2019 poster.
 - **Corollary 1.7 / Theorem 9.10 (the mirror that doubles)**: Gao et al.'s Conjecture 5.4. Each dancer of the cube of dimension `2^e − 1` becomes two dancers with the same raw clock in dimension `2^e`.
 
 ### 8. The fold law (§10)

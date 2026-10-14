@@ -2,7 +2,7 @@
 
 ## The paper
 
-> Amichis Luengo, R. (2026). *The Dancing Sand Theorem — the 2-part of the sandpile group of the hypercube, for every n* (Preprint, version 10). Zenodo. https://doi.org/10.5281/zenodo.23188298
+> Amichis Luengo, R. (2026). *The Dancing Sand Theorem — the 2-part of the sandpile group of the hypercube, for every n* (Preprint, version 11). Zenodo. https://doi.org/10.5281/zenodo.23188298
 
 ```bibtex
 @misc{AmichisLuengo2026DancingSand,
@@ -11,14 +11,14 @@
                   hypercube, for every $n$},
   year         = {2026},
   month        = oct,
-  howpublished = {Preprint, version 10},
+  howpublished = {Preprint, version 11},
   publisher    = {Zenodo},
   doi          = {10.5281/zenodo.23188298},
   url          = {https://doi.org/10.5281/zenodo.23188298}
 }
 ```
 
-- **The DOI above is the concept DOI**: it always resolves to the latest version. To cite version 10 exactly, use **10.5281/zenodo.23298437** (version 9: 10.5281/zenodo.23296785; version 8: 10.5281/zenodo.23188299). Version 8 was the first public version; versions 1 to 7 were not made public. The Markdown of versions 1 to 9 is in [paper/earlier-versions/](paper/earlier-versions/).
+- **The DOI above is the concept DOI**: it always resolves to the latest version. To cite version 11 exactly, use **10.5281/zenodo.23356712** (version 10: 10.5281/zenodo.23298437; version 9: 10.5281/zenodo.23296785; version 8: 10.5281/zenodo.23188299). Version 8 was the first public version; versions 1 to 7 were not made public. The Markdown of versions 1 to 10 is in [paper/earlier-versions/](paper/earlier-versions/).
 - **The surname is *Amichis Luengo*** (two surnames, Spanish usage). Please keep them together and in this order: *Amichis Luengo, R.* in a reference list, *Amichis Luengo* in the text — not *Luengo, R. A.*
 - ORCID: [0009-0008-6252-675X](https://orcid.org/0009-0008-6252-675X).
 

@@ -1,6 +1,6 @@
 # The story and the numbers
 
-How the 2-part of the sandpile group of the cube was found and checked, told as it happened, with the dead ends and the failed predictions. The mathematics stands on its own, in [the paper](paper/THE_DANCING_SAND_THEOREM_v10.pdf); this page is the record of how it was made.
+How the 2-part of the sandpile group of the cube was found and checked, told as it happened, with the dead ends and the failed predictions. The mathematics stands on its own, in [the paper](paper/THE_DANCING_SAND_THEOREM_v11.pdf); this page is the record of how it was made.
 
 ## Who did what
 
@@ -30,7 +30,7 @@ Every computation ran inside a watchdog that limits memory and time. A result co
 Then the auditor read the proof of Theorem F by hand, step by step, and ran his own engine on every family `λ ≤ 254` with no failure. The rule held for every `n`, on two readings.
 
 **The trophies and the fold.**
-- **Flight 5** proved Gao et al.'s Conjecture 4.14 and the `(n+1)`-th factor of the 2019 poster.
+- **Flight 5** proved Gao et al.'s Conjecture 4.14 and the `(n+1)`-th factor of the 2019 poster. (D. N. Betzer had proved Conjecture 4.14 in August 2026, through a remark of Gao et al. stated without proof; we did not know of his paper until 13 October. §1.8 of the paper.)
 - **Flight 6** proved Conjecture 5.4, and the fold law up to `n = 21`.
 - **Flights 7 and 8** carried the fold law to every `n ≤ 100`, then to every `n ≤ 144`, and proved its mod-2 layer for every `n`. They did not close it.
 - **The first cold reader** read the chain of the Main Theorem and wrote: «holds».

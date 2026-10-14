@@ -4,11 +4,11 @@
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23188298-blue.svg)](https://doi.org/10.5281/zenodo.23188298) [![Lean certificate DOI](https://img.shields.io/badge/Lean_certificate_DOI-10.5281%2Fzenodo.23296707-blue.svg)](https://doi.org/10.5281/zenodo.23296707) [![Lean build](https://github.com/tretoef-estrella/dancing-sand-theorem/actions/workflows/lean-build.yml/badge.svg)](https://github.com/tretoef-estrella/dancing-sand-theorem/actions/workflows/lean-build.yml) [![Hexagon](https://img.shields.io/badge/Hexagon-2610.00205-6f42c1.svg)](https://hexagonmath.org/2610.00205)
 
-**Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint, version 10, 11 October 2026
+**Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint, version 11, 14 October 2026
 
-> **Status.** A complete proof, published as a preprint. Every step has a written proof that can be checked with pencil and paper; no step uses a computer. Before release the proofs were re-derived by auditors who had not written them, and there were thirteen cold readings — two of the chains of proof, nine of the text, one of the Lean certificate, and one of the last changes of the text and of the certificate — by readers who had not watched it being written: AI systems, all of them instances of Claude. One gap was found, in the first version of the text, and repaired; no theorem was affected ([record/](record/README.md)). **The whole proof has also been checked in the proof assistant Lean 4, with nothing cited** ([below](#formal-verification-in-lean-4)), **and GitHub's own machines have built that Lean proof from the published files** ([Lean build](https://github.com/tretoef-estrella/dancing-sand-theorem/actions/workflows/lean-build.yml)). **It has not been refereed by a human expert.**
+> **Status.** A complete proof, published as a preprint. Every step has a written proof that can be checked with pencil and paper; no step uses a computer. Before release the proofs were re-derived by auditors who had not written them, and there were thirteen cold readings — two of the chains of proof, nine of the text, one of the Lean certificate, and one of the last changes of the text and of the certificate — by readers who had not watched it being written: AI systems, all of them instances of Claude. One gap was found, in the first version of the text, and repaired; no theorem was affected ([record/](record/README.md)). Version 11 credits an earlier proof of one of the conjectures, by another author ([below](#literature-and-priority)); that change touches no statement, proof or number, and was checked against its sources and not read cold. **The whole proof has also been checked in the proof assistant Lean 4, with nothing cited** ([below](#formal-verification-in-lean-4)), **and GitHub's own machines have built that Lean proof from the published files** ([Lean build](https://github.com/tretoef-estrella/dancing-sand-theorem/actions/workflows/lean-build.yml)). **It has not been refereed by a human expert.**
 
-**Read the paper:** [paper/THE_DANCING_SAND_THEOREM_v10.pdf](paper/THE_DANCING_SAND_THEOREM_v10.pdf) · [Markdown source](paper/THE_DANCING_SAND_THEOREM_v10.md) · permanent archive: [doi.org/10.5281/zenodo.23188298](https://doi.org/10.5281/zenodo.23188298) (this version: [doi.org/10.5281/zenodo.23298437](https://doi.org/10.5281/zenodo.23298437)) · also on [Hexagon](https://hexagonmath.org/): [hexagon:2610.00205](https://hexagonmath.org/2610.00205) · **Lean certificate:** [lean/](lean/README.md), [doi.org/10.5281/zenodo.23296707](https://doi.org/10.5281/zenodo.23296707)
+**Read the paper:** [paper/THE_DANCING_SAND_THEOREM_v11.pdf](paper/THE_DANCING_SAND_THEOREM_v11.pdf) · [Markdown source](paper/THE_DANCING_SAND_THEOREM_v11.md) · permanent archive: [doi.org/10.5281/zenodo.23188298](https://doi.org/10.5281/zenodo.23188298) (this version: [doi.org/10.5281/zenodo.23356712](https://doi.org/10.5281/zenodo.23356712)) · also on [Hexagon](https://hexagonmath.org/): [hexagon:2610.00205](https://hexagonmath.org/2610.00205) · **Lean certificate:** [lean/](lean/README.md), [doi.org/10.5281/zenodo.23296707](https://doi.org/10.5281/zenodo.23296707)
 
 ---
 
@@ -58,7 +58,7 @@ With the known odd part this gives the whole sandpile group of the folded cube (
 | **Theorem DW** | the fold law, `Syl_2 K(Q_n/⟨𝟙⟩) ≅ 2·Syl_2 K(Q_n)` | proved; read cold; in Lean |
 | **Corollary 1.4** | the whole sandpile group of the folded cube | proved; in Lean |
 | **Corollary 1.5** | Bai's two counts (Reiner's conjectures), re-proved from the rule | re-proof of a known result; in Lean |
-| **Corollary 1.6** | the `n + 1` largest cyclic factors: Gao et al.'s Theorems 4.1–4.2 (known), **their Conjecture 4.14, and the `(n+1)`-th factor of the 2019 poster** | the conjectures are new proofs; in Lean |
+| **Corollary 1.6** | the `n + 1` largest cyclic factors: Gao et al.'s Theorems 4.1–4.2 (known), **their Conjecture 4.14, and the `(n+1)`-th factor of the 2019 poster** | the `(n+1)`-th factor: a new proof; Conjecture 4.14: proved earlier by Betzer through a remark of Gao et al. stated without proof, which our proof does not use; in Lean |
 | **Corollary 1.7** | `Syl_2 K(Q_{2^e}) ≅ Syl_2 K(Q_{2^e−1})^2 ⊕ ℤ/2^{2^e+e−1}`: **Gao et al.'s Conjecture 5.4** | new proof; in Lean |
 
 «In Lean»: checked in Lean 4 with Mathlib, for every `n` for which the paper states the result. A guided tour of these results, with the lemmas a referee should look at first and their Lean names, is in **[THEOREMS.md](THEOREMS.md)**.
@@ -93,9 +93,9 @@ The paper's own proof of the family decomposition does not cite the theory of ti
 
 ## Literature and priority
 
-Before release we searched the literature in depth and honestly: arXiv and journal searches, the citation trees of Bai (2003), Chandler–Sin–Xiang (2017) and Gao et al. (2024) in Google Scholar and Semantic Scholar, and every source cited in the paper, read in the original (MathSciNet was not searched). The query log and the verdict per claim are in [record/literature/](record/literature/LITERATURE_SWEEP.md).
+Before release we searched the literature in depth and honestly: arXiv and journal searches, the citation trees of Bai (2003), Chandler–Sin–Xiang (2017) and Gao et al. (2024) in Google Scholar and Semantic Scholar, and every source cited in the paper, read in the original (MathSciNet was not searched); on 13 October 2026, the preprint servers Zenodo and Hexagon. The query log and the verdict per claim are in [record/literature/](record/literature/LITERATURE_SWEEP.md).
 
-**As far as we know, these are new:** the whole 2-part of `K(Q_n)` for every `n`; the decomposition of a sandpile group over tilting modules, with the reduction of each piece to a small explicit matrix; proofs of Gao et al.'s Conjectures 4.14 and 5.4 and of the `(n+1)`-th factor of the 2019 poster; the fold law and the sandpile group of the folded cube; and the proof techniques of §4–§7 and §10 as combinations. **What is not ours** is credited in §1.8 of the paper: Bai's odd part and counts; Gao et al.'s largest factors, change of variables and Table 1; Chandler–Sin–Xiang's monomial basis for the Smith group; the tilting multiplicities (Donkin, Larsen, Tubbenhauer–Wedrich); the classical tools (Kummer, Legendre, von Staudt–Clausen, Strassmann, pool-adjacent-violators).
+**As far as we know, these are new:** the whole 2-part of `K(Q_n)` for every `n`; the decomposition of a sandpile group over tilting modules, with the reduction of each piece to a small explicit matrix; proofs of Gao et al.'s Conjecture 5.4 and of the `(n+1)`-th factor of the 2019 poster, and a proof of their Conjecture 4.14 that does not use their Remark 4.13; the fold law and the sandpile group of the folded cube; and the proof techniques of §4–§7 and §10 as combinations. **What is not ours** is credited in §1.8 of the paper: Bai's odd part and counts; Gao et al.'s largest factors, change of variables and Table 1; D. N. Betzer's earlier proof of Conjecture 4.14 (preprint, Zenodo, August 2026, [doi.org/10.5281/zenodo.22065778](https://doi.org/10.5281/zenodo.22065778)), which takes from Gao et al.'s Remark 4.13, stated there without proof, the identification of the `n`-th factor with an order that he computes (we learned of his paper on 13 October 2026, after our proof was written, and earlier versions did not cite it); Chandler–Sin–Xiang's monomial basis for the Smith group; the tilting multiplicities (Donkin, Larsen, Tubbenhauer–Wedrich); the classical tools (Kummer, Legendre, von Staudt–Clausen, Strassmann, pool-adjacent-violators).
 
 **If a result here was obtained earlier, we would be grateful to be told, and we will correct the record.**
 
@@ -112,8 +112,8 @@ The author asked four AIs, Claude among them, whether this problem could be solv
 ## Repository map
 
 ```
-paper/                    the paper, version 10 (PDF and Markdown source);
-                          earlier-versions/  the Markdown of versions 1 to 9
+paper/                    the paper, version 11 (PDF and Markdown source);
+                          earlier-versions/  the Markdown of versions 1 to 10
 lean/                     the Lean 4 proof: the certificate (CERTIFICADO/), the project (proyecto_cubo/),
                           the 69 pieces (pieces/), their brute-force checks (brute_force/), the build scripts (build/),
                           the audit log (audit/), the clean rebuild (clean_rebuild/)
@@ -135,4 +135,4 @@ WHERE_TO_ATTACK.md        the load-bearing joints of the proof
 
 [CITATION.md](CITATION.md) · [LICENSE-TEXT.md](LICENSE-TEXT.md) · [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md) · [THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md) · [A_PERSONAL_NOTE.md](A_PERSONAL_NOTE.md)
 
-*Cite as:* Amichis Luengo, R. (2026). *The Dancing Sand Theorem — the 2-part of the sandpile group of the hypercube, for every n* (preprint, version 10). Zenodo. https://doi.org/10.5281/zenodo.23188298
+*Cite as:* Amichis Luengo, R. (2026). *The Dancing Sand Theorem — the 2-part of the sandpile group of the hypercube, for every n* (preprint, version 11). Zenodo. https://doi.org/10.5281/zenodo.23188298
