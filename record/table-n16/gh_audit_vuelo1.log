@@ -1,0 +1,18 @@
+PASS full n=2 rule= {2: 1} Z= 1
+PASS full n=3 rule= {1: 1, 3: 2} Z= 1
+PASS full n=4 rule= {1: 2, 3: 4, 5: 1} Z= 1
+PASS full n=5 rule= {1: 6, 3: 4, 4: 1, 6: 4} Z= 1
+PASS full n=6 rule= {1: 12, 2: 4, 3: 1, 5: 4, 6: 10} Z= 1
+PASS full n=7 rule= {1: 28, 2: 1, 4: 8, 5: 6, 6: 14, 7: 6} Z= 1
+PASS full n=8 rule= {1: 56, 2: 2, 4: 16, 5: 12, 6: 28, 7: 12, 10: 1} Z= 1
+PASS full n=9 rule= {1: 120, 2: 10, 4: 16, 5: 26, 6: 48, 7: 26, 9: 1, 11: 8} Z= 1
+PASS full n=10 rule= {1: 240, 2: 36, 3: 26, 5: 16, 6: 148, 8: 1, 10: 26, 11: 18} Z= 1
+PASS full n=11 rule= {1: 496, 2: 66, 3: 32, 4: 100, 6: 164, 7: 1, 9: 100, 11: 64} Z= 1
+PASS full n=12 rule= {1: 992, 2: 132, 3: 64, 4: 200, 5: 164, 6: 1, 8: 164, 9: 201, 11: 128, 13: 1} Z= 1
+PASS full n=13 rule= {1: 2016, 2: 364, 3: 64, 4: 364, 5: 1, 7: 560, 8: 12, 9: 364, 10: 1, 11: 336, 12: 1, 14: 12} Z= 1
+PASS layers n=14 rule= (4032, 792, 3368) mine= (4032, 792, 3368)
+PASS layers n=15 rule= (8128, 1820, 6436) mine= (8128, 1820, 6436)
+PASS layers n=16 rule= (16256, 3640, 12872) mine= (16256, 3640, 12872)
+CONTROL perturbed rule: mismatching cells = 8 (must be > 0)
+END fails= []
+VIGIA-FIN-OK exit=0 pico_kb=21136 t=0s

@@ -4,11 +4,11 @@
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23188298-blue.svg)](https://doi.org/10.5281/zenodo.23188298) [![Lean certificate DOI](https://img.shields.io/badge/Lean_certificate_DOI-10.5281%2Fzenodo.23296707-blue.svg)](https://doi.org/10.5281/zenodo.23296707) [![Lean build](https://github.com/tretoef-estrella/dancing-sand-theorem/actions/workflows/lean-build.yml/badge.svg)](https://github.com/tretoef-estrella/dancing-sand-theorem/actions/workflows/lean-build.yml) [![Hexagon](https://img.shields.io/badge/Hexagon-2610.00205-6f42c1.svg)](https://hexagonmath.org/2610.00205)
 
-**Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint, version 11, 14 October 2026
+**Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint, version 12, 21 October 2026
 
-> **Status.** A complete proof, published as a preprint. Every step has a written proof that can be checked with pencil and paper; no step uses a computer. Before release the proofs were re-derived by auditors who had not written them, and there were thirteen cold readings — two of the chains of proof, nine of the text, one of the Lean certificate, and one of the last changes of the text and of the certificate — by readers who had not watched it being written: AI systems, all of them instances of Claude. One gap was found, in the first version of the text, and repaired; no theorem was affected ([record/](record/README.md)). Version 11 credits an earlier proof of one of the conjectures, by another author ([below](#literature-and-priority)); that change touches no statement, proof or number, and was checked against its sources and not read cold. **The whole proof has also been checked in the proof assistant Lean 4, with nothing cited** ([below](#formal-verification-in-lean-4)), **and GitHub's own machines have built that Lean proof from the published files** ([Lean build](https://github.com/tretoef-estrella/dancing-sand-theorem/actions/workflows/lean-build.yml)). **It has not been refereed by a human expert.**
+> **Status.** A complete proof, published as a preprint. Every step has a written proof that can be checked with pencil and paper; no step uses a computer. Before release the proofs were re-derived by auditors who had not written them, and there were thirteen cold readings — two of the chains of proof, nine of the text, one of the Lean certificate, and one of the last changes of the text and of the certificate — by readers who had not watched it being written: AI systems, all of them instances of Claude. One gap was found, in the first version of the text, and repaired; no theorem was affected ([record/](record/README.md)). Version 11 credits an earlier proof of one of the conjectures, by another author ([below](#literature-and-priority)); that change touches no statement, proof or number, and was checked against its sources and not read cold. Version 12 adds a table of the groups for `n ≤ 16` ([below](#the-first-values), §1.9 of the paper); it adds no statement and was not read cold. **The whole proof has also been checked in the proof assistant Lean 4, with nothing cited** ([below](#formal-verification-in-lean-4)), **and GitHub's own machines have built that Lean proof from the published files** ([Lean build](https://github.com/tretoef-estrella/dancing-sand-theorem/actions/workflows/lean-build.yml)). **It has not been refereed by a human expert.**
 
-**Read the paper:** [paper/THE_DANCING_SAND_THEOREM_v11.pdf](paper/THE_DANCING_SAND_THEOREM_v11.pdf) · [Markdown source](paper/THE_DANCING_SAND_THEOREM_v11.md) · permanent archive: [doi.org/10.5281/zenodo.23188298](https://doi.org/10.5281/zenodo.23188298) (this version: [doi.org/10.5281/zenodo.23356712](https://doi.org/10.5281/zenodo.23356712)) · also on [Hexagon](https://hexagonmath.org/): [hexagon:2610.00205](https://hexagonmath.org/2610.00205) · **Lean certificate:** [lean/](lean/README.md), [doi.org/10.5281/zenodo.23296707](https://doi.org/10.5281/zenodo.23296707)
+**Read the paper:** [paper/THE_DANCING_SAND_THEOREM_v12.pdf](paper/THE_DANCING_SAND_THEOREM_v12.pdf) · [Markdown source](paper/THE_DANCING_SAND_THEOREM_v12.md) · permanent archive: [doi.org/10.5281/zenodo.23188298](https://doi.org/10.5281/zenodo.23188298) (this version: [doi.org/10.5281/zenodo.23529180](https://doi.org/10.5281/zenodo.23529180)) · also on [Hexagon](https://hexagonmath.org/): [hexagon:2610.00205](https://hexagonmath.org/2610.00205) · **Lean certificate:** [lean/](lean/README.md), [doi.org/10.5281/zenodo.23296707](https://doi.org/10.5281/zenodo.23296707)
 
 ---
 
@@ -33,7 +33,9 @@ Each family `λ` contributes a group `X(λ, i)` made of explicit small cyclic fa
 
 With the known odd part this gives the whole sandpile group of the folded cube (Corollary 1.4), which we found computed nowhere. The fold law also explains a coincidence that Gao et al. had noticed and left open («We are not sure if that is a coincident, or a special case of some deeper connection», Remark 2.13).
 
-**The first values,** computed by the rule and checked against the 2-adic Smith form of the Laplacian computed directly (exponents `e: c` mean `(ℤ/2^e)^c`; log: [checks/logs/gate_direct_11.log](checks/logs/gate_direct_11.log)):
+### The first values
+
+Computed by the rule (exponents `e: c` mean `(ℤ/2^e)^c`). Rows `n ≤ 11` agree entry by entry with Bai's table (2003) and with the 2-adic Smith form of the Laplacian computed directly (log: [checks/logs/gate_direct_11.log](checks/logs/gate_direct_11.log)); rows 12 and 13 also agree with the direct Smith form; rows 14 to 16 were computed by two separate programs for the rule, and their numbers of factors of order 2, 4 and at least 8 by a third program that does not use the rule. The logs are in [record/table-n16/](record/table-n16/README.md); the table is §1.9 of the paper.
 
 | `n` | `Syl_2 K(Q_n)` | `Syl_2 K(Q_n/⟨𝟙⟩)` |
 |---|---|---|
@@ -47,6 +49,11 @@ With the known odd part this gives the whole sandpile group of the folded cube (
 | 9 | `{1: 120, 2: 10, 4: 16, 5: 26, 6: 48, 7: 26, 9: 1, 11: 8}` | `{1: 10, 3: 16, 4: 26, 5: 48, 6: 26, 8: 1, 10: 8}` |
 | 10 | `{1: 240, 2: 36, 3: 26, 5: 16, 6: 148, 8: 1, 10: 26, 11: 18}` | `{1: 36, 2: 26, 4: 16, 5: 148, 7: 1, 9: 26, 10: 18}` |
 | 11 | `{1: 496, 2: 66, 3: 32, 4: 100, 6: 164, 7: 1, 9: 100, 11: 64}` | `{1: 66, 2: 32, 3: 100, 5: 164, 6: 1, 8: 100, 10: 64}` |
+| 12 | `{1: 992, 2: 132, 3: 64, 4: 200, 5: 164, 6: 1, 8: 164, 9: 201, 11: 128, 13: 1}` | `{1: 132, 2: 64, 3: 200, 4: 164, 5: 1, 7: 164, 8: 201, 10: 128, 12: 1}` |
+| 13 | `{1: 2016, 2: 364, 3: 64, 4: 364, 5: 1, 7: 560, 8: 12, 9: 364, 10: 1, 11: 336, 12: 1, 14: 12}` | `{1: 364, 2: 64, 3: 364, 4: 1, 6: 560, 7: 12, 8: 364, 9: 1, 10: 336, 11: 1, 13: 12}` |
+| 14 | `{1: 4032, 2: 792, 3: 364, 4: 1, 6: 64, 7: 1848, 8: 26, 9: 64, 10: 364, 11: 546, 13: 64, 14: 26}` | `{1: 792, 2: 364, 3: 1, 5: 64, 6: 1848, 7: 26, 8: 64, 9: 364, 10: 546, 12: 64, 13: 26}` |
+| 15 | `{1: 8128, 2: 1820, 3: 1, 5: 128, 6: 1288, 7: 1926, 8: 1378, 9: 14, 10: 336, 11: 910, 12: 336, 13: 14, 14: 90, 15: 14}` | `{1: 1820, 2: 1, 4: 128, 5: 1288, 6: 1926, 7: 1378, 8: 14, 9: 336, 10: 910, 11: 336, 12: 14, 13: 90, 14: 14}` |
+| 16 | `{1: 16256, 2: 3640, 3: 2, 5: 256, 6: 2576, 7: 3852, 8: 2756, 9: 28, 10: 672, 11: 1820, 12: 672, 13: 28, 14: 180, 15: 28, 19: 1}` | `{1: 3640, 2: 2, 4: 256, 5: 2576, 6: 3852, 7: 2756, 8: 28, 9: 672, 10: 1820, 11: 672, 12: 28, 13: 180, 14: 28, 18: 1}` |
 
 **In plain words.** Write the sandpile group inside the group ring of `(ℤ/2)^n`: there the Laplacian becomes an element of the algebra of `SL_2`, and the cube becomes the `n`-th tensor power of the natural two-dimensional module. At the prime `2` that tensor power breaks into indecomposable pieces — tilting modules — and the group breaks with it, one piece at a time. Each piece is built from the trivial module by reading the binary digits of `λ + 1` from the bottom: at a digit `0` the piece is doubled, at a digit `1` it is doubled and every «dancer» splits into two partners. Eliminating the unit pivots at each step leaves, at the end, a small triangular matrix indexed by the dancers. Its Smith form is the hard part: an upper bound from a unique cheapest matching, a lower bound from a potential built digit by digit, and the two meet exactly at the pooled clocks. The fold law is the same dance performed on the folded cube: the antipodal involution acts on every piece as `±exp(F)`, and after the dance the group of each folded piece is exactly twice the group of the unfolded one.
 
@@ -112,8 +119,8 @@ The author asked four AIs, Claude among them, whether this problem could be solv
 ## Repository map
 
 ```
-paper/                    the paper, version 11 (PDF and Markdown source);
-                          earlier-versions/  the Markdown of versions 1 to 10
+paper/                    the paper, version 12 (PDF and Markdown source);
+                          earlier-versions/  the Markdown of versions 1 to 11
 lean/                     the Lean 4 proof: the certificate (CERTIFICADO/), the project (proyecto_cubo/),
                           the 69 pieces (pieces/), their brute-force checks (brute_force/), the build scripts (build/),
                           the audit log (audit/), the clean rebuild (clean_rebuild/)
@@ -135,4 +142,4 @@ WHERE_TO_ATTACK.md        the load-bearing joints of the proof
 
 [CITATION.md](CITATION.md) · [LICENSE-TEXT.md](LICENSE-TEXT.md) · [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md) · [THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md) · [A_PERSONAL_NOTE.md](A_PERSONAL_NOTE.md)
 
-*Cite as:* Amichis Luengo, R. (2026). *The Dancing Sand Theorem — the 2-part of the sandpile group of the hypercube, for every n* (preprint, version 11). Zenodo. https://doi.org/10.5281/zenodo.23188298
+*Cite as:* Amichis Luengo, R. (2026). *The Dancing Sand Theorem — the 2-part of the sandpile group of the hypercube, for every n* (preprint, version 12). Zenodo. https://doi.org/10.5281/zenodo.23188298

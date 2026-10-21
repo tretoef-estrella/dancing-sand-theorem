@@ -1,6 +1,6 @@
 # The Dancing Sand Theorem in Lean 4
 
-*This folder and [../logs/](../logs/README.md) hold the same files as version 2 of the Zenodo record of the Lean certificate, with the same relative paths. The paper is in [../paper/](../paper/THE_DANCING_SAND_THEOREM_v11.pdf).*
+*This folder and [../logs/](../logs/README.md) hold the same files as version 2 of the Zenodo record of the Lean certificate, with the same relative paths. The paper is in [../paper/](../paper/THE_DANCING_SAND_THEOREM_v12.pdf).*
 
 This folder holds a complete Lean 4 proof, with the Mathlib library, of every theorem of the paper **«The Dancing Sand Theorem — the 2-part of the sandpile group of the hypercube, for every n»** ([doi.org/10.5281/zenodo.23188298](https://doi.org/10.5281/zenodo.23188298)), for every `n` for which the paper states it: the Main Theorem (the whole 2-part of the sandpile group `K(Q_n)` of the hypercube graph, for every `n ≥ 1`), Theorem DW (the fold law for the folded cube) and its equivalent form, Corollaries 1.4–1.7, Bai's odd part of `K(Q_n)`, Theorem D, and each of the 68 numbered statements of §2–§10.
 

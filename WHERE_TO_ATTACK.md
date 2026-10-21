@@ -1,6 +1,6 @@
 # Where to attack
 
-We believe the proof is correct. If it is not, the error is most likely in one of the places below, and we would rather hear about it than be agreed with. This page names the load-bearing joints of [the paper](paper/THE_DANCING_SAND_THEOREM_v11.pdf) (version 11), in the order in which we would press on them, and says what has already been found there.
+We believe the proof is correct. If it is not, the error is most likely in one of the places below, and we would rather hear about it than be agreed with. This page names the load-bearing joints of [the paper](paper/THE_DANCING_SAND_THEOREM_v12.pdf) (version 12), in the order in which we would press on them, and says what has already been found there.
 
 ## 1. The floor: Theorem 7.8 (Theorem F) and the pooling (§7)
 

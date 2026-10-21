@@ -1,6 +1,6 @@
 # The story and the numbers
 
-How the 2-part of the sandpile group of the cube was found and checked, told as it happened, with the dead ends and the failed predictions. The mathematics stands on its own, in [the paper](paper/THE_DANCING_SAND_THEOREM_v11.pdf); this page is the record of how it was made.
+How the 2-part of the sandpile group of the cube was found and checked, told as it happened, with the dead ends and the failed predictions. The mathematics stands on its own, in [the paper](paper/THE_DANCING_SAND_THEOREM_v12.pdf); this page is the record of how it was made.
 
 ## Who did what
 

@@ -1,6 +1,6 @@
 # The record
 
-This folder holds the record of how the proofs of [the paper](../paper/THE_DANCING_SAND_THEOREM_v11.pdf) were found and checked. It is a selection: the documents needed to see who checked what, with which code, and what each reader found. They are working documents, not refereed, mostly in English, with some passages in Spanish (the author's words are kept verbatim). **Where they differ from the paper, the paper is authoritative.**
+This folder holds the record of how the proofs of [the paper](../paper/THE_DANCING_SAND_THEOREM_v12.pdf) were found and checked. It is a selection: the documents needed to see who checked what, with which code, and what each reader found. They are working documents, not refereed, mostly in English, with some passages in Spanish (the author's words are kept verbatim). **Where they differ from the paper, the paper is authoritative.**
 
 The roles are described in [THE_STORY_AND_THE_NUMBERS.md](../THE_STORY_AND_THE_NUMBERS.md):
 - the **constructors** found the proofs, one «flight» each;
@@ -67,7 +67,7 @@ The constructors' engines and logs are not included. The audits name them, and t
 
 ## Corrections — [corrections/](corrections/)
 
-What changed from each version of the paper to the next, with the source of each change: the report that asked for it, or the auditor's own finding. The Markdown of versions 1 to 10 is in [../paper/earlier-versions/](../paper/earlier-versions/), so every quotation in a report can be found in the version it quotes.
+What changed from each version of the paper to the next, with the source of each change: the report that asked for it, or the auditor's own finding. The Markdown of versions 1 to 11 is in [../paper/earlier-versions/](../paper/earlier-versions/), so every quotation in a report can be found in the version it quotes.
 
 ## Literature — [literature/](literature/)
 

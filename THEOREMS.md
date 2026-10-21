@@ -1,6 +1,6 @@
 # The theorems — a guided tour
 
-This page walks through the results of [the paper](paper/THE_DANCING_SAND_THEOREM_v11.pdf) (version 11) in the order of the proof, says what each one does, and points to the statements a referee should read first. Section and statement numbers are those of version 11, which are those of version 8. The authoritative statements are the paper's; nothing here replaces them.
+This page walks through the results of [the paper](paper/THE_DANCING_SAND_THEOREM_v12.pdf) (version 12) in the order of the proof, says what each one does, and points to the statements a referee should read first. Section and statement numbers are those of version 11, which are those of version 8. The authoritative statements are the paper's; nothing here replaces them.
 
 Notation: `K(Q_n)` is the sandpile group of the `n`-cube, `Syl_2` its `2`-part, `ℤ_2` the `2`-adic integers, `v_2` the `2`-adic valuation, `κ(a, b)` the number of carries in the binary addition `a + b`.
 
